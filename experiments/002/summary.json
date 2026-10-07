@@ -1,0 +1,436 @@
+{
+  "disclosure_added_revision": 0,
+  "disclosure_changed_probe": 128,
+  "experiment001_saved_report_equal": true,
+  "false_claim_initially_accepted_with_helpful_history": 128,
+  "full_suites_reproduced": 128,
+  "population": 1000,
+  "population_consumed": 843,
+  "population_information_scenes": 171,
+  "population_reproduced": true,
+  "population_resource_events": 957,
+  "population_revisions": 27,
+  "population_serialized_bytes": 1284547,
+  "rules": "experiment-002-v1",
+  "seed42_probes": [
+    {
+      "action": "Leave",
+      "information": [],
+      "name": "A-silent",
+      "recency": 7,
+      "trust": 31
+    },
+    {
+      "action": "Offer",
+      "information": [
+        {
+          "after": {
+            "event": 5,
+            "evidence": 0,
+            "subject": 1,
+            "support": 65
+          },
+          "before": null,
+          "event": 5,
+          "id": 0,
+          "kind": {
+            "Testimony": {
+              "scarce": true
+            }
+          },
+          "listener": 0,
+          "reliability": 65,
+          "revision": {
+            "after": {
+              "event": 5,
+              "interpretation": "PossibleSelfProtection",
+              "observed": "Refuse",
+              "partner": 1,
+              "valence": 0
+            },
+            "before": {
+              "event": 5,
+              "interpretation": "Rejected",
+              "observed": "Refuse",
+              "partner": 1,
+              "valence": -17
+            }
+          },
+          "scarce": true,
+          "speaker": 1,
+          "terminated": true,
+          "tick": 7,
+          "trust_after": 48,
+          "trust_before": 31,
+          "turns": 1
+        }
+      ],
+      "name": "B-communicated",
+      "recency": 24,
+      "trust": 48
+    },
+    {
+      "action": "Offer",
+      "information": [
+        {
+          "after": {
+            "event": 5,
+            "evidence": 0,
+            "subject": 1,
+            "support": 65
+          },
+          "before": null,
+          "event": 5,
+          "id": 0,
+          "kind": {
+            "Testimony": {
+              "scarce": true
+            }
+          },
+          "listener": 0,
+          "reliability": 65,
+          "revision": {
+            "after": {
+              "event": 5,
+              "interpretation": "PossibleSelfProtection",
+              "observed": "Refuse",
+              "partner": 1,
+              "valence": 0
+            },
+            "before": {
+              "event": 5,
+              "interpretation": "Rejected",
+              "observed": "Refuse",
+              "partner": 1,
+              "valence": -17
+            }
+          },
+          "scarce": true,
+          "speaker": 1,
+          "terminated": true,
+          "tick": 7,
+          "trust_after": 48,
+          "trust_before": 31,
+          "turns": 1
+        },
+        {
+          "after": {
+            "event": 5,
+            "evidence": 1,
+            "subject": 1,
+            "support": 100
+          },
+          "before": {
+            "event": 5,
+            "evidence": 0,
+            "subject": 1,
+            "support": 65
+          },
+          "event": 5,
+          "id": 1,
+          "kind": "Disclosure",
+          "listener": 0,
+          "reliability": 100,
+          "revision": null,
+          "scarce": true,
+          "speaker": 1,
+          "terminated": true,
+          "tick": 8,
+          "trust_after": 48,
+          "trust_before": 48,
+          "turns": 1
+        }
+      ],
+      "name": "C-delayed",
+      "recency": 24,
+      "trust": 48
+    },
+    {
+      "action": "Leave",
+      "information": [
+        {
+          "after": {
+            "event": 5,
+            "evidence": 0,
+            "subject": 1,
+            "support": 25
+          },
+          "before": null,
+          "event": 5,
+          "id": 0,
+          "kind": {
+            "Testimony": {
+              "scarce": true
+            }
+          },
+          "listener": 0,
+          "reliability": 25,
+          "revision": null,
+          "scarce": true,
+          "speaker": 1,
+          "terminated": true,
+          "tick": 7,
+          "trust_after": -51,
+          "trust_before": -51,
+          "turns": 1
+        }
+      ],
+      "name": "D-unverified-false",
+      "recency": -34,
+      "trust": -51
+    },
+    {
+      "action": "Leave",
+      "information": [
+        {
+          "after": {
+            "event": 5,
+            "evidence": 0,
+            "subject": 1,
+            "support": 65
+          },
+          "before": null,
+          "event": 5,
+          "id": 0,
+          "kind": {
+            "Testimony": {
+              "scarce": true
+            }
+          },
+          "listener": 0,
+          "reliability": 65,
+          "revision": {
+            "after": {
+              "event": 5,
+              "interpretation": "PossibleSelfProtection",
+              "observed": "Refuse",
+              "partner": 1,
+              "valence": 0
+            },
+            "before": {
+              "event": 5,
+              "interpretation": "Rejected",
+              "observed": "Refuse",
+              "partner": 1,
+              "valence": -17
+            }
+          },
+          "scarce": true,
+          "speaker": 1,
+          "terminated": true,
+          "tick": 7,
+          "trust_after": 48,
+          "trust_before": 31,
+          "turns": 1
+        },
+        {
+          "after": {
+            "event": 5,
+            "evidence": 1,
+            "subject": 1,
+            "support": -100
+          },
+          "before": {
+            "event": 5,
+            "evidence": 0,
+            "subject": 1,
+            "support": 65
+          },
+          "event": 5,
+          "id": 1,
+          "kind": "Disclosure",
+          "listener": 0,
+          "reliability": 100,
+          "revision": {
+            "after": {
+              "event": 5,
+              "interpretation": "Rejected",
+              "observed": "Refuse",
+              "partner": 1,
+              "valence": -17
+            },
+            "before": {
+              "event": 5,
+              "interpretation": "PossibleSelfProtection",
+              "observed": "Refuse",
+              "partner": 1,
+              "valence": 0
+            }
+          },
+          "scarce": false,
+          "speaker": 1,
+          "terminated": true,
+          "tick": 8,
+          "trust_after": 31,
+          "trust_before": 48,
+          "turns": 1
+        }
+      ],
+      "name": "E-conflicting",
+      "recency": 7,
+      "trust": 31
+    },
+    {
+      "action": "Leave",
+      "information": [
+        {
+          "after": {
+            "event": 5,
+            "evidence": 0,
+            "subject": 1,
+            "support": 25
+          },
+          "before": null,
+          "event": 5,
+          "id": 0,
+          "kind": {
+            "Testimony": {
+              "scarce": true
+            }
+          },
+          "listener": 0,
+          "reliability": 25,
+          "revision": null,
+          "scarce": true,
+          "speaker": 1,
+          "terminated": true,
+          "tick": 7,
+          "trust_after": -51,
+          "trust_before": -51,
+          "turns": 1
+        }
+      ],
+      "name": "F-negative-history",
+      "recency": -34,
+      "trust": -51
+    },
+    {
+      "action": "Offer",
+      "information": [
+        {
+          "after": {
+            "event": 5,
+            "evidence": 0,
+            "subject": 1,
+            "support": 65
+          },
+          "before": null,
+          "event": 5,
+          "id": 0,
+          "kind": {
+            "Testimony": {
+              "scarce": true
+            }
+          },
+          "listener": 0,
+          "reliability": 65,
+          "revision": {
+            "after": {
+              "event": 5,
+              "interpretation": "PossibleSelfProtection",
+              "observed": "Refuse",
+              "partner": 1,
+              "valence": 0
+            },
+            "before": {
+              "event": 5,
+              "interpretation": "Rejected",
+              "observed": "Refuse",
+              "partner": 1,
+              "valence": -17
+            }
+          },
+          "scarce": true,
+          "speaker": 1,
+          "terminated": true,
+          "tick": 7,
+          "trust_after": 48,
+          "trust_before": 31,
+          "turns": 1
+        }
+      ],
+      "name": "F-positive-history",
+      "recency": 24,
+      "trust": 48
+    },
+    {
+      "action": "Leave",
+      "information": [
+        {
+          "after": {
+            "event": 5,
+            "evidence": 0,
+            "subject": 1,
+            "support": 25
+          },
+          "before": null,
+          "event": 5,
+          "id": 0,
+          "kind": {
+            "Testimony": {
+              "scarce": true
+            }
+          },
+          "listener": 0,
+          "reliability": 25,
+          "revision": null,
+          "scarce": true,
+          "speaker": 1,
+          "terminated": true,
+          "tick": 7,
+          "trust_after": -51,
+          "trust_before": -51,
+          "turns": 1
+        },
+        {
+          "after": {
+            "event": 5,
+            "evidence": 1,
+            "subject": 1,
+            "support": 100
+          },
+          "before": {
+            "event": 5,
+            "evidence": 0,
+            "subject": 1,
+            "support": 25
+          },
+          "event": 5,
+          "id": 1,
+          "kind": "Disclosure",
+          "listener": 0,
+          "reliability": 100,
+          "revision": {
+            "after": {
+              "event": 5,
+              "interpretation": "PossibleSelfProtection",
+              "observed": "Refuse",
+              "partner": 1,
+              "valence": 0
+            },
+            "before": {
+              "event": 5,
+              "interpretation": "Rejected",
+              "observed": "Refuse",
+              "partner": 1,
+              "valence": -17
+            }
+          },
+          "scarce": true,
+          "speaker": 1,
+          "terminated": true,
+          "tick": 8,
+          "trust_after": -34,
+          "trust_before": -51,
+          "turns": 1
+        }
+      ],
+      "name": "C-negative-history-disclosure",
+      "recency": -17,
+      "trust": -34
+    }
+  ],
+  "seeds": "0..128",
+  "testimony_changed_probe": 128,
+  "testimony_revised_memory": 128
+}

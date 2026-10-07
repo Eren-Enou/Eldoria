@@ -69,8 +69,40 @@ event/state replay, termination, invalid participants, overflow, memory eviction
 and 1,000-agent populations. Seed sweeps test many inputs deterministically; they
 are not exhaustive proofs and do not use a shrinking property-test framework.
 
-Current limits: no metabolism, exchanges, communication of private circumstances,
+Experiment 001 limits: no metabolism, exchanges, communication of private circumstances,
 memory decay, snapshot loading, persistence service, or parallel scene resolution.
 Relationships and objective audit history can grow. Hunger is a supplied motivation
 and is not automatically satisfied by inventory. Recommend Experiment 002 on
 communicated need, uncertain beliefs, and resource consumption before scaling.
+
+## Experiment 002: communication and reinterpretation
+
+Run `cargo run --locked --release --example evaluate002` to regenerate
+[Experiment 002 evidence](experiments/002/results.md). This keeps the original
+CLI and Experiment 001 rules available. The new experiment adds structured
+communication scenes, bounded uncertain beliefs about particular refusals,
+audited memory reinterpretation and food consumption. It compares silent,
+unverified, verified, conflicting and altered-history cases across 128 seeds,
+plus a 1,000-agent population. `cargo bench --bench throughput` measures both modes.
+
+At seed 42, an explanation after helpful history changes a matched later choice
+from Leave to Offer; contradictory disclosure restores Leave. Strong evidence
+after negative history revises a memory but does not erase the other refusals.
+These are controlled results of explicit rules. Communication is scheduled by the
+experiment, disclosure uses a narrow instrumented observation, and confidence is
+not calibrated. There is no claim of consciousness or complete human reasoning.
+
+## Experiment 003: intentional communication
+
+Run `cargo run --locked --release --example evaluate003`. The dedicated
+[findings](experiments/003/results.md) link to reproducible JSON and a readable
+causal report. Enable `Simulation::enable_intentional()` before creating scenes;
+`run()` then lets both participants choose communication after refusals. Earlier
+experiment defaults remain unchanged.
+
+A local policy scores silence, explanation, evidence, information requests and
+known-false scarcity claims. Separate credibility learns only from verified or
+contradicted claims. Communication memories are bounded; original events stay
+immutable. Controlled trials show disclosure costs, evidence-request costs and
+communication history changing choices. Requests and deception sometimes fail to
+change later behavior. See the findings for sensor assumptions and other limits.

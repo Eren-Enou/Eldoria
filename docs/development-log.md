@@ -29,3 +29,62 @@
   counts directly against the final saved JSON.
 - Measured serial interactions at 100 and 1,000 agents. Performance and behavioral
   evidence are stored under experiments/001; conclusions limit claims to the model.
+
+## 2026-10-06 — Experiment 002
+
+- Read all foundation specifications, source, tests and prior findings. Established
+  passing fmt, Clippy, 11-test and benchmark baseline before editing behavior.
+- Wrote experiments/002/specification.md before implementation. Preserved the
+  original rules by selecting the scarcity policy explicitly in new fixtures.
+- Added structured testimony/disclosure scenes, bounded event-specific beliefs,
+  immutable original interpretations plus revision audit, clamp-correct trust
+  replay, and explicit food consumption with sink accounting.
+- Kept speech scheduling and an instrumented disclosure sensor explicit; no private
+  partner state enters a policy or testimony update. These are documented limits.
+- Found that a generous probe offered with or without explanation; chose a matched
+  boundary probe and retained cases where revision leaves decisions unchanged.
+- Prevented credibility feedback by freezing testimony reliability for each event
+  at first information contact. Avoided copying the growing cognition audit during
+  every communication scene by temporarily taking the ECS resource.
+- All 128 controlled suites replayed; testimony changed the matched helpful-history
+  probe in all 128. False testimony also persuaded those listeners, exposing a
+  limitation. Strong conflicting evidence reversed it. Negative history resisted
+  weak testimony; disclosure revised one memory without erasing the other history.
+- Saved full seed-42 and 1,000-agent evidence, separate timings, and measurements.
+  Regenerated Experiment 001's archived seed-42 report with exact structural
+  equality; did not overwrite historical evidence.
+- Passed fmt, Clippy, 21 integration tests and both benchmark modes. New tests
+  include complete population audit reconstruction, saturation, eviction, false
+  claims, local information and accounting. Findings include costs, limitations
+  and recommendations only; Experiment 003 was not begun.
+
+## 2026-10-07 — Experiment 003
+
+- Reviewed instructions, README, architecture, prior findings, code and tests.
+  Baseline formatting, Clippy, 21 tests and both benchmark modes passed. Existing
+  uncommitted Experiment 002 work was preserved in place.
+- Documented hypotheses/tradeoffs before editing behavior. Added an optional
+  automatic post-refusal communication phase with local policy and four-turn
+  bound. The harness configures preferences; it does not schedule messages.
+- Added silence, testimony, evidence, requests and motivated known-false claims;
+  separated credibility from trust and bounded communication episodes at 16.
+  Reused Experiment 002's belief/revision/ledger implementation with an internal
+  credibility-based testimony weight for the new mode only.
+- Corrected an initial Rust match-expression parenthesization error, then passed
+  compilation and warning-free lint. Listener records normalize Mislead to Explain
+  so intent cannot leak through the public signal or local memory.
+- Evaluated 16 variants across 128 seeds. Disclosure/evidence costs changed later
+  resource decisions; explanation requests alone often did not. Verified versus
+  unanswered communication history changed subsequent information seeking, with
+  local episode ablation isolating the cause. Motivated deception was attempted
+  but did not improve the later resource choice; challenged speakers sometimes
+  self-incriminate because the current heuristic lacks outcome prediction.
+- Reproduced all suites and a 1,000-agent audit. Saved earlier 001 and 002 reports
+  compare equal; original evidence was not overwritten. New evidence is under 003.
+- Passed formatting, Clippy and 32 tests, including full population audit replay,
+  private information/intent isolation, legality, termination, history ablation,
+  saturation and bounds. Measured all three benchmark modes; at 1,000 agents the
+  new workload adds about 34% run time over 002. Documented distinct workload and
+  audit-storage costs instead of claiming broad scaling.
+- Recommended outcome prediction and fallible evidence access based on observed
+  failures. Did not start Experiment 004 or larger social systems.

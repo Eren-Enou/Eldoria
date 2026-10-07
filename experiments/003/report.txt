@@ -1,0 +1,95 @@
+Experiment 003: intentional communication
+Scores describe rules, not inferred psychology.
+
+A-disclose seed 42 target event 1 -> later Offer (trust 0, recency 0)
+  record 0 actor 1 Explain; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: 12 }, TalkCandidate { action: Explain, score: 32 }]; claim Some(true), objective true Some(true), evidence Some(0); credibility 0 -> 0
+    support None -> 50; revision None; trust -17 -> -17
+  record 1 actor 0 AskEvidence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskEvidence, score: 45 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+  record 2 actor 1 ProvideEvidence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: 62 }]; claim Some(true), objective true Some(true), evidence Some(1); credibility 0 -> 20
+    support Some(50) -> 100; revision Some(Revision { before: Memory { event: 1, partner: 1, observed: Refuse, interpretation: Rejected, valence: -17 }, after: Memory { event: 1, partner: 1, observed: Refuse, interpretation: PossibleSelfProtection, valence: 0 } }); trust -17 -> 0
+  record 3 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }]; claim None, objective true None, evidence None; credibility 20 -> 20
+
+A-silent seed 42 target event 1 -> later Leave (trust -17, recency -17)
+  record 0 actor 1 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: -88 }, TalkCandidate { action: Explain, score: -68 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+  record 1 actor 0 AskExplanation; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskExplanation, score: 48 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+  record 2 actor 1 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: -88 }, TalkCandidate { action: Explain, score: -48 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+  record 3 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+
+B-cost-40 seed 42 target event 1 -> later Leave (trust -17, recency -17)
+  record 0 actor 1 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: -28 }, TalkCandidate { action: Explain, score: -8 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+  record 1 actor 0 AskExplanation; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskExplanation, score: 48 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+  record 2 actor 1 Explain; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: -28 }, TalkCandidate { action: Explain, score: 12 }]; claim Some(true), objective true Some(true), evidence Some(0); credibility 0 -> 0
+    support None -> 50; revision None; trust -17 -> -17
+  record 3 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+
+C-no-request seed 42 target event 1 -> later Leave (trust -17, recency -17)
+  record 0 actor 1 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: -23 }, TalkCandidate { action: Explain, score: -3 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+  record 1 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskExplanation, score: -12 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+
+C-request seed 42 target event 1 -> later Leave (trust -17, recency -17)
+  record 0 actor 1 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: -23 }, TalkCandidate { action: Explain, score: -3 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+  record 1 actor 0 AskExplanation; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskExplanation, score: 48 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+  record 2 actor 1 Explain; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: -23 }, TalkCandidate { action: Explain, score: 17 }]; claim Some(true), objective true Some(true), evidence Some(0); credibility 0 -> 0
+    support None -> 50; revision None; trust -17 -> -17
+  record 3 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+
+D-unsupported seed 42 target event 1 -> later Leave (trust -17, recency -17)
+  record 0 actor 1 Explain; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: 12 }, TalkCandidate { action: Explain, score: 32 }]; claim Some(true), objective true Some(true), evidence Some(0); credibility 0 -> 0
+    support None -> 50; revision None; trust -17 -> -17
+  record 1 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskEvidence, score: -75 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+
+D-evidence seed 42 target event 1 -> later Offer (trust 0, recency 0)
+  record 0 actor 1 Explain; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: 12 }, TalkCandidate { action: Explain, score: 32 }]; claim Some(true), objective true Some(true), evidence Some(0); credibility 0 -> 0
+    support None -> 50; revision None; trust -17 -> -17
+  record 1 actor 0 AskEvidence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskEvidence, score: 25 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+  record 2 actor 1 ProvideEvidence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: 62 }]; claim Some(true), objective true Some(true), evidence Some(1); credibility 0 -> 20
+    support Some(50) -> 100; revision Some(Revision { before: Memory { event: 1, partner: 1, observed: Refuse, interpretation: Rejected, valence: -17 }, after: Memory { event: 1, partner: 1, observed: Refuse, interpretation: PossibleSelfProtection, valence: 0 } }); trust -17 -> 0
+  record 3 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }]; claim None, objective true None, evidence None; credibility 20 -> 20
+
+E-honest seed 42 target event 3 -> later Offer (trust 0, recency 0)
+  record 4 actor 1 Explain; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: 12 }, TalkCandidate { action: Explain, score: 32 }]; claim Some(true), objective true Some(true), evidence Some(2); credibility 20 -> 20
+    support None -> 70; revision Some(Revision { before: Memory { event: 3, partner: 1, observed: Refuse, interpretation: Rejected, valence: -17 }, after: Memory { event: 3, partner: 1, observed: Refuse, interpretation: PossibleSelfProtection, valence: 0 } }); trust -17 -> 0
+  record 5 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskEvidence, score: -75 }]; claim None, objective true None, evidence None; credibility 20 -> 20
+
+E-unhelpful seed 42 target event 3 -> later Leave (trust -34, recency -34)
+  record 4 actor 1 Explain; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: 12 }, TalkCandidate { action: Explain, score: 32 }]; claim Some(true), objective true Some(true), evidence Some(0); credibility 0 -> 0
+    support None -> 50; revision None; trust -34 -> -34
+  record 5 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskEvidence, score: -95 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+
+E-contradicted seed 42 target event 3 -> later Leave (trust -34, recency -34)
+  record 4 actor 1 Explain; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: 12 }, TalkCandidate { action: Explain, score: 32 }]; claim Some(true), objective true Some(true), evidence Some(2); credibility -30 -> -30
+    support None -> 20; revision None; trust -34 -> -34
+  record 5 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskEvidence, score: -50 }]; claim None, objective true None, evidence None; credibility -30 -> -30
+
+F-conceal seed 42 target event 1 -> later Leave (trust -17, recency -17)
+  record 0 actor 1 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: -88 }, TalkCandidate { action: Explain, score: -68 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+  record 1 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskExplanation, score: -12 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+
+G-deceive seed 42 target event 1 -> later Leave (trust -17, recency -17)
+  record 0 actor 1 Mislead; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: -48 }, TalkCandidate { action: Explain, score: -28 }, TalkCandidate { action: Mislead, score: 5 }]; claim Some(true), objective true Some(false), evidence Some(0); credibility 0 -> 0
+    support None -> 50; revision None; trust -17 -> -17
+  record 1 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskEvidence, score: -75 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+
+G-honest-control seed 42 target event 1 -> later Leave (trust -17, recency -17)
+  record 0 actor 1 ProvideEvidence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: 2 }, TalkCandidate { action: Explain, score: -28 }, TalkCandidate { action: Mislead, score: -95 }]; claim Some(false), objective true Some(true), evidence Some(0); credibility 0 -> 0
+    support None -> -100; revision None; trust -17 -> -17
+  record 1 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+
+G-challenged seed 42 target event 1 -> later Leave (trust -17, recency -17)
+  record 0 actor 1 Mislead; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: -48 }, TalkCandidate { action: Explain, score: -28 }, TalkCandidate { action: Mislead, score: 5 }]; claim Some(true), objective true Some(false), evidence Some(0); credibility 0 -> 0
+    support None -> 50; revision None; trust -17 -> -17
+  record 1 actor 0 AskEvidence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskEvidence, score: 85 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+  record 2 actor 1 ProvideEvidence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: 2 }]; claim Some(false), objective true Some(true), evidence Some(1); credibility 0 -> -30
+    support Some(50) -> -100; revision None; trust -17 -> -17
+  record 3 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }]; claim None, objective true None, evidence None; credibility -30 -> -30
+
+E-request-honest seed 42 target event 3 -> later Offer (trust 0, recency 0)
+  record 4 actor 1 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: -23 }, TalkCandidate { action: Explain, score: -3 }]; claim None, objective true None, evidence None; credibility 20 -> 20
+  record 5 actor 0 AskExplanation; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskExplanation, score: 13 }]; claim None, objective true None, evidence None; credibility 20 -> 20
+  record 6 actor 1 Explain; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: -23 }, TalkCandidate { action: Explain, score: 17 }]; claim Some(true), objective true Some(true), evidence Some(2); credibility 20 -> 20
+    support None -> 70; revision Some(Revision { before: Memory { event: 3, partner: 1, observed: Refuse, interpretation: Rejected, valence: -17 }, after: Memory { event: 3, partner: 1, observed: Refuse, interpretation: PossibleSelfProtection, valence: 0 } }); trust -17 -> 0
+  record 7 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }]; claim None, objective true None, evidence None; credibility 20 -> 20
+
+E-request-unhelpful seed 42 target event 3 -> later Leave (trust -34, recency -34)
+  record 4 actor 1 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: ProvideEvidence, score: -23 }, TalkCandidate { action: Explain, score: -3 }]; claim None, objective true None, evidence None; credibility 0 -> 0
+  record 5 actor 0 Silence; alternatives [TalkCandidate { action: Silence, score: 0 }, TalkCandidate { action: AskExplanation, score: -17 }]; claim None, objective true None, evidence None; credibility 0 -> 0

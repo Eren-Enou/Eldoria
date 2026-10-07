@@ -37,6 +37,7 @@ pub enum Interpretation {
     OfferHeard,
     Departure,
     FailedTransfer,
+    PossibleSelfProtection,
 }
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq, PartialOrd, Ord, Serialize, Deserialize)]

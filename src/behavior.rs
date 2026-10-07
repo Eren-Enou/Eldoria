@@ -130,3 +130,24 @@ pub fn remember(agent: &mut Agent, memory: Memory) {
     }
     agent.memories.push_back(memory);
 }
+
+/// Experiment 002 opportunity cost: a hungry donor retains their last meal.
+/// Inventory abundance matters without exposing the partner's circumstances.
+pub fn scarcity_policy(agent: &Agent, view: &Observation) -> Decision {
+    let mut decision = utility_policy(agent, view);
+    if agent.hunger >= 60 && agent.food <= view.amount {
+        for candidate in &mut decision.candidates {
+            if candidate.action == Action::Offer {
+                candidate.score -= 60;
+            }
+        }
+        decision.selected = decision
+            .candidates
+            .iter()
+            .fold(&decision.candidates[0], |best, c| {
+                if c.score > best.score { c } else { best }
+            })
+            .action;
+    }
+    decision
+}

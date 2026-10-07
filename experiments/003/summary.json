@@ -1,0 +1,50 @@
+{
+  "comparisons": {
+    "communication_history_changes_probe": 128,
+    "evidence_changes_probe": 128,
+    "privacy_changes_probe": 128,
+    "request_changes_probe": 0
+  },
+  "compatibility001": true,
+  "compatibility002": true,
+  "history_changed_request_choice": 128,
+  "honesty_changed_deception_choice": 128,
+  "population": {
+    "actions": {
+      "AskEvidence": 3,
+      "AskExplanation": 133,
+      "Explain": 9,
+      "ProvideEvidence": 3,
+      "Silence": 466
+    },
+    "agents": 1000,
+    "consumed": 843,
+    "conversations": 171,
+    "deceptive_claims": 0,
+    "information": 12,
+    "resource_events": 957,
+    "revisions": 3,
+    "serialized_bytes": 2169219
+  },
+  "probe_actions": {
+    "A-disclose:Offer": 128,
+    "A-silent:Leave": 128,
+    "B-cost-40:Leave": 128,
+    "C-no-request:Leave": 128,
+    "C-request:Leave": 128,
+    "D-evidence:Offer": 128,
+    "D-unsupported:Leave": 128,
+    "E-contradicted:Leave": 128,
+    "E-honest:Offer": 128,
+    "E-request-honest:Offer": 128,
+    "E-request-unhelpful:Leave": 128,
+    "E-unhelpful:Leave": 128,
+    "F-conceal:Leave": 128,
+    "G-challenged:Leave": 128,
+    "G-deceive:Leave": 128,
+    "G-honest-control:Leave": 128
+  },
+  "reproduced_suites": 128,
+  "rules": "experiment-003-v1",
+  "seed_range": "0..128"
+}

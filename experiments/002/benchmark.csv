@@ -1,0 +1,5 @@
+mode,population,rounds,init_ms,run_ms,records,records_per_second
+experiment001,100,100,9.777,15.274,9640,631150
+experiment001,1000,100,49.479,117.114,95578,816114
+experiment002,100,100,7.358,21.074,21341,1012665
+experiment002,1000,100,46.120,185.249,212751,1148461

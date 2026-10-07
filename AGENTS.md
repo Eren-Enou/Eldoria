@@ -21,3 +21,19 @@ Before changing behavior, document the hypothesis and tradeoffs. Run cargo fmt
 changes. Report failures and limitations. Keep generated JSON reproducible;
 wall-clock measurements belong in separate benchmark output. Do not claim
 consciousness or broad social emergence from these experiments.
+
+Experiment 002 adds event-specific structured communication, uncertain beliefs,
+revisable interpretations and explicit food consumption. Keep Experiment 001's
+policy/report defaults and historical evidence intact; save compatibility evidence
+under the new experiment. Testimony must not consult objective truth. Disclosure
+must remain an explicit narrow observation channel. Preserve original event
+interpretations; record revisions separately and replay trust with replacement
+contributions, including saturation. Cap beliefs as well as episodic memory.
+
+Experiment 003 intentional communication is opt-in and automatically follows new
+refusals. Preserve old defaults and evidence. Communication policies receive only
+local TalkInput; never pass objective truth or deceptive intent to a listener.
+Credibility is directed and separate from trust; update it only from legitimate
+claim/evidence comparisons. Bound communication episodes, validate every action,
+account for time and preserve explicit termination. Profile changes are recorded
+experimental interventions, not permission to schedule or force agent messages.
