@@ -1,0 +1,26 @@
+{
+  "altered_history_full_reports_reproduced": 128,
+  "altered_history_probes_with_different_decisions": 128,
+  "first_encounter_actions": {
+    "Leave": 20,
+    "Offer": 42,
+    "Request": 66
+  },
+  "first_encounter_negative_directed_relationships": 53,
+  "first_encounter_outcomes": {
+    "Agreement": 53,
+    "Refusal": 52,
+    "Withdrawal": 23
+  },
+  "first_encounter_positive_directed_relationships": 105,
+  "matched_food_and_hunger_first_actions": {
+    "Leave": 55,
+    "Offer": 64,
+    "Request": 9
+  },
+  "note": "Counts are separate measurements, not a composite interestingness score. Ablations compare each local decision, not a full downstream counterfactual trajectory.",
+  "repeated_encounter_decisions_changed_by_learning_ablation": 18,
+  "repeated_encounters_with_changed_first_action": 18,
+  "repeated_encounters_with_changed_outcome": 8,
+  "seed_range": "0..128 (exclusive upper bound)"
+}

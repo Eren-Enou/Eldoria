@@ -1,0 +1,156 @@
+World of Individuals / experiment-001-v1
+Seed 42 | Scenario all | Reproducible true
+
+Trial A (2 generated agents)
+  Generated 0: food=5 hunger=16 generosity=28 caution=34 expectation=3
+  Generated 1: food=6 hunger=22 generosity=80 caution=34 expectation=62
+  encounter: None: generated state.
+    Event 0 tick 1 scene 0: 0 Offer; candidates=[Candidate { action: Offer, score: 3 }, Candidate { action: Request, score: -27 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [5, 6]->[5, 6]; result None
+      Subjective records: [Memory { event: 0, partner: 1, observed: Offer, interpretation: OfferHeard, valence: 0 }, Memory { event: 0, partner: 0, observed: Offer, interpretation: OfferHeard, valence: 0 }]
+    Event 1 tick 2 scene 0: 1 Accept; candidates=[Candidate { action: Accept, score: 36 }, Candidate { action: Refuse, score: -12 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[0]; food [5, 6]->[4, 7]; result Some(Agreement)
+      Subjective records: [Memory { event: 1, partner: 1, observed: Accept, interpretation: HelpGiven, valence: 7 }, Memory { event: 1, partner: 0, observed: Accept, interpretation: HelpReceived, valence: 30 }]
+    Agent 0 food 5->4 trust {}->{1: 7}; memories 0->2
+    Agent 1 food 6->7 trust {}->{0: 30}; memories 0->2
+
+Trial B (2 generated agents)
+  Generated 0: food=5 hunger=16 generosity=28 caution=34 expectation=3
+  Generated 1: food=6 hunger=22 generosity=80 caution=34 expectation=62
+  encounter: None: generated state.
+    Event 0 tick 1 scene 0: 0 Offer; candidates=[Candidate { action: Offer, score: 3 }, Candidate { action: Request, score: -27 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [5, 6]->[5, 6]; result None
+      Subjective records: [Memory { event: 0, partner: 1, observed: Offer, interpretation: OfferHeard, valence: 0 }, Memory { event: 0, partner: 0, observed: Offer, interpretation: OfferHeard, valence: 0 }]
+    Event 1 tick 2 scene 0: 1 Accept; candidates=[Candidate { action: Accept, score: 36 }, Candidate { action: Refuse, score: -12 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[0]; food [5, 6]->[4, 7]; result Some(Agreement)
+      Subjective records: [Memory { event: 1, partner: 1, observed: Accept, interpretation: HelpGiven, valence: 7 }, Memory { event: 1, partner: 0, observed: Accept, interpretation: HelpReceived, valence: 30 }]
+    Agent 0 food 5->4 trust {}->{1: 7}; memories 0->2
+    Agent 1 food 6->7 trust {}->{0: 30}; memories 0->2
+  repeated encounter: Restore generated food, hunger, generosity, caution; retain all learning.
+    Event 2 tick 3 scene 1: 0 Offer; candidates=[Candidate { action: Offer, score: 17 }, Candidate { action: Request, score: -26 }, Candidate { action: Leave, score: 0 }]; trust=7 episodes=7 causes=[1, 0]; food [5, 6]->[5, 6]; result None
+      Subjective records: [Memory { event: 2, partner: 1, observed: Offer, interpretation: OfferHeard, valence: 0 }, Memory { event: 2, partner: 0, observed: Offer, interpretation: OfferHeard, valence: 0 }]
+    Event 3 tick 4 scene 1: 1 Accept; candidates=[Candidate { action: Accept, score: 43 }, Candidate { action: Refuse, score: -27 }, Candidate { action: Leave, score: 0 }]; trust=30 episodes=30 causes=[2, 1, 0]; food [5, 6]->[4, 7]; result Some(Agreement)
+      Subjective records: [Memory { event: 3, partner: 1, observed: Accept, interpretation: HelpGiven, valence: 7 }, Memory { event: 3, partner: 0, observed: Accept, interpretation: HelpReceived, valence: 30 }]
+    Agent 0 food 5->4 trust {1: 7}->{1: 14}; memories 2->4
+    Agent 1 food 6->7 trust {0: 30}->{0: 60}; memories 2->4
+
+Trial C (2 generated agents)
+  Generated 0: food=5 hunger=16 generosity=28 caution=34 expectation=3
+  Generated 1: food=6 hunger=22 generosity=80 caution=34 expectation=62
+  encounter: Both need food; requester has none, potential donor has one unit and high caution.
+    Event 0 tick 1 scene 0: 0 Request; candidates=[Candidate { action: Request, score: 45 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [0, 1]->[0, 1]; result None
+      Subjective records: [Memory { event: 0, partner: 1, observed: Request, interpretation: RequestHeard, valence: 0 }, Memory { event: 0, partner: 0, observed: Request, interpretation: RequestHeard, valence: 0 }]
+    Event 1 tick 2 scene 0: 1 Refuse; candidates=[Candidate { action: Offer, score: -80 }, Candidate { action: Refuse, score: 85 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[0]; food [0, 1]->[0, 1]; result Some(Refusal)
+      Subjective records: [Memory { event: 1, partner: 1, observed: Refuse, interpretation: Rejected, valence: -18 }, Memory { event: 1, partner: 0, observed: Refuse, interpretation: ProtectedOwnNeeds, valence: 0 }]
+    Agent 0 food 0->0 trust {}->{1: -18}; memories 0->2
+    Agent 1 food 1->1 trust {}->{0: 0}; memories 0->2
+
+Trial D (2 generated agents)
+  Generated 0: food=5 hunger=16 generosity=28 caution=34 expectation=3
+  Generated 1: food=6 hunger=22 generosity=80 caution=34 expectation=62
+  encounter: Force need and scarcity context, not actions; inspect each perspective on the resulting refusal.
+    Event 0 tick 1 scene 0: 0 Request; candidates=[Candidate { action: Request, score: 50 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [0, 1]->[0, 1]; result None
+      Subjective records: [Memory { event: 0, partner: 1, observed: Request, interpretation: RequestHeard, valence: 0 }, Memory { event: 0, partner: 0, observed: Request, interpretation: RequestHeard, valence: 0 }]
+    Event 1 tick 2 scene 0: 1 Refuse; candidates=[Candidate { action: Offer, score: -90 }, Candidate { action: Refuse, score: 90 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[0]; food [0, 1]->[0, 1]; result Some(Refusal)
+      Subjective records: [Memory { event: 1, partner: 1, observed: Refuse, interpretation: Rejected, valence: -17 }, Memory { event: 1, partner: 0, observed: Refuse, interpretation: ProtectedOwnNeeds, valence: 0 }]
+    Agent 0 food 0->0 trust {}->{1: -17}; memories 0->2
+    Agent 1 food 1->1 trust {}->{0: 0}; memories 0->2
+
+Trial G (1000 generated agents)
+  Generated 0: food=5 hunger=16 generosity=28 caution=34 expectation=3
+  Generated 1: food=6 hunger=22 generosity=80 caution=34 expectation=62
+  Generated 2: food=1 hunger=49 generosity=51 caution=52 expectation=67
+  Generated 3: food=1 hunger=10 generosity=50 caution=9 expectation=69
+  Generated 4: food=6 hunger=7 generosity=60 caution=62 expectation=7
+  Generated 5: food=1 hunger=74 generosity=79 caution=95 expectation=70
+  Generated 6: food=5 hunger=84 generosity=65 caution=78 expectation=64
+  Generated 7: food=2 hunger=6 generosity=26 caution=76 expectation=9
+  encounter: None: generated state.
+    Event 0 tick 1 scene 0: 0 Offer; candidates=[Candidate { action: Offer, score: 3 }, Candidate { action: Request, score: -27 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [5, 6]->[5, 6]; result None
+      Subjective records: [Memory { event: 0, partner: 1, observed: Offer, interpretation: OfferHeard, valence: 0 }, Memory { event: 0, partner: 0, observed: Offer, interpretation: OfferHeard, valence: 0 }]
+    Event 1 tick 1 scene 1: 2 Offer; candidates=[Candidate { action: Offer, score: 1 }, Candidate { action: Request, score: 1 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [1, 1]->[1, 1]; result None
+      Subjective records: [Memory { event: 1, partner: 3, observed: Offer, interpretation: OfferHeard, valence: 0 }, Memory { event: 1, partner: 2, observed: Offer, interpretation: OfferHeard, valence: 0 }]
+    Event 2 tick 1 scene 2: 4 Offer; candidates=[Candidate { action: Offer, score: 26 }, Candidate { action: Request, score: -43 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [6, 1]->[6, 1]; result None
+      Subjective records: [Memory { event: 2, partner: 5, observed: Offer, interpretation: OfferHeard, valence: 0 }, Memory { event: 2, partner: 4, observed: Offer, interpretation: OfferHeard, valence: 0 }]
+    Event 3 tick 1 scene 3: 6 Request; candidates=[Candidate { action: Offer, score: -16 }, Candidate { action: Request, score: 30 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [5, 2]->[5, 2]; result None
+      Subjective records: [Memory { event: 3, partner: 7, observed: Request, interpretation: RequestHeard, valence: 0 }, Memory { event: 3, partner: 6, observed: Request, interpretation: RequestHeard, valence: 0 }]
+    Event 4 tick 1 scene 4: 8 Leave; candidates=[Candidate { action: Offer, score: -20 }, Candidate { action: Request, score: -38 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [3, 2]->[3, 2]; result Some(Withdrawal)
+      Subjective records: [Memory { event: 4, partner: 9, observed: Leave, interpretation: Departure, valence: 0 }, Memory { event: 4, partner: 8, observed: Leave, interpretation: Departure, valence: 0 }]
+    Event 5 tick 1 scene 5: 10 Leave; candidates=[Candidate { action: Offer, score: -10 }, Candidate { action: Request, score: -24 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [2, 5]->[2, 5]; result Some(Withdrawal)
+      Subjective records: [Memory { event: 5, partner: 11, observed: Leave, interpretation: Departure, valence: 0 }, Memory { event: 5, partner: 10, observed: Leave, interpretation: Departure, valence: 0 }]
+    Event 6 tick 1 scene 6: 12 Request; candidates=[Candidate { action: Offer, score: 11 }, Candidate { action: Request, score: 61 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [1, 4]->[1, 4]; result None
+      Subjective records: [Memory { event: 6, partner: 13, observed: Request, interpretation: RequestHeard, valence: 0 }, Memory { event: 6, partner: 12, observed: Request, interpretation: RequestHeard, valence: 0 }]
+    Event 7 tick 1 scene 7: 14 Request; candidates=[Candidate { action: Offer, score: -59 }, Candidate { action: Request, score: 11 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [6, 5]->[6, 5]; result None
+      Subjective records: [Memory { event: 7, partner: 15, observed: Request, interpretation: RequestHeard, valence: 0 }, Memory { event: 7, partner: 14, observed: Request, interpretation: RequestHeard, valence: 0 }]
+    Event 8 tick 1 scene 8: 16 Request; candidates=[Candidate { action: Request, score: 30 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [0, 1]->[0, 1]; result None
+      Subjective records: [Memory { event: 8, partner: 17, observed: Request, interpretation: RequestHeard, valence: 0 }, Memory { event: 8, partner: 16, observed: Request, interpretation: RequestHeard, valence: 0 }]
+    Event 9 tick 1 scene 9: 18 Leave; candidates=[Candidate { action: Offer, score: -31 }, Candidate { action: Request, score: -1 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [5, 0]->[5, 0]; result Some(Withdrawal)
+      Subjective records: [Memory { event: 9, partner: 19, observed: Leave, interpretation: Departure, valence: 0 }, Memory { event: 9, partner: 18, observed: Leave, interpretation: Departure, valence: 0 }]
+    Event 10 tick 1 scene 10: 20 Offer; candidates=[Candidate { action: Offer, score: 30 }, Candidate { action: Request, score: -39 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [4, 0]->[4, 0]; result None
+      Subjective records: [Memory { event: 10, partner: 21, observed: Offer, interpretation: OfferHeard, valence: 0 }, Memory { event: 10, partner: 20, observed: Offer, interpretation: OfferHeard, valence: 0 }]
+    Event 11 tick 1 scene 11: 22 Request; candidates=[Candidate { action: Request, score: 2 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [0, 2]->[0, 2]; result None
+      Subjective records: [Memory { event: 11, partner: 23, observed: Request, interpretation: RequestHeard, valence: 0 }, Memory { event: 11, partner: 22, observed: Request, interpretation: RequestHeard, valence: 0 }]
+    Agent 0 food 5->4 trust {}->{1: 7}; memories 0->2
+    Agent 1 food 6->7 trust {}->{0: 30}; memories 0->2
+    Agent 2 food 1->0 trust {}->{3: 4}; memories 0->2
+    Agent 3 food 1->2 trust {}->{2: 30}; memories 0->2
+    Agent 4 food 6->5 trust {}->{5: 8}; memories 0->2
+    Agent 5 food 1->2 trust {}->{4: 31}; memories 0->2
+    Agent 6 food 5->5 trust {}->{7: -32}; memories 0->2
+    Agent 7 food 2->2 trust {}->{6: 0}; memories 0->2
+
+Trial E-helpful (2 generated agents)
+  Generated 0: food=5 hunger=16 generosity=28 caution=34 expectation=3
+  Generated 1: food=6 hunger=22 generosity=80 caution=34 expectation=62
+  history formation: Controlled past: agent 0 needs food; agent 1 has food, with generous/satiated or guarded/hungry dispositions. Actions are selected by policy.
+    Event 0 tick 1 scene 0: 1 Offer; candidates=[Candidate { action: Offer, score: 100 }, Candidate { action: Request, score: -35 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [4, 0]->[4, 0]; result None
+      Subjective records: [Memory { event: 0, partner: 0, observed: Offer, interpretation: OfferHeard, valence: 0 }, Memory { event: 0, partner: 1, observed: Offer, interpretation: OfferHeard, valence: 0 }]
+    Event 1 tick 2 scene 0: 0 Accept; candidates=[Candidate { action: Accept, score: 106 }, Candidate { action: Refuse, score: 40 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[0]; food [4, 0]->[3, 1]; result Some(Agreement)
+      Subjective records: [Memory { event: 1, partner: 0, observed: Accept, interpretation: HelpGiven, valence: 8 }, Memory { event: 1, partner: 1, observed: Accept, interpretation: HelpReceived, valence: 24 }]
+    Agent 0 food 0->1 trust {}->{1: 24}; memories 0->2
+    Agent 1 food 4->3 trust {}->{0: 8}; memories 0->2
+  identical present probe: Set identical present food, hunger, generosity, caution in both histories. Preserve expectations, trust and memories. Agent 0 starts.
+    Event 2 tick 3 scene 1: 0 Offer; candidates=[Candidate { action: Offer, score: 38 }, Candidate { action: Request, score: 1 }, Candidate { action: Leave, score: 0 }]; trust=24 episodes=24 causes=[1, 0]; food [4, 0]->[4, 0]; result None
+      Subjective records: [Memory { event: 2, partner: 1, observed: Offer, interpretation: OfferHeard, valence: 0 }, Memory { event: 2, partner: 0, observed: Offer, interpretation: OfferHeard, valence: 0 }]
+    Event 3 tick 4 scene 1: 1 Accept; candidates=[Candidate { action: Accept, score: 108 }, Candidate { action: Refuse, score: 36 }, Candidate { action: Leave, score: 0 }]; trust=8 episodes=8 causes=[2, 1, 0]; food [4, 0]->[3, 1]; result Some(Agreement)
+      Subjective records: [Memory { event: 3, partner: 1, observed: Accept, interpretation: HelpGiven, valence: 4 }, Memory { event: 3, partner: 0, observed: Accept, interpretation: HelpReceived, valence: 30 }]
+    Agent 0 food 4->3 trust {1: 24}->{1: 28}; memories 2->4
+    Agent 1 food 0->1 trust {0: 8}->{0: 38}; memories 2->4
+
+Trial E-refusal (2 generated agents)
+  Generated 0: food=5 hunger=16 generosity=28 caution=34 expectation=3
+  Generated 1: food=6 hunger=22 generosity=80 caution=34 expectation=62
+  history formation: Controlled past: agent 0 needs food; agent 1 has food, with generous/satiated or guarded/hungry dispositions. Actions are selected by policy.
+    Event 0 tick 1 scene 0: 0 Request; candidates=[Candidate { action: Request, score: 50 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [0, 4]->[0, 4]; result None
+      Subjective records: [Memory { event: 0, partner: 1, observed: Request, interpretation: RequestHeard, valence: 0 }, Memory { event: 0, partner: 0, observed: Request, interpretation: RequestHeard, valence: 0 }]
+    Event 1 tick 2 scene 0: 1 Refuse; candidates=[Candidate { action: Offer, score: -100 }, Candidate { action: Refuse, score: 100 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[0]; food [0, 4]->[0, 4]; result Some(Refusal)
+      Subjective records: [Memory { event: 1, partner: 1, observed: Refuse, interpretation: Rejected, valence: -17 }, Memory { event: 1, partner: 0, observed: Refuse, interpretation: ProtectedOwnNeeds, valence: 0 }]
+    Agent 0 food 0->0 trust {}->{1: -17}; memories 0->2
+    Agent 1 food 4->4 trust {}->{0: 0}; memories 0->2
+  identical present probe: Set identical present food, hunger, generosity, caution in both histories. Preserve expectations, trust and memories. Agent 0 starts.
+    Event 2 tick 3 scene 1: 0 Leave; candidates=[Candidate { action: Offer, score: -44 }, Candidate { action: Request, score: -9 }, Candidate { action: Leave, score: 0 }]; trust=-17 episodes=-17 causes=[1, 0]; food [4, 0]->[4, 0]; result Some(Withdrawal)
+      Subjective records: [Memory { event: 2, partner: 1, observed: Leave, interpretation: Departure, valence: 0 }, Memory { event: 2, partner: 0, observed: Leave, interpretation: Departure, valence: 0 }]
+    Agent 0 food 4->4 trust {1: -17}->{1: -17}; memories 2->3
+    Agent 1 food 0->0 trust {0: 0}->{0: 0}; memories 2->3
+
+Trial E-history-free (2 generated agents)
+  Generated 0: food=5 hunger=16 generosity=28 caution=34 expectation=3
+  Generated 1: food=6 hunger=22 generosity=80 caution=34 expectation=62
+  history-free present probe: Same present states; explicitly ablate trust and episodic memory.
+    Event 0 tick 1 scene 0: 0 Leave; candidates=[Candidate { action: Offer, score: -10 }, Candidate { action: Request, score: -5 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [4, 0]->[4, 0]; result Some(Withdrawal)
+      Subjective records: [Memory { event: 0, partner: 1, observed: Leave, interpretation: Departure, valence: 0 }, Memory { event: 0, partner: 0, observed: Leave, interpretation: Departure, valence: 0 }]
+    Agent 0 food 4->4 trust {}->{1: 0}; memories 0->1
+    Agent 1 food 0->0 trust {}->{0: 0}; memories 0->1
+
+Trial F (2 generated agents)
+  Generated 0: food=5 hunger=16 generosity=28 caution=34 expectation=3
+  Generated 1: food=6 hunger=22 generosity=80 caution=34 expectation=62
+  encounter: None: generated state.
+    Event 0 tick 1 scene 0: 0 Offer; candidates=[Candidate { action: Offer, score: 3 }, Candidate { action: Request, score: -27 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[]; food [5, 6]->[5, 6]; result None
+      Subjective records: [Memory { event: 0, partner: 1, observed: Offer, interpretation: OfferHeard, valence: 0 }, Memory { event: 0, partner: 0, observed: Offer, interpretation: OfferHeard, valence: 0 }]
+    Event 1 tick 2 scene 0: 1 Accept; candidates=[Candidate { action: Accept, score: 36 }, Candidate { action: Refuse, score: -12 }, Candidate { action: Leave, score: 0 }]; trust=0 episodes=0 causes=[0]; food [5, 6]->[4, 7]; result Some(Agreement)
+      Subjective records: [Memory { event: 1, partner: 1, observed: Accept, interpretation: HelpGiven, valence: 7 }, Memory { event: 1, partner: 0, observed: Accept, interpretation: HelpReceived, valence: 30 }]
+    Agent 0 food 5->4 trust {}->{1: 7}; memories 0->2
+    Agent 1 food 6->7 trust {}->{0: 30}; memories 0->2
+
+Controlled history comparison: HistoryComparison { identical_present_except_learning: true, helpful_history_action: Offer, refusal_history_action: Leave, history_free_action: Leave, helpful_history_outcome: Agreement, refusal_history_outcome: Withdrawal }
+
+Separate measurements: Metrics { actions: {"Accept": 225, "Leave": 116, "Offer": 238, "Refuse": 170, "Request": 230}, outcomes: {"Agreement": 225, "Refusal": 170, "Withdrawal": 116}, learned_decisions: 5, decisions_changed_by_learning_ablation: 1, divergent_interpretation_events: 395, positive_relationships: 442, negative_relationships: 172, max_memory_len: 4, total_events: 979 }
+Human output is capped per stage; JSON retains every agent/event.
+Interpretations and utility scores are model hypotheses, not psychological facts.

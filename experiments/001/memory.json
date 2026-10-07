@@ -1,0 +1,6 @@
+{
+  "peak_observed_working_set_bytes": 6770688,
+  "method": "Windows PeakWorkingSet64 polled every 10ms on standalone throughput process; includes runtime, setup and retained history; not per-agent allocation",
+  "platform": "Microsoft Windows NT 10.0.26100.0",
+  "logical_processors": 24
+}
