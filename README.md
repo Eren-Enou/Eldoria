@@ -48,6 +48,11 @@ encounters produce agreement, refusal, and withdrawal. See
 
 ## Architecture and verification
 
+The [001–008 contract and coverage map](docs/experiment-contract-001-008.md)
+documents mode-specific locality, retention, persistent consequences, exact bounds
+and regression coverage. Verify all eight finalized modes without writing archives:
+`cargo run --release --locked -j 1 --example validate_contract`.
+
 One cohesive Agent ECS component, resources for ordered scenes/history/clock, and
 one single-threaded scheduled resolver keep this first experiment small. A pure
 replaceable utility policy sees only the actor and its observation. Five actions

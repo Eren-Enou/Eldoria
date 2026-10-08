@@ -1,5 +1,13 @@
 # World of Individuals engineering instructions
 
+Cross-experiment enforcement map: `docs/experiment-contract-001-008.md`.
+Preserve its mode-specific retention contracts: episode eviction does not erase
+separately established trust, expectations, concerns or legacy evidence consequences.
+Never recover unavailable cognition merely from observer history. Run the read-only
+`cargo run --release --locked -j 1 --example validate_contract` archive/replay gate
+alongside required checks; never regenerate frozen experiment evidence in place
+for an integrity audit.
+
 Build progressively toward a persistent fictional world. Experiment 001 is only
 resource interaction, subjective memory, and subsequent behavioral consequences.
 Keep systems replaceable; do not add speculative civilization or Observer/Book UI.
