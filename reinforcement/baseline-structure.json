@@ -1,0 +1,42 @@
+[
+  {
+    "duplicated_base_inputs_bytes": 67701,
+    "duplicated_decisions_bytes": 151801,
+    "duplicated_responses_bytes": 54515,
+    "events": 249,
+    "information": 2,
+    "inquiry_bytes": 321418,
+    "inquiry_record_bytes": 308207,
+    "legacy_bytes": 1305044,
+    "live_cells": 32,
+    "live_concerns": 25,
+    "live_knowledge": 0,
+    "live_signatures": 2,
+    "population": 100,
+    "provenance_bytes": 372288,
+    "provenance_receipts": 0,
+    "queries": 300,
+    "query_bytes": 368062,
+    "roots": 0
+  },
+  {
+    "duplicated_base_inputs_bytes": 664916,
+    "duplicated_decisions_bytes": 1457716,
+    "duplicated_responses_bytes": 403323,
+    "events": 2432,
+    "information": 43,
+    "inquiry_bytes": 2971081,
+    "inquiry_record_bytes": 2855784,
+    "legacy_bytes": 11952309,
+    "live_cells": 225,
+    "live_concerns": 184,
+    "live_knowledge": 0,
+    "live_signatures": 30,
+    "population": 1000,
+    "provenance_bytes": 3483413,
+    "provenance_receipts": 0,
+    "queries": 3000,
+    "query_bytes": 3441387,
+    "roots": 0
+  }
+]

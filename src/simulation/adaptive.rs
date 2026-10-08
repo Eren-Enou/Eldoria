@@ -2,7 +2,7 @@
 use super::*;
 use crate::inquiry::{self as q, Inquiry, InquiryPolicy};
 
-fn signature(info: &InformationScene) -> q::Signature {
+pub(super) fn signature(info: &InformationScene) -> q::Signature {
     q::Signature {
         event: info.event,
         origin: match info.kind {
@@ -116,13 +116,22 @@ impl Simulation {
             food <= 1 && hunger >= 60,
             &sensor,
         );
-        if self.world.resource::<Cognition>().information.iter().any(|i| i.event == event && i.speaker == source
-            && matches!(i.kind, EvidenceKind::Fallible { source: s, scarce, .. } if s == channel && scarce != proposed)) {
-            return Err("received evidence content cannot be rewritten under the same provenance".into());
+        let listener = original.participants[1 - speaker_index];
+        let received = self
+            .world
+            .resource::<HistoryIndex>()
+            .sources
+            .get(&(event, source, listener, channel));
+        if matches!(received,Some(EvidenceKind::Fallible{scarce,..}) if *scarce != proposed) {
+            return Err(
+                "received evidence content cannot be rewritten under the same provenance".into(),
+            );
         }
-        if self.world.resource::<Cognition>().information.iter().any(|i| i.event == event && i.speaker == source
-            && matches!(i.kind, EvidenceKind::Fallible { source: s, reliability, .. } if s == channel && reliability != sensor.reliability)) {
-            return Err("received evidence quality cannot be rewritten under the same provenance".into());
+        if matches!(received,Some(EvidenceKind::Fallible{reliability,..}) if *reliability != sensor.reliability)
+        {
+            return Err(
+                "received evidence quality cannot be rewritten under the same provenance".into(),
+            );
         }
         let mut state = self.world.resource_mut::<Inquiry>();
         let items = state.capabilities.entry(source).or_default();
@@ -224,7 +233,7 @@ impl Simulation {
         }
         Ok(())
     }
-    fn advertise_opportunities(&mut self, owner: AgentId, available: &[AgentId]) {
+    pub(super) fn advertise_opportunities(&mut self, owner: AgentId, available: &[AgentId]) {
         let concerns = self
             .world
             .resource::<Concerns>()
@@ -306,6 +315,13 @@ impl Simulation {
         scene: u64,
         meeting: Option<u64>,
     ) {
+        if self
+            .world
+            .contains_resource::<crate::provenance::Provenance>()
+        {
+            self.provenance_follow(owner, available, scene, meeting);
+            return;
+        }
         for &source in available {
             self.world.resource_mut::<Inquiry>().contact(owner, source);
         }
@@ -560,7 +576,7 @@ impl Simulation {
                 food_before,
             });
     }
-    fn inquiry_response(
+    pub(super) fn inquiry_response(
         &mut self,
         owner: AgentId,
         source: AgentId,
@@ -714,8 +730,9 @@ impl Simulation {
                         )
                     })
                     .collect();
-                let incompatible = readings.iter().any(|&(ch,observed)|self.world.resource::<Cognition>().information.iter().any(|i|i.event==concern.event && i.speaker==source && i.listener==owner
-                    && matches!(i.kind,EvidenceKind::Fallible{source:s,scarce,reliability} if s==ch && (scarce!=observed || reliability!=sensor.reliability))));
+                let incompatible = readings.iter().any(|&(ch,observed)|
+                    matches!(self.world.resource::<HistoryIndex>().sources.get(&(concern.event,source,owner,ch)),
+                        Some(EvidenceKind::Fallible{scarce,reliability,..}) if *scarce!=observed || *reliability!=sensor.reliability));
                 if incompatible {
                     self.world.resource_mut::<Runtime>().tick += 1;
                     return q::Response {

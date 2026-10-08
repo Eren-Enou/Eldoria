@@ -176,3 +176,29 @@ novelty categories, source introduction, voluntary offers, invalid actions,
 provenance, all local storage caps, learning reconstruction and time/resource
 accounting. Dedicated results, compatibility and matched population performance
 evidence are under experiments/006. Experiment 007 is not implemented.
+
+## Experiment 007 — provenance-aware testimony (2026-10-07)
+
+Read the repository instructions, architecture, constitution and 001–006 reports.
+Started from a clean checkout. Saved the existing benchmark under 007 and documented
+the hypothesis before behavior changes. Preserved prior defaults, schemas and evidence.
+
+Added opt-in bounded provenance knowledge/hints/comparison keys, observer-only roots
+and parent receipts, voluntary instrumented inspection and structured exchange, and
+local inquiry overlap factors. Later attribution uses the established bounded belief,
+memory revision, concern and saturated trust-replay machinery. The real communicator
+is distinct from the native refusal subject. Learning references native Inquiry IDs.
+Ordinary refusers keep their existing response channel; no gossip scheduler was added.
+
+Fourteen controlled variants across 128 seeds replay exactly. Independent corroboration
+adds value, known relay does not, hidden relay overcounts, disclosure reduces confidence,
+independent conflict remains uncertain, and independent wrong readings can falsely close
+a concern. Credibility is conditioned through actual fallible evidence comparisons.
+Alternative-source inputs match despite independent/relay/empty private acquisitions.
+FIFO tests show forgetting can make old evidence seem independent again.
+
+Full83-test suite, formatting, warning-denied all-target Clippy, release evaluator and
+benchmark pass. All 001–006 archives compare equal; the natural population preserves
+006 resource events, agents and native cognition. Performance/storage and prospective
+legacy-evidence limits are documented in the dedicated007 report. Recommendation:
+uncertain and potentially misleading attribution; Experiment008 is not implemented.

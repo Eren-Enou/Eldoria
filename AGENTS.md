@@ -64,3 +64,15 @@ are voluntary; configuration never schedules a message. Mark attempted offers so
 unfulfilled promises cannot renew value indefinitely. Keep evidence provenance
 immutable, sensor channels/seed/outcomes private to the resolver, and all old modes
 and reports intact. Save compatibility and performance evidence under 006.
+
+Experiment 007 provenance is opt-in after inquiry. Distinguish objective roots and
+relay parents from bounded locally known attribution and confidence. Never give
+policy inputs hidden roots, relay depth, sensor outcomes or a global provenance
+graph. Inspection and sharing remain voluntary; inspection samples only after a
+local decision. Explicit attribution may replace an earlier local assumption;
+hidden attribution can cause overconfidence. Keep communicator credibility separate
+from evidence independence and compare only legitimately received fallible evidence.
+Bound knowledge, hints and comparison keys at 32, audit FIFO eviction, and do not
+recover evicted acquisitions from the objective archive. Preserve native self-
+knowledge responses and all 001–006 defaults/evidence. Archive new compatibility
+under 007. Do not infer statistical independence or social emergence from root IDs.

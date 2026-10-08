@@ -424,3 +424,108 @@ This mechanism deliberately has no multi-step planner, global experts, informati
 network or language model. Future source knowledge acquisition/provenance needs
 its own experiment; the present third-source case tests exploration, not successful
 relay or independent corroboration.
+## Experiment 007: bounded provenance and corroboration
+
+The opt-in `provenance.rs` resource/pure policies and isolated
+`simulation/provenance.rs` resolver extend Inquiry. There are no new dependencies,
+Agent fields, default behaviors or old serialized fields. Experiment 007 snapshots
+wrap 006 snapshots and the new resource. The ten constitutional requirements remain:
+recorded causality; local information; retained consequences; three distinct audit
+layers; unchanged food; deterministic sorted IDs/integer scores; voluntary decisions;
+stable history references; replaceable policies; measured bounded local complexity.
+
+Objective Root: immutable ID, event, actual inspector, sampled proposition, quality,
+tick and private sensor configuration. Receipt: actual communicator/listener, root,
+parent receipt, depth, attribution channel, delivered Knowledge, local Evaluation,
+optional native cognition link, food/time and legitimate credibility comparisons.
+These objective fields are not included in inquiry or listener inputs. Flattened
+root links avoid recursive graph traversal; at most three transmission hops are
+legal (two intermediate relays).
+
+Local Knowledge: receipt, event, communicator, public message handle, proposition,
+quality and optional disclosed observation token. An unknown lineage is an explicit
+assumption keyed by speaker, never a hidden root lookup. Repeating the same provider
+acquisition preserves the public handle; later attribution replaces only matching
+event/communicator/handle assumptions. Original receipts/interpretations never change.
+Hints are voluntary metadata disclosures with quality and optional known token;
+they contain no claim. Comparison keys remember prior source/event/proposition and
+known evidence token, preventing repeated credibility credit while retained.
+Knowledge, hints and comparison keys each have FIFO capacity 32 per individual,
+with stable eviction records. Earlier bounds, including 16 inquiry episodes, remain.
+
+Inspection is an explicit retrospective encounter, not an inserted witness memory.
+The actual refuser first chooses whether to open the instrumented scarcity predicate
+from its own recorded historical circumstances. Up to seven distinct inspectors
+choose whether to inspect; decisions receive only own Agent/Profile, public event,
+quality and effort. Opening/inspection score is goal - privacy - hunger/10 - effort.
+Each inspector/event slot is immutable, including after local eviction. Sampling
+occurs in the resolver after selection, using the existing source-keyed deterministic
+sensor. One opening decision and each inspection decision cost one tick; selected
+inspection pays actual sensor effort. Repeated inspection cannot resample a slot.
+
+A provider's pure ExchangeInput contains own Agent/Profile and one own bounded
+acquisition, plus partner/event. Share score is goal - privacy - hunger/10 -
+request_cost/4; Share requires an acquisition, otherwise Silence. Resolution
+validates unchanged input, depth, immutable content, event/root/parent identity and
+attribution availability. Unavailable attribution sends no root/depth/parent to the
+listener. An available channel discloses only the token the provider actually knows;
+a provider lacking it cannot disclose the true root by consulting the archive.
+Metadata offers use the same voluntary selection. Exchange/offer costs one tick;
+native belief processing costs one extra tick for the original harmed participant.
+Inspection windows, exchange records and query records contain nested time spans;
+sum outer operations rather than counting their embedded receipts twice. Food is
+recorded before/after and never moves during these actions. Each operation closes
+after one decision/response; resource-scene bounds are unchanged.
+
+Local interpretation groups known observation tokens, otherwise remembered speakers.
+Within a group retain maximum positive and negative quality. Across ordered groups,
+accumulate each side with `total += (100-total)*quality/100`, then support is positive
+minus negative. Forgetting is applied before computing final support. This is bounded
+heuristic confidence, not Bayesian probability or proof of statistical independence.
+First information value min(quality,40); corroboration min(quality,30); independent
+conflict min(quality,30); shared lineage min(abs(support change),10), usually zero;
+revelation min(abs(support change),40). A new speaker can have zero independence/value.
+Transmitted quality is `min(acquired_quality, acquired_quality*(100+credibility)/100)`
+with credibility clamped [-40,40]. Credibility can discount a new observation but
+cannot transform shared lineage into independent evidence or improve the root.
+
+Strong explicitly attributed evidence (quality >=60) can compare prior locally
+received claims from different known tokens. Consistency gives +20*quality/100,
+conflict -30*quality/100, directed credibility clamped [-40,40]. Only retained
+comparison keys suppress repeated credit; bounded forgetting can lose that guard.
+The resolver never compares testimony to objective truth.
+
+Inquiry reuses 006 legal candidates, importance, costs, learned cells, offers and
+tie ordering. A known offered/received token already in local knowledge multiplies
+expected gain by zero; otherwise the factor is 100%. No hint means an exploratory
+prior, not certainty that a source knows something. Each selected valid response
+trains `(old+realized value)/2`; Pause preserves concern. The original refuser's
+native 006 reply path is retained when it is not relaying a new acquisition. Native
+proof signatures/attempted offers are still bounded and learned as before. New
+structured acquisitions use the provenance evaluator. They are prospective; no
+objective origins are retroactively assigned to native unsupported testimony.
+Mixed legacy/provenance confidence aggregation is not established by these trials.
+
+Locally computed support passes through the established native receipt/revision
+pipeline for the original harmed participant. The native receipt's speaker is the
+original refusal subject for historical trust replay; the provenance receipt retains
+the actual communicator. This explicit bridge preserves old schemas and correctly
+attributes the memory/trust consequence to the refusal subject. Other listeners
+retain acquisitions without receiving someone else's memory or concern. Native
+beliefs remain bounded at 16; evicted memories are not recreated. A false confidence
+closure can reopen when disclosure lowers support below 60. Trust replays ordered
+replacement contributions with original saturation semantics.
+
+Queries append native Inquiry records/episodes with real stable IDs; Cells.last_record
+always references that namespace. Provenance Query separately links its decision,
+factors and structured receipt to the Inquiry record. Native responses remain linked
+directly when used. This duplicates some bounded inputs in an unbounded audit, which
+the evaluator measures. Observer snapshots do not become agent-accessible state.
+
+Local decisions scan at most eight concerns, seven available partners, 32 acquisitions,
+32 hints and 32 cells. Knowledge grouping is O(32 log32), comparisons O(32*32).
+Parent/root lookup is O(1), with no chain walk. Preventing resampling scans the growing
+root archive; native revision/trust replay and referenced receipt scans also grow
+with history. Objective roots, windows, receipts, exchanges, queries, evictions and
+existing audits remain unbounded; relationship maps retain the earlier sparse,
+unbounded design. No persistence service or large-population optimization is added.

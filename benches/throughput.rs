@@ -5,7 +5,7 @@ use world_of_individuals::{model::Generator, simulation::Simulation};
 fn main() {
     println!("mode,population,rounds,init_ms,run_ms,records,records_per_second");
     // Workloads 6/7 compare identical three-encounter workloads with/without concerns.
-    for workload in 1..=8 {
+    for workload in 1..=9 {
         let mode = if workload >= 6 {
             workload - 2
         } else {
@@ -41,8 +41,11 @@ fn main() {
                 if mode >= 5 {
                     sim.enable_concerns().unwrap();
                 }
-                if mode == 6 {
+                if mode >= 6 {
                     sim.enable_inquiry().unwrap();
+                }
+                if mode == 7 {
+                    sim.enable_provenance().unwrap();
                 }
                 for id in (0..population).step_by(2) {
                     sim.add_scene([id, id + 1], 1, 6).unwrap();
@@ -88,6 +91,9 @@ fn main() {
                 }
                 if mode == 6 {
                     events += sim.inquiry().unwrap().records.len();
+                }
+                if mode == 7 {
+                    events += sim.provenance().unwrap().queries.len();
                 }
                 events += sim.events().len();
             }

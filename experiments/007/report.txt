@@ -1,0 +1,258 @@
+
+independent seed42
+concern0 owner0 event1 importance78 uncertainty100 Open
+receipt0 event1 2->2 root0 parentNone knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt1 event1 3->3 root1 parentNone knownSome(1) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt2 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveSome(0) credibility[]
+receipt3 event1 3->0 root1 parentSome(1) knownSome(1) new_speaker=true independent=true Corroboration value30 support50->75 cognitiveSome(1) credibility[]
+
+independent_wrong seed42
+concern0 owner0 event1 importance78 uncertainty100 Open
+receipt0 event1 2->2 root0 parentNone knownSome(0) new_speaker=true independent=true First value40 support0->-50 cognitiveNone credibility[]
+receipt1 event1 3->3 root1 parentNone knownSome(1) new_speaker=true independent=true First value40 support0->-50 cognitiveNone credibility[]
+receipt2 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->-50 cognitiveSome(0) credibility[]
+receipt3 event1 3->0 root1 parentSome(1) knownSome(1) new_speaker=true independent=true Corroboration value30 support-50->-75 cognitiveSome(1) credibility[]
+
+relay seed42
+concern0 owner0 event1 importance78 uncertainty100 Open
+receipt0 event1 2->2 root0 parentNone knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt1 event1 2->3 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt2 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveSome(0) credibility[]
+receipt3 event1 3->0 root0 parentSome(1) knownSome(0) new_speaker=true independent=false Shared value0 support50->50 cognitiveSome(1) credibility[]
+
+three_speakers seed42
+concern0 owner0 event1 importance78 uncertainty100 Open
+receipt0 event1 2->2 root0 parentNone knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt1 event1 2->3 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt2 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveSome(0) credibility[]
+receipt3 event1 3->0 root0 parentSome(1) knownSome(0) new_speaker=true independent=false Shared value0 support50->50 cognitiveSome(1) credibility[]
+receipt4 event1 3->4 root0 parentSome(1) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt5 event1 4->0 root0 parentSome(4) knownSome(0) new_speaker=true independent=false Shared value0 support50->50 cognitiveSome(2) credibility[]
+
+hidden seed42
+concern0 owner0 event1 importance78 uncertainty100 Open
+receipt0 event1 2->2 root0 parentNone knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt1 event1 2->3 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt2 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveSome(0) credibility[]
+receipt3 event1 3->0 root0 parentSome(1) knownNone new_speaker=true independent=true Corroboration value30 support50->75 cognitiveSome(1) credibility[]
+
+revelation seed42
+concern0 owner0 event1 importance78 uncertainty100 Open
+receipt0 event1 2->2 root0 parentNone knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt1 event1 2->3 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt2 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveSome(0) credibility[]
+receipt3 event1 3->0 root0 parentSome(1) knownNone new_speaker=true independent=true Corroboration value30 support50->75 cognitiveSome(1) credibility[]
+receipt4 event1 3->0 root0 parentSome(1) knownSome(0) new_speaker=false independent=false Revelation value25 support75->50 cognitiveSome(2) credibility[]
+
+conflict seed42
+concern0 owner0 event1 importance78 uncertainty100 Open
+receipt0 event1 2->2 root0 parentNone knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt1 event1 3->3 root1 parentNone knownSome(1) new_speaker=true independent=true First value40 support0->-50 cognitiveNone credibility[]
+receipt2 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveSome(0) credibility[]
+receipt3 event1 3->0 root1 parentSome(1) knownSome(1) new_speaker=true independent=true Conflict value30 support50->0 cognitiveSome(1) credibility[]
+
+credibility_independence seed42
+concern0 owner0 event1 importance78 uncertainty100 Open
+receipt0 event1 2->2 root0 parentNone knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt1 event1 3->3 root1 parentNone knownSome(1) new_speaker=true independent=true First value40 support0->-50 cognitiveNone credibility[]
+receipt2 event1 4->4 root2 parentNone knownSome(2) new_speaker=true independent=true First value40 support0->80 cognitiveNone credibility[]
+receipt3 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveSome(0) credibility[]
+receipt4 event1 3->0 root1 parentSome(1) knownSome(1) new_speaker=true independent=true Conflict value30 support50->0 cognitiveSome(1) credibility[]
+receipt5 event1 4->0 root2 parentSome(2) knownSome(2) new_speaker=true independent=true Conflict value30 support0->40 cognitiveSome(2) credibility[(2, 0, 16), (3, 0, -24)]
+receipt6 event3 3->3 root3 parentNone knownSome(3) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt7 event3 4->4 root4 parentNone knownSome(4) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt8 event3 4->2 root4 parentSome(7) knownSome(4) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt9 event3 4->0 root4 parentSome(7) knownSome(4) new_speaker=true independent=true First value40 support0->50 cognitiveSome(3) credibility[]
+receipt10 event3 2->0 root4 parentSome(8) knownSome(4) new_speaker=true independent=false Shared value0 support50->50 cognitiveSome(4) credibility[]
+receipt11 event3 3->0 root3 parentSome(6) knownSome(3) new_speaker=true independent=true Corroboration value30 support50->69 cognitiveSome(5) credibility[]
+query0 Ask { concern: 0, source: 1, strategy: Direct } value0 cellsNone->Some(Cell { concern: 0, source: 1, strategy: Direct, attempts: 1, expected: 27, last_record: 0, attempted_offer: None })
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 1, strategy: Direct } importance78 gain55 benefit42 cost19 score23
+  Ask { concern: 0, source: 1, strategy: Evidence } importance78 gain65 benefit50 cost37 score13
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 1, strategy: Direct }, credibility: 0, known: None, independence: 100, expected: 55 }, Factor { action: Ask { concern: 0, source: 1, strategy: Evidence }, credibility: 0, known: None, independence: 100, expected: 65 }]
+query2 Ask { concern: 1, source: 3, strategy: Direct } value30 cellsNone->Some(Cell { concern: 1, source: 3, strategy: Direct, attempts: 1, expected: 42, last_record: 2, attempted_offer: None })
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain0 benefit0 cost13 score-13
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain0 benefit0 cost31 score-31
+  Ask { concern: 0, source: 3, strategy: Direct } importance78 gain0 benefit0 cost13 score-13
+  Ask { concern: 0, source: 3, strategy: Evidence } importance78 gain0 benefit0 cost31 score-31
+  Ask { concern: 1, source: 2, strategy: Direct } importance78 gain0 benefit0 cost13 score-13
+  Ask { concern: 1, source: 2, strategy: Evidence } importance78 gain0 benefit0 cost31 score-31
+  Ask { concern: 1, source: 3, strategy: Direct } importance78 gain53 benefit41 cost13 score28
+  Ask { concern: 1, source: 3, strategy: Evidence } importance78 gain63 benefit49 cost31 score18
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 16, known: Some(0), independence: 0, expected: 0 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 16, known: Some(0), independence: 0, expected: 0 }, Factor { action: Ask { concern: 0, source: 3, strategy: Direct }, credibility: -24, known: Some(1), independence: 0, expected: 0 }, Factor { action: Ask { concern: 0, source: 3, strategy: Evidence }, credibility: -24, known: Some(1), independence: 0, expected: 0 }, Factor { action: Ask { concern: 1, source: 2, strategy: Direct }, credibility: 16, known: Some(4), independence: 0, expected: 0 }, Factor { action: Ask { concern: 1, source: 2, strategy: Evidence }, credibility: 16, known: Some(4), independence: 0, expected: 0 }, Factor { action: Ask { concern: 1, source: 3, strategy: Direct }, credibility: -24, known: Some(3), independence: 100, expected: 53 }, Factor { action: Ask { concern: 1, source: 3, strategy: Evidence }, credibility: -24, known: Some(3), independence: 100, expected: 63 }]
+
+alternative_independent seed42
+concern0 owner0 event1 importance78 uncertainty100 Open
+receipt0 event1 2->2 root0 parentNone knownSome(0) new_speaker=true independent=true First value40 support0->40 cognitiveNone credibility[]
+receipt1 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->40 cognitiveSome(0) credibility[]
+receipt2 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=false independent=false Shared value0 support40->40 cognitiveSome(1) credibility[]
+receipt3 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=false independent=false Shared value0 support40->40 cognitiveSome(2) credibility[]
+receipt4 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=false independent=false Shared value0 support40->40 cognitiveSome(3) credibility[]
+receipt5 event1 3->3 root1 parentNone knownSome(1) new_speaker=true independent=true First value40 support0->40 cognitiveNone credibility[]
+receipt6 event1 3->0 root1 parentSome(5) knownSome(1) new_speaker=true independent=true Corroboration value30 support40->64 cognitiveSome(4) credibility[]
+query0 Ask { concern: 0, source: 2, strategy: Direct } value0 cellsNone->Some(Cell { concern: 0, source: 2, strategy: Direct, attempts: 1, expected: 27, last_record: 0, attempted_offer: None })
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain55 benefit42 cost13 score29
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain65 benefit50 cost31 score19
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 55 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 65 }]
+query2 Ask { concern: 0, source: 2, strategy: Evidence } value0 cellsNone->Some(Cell { concern: 0, source: 2, strategy: Evidence, attempts: 1, expected: 32, last_record: 2, attempted_offer: None })
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain27 benefit21 cost13 score8
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain65 benefit50 cost31 score19
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 27 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 65 }]
+query4 Ask { concern: 0, source: 2, strategy: Direct } value0 cellsSome(Cell { concern: 0, source: 2, strategy: Direct, attempts: 1, expected: 27, last_record: 0, attempted_offer: None })->Some(Cell { concern: 0, source: 2, strategy: Direct, attempts: 2, expected: 13, last_record: 4, attempted_offer: None })
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain27 benefit21 cost13 score8
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 27 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query6 Pause value0 cellsNone->None
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain13 benefit10 cost13 score-3
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 13 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query8 Pause value0 cellsNone->None
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain13 benefit10 cost13 score-3
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 13 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query10 Pause value0 cellsNone->None
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain13 benefit10 cost13 score-3
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 13 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query12 Pause value0 cellsNone->None
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain13 benefit10 cost13 score-3
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 13 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query14 Ask { concern: 0, source: 3, strategy: Direct } value30 cellsNone->Some(Cell { concern: 0, source: 3, strategy: Direct, attempts: 1, expected: 42, last_record: 14, attempted_offer: None })
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain0 benefit0 cost13 score-13
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain0 benefit0 cost31 score-31
+  Ask { concern: 0, source: 3, strategy: Direct } importance78 gain55 benefit42 cost13 score29
+  Ask { concern: 0, source: 3, strategy: Evidence } importance78 gain65 benefit50 cost31 score19
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 0, expected: 0 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 0, expected: 0 }, Factor { action: Ask { concern: 0, source: 3, strategy: Direct }, credibility: 0, known: None, independence: 100, expected: 55 }, Factor { action: Ask { concern: 0, source: 3, strategy: Evidence }, credibility: 0, known: None, independence: 100, expected: 65 }]
+
+alternative_relay seed42
+concern0 owner0 event1 importance78 uncertainty100 Open
+receipt0 event1 2->2 root0 parentNone knownSome(0) new_speaker=true independent=true First value40 support0->40 cognitiveNone credibility[]
+receipt1 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->40 cognitiveSome(0) credibility[]
+receipt2 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=false independent=false Shared value0 support40->40 cognitiveSome(1) credibility[]
+receipt3 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=false independent=false Shared value0 support40->40 cognitiveSome(2) credibility[]
+receipt4 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=false independent=false Shared value0 support40->40 cognitiveSome(3) credibility[]
+receipt5 event1 2->3 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->40 cognitiveNone credibility[]
+receipt6 event1 3->0 root0 parentSome(5) knownSome(0) new_speaker=true independent=false Shared value0 support40->40 cognitiveSome(4) credibility[]
+query0 Ask { concern: 0, source: 2, strategy: Direct } value0 cellsNone->Some(Cell { concern: 0, source: 2, strategy: Direct, attempts: 1, expected: 27, last_record: 0, attempted_offer: None })
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain55 benefit42 cost13 score29
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain65 benefit50 cost31 score19
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 55 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 65 }]
+query2 Ask { concern: 0, source: 2, strategy: Evidence } value0 cellsNone->Some(Cell { concern: 0, source: 2, strategy: Evidence, attempts: 1, expected: 32, last_record: 2, attempted_offer: None })
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain27 benefit21 cost13 score8
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain65 benefit50 cost31 score19
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 27 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 65 }]
+query4 Ask { concern: 0, source: 2, strategy: Direct } value0 cellsSome(Cell { concern: 0, source: 2, strategy: Direct, attempts: 1, expected: 27, last_record: 0, attempted_offer: None })->Some(Cell { concern: 0, source: 2, strategy: Direct, attempts: 2, expected: 13, last_record: 4, attempted_offer: None })
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain27 benefit21 cost13 score8
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 27 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query6 Pause value0 cellsNone->None
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain13 benefit10 cost13 score-3
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 13 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query8 Pause value0 cellsNone->None
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain13 benefit10 cost13 score-3
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 13 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query10 Pause value0 cellsNone->None
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain13 benefit10 cost13 score-3
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 13 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query12 Pause value0 cellsNone->None
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain13 benefit10 cost13 score-3
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 13 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query14 Ask { concern: 0, source: 3, strategy: Direct } value0 cellsNone->Some(Cell { concern: 0, source: 3, strategy: Direct, attempts: 1, expected: 27, last_record: 14, attempted_offer: None })
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain0 benefit0 cost13 score-13
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain0 benefit0 cost31 score-31
+  Ask { concern: 0, source: 3, strategy: Direct } importance78 gain55 benefit42 cost13 score29
+  Ask { concern: 0, source: 3, strategy: Evidence } importance78 gain65 benefit50 cost31 score19
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 0, expected: 0 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 0, expected: 0 }, Factor { action: Ask { concern: 0, source: 3, strategy: Direct }, credibility: 0, known: None, independence: 100, expected: 55 }, Factor { action: Ask { concern: 0, source: 3, strategy: Evidence }, credibility: 0, known: None, independence: 100, expected: 65 }]
+
+alternative_empty seed42
+concern0 owner0 event1 importance78 uncertainty100 Open
+receipt0 event1 2->2 root0 parentNone knownSome(0) new_speaker=true independent=true First value40 support0->40 cognitiveNone credibility[]
+receipt1 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->40 cognitiveSome(0) credibility[]
+receipt2 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=false independent=false Shared value0 support40->40 cognitiveSome(1) credibility[]
+receipt3 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=false independent=false Shared value0 support40->40 cognitiveSome(2) credibility[]
+receipt4 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=false independent=false Shared value0 support40->40 cognitiveSome(3) credibility[]
+query0 Ask { concern: 0, source: 2, strategy: Direct } value0 cellsNone->Some(Cell { concern: 0, source: 2, strategy: Direct, attempts: 1, expected: 27, last_record: 0, attempted_offer: None })
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain55 benefit42 cost13 score29
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain65 benefit50 cost31 score19
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 55 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 65 }]
+query2 Ask { concern: 0, source: 2, strategy: Evidence } value0 cellsNone->Some(Cell { concern: 0, source: 2, strategy: Evidence, attempts: 1, expected: 32, last_record: 2, attempted_offer: None })
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain27 benefit21 cost13 score8
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain65 benefit50 cost31 score19
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 27 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 65 }]
+query4 Ask { concern: 0, source: 2, strategy: Direct } value0 cellsSome(Cell { concern: 0, source: 2, strategy: Direct, attempts: 1, expected: 27, last_record: 0, attempted_offer: None })->Some(Cell { concern: 0, source: 2, strategy: Direct, attempts: 2, expected: 13, last_record: 4, attempted_offer: None })
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain27 benefit21 cost13 score8
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 27 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query6 Pause value0 cellsNone->None
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain13 benefit10 cost13 score-3
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 13 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query8 Pause value0 cellsNone->None
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain13 benefit10 cost13 score-3
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 13 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query10 Pause value0 cellsNone->None
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain13 benefit10 cost13 score-3
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 13 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query12 Pause value0 cellsNone->None
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain13 benefit10 cost13 score-3
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain32 benefit24 cost31 score-7
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 100, expected: 13 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 100, expected: 32 }]
+query14 Ask { concern: 0, source: 3, strategy: Direct } value0 cellsNone->Some(Cell { concern: 0, source: 3, strategy: Direct, attempts: 1, expected: 27, last_record: 14, attempted_offer: None })
+  Pause importance0 gain0 benefit0 cost0 score0
+  Ask { concern: 0, source: 2, strategy: Direct } importance78 gain0 benefit0 cost13 score-13
+  Ask { concern: 0, source: 2, strategy: Evidence } importance78 gain0 benefit0 cost31 score-31
+  Ask { concern: 0, source: 3, strategy: Direct } importance78 gain55 benefit42 cost13 score29
+  Ask { concern: 0, source: 3, strategy: Evidence } importance78 gain65 benefit50 cost31 score19
+  lineage/credibility factors [Factor { action: Ask { concern: 0, source: 2, strategy: Direct }, credibility: 0, known: Some(0), independence: 0, expected: 0 }, Factor { action: Ask { concern: 0, source: 2, strategy: Evidence }, credibility: 0, known: Some(0), independence: 0, expected: 0 }, Factor { action: Ask { concern: 0, source: 3, strategy: Direct }, credibility: 0, known: None, independence: 100, expected: 55 }, Factor { action: Ask { concern: 0, source: 3, strategy: Evidence }, credibility: 0, known: None, independence: 100, expected: 65 }]
+
+provenance_disabled seed42
+concern0 owner0 event1 importance78 uncertainty100 Open
+receipt0 event1 2->2 root0 parentNone knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt1 event1 2->3 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt2 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveSome(0) credibility[]
+receipt3 event1 3->0 root0 parentSome(1) knownSome(0) new_speaker=true independent=true Corroboration value30 support50->75 cognitiveSome(1) credibility[]
+
+speaker_disabled_independent seed42
+concern0 owner0 event1 importance78 uncertainty100 Open
+receipt0 event1 2->2 root0 parentNone knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt1 event1 3->3 root1 parentNone knownSome(1) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt2 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveSome(0) credibility[]
+receipt3 event1 3->0 root1 parentSome(1) knownSome(1) new_speaker=true independent=true Corroboration value30 support50->75 cognitiveSome(1) credibility[]
+
+speaker_disabled_relay seed42
+concern0 owner0 event1 importance78 uncertainty100 Open
+receipt0 event1 2->2 root0 parentNone knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt1 event1 2->3 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveNone credibility[]
+receipt2 event1 2->0 root0 parentSome(0) knownSome(0) new_speaker=true independent=true First value40 support0->50 cognitiveSome(0) credibility[]
+receipt3 event1 3->0 root0 parentSome(1) knownSome(0) new_speaker=true independent=false Shared value0 support50->50 cognitiveSome(1) credibility[]

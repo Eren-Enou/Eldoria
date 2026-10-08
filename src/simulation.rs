@@ -7,6 +7,7 @@ use crate::foresight::{
     self, Context, ForecastRecord, Foresight, Plan, PredictionError, Predictor, Reading, Sensor,
     Settings,
 };
+use crate::history::HistoryIndex;
 use crate::intentional::{
     self, Conversation, Intentional, Profile, TalkAction, TalkDecision, TalkInput, TalkMemory,
     TalkPolicy, TalkRecord,
@@ -16,8 +17,9 @@ use bevy_ecs::{
     prelude::{Entity, Resource, Schedule, World},
     schedule::SingleThreadedExecutor,
 };
-use std::collections::BTreeMap;
+use std::collections::{BTreeMap, BTreeSet};
 mod adaptive;
+mod provenance;
 
 #[derive(Resource, Default)]
 struct Index(BTreeMap<AgentId, Entity>);
@@ -29,6 +31,8 @@ struct Runtime {
     circumstances: Vec<[(u32, i32); 2]>,
     initial_trust: BTreeMap<AgentId, BTreeMap<AgentId, i32>>,
     conversation_cursor: usize,
+    active: BTreeSet<usize>,
+    busy: BTreeSet<AgentId>,
 }
 #[derive(Resource)]
 struct Policy(pub fn(&Agent, &Observation) -> Decision);
@@ -69,6 +73,7 @@ impl Simulation {
             ..Default::default()
         });
         world.insert_resource(Cognition::default());
+        world.insert_resource(HistoryIndex::default());
         world.insert_resource(Policy(utility_policy));
         let mut schedule = Schedule::default();
         schedule.set_executor(SingleThreadedExecutor::new());
@@ -101,13 +106,7 @@ impl Simulation {
         {
             return Err("invalid intervention bounds".into());
         }
-        if self
-            .world
-            .resource::<Runtime>()
-            .scenes
-            .iter()
-            .any(|s| s.outcome.is_none())
-        {
+        if !self.world.resource::<Runtime>().active.is_empty() {
             return Err("intervene only between scenes".into());
         }
         let entity = *self
@@ -138,14 +137,12 @@ impl Simulation {
             return Err("amount must be positive and turn budget in 1..=100".into());
         }
         let mut runtime = self.world.resource_mut::<Runtime>();
-        if runtime
-            .scenes
-            .iter()
-            .any(|s| s.outcome.is_none() && s.participants.iter().any(|p| participants.contains(p)))
-        {
+        if participants.iter().any(|p| runtime.busy.contains(p)) {
             return Err("participant already in an active scene".into());
         }
         let id = runtime.scenes.len() as u64;
+        runtime.active.insert(id as usize);
+        runtime.busy.extend(participants);
         runtime.scenes.push(Scene {
             id,
             participants,
@@ -158,13 +155,7 @@ impl Simulation {
         Ok(id)
     }
     pub fn run(&mut self) {
-        while self
-            .world
-            .resource::<Runtime>()
-            .scenes
-            .iter()
-            .any(|s| s.outcome.is_none())
-        {
+        while !self.world.resource::<Runtime>().active.is_empty() {
             self.schedule.run(&mut self.world);
         }
         if self.world.contains_resource::<Concerns>() {
@@ -185,6 +176,43 @@ impl Simulation {
     }
     pub fn events(&self) -> Vec<Event> {
         self.world.resource::<Runtime>().events.clone()
+    }
+    /// Observer-only integrity check. No policy can request an index or recover
+    /// forgotten cognition through it. Rebuilding is deliberately an offline scan.
+    pub fn validate_history_indexes(&self) -> Result<(), String> {
+        let runtime = self.world.resource::<Runtime>();
+        let active: BTreeSet<_> = runtime
+            .scenes
+            .iter()
+            .enumerate()
+            .filter(|(_, s)| s.outcome.is_none())
+            .map(|(i, _)| i)
+            .collect();
+        let busy: BTreeSet<_> = active
+            .iter()
+            .flat_map(|&i| runtime.scenes[i].participants)
+            .collect();
+        if active != runtime.active || busy != runtime.busy {
+            return Err("active scene index disagrees with history".into());
+        }
+        let mut rebuilt = HistoryIndex::default();
+        for event in &runtime.events {
+            rebuilt.event(event, &runtime.initial_trust);
+        }
+        for info in &self.world.resource::<Cognition>().information {
+            rebuilt.information(info);
+        }
+        if let Some(state) = self.world.get_resource::<crate::provenance::Provenance>() {
+            for root in &state.roots {
+                rebuilt
+                    .inspection_slots
+                    .insert((root.event, root.observer), root.id);
+            }
+        }
+        if rebuilt != *self.world.resource::<HistoryIndex>() {
+            return Err("derived history index disagrees with authoritative records".into());
+        }
+        Ok(())
     }
     pub fn scenes(&self) -> Vec<Scene> {
         self.world.resource::<Runtime>().scenes.clone()
@@ -947,13 +975,7 @@ impl Simulation {
     }
 
     fn require_idle(&self) -> Result<(), String> {
-        if self
-            .world
-            .resource::<Runtime>()
-            .scenes
-            .iter()
-            .any(|s| s.outcome.is_none())
-        {
+        if !self.world.resource::<Runtime>().active.is_empty() {
             Err("finish active resource scenes first".into())
         } else {
             Ok(())
@@ -1015,6 +1037,18 @@ impl Simulation {
         kind: EvidenceKind,
         testimony_weight: Option<i32>,
     ) -> Result<InformationScene, String> {
+        self.receive_information_support(speaker, listener, event, kind, testimony_weight, None)
+    }
+
+    fn receive_information_support(
+        &mut self,
+        speaker: AgentId,
+        listener: AgentId,
+        event: u64,
+        kind: EvidenceKind,
+        testimony_weight: Option<i32>,
+        local_support: Option<i32>,
+    ) -> Result<InformationScene, String> {
         self.require_idle()?;
         if let EvidenceKind::Fallible {
             reliability,
@@ -1027,16 +1061,10 @@ impl Simulation {
             }
             if self
                 .world
-                .resource::<Cognition>()
-                .information
-                .iter()
-                .any(|i| {
-                    i.event == event
-                        && i.speaker == speaker
-                        && i.listener == listener
-                        && matches!(i.kind,EvidenceKind::Fallible{source:s,..} if s==source)
-                        && i.kind != kind
-                })
+                .resource::<HistoryIndex>()
+                .sources
+                .get(&(event, speaker, listener, source))
+                .is_some_and(|old| *old != kind)
             {
                 return Err("a received source cannot be rewritten".into());
             }
@@ -1073,13 +1101,13 @@ impl Simulation {
         let trust_before = *agent.trust.get(&speaker).unwrap_or(&0);
         // Freeze credibility for this claim at first contact: a claim cannot
         // bootstrap its own credibility through the trust revision it causes.
-        let credibility_trust = self
+        let summary = self
             .world
-            .resource::<Cognition>()
-            .information
-            .iter()
-            .find(|i| i.event == event && i.listener == listener)
-            .map_or(trust_before, |i| i.trust_before);
+            .resource::<HistoryIndex>()
+            .evidence
+            .get(&(event, listener))
+            .cloned();
+        let credibility_trust = summary.as_ref().map_or(trust_before, |s| s.first_trust);
         let reliability = match kind {
             EvidenceKind::Testimony { .. } => {
                 testimony_weight.unwrap_or_else(|| (50 + credibility_trust / 2).clamp(0, 90))
@@ -1089,21 +1117,15 @@ impl Simulation {
         };
         let mut cognition = self.world.remove_resource::<Cognition>().unwrap();
         let id = cognition.information.len() as u64;
-        let mut positive = 0;
-        let mut negative = 0;
-        let mut has_readings = false;
-        for evidence in cognition
-            .information
-            .iter()
-            .filter(|i| i.event == event && i.listener == listener)
-            .map(|i| i.kind)
-            .chain(std::iter::once(kind))
+        let mut positive = summary.as_ref().map_or(0, |s| s.positive);
+        let mut negative = summary.as_ref().map_or(0, |s| s.negative);
+        let mut has_readings = summary.as_ref().is_some_and(|s| s.has_readings);
         {
             if let EvidenceKind::Fallible {
                 scarce,
                 reliability,
                 ..
-            } = evidence
+            } = kind
             {
                 has_readings = true;
                 if scarce {
@@ -1115,7 +1137,14 @@ impl Simulation {
         }
         let beliefs = cognition.beliefs.entry(listener).or_default();
         let before = beliefs.iter().find(|b| b.event == event).cloned();
-        let after = if has_readings && kind != EvidenceKind::Disclosure {
+        let after = if let Some(support) = local_support {
+            Belief {
+                event,
+                subject: speaker,
+                support,
+                evidence: id,
+            }
+        } else if has_readings && kind != EvidenceKind::Disclosure {
             Belief {
                 event,
                 subject: speaker,
@@ -1155,29 +1184,15 @@ impl Simulation {
                 });
             }
         }
-        // Replay the ordered ledger with revised contributions substituted. This
-        // preserves clamping semantics even for saturated trust and evicted episodes.
+        // Replace one contribution in the derived ordered relationship ledger;
+        // replay only its changed suffix, preserving every original clamp.
         if let Some(change) = &revision {
-            let mut replacements = BTreeMap::new();
-            for info in &cognition.information {
-                if info.listener == listener
-                    && info.speaker == speaker
-                    && let Some(r) = &info.revision
-                {
-                    replacements.insert(info.event, r.after.valence);
-                }
-            }
-            replacements.insert(event, change.after.valence);
-            let runtime = self.world.resource::<Runtime>();
-            let mut trust = *runtime.initial_trust[&listener].get(&speaker).unwrap_or(&0);
-            for e in &runtime.events {
-                if let Some(m) = e.interpretations.iter().find(|m| m.partner == speaker)
-                    && e.participants.contains(&listener)
-                {
-                    trust = (trust + replacements.get(&e.id).copied().unwrap_or(m.valence))
-                        .clamp(-100, 100);
-                }
-            }
+            let trust = self.world.resource_mut::<HistoryIndex>().revise(
+                listener,
+                speaker,
+                event,
+                change.after.valence,
+            );
             agent.trust.insert(speaker, trust);
         }
         self.world.resource_mut::<Runtime>().tick += 1;
@@ -1198,6 +1213,9 @@ impl Simulation {
             turns: 1,
             terminated: true,
         };
+        self.world
+            .resource_mut::<HistoryIndex>()
+            .information(&record);
         cognition.information.push(record.clone());
         self.world.insert_resource(cognition);
         *self.world.get_mut::<Agent>(entity).unwrap() = agent;
@@ -1212,10 +1230,9 @@ fn advance(world: &mut World) {
     let mut runtime = world.remove_resource::<Runtime>().unwrap();
     runtime.tick += 1;
     let policy = world.resource::<Policy>().0;
-    for scene in &mut runtime.scenes {
-        if scene.outcome.is_some() {
-            continue;
-        }
+    let active: Vec<_> = runtime.active.iter().copied().collect();
+    for scene_index in active {
+        let scene = &mut runtime.scenes[scene_index];
         let ids = scene.participants;
         let entities = ids.map(|id| world.resource::<Index>().0[&id]);
         let mut agents = entities.map(|e| world.get::<Agent>(e).unwrap().clone());
@@ -1285,7 +1302,8 @@ fn advance(world: &mut World) {
             remember(&mut agents[i], interpretations[i].clone());
             *world.get_mut::<Agent>(entities[i]).unwrap() = agents[i].clone();
         }
-        runtime.events.push(Event {
+        let finished = scene.outcome.is_some();
+        let event = Event {
             id: event_id,
             tick: runtime.tick,
             scene: scene.id,
@@ -1296,7 +1314,17 @@ fn advance(world: &mut World) {
             transferred,
             outcome: scene.outcome,
             interpretations,
-        });
+        };
+        world
+            .resource_mut::<HistoryIndex>()
+            .event(&event, &runtime.initial_trust);
+        runtime.events.push(event);
+        if finished {
+            runtime.active.remove(&scene_index);
+            for id in ids {
+                runtime.busy.remove(&id);
+            }
+        }
     }
     world.insert_resource(runtime);
 }

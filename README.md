@@ -157,3 +157,20 @@ can fail; communicated evidence can be wrong. Gain scores are auditable heuristi
 not calibrated entropy estimates. The extension adds bounded local state but full
 audit archives remain unbounded. Older policies, output defaults and evidence are
 unchanged; matched 005/006 benchmark rows live under the new experiment.
+
+## Experiment 007: provenance-aware testimony
+
+Run `cargo run --locked --release --example evaluate007`; see the
+[findings](experiments/007/results.md), [causal traces](experiments/007/report.txt)
+and [compatibility evidence](experiments/007/compatibility.json).
+Call `enable_provenance()` after inquiry. `inspect_refusal` offers a voluntary,
+fallible inspection of a narrowly opened historical record. `provenance_exchange`
+offers one structured sharing opportunity; `provenance_offer` permits voluntary
+metadata disclosure. Ordinary resource encounters keep their existing response
+mechanism. No autonomous gossip or search is added.
+
+Known shared lineage suppresses redundant relay value; distinct observations can
+corroborate or conflict. Hidden relay can cause overconfidence, and later voluntary
+attribution can revise confidence, memory and concern status. Credibility remains
+separate from independence. Three new local collections are bounded at 32; full
+audit archives grow. Experiment 008 is recommended in the report but not implemented.
