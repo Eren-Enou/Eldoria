@@ -202,3 +202,20 @@ benchmark pass. All 001–006 archives compare equal; the natural population pre
 006 resource events, agents and native cognition. Performance/storage and prospective
 legacy-evidence limits are documented in the dedicated007 report. Recommendation:
 uncertain and potentially misleading attribution; Experiment008 is not implemented.
+
+## History foundation reinforcement (2026-10-07)
+
+Documented baseline costs before refactoring; froze Experiments 001–007. Native
+inquiry now owns shared provenance-query data, with typed extension references,
+immutable local contexts and checked lossless legacy reconstruction. Added derived
+history indexes and ordered active-scene bookkeeping without policy input changes.
+The ownership/reconstruction guide is docs/history-audit.md; full measurements and
+limitations are reinforcement/results.md. Earlier evidence remains intact.
+
+All 93 tests, formatting, Clippy, compatibility evaluator and benchmarks pass.
+Single-job Cargo recovered from a Windows paging-file exhaustion during the first
+parallel build. All seven archived outputs match; 162 controlled compact snapshots
+expand exactly. The 1,000-agent export shrank 25.28%; 4,000 paired encounters fell
+from 1,034.90 to 19.53 ms. Short timings vary and Experiment 001 regressed; unbounded
+archives, index memory and affected trust suffixes remain documented limits.
+No Experiment 008 behavior or persistence database was introduced.

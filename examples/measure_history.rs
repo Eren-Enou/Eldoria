@@ -45,6 +45,40 @@ fn main() {
             let data = serde_json::to_vec(&snapshot).unwrap();
             black_box(&data);
             let serialization = start.elapsed();
+            let compact_metrics = if label == "after" {
+                sim.validate_history_indexes().unwrap();
+                let start = Instant::now();
+                let compact = sim.compact_snapshot("foundation measurement").unwrap();
+                let build = start.elapsed();
+                let start = Instant::now();
+                let packed = serde_json::to_vec(&compact).unwrap();
+                black_box(&packed);
+                let serialize = start.elapsed();
+                let start = Instant::now();
+                assert_eq!(compact.expand().unwrap(), snapshot);
+                let expand = start.elapsed();
+                timings.push_str(&format!(
+                    "expand_validate,{population},3,0,0,{:.6},0,{}\n",
+                    expand.as_secs_f64() * 1000.,
+                    data.len()
+                ));
+                timings.push_str(&format!(
+                    "compact_export,{population},3,0,0,{:.6},{:.6},{}\n",
+                    build.as_secs_f64() * 1000.,
+                    serialize.as_secs_f64() * 1000.,
+                    packed.len()
+                ));
+                if sample == 0 {
+                    fs::write(
+                        format!("reinforcement/population-{population}.compact.json"),
+                        packed.clone(),
+                    )
+                    .unwrap();
+                }
+                serde_json::json!({"bytes":packed.len(),"contexts":compact.contexts.values().len(),"query_extension_bytes":bytes(&compact.provenance.queries)})
+            } else {
+                serde_json::Value::Null
+            };
             timings.push_str(&format!(
                 "population,{population},3,{:.6},{:.6},{:.6},{:.6},{}\n",
                 init.as_secs_f64() * 1000.,
@@ -56,7 +90,8 @@ fn main() {
             if sample == 0 {
                 let q = &snapshot.base.inquiry;
                 let p = &snapshot.provenance;
-                metrics.push(serde_json::json!({"population":population,"legacy_bytes":data.len(),"provenance_bytes":bytes(p),
+                metrics.push(serde_json::json!({"population":population,"legacy_bytes":data.len(),"provenance_bytes":bytes(p),"compact":compact_metrics,
+                    "derived_index_entries":sim.history_index_counts(),
                     "query_bytes":bytes(&p.queries),"inquiry_bytes":bytes(q),"inquiry_record_bytes":bytes(&q.records),
                     "duplicated_base_inputs_bytes":p.queries.iter().map(|r|bytes(&r.decision.input.base)).sum::<usize>(),
                     "duplicated_decisions_bytes":p.queries.iter().map(|r|bytes(&r.decision.decision)).sum::<usize>(),

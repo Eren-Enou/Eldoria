@@ -519,13 +519,14 @@ replacement contributions with original saturation semantics.
 Queries append native Inquiry records/episodes with real stable IDs; Cells.last_record
 always references that namespace. Provenance Query separately links its decision,
 factors and structured receipt to the Inquiry record. Native responses remain linked
-directly when used. This duplicates some bounded inputs in an unbounded audit, which
-the evaluator measures. Observer snapshots do not become agent-accessible state.
+directly when used. The foundation pass now stores this extension by reference;
+legacy reports materialize the old shape. Observer snapshots do not become
+agent-accessible state. See [history and audit ownership](history-audit.md).
 
 Local decisions scan at most eight concerns, seven available partners, 32 acquisitions,
 32 hints and 32 cells. Knowledge grouping is O(32 log32), comparisons O(32*32).
-Parent/root lookup is O(1), with no chain walk. Preventing resampling scans the growing
-root archive; native revision/trust replay and referenced receipt scans also grow
-with history. Objective roots, windows, receipts, exchanges, queries, evictions and
+Parent/root lookup is O(1), with no chain walk. The foundation pass indexes inspection
+slots and received evidence, and caches clamped relationship prefixes. Revision can
+still traverse the affected relationship suffix. Objective roots, windows, receipts, exchanges, queries, evictions and
 existing audits remain unbounded; relationship maps retain the earlier sparse,
 unbounded design. No persistence service or large-population optimization is added.

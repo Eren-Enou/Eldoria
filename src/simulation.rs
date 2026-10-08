@@ -202,7 +202,7 @@ impl Simulation {
         for info in &self.world.resource::<Cognition>().information {
             rebuilt.information(info);
         }
-        if let Some(state) = self.world.get_resource::<crate::provenance::Provenance>() {
+        if let Some(state) = self.world.get_resource::<crate::audit::RuntimeProvenance>() {
             for root in &state.roots {
                 rebuilt
                     .inspection_slots
@@ -213,6 +213,19 @@ impl Simulation {
             return Err("derived history index disagrees with authoritative records".into());
         }
         Ok(())
+    }
+    /// Observer measurements, not per-agent knowledge or a policy interface.
+    pub fn history_index_counts(&self) -> BTreeMap<String, usize> {
+        let mut counts = self.world.resource::<HistoryIndex>().counts();
+        counts.insert(
+            "active_scenes".into(),
+            self.world.resource::<Runtime>().active.len(),
+        );
+        counts.insert(
+            "busy_participants".into(),
+            self.world.resource::<Runtime>().busy.len(),
+        );
+        counts
     }
     pub fn scenes(&self) -> Vec<Scene> {
         self.world.resource::<Runtime>().scenes.clone()
@@ -1215,7 +1228,7 @@ impl Simulation {
         };
         self.world
             .resource_mut::<HistoryIndex>()
-            .information(&record);
+            .remember_evidence(&record);
         cognition.information.push(record.clone());
         self.world.insert_resource(cognition);
         *self.world.get_mut::<Agent>(entity).unwrap() = agent;

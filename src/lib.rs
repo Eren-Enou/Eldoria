@@ -1,3 +1,4 @@
+pub mod audit;
 pub mod behavior;
 pub mod cognition;
 pub mod concerns;

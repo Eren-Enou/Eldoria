@@ -366,8 +366,8 @@ pub struct Eviction {
     pub collection: String,
     pub receipt: u64,
 }
-#[derive(Resource, Clone, Debug, Default, PartialEq, Eq, Serialize, Deserialize)]
-pub struct Provenance {
+#[derive(Resource, Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
+pub struct ProvenanceArchive<Q: Send + Sync + 'static> {
     pub knowledge: BTreeMap<AgentId, VecDeque<Knowledge>>,
     pub hints: BTreeMap<AgentId, VecDeque<Hint>>,
     pub settings: BTreeMap<AgentId, Settings>,
@@ -375,10 +375,12 @@ pub struct Provenance {
     pub receipts: Vec<Receipt>,
     pub windows: Vec<Window>,
     pub exchanges: Vec<ExchangeRecord>,
-    pub queries: Vec<Query>,
+    pub queries: Vec<Q>,
     pub evictions: Vec<Eviction>,
     pub comparisons: BTreeMap<AgentId, VecDeque<Comparison>>,
 }
+/// Preserve the established public snapshot type and default construction.
+pub type Provenance = ProvenanceArchive<Query>;
 #[derive(Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub struct Comparison {
     pub event: u64,
@@ -387,7 +389,40 @@ pub struct Comparison {
     pub evidence: u64,
     pub receipt: u64,
 }
-impl Provenance {
+impl<Q: Send + Sync + 'static> Default for ProvenanceArchive<Q> {
+    fn default() -> Self {
+        Self {
+            knowledge: Default::default(),
+            hints: Default::default(),
+            settings: Default::default(),
+            roots: vec![],
+            receipts: vec![],
+            windows: vec![],
+            exchanges: vec![],
+            queries: vec![],
+            evictions: vec![],
+            comparisons: Default::default(),
+        }
+    }
+}
+impl<Q: Send + Sync + 'static> ProvenanceArchive<Q> {
+    pub(crate) fn with_queries<R: Send + Sync + 'static>(
+        self,
+        queries: Vec<R>,
+    ) -> ProvenanceArchive<R> {
+        ProvenanceArchive {
+            knowledge: self.knowledge,
+            hints: self.hints,
+            settings: self.settings,
+            roots: self.roots,
+            receipts: self.receipts,
+            windows: self.windows,
+            exchanges: self.exchanges,
+            queries,
+            evictions: self.evictions,
+            comparisons: self.comparisons,
+        }
+    }
     pub(crate) fn retain(&mut self, owner: AgentId, incoming: Knowledge) {
         let items = self.knowledge.entry(owner).or_default();
         if incoming.known.is_some() {

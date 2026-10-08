@@ -1,5 +1,8 @@
 //! Privileged resolution stays here; pure policies receive only local projections.
 use super::*;
+use crate::audit::{
+    CompactSnapshot, Contexts, InquiryId, LocalContext, QueryId, QueryRef, ReceiptId,
+};
 use crate::{inquiry as q, provenance as p};
 
 impl Simulation {
@@ -8,10 +11,13 @@ impl Simulation {
         if !self.world.contains_resource::<q::Inquiry>() {
             return Err("enable inquiry first".into());
         }
-        if self.world.contains_resource::<p::Provenance>() {
+        if self
+            .world
+            .contains_resource::<crate::audit::RuntimeProvenance>()
+        {
             return Ok(());
         }
-        self.world.insert_resource(p::Provenance {
+        self.world.insert_resource(crate::audit::RuntimeProvenance {
             settings: self
                 .agents()
                 .iter()
@@ -20,17 +26,46 @@ impl Simulation {
             ..Default::default()
         });
         self.world.insert_resource(p::Policy(p::policy));
+        self.world.insert_resource(Contexts::default());
         self.world.insert_resource(p::ExchangePolicy(p::exchange));
         self.world
             .insert_resource(p::InspectionPolicy(p::inspection));
         Ok(())
     }
     pub fn provenance(&self) -> Option<p::Provenance> {
-        self.world.get_resource::<p::Provenance>().cloned()
+        let state = self
+            .world
+            .get_resource::<crate::audit::RuntimeProvenance>()?;
+        let contexts = &self.world.resource::<Contexts>().0;
+        let inquiry = self.world.resource::<q::Inquiry>();
+        let queries = state
+            .queries
+            .iter()
+            .map(|r| {
+                r.reconstruct(inquiry, contexts)
+                    .expect("internally valid audit reference")
+            })
+            .collect();
+        Some(state.clone().with_queries(queries))
+    }
+    /// Observer export with lossless, checked references. No legacy query expansion.
+    pub fn compact_snapshot(&self, label: &str) -> Option<CompactSnapshot> {
+        Some(CompactSnapshot {
+            format: CompactSnapshot::FORMAT.into(),
+            base: crate::experiment006::snapshot(self, label),
+            provenance: self
+                .world
+                .get_resource::<crate::audit::RuntimeProvenance>()?
+                .clone(),
+            contexts: self.world.resource::<Contexts>().0.clone(),
+        })
     }
     fn provenance_ready(&self) -> Result<(), String> {
         self.require_idle()?;
-        if !self.world.contains_resource::<p::Provenance>() {
+        if !self
+            .world
+            .contains_resource::<crate::audit::RuntimeProvenance>()
+        {
             return Err("enable provenance first".into());
         }
         Ok(())
@@ -45,7 +80,7 @@ impl Simulation {
             return Err("unknown owner".into());
         }
         self.world
-            .resource_mut::<p::Provenance>()
+            .resource_mut::<crate::audit::RuntimeProvenance>()
             .settings
             .insert(owner, settings);
         Ok(())
@@ -97,7 +132,7 @@ impl Simulation {
     }
     fn local_knowledge(&self, owner: AgentId) -> Vec<p::Knowledge> {
         self.world
-            .resource::<p::Provenance>()
+            .resource::<crate::audit::RuntimeProvenance>()
             .knowledge
             .get(&owner)
             .into_iter()
@@ -180,9 +215,13 @@ impl Simulation {
                     let claim = foresight::reading(seed, event, owner, 0, truth, &sensor);
                     self.world.resource_mut::<Runtime>().tick += u64::from(sensor.effort);
                     let tick = self.world.resource::<Runtime>().tick;
-                    let root_id = self.world.resource::<p::Provenance>().roots.len() as u64;
+                    let root_id = self
+                        .world
+                        .resource::<crate::audit::RuntimeProvenance>()
+                        .roots
+                        .len() as u64;
                     self.world
-                        .resource_mut::<p::Provenance>()
+                        .resource_mut::<crate::audit::RuntimeProvenance>()
                         .roots
                         .push(p::Root {
                             id: root_id,
@@ -214,7 +253,7 @@ impl Simulation {
             }
         }
         let tick = self.world.resource::<Runtime>().tick;
-        let mut state = self.world.resource_mut::<p::Provenance>();
+        let mut state = self.world.resource_mut::<crate::audit::RuntimeProvenance>();
         let id = state.windows.len() as u64;
         state.windows.push(p::Window {
             id,
@@ -267,7 +306,7 @@ impl Simulation {
             .as_ref()
             .and_then(|k| {
                 self.world
-                    .resource::<p::Provenance>()
+                    .resource::<crate::audit::RuntimeProvenance>()
                     .receipts
                     .get(k.receipt as usize)
             })
@@ -311,7 +350,7 @@ impl Simulation {
             receipt = Some(id);
         }
         let tick = self.world.resource::<Runtime>().tick;
-        let mut state = self.world.resource_mut::<p::Provenance>();
+        let mut state = self.world.resource_mut::<crate::audit::RuntimeProvenance>();
         let id = state.exchanges.len() as u64;
         state.exchanges.push(p::ExchangeRecord {
             id,
@@ -346,19 +385,21 @@ impl Simulation {
             .contact(listener, source);
         if valid && decision.selected == p::ExchangeAction::Share {
             let k = input.acquired.unwrap();
-            self.world.resource_mut::<p::Provenance>().hint(
-                listener,
-                p::Hint {
-                    source,
-                    event,
-                    known: if attribution_available { k.known } else { None },
-                    quality: k.quality,
-                    receipt: k.receipt,
-                },
-            );
+            self.world
+                .resource_mut::<crate::audit::RuntimeProvenance>()
+                .hint(
+                    listener,
+                    p::Hint {
+                        source,
+                        event,
+                        known: if attribution_available { k.known } else { None },
+                        quality: k.quality,
+                        receipt: k.receipt,
+                    },
+                );
         }
         let tick = self.world.resource::<Runtime>().tick;
-        let mut state = self.world.resource_mut::<p::Provenance>();
+        let mut state = self.world.resource_mut::<crate::audit::RuntimeProvenance>();
         let id = state.exchanges.len() as u64;
         state.exchanges.push(p::ExchangeRecord {
             id,
@@ -385,7 +426,7 @@ impl Simulation {
         quality: i32,
         time_spent: u32,
     ) -> Result<u64, String> {
-        let state = self.world.resource::<p::Provenance>();
+        let state = self.world.resource::<crate::audit::RuntimeProvenance>();
         let origin = state.roots.get(root as usize).ok_or("invalid root")?;
         if origin.event != event
             || origin.claim != claim
@@ -470,7 +511,7 @@ impl Simulation {
                 }
                 let compared = self
                     .world
-                    .resource::<p::Provenance>()
+                    .resource::<crate::audit::RuntimeProvenance>()
                     .comparisons
                     .get(&listener)
                     .is_some_and(|v| {
@@ -501,7 +542,7 @@ impl Simulation {
                     .or_default()
                     .insert(prior.communicator, new);
                 credibility_changes.push((prior.communicator, old, new));
-                let mut state = self.world.resource_mut::<p::Provenance>();
+                let mut state = self.world.resource_mut::<crate::audit::RuntimeProvenance>();
                 let list = state.comparisons.entry(listener).or_default();
                 if list.len() == p::CAPACITY {
                     let removed = list.pop_front().unwrap().receipt;
@@ -524,7 +565,7 @@ impl Simulation {
                     });
             }
         }
-        let mut state = self.world.resource_mut::<p::Provenance>();
+        let mut state = self.world.resource_mut::<crate::audit::RuntimeProvenance>();
         state.retain(listener, k.clone());
         if listener != communicator {
             state.hint(
@@ -639,7 +680,7 @@ impl Simulation {
                 .collect(),
             settings: state.settings[&owner],
         };
-        let state = self.world.resource::<p::Provenance>();
+        let state = self.world.resource::<crate::audit::RuntimeProvenance>();
         let input = p::Input {
             base,
             knowledge: self.local_knowledge(owner),
@@ -686,7 +727,11 @@ impl Simulation {
             .chain(available.iter().copied())
             .map(|id| (id, self.provenance_own(id).unwrap().food))
             .collect();
-        let query_id = self.world.resource::<p::Provenance>().queries.len() as u64;
+        let query_id = self
+            .world
+            .resource::<crate::audit::RuntimeProvenance>()
+            .queries
+            .len() as u64;
         let inquiry_id = self.world.resource::<q::Inquiry>().records.len() as u64;
         if let q::Action::Ask {
             concern,
@@ -742,14 +787,17 @@ impl Simulation {
                     .unwrap();
                 reply_valid = self
                     .world
-                    .resource::<p::Provenance>()
+                    .resource::<crate::audit::RuntimeProvenance>()
                     .exchanges
                     .last()
                     .unwrap()
                     .valid;
             }
             if let Some(id) = receipt {
-                let r = &self.world.resource::<p::Provenance>().receipts[id as usize];
+                let r = &self
+                    .world
+                    .resource::<crate::audit::RuntimeProvenance>()
+                    .receipts[id as usize];
                 value = r.evaluation.incremental_value;
                 category = match r.evaluation.kind {
                     p::ValueKind::Shared => q::Novelty::Redundant,
@@ -784,7 +832,9 @@ impl Simulation {
                 after = Some(new);
                 let cognitive = receipt
                     .and_then(|id| {
-                        self.world.resource::<p::Provenance>().receipts[id as usize]
+                        self.world
+                            .resource::<crate::audit::RuntimeProvenance>()
+                            .receipts[id as usize]
                             .cognition_receipt
                     })
                     .or_else(|| {
@@ -818,7 +868,10 @@ impl Simulation {
             }
             let cognitive_link = receipt
                 .and_then(|id| {
-                    self.world.resource::<p::Provenance>().receipts[id as usize].cognition_receipt
+                    self.world
+                        .resource::<crate::audit::RuntimeProvenance>()
+                        .receipts[id as usize]
+                        .cognition_receipt
                 })
                 .or_else(|| {
                     legacy_response
@@ -853,6 +906,8 @@ impl Simulation {
             .iter()
             .map(|&(id, _)| (id, self.provenance_own(id).unwrap().food))
             .collect();
+        let attempted_base =
+            (decision.input.base != decision.decision.input).then_some(decision.input.base);
         self.world
             .resource_mut::<q::Inquiry>()
             .records
@@ -860,35 +915,42 @@ impl Simulation {
                 id: inquiry_id,
                 tick,
                 meeting,
-                decision: decision.decision.clone(),
+                decision: decision.decision,
                 valid,
-                response: legacy_response.clone(),
+                response: legacy_response,
                 novelty: category,
                 realized_value: value,
                 information_values,
-                cell_before: before.clone(),
-                cell_after: after.clone(),
+                cell_before: before,
+                cell_after: after,
                 concern_before,
                 concern_after,
                 time_spent: (tick - start) as u32,
                 food_before,
                 food_after,
             });
+        let context = self
+            .world
+            .resource_mut::<Contexts>()
+            .0
+            .intern(LocalContext {
+                knowledge: decision.input.knowledge,
+                hints: decision.input.hints,
+                settings: decision.input.settings,
+            });
         self.world
-            .resource_mut::<p::Provenance>()
+            .resource_mut::<crate::audit::RuntimeProvenance>()
             .queries
-            .push(p::Query {
-                id: query_id,
-                tick,
-                decision,
-                valid,
-                receipt,
-                value,
-                before,
-                after,
-                time_spent: (tick - start) as u32,
-                inquiry_record: inquiry_id,
-                legacy_response,
+            .push(QueryRef {
+                id: QueryId(query_id),
+                inquiry: InquiryId(inquiry_id),
+                owner,
+                observed_at: start,
+                completed_at: tick,
+                context,
+                factors: decision.factors,
+                receipt: receipt.map(ReceiptId),
+                attempted_base,
             });
     }
 }

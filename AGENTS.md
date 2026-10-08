@@ -22,6 +22,30 @@ changes. Report failures and limitations. Keep generated JSON reproducible;
 wall-clock measurements belong in separate benchmark output. Do not claim
 consciousness or broad social emergence from these experiments.
 
+## Git Commit and Push Policy
+
+When a requested task is complete:
+
+1. Run all required formatting, Clippy, tests, deterministic replay checks, and relevant evaluators/benchmarks.
+2. Do not commit if required validation is failing.
+3. Review `git diff` and ensure only files related to the completed task are included.
+4. Commit the completed work with a concise, descriptive commit message reflecting the actual change.
+5. Push the commit to `origin main`.
+
+Prefer commit messages such as:
+
+- `experiment-007: add provenance-aware testimony`
+- `experiment-006: add adaptive inquiry`
+- `foundation: compact causal audit history`
+- `docs: add Oceanid worldbuilding notes`
+- `fix: preserve provenance locality during inquiry`
+
+Do not use vague messages such as `updates`, `changes`, `codex work`, or `fix stuff`.
+
+Do not rewrite, squash, force-push, or alter existing published history unless explicitly instructed.
+
+If `main` has changed remotely since the task began, do not force-push. Reconcile safely or stop and report the conflict.
+
 Experiment 002 adds event-specific structured communication, uncertain beliefs,
 revisable interpretations and explicit food consumption. Keep Experiment 001's
 policy/report defaults and historical evidence intact; save compatibility evidence

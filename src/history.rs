@@ -62,6 +62,22 @@ pub(crate) struct HistoryIndex {
     relationships: BTreeMap<(AgentId, AgentId), Relationship>,
 }
 impl HistoryIndex {
+    pub fn counts(&self) -> BTreeMap<String, usize> {
+        BTreeMap::from([
+            ("relationships".into(), self.relationships.len()),
+            (
+                "contributions".into(),
+                self.relationships.values().map(|r| r.entries.len()).sum(),
+            ),
+            (
+                "event_positions".into(),
+                self.relationships.values().map(|r| r.positions.len()).sum(),
+            ),
+            ("evidence_questions".into(), self.evidence.len()),
+            ("received_sources".into(), self.sources.len()),
+            ("inspection_slots".into(), self.inspection_slots.len()),
+        ])
+    }
     pub fn event(&mut self, event: &Event, initial: &BTreeMap<AgentId, BTreeMap<AgentId, i32>>) {
         for (index, &owner) in event.participants.iter().enumerate() {
             let memory = &event.interpretations[index];
@@ -75,6 +91,17 @@ impl HistoryIndex {
         }
     }
     pub fn information(&mut self, info: &InformationScene) {
+        self.remember_evidence(info);
+        if let Some(revision) = &info.revision {
+            self.revise(
+                info.listener,
+                info.speaker,
+                info.event,
+                revision.after.valence,
+            );
+        }
+    }
+    pub fn remember_evidence(&mut self, info: &InformationScene) {
         let summary = self
             .evidence
             .entry((info.event, info.listener))
@@ -98,19 +125,44 @@ impl HistoryIndex {
                 .entry((info.event, info.speaker, info.listener, source))
                 .or_insert(info.kind);
         }
-        if let Some(revision) = &info.revision {
-            self.revise(
-                info.listener,
-                info.speaker,
-                info.event,
-                revision.after.valence,
-            );
-        }
     }
     pub fn revise(&mut self, owner: AgentId, partner: AgentId, event: u64, valence: i32) -> i32 {
         self.relationships
             .get_mut(&(owner, partner))
             .expect("validated event relationship")
             .revise(event, valence)
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn prefix_updates_match_full_clamped_replay_with_signed_revisions() {
+        for initial in [-100, 0, 100] {
+            let mut ledger = Relationship {
+                initial,
+                ..Default::default()
+            };
+            let mut values = vec![];
+            let mut random = 42u64;
+            for step in 0..1000 {
+                random = random.wrapping_mul(6364136223846793005).wrapping_add(1);
+                let valence = (random % 81) as i32 - 40;
+                if step % 3 == 0 || values.is_empty() {
+                    ledger.append(values.len() as u64, valence);
+                    values.push(valence);
+                } else {
+                    let index = (random as usize) % values.len();
+                    values[index] = valence;
+                    ledger.revise(index as u64, valence);
+                }
+                let mut expected = initial;
+                for (entry, value) in ledger.entries.iter().zip(&values) {
+                    expected = (expected + value).clamp(-100, 100);
+                    assert_eq!(entry.trust_after, expected);
+                }
+            }
+        }
     }
 }

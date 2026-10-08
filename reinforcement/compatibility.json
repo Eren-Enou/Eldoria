@@ -1,0 +1,18 @@
+{
+  "archived_structural_equality": {
+    "001": true,
+    "002": true,
+    "003": true,
+    "004": true,
+    "005": true,
+    "006": true,
+    "007": true
+  },
+  "compact_controlled_snapshots_reconstructed": 162,
+  "compact_seeds": [
+    "0",
+    "42",
+    "u64::MAX"
+  ],
+  "historical_files_rewritten": false
+}

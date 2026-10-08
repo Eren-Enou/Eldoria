@@ -317,7 +317,7 @@ impl Simulation {
     ) {
         if self
             .world
-            .contains_resource::<crate::provenance::Provenance>()
+            .contains_resource::<crate::audit::RuntimeProvenance>()
         {
             self.provenance_follow(owner, available, scene, meeting);
             return;

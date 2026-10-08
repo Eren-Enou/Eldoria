@@ -174,3 +174,16 @@ corroborate or conflict. Hidden relay can cause overconfidence, and later volunt
 attribution can revise confidence, memory and concern status. Credibility remains
 separate from independence. Three new local collections are bounded at 32; full
 audit archives grow. Experiment 008 is recommended in the report but not implemented.
+
+## History foundation reinforcement
+
+Experiments 001–007 remain frozen. Referential query audits and derived history
+indexes reduce duplication and repeated scans while preserving complete history,
+bounded local cognition and old report formats. See the [architecture guide](docs/history-audit.md)
+and [measurements and findings](reinforcement/results.md).
+
+Run `cargo run --release --example validate_history` for archived compatibility and
+compact reconstruction checks, `cargo run --release --example measure_history -- after`
+for isolated measurement output, and `cargo bench --bench throughput` for the
+established workloads. New evidence stays under `reinforcement/`; these commands
+do not rewrite prior experiment archives. Use `-j 1` on memory-constrained hosts.
