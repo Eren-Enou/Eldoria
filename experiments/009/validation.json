@@ -1,0 +1,25 @@
+{
+  "baseline": "e05bfaa",
+  "rules": "experiment-009-v1",
+  "tests_passed": 118,
+  "new_regression_tests": 9,
+  "controlled_trials": 4608,
+  "held_out_trials": 18432,
+  "exact_replayed_trials": 23040,
+  "contract_seed_replays_per_earlier_mode": 129,
+  "frozen_archived_files_unchanged": 72,
+  "capacity": 32,
+  "default_changed": false,
+  "contract_001_008_changed": false,
+  "experiment010_started": false,
+  "passed": [
+    "cargo fmt --check",
+    "cargo clippy --locked --all-targets -j1 -- -D warnings",
+    "cargo test --locked -j1",
+    "cargo run --release --locked -j1 --example validate_contract",
+    "cargo run --release --locked -j1 --example evaluate009",
+    "cargo bench --locked -j1 --bench throughput",
+    "full gzip trace hashes and no built-in fallback",
+    "frozen 001-008 SHA256 manifest"
+  ]
+}

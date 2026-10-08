@@ -1,0 +1,889 @@
+Experiment009: Grouped assessment, capacity32, retention controls; probes are local choices, not transfers.
+
+consequential_flood Fifo Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis20 items1 origins1 beliefSome(20) concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(20) concernNone trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernNone trust-100 actionLeave
+
+consequential_flood Quality Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis20 items1 origins1 beliefSome(20) concernNone trust-100 actionLeave
+  after pressure: basis20 items1 origins1 beliefSome(20) concernNone trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis20 items2 origins1 beliefSome(20) concernNone trust-100 actionLeave
+
+consequential_flood Salient Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis20 items1 origins1 beliefSome(20) concernNone trust-100 actionLeave
+  after pressure: basis20 items1 origins1 beliefSome(20) concernNone trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis20 items2 origins1 beliefSome(20) concernNone trust-100 actionLeave
+
+unresolved_concern Fifo Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  weak active basis: basis20 items1 origins1 beliefSome(20) concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(20) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+unresolved_concern Quality Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  weak active basis: basis20 items1 origins1 beliefSome(20) concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(20) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+unresolved_concern Salient Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  weak active basis: basis20 items1 origins1 beliefSome(20) concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(20) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+relevance_expires Fifo Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  active: basis20 items1 origins1 beliefSome(20) concernNone trust-100 actionLeave
+  legitimate resolution: basis60 items2 origins2 beliefSome(60) concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(60) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+relevance_expires Quality Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  active: basis20 items1 origins1 beliefSome(20) concernNone trust-100 actionLeave
+  legitimate resolution: basis60 items2 origins2 beliefSome(60) concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(60) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+relevance_expires Salient Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  active: basis20 items1 origins1 beliefSome(20) concernNone trust-100 actionLeave
+  legitimate resolution: basis60 items2 origins2 beliefSome(60) concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(60) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+conflict Fifo Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis0 items2 origins2 beliefSome(0) concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(0) concernNone trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernNone trust-100 actionLeave
+
+conflict Quality Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis0 items2 origins2 beliefSome(0) concernNone trust-100 actionLeave
+  after pressure: basis0 items2 origins2 beliefSome(0) concernNone trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items3 origins2 beliefSome(0) concernNone trust-100 actionLeave
+
+conflict Salient Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis0 items2 origins2 beliefSome(0) concernNone trust-100 actionLeave
+  after pressure: basis0 items2 origins2 beliefSome(0) concernNone trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items3 origins2 beliefSome(0) concernNone trust-100 actionLeave
+
+known_repetition Fifo Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernNone trust-100 actionLeave
+  after pressure: basis50 items16 origins1 beliefSome(50) concernNone trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items16 origins1 beliefSome(50) concernNone trust-100 actionLeave
+
+known_repetition Quality Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernNone trust-100 actionLeave
+  after pressure: basis50 items16 origins1 beliefSome(50) concernNone trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items16 origins1 beliefSome(50) concernNone trust-100 actionLeave
+
+known_repetition Salient Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernNone trust-100 actionLeave
+  after pressure: basis50 items16 origins1 beliefSome(50) concernNone trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items16 origins1 beliefSome(50) concernNone trust-100 actionLeave
+
+hidden_origin Fifo Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis75 items2 origins2 beliefSome(75) concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(75) concernNone trust-85 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernNone trust-100 actionLeave
+
+hidden_origin Quality Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis75 items2 origins2 beliefSome(75) concernNone trust-100 actionLeave
+  after pressure: basis75 items2 origins2 beliefSome(75) concernNone trust-85 actionLeave
+  legitimate zero-quality reappraisal: basis75 items3 origins2 beliefSome(75) concernNone trust-85 actionLeave
+
+hidden_origin Salient Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis75 items2 origins2 beliefSome(75) concernNone trust-100 actionLeave
+  after pressure: basis75 items2 origins2 beliefSome(75) concernNone trust-85 actionLeave
+  legitimate zero-quality reappraisal: basis75 items3 origins2 beliefSome(75) concernNone trust-85 actionLeave
+
+later_attribution Fifo Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis75 items2 origins2 beliefSome(75) concernNone trust-100 actionLeave
+  before revelation: basis0 items0 origins0 beliefSome(75) concernNone trust-85 actionLeave
+  after pressure: basis50 items1 origins1 beliefSome(50) concernNone trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernNone trust-100 actionLeave
+
+later_attribution Quality Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis75 items2 origins2 beliefSome(75) concernNone trust-100 actionLeave
+  before revelation: basis75 items2 origins2 beliefSome(75) concernNone trust-85 actionLeave
+  after pressure: basis50 items2 origins1 beliefSome(50) concernNone trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernNone trust-100 actionLeave
+
+later_attribution Salient Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis75 items2 origins2 beliefSome(75) concernNone trust-100 actionLeave
+  before revelation: basis75 items2 origins2 beliefSome(75) concernNone trust-85 actionLeave
+  after pressure: basis50 items2 origins1 beliefSome(50) concernNone trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernNone trust-100 actionLeave
+
+equal_salience Fifo Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(50) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+equal_salience Quality Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(50) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+equal_salience Salient Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(50) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+salient_wrong Fifo Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis-20 items1 origins1 beliefSome(-20) concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(-20) concernNone trust-100 actionLeave
+  later legitimate counterevidence: basis90 items1 origins1 beliefSome(90) concernNone trust-85 actionLeave
+  legitimate zero-quality reappraisal: basis90 items2 origins1 beliefSome(90) concernNone trust-85 actionLeave
+
+salient_wrong Quality Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis-20 items1 origins1 beliefSome(-20) concernNone trust-100 actionLeave
+  after pressure: basis-20 items1 origins1 beliefSome(-20) concernNone trust-100 actionLeave
+  later legitimate counterevidence: basis70 items2 origins2 beliefSome(70) concernNone trust-85 actionLeave
+  legitimate zero-quality reappraisal: basis70 items3 origins2 beliefSome(70) concernNone trust-85 actionLeave
+
+salient_wrong Salient Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis-20 items1 origins1 beliefSome(-20) concernNone trust-100 actionLeave
+  after pressure: basis-20 items1 origins1 beliefSome(-20) concernNone trust-100 actionLeave
+  later legitimate counterevidence: basis70 items2 origins2 beliefSome(70) concernNone trust-85 actionLeave
+  legitimate zero-quality reappraisal: basis70 items3 origins2 beliefSome(70) concernNone trust-85 actionLeave
+
+minor_later_useful Fifo Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  minor item after pressure: basis0 items0 origins0 beliefSome(20) concernNone trust-34 actionLeave
+  after pressure: basis50 items1 origins1 beliefSome(50) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernNone trust-34 actionLeave
+
+minor_later_useful Quality Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  minor item after pressure: basis0 items0 origins0 beliefSome(20) concernNone trust-34 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+minor_later_useful Salient Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  minor item after pressure: basis0 items0 origins0 beliefSome(20) concernNone trust-34 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+event_traffic Fifo Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis20 items1 origins1 beliefSome(20) concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(20) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+event_traffic Quality Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis20 items1 origins1 beliefSome(20) concernNone trust-100 actionLeave
+  after pressure: basis20 items1 origins1 beliefSome(20) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis20 items2 origins1 beliefSome(20) concernNone trust-34 actionLeave
+
+event_traffic Salient Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  before pressure: basis20 items1 origins1 beliefSome(20) concernNone trust-100 actionLeave
+  after pressure: basis20 items1 origins1 beliefSome(20) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis20 items2 origins1 beliefSome(20) concernNone trust-34 actionLeave
+
+redelivery Fifo Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  forgotten: basis0 items0 origins0 beliefSome(20) concernNone trust-34 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis90 items2 origins1 beliefSome(90) concernNone trust-17 actionLeave
+
+redelivery Quality Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  forgotten: basis0 items0 origins0 beliefSome(20) concernNone trust-34 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+
+redelivery Salient Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  forgotten: basis0 items0 origins0 beliefSome(20) concernNone trust-34 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+
+consequential_flood Fifo Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+consequential_flood Quality Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis45 items2 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+
+consequential_flood Salient Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis45 items2 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+
+unresolved_concern Fifo Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  weak active basis: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(45) concernSome(Partial) trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-34 actionLeave
+
+unresolved_concern Quality Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  weak active basis: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(45) concernSome(Partial) trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernSome(Partial) trust-34 actionLeave
+
+unresolved_concern Salient Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  weak active basis: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-34 actionLeave
+
+relevance_expires Fifo Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  active: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  legitimate resolution: basis72 items2 origins2 beliefSome(72) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(72) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-34 actionLeave
+
+relevance_expires Quality Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  active: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  legitimate resolution: basis72 items2 origins2 beliefSome(72) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(72) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernSome(Partial) trust-34 actionLeave
+
+relevance_expires Salient Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  active: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  legitimate resolution: basis72 items2 origins2 beliefSome(72) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(72) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernSome(Partial) trust-34 actionLeave
+
+conflict Fifo Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+conflict Quality Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items3 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+conflict Salient Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items3 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+known_repetition Fifo Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+known_repetition Quality Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+known_repetition Salient Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+hidden_origin Fifo Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+hidden_origin Quality Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+hidden_origin Salient Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+later_attribution Fifo Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  before revelation: basis0 items0 origins0 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+later_attribution Quality Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  before revelation: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+later_attribution Salient Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  before revelation: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+equal_salience Fifo Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(50) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+equal_salience Quality Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(50) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+equal_salience Salient Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(50) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+salient_wrong Fifo Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis-45 items1 origins1 beliefSome(-45) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(-45) concernSome(Partial) trust-100 actionLeave
+  later legitimate counterevidence: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis90 items2 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+
+salient_wrong Quality Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis-45 items1 origins1 beliefSome(-45) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis-45 items1 origins1 beliefSome(-45) concernSome(Partial) trust-100 actionLeave
+  later legitimate counterevidence: basis45 items2 origins2 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis45 items3 origins2 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+
+salient_wrong Salient Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis-45 items1 origins1 beliefSome(-45) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis-45 items1 origins1 beliefSome(-45) concernSome(Partial) trust-100 actionLeave
+  later legitimate counterevidence: basis45 items2 origins2 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis45 items3 origins2 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+
+minor_later_useful Fifo Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  minor item after pressure: basis20 items1 origins1 beliefSome(20) concernNone trust-34 actionLeave
+  after pressure: basis60 items2 origins2 beliefSome(60) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis60 items3 origins2 beliefSome(60) concernNone trust-17 actionLeave
+
+minor_later_useful Quality Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  minor item after pressure: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+minor_later_useful Salient Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  minor item after pressure: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+event_traffic Fifo Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+event_traffic Quality Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis45 items2 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+
+event_traffic Salient Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis45 items1 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis45 items2 origins1 beliefSome(45) concernSome(Partial) trust-100 actionLeave
+
+redelivery Fifo Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  forgotten: basis0 items0 origins0 beliefSome(45) concernNone trust-34 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis90 items2 origins1 beliefSome(90) concernNone trust-17 actionLeave
+
+redelivery Quality Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  forgotten: basis0 items0 origins0 beliefSome(45) concernNone trust-34 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+
+redelivery Salient Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  forgotten: basis0 items0 origins0 beliefSome(45) concernNone trust-34 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+
+consequential_flood Fifo Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(70) concernSome(Resolved) trust-85 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+consequential_flood Quality Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-85 actionLeave
+  legitimate zero-quality reappraisal: basis70 items2 origins1 beliefSome(70) concernSome(Resolved) trust-85 actionLeave
+
+consequential_flood Salient Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-85 actionLeave
+  legitimate zero-quality reappraisal: basis70 items2 origins1 beliefSome(70) concernSome(Resolved) trust-85 actionLeave
+
+unresolved_concern Fifo Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  weak active basis: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(70) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-34 actionLeave
+
+unresolved_concern Quality Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  weak active basis: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(70) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernSome(Partial) trust-34 actionLeave
+
+unresolved_concern Salient Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  weak active basis: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(70) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernSome(Partial) trust-34 actionLeave
+
+relevance_expires Fifo Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  active: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-100 actionLeave
+  legitimate resolution: basis85 items2 origins2 beliefSome(85) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(85) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-34 actionLeave
+
+relevance_expires Quality Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  active: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-100 actionLeave
+  legitimate resolution: basis85 items2 origins2 beliefSome(85) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(85) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernSome(Partial) trust-34 actionLeave
+
+relevance_expires Salient Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  active: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-100 actionLeave
+  legitimate resolution: basis85 items2 origins2 beliefSome(85) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(85) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernSome(Partial) trust-34 actionLeave
+
+conflict Fifo Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+conflict Quality Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items3 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+conflict Salient Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items3 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+known_repetition Fifo Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+known_repetition Quality Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+known_repetition Salient Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+hidden_origin Fifo Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis75 items2 origins2 beliefSome(75) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(75) concernSome(Resolved) trust-85 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+hidden_origin Quality Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis75 items2 origins2 beliefSome(75) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis75 items2 origins2 beliefSome(75) concernSome(Resolved) trust-85 actionLeave
+  legitimate zero-quality reappraisal: basis75 items3 origins2 beliefSome(75) concernSome(Resolved) trust-85 actionLeave
+
+hidden_origin Salient Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis75 items2 origins2 beliefSome(75) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis75 items2 origins2 beliefSome(75) concernSome(Resolved) trust-85 actionLeave
+  legitimate zero-quality reappraisal: basis75 items3 origins2 beliefSome(75) concernSome(Resolved) trust-85 actionLeave
+
+later_attribution Fifo Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis75 items2 origins2 beliefSome(75) concernSome(Resolved) trust-100 actionLeave
+  before revelation: basis0 items0 origins0 beliefSome(75) concernSome(Resolved) trust-85 actionLeave
+  after pressure: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+later_attribution Quality Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis75 items2 origins2 beliefSome(75) concernSome(Resolved) trust-100 actionLeave
+  before revelation: basis75 items2 origins2 beliefSome(75) concernSome(Resolved) trust-85 actionLeave
+  after pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+later_attribution Salient Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis75 items2 origins2 beliefSome(75) concernSome(Resolved) trust-100 actionLeave
+  before revelation: basis75 items2 origins2 beliefSome(75) concernSome(Resolved) trust-85 actionLeave
+  after pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+equal_salience Fifo Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(50) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+equal_salience Quality Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(50) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+equal_salience Salient Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(50) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+salient_wrong Fifo Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis-70 items1 origins1 beliefSome(-70) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(-70) concernSome(Resolved) trust-100 actionLeave
+  later legitimate counterevidence: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-85 actionLeave
+  legitimate zero-quality reappraisal: basis90 items2 origins1 beliefSome(90) concernSome(Resolved) trust-85 actionLeave
+
+salient_wrong Quality Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis-70 items1 origins1 beliefSome(-70) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis-70 items1 origins1 beliefSome(-70) concernSome(Resolved) trust-100 actionLeave
+  later legitimate counterevidence: basis20 items2 origins2 beliefSome(20) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis20 items3 origins2 beliefSome(20) concernSome(Partial) trust-100 actionLeave
+
+salient_wrong Salient Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis-70 items1 origins1 beliefSome(-70) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis-70 items1 origins1 beliefSome(-70) concernSome(Resolved) trust-100 actionLeave
+  later legitimate counterevidence: basis20 items2 origins2 beliefSome(20) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis20 items3 origins2 beliefSome(20) concernSome(Partial) trust-100 actionLeave
+
+minor_later_useful Fifo Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  minor item after pressure: basis0 items0 origins0 beliefSome(20) concernNone trust-34 actionLeave
+  after pressure: basis50 items1 origins1 beliefSome(50) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernNone trust-34 actionLeave
+
+minor_later_useful Quality Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  minor item after pressure: basis0 items0 origins0 beliefSome(20) concernNone trust-34 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+minor_later_useful Salient Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  minor item after pressure: basis0 items0 origins0 beliefSome(20) concernNone trust-34 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+event_traffic Fifo Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(70) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-34 actionLeave
+
+event_traffic Quality Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis70 items2 origins1 beliefSome(70) concernSome(Resolved) trust-17 actionLeave
+
+event_traffic Salient Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis70 items1 origins1 beliefSome(70) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis70 items2 origins1 beliefSome(70) concernSome(Resolved) trust-17 actionLeave
+
+redelivery Fifo Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  forgotten: basis0 items0 origins0 beliefSome(70) concernNone trust-17 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis90 items2 origins1 beliefSome(90) concernNone trust-17 actionLeave
+
+redelivery Quality Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  forgotten: basis0 items0 origins0 beliefSome(70) concernNone trust-17 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+
+redelivery Salient Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  forgotten: basis0 items0 origins0 beliefSome(70) concernNone trust-17 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+
+consequential_flood Fifo Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+consequential_flood Quality Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis90 items2 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+
+consequential_flood Salient Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis90 items2 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+
+unresolved_concern Fifo Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  weak active basis: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(90) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-34 actionLeave
+
+unresolved_concern Quality Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  weak active basis: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-17 actionLeave
+
+unresolved_concern Salient Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  weak active basis: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-17 actionLeave
+
+relevance_expires Fifo Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  active: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  legitimate resolution: basis95 items2 origins2 beliefSome(95) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(95) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-34 actionLeave
+
+relevance_expires Quality Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  active: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  legitimate resolution: basis95 items2 origins2 beliefSome(95) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(95) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-17 actionLeave
+
+relevance_expires Salient Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  active: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  legitimate resolution: basis95 items2 origins2 beliefSome(95) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(95) concernSome(Resolved) trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-17 actionLeave
+
+conflict Fifo Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+conflict Quality Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items3 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+conflict Salient Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items3 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+known_repetition Fifo Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+known_repetition Quality Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+known_repetition Salient Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items16 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+hidden_origin Fifo Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+hidden_origin Quality Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+hidden_origin Salient Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+later_attribution Fifo Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  before revelation: basis0 items0 origins0 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+later_attribution Quality Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  before revelation: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+later_attribution Salient Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  before revelation: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  after pressure: basis50 items1 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis50 items2 origins1 beliefSome(50) concernSome(Partial) trust-100 actionLeave
+
+equal_salience Fifo Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(50) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+equal_salience Quality Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(50) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+equal_salience Salient Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(50) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+salient_wrong Fifo Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis-90 items1 origins1 beliefSome(-90) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(-90) concernSome(Resolved) trust-100 actionLeave
+  later legitimate counterevidence: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis90 items2 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+
+salient_wrong Quality Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis-90 items1 origins1 beliefSome(-90) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis-90 items1 origins1 beliefSome(-90) concernSome(Resolved) trust-100 actionLeave
+  later legitimate counterevidence: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items3 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+salient_wrong Salient Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis-90 items1 origins1 beliefSome(-90) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis-90 items1 origins1 beliefSome(-90) concernSome(Resolved) trust-100 actionLeave
+  later legitimate counterevidence: basis0 items2 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items3 origins2 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+minor_later_useful Fifo Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  minor item after pressure: basis20 items1 origins1 beliefSome(20) concernNone trust-34 actionLeave
+  after pressure: basis60 items2 origins2 beliefSome(60) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis60 items3 origins2 beliefSome(60) concernNone trust-17 actionLeave
+
+minor_later_useful Quality Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  minor item after pressure: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+minor_later_useful Salient Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  minor item after pressure: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+  legitimate zero-quality reappraisal: basis0 items0 origins0 beliefSome(0) concernNone trust-34 actionLeave
+
+event_traffic Fifo Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis0 items0 origins0 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis0 items1 origins0 beliefSome(0) concernSome(Partial) trust-100 actionLeave
+
+event_traffic Quality Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis90 items2 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+
+event_traffic Salient Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernSome(Open) trust-100 actionLeave
+  before pressure: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+  legitimate zero-quality reappraisal: basis90 items2 origins1 beliefSome(90) concernSome(Resolved) trust-100 actionLeave
+
+redelivery Fifo Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  forgotten: basis0 items0 origins0 beliefSome(90) concernNone trust-17 actionLeave
+  after pressure: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis90 items2 origins1 beliefSome(90) concernNone trust-17 actionLeave
+
+redelivery Quality Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  forgotten: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+  after pressure: basis99 items2 origins2 beliefSome(99) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis99 items2 origins2 beliefSome(99) concernNone trust-17 actionLeave
+
+redelivery Salient Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }
+  initial: basis0 items0 origins0 beliefNone concernNone trust-100 actionLeave
+  forgotten: basis90 items1 origins1 beliefSome(90) concernNone trust-17 actionLeave
+  after pressure: basis99 items2 origins2 beliefSome(99) concernNone trust-17 actionLeave
+  legitimate zero-quality reappraisal: basis99 items2 origins2 beliefSome(99) concernNone trust-17 actionLeave

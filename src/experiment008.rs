@@ -33,9 +33,15 @@ pub struct Snapshot {
 }
 impl Snapshot {
     pub fn validate(&self) -> Result<(), String> {
-        self.base.validate()?;
         if let Some(a) = &self.assessment {
             a.validate()?;
+        }
+        self.validate_receipts()
+    }
+    /// Shared immutable receipt checks; 009 validates its eviction replay separately.
+    pub(crate) fn validate_receipts(&self) -> Result<(), String> {
+        self.base.validate()?;
+        if let Some(a) = &self.assessment {
             let cognition = &self.base.base.base.cognition;
             let mut last_tick = 0;
             for r in &a.records {

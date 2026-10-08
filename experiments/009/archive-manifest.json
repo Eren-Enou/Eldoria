@@ -1,0 +1,14 @@
+{
+  "seed-42": {
+    "json_bytes": 49468354,
+    "gzip_bytes": 1053254,
+    "json_sha256": "55d615ca05472564d733d41a3d3ce66cb3edd9726fffcc1313776cc1b928d767",
+    "gzip_sha256": "8e601ebe73bfec296bcc3f11890ff1f36949843aad4428beb472370f705099b3"
+  },
+  "held-out-seed-42": {
+    "json_bytes": 206624726,
+    "gzip_bytes": 4275623,
+    "json_sha256": "71b3cbc922c95aad98e112846923f3b62846b87dacf6e4d607715fddb39654f3",
+    "gzip_sha256": "4e9e1462360ace8512d32034d113ba941b6a4238f6c2c0644df04c98cca4144b"
+  }
+}

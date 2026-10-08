@@ -1,0 +1,3710 @@
+[
+  {
+    "held_out": false,
+    "scenario": "consequential_flood",
+    "config": null,
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 80,
+        "belief": 80,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 80,
+        "belief": 80,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": false,
+    "scenario": "unresolved_concern",
+    "config": null,
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -17
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -17
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 40,
+        "belief": 40,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -17
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": true,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": false,
+    "scenario": "relevance_expires",
+    "config": null,
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -17
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -17
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -17
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": false,
+    "scenario": "conflict",
+    "config": null,
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": false,
+    "scenario": "known_repetition",
+    "config": null,
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": false,
+    "scenario": "hidden_origin",
+    "config": null,
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 75,
+        "belief": 75,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 75,
+        "belief": 75,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": false,
+    "scenario": "later_attribution",
+    "config": null,
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": false,
+    "scenario": "equal_salience",
+    "config": null,
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -17
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -17
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -17
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": false,
+    "scenario": "salient_wrong",
+    "config": null,
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 10,
+        "belief": 10,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 10,
+        "belief": 10,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": false,
+    "scenario": "minor_later_useful",
+    "config": null,
+    "methods": {
+      "Fifo": {
+        "action": "Offer",
+        "basis_support": 60,
+        "belief": 60,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": 0
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -17
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -17
+      }
+    },
+    "salient_action_differs_from_fifo": true,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": false,
+    "scenario": "event_traffic",
+    "config": null,
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 80,
+        "belief": 80,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 80,
+        "belief": 80,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": false,
+    "scenario": "redelivery",
+    "config": null,
+    "methods": {
+      "Fifo": {
+        "action": "Offer",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": 0
+      },
+      "Quality": {
+        "action": "Offer",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": 0
+      },
+      "Salient": {
+        "action": "Offer",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": 0
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "consequential_flood",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 90,
+      "goal": 0,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 20,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 70,
+      "weak_quality": 20
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 20,
+        "belief": 20,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 20,
+        "belief": 20,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "unresolved_concern",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 90,
+      "goal": 0,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 20,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 70,
+      "weak_quality": 20
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "relevance_expires",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 90,
+      "goal": 0,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 20,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 70,
+      "weak_quality": 20
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "conflict",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 90,
+      "goal": 0,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 20,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 70,
+      "weak_quality": 20
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "known_repetition",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 90,
+      "goal": 0,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 20,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 70,
+      "weak_quality": 20
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "hidden_origin",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 90,
+      "goal": 0,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 20,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 70,
+      "weak_quality": 20
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 75,
+        "belief": 75,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 75,
+        "belief": 75,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "later_attribution",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 90,
+      "goal": 0,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 20,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 70,
+      "weak_quality": 20
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "equal_salience",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 90,
+      "goal": 0,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 20,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 70,
+      "weak_quality": 20
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "salient_wrong",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 90,
+      "goal": 0,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 20,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 70,
+      "weak_quality": 20
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 70,
+        "belief": 70,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 70,
+        "belief": 70,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "minor_later_useful",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 90,
+      "goal": 0,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 20,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 70,
+      "weak_quality": 20
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "event_traffic",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 90,
+      "goal": 0,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 20,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 70,
+      "weak_quality": 20
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 20,
+        "belief": 20,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 20,
+        "belief": 20,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "redelivery",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 90,
+      "goal": 0,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 20,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 70,
+      "weak_quality": 20
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -17
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "consequential_flood",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 60,
+      "goal": 40,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 45,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 20,
+      "weak_quality": 45
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 45,
+        "belief": 45,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 45,
+        "belief": 45,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "unresolved_concern",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 60,
+      "goal": 40,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 45,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 20,
+      "weak_quality": 45
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 45,
+        "belief": 45,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": true,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "relevance_expires",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 60,
+      "goal": 40,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 45,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 20,
+      "weak_quality": 45
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "conflict",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 60,
+      "goal": 40,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 45,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 20,
+      "weak_quality": 45
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "known_repetition",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 60,
+      "goal": 40,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 45,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 20,
+      "weak_quality": 45
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "hidden_origin",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 60,
+      "goal": 40,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 45,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 20,
+      "weak_quality": 45
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "later_attribution",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 60,
+      "goal": 40,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 45,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 20,
+      "weak_quality": 45
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "equal_salience",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 60,
+      "goal": 40,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 45,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 20,
+      "weak_quality": 45
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "salient_wrong",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 60,
+      "goal": 40,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 45,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 20,
+      "weak_quality": 45
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 45,
+        "belief": 45,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 45,
+        "belief": 45,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "minor_later_useful",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 60,
+      "goal": 40,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 45,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 20,
+      "weak_quality": 45
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 60,
+        "belief": 60,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -17
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "event_traffic",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 60,
+      "goal": 40,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 45,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 20,
+      "weak_quality": 45
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 45,
+        "belief": 45,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 45,
+        "belief": 45,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "redelivery",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 60,
+      "goal": 40,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 45,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 20,
+      "weak_quality": 45
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -17
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "consequential_flood",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 80,
+      "goal": 60,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 70,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 90,
+      "weak_quality": 70
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 70,
+        "belief": 70,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 70,
+        "belief": 70,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "unresolved_concern",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 80,
+      "goal": 60,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 70,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 90,
+      "weak_quality": 70
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "relevance_expires",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 80,
+      "goal": 60,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 70,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 90,
+      "weak_quality": 70
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "conflict",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 80,
+      "goal": 60,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 70,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 90,
+      "weak_quality": 70
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "known_repetition",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 80,
+      "goal": 60,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 70,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 90,
+      "weak_quality": 70
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "hidden_origin",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 80,
+      "goal": 60,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 70,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 90,
+      "weak_quality": 70
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 75,
+        "belief": 75,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 75,
+        "belief": 75,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "later_attribution",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 80,
+      "goal": 60,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 70,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 90,
+      "weak_quality": 70
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "equal_salience",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 80,
+      "goal": 60,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 70,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 90,
+      "weak_quality": 70
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "salient_wrong",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 80,
+      "goal": 60,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 70,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 90,
+      "weak_quality": 70
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 20,
+        "belief": 20,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 20,
+        "belief": 20,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "minor_later_useful",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 80,
+      "goal": 60,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 70,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 90,
+      "weak_quality": 70
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "event_traffic",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 80,
+      "goal": 60,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 70,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 90,
+      "weak_quality": 70
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 70,
+        "belief": 70,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -17
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 70,
+        "belief": 70,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -17
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "redelivery",
+    "config": {
+      "attributed": false,
+      "distinct_quality": 80,
+      "goal": 60,
+      "interleave": false,
+      "minor_early": true,
+      "quality": 70,
+      "reverse": true,
+      "shift": true,
+      "traffic_quality": 90,
+      "weak_quality": 70
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -17
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "consequential_flood",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 70,
+      "goal": 100,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 90,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 45,
+      "weak_quality": 90
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "unresolved_concern",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 70,
+      "goal": 100,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 90,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 45,
+      "weak_quality": 90
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "relevance_expires",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 70,
+      "goal": 100,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 90,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 45,
+      "weak_quality": 90
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "conflict",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 70,
+      "goal": 100,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 90,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 45,
+      "weak_quality": 90
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "known_repetition",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 70,
+      "goal": 100,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 90,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 45,
+      "weak_quality": 90
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "hidden_origin",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 70,
+      "goal": 100,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 90,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 45,
+      "weak_quality": 90
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "later_attribution",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 70,
+      "goal": 100,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 90,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 45,
+      "weak_quality": 90
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "equal_salience",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 70,
+      "goal": 100,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 90,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 45,
+      "weak_quality": 90
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "salient_wrong",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 70,
+      "goal": 100,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 90,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 45,
+      "weak_quality": 90
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "minor_later_useful",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 70,
+      "goal": 100,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 90,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 45,
+      "weak_quality": 90
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 60,
+        "belief": 60,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -17
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "undecided",
+      "Salient": "undecided"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "event_traffic",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 70,
+      "goal": 100,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 90,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 45,
+      "weak_quality": 90
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "undecided",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  },
+  {
+    "held_out": true,
+    "scenario": "redelivery",
+    "config": {
+      "attributed": true,
+      "distinct_quality": 70,
+      "goal": 100,
+      "interleave": true,
+      "minor_early": false,
+      "quality": 90,
+      "reverse": false,
+      "shift": true,
+      "traffic_quality": 45,
+      "weak_quality": 90
+    },
+    "methods": {
+      "Fifo": {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -17
+      },
+      "Quality": {
+        "action": "Leave",
+        "basis_support": 99,
+        "belief": 99,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 2,
+        "trust": -17
+      },
+      "Salient": {
+        "action": "Leave",
+        "basis_support": 99,
+        "belief": 99,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 2,
+        "trust": -17
+      }
+    },
+    "salient_action_differs_from_fifo": false,
+    "salient_basis_differs_from_quality": false,
+    "observer_belief_direction": {
+      "Fifo": "scarcity",
+      "Quality": "scarcity",
+      "Salient": "scarcity"
+    }
+  }
+]

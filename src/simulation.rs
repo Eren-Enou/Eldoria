@@ -42,6 +42,52 @@ pub struct Simulation {
     schedule: Schedule,
 }
 impl Simulation {
+    /// 009 retention is prospective, opt-in, and never changes the Grouped rule/cap.
+    pub fn enable_retention(&mut self, method: crate::retention::Method) -> Result<(), String> {
+        self.require_idle()?;
+        let assessment = self
+            .world
+            .get_resource::<crate::assessment::Assessment>()
+            .ok_or("enable Grouped assessment first")?;
+        if assessment.method != crate::assessment::Method::Grouped {
+            return Err("retention requires finalized Grouped assessment".into());
+        }
+        if let Some(state) = self.world.get_resource::<crate::retention::Retention>() {
+            return if state.method == method {
+                Ok(())
+            } else {
+                Err("retention method is fixed for a run".into())
+            };
+        }
+        let first_assessment = assessment.records.len() as u64;
+        self.world.insert_resource(crate::retention::Retention {
+            method,
+            first_assessment,
+            records: vec![],
+        });
+        self.world
+            .insert_resource(crate::retention::Policy(crate::retention::policy));
+        Ok(())
+    }
+    pub fn retention(&self) -> Option<crate::retention::Retention> {
+        self.world
+            .get_resource::<crate::retention::Retention>()
+            .cloned()
+    }
+    pub fn set_retention_policy(
+        &mut self,
+        policy: fn(&crate::retention::Input) -> crate::retention::Decision,
+    ) -> Result<(), String> {
+        self.require_idle()?;
+        if !self
+            .world
+            .contains_resource::<crate::retention::Retention>()
+        {
+            return Err("enable retention first".into());
+        }
+        self.world.insert_resource(crate::retention::Policy(policy));
+        Ok(())
+    }
     /// Prospective only: no import of old receipts, beliefs or forgotten acquisitions.
     pub fn enable_assessment(&mut self, method: crate::assessment::Method) -> Result<(), String> {
         self.require_idle()?;
@@ -1074,7 +1120,7 @@ impl Simulation {
         event: u64,
         kind: EvidenceKind,
     ) -> Result<InformationScene, String> {
-        self.receive_information(speaker, listener, event, kind, None)
+        self.receive_information_support(speaker, listener, event, kind, None, None, true)
     }
 
     fn receive_information(
@@ -1085,9 +1131,18 @@ impl Simulation {
         kind: EvidenceKind,
         testimony_weight: Option<i32>,
     ) -> Result<InformationScene, String> {
-        self.receive_information_support(speaker, listener, event, kind, testimony_weight, None)
+        self.receive_information_support(
+            speaker,
+            listener,
+            event,
+            kind,
+            testimony_weight,
+            None,
+            false,
+        )
     }
 
+    #[allow(clippy::too_many_arguments)]
     fn receive_information_support(
         &mut self,
         speaker: AgentId,
@@ -1096,6 +1151,7 @@ impl Simulation {
         kind: EvidenceKind,
         testimony_weight: Option<i32>,
         local_support: Option<(i32, crate::assessment::Item)>,
+        strict_retention: bool,
     ) -> Result<InformationScene, String> {
         self.require_idle()?;
         if let EvidenceKind::Fallible {
@@ -1183,8 +1239,11 @@ impl Simulation {
                 }
             }
         }
-        let beliefs = cognition.beliefs.entry(listener).or_default();
-        let before = beliefs.iter().find(|b| b.event == event).cloned();
+        let before = cognition
+            .beliefs
+            .get(&listener)
+            .and_then(|beliefs| beliefs.iter().find(|b| b.event == event))
+            .cloned();
         let unified = if self
             .world
             .contains_resource::<crate::assessment::Assessment>()
@@ -1210,12 +1269,83 @@ impl Simulation {
                     quality: reliability,
                 });
             let rule = self.world.resource::<Assessor>().0;
-            Some(self.world.resource_mut::<Assessment>().receive(
-                listener,
-                incoming,
-                before.as_ref().map(|b| b.support),
-                rule,
-            ))
+            let retention_decision = if let Some(state) =
+                self.world.get_resource::<crate::retention::Retention>()
+            {
+                let retained = self
+                    .world
+                    .resource::<Assessment>()
+                    .items
+                    .get(&listener)
+                    .map(|v| v.iter().cloned().collect::<Vec<_>>())
+                    .unwrap_or_default();
+                let concerns = self
+                    .world
+                    .resource::<Concerns>()
+                    .items
+                    .get(&listener)
+                    .cloned()
+                    .unwrap_or_default();
+                let input = crate::retention::Input::new(
+                    listener,
+                    &retained,
+                    &incoming,
+                    concerns,
+                    state.method,
+                );
+                let mut decision = (self.world.resource::<crate::retention::Policy>().0)(&input);
+                let fallback_reason = decision.validate(&input).err();
+                if let Some(error) = &fallback_reason {
+                    if strict_retention {
+                        self.world.insert_resource(cognition);
+                        return Err(error.clone());
+                    }
+                    // Containing protocols may already have paid time/contact costs.
+                    // Complete their legitimate receipt with local FIFO and audit rejection.
+                    decision = crate::retention::fifo_fallback(&input);
+                }
+                Some((
+                    decision,
+                    crate::retention::supports(&retained),
+                    fallback_reason,
+                ))
+            } else {
+                None
+            };
+            let support =
+                if let Some((decision, support_before, fallback_reason)) = retention_decision {
+                    let assessment_id = self.world.resource::<Assessment>().records.len() as u64;
+                    let support = self.world.resource_mut::<Assessment>().receive_selected(
+                        listener,
+                        incoming,
+                        before.as_ref().map(|b| b.support),
+                        rule,
+                        decision.evict,
+                    );
+                    let retained: Vec<_> = self.world.resource::<Assessment>().items[&listener]
+                        .iter()
+                        .cloned()
+                        .collect();
+                    self.world
+                        .resource_mut::<crate::retention::Retention>()
+                        .records
+                        .push(crate::retention::Record {
+                            assessment: assessment_id,
+                            fallback_reason,
+                            decision,
+                            event_support_before: support_before,
+                            event_support_after: crate::retention::supports(&retained),
+                        });
+                    support
+                } else {
+                    self.world.resource_mut::<Assessment>().receive(
+                        listener,
+                        incoming,
+                        before.as_ref().map(|b| b.support),
+                        rule,
+                    )
+                };
+            Some(support)
         } else {
             None
         };
@@ -1244,6 +1374,7 @@ impl Simulation {
                 },
             )
         };
+        let beliefs = cognition.beliefs.entry(listener).or_default();
         beliefs.retain(|b| b.event != event);
         if beliefs.len() == MEMORY_CAPACITY {
             beliefs.pop_front();

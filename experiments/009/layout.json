@@ -1,0 +1,12 @@
+{
+  "candidate_budget": 33,
+  "candidate_size": 32,
+  "concern_budget": 8,
+  "concern_size": 72,
+  "existing_item_budget": 32,
+  "item_size": 72,
+  "new_persistent_per_individual_score_slots": 0,
+  "note": "Rust payload sizes; excludes Vec allocations, ECS headers, audit records and process RSS",
+  "policy_function_pointer_size": 8,
+  "retention_resource_size": 40
+}

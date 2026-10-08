@@ -1,0 +1,66 @@
+[
+  {
+    "live_assessment_bytes": 242244,
+    "method": "Frozen008",
+    "population": 100,
+    "records": 1800,
+    "retention_audit_bytes": 0,
+    "snapshot_bytes": 3439320
+  },
+  {
+    "live_assessment_bytes": 242244,
+    "method": "Fifo",
+    "population": 100,
+    "records": 1800,
+    "retention_audit_bytes": 8207306,
+    "snapshot_bytes": 11646671
+  },
+  {
+    "live_assessment_bytes": 242244,
+    "method": "Quality",
+    "population": 100,
+    "records": 1800,
+    "retention_audit_bytes": 8211306,
+    "snapshot_bytes": 11640784
+  },
+  {
+    "live_assessment_bytes": 242244,
+    "method": "Salient",
+    "population": 100,
+    "records": 1800,
+    "retention_audit_bytes": 8211356,
+    "snapshot_bytes": 11640834
+  },
+  {
+    "live_assessment_bytes": 2486556,
+    "method": "Frozen008",
+    "population": 1000,
+    "records": 18000,
+    "retention_audit_bytes": 0,
+    "snapshot_bytes": 35442611
+  },
+  {
+    "live_assessment_bytes": 2486556,
+    "method": "Fifo",
+    "population": 1000,
+    "records": 18000,
+    "retention_audit_bytes": 83899845,
+    "snapshot_bytes": 119342501
+  },
+  {
+    "live_assessment_bytes": 2486556,
+    "method": "Quality",
+    "population": 1000,
+    "records": 18000,
+    "retention_audit_bytes": 83939845,
+    "snapshot_bytes": 119281614
+  },
+  {
+    "live_assessment_bytes": 2486556,
+    "method": "Salient",
+    "population": 1000,
+    "records": 18000,
+    "retention_audit_bytes": 83940345,
+    "snapshot_bytes": 119282114
+  }
+]

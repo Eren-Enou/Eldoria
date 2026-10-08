@@ -212,3 +212,21 @@ hidden dependence can still mislead. `native_acquired_exchange` delivers an actu
 retained structured report through the native adapter without inventing another
 origin. Prior modes and archives remain unchanged. Forgetting and legitimate new
 information can change assessment; the mechanism does not discover objective truth.
+
+## Experiment 009: bounded selective retention
+
+[Results and limitations](experiments/009/results.md) compare FIFO, received-quality
+retention and current-concern salience at the same 32-item capacity. Selective modes
+preserve some useful distinctions but retain errors and miss later-useful minor
+items. The evidence supports narrow opt-in research use; FIFO remains the default.
+
+After `enable_assessment(assessment::Method::Grouped)`, explicitly call
+`enable_retention(retention::Method::Salient)` or choose `Quality`/`Fifo` controls.
+The policy sees only own retained items, incoming evidence and own capped concerns.
+Use `experiment009::Snapshot::validate` for selective-history replay; the frozen 008
+validator still reconstructs FIFO. Enabling does not import observer history.
+
+Run `cargo run --release --locked -j1 --example evaluate009`, then
+`python experiments/009/archive.py` and `python experiments/009/analyze.py`.
+Full new 009 traces are reproducibly compressed; timings remain separate CSV.
+Earlier experiments and their contract map are frozen. No Experiment 010 is added.

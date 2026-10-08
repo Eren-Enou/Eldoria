@@ -111,6 +111,17 @@ impl Assessment {
         prior_belief: Option<i32>,
         rule: Rule,
     ) -> i32 {
+        self.receive_selected(owner, incoming, prior_belief, rule, Some(0))
+    }
+    /// 009 may reject incoming or evict a selected retained slot; old receive stays FIFO.
+    pub(crate) fn receive_selected(
+        &mut self,
+        owner: AgentId,
+        incoming: Item,
+        prior_belief: Option<i32>,
+        rule: Rule,
+        eviction: Option<usize>,
+    ) -> i32 {
         let items = self.items.entry(owner).or_default();
         let before = rule(items.make_contiguous(), incoming.event);
         let mut revised = vec![];
@@ -125,12 +136,21 @@ impl Assessment {
                 revised.push(item.receipt);
             }
         }
+        let mut retained_incoming = true;
         let evicted = if items.len() == CAPACITY {
-            items.pop_front().map(|i| i.receipt)
+            let index = eviction.expect("validated overflow eviction");
+            if index == CAPACITY {
+                retained_incoming = false;
+                Some(incoming.receipt)
+            } else {
+                items.remove(index).map(|i| i.receipt)
+            }
         } else {
             None
         };
-        items.push_back(incoming.clone());
+        if retained_incoming {
+            items.push_back(incoming.clone());
+        }
         let support = rule(items.make_contiguous(), incoming.event);
         assert!(
             (-100..=100).contains(&support),

@@ -540,6 +540,7 @@ impl Simulation {
                             quality,
                         },
                     )),
+                    false,
                 )?
                 .id,
             )

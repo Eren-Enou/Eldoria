@@ -1,0 +1,16 @@
+scenario,method,sample,run_snapshot_validation_ms,serialize_ms,bytes,records,live_items
+unresolved_concern,Fifo,0,1.597800,1.048600,604572,49,32
+unresolved_concern,Fifo,1,1.227700,0.920900,604572,49,32
+unresolved_concern,Fifo,2,1.174300,0.952300,604572,49,32
+unresolved_concern,Fifo,3,1.563300,1.115900,604572,49,32
+unresolved_concern,Fifo,4,1.275900,0.936800,604572,49,32
+unresolved_concern,Quality,0,1.168600,0.919400,605693,49,32
+unresolved_concern,Quality,1,1.121400,0.896300,605693,49,32
+unresolved_concern,Quality,2,1.149100,0.909800,605693,49,32
+unresolved_concern,Quality,3,1.133900,0.905200,605693,49,32
+unresolved_concern,Quality,4,1.261100,0.946600,605693,49,32
+unresolved_concern,Salient,0,1.182600,0.977400,606387,49,32
+unresolved_concern,Salient,1,1.203100,0.941700,606387,49,32
+unresolved_concern,Salient,2,1.174900,0.952500,606387,49,32
+unresolved_concern,Salient,3,1.166000,0.925100,606387,49,32
+unresolved_concern,Salient,4,1.125700,0.909300,606387,49,32

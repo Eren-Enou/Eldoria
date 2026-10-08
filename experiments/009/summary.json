@@ -1,0 +1,4986 @@
+{
+  "capacity": 32,
+  "controlled_seed42": [
+    [
+      "consequential_flood",
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "consequential_flood",
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 80,
+        "belief": 80,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      }
+    ],
+    [
+      "consequential_flood",
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 80,
+        "belief": 80,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      }
+    ],
+    [
+      "unresolved_concern",
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -17
+      }
+    ],
+    [
+      "unresolved_concern",
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -17
+      }
+    ],
+    [
+      "unresolved_concern",
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 40,
+        "belief": 40,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "relevance_expires",
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -17
+      }
+    ],
+    [
+      "relevance_expires",
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -17
+      }
+    ],
+    [
+      "relevance_expires",
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -17
+      }
+    ],
+    [
+      "conflict",
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "conflict",
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "conflict",
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "hidden_origin",
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "hidden_origin",
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 75,
+        "belief": 75,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      }
+    ],
+    [
+      "hidden_origin",
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 75,
+        "belief": 75,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      }
+    ],
+    [
+      "later_attribution",
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "later_attribution",
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "later_attribution",
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "equal_salience",
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -17
+      }
+    ],
+    [
+      "equal_salience",
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -17
+      }
+    ],
+    [
+      "equal_salience",
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -17
+      }
+    ],
+    [
+      "salient_wrong",
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      }
+    ],
+    [
+      "salient_wrong",
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 10,
+        "belief": 10,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "salient_wrong",
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 10,
+        "belief": 10,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "minor_later_useful",
+      "Fifo",
+      {
+        "action": "Offer",
+        "basis_support": 60,
+        "belief": 60,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": 0
+      }
+    ],
+    [
+      "minor_later_useful",
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -17
+      }
+    ],
+    [
+      "minor_later_useful",
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -17
+      }
+    ],
+    [
+      "event_traffic",
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "event_traffic",
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 80,
+        "belief": 80,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      }
+    ],
+    [
+      "event_traffic",
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 80,
+        "belief": 80,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      }
+    ],
+    [
+      "redelivery",
+      "Fifo",
+      {
+        "action": "Offer",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": 0
+      }
+    ],
+    [
+      "redelivery",
+      "Quality",
+      {
+        "action": "Offer",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": 0
+      }
+    ],
+    [
+      "redelivery",
+      "Salient",
+      {
+        "action": "Offer",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": 0
+      }
+    ]
+  ],
+  "controlled_trials": 4608,
+  "held_out_seed42": [
+    [
+      "consequential_flood",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "consequential_flood",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 20,
+        "belief": 20,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "consequential_flood",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 20,
+        "belief": 20,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "unresolved_concern",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "unresolved_concern",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "unresolved_concern",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "relevance_expires",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "relevance_expires",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "relevance_expires",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "conflict",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "conflict",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "conflict",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "hidden_origin",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "hidden_origin",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 75,
+        "belief": 75,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      }
+    ],
+    [
+      "hidden_origin",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 75,
+        "belief": 75,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      }
+    ],
+    [
+      "later_attribution",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "later_attribution",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "later_attribution",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "equal_salience",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "equal_salience",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "equal_salience",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "salient_wrong",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      }
+    ],
+    [
+      "salient_wrong",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 70,
+        "belief": 70,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      }
+    ],
+    [
+      "salient_wrong",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 70,
+        "belief": 70,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      }
+    ],
+    [
+      "minor_later_useful",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -34
+      }
+    ],
+    [
+      "minor_later_useful",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "minor_later_useful",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "event_traffic",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "event_traffic",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 20,
+        "belief": 20,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -34
+      }
+    ],
+    [
+      "event_traffic",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 20,
+        "belief": 20,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -34
+      }
+    ],
+    [
+      "redelivery",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "redelivery",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "redelivery",
+      {
+        "attributed": false,
+        "distinct_quality": 90,
+        "goal": 0,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 20,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 70,
+        "weak_quality": 20
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "consequential_flood",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "consequential_flood",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 45,
+        "belief": 45,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "consequential_flood",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 45,
+        "belief": 45,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "unresolved_concern",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "unresolved_concern",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "unresolved_concern",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 45,
+        "belief": 45,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -34
+      }
+    ],
+    [
+      "relevance_expires",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "relevance_expires",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "relevance_expires",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "conflict",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "conflict",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "conflict",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "hidden_origin",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "hidden_origin",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "hidden_origin",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "later_attribution",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "later_attribution",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "later_attribution",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "equal_salience",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "equal_salience",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "equal_salience",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "salient_wrong",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "salient_wrong",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 45,
+        "belief": 45,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "salient_wrong",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 45,
+        "belief": 45,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "minor_later_useful",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 60,
+        "belief": 60,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -17
+      }
+    ],
+    [
+      "minor_later_useful",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "minor_later_useful",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "event_traffic",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "event_traffic",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 45,
+        "belief": 45,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "event_traffic",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 45,
+        "belief": 45,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "redelivery",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "redelivery",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "redelivery",
+      {
+        "attributed": true,
+        "distinct_quality": 60,
+        "goal": 40,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 45,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 20,
+        "weak_quality": 45
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "consequential_flood",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "consequential_flood",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 70,
+        "belief": 70,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      }
+    ],
+    [
+      "consequential_flood",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 70,
+        "belief": 70,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      }
+    ],
+    [
+      "unresolved_concern",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "unresolved_concern",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "unresolved_concern",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "relevance_expires",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "relevance_expires",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "relevance_expires",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "conflict",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "conflict",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "conflict",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "hidden_origin",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "hidden_origin",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 75,
+        "belief": 75,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      }
+    ],
+    [
+      "hidden_origin",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 75,
+        "belief": 75,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -85
+      }
+    ],
+    [
+      "later_attribution",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "later_attribution",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "later_attribution",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "equal_salience",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "equal_salience",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "equal_salience",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "salient_wrong",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -85
+      }
+    ],
+    [
+      "salient_wrong",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 20,
+        "belief": 20,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "salient_wrong",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 20,
+        "belief": 20,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "minor_later_useful",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -34
+      }
+    ],
+    [
+      "minor_later_useful",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "minor_later_useful",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "event_traffic",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "event_traffic",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 70,
+        "belief": 70,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "event_traffic",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 70,
+        "belief": 70,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "redelivery",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "redelivery",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "redelivery",
+      {
+        "attributed": false,
+        "distinct_quality": 80,
+        "goal": 60,
+        "interleave": false,
+        "minor_early": true,
+        "quality": 70,
+        "reverse": true,
+        "shift": true,
+        "traffic_quality": 90,
+        "weak_quality": 70
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "consequential_flood",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "consequential_flood",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "consequential_flood",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "unresolved_concern",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "unresolved_concern",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "unresolved_concern",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "relevance_expires",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "relevance_expires",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "relevance_expires",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 1,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "conflict",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "conflict",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "conflict",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "known_repetition",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 16,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "hidden_origin",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "hidden_origin",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "hidden_origin",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "later_attribution",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "later_attribution",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "later_attribution",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 50,
+        "belief": 50,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "equal_salience",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "equal_salience",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "equal_salience",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "salient_wrong",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "salient_wrong",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "salient_wrong",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": true,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -100
+      }
+    ],
+    [
+      "minor_later_useful",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 60,
+        "belief": 60,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 3,
+        "target_origins": 2,
+        "trust": -17
+      }
+    ],
+    [
+      "minor_later_useful",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "minor_later_useful",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 0,
+        "target_origins": 0,
+        "trust": -34
+      }
+    ],
+    [
+      "event_traffic",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 0,
+        "belief": 0,
+        "concern": "Partial",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": false,
+        "target_items": 1,
+        "target_origins": 0,
+        "trust": -100
+      }
+    ],
+    [
+      "event_traffic",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "event_traffic",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": "Resolved",
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -100
+      }
+    ],
+    [
+      "redelivery",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Fifo",
+      {
+        "action": "Leave",
+        "basis_support": 90,
+        "belief": 90,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 1,
+        "trust": -17
+      }
+    ],
+    [
+      "redelivery",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Quality",
+      {
+        "action": "Leave",
+        "basis_support": 99,
+        "belief": 99,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 2,
+        "trust": -17
+      }
+    ],
+    [
+      "redelivery",
+      {
+        "attributed": true,
+        "distinct_quality": 70,
+        "goal": 100,
+        "interleave": true,
+        "minor_early": false,
+        "quality": 90,
+        "reverse": false,
+        "shift": true,
+        "traffic_quality": 45,
+        "weak_quality": 90
+      },
+      "Salient",
+      {
+        "action": "Leave",
+        "basis_support": 99,
+        "belief": 99,
+        "concern": null,
+        "label": "legitimate zero-quality reappraisal",
+        "live_items": 32,
+        "negative": false,
+        "positive": true,
+        "target_items": 2,
+        "target_origins": 2,
+        "trust": -17
+      }
+    ]
+  ],
+  "held_out_trials": 18432,
+  "outcomes": {
+    "held=false:conflict:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Fifo:0:0:false:Leave": 128,
+    "held=false:conflict:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Quality:0:2:true:Leave": 128,
+    "held=false:conflict:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Salient:0:2:true:Leave": 128,
+    "held=false:consequential_flood:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Fifo:0:0:false:Leave": 128,
+    "held=false:consequential_flood:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Quality:80:1:false:Leave": 128,
+    "held=false:consequential_flood:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Salient:80:1:false:Leave": 128,
+    "held=false:equal_salience:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Fifo:0:0:false:Leave": 128,
+    "held=false:equal_salience:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Quality:0:0:false:Leave": 128,
+    "held=false:equal_salience:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Salient:0:0:false:Leave": 128,
+    "held=false:event_traffic:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Fifo:0:0:false:Leave": 128,
+    "held=false:event_traffic:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Quality:80:1:false:Leave": 128,
+    "held=false:event_traffic:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Salient:80:1:false:Leave": 128,
+    "held=false:hidden_origin:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Fifo:0:0:false:Leave": 128,
+    "held=false:hidden_origin:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Quality:75:2:false:Leave": 128,
+    "held=false:hidden_origin:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Salient:75:2:false:Leave": 128,
+    "held=false:known_repetition:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Fifo:50:1:false:Leave": 128,
+    "held=false:known_repetition:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Quality:50:1:false:Leave": 128,
+    "held=false:known_repetition:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Salient:50:1:false:Leave": 128,
+    "held=false:later_attribution:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Fifo:50:1:false:Leave": 128,
+    "held=false:later_attribution:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Quality:50:1:false:Leave": 128,
+    "held=false:later_attribution:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Salient:50:1:false:Leave": 128,
+    "held=false:minor_later_useful:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Fifo:60:2:false:Offer": 128,
+    "held=false:minor_later_useful:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Quality:0:0:false:Leave": 128,
+    "held=false:minor_later_useful:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Salient:0:0:false:Leave": 128,
+    "held=false:redelivery:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Fifo:90:1:false:Offer": 128,
+    "held=false:redelivery:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Quality:90:1:false:Offer": 128,
+    "held=false:redelivery:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Salient:90:1:false:Offer": 128,
+    "held=false:relevance_expires:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Fifo:0:0:false:Leave": 128,
+    "held=false:relevance_expires:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Quality:0:0:false:Leave": 128,
+    "held=false:relevance_expires:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Salient:0:0:false:Leave": 128,
+    "held=false:salient_wrong:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Fifo:90:1:false:Leave": 128,
+    "held=false:salient_wrong:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Quality:10:2:true:Leave": 128,
+    "held=false:salient_wrong:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Salient:10:2:true:Leave": 128,
+    "held=false:unresolved_concern:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Fifo:0:0:false:Leave": 128,
+    "held=false:unresolved_concern:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Quality:0:0:false:Leave": 128,
+    "held=false:unresolved_concern:Config { quality: 80, traffic_quality: 40, weak_quality: 40, distinct_quality: 70, attributed: false, minor_early: false, goal: 80, reverse: false, interleave: false, shift: false }:Salient:40:1:false:Leave": 128,
+    "held=true:conflict:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:conflict:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Quality:0:2:true:Leave": 128,
+    "held=true:conflict:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Salient:0:2:true:Leave": 128,
+    "held=true:conflict:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:conflict:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Quality:0:2:true:Leave": 128,
+    "held=true:conflict:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Salient:0:2:true:Leave": 128,
+    "held=true:conflict:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:conflict:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Quality:0:2:true:Leave": 128,
+    "held=true:conflict:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Salient:0:2:true:Leave": 128,
+    "held=true:conflict:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:conflict:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Quality:0:2:true:Leave": 128,
+    "held=true:conflict:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Salient:0:2:true:Leave": 128,
+    "held=true:consequential_flood:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:consequential_flood:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Quality:20:1:false:Leave": 128,
+    "held=true:consequential_flood:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Salient:20:1:false:Leave": 128,
+    "held=true:consequential_flood:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:consequential_flood:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Quality:45:1:false:Leave": 128,
+    "held=true:consequential_flood:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Salient:45:1:false:Leave": 128,
+    "held=true:consequential_flood:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:consequential_flood:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Quality:70:1:false:Leave": 128,
+    "held=true:consequential_flood:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Salient:70:1:false:Leave": 128,
+    "held=true:consequential_flood:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:consequential_flood:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Quality:90:1:false:Leave": 128,
+    "held=true:consequential_flood:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Salient:90:1:false:Leave": 128,
+    "held=true:equal_salience:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:equal_salience:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Quality:0:0:false:Leave": 128,
+    "held=true:equal_salience:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Salient:0:0:false:Leave": 128,
+    "held=true:equal_salience:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:equal_salience:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Quality:0:0:false:Leave": 128,
+    "held=true:equal_salience:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Salient:0:0:false:Leave": 128,
+    "held=true:equal_salience:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:equal_salience:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Quality:0:0:false:Leave": 128,
+    "held=true:equal_salience:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Salient:0:0:false:Leave": 128,
+    "held=true:equal_salience:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:equal_salience:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Quality:0:0:false:Leave": 128,
+    "held=true:equal_salience:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Salient:0:0:false:Leave": 128,
+    "held=true:event_traffic:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:event_traffic:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Quality:20:1:false:Leave": 128,
+    "held=true:event_traffic:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Salient:20:1:false:Leave": 128,
+    "held=true:event_traffic:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:event_traffic:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Quality:45:1:false:Leave": 128,
+    "held=true:event_traffic:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Salient:45:1:false:Leave": 128,
+    "held=true:event_traffic:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:event_traffic:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Quality:70:1:false:Leave": 128,
+    "held=true:event_traffic:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Salient:70:1:false:Leave": 128,
+    "held=true:event_traffic:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:event_traffic:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Quality:90:1:false:Leave": 128,
+    "held=true:event_traffic:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Salient:90:1:false:Leave": 128,
+    "held=true:hidden_origin:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:hidden_origin:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Quality:75:2:false:Leave": 128,
+    "held=true:hidden_origin:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Salient:75:2:false:Leave": 128,
+    "held=true:hidden_origin:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:hidden_origin:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Quality:50:1:false:Leave": 128,
+    "held=true:hidden_origin:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Salient:50:1:false:Leave": 128,
+    "held=true:hidden_origin:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:hidden_origin:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Quality:75:2:false:Leave": 128,
+    "held=true:hidden_origin:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Salient:75:2:false:Leave": 128,
+    "held=true:hidden_origin:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:hidden_origin:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Quality:50:1:false:Leave": 128,
+    "held=true:hidden_origin:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Salient:50:1:false:Leave": 128,
+    "held=true:known_repetition:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Fifo:50:1:false:Leave": 128,
+    "held=true:known_repetition:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Quality:50:1:false:Leave": 128,
+    "held=true:known_repetition:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Salient:50:1:false:Leave": 128,
+    "held=true:known_repetition:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Fifo:50:1:false:Leave": 128,
+    "held=true:known_repetition:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Quality:50:1:false:Leave": 128,
+    "held=true:known_repetition:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Salient:50:1:false:Leave": 128,
+    "held=true:known_repetition:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Fifo:50:1:false:Leave": 128,
+    "held=true:known_repetition:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Quality:50:1:false:Leave": 128,
+    "held=true:known_repetition:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Salient:50:1:false:Leave": 128,
+    "held=true:known_repetition:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Fifo:50:1:false:Leave": 128,
+    "held=true:known_repetition:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Quality:50:1:false:Leave": 128,
+    "held=true:known_repetition:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Salient:50:1:false:Leave": 128,
+    "held=true:later_attribution:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Fifo:50:1:false:Leave": 128,
+    "held=true:later_attribution:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Quality:50:1:false:Leave": 128,
+    "held=true:later_attribution:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Salient:50:1:false:Leave": 128,
+    "held=true:later_attribution:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Fifo:50:1:false:Leave": 128,
+    "held=true:later_attribution:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Quality:50:1:false:Leave": 128,
+    "held=true:later_attribution:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Salient:50:1:false:Leave": 128,
+    "held=true:later_attribution:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Fifo:50:1:false:Leave": 128,
+    "held=true:later_attribution:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Quality:50:1:false:Leave": 128,
+    "held=true:later_attribution:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Salient:50:1:false:Leave": 128,
+    "held=true:later_attribution:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Fifo:50:1:false:Leave": 128,
+    "held=true:later_attribution:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Quality:50:1:false:Leave": 128,
+    "held=true:later_attribution:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Salient:50:1:false:Leave": 128,
+    "held=true:minor_later_useful:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Fifo:50:1:false:Leave": 128,
+    "held=true:minor_later_useful:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Quality:0:0:false:Leave": 128,
+    "held=true:minor_later_useful:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Salient:0:0:false:Leave": 128,
+    "held=true:minor_later_useful:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Fifo:60:2:false:Leave": 128,
+    "held=true:minor_later_useful:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Quality:0:0:false:Leave": 128,
+    "held=true:minor_later_useful:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Salient:0:0:false:Leave": 128,
+    "held=true:minor_later_useful:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Fifo:50:1:false:Leave": 128,
+    "held=true:minor_later_useful:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Quality:0:0:false:Leave": 128,
+    "held=true:minor_later_useful:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Salient:0:0:false:Leave": 128,
+    "held=true:minor_later_useful:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Fifo:60:2:false:Leave": 128,
+    "held=true:minor_later_useful:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Quality:0:0:false:Leave": 128,
+    "held=true:minor_later_useful:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Salient:0:0:false:Leave": 128,
+    "held=true:redelivery:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Fifo:90:1:false:Leave": 128,
+    "held=true:redelivery:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Quality:90:1:false:Leave": 128,
+    "held=true:redelivery:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Salient:90:1:false:Leave": 128,
+    "held=true:redelivery:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Fifo:90:1:false:Leave": 128,
+    "held=true:redelivery:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Quality:90:1:false:Leave": 128,
+    "held=true:redelivery:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Salient:90:1:false:Leave": 128,
+    "held=true:redelivery:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Fifo:90:1:false:Leave": 128,
+    "held=true:redelivery:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Quality:90:1:false:Leave": 128,
+    "held=true:redelivery:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Salient:90:1:false:Leave": 128,
+    "held=true:redelivery:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Fifo:90:1:false:Leave": 128,
+    "held=true:redelivery:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Quality:99:2:false:Leave": 128,
+    "held=true:redelivery:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Salient:99:2:false:Leave": 128,
+    "held=true:relevance_expires:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:relevance_expires:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Quality:0:0:false:Leave": 128,
+    "held=true:relevance_expires:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Salient:0:0:false:Leave": 128,
+    "held=true:relevance_expires:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:relevance_expires:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Quality:0:0:false:Leave": 128,
+    "held=true:relevance_expires:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Salient:0:0:false:Leave": 128,
+    "held=true:relevance_expires:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:relevance_expires:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Quality:0:0:false:Leave": 128,
+    "held=true:relevance_expires:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Salient:0:0:false:Leave": 128,
+    "held=true:relevance_expires:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:relevance_expires:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Quality:90:1:false:Leave": 128,
+    "held=true:relevance_expires:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Salient:90:1:false:Leave": 128,
+    "held=true:salient_wrong:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Fifo:90:1:false:Leave": 128,
+    "held=true:salient_wrong:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Quality:70:2:true:Leave": 128,
+    "held=true:salient_wrong:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Salient:70:2:true:Leave": 128,
+    "held=true:salient_wrong:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Fifo:90:1:false:Leave": 128,
+    "held=true:salient_wrong:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Quality:45:2:true:Leave": 128,
+    "held=true:salient_wrong:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Salient:45:2:true:Leave": 128,
+    "held=true:salient_wrong:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Fifo:90:1:false:Leave": 128,
+    "held=true:salient_wrong:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Quality:20:2:true:Leave": 128,
+    "held=true:salient_wrong:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Salient:20:2:true:Leave": 128,
+    "held=true:salient_wrong:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Fifo:90:1:false:Leave": 128,
+    "held=true:salient_wrong:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Quality:0:2:true:Leave": 128,
+    "held=true:salient_wrong:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Salient:0:2:true:Leave": 128,
+    "held=true:unresolved_concern:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:unresolved_concern:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Quality:0:0:false:Leave": 128,
+    "held=true:unresolved_concern:Config { quality: 20, traffic_quality: 70, weak_quality: 20, distinct_quality: 90, attributed: false, minor_early: true, goal: 0, reverse: true, interleave: false, shift: true }:Salient:0:0:false:Leave": 128,
+    "held=true:unresolved_concern:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:unresolved_concern:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Quality:0:0:false:Leave": 128,
+    "held=true:unresolved_concern:Config { quality: 45, traffic_quality: 20, weak_quality: 45, distinct_quality: 60, attributed: true, minor_early: false, goal: 40, reverse: false, interleave: true, shift: true }:Salient:45:1:false:Leave": 128,
+    "held=true:unresolved_concern:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:unresolved_concern:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Quality:0:0:false:Leave": 128,
+    "held=true:unresolved_concern:Config { quality: 70, traffic_quality: 90, weak_quality: 70, distinct_quality: 80, attributed: false, minor_early: true, goal: 60, reverse: true, interleave: false, shift: true }:Salient:0:0:false:Leave": 128,
+    "held=true:unresolved_concern:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Fifo:0:0:false:Leave": 128,
+    "held=true:unresolved_concern:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Quality:90:1:false:Leave": 128,
+    "held=true:unresolved_concern:Config { quality: 90, traffic_quality: 45, weak_quality: 90, distinct_quality: 70, attributed: true, minor_early: false, goal: 100, reverse: false, interleave: true, shift: true }:Salient:90:1:false:Leave": 128
+  },
+  "rules": "experiment-009-v1",
+  "seeds": "0..128",
+  "serialized_control_bytes": {
+    "Fifo": 604572,
+    "Quality": 605693,
+    "Salient": 606387
+  }
+}
