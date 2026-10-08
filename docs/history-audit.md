@@ -92,3 +92,14 @@ the historical vector. Advancing active indexes preserves original scene order.
 Native inquiry contexts, other full decision inputs, report checkpoint prefixes,
 objective archives and partner maps still grow. This pass does not introduce a
 database, generic planner, universal event graph or persistent-world archival policy.
+
+## Experiment 008 assessment audit
+
+The 008 snapshot is a separate compact-base/assessment wrapper. Records retain local
+incoming Items and explicitly namespaced native/provenance references, including
+eviction and disclosed-attribution changes. Observer validation replays that stream
+and checks the cognitive consequences; live assessment never reads the audit archive.
+Native delivery of an acquired report resolves to its actual public payload, preserving
+the same disclosed token or Unknown assumption as provenance delivery. Validation may
+not substitute its objective root for unavailable attribution. Older exports remain
+unchanged. See [008 findings](../experiments/008/results.md).

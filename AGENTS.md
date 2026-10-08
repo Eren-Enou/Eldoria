@@ -100,3 +100,13 @@ Bound knowledge, hints and comparison keys at 32, audit FIFO eviction, and do no
 recover evicted acquisitions from the objective archive. Preserve native self-
 knowledge responses and all 001–006 defaults/evidence. Archive new compatibility
 under 007. Do not infer statistical independence or social emergence from root IDs.
+
+Experiment 008 assessment is opt-in after provenance and prospective only. Use one
+bounded local basis across native readings and legitimately received reports;
+never import observer archives or equate undisclosed origins using objective roots.
+Keep origin/content/received quality separate from delivery receipt namespaces.
+The same retained acquisition keeps its origin across native/provenance delivery.
+Keep cap 32, explicit FIFO eviction and immutable assessment records. Order/repetition
+controls require identical retained inputs and fixed weights; invariance need not
+survive forgetting or legitimate credibility changes. Preserve original events,
+saturated trust replay and older mode outputs. Archive new evidence under 008.

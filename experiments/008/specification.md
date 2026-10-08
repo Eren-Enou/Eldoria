@@ -73,3 +73,34 @@ Use a separate 008 snapshot containing the compact base plus the assessment arch
 do not silently append 008 state to legacy snapshots. Measure 100/1,000 populations
 and controlled scenarios; no scaling optimization, general evidence framework,
 uncertain attribution, planner, reputation, geography or institutions. No 009 work.
+
+## Completion review, 2026-10-08 (before further behavior changes)
+
+The repository contains the preliminary implementation but no completed evaluation
+or tests. The preview currently fails: memory-eviction churn can trigger genuine
+follow-up evidence at the original native slot, after which the fixture tries to
+rewrite that slot. Isolate the eviction control using a documented privacy
+intervention that permits voluntary silence, rather than weakening immutability.
+
+Also test one already acquired, explicitly attributed report delivered through both
+native receipt and provenance adapters. Both must preserve the same public origin,
+quality and source decision; selecting a delivery adapter must not manufacture a
+new origin. This narrow 008-only adapter copies retained source knowledge through
+the existing validated voluntary exchange, preserves objective parent references,
+and changes only the assessment receipt namespace. It cannot map anonymous native
+readings to hidden observation tokens or introduce uncertain attribution.
+
+Keep the existing cap32 and prospective enable boundary. Compare Max and Grouped
+before selecting the default: reject extra aggregation if no distinguishing case
+supports it. Record any mismatch between unified support and older novelty values;
+do not silently retune the inquiry/credibility mechanism. Primary controls use fixed
+credibility, no action between receipts, no eviction and matched origin/content/
+quality. A true later correction uses an additional legitimate independent reading.
+
+## Completed evaluation, 2026-10-08
+
+Evaluated 56 variants across 128 seeds with exact replay (7,168 trials), all seven
+archived compatibility outputs, population replays and required engineering checks.
+Grouped is retained because it distinguishes independent corroboration from known
+relay while Max does not. Both solve the tested mixed-channel final reversals.
+Full controls, surprises, performance and limits are recorded in results.md.

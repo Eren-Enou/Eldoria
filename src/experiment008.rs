@@ -54,9 +54,28 @@ impl Snapshot {
                                 channel: source,
                             },
                         };
-                        if i.origin != origin
+                        if i.message.is_some() {
+                            let delivered = self
+                                .base
+                                .provenance
+                                .receipts
+                                .iter()
+                                .find(|r| r.cognition_receipt == Some(id))
+                                .ok_or("missing native acquired payload")?;
+                            let k = &delivered.knowledge;
+                            if delivered.listener != r.owner
+                                || i.origin
+                                    != k.known
+                                        .map_or(Origin::Unknown(k.communicator), Origin::Known)
+                                || i.communicator != k.communicator
+                                || i.message != Some(k.message)
+                                || i.claim != k.claim
+                                || i.quality != k.quality
+                            {
+                                return Err("native acquired payload mismatch".into());
+                            }
+                        } else if i.origin != origin
                             || i.communicator != info.speaker
-                            || i.message.is_some()
                             || i.quality != info.reliability
                             || i.claim != info.scarce
                         {
@@ -216,6 +235,11 @@ pub const SCENARIOS: &[&str] = &[
     "eviction",
     "evicted_memory",
     "inquiry",
+    "correction",
+    "acquired_pp",
+    "acquired_nn",
+    "acquired_np",
+    "acquired_pn",
 ];
 pub fn trial(seed: u64, mode: Mode, scenario: &str) -> Trial {
     let mut sim = e::setup(seed);
@@ -223,6 +247,35 @@ pub fn trial(seed: u64, mode: Mode, scenario: &str) -> Trial {
     let event = e::event(&sim);
     let mut points = vec![point(&sim, event, "initial")];
     match scenario {
+        "acquired_pp" | "acquired_nn" | "acquired_np" | "acquired_pn" => {
+            inspect(&mut sim, event, 2, true, 50);
+            for channel in scenario.trim_start_matches("acquired_").chars() {
+                if channel == 'n' {
+                    sim.native_acquired_exchange(2, 0, event, true).unwrap();
+                } else {
+                    share(&mut sim, event, 2, true);
+                }
+                points.push(point(
+                    &sim,
+                    event,
+                    if channel == 'n' {
+                        "native acquired delivery"
+                    } else {
+                        "provenance acquired delivery"
+                    },
+                ));
+            }
+        }
+        "correction" => {
+            inspect(&mut sim, event, 2, false, 40);
+            share(&mut sim, event, 2, true);
+            points.push(point(&sim, event, "weak misleading report"));
+            native(&mut sim, event, true, 90);
+            points.push(point(&sim, event, "strong conflicting native"));
+            inspect(&mut sim, event, 3, true, 50);
+            share(&mut sim, event, 3, true);
+            points.push(point(&sim, event, "genuinely new independent correction"));
+        }
         "mixed_np" | "mixed_pn" | "corroboration_np" | "corroboration_pn" | "conflict_np"
         | "conflict_pn" | "wrong" | "inquiry" => {
             let corroboration = scenario.starts_with("corroboration");
@@ -309,6 +362,16 @@ pub fn trial(seed: u64, mode: Mode, scenario: &str) -> Trial {
             points.push(point(&sim, event, "native explicitly received again"));
         }
         "evicted_memory" => {
+            // Prevent this capacity-only control from acquiring a different native
+            // reading before the final intervention. Silence remains voluntary.
+            sim.set_communication_profile(
+                1,
+                crate::intentional::Profile {
+                    privacy: 100,
+                    ..Default::default()
+                },
+            )
+            .unwrap();
             for _ in 0..20 {
                 sim.set_circumstances(0, 4, 0, 0, 100).unwrap();
                 sim.set_circumstances(1, 4, 0, 0, 100).unwrap();
@@ -339,6 +402,7 @@ pub fn suite(seed: u64) -> Vec<Trial> {
         .flat_map(|mode| {
             SCENARIOS
                 .iter()
+                .filter(move |scenario| mode != Mode::Legacy || !scenario.starts_with("acquired_"))
                 .map(move |scenario| trial(seed, mode, scenario))
         })
         .collect()
@@ -387,9 +451,25 @@ pub fn human(trials: &[Trial]) -> String {
                 p.assessment_records
             ));
         }
+        if let Some(a) = &t.final_state.assessment {
+            for r in &a.records {
+                out.push_str(&format!("assessment{} owner{} incoming{:?} origin{:?} claim{} quality{} prior{:?} basis{}->{} revised{:?} evicted{:?} retained{:?}\n",r.id,r.owner,r.incoming.receipt,r.incoming.origin,r.incoming.claim,r.incoming.quality,r.prior_belief,r.basis_before,r.support,r.revised_attribution,r.evicted,r.retained));
+            }
+        }
+        for receipt in &t.final_state.base.provenance.receipts {
+            if receipt.listener == 0 {
+                out.push_str(&format!("provenance receipt{} known{:?} {:?} novelty_value{} applied{}->{} cognitive{:?} credibility{:?}\n",receipt.id,receipt.knowledge.known,receipt.evaluation.kind,receipt.evaluation.incremental_value,receipt.evaluation.before,receipt.evaluation.after,receipt.cognition_receipt,receipt.credibility_changes));
+            }
+        }
     }
     out
 }
 pub fn choices(t: &Trial) -> Vec<Action> {
     t.points.iter().skip(1).map(|p| p.probe.selected).collect()
+}
+
+pub fn metrics(s: &Snapshot) -> serde_json::Value {
+    let a = s.assessment.as_ref();
+    let base = &s.base.base.base;
+    serde_json::json!({"assessment_records":a.map_or(0,|a|a.records.len()),"retained_items":a.map_or(0,|a|a.items.values().map(|v|v.len()).sum::<usize>()),"maximum_items":a.map_or(0,|a|a.items.values().map(|v|v.len()).max().unwrap_or(0)),"evictions":a.map_or(0,|a|a.records.iter().filter(|r|r.evicted.is_some()).count()),"assessment_bytes":a.map_or(0,|a|serde_json::to_vec(a).unwrap().len()),"snapshot_bytes":serde_json::to_vec(s).unwrap().len(),"native_information":base.cognition.information.len(),"roots":s.base.provenance.roots.len(),"resource_events":base.events.len(),"queries":s.base.provenance.queries.len(),"unresolved_concerns":base.concerns.items.values().flatten().filter(|c|c.status.active()).count()})
 }

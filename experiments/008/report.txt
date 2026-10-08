@@ -1,0 +1,682 @@
+Experiment 008: actual local receipt consequences; probe actions are not executed transfers.
+
+Legacy mixed_np seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=1 assessment=0
+provenance: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=0
+native: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=3 assessment=0
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-40 cognitiveSome(1) credibility[]
+
+Legacy mixed_pn seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+provenance: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=0
+native: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=2 assessment=0
+provenance: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=0
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-40 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(2) credibility[]
+
+Legacy corroboration_np seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=0
+provenance: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=0
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=0
+provenance receipt1 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(1) credibility[]
+
+Legacy corroboration_pn seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+provenance: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=0
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=0
+provenance: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=0
+provenance receipt1 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(2) credibility[]
+
+Legacy conflict_np seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=0
+provenance: support=Some(-50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=0
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=0
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-50 cognitiveSome(1) credibility[]
+
+Legacy conflict_pn seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+provenance: support=Some(-50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=0
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=0
+provenance: support=Some(-50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=0
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-50 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied-50->-50 cognitiveSome(2) credibility[]
+
+Legacy known_relay seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+first: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=0
+relay: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=0
+provenance receipt2 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt3 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(1) credibility[]
+
+Legacy hidden_relay seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+first: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=0
+relay: support=Some(75) trust=0 concern=Some(Resolved) probe=Offer information=2 assessment=0
+provenance receipt2 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt3 knownNone Corroboration novelty_value30 applied50->75 cognitiveSome(1) credibility[]
+
+Legacy revelation seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+first: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=0
+relay: support=Some(75) trust=0 concern=Some(Resolved) probe=Offer information=2 assessment=0
+later attribution: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=0
+provenance receipt2 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt3 knownNone Corroboration novelty_value30 applied50->75 cognitiveSome(1) credibility[]
+provenance receipt4 knownSome(0) Revelation novelty_value25 applied75->50 cognitiveSome(2) credibility[]
+
+Legacy wrong seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(-50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=0
+provenance: support=Some(-50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=0
+native: support=Some(-50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=0
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-50 cognitiveSome(1) credibility[]
+
+Legacy claim_then_evidence seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+claim: support=Some(42) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=0
+evidence: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=0
+claim: support=Some(42) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=0
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-40 cognitiveSome(1) credibility[]
+
+Legacy evidence_then_claim seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+evidence: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=0
+claim: support=Some(42) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=0
+evidence: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=0
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-40 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(2) credibility[]
+
+Legacy eviction seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=1 assessment=0
+mixed: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=0
+native acquisition evicted: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=34 assessment=0
+native explicitly received again: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=35 assessment=0
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-40 cognitiveSome(1) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(2) credibility[]
+provenance receipt3 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(3) credibility[]
+provenance receipt4 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(4) credibility[]
+provenance receipt5 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(5) credibility[]
+provenance receipt6 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(6) credibility[]
+provenance receipt7 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(7) credibility[]
+provenance receipt8 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(8) credibility[]
+provenance receipt9 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(9) credibility[]
+provenance receipt10 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(10) credibility[]
+provenance receipt11 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(11) credibility[]
+provenance receipt12 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(12) credibility[]
+provenance receipt13 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(13) credibility[]
+provenance receipt14 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(14) credibility[]
+provenance receipt15 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(15) credibility[]
+provenance receipt16 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(16) credibility[]
+provenance receipt17 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(17) credibility[]
+provenance receipt18 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(18) credibility[]
+provenance receipt19 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(19) credibility[]
+provenance receipt20 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(20) credibility[]
+provenance receipt21 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(21) credibility[]
+provenance receipt22 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(22) credibility[]
+provenance receipt23 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(23) credibility[]
+provenance receipt24 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(24) credibility[]
+provenance receipt25 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(25) credibility[]
+provenance receipt26 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(26) credibility[]
+provenance receipt27 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(27) credibility[]
+provenance receipt28 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(28) credibility[]
+provenance receipt29 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(29) credibility[]
+provenance receipt30 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(30) credibility[]
+provenance receipt31 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(31) credibility[]
+provenance receipt32 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(32) credibility[]
+provenance receipt33 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(33) credibility[]
+
+Legacy evicted_memory seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+episode no longer retained: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+later evidence: support=Some(90) trust=-17 concern=Some(Resolved) probe=Leave information=1 assessment=0
+
+Legacy inquiry seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=1 assessment=0
+provenance: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=0
+native: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=3 assessment=0
+voluntary follow-up opportunity: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=3 assessment=0
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-40 cognitiveSome(1) credibility[]
+
+Legacy correction seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+weak misleading report: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=0
+strong conflicting native: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=2 assessment=0
+genuinely new independent correction: support=Some(10) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=0
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-40 cognitiveSome(0) credibility[]
+provenance receipt3 knownSome(1) Conflict novelty_value30 applied-40->10 cognitiveSome(2) credibility[]
+
+Max mixed_np seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=1 assessment=1
+provenance: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingNative(0) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorNone basis0->90 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(1) originKnown(0) claimfalse quality40 priorSome(90) basis90->50 revised[] evictedNone retained[Native(0), Provenance(1)]
+assessment2 owner0 incomingNative(2) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Native(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied90->50 cognitiveSome(1) credibility[]
+
+Max mixed_pn seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+provenance: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+provenance: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingProvenance(1) originKnown(0) claimfalse quality40 priorNone basis0->-40 revised[] evictedNone retained[Provenance(1)]
+assessment1 owner0 incomingNative(1) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorSome(-40) basis-40->50 revised[] evictedNone retained[Provenance(1), Native(1)]
+assessment2 owner0 incomingProvenance(2) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Provenance(1), Native(1), Provenance(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-40 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(2) credibility[]
+
+Max corroboration_np seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+provenance: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingNative(0) originNativeReading { speaker: 1, channel: 0 } claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(1) originKnown(0) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1)]
+assessment2 owner0 incomingNative(2) originNativeReading { speaker: 1, channel: 0 } claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Native(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied50->50 cognitiveSome(1) credibility[]
+
+Max corroboration_pn seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+provenance: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+provenance: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingProvenance(1) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Provenance(1)]
+assessment1 owner0 incomingNative(1) originNativeReading { speaker: 1, channel: 0 } claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Provenance(1), Native(1)]
+assessment2 owner0 incomingProvenance(2) originKnown(0) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Provenance(1), Native(1), Provenance(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(2) credibility[]
+
+Max conflict_np seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+provenance: support=Some(0) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+native: support=Some(0) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingNative(0) originNativeReading { speaker: 1, channel: 0 } claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(1) originKnown(0) claimfalse quality50 priorSome(50) basis50->0 revised[] evictedNone retained[Native(0), Provenance(1)]
+assessment2 owner0 incomingNative(2) originNativeReading { speaker: 1, channel: 0 } claimtrue quality50 priorSome(0) basis0->0 revised[] evictedNone retained[Native(0), Provenance(1), Native(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied50->0 cognitiveSome(1) credibility[]
+
+Max conflict_pn seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+provenance: support=Some(-50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+native: support=Some(0) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+provenance: support=Some(0) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingProvenance(1) originKnown(0) claimfalse quality50 priorNone basis0->-50 revised[] evictedNone retained[Provenance(1)]
+assessment1 owner0 incomingNative(1) originNativeReading { speaker: 1, channel: 0 } claimtrue quality50 priorSome(-50) basis-50->0 revised[] evictedNone retained[Provenance(1), Native(1)]
+assessment2 owner0 incomingProvenance(2) originKnown(0) claimfalse quality50 priorSome(0) basis0->0 revised[] evictedNone retained[Provenance(1), Native(1), Provenance(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-50 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied0->0 cognitiveSome(2) credibility[]
+
+Max known_relay seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+first: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+relay: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+assessment0 owner0 incomingProvenance(2) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Provenance(2)]
+assessment1 owner0 incomingProvenance(3) originKnown(0) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Provenance(2), Provenance(3)]
+provenance receipt2 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt3 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(1) credibility[]
+
+Max hidden_relay seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+first: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+relay: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+assessment0 owner0 incomingProvenance(2) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Provenance(2)]
+assessment1 owner0 incomingProvenance(3) originUnknown(3) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Provenance(2), Provenance(3)]
+provenance receipt2 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt3 knownNone Corroboration novelty_value30 applied50->50 cognitiveSome(1) credibility[]
+
+Max revelation seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+first: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+relay: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+later attribution: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingProvenance(2) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Provenance(2)]
+assessment1 owner0 incomingProvenance(3) originUnknown(3) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Provenance(2), Provenance(3)]
+assessment2 owner0 incomingProvenance(4) originKnown(0) claimtrue quality50 priorSome(50) basis50->50 revised[Provenance(3)] evictedNone retained[Provenance(2), Provenance(3), Provenance(4)]
+provenance receipt2 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt3 knownNone Corroboration novelty_value30 applied50->50 cognitiveSome(1) credibility[]
+provenance receipt4 knownSome(0) Revelation novelty_value25 applied50->50 cognitiveSome(2) credibility[]
+
+Max wrong seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(-50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+provenance: support=Some(-50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+native: support=Some(-50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingNative(0) originNativeReading { speaker: 1, channel: 0 } claimfalse quality50 priorNone basis0->-50 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(1) originKnown(0) claimfalse quality50 priorSome(-50) basis-50->-50 revised[] evictedNone retained[Native(0), Provenance(1)]
+assessment2 owner0 incomingNative(2) originNativeReading { speaker: 1, channel: 0 } claimfalse quality50 priorSome(-50) basis-50->-50 revised[] evictedNone retained[Native(0), Provenance(1), Native(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied-50->-50 cognitiveSome(1) credibility[]
+
+Max claim_then_evidence seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+claim: support=Some(42) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+evidence: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+claim: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingNative(0) originClaim(1) claimtrue quality42 priorNone basis0->42 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(1) originKnown(0) claimfalse quality40 priorSome(42) basis42->-40 revised[] evictedNone retained[Native(0), Provenance(1)]
+assessment2 owner0 incomingNative(2) originClaim(1) claimtrue quality42 priorSome(-40) basis-40->-40 revised[] evictedNone retained[Native(0), Provenance(1), Native(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied42->-40 cognitiveSome(1) credibility[]
+
+Max evidence_then_claim seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+evidence: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+claim: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+evidence: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingProvenance(1) originKnown(0) claimfalse quality40 priorNone basis0->-40 revised[] evictedNone retained[Provenance(1)]
+assessment1 owner0 incomingNative(1) originClaim(1) claimtrue quality42 priorSome(-40) basis-40->-40 revised[] evictedNone retained[Provenance(1), Native(1)]
+assessment2 owner0 incomingProvenance(2) originKnown(0) claimfalse quality40 priorSome(-40) basis-40->-40 revised[] evictedNone retained[Provenance(1), Native(1), Provenance(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-40 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(2) credibility[]
+
+Max eviction seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=1 assessment=1
+mixed: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+native acquisition evicted: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=34 assessment=34
+native explicitly received again: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=35 assessment=35
+assessment0 owner0 incomingNative(0) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorNone basis0->90 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(1) originKnown(0) claimfalse quality40 priorSome(90) basis90->50 revised[] evictedNone retained[Native(0), Provenance(1)]
+assessment2 owner0 incomingProvenance(2) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2)]
+assessment3 owner0 incomingProvenance(3) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3)]
+assessment4 owner0 incomingProvenance(4) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4)]
+assessment5 owner0 incomingProvenance(5) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5)]
+assessment6 owner0 incomingProvenance(6) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6)]
+assessment7 owner0 incomingProvenance(7) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7)]
+assessment8 owner0 incomingProvenance(8) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8)]
+assessment9 owner0 incomingProvenance(9) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9)]
+assessment10 owner0 incomingProvenance(10) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10)]
+assessment11 owner0 incomingProvenance(11) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11)]
+assessment12 owner0 incomingProvenance(12) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12)]
+assessment13 owner0 incomingProvenance(13) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13)]
+assessment14 owner0 incomingProvenance(14) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14)]
+assessment15 owner0 incomingProvenance(15) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15)]
+assessment16 owner0 incomingProvenance(16) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16)]
+assessment17 owner0 incomingProvenance(17) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17)]
+assessment18 owner0 incomingProvenance(18) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18)]
+assessment19 owner0 incomingProvenance(19) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19)]
+assessment20 owner0 incomingProvenance(20) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20)]
+assessment21 owner0 incomingProvenance(21) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21)]
+assessment22 owner0 incomingProvenance(22) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22)]
+assessment23 owner0 incomingProvenance(23) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23)]
+assessment24 owner0 incomingProvenance(24) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24)]
+assessment25 owner0 incomingProvenance(25) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25)]
+assessment26 owner0 incomingProvenance(26) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26)]
+assessment27 owner0 incomingProvenance(27) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27)]
+assessment28 owner0 incomingProvenance(28) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27), Provenance(28)]
+assessment29 owner0 incomingProvenance(29) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27), Provenance(28), Provenance(29)]
+assessment30 owner0 incomingProvenance(30) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27), Provenance(28), Provenance(29), Provenance(30)]
+assessment31 owner0 incomingProvenance(31) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27), Provenance(28), Provenance(29), Provenance(30), Provenance(31)]
+assessment32 owner0 incomingProvenance(32) originKnown(0) claimfalse quality40 priorSome(50) basis50->-40 revised[] evictedSome(Native(0)) retained[Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27), Provenance(28), Provenance(29), Provenance(30), Provenance(31), Provenance(32)]
+assessment33 owner0 incomingProvenance(33) originKnown(0) claimfalse quality40 priorSome(-40) basis-40->-40 revised[] evictedSome(Provenance(1)) retained[Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27), Provenance(28), Provenance(29), Provenance(30), Provenance(31), Provenance(32), Provenance(33)]
+assessment34 owner0 incomingNative(34) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorSome(-40) basis-40->50 revised[] evictedSome(Provenance(2)) retained[Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27), Provenance(28), Provenance(29), Provenance(30), Provenance(31), Provenance(32), Provenance(33), Native(34)]
+provenance receipt1 knownSome(0) First novelty_value40 applied90->50 cognitiveSome(1) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(2) credibility[]
+provenance receipt3 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(3) credibility[]
+provenance receipt4 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(4) credibility[]
+provenance receipt5 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(5) credibility[]
+provenance receipt6 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(6) credibility[]
+provenance receipt7 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(7) credibility[]
+provenance receipt8 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(8) credibility[]
+provenance receipt9 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(9) credibility[]
+provenance receipt10 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(10) credibility[]
+provenance receipt11 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(11) credibility[]
+provenance receipt12 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(12) credibility[]
+provenance receipt13 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(13) credibility[]
+provenance receipt14 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(14) credibility[]
+provenance receipt15 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(15) credibility[]
+provenance receipt16 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(16) credibility[]
+provenance receipt17 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(17) credibility[]
+provenance receipt18 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(18) credibility[]
+provenance receipt19 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(19) credibility[]
+provenance receipt20 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(20) credibility[]
+provenance receipt21 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(21) credibility[]
+provenance receipt22 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(22) credibility[]
+provenance receipt23 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(23) credibility[]
+provenance receipt24 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(24) credibility[]
+provenance receipt25 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(25) credibility[]
+provenance receipt26 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(26) credibility[]
+provenance receipt27 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(27) credibility[]
+provenance receipt28 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(28) credibility[]
+provenance receipt29 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(29) credibility[]
+provenance receipt30 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(30) credibility[]
+provenance receipt31 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(31) credibility[]
+provenance receipt32 knownSome(0) Shared novelty_value0 applied50->-40 cognitiveSome(32) credibility[]
+provenance receipt33 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(33) credibility[]
+
+Max evicted_memory seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+episode no longer retained: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+later evidence: support=Some(90) trust=-17 concern=Some(Resolved) probe=Leave information=1 assessment=1
+assessment0 owner0 incomingNative(0) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorNone basis0->90 revised[] evictedNone retained[Native(0)]
+
+Max inquiry seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=1 assessment=1
+provenance: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+voluntary follow-up opportunity: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=4 assessment=4
+assessment0 owner0 incomingNative(0) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorNone basis0->90 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(1) originKnown(0) claimfalse quality40 priorSome(90) basis90->50 revised[] evictedNone retained[Native(0), Provenance(1)]
+assessment2 owner0 incomingNative(2) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Native(2)]
+assessment3 owner0 incomingProvenance(3) originKnown(1) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Native(2), Provenance(3)]
+provenance receipt1 knownSome(0) First novelty_value40 applied90->50 cognitiveSome(1) credibility[]
+provenance receipt3 knownSome(1) Conflict novelty_value30 applied50->50 cognitiveSome(3) credibility[]
+
+Max correction seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+weak misleading report: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+strong conflicting native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+genuinely new independent correction: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingProvenance(1) originKnown(0) claimfalse quality40 priorNone basis0->-40 revised[] evictedNone retained[Provenance(1)]
+assessment1 owner0 incomingNative(1) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorSome(-40) basis-40->50 revised[] evictedNone retained[Provenance(1), Native(1)]
+assessment2 owner0 incomingProvenance(3) originKnown(1) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Provenance(1), Native(1), Provenance(3)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-40 cognitiveSome(0) credibility[]
+provenance receipt3 knownSome(1) Conflict novelty_value30 applied50->50 cognitiveSome(2) credibility[]
+
+Max acquired_pp seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+provenance acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+provenance acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+assessment0 owner0 incomingProvenance(1) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Provenance(1)]
+assessment1 owner0 incomingProvenance(2) originKnown(0) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Provenance(1), Provenance(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(1) credibility[]
+
+Max acquired_nn seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+native acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+assessment0 owner0 incomingNative(0) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingNative(1) originKnown(0) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Native(1)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(1) credibility[]
+
+Max acquired_np seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+provenance acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+assessment0 owner0 incomingNative(0) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(2) originKnown(0) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(1) credibility[]
+
+Max acquired_pn seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+provenance acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+native acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+assessment0 owner0 incomingProvenance(1) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Provenance(1)]
+assessment1 owner0 incomingNative(1) originKnown(0) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Provenance(1), Native(1)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(1) credibility[]
+
+Grouped mixed_np seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=1 assessment=1
+provenance: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingNative(0) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorNone basis0->90 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(1) originKnown(0) claimfalse quality40 priorSome(90) basis90->50 revised[] evictedNone retained[Native(0), Provenance(1)]
+assessment2 owner0 incomingNative(2) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Native(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied90->50 cognitiveSome(1) credibility[]
+
+Grouped mixed_pn seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+provenance: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+provenance: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingProvenance(1) originKnown(0) claimfalse quality40 priorNone basis0->-40 revised[] evictedNone retained[Provenance(1)]
+assessment1 owner0 incomingNative(1) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorSome(-40) basis-40->50 revised[] evictedNone retained[Provenance(1), Native(1)]
+assessment2 owner0 incomingProvenance(2) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Provenance(1), Native(1), Provenance(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-40 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(2) credibility[]
+
+Grouped corroboration_np seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+provenance: support=Some(75) trust=0 concern=Some(Resolved) probe=Offer information=2 assessment=2
+native: support=Some(75) trust=0 concern=Some(Resolved) probe=Offer information=3 assessment=3
+assessment0 owner0 incomingNative(0) originNativeReading { speaker: 1, channel: 0 } claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(1) originKnown(0) claimtrue quality50 priorSome(50) basis50->75 revised[] evictedNone retained[Native(0), Provenance(1)]
+assessment2 owner0 incomingNative(2) originNativeReading { speaker: 1, channel: 0 } claimtrue quality50 priorSome(75) basis75->75 revised[] evictedNone retained[Native(0), Provenance(1), Native(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied50->75 cognitiveSome(1) credibility[]
+
+Grouped corroboration_pn seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+provenance: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+native: support=Some(75) trust=0 concern=Some(Resolved) probe=Offer information=2 assessment=2
+provenance: support=Some(75) trust=0 concern=Some(Resolved) probe=Offer information=3 assessment=3
+assessment0 owner0 incomingProvenance(1) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Provenance(1)]
+assessment1 owner0 incomingNative(1) originNativeReading { speaker: 1, channel: 0 } claimtrue quality50 priorSome(50) basis50->75 revised[] evictedNone retained[Provenance(1), Native(1)]
+assessment2 owner0 incomingProvenance(2) originKnown(0) claimtrue quality50 priorSome(75) basis75->75 revised[] evictedNone retained[Provenance(1), Native(1), Provenance(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied75->75 cognitiveSome(2) credibility[]
+
+Grouped conflict_np seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+provenance: support=Some(0) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+native: support=Some(0) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingNative(0) originNativeReading { speaker: 1, channel: 0 } claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(1) originKnown(0) claimfalse quality50 priorSome(50) basis50->0 revised[] evictedNone retained[Native(0), Provenance(1)]
+assessment2 owner0 incomingNative(2) originNativeReading { speaker: 1, channel: 0 } claimtrue quality50 priorSome(0) basis0->0 revised[] evictedNone retained[Native(0), Provenance(1), Native(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied50->0 cognitiveSome(1) credibility[]
+
+Grouped conflict_pn seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+provenance: support=Some(-50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+native: support=Some(0) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+provenance: support=Some(0) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingProvenance(1) originKnown(0) claimfalse quality50 priorNone basis0->-50 revised[] evictedNone retained[Provenance(1)]
+assessment1 owner0 incomingNative(1) originNativeReading { speaker: 1, channel: 0 } claimtrue quality50 priorSome(-50) basis-50->0 revised[] evictedNone retained[Provenance(1), Native(1)]
+assessment2 owner0 incomingProvenance(2) originKnown(0) claimfalse quality50 priorSome(0) basis0->0 revised[] evictedNone retained[Provenance(1), Native(1), Provenance(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-50 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied0->0 cognitiveSome(2) credibility[]
+
+Grouped known_relay seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+first: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+relay: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+assessment0 owner0 incomingProvenance(2) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Provenance(2)]
+assessment1 owner0 incomingProvenance(3) originKnown(0) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Provenance(2), Provenance(3)]
+provenance receipt2 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt3 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(1) credibility[]
+
+Grouped hidden_relay seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+first: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+relay: support=Some(75) trust=0 concern=Some(Resolved) probe=Offer information=2 assessment=2
+assessment0 owner0 incomingProvenance(2) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Provenance(2)]
+assessment1 owner0 incomingProvenance(3) originUnknown(3) claimtrue quality50 priorSome(50) basis50->75 revised[] evictedNone retained[Provenance(2), Provenance(3)]
+provenance receipt2 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt3 knownNone Corroboration novelty_value30 applied50->75 cognitiveSome(1) credibility[]
+
+Grouped revelation seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+first: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+relay: support=Some(75) trust=0 concern=Some(Resolved) probe=Offer information=2 assessment=2
+later attribution: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingProvenance(2) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Provenance(2)]
+assessment1 owner0 incomingProvenance(3) originUnknown(3) claimtrue quality50 priorSome(50) basis50->75 revised[] evictedNone retained[Provenance(2), Provenance(3)]
+assessment2 owner0 incomingProvenance(4) originKnown(0) claimtrue quality50 priorSome(75) basis75->50 revised[Provenance(3)] evictedNone retained[Provenance(2), Provenance(3), Provenance(4)]
+provenance receipt2 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt3 knownNone Corroboration novelty_value30 applied50->75 cognitiveSome(1) credibility[]
+provenance receipt4 knownSome(0) Revelation novelty_value25 applied75->50 cognitiveSome(2) credibility[]
+
+Grouped wrong seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(-50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+provenance: support=Some(-75) trust=-17 concern=Some(Resolved) probe=Leave information=2 assessment=2
+native: support=Some(-75) trust=-17 concern=Some(Resolved) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingNative(0) originNativeReading { speaker: 1, channel: 0 } claimfalse quality50 priorNone basis0->-50 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(1) originKnown(0) claimfalse quality50 priorSome(-50) basis-50->-75 revised[] evictedNone retained[Native(0), Provenance(1)]
+assessment2 owner0 incomingNative(2) originNativeReading { speaker: 1, channel: 0 } claimfalse quality50 priorSome(-75) basis-75->-75 revised[] evictedNone retained[Native(0), Provenance(1), Native(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied-50->-75 cognitiveSome(1) credibility[]
+
+Grouped claim_then_evidence seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+claim: support=Some(42) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+evidence: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+claim: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingNative(0) originClaim(1) claimtrue quality42 priorNone basis0->42 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(1) originKnown(0) claimfalse quality40 priorSome(42) basis42->-40 revised[] evictedNone retained[Native(0), Provenance(1)]
+assessment2 owner0 incomingNative(2) originClaim(1) claimtrue quality42 priorSome(-40) basis-40->-40 revised[] evictedNone retained[Native(0), Provenance(1), Native(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied42->-40 cognitiveSome(1) credibility[]
+
+Grouped evidence_then_claim seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+evidence: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+claim: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+evidence: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingProvenance(1) originKnown(0) claimfalse quality40 priorNone basis0->-40 revised[] evictedNone retained[Provenance(1)]
+assessment1 owner0 incomingNative(1) originClaim(1) claimtrue quality42 priorSome(-40) basis-40->-40 revised[] evictedNone retained[Provenance(1), Native(1)]
+assessment2 owner0 incomingProvenance(2) originKnown(0) claimfalse quality40 priorSome(-40) basis-40->-40 revised[] evictedNone retained[Provenance(1), Native(1), Provenance(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-40 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(2) credibility[]
+
+Grouped eviction seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=1 assessment=1
+mixed: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+native acquisition evicted: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=34 assessment=34
+native explicitly received again: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=35 assessment=35
+assessment0 owner0 incomingNative(0) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorNone basis0->90 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(1) originKnown(0) claimfalse quality40 priorSome(90) basis90->50 revised[] evictedNone retained[Native(0), Provenance(1)]
+assessment2 owner0 incomingProvenance(2) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2)]
+assessment3 owner0 incomingProvenance(3) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3)]
+assessment4 owner0 incomingProvenance(4) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4)]
+assessment5 owner0 incomingProvenance(5) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5)]
+assessment6 owner0 incomingProvenance(6) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6)]
+assessment7 owner0 incomingProvenance(7) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7)]
+assessment8 owner0 incomingProvenance(8) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8)]
+assessment9 owner0 incomingProvenance(9) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9)]
+assessment10 owner0 incomingProvenance(10) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10)]
+assessment11 owner0 incomingProvenance(11) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11)]
+assessment12 owner0 incomingProvenance(12) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12)]
+assessment13 owner0 incomingProvenance(13) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13)]
+assessment14 owner0 incomingProvenance(14) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14)]
+assessment15 owner0 incomingProvenance(15) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15)]
+assessment16 owner0 incomingProvenance(16) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16)]
+assessment17 owner0 incomingProvenance(17) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17)]
+assessment18 owner0 incomingProvenance(18) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18)]
+assessment19 owner0 incomingProvenance(19) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19)]
+assessment20 owner0 incomingProvenance(20) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20)]
+assessment21 owner0 incomingProvenance(21) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21)]
+assessment22 owner0 incomingProvenance(22) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22)]
+assessment23 owner0 incomingProvenance(23) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23)]
+assessment24 owner0 incomingProvenance(24) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24)]
+assessment25 owner0 incomingProvenance(25) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25)]
+assessment26 owner0 incomingProvenance(26) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26)]
+assessment27 owner0 incomingProvenance(27) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27)]
+assessment28 owner0 incomingProvenance(28) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27), Provenance(28)]
+assessment29 owner0 incomingProvenance(29) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27), Provenance(28), Provenance(29)]
+assessment30 owner0 incomingProvenance(30) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27), Provenance(28), Provenance(29), Provenance(30)]
+assessment31 owner0 incomingProvenance(31) originKnown(0) claimfalse quality40 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27), Provenance(28), Provenance(29), Provenance(30), Provenance(31)]
+assessment32 owner0 incomingProvenance(32) originKnown(0) claimfalse quality40 priorSome(50) basis50->-40 revised[] evictedSome(Native(0)) retained[Provenance(1), Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27), Provenance(28), Provenance(29), Provenance(30), Provenance(31), Provenance(32)]
+assessment33 owner0 incomingProvenance(33) originKnown(0) claimfalse quality40 priorSome(-40) basis-40->-40 revised[] evictedSome(Provenance(1)) retained[Provenance(2), Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27), Provenance(28), Provenance(29), Provenance(30), Provenance(31), Provenance(32), Provenance(33)]
+assessment34 owner0 incomingNative(34) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorSome(-40) basis-40->50 revised[] evictedSome(Provenance(2)) retained[Provenance(3), Provenance(4), Provenance(5), Provenance(6), Provenance(7), Provenance(8), Provenance(9), Provenance(10), Provenance(11), Provenance(12), Provenance(13), Provenance(14), Provenance(15), Provenance(16), Provenance(17), Provenance(18), Provenance(19), Provenance(20), Provenance(21), Provenance(22), Provenance(23), Provenance(24), Provenance(25), Provenance(26), Provenance(27), Provenance(28), Provenance(29), Provenance(30), Provenance(31), Provenance(32), Provenance(33), Native(34)]
+provenance receipt1 knownSome(0) First novelty_value40 applied90->50 cognitiveSome(1) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(2) credibility[]
+provenance receipt3 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(3) credibility[]
+provenance receipt4 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(4) credibility[]
+provenance receipt5 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(5) credibility[]
+provenance receipt6 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(6) credibility[]
+provenance receipt7 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(7) credibility[]
+provenance receipt8 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(8) credibility[]
+provenance receipt9 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(9) credibility[]
+provenance receipt10 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(10) credibility[]
+provenance receipt11 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(11) credibility[]
+provenance receipt12 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(12) credibility[]
+provenance receipt13 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(13) credibility[]
+provenance receipt14 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(14) credibility[]
+provenance receipt15 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(15) credibility[]
+provenance receipt16 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(16) credibility[]
+provenance receipt17 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(17) credibility[]
+provenance receipt18 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(18) credibility[]
+provenance receipt19 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(19) credibility[]
+provenance receipt20 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(20) credibility[]
+provenance receipt21 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(21) credibility[]
+provenance receipt22 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(22) credibility[]
+provenance receipt23 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(23) credibility[]
+provenance receipt24 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(24) credibility[]
+provenance receipt25 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(25) credibility[]
+provenance receipt26 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(26) credibility[]
+provenance receipt27 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(27) credibility[]
+provenance receipt28 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(28) credibility[]
+provenance receipt29 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(29) credibility[]
+provenance receipt30 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(30) credibility[]
+provenance receipt31 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(31) credibility[]
+provenance receipt32 knownSome(0) Shared novelty_value0 applied50->-40 cognitiveSome(32) credibility[]
+provenance receipt33 knownSome(0) Shared novelty_value0 applied-40->-40 cognitiveSome(33) credibility[]
+
+Grouped evicted_memory seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+episode no longer retained: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+later evidence: support=Some(90) trust=-17 concern=Some(Resolved) probe=Leave information=1 assessment=1
+assessment0 owner0 incomingNative(0) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorNone basis0->90 revised[] evictedNone retained[Native(0)]
+
+Grouped inquiry seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native: support=Some(90) trust=0 concern=Some(Resolved) probe=Offer information=1 assessment=1
+provenance: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+voluntary follow-up opportunity: support=Some(55) trust=-17 concern=Some(Partial) probe=Leave information=4 assessment=4
+assessment0 owner0 incomingNative(0) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorNone basis0->90 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(1) originKnown(0) claimfalse quality40 priorSome(90) basis90->50 revised[] evictedNone retained[Native(0), Provenance(1)]
+assessment2 owner0 incomingNative(2) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(1), Native(2)]
+assessment3 owner0 incomingProvenance(3) originKnown(1) claimtrue quality50 priorSome(50) basis50->55 revised[] evictedNone retained[Native(0), Provenance(1), Native(2), Provenance(3)]
+provenance receipt1 knownSome(0) First novelty_value40 applied90->50 cognitiveSome(1) credibility[]
+provenance receipt3 knownSome(1) Conflict novelty_value30 applied50->55 cognitiveSome(3) credibility[]
+
+Grouped correction seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+weak misleading report: support=Some(-40) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+strong conflicting native: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+genuinely new independent correction: support=Some(55) trust=-17 concern=Some(Partial) probe=Leave information=3 assessment=3
+assessment0 owner0 incomingProvenance(1) originKnown(0) claimfalse quality40 priorNone basis0->-40 revised[] evictedNone retained[Provenance(1)]
+assessment1 owner0 incomingNative(1) originNativeReading { speaker: 1, channel: 0 } claimtrue quality90 priorSome(-40) basis-40->50 revised[] evictedNone retained[Provenance(1), Native(1)]
+assessment2 owner0 incomingProvenance(3) originKnown(1) claimtrue quality50 priorSome(50) basis50->55 revised[] evictedNone retained[Provenance(1), Native(1), Provenance(3)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->-40 cognitiveSome(0) credibility[]
+provenance receipt3 knownSome(1) Conflict novelty_value30 applied50->55 cognitiveSome(2) credibility[]
+
+Grouped acquired_pp seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+provenance acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+provenance acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+assessment0 owner0 incomingProvenance(1) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Provenance(1)]
+assessment1 owner0 incomingProvenance(2) originKnown(0) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Provenance(1), Provenance(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(1) credibility[]
+
+Grouped acquired_nn seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+native acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+assessment0 owner0 incomingNative(0) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingNative(1) originKnown(0) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Native(1)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(1) credibility[]
+
+Grouped acquired_np seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+native acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+provenance acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+assessment0 owner0 incomingNative(0) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Native(0)]
+assessment1 owner0 incomingProvenance(2) originKnown(0) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Native(0), Provenance(2)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(1) credibility[]
+
+Grouped acquired_pn seed=42 event=1
+initial: support=None trust=-17 concern=Some(Open) probe=Leave information=0 assessment=0
+provenance acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=1 assessment=1
+native acquired delivery: support=Some(50) trust=-17 concern=Some(Partial) probe=Leave information=2 assessment=2
+assessment0 owner0 incomingProvenance(1) originKnown(0) claimtrue quality50 priorNone basis0->50 revised[] evictedNone retained[Provenance(1)]
+assessment1 owner0 incomingNative(1) originKnown(0) claimtrue quality50 priorSome(50) basis50->50 revised[] evictedNone retained[Provenance(1), Native(1)]
+provenance receipt1 knownSome(0) First novelty_value40 applied0->50 cognitiveSome(0) credibility[]
+provenance receipt2 knownSome(0) Shared novelty_value0 applied50->50 cognitiveSome(1) credibility[]

@@ -49,7 +49,7 @@ pub(crate) struct Assessor(pub Rule);
 fn groups(items: &[Item], event: u64) -> BTreeMap<Origin, (i32, i32)> {
     let evidence = items
         .iter()
-        .any(|i| i.event == event && !matches!(i.origin, Origin::Claim(_)));
+        .any(|i| i.event == event && i.quality > 0 && !matches!(i.origin, Origin::Claim(_)));
     let mut groups = BTreeMap::<Origin, (i32, i32)>::new();
     for i in items
         .iter()

@@ -50,6 +50,7 @@ fn main() {
     let mut timing = String::from(
         "mode,population,sample,build_run_snapshot_ms,serialize_ms,bytes,assessment_records\n",
     );
+    let mut population_metrics = BTreeMap::new();
     for count in [100, 1000] {
         for mode in [e::Mode::Legacy, e::Mode::Max, e::Mode::Grouped] {
             for sample in 0..3 {
@@ -69,6 +70,7 @@ fn main() {
                 ));
                 if sample == 0 {
                     save(&format!("population-{count}-{mode:?}"), &snapshot);
+                    population_metrics.insert(format!("{count}:{mode:?}"), e::metrics(&snapshot));
                 }
             }
         }
@@ -76,7 +78,7 @@ fn main() {
     fs::write("experiments/008/population-benchmark.csv", timing).unwrap();
     save(
         "summary",
-        &serde_json::json!({"rules":world_of_individuals::assessment::RULES,"seeds":"0..128","trials":128*trials.len(),"replayed_suites":128,"outcomes":outcomes,"compatibility":c}),
+        &serde_json::json!({"rules":world_of_individuals::assessment::RULES,"seeds":"0..128","trials":128*trials.len(),"replayed_suites":128,"outcomes":outcomes,"compatibility":c,"population":population_metrics,"seed42":trials.iter().map(|t|(format!("{:?}:{}",t.mode,t.scenario),e::metrics(&t.final_state))).collect::<BTreeMap<_,_>>()}),
     );
     println!(
         "Experiment 008: {} controlled trials plus replays, archive equality and population replay passed.",

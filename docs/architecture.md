@@ -530,3 +530,60 @@ slots and received evidence, and caches clamped relationship prefixes. Revision 
 still traverse the affected relationship suffix. Objective roots, windows, receipts, exchanges, queries, evictions and
 existing audits remain unbounded; relationship maps retain the earlier sparse,
 unbounded design. No persistence service or large-population optimization is added.
+
+## Experiment 008: coherent local assessment across channels
+
+The opt-in `Assessment` and `Assessor` function resources unify the received local
+evidence basis, preserving the acquisition, inquiry, time, memory, trust and history
+infrastructure. Enable after provenance while idle; method is fixed for a run and
+same-method enable is idempotent. Enable imports no prior or forgotten evidence.
+
+Each owner retains at most 32 delivered Items across events: explicit receipt namespace,
+event, communicator, optional public message handle, local Origin, content and received
+quality. Origins distinguish unsupported self-claim, historical disclosure, native
+reading (speaker/event-local channel), disclosed observation token and unknown-speaker
+assumption. Actual hidden roots, private sensors and truth are excluded. Received
+quality is frozen; subsequent credibility changes do not rescore retained receipts.
+
+Native and provenance cognitive bridges submit a local Item before updating belief.
+Group event evidence by local origin, using sign-wise maxima within groups. Unsupported
+claims are a fallback when no positive-quality evidence remains; a zero-quality item
+does not erase that fallback. Max takes strongest positive minus strongest negative
+across groups. Grouped uses 007 residual combination in stable origin order on each
+sign before subtracting. Independent corroboration distinguishes these two small
+rules; no Bayesian model or general belief network is introduced.
+
+FIFO eviction occurs before assessment. Repeats occupy attention capacity but add
+no evidential weight below capacity. Attribution updates only retained Unknown items
+with matching event/communicator/message; incoming audit records remain immutable.
+Observer indexes validate source immutability but their historical evidence maxima
+never supply 008 support. Forgetting remains consequential.
+
+`native_acquired_exchange` is an 008-only adapter over the same validated voluntary
+exchange. It requires a retained source acquisition and original harmed recipient,
+samples nothing, preserves public known/unknown origin, parent, decision, quality
+and time, and uses a native cognitive receipt namespace. Both adapters keep objective
+transmission records. There is no caller-provided origin override or hidden mapping
+from anonymous native readings to observation tokens. Distinct acquired origins stay
+distinct unless a legitimately delivered public relationship says otherwise.
+
+Unified support enters the unchanged bounded belief/memory/concern and saturated
+trust-revision pipeline. The provenance bridge agrees with applied cognitive support.
+007 novelty/inquiry-learning rules remain separate to isolate assessment; coherent
+cross-channel usefulness calibration is not claimed. Other parties retain acquisitions
+without receiving someone else's injury memory. Matched-present probes record local
+policy choices without executing transfers.
+
+Records preserve immutable incoming Items, prior belief, basis-before, support,
+attribution changes, eviction and retained receipt references. An 008 snapshot wraps
+the existing compact export plus Assessment without extending older export schemas.
+Observer validation replays the local stream, checks ownership/time/consequences and
+validates native acquired origins against delivered public payloads, never hidden
+objective roots. It cannot restore cognition.
+
+The new basis adds at most 32 Items per active owner; all earlier caps remain unchanged.
+It duplicates some data because assessment combines channels while provider acquisitions
+must still support sharing. Assessment records and their bounded reference lists add
+unbounded audit storage. Grouping is O(32 log 32), retention/attribution scans O(32),
+without runtime observer-history searches. Existing snapshot validation, forecasts
+and history costs are unchanged; there is no general performance refactor.

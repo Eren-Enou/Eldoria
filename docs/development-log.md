@@ -234,3 +234,19 @@ Five throughput repetitions show substantial timing drift; isolated index replay
 measures maintenance cost without claiming an index-disabled causal comparison.
 All 93 existing tests and required checks pass; diagnostic JSON replays exactly.
 See research/next-target/report.md for candidates, falsification and stop conditions.
+
+## Experiment 008 completion (2026-10-08)
+
+Completed the opt-in bounded assessment implementation and compared strongest-only
+and origin-grouped rules. Both eliminate the controlled native/testimony overwrite;
+grouped assessment additionally distinguishes independent corroboration from known
+relay. Added same-acquisition delivery controls, genuine correction, forgetting,
+locality and audit tests. The eviction fixture now permits voluntary silence rather
+than rewriting an immutable native evidence slot.
+
+All 106 tests, formatting, Clippy, 7,168 controlled trials and exact replays,
+100/1,000 population replays, archived 001–007 equality and throughput pass.
+Results and separate timing/storage evidence are in experiments/008/results.md.
+False confidence, hidden dependence, prospective enable, bounded forgetting,
+unbounded audit growth and unchanged novelty learning remain explicit limits.
+No subsequent experiment was designed or implemented.

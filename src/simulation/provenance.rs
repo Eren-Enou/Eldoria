@@ -246,6 +246,7 @@ impl Simulation {
                         claim,
                         sensor.reliability,
                         1 + sensor.effort,
+                        false,
                     )?;
                     roots.push(root_id);
                 }
@@ -294,6 +295,38 @@ impl Simulation {
         listener: AgentId,
         event: u64,
         attribution_available: bool,
+    ) -> Result<Option<u64>, String> {
+        self.acquired_exchange(source, listener, event, attribution_available, false)
+    }
+    /// 008-only native delivery of the same retained structured acquisition.
+    /// Origin/content come from the provider's actual local payload, never history.
+    pub fn native_acquired_exchange(
+        &mut self,
+        source: AgentId,
+        listener: AgentId,
+        event: u64,
+        attribution_available: bool,
+    ) -> Result<Option<u64>, String> {
+        self.provenance_ready()?;
+        if !self
+            .world
+            .contains_resource::<crate::assessment::Assessment>()
+        {
+            return Err("enable assessment first".into());
+        }
+        let original = self.provenance_event(event)?;
+        if listener == original.decision.actor || !original.participants.contains(&listener) {
+            return Err("native acquisition requires the original recipient".into());
+        }
+        self.acquired_exchange(source, listener, event, attribution_available, true)
+    }
+    fn acquired_exchange(
+        &mut self,
+        source: AgentId,
+        listener: AgentId,
+        event: u64,
+        attribution_available: bool,
+        native_delivery: bool,
     ) -> Result<Option<u64>, String> {
         self.provenance_ready()?;
         self.provenance_event(event)?;
@@ -346,6 +379,7 @@ impl Simulation {
                 k.claim,
                 quality,
                 1,
+                native_delivery,
             )?;
             receipt = Some(id);
         }
@@ -425,6 +459,7 @@ impl Simulation {
         claim: bool,
         quality: i32,
         time_spent: u32,
+        native_delivery: bool,
     ) -> Result<u64, String> {
         let state = self.world.resource::<crate::audit::RuntimeProvenance>();
         let origin = state.roots.get(root as usize).ok_or("invalid root")?;
@@ -487,7 +522,13 @@ impl Simulation {
                     Some((
                         evaluation.after,
                         crate::assessment::Item {
-                            receipt: crate::assessment::Receipt::Provenance(id),
+                            receipt: if native_delivery {
+                                crate::assessment::Receipt::Native(
+                                    self.world.resource::<Cognition>().information.len() as u64,
+                                )
+                            } else {
+                                crate::assessment::Receipt::Provenance(id)
+                            },
                             event,
                             communicator,
                             message: Some(k.message),

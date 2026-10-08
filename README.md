@@ -173,7 +173,7 @@ Known shared lineage suppresses redundant relay value; distinct observations can
 corroborate or conflict. Hidden relay can cause overconfidence, and later voluntary
 attribution can revise confidence, memory and concern status. Credibility remains
 separate from independence. Three new local collections are bounded at 32; full
-audit archives grow. Experiment 008 is recommended in the report but not implemented.
+audit archives grow. The 007 report retains its original next-experiment recommendation.
 
 ## History foundation reinforcement
 
@@ -191,4 +191,19 @@ do not rewrite prior experiment archives. Use `-j 1` on memory-constrained hosts
 The subsequent [next-target diagnosis](research/next-target/report.md) recommends
 testing coherent assessment across native evidence and third-party testimony.
 It includes mixed-channel counterexamples, history-depth measurements, five candidate
-investigations and a falsifiable Experiment 008 question. No 008 behavior is implemented.
+investigations and the falsifiable question implemented in Experiment 008 below.
+
+## Experiment 008: coherent bounded assessment
+
+Run `cargo run --locked --release --example evaluate008`; see
+[results and controls](experiments/008/results.md) and [causal traces](experiments/008/report.txt).
+After provenance, call `enable_assessment(assessment::Method::Grouped)` to assess
+native receipts and third-party reports from one prospective FIFO basis capped at 32
+per individual. The `Max` alternative remains an explicit comparison control.
+
+Mixed evidence no longer reverses belief merely because one channel executes last.
+Known relay remains redundant; independent reports can corroborate or conflict;
+hidden dependence can still mislead. `native_acquired_exchange` delivers an actual
+retained structured report through the native adapter without inventing another
+origin. Prior modes and archives remain unchanged. Forgetting and legitimate new
+information can change assessment; the mechanism does not discover objective truth.
