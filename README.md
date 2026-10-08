@@ -187,3 +187,8 @@ compact reconstruction checks, `cargo run --release --example measure_history --
 for isolated measurement output, and `cargo bench --bench throughput` for the
 established workloads. New evidence stays under `reinforcement/`; these commands
 do not rewrite prior experiment archives. Use `-j 1` on memory-constrained hosts.
+
+The subsequent [next-target diagnosis](research/next-target/report.md) recommends
+testing coherent assessment across native evidence and third-party testimony.
+It includes mixed-channel counterexamples, history-depth measurements, five candidate
+investigations and a falsifiable Experiment 008 question. No 008 behavior is implemented.

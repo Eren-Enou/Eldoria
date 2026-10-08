@@ -219,3 +219,18 @@ expand exactly. The 1,000-agent export shrank 25.28%; 4,000 paired encounters fe
 from 1,034.90 to 19.53 ms. Short timings vary and Experiment 001 regressed; unbounded
 archives, index memory and affected trust suffixes remain documented limits.
 No Experiment 008 behavior or persistence database was introduced.
+
+## Next-target research (2026-10-07)
+
+Reviewed 001–007 and the reinforced foundation. Added diagnostic tooling without
+changing production rules. Mixed native/provenance delivery can alternate support
++90/−40, concern status and matched-present Offer/Leave probes on repeated evidence.
+The report recommends coherent local assessment before uncertain attribution.
+
+Measured forecast-history searches, synthetic worst-case trust suffixes, relationship
+map cloning, native input retention, snapshot export and checkpoint duplication.
+Distinguished synthetic suffix risk from the current 16-episode live revision bound.
+Five throughput repetitions show substantial timing drift; isolated index replay
+measures maintenance cost without claiming an index-disabled causal comparison.
+All 93 existing tests and required checks pass; diagnostic JSON replays exactly.
+See research/next-target/report.md for candidates, falsification and stop conditions.

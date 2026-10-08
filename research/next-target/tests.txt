@@ -1,0 +1,147 @@
+
+running 3 tests
+test audit::tests::hash_bucket_collision_cannot_alias_unequal_contexts ... ok
+test inquiry::tests::bounded_source_strategy_and_information_storage_audits_eviction ... ok
+test history::tests::prefix_updates_match_full_clamped_replay_with_signed_revisions ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 10 tests
+test scarce_and_abundant_donors_have_distinct_choices ... ok
+test consumption_accounting_unmet_need_and_bounds ... ok
+test information_validation_is_atomic_and_scenes_terminate ... ok
+test claims_are_local_not_truth_checked_and_disclosure_is_event_specific ... ok
+test saturated_trust_replay_uses_replacement_not_naive_refund ... ok
+test duplicate_evidence_does_not_double_credit_or_escalate ... ok
+test bounded_beliefs_and_evicted_memory_cannot_be_rewritten ... ok
+test population_audit_reconstructs_every_state_and_decision ... ok
+test population_accounting_replay_and_policy_locality ... ok
+test controlled_information_history_and_conflict_sweep ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.85s
+
+
+running 11 tests
+test enabling_mode_does_not_reopen_historical_refusals ... ok
+test invalid_policy_terminates_without_information_or_state_changes ... ok
+test profile_validation_and_mode_lifecycle_are_atomic ... ok
+test hidden_partner_preferences_do_not_change_opening_decision ... ok
+test false_and_true_claims_are_indistinguishable_until_evidence ... ok
+test episode_bounds_and_credibility_saturation ... ok
+test deception_has_private_knowledge_incentive_and_no_intent_leak ... ok
+test history_ablation_isolates_request_choice_and_credibility ... ok
+test complete_population_audit_reconstructs_local_inputs_and_consequences ... ok
+test deterministic_population_and_explicit_accounting ... ok
+test counterfactual_sweep_disclosure_requests_evidence_and_history ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.58s
+
+
+running 11 tests
+test sampled_noise_is_reproducible_but_not_universally_correct ... ok
+test invalid_predictor_terminates_atomically_without_feedback ... ok
+test fallible_evidence_is_not_truth_and_conflicts_do_not_accumulate ... ok
+test profile_sensor_validation_and_no_reset_of_learned_expectations ... ok
+test hidden_partner_and_sensor_outcomes_cannot_affect_initial_prediction ... ok
+test expectation_only_ablation_and_actual_learning_records ... ok
+test population_forecast_audit_reconstructs_expectations_from_public_responses ... ok
+test population_received_evidence_reconstructs_agent_state ... ok
+test explicit_effort_ticks_resource_accounting_and_population_replay ... ok
+test earlier_saved_reports_are_unchanged ... ok
+test controlled_sweeps_anticipation_cost_quality_and_learning ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.75s
+
+
+running 14 tests
+test config_legality_and_invalid_policy_terminate ... ok
+test costly_proof_can_be_withheld_and_learning_can_be_disabled ... ok
+test external_evidence_refreshes_concern_and_preserves_original_memory ... ok
+test persistence_creation_threshold_and_idle_run ... ok
+test hidden_truth_is_not_in_follow_policy_and_wrong_evidence_can_close ... ok
+test followup_can_substantiate_an_earlier_claim_and_age_ties_are_stable ... ok
+test only_relevant_partner_can_be_asked_and_history_alone_changes_choice ... ok
+test capacity_eviction_is_explicit_and_concerns_outlive_episodes ... ok
+test repeated_failures_and_same_source_do_not_manufacture_certainty ... ok
+test transitions_reconstruct_bounded_state_and_accounting ... ok
+test combined_audits_account_for_every_tick_and_reconstruct_population_concerns ... ok
+test population_empty_odd_and_replay ... ok
+test unchanged_fourth_experiment_archive ... ok
+test controlled_scenarios_and_replay ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.60s
+
+
+running 13 tests
+test novelty_categories_provenance_and_no_truth_dependency ... ok
+test lifecycle_atomic_validation_and_received_provenance_immutable ... ok
+test an_unfulfilled_offer_cannot_perpetually_restore_an_exhausted_method ... ok
+test invalid_inquiry_and_responder_terminate_without_learning_or_food_changes ... ok
+test new_opportunity_is_voluntary_and_repeat_notice_does_not_manufacture_value ... ok
+test readings_hidden_until_actual_response_and_not_necessarily_correct ... ok
+test private_source_changes_are_not_in_inquiry_inputs_and_external_mismatch_is_safe ... ok
+test local_history_alone_changes_strategy_and_source_choice ... ok
+test inquiry_audit_reconstructs_selected_learning_and_valid_receipts ... ok
+test contact_episode_offer_and_capability_capacity_is_audited ... ok
+test old_experiment005_archive_unchanged ... ok
+test population_replay_accounting_bounds_and_explicit_ticks ... ok
+test controlled_scenarios_multi_seed_and_full_replay ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.78s
+
+
+running 12 tests
+test roots_are_acquired_voluntarily_before_sampling_and_cannot_be_rewritten ... ok
+test relay_limits_and_parent_receipts_are_checked_without_recovering_evicted_source_knowledge ... ok
+test repeated_strong_proof_cannot_bootstrap_credibility_or_independence ... ok
+test policies_receive_no_hidden_sensor_or_partner_provenance_and_invalid_choices_do_not_learn ... ok
+test credibility_is_learned_from_local_comparisons_and_independence_changes_selection ... ok
+test forgetting_is_fifo_and_can_make_an_old_lineage_novel_again ... ok
+test independent_known_hidden_revelation_and_conflict_have_distinct_local_consequences ... ok
+test three_speakers_and_ablations_do_not_confuse_communicators_with_lineage ... ok
+test alternative_source_decision_cannot_see_its_private_acquisition ... ok
+test all_new_local_collections_are_bounded_and_evicted_provider_cannot_use_archive ... ok
+test earlier_modes_reproduce_archives_and_population_keeps_original_response_mechanism ... ok
+test all_seed_trials_replay_and_audit_references_and_accounting_are_consistent ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 12.25s
+
+
+running 8 tests
+test context_interning_is_stable_across_serialization_and_versions ... ok
+test invalid_policy_output_is_retained_without_normalizing_it_away ... ok
+test corrupted_references_fail_explicitly ... ok
+test runtime_references_match_migration_and_do_not_mutate_past_contexts ... ok
+test observer_truth_cannot_be_substituted_for_undisclosed_local_attribution ... ok
+test long_history_indexes_rebuild_and_saturation_matches_authoritative_scan ... ok
+test compact_roundtrip_all_controlled_traces_and_exact_archive ... ok
+test empty_single_odd_and_thousand_agent_compact_snapshots_replay ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.65s
+
+
+running 11 tests
+test generated_agents_valid_distinct_and_reproducible ... ok
+test invalid_participants_amounts_and_overlapping_scenes_rejected ... ok
+test private_partner_state_cannot_change_unobserved_decision ... ok
+test refusal_has_distinct_subjective_interpretations ... ok
+test inability_timeout_and_overflow_are_safe ... ok
+test bounded_memory_retains_aggregate_relationship_and_valid_event_ids ... ok
+test own_history_changes_policy_without_partner_information ... ok
+test population_handles_odd_count_and_thousand_agents ... ok
+test entire_reports_are_byte_reproducible ... ok
+test history_changes_choices_at_identical_present_across_seeds ... ok
+test property_sweep_accounting_legality_traceability_and_termination ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.27s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

@@ -1,0 +1,12 @@
+{
+  "behavior_changes": false,
+  "mixed_sha256": "4BC6B59A382A3B71EA57BFA002DAC039B0BB86B42AF614B2200CAA251F15E9B0",
+  "checkpoint_prefix_equality": true,
+  "baseline_commit": "4c4b30f",
+  "storage_sha256": "27C7AF5C1F6581E51532A8F6E4DD7473CBF4FAA45CE941BE65380B368A4509C3",
+  "existing_tests": 93,
+  "clippy": "pass",
+  "compatibility": "001-007 archived outputs equal; 162 compact snapshots reconstructed",
+  "deterministic_replay": true,
+  "format": "pass"
+}

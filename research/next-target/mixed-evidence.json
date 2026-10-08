@@ -1,0 +1,455 @@
+[
+  {
+    "event": 1,
+    "provenance_first": false,
+    "steps": [
+      {
+        "channel": "native",
+        "concerns": {
+          "0": [
+            {
+              "age": 0,
+              "attempts": 0,
+              "created_scene": 0,
+              "event": 1,
+              "failures": 0,
+              "id": 0,
+              "importance": 78,
+              "last_receipt": 0,
+              "owner": 0,
+              "question": "RefusalScarcity",
+              "status": "Resolved",
+              "target": 1,
+              "uncertainty": 10
+            }
+          ]
+        },
+        "matched_present_policy_probe": {
+          "actor": 0,
+          "candidates": [
+            {
+              "action": "Offer",
+              "score": 5
+            },
+            {
+              "action": "Request",
+              "score": -25
+            },
+            {
+              "action": "Leave",
+              "score": 0
+            }
+          ],
+          "caution": 80,
+          "episodic_valence": 0,
+          "expectation": 3,
+          "food": 4,
+          "generosity": 60,
+          "hunger": 30,
+          "memory_causes": [
+            1,
+            0
+          ],
+          "observation": {
+            "amount": 1,
+            "last_signal": null,
+            "partner": 1,
+            "turns_left": 6
+          },
+          "selected": "Offer",
+          "trust": 0
+        },
+        "receipt": 0,
+        "revision": {
+          "after": {
+            "event": 1,
+            "interpretation": "PossibleSelfProtection",
+            "observed": "Refuse",
+            "partner": 1,
+            "valence": 0
+          },
+          "before": {
+            "event": 1,
+            "interpretation": "Rejected",
+            "observed": "Refuse",
+            "partner": 1,
+            "valence": -17
+          }
+        },
+        "support": 90,
+        "trust": 0
+      },
+      {
+        "channel": "provenance",
+        "concerns": {
+          "0": [
+            {
+              "age": 0,
+              "attempts": 0,
+              "created_scene": 0,
+              "event": 1,
+              "failures": 0,
+              "id": 0,
+              "importance": 78,
+              "last_receipt": 1,
+              "owner": 0,
+              "question": "RefusalScarcity",
+              "status": "Partial",
+              "target": 1,
+              "uncertainty": 60
+            }
+          ]
+        },
+        "matched_present_policy_probe": {
+          "actor": 0,
+          "candidates": [
+            {
+              "action": "Offer",
+              "score": -29
+            },
+            {
+              "action": "Request",
+              "score": -29
+            },
+            {
+              "action": "Leave",
+              "score": 0
+            }
+          ],
+          "caution": 80,
+          "episodic_valence": -17,
+          "expectation": 3,
+          "food": 4,
+          "generosity": 60,
+          "hunger": 30,
+          "memory_causes": [
+            1,
+            0
+          ],
+          "observation": {
+            "amount": 1,
+            "last_signal": null,
+            "partner": 1,
+            "turns_left": 6
+          },
+          "selected": "Leave",
+          "trust": -17
+        },
+        "receipt": 1,
+        "revision": {
+          "after": {
+            "event": 1,
+            "interpretation": "Rejected",
+            "observed": "Refuse",
+            "partner": 1,
+            "valence": -17
+          },
+          "before": {
+            "event": 1,
+            "interpretation": "PossibleSelfProtection",
+            "observed": "Refuse",
+            "partner": 1,
+            "valence": 0
+          }
+        },
+        "support": -40,
+        "trust": -17
+      },
+      {
+        "channel": "native",
+        "concerns": {
+          "0": [
+            {
+              "age": 0,
+              "attempts": 0,
+              "created_scene": 0,
+              "event": 1,
+              "failures": 0,
+              "id": 0,
+              "importance": 78,
+              "last_receipt": 2,
+              "owner": 0,
+              "question": "RefusalScarcity",
+              "status": "Resolved",
+              "target": 1,
+              "uncertainty": 10
+            }
+          ]
+        },
+        "matched_present_policy_probe": {
+          "actor": 0,
+          "candidates": [
+            {
+              "action": "Offer",
+              "score": 5
+            },
+            {
+              "action": "Request",
+              "score": -25
+            },
+            {
+              "action": "Leave",
+              "score": 0
+            }
+          ],
+          "caution": 80,
+          "episodic_valence": 0,
+          "expectation": 3,
+          "food": 4,
+          "generosity": 60,
+          "hunger": 30,
+          "memory_causes": [
+            1,
+            0
+          ],
+          "observation": {
+            "amount": 1,
+            "last_signal": null,
+            "partner": 1,
+            "turns_left": 6
+          },
+          "selected": "Offer",
+          "trust": 0
+        },
+        "receipt": 2,
+        "revision": {
+          "after": {
+            "event": 1,
+            "interpretation": "PossibleSelfProtection",
+            "observed": "Refuse",
+            "partner": 1,
+            "valence": 0
+          },
+          "before": {
+            "event": 1,
+            "interpretation": "Rejected",
+            "observed": "Refuse",
+            "partner": 1,
+            "valence": -17
+          }
+        },
+        "support": 90,
+        "trust": 0
+      }
+    ]
+  },
+  {
+    "event": 1,
+    "provenance_first": true,
+    "steps": [
+      {
+        "channel": "provenance",
+        "concerns": {
+          "0": [
+            {
+              "age": 0,
+              "attempts": 0,
+              "created_scene": 0,
+              "event": 1,
+              "failures": 0,
+              "id": 0,
+              "importance": 78,
+              "last_receipt": 0,
+              "owner": 0,
+              "question": "RefusalScarcity",
+              "status": "Partial",
+              "target": 1,
+              "uncertainty": 60
+            }
+          ]
+        },
+        "matched_present_policy_probe": {
+          "actor": 0,
+          "candidates": [
+            {
+              "action": "Offer",
+              "score": -29
+            },
+            {
+              "action": "Request",
+              "score": -29
+            },
+            {
+              "action": "Leave",
+              "score": 0
+            }
+          ],
+          "caution": 80,
+          "episodic_valence": -17,
+          "expectation": 3,
+          "food": 4,
+          "generosity": 60,
+          "hunger": 30,
+          "memory_causes": [
+            1,
+            0
+          ],
+          "observation": {
+            "amount": 1,
+            "last_signal": null,
+            "partner": 1,
+            "turns_left": 6
+          },
+          "selected": "Leave",
+          "trust": -17
+        },
+        "receipt": 0,
+        "revision": null,
+        "support": -40,
+        "trust": -17
+      },
+      {
+        "channel": "native",
+        "concerns": {
+          "0": [
+            {
+              "age": 0,
+              "attempts": 0,
+              "created_scene": 0,
+              "event": 1,
+              "failures": 0,
+              "id": 0,
+              "importance": 78,
+              "last_receipt": 1,
+              "owner": 0,
+              "question": "RefusalScarcity",
+              "status": "Resolved",
+              "target": 1,
+              "uncertainty": 10
+            }
+          ]
+        },
+        "matched_present_policy_probe": {
+          "actor": 0,
+          "candidates": [
+            {
+              "action": "Offer",
+              "score": 5
+            },
+            {
+              "action": "Request",
+              "score": -25
+            },
+            {
+              "action": "Leave",
+              "score": 0
+            }
+          ],
+          "caution": 80,
+          "episodic_valence": 0,
+          "expectation": 3,
+          "food": 4,
+          "generosity": 60,
+          "hunger": 30,
+          "memory_causes": [
+            1,
+            0
+          ],
+          "observation": {
+            "amount": 1,
+            "last_signal": null,
+            "partner": 1,
+            "turns_left": 6
+          },
+          "selected": "Offer",
+          "trust": 0
+        },
+        "receipt": 1,
+        "revision": {
+          "after": {
+            "event": 1,
+            "interpretation": "PossibleSelfProtection",
+            "observed": "Refuse",
+            "partner": 1,
+            "valence": 0
+          },
+          "before": {
+            "event": 1,
+            "interpretation": "Rejected",
+            "observed": "Refuse",
+            "partner": 1,
+            "valence": -17
+          }
+        },
+        "support": 90,
+        "trust": 0
+      },
+      {
+        "channel": "provenance",
+        "concerns": {
+          "0": [
+            {
+              "age": 0,
+              "attempts": 0,
+              "created_scene": 0,
+              "event": 1,
+              "failures": 0,
+              "id": 0,
+              "importance": 78,
+              "last_receipt": 2,
+              "owner": 0,
+              "question": "RefusalScarcity",
+              "status": "Partial",
+              "target": 1,
+              "uncertainty": 60
+            }
+          ]
+        },
+        "matched_present_policy_probe": {
+          "actor": 0,
+          "candidates": [
+            {
+              "action": "Offer",
+              "score": -29
+            },
+            {
+              "action": "Request",
+              "score": -29
+            },
+            {
+              "action": "Leave",
+              "score": 0
+            }
+          ],
+          "caution": 80,
+          "episodic_valence": -17,
+          "expectation": 3,
+          "food": 4,
+          "generosity": 60,
+          "hunger": 30,
+          "memory_causes": [
+            1,
+            0
+          ],
+          "observation": {
+            "amount": 1,
+            "last_signal": null,
+            "partner": 1,
+            "turns_left": 6
+          },
+          "selected": "Leave",
+          "trust": -17
+        },
+        "receipt": 2,
+        "revision": {
+          "after": {
+            "event": 1,
+            "interpretation": "Rejected",
+            "observed": "Refuse",
+            "partner": 1,
+            "valence": -17
+          },
+          "before": {
+            "event": 1,
+            "interpretation": "PossibleSelfProtection",
+            "observed": "Refuse",
+            "partner": 1,
+            "valence": 0
+          }
+        },
+        "support": -40,
+        "trust": -17
+      }
+    ]
+  }
+]

@@ -1,0 +1,674 @@
+{
+  "checkpoint_prefixes": [
+    {
+      "archives": {
+        "/base/base/cognition/information": {
+          "all_checkpoints_bytes": 1862,
+          "final_bytes": 792,
+          "repeated_prefix_bytes": 1070
+        },
+        "/base/base/events": {
+          "all_checkpoints_bytes": 5328,
+          "final_bytes": 1332,
+          "repeated_prefix_bytes": 3996
+        },
+        "/base/base/foresight/forecasts": {
+          "all_checkpoints_bytes": 9072,
+          "final_bytes": 2268,
+          "repeated_prefix_bytes": 6804
+        },
+        "/base/base/intentional/records": {
+          "all_checkpoints_bytes": 17360,
+          "final_bytes": 4340,
+          "repeated_prefix_bytes": 13020
+        },
+        "/base/inquiry/records": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/queries": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/receipts": {
+          "all_checkpoints_bytes": 5190,
+          "final_bytes": 1890,
+          "repeated_prefix_bytes": 3300
+        },
+        "/provenance/roots": {
+          "all_checkpoints_bytes": 899,
+          "final_bytes": 299,
+          "repeated_prefix_bytes": 600
+        }
+      },
+      "snapshots": 4,
+      "trial": "independent"
+    },
+    {
+      "archives": {
+        "/base/base/cognition/information": {
+          "all_checkpoints_bytes": 1487,
+          "final_bytes": 603,
+          "repeated_prefix_bytes": 884
+        },
+        "/base/base/events": {
+          "all_checkpoints_bytes": 5328,
+          "final_bytes": 1332,
+          "repeated_prefix_bytes": 3996
+        },
+        "/base/base/foresight/forecasts": {
+          "all_checkpoints_bytes": 9072,
+          "final_bytes": 2268,
+          "repeated_prefix_bytes": 6804
+        },
+        "/base/base/intentional/records": {
+          "all_checkpoints_bytes": 17360,
+          "final_bytes": 4340,
+          "repeated_prefix_bytes": 13020
+        },
+        "/base/inquiry/records": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/queries": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/receipts": {
+          "all_checkpoints_bytes": 5214,
+          "final_bytes": 1899,
+          "repeated_prefix_bytes": 3315
+        },
+        "/provenance/roots": {
+          "all_checkpoints_bytes": 905,
+          "final_bytes": 301,
+          "repeated_prefix_bytes": 604
+        }
+      },
+      "snapshots": 4,
+      "trial": "independent_wrong"
+    },
+    {
+      "archives": {
+        "/base/base/cognition/information": {
+          "all_checkpoints_bytes": 1470,
+          "final_bytes": 596,
+          "repeated_prefix_bytes": 874
+        },
+        "/base/base/events": {
+          "all_checkpoints_bytes": 5328,
+          "final_bytes": 1332,
+          "repeated_prefix_bytes": 3996
+        },
+        "/base/base/foresight/forecasts": {
+          "all_checkpoints_bytes": 9072,
+          "final_bytes": 2268,
+          "repeated_prefix_bytes": 6804
+        },
+        "/base/base/intentional/records": {
+          "all_checkpoints_bytes": 17360,
+          "final_bytes": 4340,
+          "repeated_prefix_bytes": 13020
+        },
+        "/base/inquiry/records": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/queries": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/receipts": {
+          "all_checkpoints_bytes": 5203,
+          "final_bytes": 1892,
+          "repeated_prefix_bytes": 3311
+        },
+        "/provenance/roots": {
+          "all_checkpoints_bytes": 452,
+          "final_bytes": 150,
+          "repeated_prefix_bytes": 302
+        }
+      },
+      "snapshots": 4,
+      "trial": "relay"
+    },
+    {
+      "archives": {
+        "/base/base/cognition/information": {
+          "all_checkpoints_bytes": 2706,
+          "final_bytes": 916,
+          "repeated_prefix_bytes": 1790
+        },
+        "/base/base/events": {
+          "all_checkpoints_bytes": 6660,
+          "final_bytes": 1332,
+          "repeated_prefix_bytes": 5328
+        },
+        "/base/base/foresight/forecasts": {
+          "all_checkpoints_bytes": 11340,
+          "final_bytes": 2268,
+          "repeated_prefix_bytes": 9072
+        },
+        "/base/base/intentional/records": {
+          "all_checkpoints_bytes": 21700,
+          "final_bytes": 4340,
+          "repeated_prefix_bytes": 17360
+        },
+        "/base/inquiry/records": {
+          "all_checkpoints_bytes": 10,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 8
+        },
+        "/provenance/queries": {
+          "all_checkpoints_bytes": 10,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 8
+        },
+        "/provenance/receipts": {
+          "all_checkpoints_bytes": 8997,
+          "final_bytes": 2843,
+          "repeated_prefix_bytes": 6154
+        },
+        "/provenance/roots": {
+          "all_checkpoints_bytes": 602,
+          "final_bytes": 150,
+          "repeated_prefix_bytes": 452
+        }
+      },
+      "snapshots": 5,
+      "trial": "three_speakers"
+    },
+    {
+      "archives": {
+        "/base/base/cognition/information": {
+          "all_checkpoints_bytes": 1862,
+          "final_bytes": 792,
+          "repeated_prefix_bytes": 1070
+        },
+        "/base/base/events": {
+          "all_checkpoints_bytes": 5328,
+          "final_bytes": 1332,
+          "repeated_prefix_bytes": 3996
+        },
+        "/base/base/foresight/forecasts": {
+          "all_checkpoints_bytes": 9072,
+          "final_bytes": 2268,
+          "repeated_prefix_bytes": 6804
+        },
+        "/base/base/intentional/records": {
+          "all_checkpoints_bytes": 17360,
+          "final_bytes": 4340,
+          "repeated_prefix_bytes": 13020
+        },
+        "/base/inquiry/records": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/queries": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/receipts": {
+          "all_checkpoints_bytes": 5227,
+          "final_bytes": 1904,
+          "repeated_prefix_bytes": 3323
+        },
+        "/provenance/roots": {
+          "all_checkpoints_bytes": 452,
+          "final_bytes": 150,
+          "repeated_prefix_bytes": 302
+        }
+      },
+      "snapshots": 4,
+      "trial": "hidden"
+    },
+    {
+      "archives": {
+        "/base/base/cognition/information": {
+          "all_checkpoints_bytes": 3686,
+          "final_bytes": 1308,
+          "repeated_prefix_bytes": 2378
+        },
+        "/base/base/events": {
+          "all_checkpoints_bytes": 6660,
+          "final_bytes": 1332,
+          "repeated_prefix_bytes": 5328
+        },
+        "/base/base/foresight/forecasts": {
+          "all_checkpoints_bytes": 11340,
+          "final_bytes": 2268,
+          "repeated_prefix_bytes": 9072
+        },
+        "/base/base/intentional/records": {
+          "all_checkpoints_bytes": 21700,
+          "final_bytes": 4340,
+          "repeated_prefix_bytes": 17360
+        },
+        "/base/inquiry/records": {
+          "all_checkpoints_bytes": 10,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 8
+        },
+        "/provenance/queries": {
+          "all_checkpoints_bytes": 10,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 8
+        },
+        "/provenance/receipts": {
+          "all_checkpoints_bytes": 8093,
+          "final_bytes": 2385,
+          "repeated_prefix_bytes": 5708
+        },
+        "/provenance/roots": {
+          "all_checkpoints_bytes": 602,
+          "final_bytes": 150,
+          "repeated_prefix_bytes": 452
+        }
+      },
+      "snapshots": 5,
+      "trial": "revelation"
+    },
+    {
+      "archives": {
+        "/base/base/cognition/information": {
+          "all_checkpoints_bytes": 1472,
+          "final_bytes": 597,
+          "repeated_prefix_bytes": 875
+        },
+        "/base/base/events": {
+          "all_checkpoints_bytes": 5328,
+          "final_bytes": 1332,
+          "repeated_prefix_bytes": 3996
+        },
+        "/base/base/foresight/forecasts": {
+          "all_checkpoints_bytes": 9072,
+          "final_bytes": 2268,
+          "repeated_prefix_bytes": 6804
+        },
+        "/base/base/intentional/records": {
+          "all_checkpoints_bytes": 17360,
+          "final_bytes": 4340,
+          "repeated_prefix_bytes": 13020
+        },
+        "/base/inquiry/records": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/queries": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/receipts": {
+          "all_checkpoints_bytes": 5186,
+          "final_bytes": 1887,
+          "repeated_prefix_bytes": 3299
+        },
+        "/provenance/roots": {
+          "all_checkpoints_bytes": 902,
+          "final_bytes": 300,
+          "repeated_prefix_bytes": 602
+        }
+      },
+      "snapshots": 4,
+      "trial": "conflict"
+    },
+    {
+      "archives": {
+        "/base/base/cognition/information": {
+          "all_checkpoints_bytes": 2947,
+          "final_bytes": 2029,
+          "repeated_prefix_bytes": 918
+        },
+        "/base/base/events": {
+          "all_checkpoints_bytes": 5340,
+          "final_bytes": 2676,
+          "repeated_prefix_bytes": 2664
+        },
+        "/base/base/foresight/forecasts": {
+          "all_checkpoints_bytes": 9071,
+          "final_bytes": 4535,
+          "repeated_prefix_bytes": 4536
+        },
+        "/base/base/intentional/records": {
+          "all_checkpoints_bytes": 20080,
+          "final_bytes": 11400,
+          "repeated_prefix_bytes": 8680
+        },
+        "/base/inquiry/records": {
+          "all_checkpoints_bytes": 9376,
+          "final_bytes": 9372,
+          "repeated_prefix_bytes": 4
+        },
+        "/provenance/queries": {
+          "all_checkpoints_bytes": 13372,
+          "final_bytes": 13368,
+          "repeated_prefix_bytes": 4
+        },
+        "/provenance/receipts": {
+          "all_checkpoints_bytes": 8542,
+          "final_bytes": 5692,
+          "repeated_prefix_bytes": 2850
+        },
+        "/provenance/roots": {
+          "all_checkpoints_bytes": 1198,
+          "final_bytes": 747,
+          "repeated_prefix_bytes": 451
+        }
+      },
+      "snapshots": 3,
+      "trial": "credibility_independence"
+    },
+    {
+      "archives": {
+        "/base/base/cognition/information": {
+          "all_checkpoints_bytes": 2991,
+          "final_bytes": 1753,
+          "repeated_prefix_bytes": 1238
+        },
+        "/base/base/events": {
+          "all_checkpoints_bytes": 3996,
+          "final_bytes": 1332,
+          "repeated_prefix_bytes": 2664
+        },
+        "/base/base/foresight/forecasts": {
+          "all_checkpoints_bytes": 6804,
+          "final_bytes": 2268,
+          "repeated_prefix_bytes": 4536
+        },
+        "/base/base/intentional/records": {
+          "all_checkpoints_bytes": 13020,
+          "final_bytes": 4340,
+          "repeated_prefix_bytes": 8680
+        },
+        "/base/inquiry/records": {
+          "all_checkpoints_bytes": 39443,
+          "final_bytes": 21797,
+          "repeated_prefix_bytes": 17646
+        },
+        "/provenance/queries": {
+          "all_checkpoints_bytes": 59430,
+          "final_bytes": 32691,
+          "repeated_prefix_bytes": 26739
+        },
+        "/provenance/receipts": {
+          "all_checkpoints_bytes": 6163,
+          "final_bytes": 3322,
+          "repeated_prefix_bytes": 2841
+        },
+        "/provenance/roots": {
+          "all_checkpoints_bytes": 600,
+          "final_bytes": 299,
+          "repeated_prefix_bytes": 301
+        }
+      },
+      "snapshots": 3,
+      "trial": "alternative_independent"
+    },
+    {
+      "archives": {
+        "/base/base/cognition/information": {
+          "all_checkpoints_bytes": 2795,
+          "final_bytes": 1557,
+          "repeated_prefix_bytes": 1238
+        },
+        "/base/base/events": {
+          "all_checkpoints_bytes": 3996,
+          "final_bytes": 1332,
+          "repeated_prefix_bytes": 2664
+        },
+        "/base/base/foresight/forecasts": {
+          "all_checkpoints_bytes": 6804,
+          "final_bytes": 2268,
+          "repeated_prefix_bytes": 4536
+        },
+        "/base/base/intentional/records": {
+          "all_checkpoints_bytes": 13020,
+          "final_bytes": 4340,
+          "repeated_prefix_bytes": 8680
+        },
+        "/base/inquiry/records": {
+          "all_checkpoints_bytes": 39452,
+          "final_bytes": 21806,
+          "repeated_prefix_bytes": 17646
+        },
+        "/provenance/queries": {
+          "all_checkpoints_bytes": 59486,
+          "final_bytes": 32747,
+          "repeated_prefix_bytes": 26739
+        },
+        "/provenance/receipts": {
+          "all_checkpoints_bytes": 6174,
+          "final_bytes": 3324,
+          "repeated_prefix_bytes": 2850
+        },
+        "/provenance/roots": {
+          "all_checkpoints_bytes": 302,
+          "final_bytes": 150,
+          "repeated_prefix_bytes": 152
+        }
+      },
+      "snapshots": 3,
+      "trial": "alternative_relay"
+    },
+    {
+      "archives": {
+        "/base/base/cognition/information": {
+          "all_checkpoints_bytes": 2474,
+          "final_bytes": 1236,
+          "repeated_prefix_bytes": 1238
+        },
+        "/base/base/events": {
+          "all_checkpoints_bytes": 3996,
+          "final_bytes": 1332,
+          "repeated_prefix_bytes": 2664
+        },
+        "/base/base/foresight/forecasts": {
+          "all_checkpoints_bytes": 6804,
+          "final_bytes": 2268,
+          "repeated_prefix_bytes": 4536
+        },
+        "/base/base/intentional/records": {
+          "all_checkpoints_bytes": 13020,
+          "final_bytes": 4340,
+          "repeated_prefix_bytes": 8680
+        },
+        "/base/inquiry/records": {
+          "all_checkpoints_bytes": 39430,
+          "final_bytes": 21784,
+          "repeated_prefix_bytes": 17646
+        },
+        "/provenance/queries": {
+          "all_checkpoints_bytes": 59344,
+          "final_bytes": 32605,
+          "repeated_prefix_bytes": 26739
+        },
+        "/provenance/receipts": {
+          "all_checkpoints_bytes": 4746,
+          "final_bytes": 2372,
+          "repeated_prefix_bytes": 2374
+        },
+        "/provenance/roots": {
+          "all_checkpoints_bytes": 302,
+          "final_bytes": 150,
+          "repeated_prefix_bytes": 152
+        }
+      },
+      "snapshots": 3,
+      "trial": "alternative_empty"
+    },
+    {
+      "archives": {
+        "/base/base/cognition/information": {
+          "all_checkpoints_bytes": 1862,
+          "final_bytes": 792,
+          "repeated_prefix_bytes": 1070
+        },
+        "/base/base/events": {
+          "all_checkpoints_bytes": 5328,
+          "final_bytes": 1332,
+          "repeated_prefix_bytes": 3996
+        },
+        "/base/base/foresight/forecasts": {
+          "all_checkpoints_bytes": 9072,
+          "final_bytes": 2268,
+          "repeated_prefix_bytes": 6804
+        },
+        "/base/base/intentional/records": {
+          "all_checkpoints_bytes": 17360,
+          "final_bytes": 4340,
+          "repeated_prefix_bytes": 13020
+        },
+        "/base/inquiry/records": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/queries": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/receipts": {
+          "all_checkpoints_bytes": 5222,
+          "final_bytes": 1901,
+          "repeated_prefix_bytes": 3321
+        },
+        "/provenance/roots": {
+          "all_checkpoints_bytes": 452,
+          "final_bytes": 150,
+          "repeated_prefix_bytes": 302
+        }
+      },
+      "snapshots": 4,
+      "trial": "provenance_disabled"
+    },
+    {
+      "archives": {
+        "/base/base/cognition/information": {
+          "all_checkpoints_bytes": 1862,
+          "final_bytes": 792,
+          "repeated_prefix_bytes": 1070
+        },
+        "/base/base/events": {
+          "all_checkpoints_bytes": 5328,
+          "final_bytes": 1332,
+          "repeated_prefix_bytes": 3996
+        },
+        "/base/base/foresight/forecasts": {
+          "all_checkpoints_bytes": 9072,
+          "final_bytes": 2268,
+          "repeated_prefix_bytes": 6804
+        },
+        "/base/base/intentional/records": {
+          "all_checkpoints_bytes": 17360,
+          "final_bytes": 4340,
+          "repeated_prefix_bytes": 13020
+        },
+        "/base/inquiry/records": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/queries": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/receipts": {
+          "all_checkpoints_bytes": 5190,
+          "final_bytes": 1890,
+          "repeated_prefix_bytes": 3300
+        },
+        "/provenance/roots": {
+          "all_checkpoints_bytes": 899,
+          "final_bytes": 299,
+          "repeated_prefix_bytes": 600
+        }
+      },
+      "snapshots": 4,
+      "trial": "speaker_disabled_independent"
+    },
+    {
+      "archives": {
+        "/base/base/cognition/information": {
+          "all_checkpoints_bytes": 1470,
+          "final_bytes": 596,
+          "repeated_prefix_bytes": 874
+        },
+        "/base/base/events": {
+          "all_checkpoints_bytes": 5328,
+          "final_bytes": 1332,
+          "repeated_prefix_bytes": 3996
+        },
+        "/base/base/foresight/forecasts": {
+          "all_checkpoints_bytes": 9072,
+          "final_bytes": 2268,
+          "repeated_prefix_bytes": 6804
+        },
+        "/base/base/intentional/records": {
+          "all_checkpoints_bytes": 17360,
+          "final_bytes": 4340,
+          "repeated_prefix_bytes": 13020
+        },
+        "/base/inquiry/records": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/queries": {
+          "all_checkpoints_bytes": 8,
+          "final_bytes": 2,
+          "repeated_prefix_bytes": 6
+        },
+        "/provenance/receipts": {
+          "all_checkpoints_bytes": 5203,
+          "final_bytes": 1892,
+          "repeated_prefix_bytes": 3311
+        },
+        "/provenance/roots": {
+          "all_checkpoints_bytes": 452,
+          "final_bytes": 150,
+          "repeated_prefix_bytes": 302
+        }
+      },
+      "snapshots": 4,
+      "trial": "speaker_disabled_relay"
+    }
+  ],
+  "depth": [
+    {
+      "agents": 100,
+      "compact_bytes": 980096,
+      "encounters": 3,
+      "events": 249,
+      "inquiries": 300,
+      "native_input_bytes": 67701
+    },
+    {
+      "agents": 100,
+      "compact_bytes": 8601939,
+      "encounters": 30,
+      "events": 1704,
+      "inquiries": 3000,
+      "native_input_bytes": 1057516
+    },
+    {
+      "agents": 100,
+      "compact_bytes": 27720148,
+      "encounters": 100,
+      "events": 5414,
+      "inquiries": 10000,
+      "native_input_bytes": 3971748
+    }
+  ]
+}
