@@ -587,3 +587,33 @@ must still support sharing. Assessment records and their bounded reference lists
 unbounded audit storage. Grouping is O(32 log 32), retention/attribution scans O(32),
 without runtime observer-history searches. Existing snapshot validation, forecasts
 and history costs are unchanged; there is no general performance refactor.
+
+## Experiment 010: local survival-to-action projection
+
+`attention.rs` is an opt-in extension after Grouped assessment. Existing006 already
+enumerates competing concerns/sources/methods, so no new planner or target selector
+is needed. Unchanged captures a control; CurrentNeed projects at most eight active
+own concerns' support from at most32 currently retained008 items. The replaceable
+pure function discounts each existing007 candidate benefit by
+`(100-abs(support))/100`, leaves priors, costs and independence untouched, then
+reselects with existing stable ties and Pause0. This heuristic is new010 behavior,
+not a retroactive change to006 or009. It never changes retention weights or status.
+
+The input contains only the existing actor-local decision and support triples.
+Historical assessment records provide an observer-only prefix cursor; they do not
+compute runtime projections. No future partner, private source holdings, actual
+roots, sensor outcomes or objective truth enter selection. The control runs the old
+policy unchanged. Without explicit enable, all earlier schemas/defaults are unchanged.
+
+Actual native/provenance reply, inquiry learning, concern transition, revision and
+trust replay follow the established resolver. Fixed resource encounters execute
+existing legality/accounting and may provide later inquiry; subsequent consumption
+retains consequences. Nothing resets divergent worlds. Assessment eviction leaves
+separately persistent consequences intact under the mode-specific contract.
+
+Attention adds mode, prospective query cursor, function pointer and growing observer
+records referencing existing query/inquiry IDs and assessment boundaries, with <=8
+support triples per record. No new persistent cognitive collection is added. Full
+010 snapshots wrap009, and observer validation checks available prefixes and fixed
+built-in scores. Alternative replacement functions need their own score replay
+validator; the experiments use only the registered built-in function.

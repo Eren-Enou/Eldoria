@@ -1,0 +1,25 @@
+{
+  "baseline": "cf82e30",
+  "tests": 124,
+  "experiment010_tests": 6,
+  "experiment010_trials": 12240,
+  "experiment010_exact_replays": 12240,
+  "experiment009_replay_seeds": 129,
+  "frozen_001_009_files_unchanged": 90,
+  "checks": [
+    "cargo fmt --check",
+    "cargo clippy --locked --all-targets -j 1 -- -D warnings",
+    "cargo test --locked -j 1",
+    "cargo run --release --locked -j 1 --example validate_contract",
+    "cargo run --release --locked -j 1 --example validate009",
+    "cargo run --release --locked -j 1 --example evaluate010",
+    "cargo bench --locked -j 1 --bench throughput"
+  ],
+  "all_passed": true,
+  "limitations": [
+    "Fixed controlled opportunities and parameter sensitivity; no external transfer claim",
+    "CurrentNeed heuristic is an opt-in 010 intervention",
+    "Wall-clock runs overlap some validation load; no isolated policy CPU or RSS measure",
+    "Hidden and late-attribution schedules excluded from conservative mediation count"
+  ]
+}

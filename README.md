@@ -229,4 +229,16 @@ validator still reconstructs FIFO. Enabling does not import observer history.
 Run `cargo run --release --locked -j1 --example evaluate009`, then
 `python experiments/009/archive.py` and `python experiments/009/analyze.py`.
 Full new 009 traces are reproducibly compressed; timings remain separate CSV.
-Earlier experiments and their contract map are frozen. No Experiment 010 is added.
+Earlier experiments and their contract map are frozen.
+
+## Experiment 010: survival-to-action
+
+[Specification](experiments/010/specification.md) and [results](experiments/010/results.md)
+test multiple actual concerns, one voluntary inquiry before an executed resource
+encounter, and subsequent inventory persistence. FIFO, Quality and Salient retain
+their finalized009 rules. The unchanged inquiry mechanism is compared with an
+opt-in current-basis need projection; its effects are conditional on that heuristic.
+No mode becomes the default. Run `cargo run --release --locked -j1 --example evaluate010`,
+then `python experiments/010/archive.py` and `python experiments/010/analyze.py`.
+Read-only009 compatibility uses `validate009` after decompressing its two archived
+traces into `target/compat009/`. Do not regenerate historical evidence in place.

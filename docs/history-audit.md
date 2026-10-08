@@ -103,3 +103,21 @@ Native delivery of an acquired report resolves to its actual public payload, pre
 the same disclosed token or Unknown assumption as provenance delivery. Validation may
 not substitute its objective root for unavailable attribution. Older exports remain
 unchanged. See [008 findings](../experiments/008/results.md).
+
+## Experiment 010 inquiry projection audit
+
+010 references immutable query/inquiry IDs and the assessment record boundary at
+decision time. It stores only active own (concern,event,support) triples, rather than
+another copy of the full007 input. Prefix replay uses009's historical eviction
+choices, including rejected incoming items and retained attribution replacement.
+Receipt timestamps check that the prefix is exactly available at the query; future,
+missing/reordered records and altered scores fail the010 built-in validator. This
+observer replay is never a runtime cognition source. A prospective first-query
+cursor permits enabling after existing history without importing it.
+
+Checkpoints retain concern/agent state and causal boundaries for pressure, inquiry,
+later deliveries, executed resource events and consumption. Existing response IDs,
+assessment receipts, memory revisions, trust contributions and event memory causes
+connect those steps. Added read-only resource probes diagnose mediation; actual
+executed events/accounting and later inventory are the behavioral outcome. Timings
+are separate CSV. Frozen001–009 evidence and001–008 contract history stay intact.

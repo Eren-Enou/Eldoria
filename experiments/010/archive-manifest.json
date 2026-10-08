@@ -1,0 +1,20 @@
+{
+  "seed-42": {
+    "json_bytes": 37621696,
+    "gzip_bytes": 1355022,
+    "json_sha256": "c519fb58b47108f66511b7262c3f93ba8e5e035c1d8997b51c0cea8b4452ed10",
+    "gzip_sha256": "2bc083ea5a440a10f3be0238127e7d7381f4c6ebd8fcc15afb8cb84a06ddb242"
+  },
+  "held-out-seed-42": {
+    "json_bytes": 148946969,
+    "gzip_bytes": 5339314,
+    "json_sha256": "ed94de8343a473e5c13e47e9b95e00e1a95e1de67501fa2bbc59502350625695",
+    "gzip_sha256": "496269b13115ab0ce2fa056b083f04b0c9f0ffbf8460609a3997486632178774"
+  },
+  "summary": {
+    "json_bytes": 50669585,
+    "gzip_bytes": 698031,
+    "json_sha256": "2196f87eb8edd139c4ebde0a9090ebd609086d958ef0f475cca75d9f44f5524e",
+    "gzip_sha256": "b08b2da132147f99ff7cfedbc53ad1f6fb8ffe3c27a38ab50a4e2dbd2446e560"
+  }
+}

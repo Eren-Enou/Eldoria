@@ -760,7 +760,37 @@ impl Simulation {
                 .collect(),
             settings: state.settings[&owner],
         };
-        let decision = (self.world.resource::<p::Policy>().0)(&input);
+        let mut decision = (self.world.resource::<p::Policy>().0)(&input);
+        if let Some(attention) = self.world.get_resource::<crate::attention::Attention>() {
+            let mode = attention.mode;
+            let assessment = self.world.resource::<crate::assessment::Assessment>();
+            let items: Vec<_> = assessment
+                .items
+                .get(&owner)
+                .into_iter()
+                .flatten()
+                .cloned()
+                .collect();
+            let basis = crate::attention::project(&input.base.concerns, &items);
+            let record = crate::attention::Record {
+                query: self
+                    .world
+                    .resource::<crate::audit::RuntimeProvenance>()
+                    .queries
+                    .len() as u64,
+                inquiry: self.world.resource::<q::Inquiry>().records.len() as u64,
+                assessment_end: assessment.records.len(),
+                basis,
+            };
+            if mode == crate::attention::Mode::CurrentNeed {
+                decision =
+                    (self.world.resource::<crate::attention::Policy>().0)(decision, &record.basis);
+            }
+            self.world
+                .resource_mut::<crate::attention::Attention>()
+                .records
+                .push(record);
+        }
         let valid = decision.input == input
             && decision.decision.input == input.base
             && q::legal(&input.base, decision.decision.selected)
