@@ -37,3 +37,30 @@ Credibility is directed and separate from trust; update it only from legitimate
 claim/evidence comparisons. Bound communication episodes, validate every action,
 account for time and preserve explicit termination. Profile changes are recorded
 experimental interventions, not permission to schedule or force agent messages.
+
+Experiment 004 foresight is opt-in. Predictors receive only own local TalkInput
+and Context; never expose sensor outcomes, channel, seed or private partner state.
+Learn only from an actual public response to a selected action; exclude forced
+terminal closure from challenge learning. Keep forecasts/errors separate from
+objective events and subjective beliefs. Fallible readings are not truth; preserve
+source identity, uncertainty under conflict, effort accounting and old modes.
+
+Experiment 005 concerns are opt-in after foresight. Keep unfinished intent separate
+from memory, belief, trust and prediction. Cap each individual's concern list at
+eight, audit capacity abandonment/eviction, and preserve stable event/receipt links.
+Follow-up policy inputs contain only own state and public context. Reopen only at
+a later relevant encounter, at most one matter per participant, with explicit time
+cost and voluntary bounded response. Resolve from local support, never objective
+truth; repeated evidence cannot manufacture certainty. Preserve older modes and
+archive compatibility under the new experiment rather than rewriting old evidence.
+
+Experiment 006 adaptive inquiry is opt-in after concerns. Keep concern importance
+separate from source × strategy usefulness. Inquiry policies receive only local
+Input and public co-presence/offers. Cap estimates, signatures, episodes, contacts,
+offers and capabilities; audit eviction. Learn only selected valid responses;
+repeated claims/readings/announcements cannot manufacture information or credibility.
+Pause a method without abandoning or resolving its concern. New evidence offers
+are voluntary; configuration never schedules a message. Mark attempted offers so
+unfulfilled promises cannot renew value indefinitely. Keep evidence provenance
+immutable, sensor channels/seed/outcomes private to the resolver, and all old modes
+and reports intact. Save compatibility and performance evidence under 006.

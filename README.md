@@ -106,3 +106,54 @@ contradicted claims. Communication memories are bounded; original events stay
 immutable. Controlled trials show disclosure costs, evidence-request costs and
 communication history changing choices. Requests and deception sometimes fail to
 change later behavior. See the findings for sensor assumptions and other limits.
+
+## Experiment 004: anticipating communication consequences
+
+Run `cargo run --locked --release --example evaluate004`; see
+[findings and evidence](experiments/004/results.md). `enable_foresight(seed, sensor)`
+adds a replaceable one-step predictor to intentional communication. Agents learn
+local challenge/evidence-response expectations from public responses. Candidate
+records separate immediate utility and anticipated consequences. Fallible evidence
+has explicit reliability and disclosure effort; conflicting readings can leave
+uncertainty unresolved.
+
+Controlled trials show anticipation changing deception and evidence choices, and
+prediction errors changing later expectations. They also expose a turn-budget
+loophole: late claims cannot be challenged within the current conversation. Old
+experiment modes and evidence remain intact. The four-mode benchmark measures
+short populations only; see the findings for noise, storage and scaling limits.
+
+## Experiment 005: persistent unresolved concerns
+
+Run `cargo run --locked --release --example evaluate005`; see the dedicated
+[findings](experiments/005/results.md), [causal report](experiments/005/report.txt),
+and [pre-implementation hypotheses](experiments/005/specification.md).
+Call `enable_concerns()` after enabling foresight to retain up to eight unfinished
+refusal questions per individual. On later encounters a local replaceable policy
+chooses one evidence request, abandonment, or normal continuation. Costs, age,
+relationship value, expected answers and previous failures affect that choice.
+
+Strong evidence can close a concern and revise a memory; weak or conflicting
+evidence can leave it unresolved. Closure is subjective and can be wrong.
+Controlled trials and three-encounter populations preserve the previous four
+experiments. The benchmark now includes formation and matched repeated-encounter
+workloads. Bounded concerns do not bound the full audit archive or partner maps.
+
+## Experiment 006: adaptive inquiry
+
+Run `cargo run --locked --release --example evaluate006`; see
+[findings](experiments/006/results.md), [causal report](experiments/006/report.txt),
+[full seed-42 traces](experiments/006/seed-42.json), and
+[compatibility evidence](experiments/006/compatibility.json).
+Call `enable_inquiry()` after concerns to opt in. Resource encounters now choose
+Direct, Evidence, or Pause using learned concern/source/strategy usefulness.
+`inquiry_meeting(&[ids])` records bounded public co-presence and gives each
+participant one voluntary opportunity; it supplies neither messages nor expertise.
+
+Repeated weak answers lose useful value. Agents can change method, try a newly met
+source, or retain a highly important question without asking again. Voluntary public
+offers of genuinely new evidence can restore a path's value. New-source exploration
+can fail; communicated evidence can be wrong. Gain scores are auditable heuristics,
+not calibrated entropy estimates. The extension adds bounded local state but full
+audit archives remain unbounded. Older policies, output defaults and evidence are
+unchanged; matched 005/006 benchmark rows live under the new experiment.

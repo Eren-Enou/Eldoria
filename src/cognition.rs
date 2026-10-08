@@ -12,6 +12,12 @@ pub enum EvidenceKind {
     },
     /// Speaker voluntarily opens the instrumented record of their past circumstances.
     Disclosure,
+    /// A received observation, not objective truth. Source IDs are event-local.
+    Fallible {
+        scarce: bool,
+        reliability: i32,
+        source: u8,
+    },
 }
 #[derive(Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub struct Belief {

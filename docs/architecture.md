@@ -222,3 +222,205 @@ histories. Experiment 003 measures short 100/1000-agent runs and serialized trac
 size, not heap allocations or long-term scale. The architecture intentionally
 keeps the original resource negotiation and post-refusal communication policies
 separate; unifying their action space is not required for these controlled tests.
+
+## Experiment 004 extension (2026-10-07)
+
+`foresight.rs` adds a pure replaceable predictor and optional Foresight ECS resource.
+`enable_foresight` validates sensor parameters, enables intentional mode, and stores
+per-agent settings and directed partner expectations. It does not reset an existing
+foresight resource. `set_prediction_settings` changes future priors/switches without
+erasing learned expectations. `set_predictor` supplies an alternate pure function
+of TalkInput and Context; the resolver validates unchanged local input/context and
+consistent candidate audit entries before applying its choice. In this mode the
+predictor replaces the plain TalkPolicy decision path. Other modes are unchanged.
+
+The context contains only own expectations/settings and publicly known evidence
+quality/effort, excluding sensor channel, seed, outcome and all partner-private
+state. Forecast records link to TalkRecord IDs and separate immediate/anticipated/
+combined utility. PredictionError links a selected forecast to the next public
+response. Only expected AskEvidence or ProvideEvidence events are learned through
+a quarter-error update. Claims too late for a challenge have no feedback sample;
+forced closure is censored. No private belief revision is used as a training label.
+
+EvidenceKind::Fallible represents received evidence, not truth. Seeded readings are
+keyed by refusal, actor and source. Only after choosing ProvideEvidence does the
+resolver sample/release readings. Accurate/Inverted fixture channels isolate
+weight/direction in tests; neither is in policy context. Direct readings supersede
+unsupported testimony and combine as strongest positive minus strongest negative
+weight. Repetition cannot inflate support; a received source is immutable. The
+new kind opts into this rule even through the low-level receipt API. Legacy
+Disclosure and earlier modes keep their existing rules and serialized schemas.
+
+A disclosure can carry two source readings. Both receipts are audited individually;
+the communication record links its final receipt, with all source links in Reading
+records. Tick cost is receipt count plus configured effort; other turns cost one
+tick. Food stays unchanged. Credibility uses the final combined support, so an
+ambiguous pair causes no consistency update. For fallible receipts the reused
+verified_claim field denotes evidence consistency, not objective verification;
+verifiable stays false. Correctness annotations exist only in observer Reading
+records. Original interpretations and saturation-correct trust replay are retained.
+
+New directed expectation maps and audit/error/reading vectors grow without bound.
+Existing bounded episodes/beliefs are unchanged. Forecast/evidence searches scan
+audit history, and long-run aggregate work can be quadratic. No new persistence,
+parallelism or general planning framework was introduced. See
+[004 specification](../experiments/004/specification.md) and
+[findings](../experiments/004/results.md) for equations, counterfactuals, measurement
+boundaries and the finite-horizon loophole revealed by actual experiments.
+
+## Experiment 005 extension (2026-10-07)
+
+`concerns.rs` adds a separate optional `Concerns` ECS resource. `enable_concerns`
+requires foresight, is idempotent, and starts its scene cursor at the current
+boundary. `set_follow_cost` and `set_concern_policy` change future decisions without
+erasing history. The pure creation predicate and follow policy are isolated from
+the resolver; the latter is replaceable by a function pointer. No partner component,
+truth, sensor seed/channel or sampled reading enters `FollowInput`.
+
+Each concern has stable ID, owner, target, original refusal event/scene, one question
+type, saved importance, cached subjective uncertainty, age, attempt/failure counters,
+status and last receipt reference. There is no duplicate dialogue or event payload.
+Creation follows an actual refusal conversation when importance (current relationship
+goal plus hunger/5, capped at 100) is at least 40 and absolute local support is below
+60. Unimportant uncertainty is audited but not retained. A concern is not a belief:
+it separately records that uncertainty is worth potentially acting on later.
+
+The resource keeps eight entries per owner including terminal entries. At capacity,
+evict the oldest terminal entry first, otherwise the least important active entry
+(oldest ID breaks ties) with explicit capacity abandonment and eviction transitions.
+Uncertainty survives eviction of the corresponding belief/episode. Original event
+and receipt archives remain available to the resolver but are not policy inputs.
+
+After resource scenes finish, `run` processes new encounters in stable scene and
+participant order, then runs the usual new-refusal conversations. Each owner ages
+active concerns once per subsequent encounter and makes one follow decision. Only
+concerns about this partner and an earlier scene are legal candidates. Continue
+wins ties; concern ID order breaks other ties. Scores are specified in the
+[005 hypotheses](../experiments/005/specification.md). Age and failures are utility
+penalties, not physical time charges. Counters saturate; utility uses age/failures
+capped at 1,000. A chosen request costs 1 + configured pursuit cost ticks; Continue,
+Abandon and rejected invalid decisions cost one tick. No food moves.
+
+A real selected Reopen is an evidence request audited in `FollowRecord`, which
+links to a response conversation about the earlier event. The shared communication
+resolver starts from that request, allows a voluntary evidence-or-silence reply,
+then closes within two turns. Existing legal checks, sensor costs, belief support,
+memory revision, trust replay and communication records are reused. The request
+does not pretend that an earlier Explain action occurred. A retained prior public
+claim may be compared to later evidence for credibility; evidence consistency is
+fallible. Old modes' four-turn conversations and serialized schemas are unchanged.
+
+Every received receipt refreshes a matching concern from the listener's belief:
+absolute support at least 60 means Resolved, otherwise Partial. Resolved concerns
+can become Partial after conflicting evidence. Abandoned concerns update their
+uncertainty but stay abandoned. Open means no received information. Sequential
+conflicting receipts may temporarily resolve and then reopen a concern, with both
+transitions recorded. Evicted episodes cannot be reinterpreted by the unchanged
+memory mechanism, although their concerns can still resolve.
+
+After follow-up, attempts increment and a failure increments when uncertainty did
+not decrease. The public response separately updates the owner's existing answer
+expectation through the quarter-error rule if learning is enabled. An answer may
+be unhelpful: higher response probability does not imply better information. These
+updates and errors live in FollowRecord rather than using invalid TalkRecord IDs
+in Experiment 004's prediction-error vector. Food, request time, response time,
+receipt IDs and all state transitions can be joined to reconstruct the chain.
+
+Concern scans are bounded (eight; legality checks make the tiny policy scan
+quadratic in that fixed cap). Per-partner credibility/expectations/trust, original
+events and audit vectors remain unbounded. Each decision and transition copies
+bounded local state into an unbounded trace. Existing evidence and revision scans
+can dominate long histories. This implementation adds no general planner, meeting
+scheduler, persistent storage service, UI or global reputation.
+## Experiment 006: expected usefulness of an inquiry
+
+`inquiry.rs` isolates the pure inquiry policy, novelty rules and bounded local
+storage. `simulation/adaptive.rs` integrates them behind `enable_inquiry()`; the
+existing Concerns prerequisite and old 005 follow-up branch remain intact. No
+Agent component, old report schema or dependency changed. New experiment harnesses
+live in `experiment006.rs` and `examples/evaluate006.rs`.
+
+New local representations: Cell(Concern ID, Source ID, Strategy, attempts, expected
+usefulness, previous record, attempted offer), Signature(event, claim/evidence
+provenance, received proposition, quality, receipt), Episode, public Offer and
+bounded Contacts. Concern importance/status are never substituted by these values.
+Direct and Evidence are structured inquiry actions; Pause leaves concerns untouched.
+
+| Local collection / individual | Capacity |
+| --- | ---: |
+| Concern/source/strategy estimates | 32 |
+| Content/provenance signatures | 32 |
+| Inquiry episodes | 16 |
+| Locally met contacts | 16 |
+| Observed public offers | 32 |
+| Source's own configured evidence capabilities | 32 |
+
+FIFO capacity eviction is audited; cell refresh moves it to the back. Episodes
+reference stable inquiry/receipt/concern IDs. New bounded beliefs/concerns remain
+under their earlier caps. Archive records, notices, meetings and interventions are
+unbounded. Forgetting evicted signatures can make old content appear novel again;
+the evidence ledger still refuses increased belief support from identical evidence.
+
+The policy receives own concerns/cells/signatures, own hunger and relationship
+goal, local directed credibility, and currently co-present sources with public
+evidence offers. No source private motives/resources/intent, sensor seed or sampling
+channel/outcome appears. Public provenance channel IDs 0/1 distinguish readings;
+they are not the private `Channel` noise/fixture configuration. The resolver samples
+only after selection. Configured capability changes are observer-visible
+interventions; voluntary advertisement (goal - privacy - hunger/5 - evidence effort
+> 0) exposes only potential quality, effort and provenance, never a reading.
+
+All strategies are considered per active earlier concern and available source.
+Prior useful value is Direct=55, Evidence=65. Valid selected replies update their
+cell by `(old expectation + realized usefulness)/2`, integer truncation. An
+untried source is an exploratory prior, not knowledge that it can answer.
+
+Novelty compares only locally received signatures: exact same provenance/content
+with equal or lower quality is Redundant/0; zero quality/no answer is None/0;
+an opposite proposition is Conflict/min(quality,30); stronger same-proposition
+evidence is Stronger/min(quality - old maximum + 20,90). First information is
+New/min(quality,40); a new weak origin for an already known proposition is
+New/min(quality,20). Within a multi-reading reply, every receipt gets its own
+classification; realized value is the maximum, never their sum. These categories
+are heuristics about useful observations, not objective truth or entropy.
+
+An Evidence candidate can benefit from an observed potential new reading:
+`opportunity = clamp(offer quality - strongest local quality + 30,0,90)`. It gets
+zero if that provenance/quality was already observed or the same offer was already
+attempted. Expected gain is `clamp(max(learned/prior, opportunity) + credibility/10,
+0,100)`; benefit is `importance * gain / 100`. Score subtracts inquiry effort
+(Direct 10, Evidence 28), own hunger/10 and advertised evidence effort. There is
+no separate bonus for importance that forces pointless questioning. Pause wins
+ties at zero. Concern order, source ID order and Direct before Evidence break
+remaining ties. Current relationship goal is recorded; saved concern importance
+carries its original contribution. The 005 age/failure utility penalties do not
+enter this opt-in policy.
+
+Resource encounters keep old aging/scheduling, replacing only the chosen follow-up
+policy. Explicit 2–8 participant meetings record co-presence (one tick), age active
+questions, and choose at most one inquiry per participant in sorted order. Agents
+do not choose travel or discover people from a global map. Each decision costs
+one tick; a query additionally spends its strategy effort. Hunger/10 is a utility
+cost, not physical time. A selected query receives one voluntary reply through
+the existing local TalkInput/Predictor legality protocol. It may be silence.
+Replies cost one tick, plus actual evidence effort and receipt processing ticks.
+Announcement decisions cost one tick. Food is unchanged; consumption remains
+explicit. Tests sum all old/new audit time components.
+
+Only the original refuser can disclose their narrowly observed historical predicate;
+a newly met person with no event knowledge honestly has only Silence available.
+Inquiry responses have their own audit/episode stream, not synthetic references
+to legacy TalkRecords. Existing predictor scores and earlier talk memories are
+used, but inquiry does not train the old binary answer predictor or add source
+self-talk episodes to the legacy stream. Inquiry learning records useful value
+instead. Original refusal events are immutable; cognitive receipts retain the
+existing belief revision and replacement-contribution trust replay. Credibility
+updates only from a new legitimately observed claim/evidence comparison; repeated
+proof cannot repeatedly award credit. Evidence provenance mismatches fail the
+entire bounded response batch before any receipt is applied. Invalid policies
+produce audited no-effect closure; run again does not replay opportunities.
+
+This mechanism deliberately has no multi-step planner, global experts, information
+network or language model. Future source knowledge acquisition/provenance needs
+its own experiment; the present third-source case tests exploration, not successful
+relay or independent corroboration.

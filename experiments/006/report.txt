@@ -1,0 +1,269 @@
+Experiment 006: adaptive local inquiry
+
+repeated_weak seed 42
+  Intervention: Original private scarcity: requester food0/hunger90, refuser food1/hunger90/privacy100. Current requester food4/hunger30, refuser food1/hunger30; source privacy30 (100 for silent case). Meeting supply does not force messages.
+  Record 0: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty New, useful 40; expected None->Some(47); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 55, benefit 42, cost 13, score 29; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [0], novelty per receipt [(0, New, 40)]
+  Record 2: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 0; expected Some(47)->Some(23); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 47, benefit 36, cost 13, score 23; learned 47, opportunity 0; prior record Some(0), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [1], novelty per receipt [(1, Redundant, 0)]
+  Metrics {"active_final_concerns":1,"cells":1,"concerns_pursued":1,"decision_records":4,"episodes":2,"inquiries":2,"low_value_pauses":0,"receipts":2,"repeated_inquiries":1,"resolved_final_concerns":0,"resource_events":2,"same_source_strategy_repetitions":1,"serialized_bytes":24932,"signatures":1,"source_changes":0,"strategy_changes":0,"talk_turns":4,"unresolved_concerns_at_pause":0}
+
+strategy_change seed 42
+  Intervention: Original private scarcity: requester food0/hunger90, refuser food1/hunger90/privacy100. Current requester food4/hunger30, refuser food1/hunger30; source privacy30 (100 for silent case). Meeting supply does not force messages.
+  Record 0: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty New, useful 40; expected None->Some(47); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 55, benefit 42, cost 13, score 29; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [0], novelty per receipt [(0, New, 40)]
+  Record 2: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 0; expected Some(47)->Some(23); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 47, benefit 36, cost 13, score 23; learned 47, opportunity 0; prior record Some(0), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [1], novelty per receipt [(1, Redundant, 0)]
+  Record 4: Ask { concern: 0, source: 1, strategy: Evidence }; importance [78]; novelty New, useful 20; expected None->Some(42); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 23, benefit 17, cost 13, score 4; learned 23, opportunity 0; prior record Some(2), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response ProvideEvidence, receipts [2], novelty per receipt [(2, New, 20)]
+  Metrics {"active_final_concerns":1,"cells":2,"concerns_pursued":1,"decision_records":6,"episodes":3,"inquiries":3,"low_value_pauses":0,"receipts":3,"repeated_inquiries":1,"resolved_final_concerns":0,"resource_events":2,"same_source_strategy_repetitions":1,"serialized_bytes":31209,"signatures":2,"source_changes":0,"strategy_changes":1,"talk_turns":4,"unresolved_concerns_at_pause":0}
+
+renewed_evidence seed 42
+  Intervention: Original private scarcity: requester food0/hunger90, refuser food1/hunger90/privacy100. Current requester food4/hunger30, refuser food1/hunger30; source privacy30 (100 for silent case). Meeting supply does not force messages.
+  Intervention: Source now has channel1 evidence at quality80 (old channel0 quality40). The next meeting permits voluntary announcement; no observation is supplied to the inquirer until the source chooses to disclose.
+  Record 0: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty New, useful 40; expected None->Some(47); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 55, benefit 42, cost 13, score 29; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [0], novelty per receipt [(0, New, 40)]
+  Record 2: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 0; expected Some(47)->Some(23); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 47, benefit 36, cost 13, score 23; learned 47, opportunity 0; prior record Some(0), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [1], novelty per receipt [(1, Redundant, 0)]
+  Record 4: Ask { concern: 0, source: 1, strategy: Evidence }; importance [78]; novelty New, useful 20; expected None->Some(42); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 23, benefit 17, cost 13, score 4; learned 23, opportunity 0; prior record Some(2), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response ProvideEvidence, receipts [2], novelty per receipt [(2, New, 20)]
+  Record 6: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 0; expected Some(23)->Some(11); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 23, benefit 17, cost 13, score 4; learned 23, opportunity 0; prior record Some(2), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 42, benefit 32, cost 31, score 1; learned 42, opportunity 0; prior record Some(4), notice None
+    Public response Explain, receipts [3], novelty per receipt [(3, Redundant, 0)]
+  Record 8: Ask { concern: 0, source: 1, strategy: Evidence }; importance [78]; novelty Redundant, useful 0; expected Some(42)->Some(21); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 11, benefit 8, cost 13, score -5; learned 11, opportunity 0; prior record Some(6), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 42, benefit 32, cost 31, score 1; learned 42, opportunity 0; prior record Some(4), notice None
+    Public response ProvideEvidence, receipts [4], novelty per receipt [(4, Redundant, 0)]
+  Record 10: Pause; importance [78]; novelty None, useful 0; expected None->None; concern None
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 11, benefit 8, cost 13, score -5; learned 11, opportunity 0; prior record Some(6), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 21, benefit 16, cost 31, score -15; learned 21, opportunity 0; prior record Some(8), notice None
+  Record 12: Pause; importance [78]; novelty None, useful 0; expected None->None; concern None
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 11, benefit 8, cost 13, score -5; learned 11, opportunity 0; prior record Some(6), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 21, benefit 16, cost 31, score -15; learned 21, opportunity 0; prior record Some(8), notice None
+  Record 14: Ask { concern: 0, source: 1, strategy: Evidence }; importance [78]; novelty Stronger, useful 50; expected Some(21)->Some(35); concern Some(Resolved)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 11, benefit 8, cost 13, score -5; learned 11, opportunity 0; prior record Some(6), notice Some(0)
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 60, benefit 46, cost 31, score 15; learned 21, opportunity 60; prior record Some(8), notice Some(0)
+    Public response ProvideEvidence, receipts [5], novelty per receipt [(5, Stronger, 50)]
+  Metrics {"active_final_concerns":0,"cells":2,"concerns_pursued":1,"decision_records":16,"episodes":6,"inquiries":6,"low_value_pauses":2,"receipts":6,"repeated_inquiries":4,"resolved_final_concerns":1,"resource_events":2,"same_source_strategy_repetitions":2,"serialized_bytes":57240,"signatures":3,"source_changes":0,"strategy_changes":3,"talk_turns":4,"unresolved_concerns_at_pause":1}
+
+alternative_source seed 42
+  Intervention: Original private scarcity: requester food0/hunger90, refuser food1/hunger90/privacy100. Current requester food4/hunger30, refuser food1/hunger30; source privacy30 (100 for silent case). Meeting supply does not force messages.
+  Record 0: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty New, useful 40; expected None->Some(47); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 55, benefit 42, cost 13, score 29; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [0], novelty per receipt [(0, New, 40)]
+  Record 2: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 0; expected Some(47)->Some(23); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 47, benefit 36, cost 13, score 23; learned 47, opportunity 0; prior record Some(0), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [1], novelty per receipt [(1, Redundant, 0)]
+  Record 4: Ask { concern: 0, source: 1, strategy: Evidence }; importance [78]; novelty New, useful 20; expected None->Some(42); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 23, benefit 17, cost 13, score 4; learned 23, opportunity 0; prior record Some(2), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response ProvideEvidence, receipts [2], novelty per receipt [(2, New, 20)]
+  Record 6: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 0; expected Some(23)->Some(11); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 23, benefit 17, cost 13, score 4; learned 23, opportunity 0; prior record Some(2), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 42, benefit 32, cost 31, score 1; learned 42, opportunity 0; prior record Some(4), notice None
+    Public response Explain, receipts [3], novelty per receipt [(3, Redundant, 0)]
+  Record 8: Ask { concern: 0, source: 1, strategy: Evidence }; importance [78]; novelty Redundant, useful 0; expected Some(42)->Some(21); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 11, benefit 8, cost 13, score -5; learned 11, opportunity 0; prior record Some(6), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 42, benefit 32, cost 31, score 1; learned 42, opportunity 0; prior record Some(4), notice None
+    Public response ProvideEvidence, receipts [4], novelty per receipt [(4, Redundant, 0)]
+  Record 10: Pause; importance [78]; novelty None, useful 0; expected None->None; concern None
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 11, benefit 8, cost 13, score -5; learned 11, opportunity 0; prior record Some(6), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 21, benefit 16, cost 31, score -15; learned 21, opportunity 0; prior record Some(8), notice None
+  Record 12: Pause; importance [78]; novelty None, useful 0; expected None->None; concern None
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 11, benefit 8, cost 13, score -5; learned 11, opportunity 0; prior record Some(6), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 21, benefit 16, cost 31, score -15; learned 21, opportunity 0; prior record Some(8), notice None
+  Record 14: Ask { concern: 0, source: 2, strategy: Direct }; importance [78]; novelty None, useful 0; expected None->Some(27); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 11, benefit 8, cost 13, score -5; learned 11, opportunity 0; prior record Some(6), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 21, benefit 16, cost 31, score -15; learned 21, opportunity 0; prior record Some(8), notice None
+    Ask { concern: 0, source: 2, strategy: Direct }: gain 55, benefit 42, cost 13, score 29; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 2, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Silence, receipts [], novelty per receipt []
+  Metrics {"active_final_concerns":1,"cells":3,"concerns_pursued":1,"decision_records":17,"episodes":6,"inquiries":6,"low_value_pauses":2,"receipts":5,"repeated_inquiries":3,"resolved_final_concerns":0,"resource_events":2,"same_source_strategy_repetitions":1,"serialized_bytes":55882,"signatures":2,"source_changes":1,"strategy_changes":4,"talk_turns":4,"unresolved_concerns_at_pause":1}
+
+important_uninformative seed 42
+  Intervention: Original private scarcity: requester food0/hunger90, refuser food1/hunger90/privacy100. Current requester food4/hunger30, refuser food1/hunger30; source privacy30 (100 for silent case). Meeting supply does not force messages.
+  Record 0: Ask { concern: 0, source: 1, strategy: Direct }; importance [98]; novelty None, useful 0; expected None->Some(27); concern Some(Open)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 55, benefit 53, cost 13, score 40; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 63, cost 31, score 32; learned 65, opportunity 0; prior record None, notice None
+    Public response Silence, receipts [], novelty per receipt []
+  Record 2: Ask { concern: 0, source: 1, strategy: Evidence }; importance [98]; novelty None, useful 0; expected None->Some(32); concern Some(Open)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 27, benefit 26, cost 13, score 13; learned 27, opportunity 0; prior record Some(0), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 63, cost 31, score 32; learned 65, opportunity 0; prior record None, notice None
+    Public response Silence, receipts [], novelty per receipt []
+  Record 4: Ask { concern: 0, source: 1, strategy: Direct }; importance [98]; novelty None, useful 0; expected Some(27)->Some(13); concern Some(Open)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 27, benefit 26, cost 13, score 13; learned 27, opportunity 0; prior record Some(0), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 32, benefit 31, cost 31, score 0; learned 32, opportunity 0; prior record Some(2), notice None
+    Public response Silence, receipts [], novelty per receipt []
+  Record 6: Pause; importance [98]; novelty None, useful 0; expected None->None; concern None
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 13, benefit 12, cost 13, score -1; learned 13, opportunity 0; prior record Some(4), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 32, benefit 31, cost 31, score 0; learned 32, opportunity 0; prior record Some(2), notice None
+  Record 8: Pause; importance [98]; novelty None, useful 0; expected None->None; concern None
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 13, benefit 12, cost 13, score -1; learned 13, opportunity 0; prior record Some(4), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 32, benefit 31, cost 31, score 0; learned 32, opportunity 0; prior record Some(2), notice None
+  Record 10: Pause; importance [98]; novelty None, useful 0; expected None->None; concern None
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 13, benefit 12, cost 13, score -1; learned 13, opportunity 0; prior record Some(4), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 32, benefit 31, cost 31, score 0; learned 32, opportunity 0; prior record Some(2), notice None
+  Record 12: Pause; importance [98]; novelty None, useful 0; expected None->None; concern None
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 13, benefit 12, cost 13, score -1; learned 13, opportunity 0; prior record Some(4), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 32, benefit 31, cost 31, score 0; learned 32, opportunity 0; prior record Some(2), notice None
+  Metrics {"active_final_concerns":1,"cells":2,"concerns_pursued":1,"decision_records":14,"episodes":3,"inquiries":3,"low_value_pauses":4,"receipts":0,"repeated_inquiries":1,"resolved_final_concerns":0,"resource_events":2,"same_source_strategy_repetitions":0,"serialized_bytes":39397,"signatures":0,"source_changes":0,"strategy_changes":2,"talk_turns":4,"unresolved_concerns_at_pause":1}
+
+useful_repetition seed 42
+  Intervention: Original private scarcity: requester food0/hunger90, refuser food1/hunger90/privacy100. Current requester food4/hunger30, refuser food1/hunger30; source privacy30 (100 for silent case). Meeting supply does not force messages.
+  Intervention: Source now has channel1 evidence at quality80 (old channel0 quality40). The next meeting permits voluntary announcement; no observation is supplied to the inquirer until the source chooses to disclose.
+  Record 0: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty New, useful 40; expected None->Some(47); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 55, benefit 42, cost 13, score 29; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [0], novelty per receipt [(0, New, 40)]
+  Record 2: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 0; expected Some(47)->Some(23); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 47, benefit 36, cost 13, score 23; learned 47, opportunity 0; prior record Some(0), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [1], novelty per receipt [(1, Redundant, 0)]
+  Record 4: Ask { concern: 0, source: 1, strategy: Evidence }; importance [78]; novelty New, useful 20; expected None->Some(42); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 23, benefit 17, cost 13, score 4; learned 23, opportunity 0; prior record Some(2), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response ProvideEvidence, receipts [2], novelty per receipt [(2, New, 20)]
+  Record 6: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 0; expected Some(23)->Some(11); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 23, benefit 17, cost 13, score 4; learned 23, opportunity 0; prior record Some(2), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 42, benefit 32, cost 31, score 1; learned 42, opportunity 0; prior record Some(4), notice None
+    Public response Explain, receipts [3], novelty per receipt [(3, Redundant, 0)]
+  Record 8: Ask { concern: 0, source: 1, strategy: Evidence }; importance [78]; novelty Redundant, useful 0; expected Some(42)->Some(21); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 11, benefit 8, cost 13, score -5; learned 11, opportunity 0; prior record Some(6), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 42, benefit 32, cost 31, score 1; learned 42, opportunity 0; prior record Some(4), notice None
+    Public response ProvideEvidence, receipts [4], novelty per receipt [(4, Redundant, 0)]
+  Record 10: Ask { concern: 0, source: 1, strategy: Evidence }; importance [78]; novelty Stronger, useful 50; expected Some(21)->Some(35); concern Some(Resolved)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 11, benefit 8, cost 13, score -5; learned 11, opportunity 0; prior record Some(6), notice Some(0)
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 60, benefit 46, cost 31, score 15; learned 21, opportunity 60; prior record Some(8), notice Some(0)
+    Public response ProvideEvidence, receipts [5], novelty per receipt [(5, Stronger, 50)]
+  Metrics {"active_final_concerns":0,"cells":2,"concerns_pursued":1,"decision_records":12,"episodes":6,"inquiries":6,"low_value_pauses":0,"receipts":6,"repeated_inquiries":4,"resolved_final_concerns":1,"resource_events":2,"same_source_strategy_repetitions":2,"serialized_bytes":51374,"signatures":3,"source_changes":0,"strategy_changes":3,"talk_turns":4,"unresolved_concerns_at_pause":0}
+
+history_disabled seed 42
+  Intervention: Original private scarcity: requester food0/hunger90, refuser food1/hunger90/privacy100. Current requester food4/hunger30, refuser food1/hunger30; source privacy30 (100 for silent case). Meeting supply does not force messages.
+  Record 0: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty New, useful 40; expected None->Some(47); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 55, benefit 42, cost 13, score 29; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [0], novelty per receipt [(0, New, 40)]
+  Record 2: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 0; expected Some(47)->Some(23); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 55, benefit 42, cost 13, score 29; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [1], novelty per receipt [(1, Redundant, 0)]
+  Record 4: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 0; expected Some(23)->Some(11); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 55, benefit 42, cost 13, score 29; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [2], novelty per receipt [(2, Redundant, 0)]
+  Record 6: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 0; expected Some(11)->Some(5); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 55, benefit 42, cost 13, score 29; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [3], novelty per receipt [(3, Redundant, 0)]
+  Record 8: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 0; expected Some(5)->Some(2); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 55, benefit 42, cost 13, score 29; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [4], novelty per receipt [(4, Redundant, 0)]
+  Record 10: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 0; expected Some(2)->Some(1); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 55, benefit 42, cost 13, score 29; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [5], novelty per receipt [(5, Redundant, 0)]
+  Record 12: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 0; expected Some(1)->Some(0); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 55, benefit 42, cost 13, score 29; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [6], novelty per receipt [(6, Redundant, 0)]
+  Metrics {"active_final_concerns":1,"cells":1,"concerns_pursued":1,"decision_records":14,"episodes":7,"inquiries":7,"low_value_pauses":0,"receipts":7,"repeated_inquiries":6,"resolved_final_concerns":0,"resource_events":2,"same_source_strategy_repetitions":6,"serialized_bytes":55708,"signatures":1,"source_changes":0,"strategy_changes":0,"talk_turns":4,"unresolved_concerns_at_pause":0}
+
+novelty_disabled seed 42
+  Intervention: Original private scarcity: requester food0/hunger90, refuser food1/hunger90/privacy100. Current requester food4/hunger30, refuser food1/hunger30; source privacy30 (100 for silent case). Meeting supply does not force messages.
+  Record 0: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty New, useful 40; expected None->Some(47); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 55, benefit 42, cost 13, score 29; learned 55, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [0], novelty per receipt [(0, New, 40)]
+  Record 2: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 40; expected Some(47)->Some(43); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 47, benefit 36, cost 13, score 23; learned 47, opportunity 0; prior record Some(0), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [1], novelty per receipt [(1, Redundant, 40)]
+  Record 4: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 40; expected Some(43)->Some(41); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 43, benefit 33, cost 13, score 20; learned 43, opportunity 0; prior record Some(2), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response Explain, receipts [2], novelty per receipt [(2, Redundant, 40)]
+  Record 6: Ask { concern: 0, source: 1, strategy: Evidence }; importance [78]; novelty New, useful 40; expected None->Some(52); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 41, benefit 31, cost 13, score 18; learned 41, opportunity 0; prior record Some(4), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 65, benefit 50, cost 31, score 19; learned 65, opportunity 0; prior record None, notice None
+    Public response ProvideEvidence, receipts [3], novelty per receipt [(3, New, 40)]
+  Record 8: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 40; expected Some(41)->Some(40); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 41, benefit 31, cost 13, score 18; learned 41, opportunity 0; prior record Some(4), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 52, benefit 40, cost 31, score 9; learned 52, opportunity 0; prior record Some(6), notice None
+    Public response Explain, receipts [4], novelty per receipt [(4, Redundant, 40)]
+  Record 10: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 40; expected Some(40)->Some(40); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 40, benefit 31, cost 13, score 18; learned 40, opportunity 0; prior record Some(8), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 52, benefit 40, cost 31, score 9; learned 52, opportunity 0; prior record Some(6), notice None
+    Public response Explain, receipts [5], novelty per receipt [(5, Redundant, 40)]
+  Record 12: Ask { concern: 0, source: 1, strategy: Direct }; importance [78]; novelty Redundant, useful 40; expected Some(40)->Some(40); concern Some(Partial)
+    Pause: gain 0, benefit 0, cost 0, score 0; learned 0, opportunity 0; prior record None, notice None
+    Ask { concern: 0, source: 1, strategy: Direct }: gain 40, benefit 31, cost 13, score 18; learned 40, opportunity 0; prior record Some(10), notice None
+    Ask { concern: 0, source: 1, strategy: Evidence }: gain 52, benefit 40, cost 31, score 9; learned 52, opportunity 0; prior record Some(6), notice None
+    Public response Explain, receipts [6], novelty per receipt [(6, Redundant, 40)]
+  Metrics {"active_final_concerns":1,"cells":2,"concerns_pursued":1,"decision_records":14,"episodes":7,"inquiries":7,"low_value_pauses":0,"receipts":7,"repeated_inquiries":5,"resolved_final_concerns":0,"resource_events":2,"same_source_strategy_repetitions":4,"serialized_bytes":56476,"signatures":2,"source_changes":0,"strategy_changes":2,"talk_turns":4,"unresolved_concerns_at_pause":0}

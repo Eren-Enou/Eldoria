@@ -4,7 +4,13 @@ use world_of_individuals::{model::Generator, simulation::Simulation};
 
 fn main() {
     println!("mode,population,rounds,init_ms,run_ms,records,records_per_second");
-    for mode in 1..=3 {
+    // Workloads 6/7 compare identical three-encounter workloads with/without concerns.
+    for workload in 1..=8 {
+        let mode = if workload >= 6 {
+            workload - 2
+        } else {
+            workload
+        };
         for population in [100, 1000] {
             let rounds = 100;
             let mut init_time = std::time::Duration::ZERO;
@@ -22,12 +28,36 @@ fn main() {
                 if mode == 3 {
                     sim.enable_intentional().unwrap();
                 }
+                if mode >= 4 {
+                    sim.enable_foresight(
+                        seed,
+                        world_of_individuals::foresight::Sensor {
+                            effort: 5,
+                            ..Default::default()
+                        },
+                    )
+                    .unwrap();
+                }
+                if mode >= 5 {
+                    sim.enable_concerns().unwrap();
+                }
+                if mode == 6 {
+                    sim.enable_inquiry().unwrap();
+                }
                 for id in (0..population).step_by(2) {
                     sim.add_scene([id, id + 1], 1, 6).unwrap();
                 }
                 init_time += start.elapsed();
                 let start = Instant::now();
                 sim.run();
+                if workload >= 6 {
+                    for _ in 0..2 {
+                        for id in (0..population).step_by(2) {
+                            sim.add_scene([id, id + 1], 1, 6).unwrap();
+                        }
+                        sim.run();
+                    }
+                }
                 if mode == 2 {
                     for event in sim.events() {
                         if event.outcome == Some(Outcome::Refusal) {
@@ -50,14 +80,27 @@ fn main() {
                     }
                 }
                 run_time += start.elapsed();
-                if mode == 3 {
+                if mode >= 3 {
                     events += sim.intentional().unwrap().records.len();
+                }
+                if mode == 5 {
+                    events += sim.concerns().unwrap().records.len();
+                }
+                if mode == 6 {
+                    events += sim.inquiry().unwrap().records.len();
                 }
                 events += sim.events().len();
             }
             println!(
                 "{},{population},{rounds},{:.3},{:.3},{events},{:.0}",
-                format_args!("experiment00{mode}"),
+                format_args!(
+                    "experiment00{mode}{}",
+                    if workload >= 6 {
+                        "_three_encounters"
+                    } else {
+                        ""
+                    }
+                ),
                 init_time.as_secs_f64() * 1000.,
                 run_time.as_secs_f64() * 1000.,
                 events as f64 / run_time.as_secs_f64()

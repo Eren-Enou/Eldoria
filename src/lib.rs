@@ -1,8 +1,14 @@
 pub mod behavior;
 pub mod cognition;
+pub mod concerns;
 pub mod experiment;
 pub mod experiment002;
 pub mod experiment003;
+pub mod experiment004;
+pub mod experiment005;
+pub mod experiment006;
+pub mod foresight;
+pub mod inquiry;
 pub mod intentional;
 pub mod model;
 pub mod simulation;

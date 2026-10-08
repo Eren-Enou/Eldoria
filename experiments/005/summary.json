@@ -1,0 +1,33 @@
+{
+  "compatibility001": true,
+  "compatibility002": true,
+  "compatibility003": true,
+  "compatibility004": true,
+  "outcomes": {
+    "abandon:[Abandoned]:probe=Leave": 128,
+    "competing:[Open, Resolved]:probe=Leave": 128,
+    "conflicting:[Partial]:probe=Leave": 128,
+    "high_cost:[Open]:probe=Leave": 128,
+    "mistaken_resolution:[Resolved]:probe=Leave": 128,
+    "relationship_high:[Resolved]:probe=Offer": 128,
+    "relationship_low:[Open]:probe=Leave": 128,
+    "reopen_strong:[Resolved]:probe=Offer": 128,
+    "repeated_failure:[Abandoned]:probe=Leave": 128,
+    "weak:[Partial]:probe=Leave": 128,
+    "weak_repeated:[Partial]:probe=Leave": 128
+  },
+  "population": {
+    "abandoned": 0,
+    "agents": 1000,
+    "concerns_created": 185,
+    "encounters_per_pair": 3,
+    "receipts": 54,
+    "reopened": 214,
+    "resource_events": 2436,
+    "serialized_bytes": 8341078,
+    "talk_turns": 1328
+  },
+  "replayed_suites": 128,
+  "rules": "experiment-005-v1",
+  "seeds": "0..128"
+}

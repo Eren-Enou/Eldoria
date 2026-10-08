@@ -1,0 +1,273 @@
+Experiment 004: local expectations, predictions, actual responses
+
+A-immediate seed 42 event 1 -> later Leave
+  record 0 actor 1 selects Mislead; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -48 + anticipated 0 = -48; predicts None at 0%; No modeled additional consequence
+    Explain: immediate -28 + anticipated 0 = -28; predicts Some(AskEvidence) at 50%; Explanation may require costly substantiation
+    Mislead: immediate 5 + anticipated 0 = 5; predicts Some(AskEvidence) at 50%; Unsupported lie may be challenged
+    observed Silence, error -50, expectation 50 -> 38
+    Testimony { scarce: true }: support None -> 50, revision None, trust -17 -> -17
+  record 1 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskEvidence: immediate -75 + anticipated 10 = -65; predicts Some(ProvideEvidence) at 50%; Evidence response may reduce uncertainty
+
+A-anticipating seed 42 event 1 -> later Leave
+  record 0 actor 1 selects Silence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -48 + anticipated 0 = -48; predicts None at 0%; No modeled additional consequence
+    Explain: immediate -28 + anticipated -4 = -32; predicts Some(AskEvidence) at 50%; Explanation may require costly substantiation
+    Mislead: immediate 5 + anticipated -20 = -15; predicts Some(AskEvidence) at 50%; Unsupported lie may be challenged
+  record 1 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskExplanation: immediate -12 + anticipated 0 = -12; predicts None at 0%; No modeled additional consequence
+
+B-expect-challenge seed 42 event 1 -> later Leave
+  record 0 actor 1 selects Silence; expectation Expectation { challenge: 90, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -48 + anticipated 0 = -48; predicts None at 0%; No modeled additional consequence
+    Explain: immediate -28 + anticipated -7 = -35; predicts Some(AskEvidence) at 90%; Explanation may require costly substantiation
+    Mislead: immediate 5 + anticipated -36 = -31; predicts Some(AskEvidence) at 90%; Unsupported lie may be challenged
+  record 1 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskExplanation: immediate -12 + anticipated 0 = -12; predicts None at 0%; No modeled additional consequence
+
+B-expect-no-challenge seed 42 event 1 -> later Leave
+  record 0 actor 1 selects Mislead; expectation Expectation { challenge: 0, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -48 + anticipated 0 = -48; predicts None at 0%; No modeled additional consequence
+    Explain: immediate -28 + anticipated 0 = -28; predicts Some(AskEvidence) at 0%; Explanation may require costly substantiation
+    Mislead: immediate 5 + anticipated 0 = 5; predicts Some(AskEvidence) at 0%; Unsupported lie may be challenged
+    observed Silence, error 0, expectation 0 -> 0
+    Testimony { scarce: true }: support None -> 50, revision None, trust -17 -> -17
+  record 1 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskEvidence: immediate -75 + anticipated 10 = -65; predicts Some(ProvideEvidence) at 50%; Evidence response may reduce uncertainty
+
+B-challenged-lie seed 42 event 1 -> later Leave
+  record 0 actor 1 selects Mislead; expectation Expectation { challenge: 0, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -48 + anticipated 0 = -48; predicts None at 0%; No modeled additional consequence
+    Explain: immediate -28 + anticipated 0 = -28; predicts Some(AskEvidence) at 0%; Explanation may require costly substantiation
+    Mislead: immediate 5 + anticipated 0 = 5; predicts Some(AskEvidence) at 0%; Unsupported lie may be challenged
+    observed AskEvidence, error 100, expectation 0 -> 25
+    Testimony { scarce: true }: support None -> 50, revision None, trust -17 -> -17
+  record 1 actor 0 selects AskEvidence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskEvidence: immediate 85 + anticipated 10 = 95; predicts Some(ProvideEvidence) at 50%; Evidence response may reduce uncertainty
+    observed Silence, error -50, expectation 50 -> 38
+  record 2 actor 1 selects Silence; expectation Expectation { challenge: 25, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate 2 + anticipated -32 = -30; predicts None at 80%; Evidence may contradict own earlier claim
+  record 3 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 38 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+
+C-low-privacy seed 42 event 1 -> later Offer
+  record 0 actor 1 selects Explain; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate 12 + anticipated 0 = 12; predicts None at 0%; No modeled additional consequence
+    Explain: immediate 32 + anticipated -4 = 28; predicts Some(AskEvidence) at 50%; Explanation may require costly substantiation
+    observed AskEvidence, error 50, expectation 50 -> 62
+    Testimony { scarce: true }: support None -> 50, revision None, trust -17 -> -17
+  record 1 actor 0 selects AskEvidence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskEvidence: immediate 85 + anticipated 10 = 95; predicts Some(ProvideEvidence) at 50%; Evidence response may reduce uncertainty
+    observed ProvideEvidence, error 50, expectation 50 -> 62
+  record 2 actor 1 selects ProvideEvidence; expectation Expectation { challenge: 62, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate 62 + anticipated 0 = 62; predicts None at 0%; No modeled additional consequence
+    Fallible { scarce: true, reliability: 80, source: 0 }: support Some(50) -> 80, revision Some(Revision { before: Memory { event: 1, partner: 1, observed: Refuse, interpretation: Rejected, valence: -17 }, after: Memory { event: 1, partner: 1, observed: Refuse, interpretation: PossibleSelfProtection, valence: 0 } }), trust -17 -> 0
+  record 3 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 62 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+
+C-high-privacy seed 42 event 1 -> later Leave
+  record 0 actor 1 selects Silence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -88 + anticipated 0 = -88; predicts None at 0%; No modeled additional consequence
+    Explain: immediate -68 + anticipated -4 = -72; predicts Some(AskEvidence) at 50%; Explanation may require costly substantiation
+  record 1 actor 0 selects AskExplanation; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskExplanation: immediate 48 + anticipated 0 = 48; predicts None at 0%; No modeled additional consequence
+  record 2 actor 1 selects Silence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -88 + anticipated 0 = -88; predicts None at 0%; No modeled additional consequence
+    Explain: immediate -48 + anticipated 0 = -48; predicts None at 0%; Explanation may require costly substantiation
+  record 3 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+
+D-weak seed 42 event 1 -> later Leave
+  record 0 actor 1 selects Explain; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 40, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate 12 + anticipated 0 = 12; predicts None at 0%; No modeled additional consequence
+    Explain: immediate 32 + anticipated -4 = 28; predicts Some(AskEvidence) at 50%; Explanation may require costly substantiation
+    observed AskEvidence, error 50, expectation 50 -> 62
+    Testimony { scarce: true }: support None -> 50, revision None, trust -17 -> -17
+  record 1 actor 0 selects AskEvidence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 40, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskEvidence: immediate 85 + anticipated 5 = 90; predicts Some(ProvideEvidence) at 50%; Evidence response may reduce uncertainty
+    observed ProvideEvidence, error 50, expectation 50 -> 62
+  record 2 actor 1 selects ProvideEvidence; expectation Expectation { challenge: 62, answer: 50 }; evidence quality 40, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate 62 + anticipated 0 = 62; predicts None at 0%; No modeled additional consequence
+    Fallible { scarce: true, reliability: 40, source: 0 }: support Some(50) -> 40, revision None, trust -17 -> -17
+  record 3 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 62 }; evidence quality 40, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+
+D-strong seed 42 event 1 -> later Offer
+  record 0 actor 1 selects Explain; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate 12 + anticipated 0 = 12; predicts None at 0%; No modeled additional consequence
+    Explain: immediate 32 + anticipated -4 = 28; predicts Some(AskEvidence) at 50%; Explanation may require costly substantiation
+    observed AskEvidence, error 50, expectation 50 -> 62
+    Testimony { scarce: true }: support None -> 50, revision None, trust -17 -> -17
+  record 1 actor 0 selects AskEvidence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskEvidence: immediate 85 + anticipated 10 = 95; predicts Some(ProvideEvidence) at 50%; Evidence response may reduce uncertainty
+    observed ProvideEvidence, error 50, expectation 50 -> 62
+  record 2 actor 1 selects ProvideEvidence; expectation Expectation { challenge: 62, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate 62 + anticipated 0 = 62; predicts None at 0%; No modeled additional consequence
+    Fallible { scarce: true, reliability: 80, source: 0 }: support Some(50) -> 80, revision Some(Revision { before: Memory { event: 1, partner: 1, observed: Refuse, interpretation: Rejected, valence: -17 }, after: Memory { event: 1, partner: 1, observed: Refuse, interpretation: PossibleSelfProtection, valence: 0 } }), trust -17 -> 0
+  record 3 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 62 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+
+E-conflict seed 42 event 1 -> later Leave
+  record 0 actor 1 selects Explain; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate 12 + anticipated 0 = 12; predicts None at 0%; No modeled additional consequence
+    Explain: immediate 32 + anticipated -4 = 28; predicts Some(AskEvidence) at 50%; Explanation may require costly substantiation
+    observed AskEvidence, error 50, expectation 50 -> 62
+    Testimony { scarce: true }: support None -> 50, revision None, trust -17 -> -17
+  record 1 actor 0 selects AskEvidence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskEvidence: immediate 85 + anticipated 10 = 95; predicts Some(ProvideEvidence) at 50%; Evidence response may reduce uncertainty
+    observed ProvideEvidence, error 50, expectation 50 -> 62
+  record 2 actor 1 selects ProvideEvidence; expectation Expectation { challenge: 62, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate 62 + anticipated 0 = 62; predicts None at 0%; No modeled additional consequence
+    Fallible { scarce: true, reliability: 80, source: 0 }: support Some(50) -> 80, revision Some(Revision { before: Memory { event: 1, partner: 1, observed: Refuse, interpretation: Rejected, valence: -17 }, after: Memory { event: 1, partner: 1, observed: Refuse, interpretation: PossibleSelfProtection, valence: 0 } }), trust -17 -> 0
+    Fallible { scarce: false, reliability: 80, source: 1 }: support Some(80) -> 0, revision Some(Revision { before: Memory { event: 1, partner: 1, observed: Refuse, interpretation: PossibleSelfProtection, valence: 0 }, after: Memory { event: 1, partner: 1, observed: Refuse, interpretation: Rejected, valence: -17 } }), trust 0 -> -17
+  record 3 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 62 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+
+F-cheap-request seed 42 event 1 -> later Offer
+  record 0 actor 1 selects Explain; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate 12 + anticipated 0 = 12; predicts None at 0%; No modeled additional consequence
+    Explain: immediate 32 + anticipated -4 = 28; predicts Some(AskEvidence) at 50%; Explanation may require costly substantiation
+    observed AskEvidence, error 50, expectation 50 -> 62
+    Testimony { scarce: true }: support None -> 50, revision None, trust -17 -> -17
+  record 1 actor 0 selects AskEvidence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskEvidence: immediate 25 + anticipated 10 = 35; predicts Some(ProvideEvidence) at 50%; Evidence response may reduce uncertainty
+    observed ProvideEvidence, error 50, expectation 50 -> 62
+  record 2 actor 1 selects ProvideEvidence; expectation Expectation { challenge: 62, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate 62 + anticipated 0 = 62; predicts None at 0%; No modeled additional consequence
+    Fallible { scarce: true, reliability: 80, source: 0 }: support Some(50) -> 80, revision Some(Revision { before: Memory { event: 1, partner: 1, observed: Refuse, interpretation: Rejected, valence: -17 }, after: Memory { event: 1, partner: 1, observed: Refuse, interpretation: PossibleSelfProtection, valence: 0 } }), trust -17 -> 0
+  record 3 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 62 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+
+F-expensive-request seed 42 event 1 -> later Leave
+  record 0 actor 1 selects Explain; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate 12 + anticipated 0 = 12; predicts None at 0%; No modeled additional consequence
+    Explain: immediate 32 + anticipated -4 = 28; predicts Some(AskEvidence) at 50%; Explanation may require costly substantiation
+    observed Silence, error -50, expectation 50 -> 38
+    Testimony { scarce: true }: support None -> 50, revision None, trust -17 -> -17
+  record 1 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskEvidence: immediate -75 + anticipated 10 = -65; predicts Some(ProvideEvidence) at 50%; Evidence response may reduce uncertainty
+
+F-expensive-disclosure seed 42 event 1 -> later Leave
+  record 0 actor 1 selects Explain; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 80
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -68 + anticipated 0 = -68; predicts None at 0%; No modeled additional consequence
+    Explain: immediate 32 + anticipated -4 = 28; predicts Some(AskEvidence) at 50%; Explanation may require costly substantiation
+    observed AskEvidence, error 50, expectation 50 -> 62
+    Testimony { scarce: true }: support None -> 50, revision None, trust -17 -> -17
+  record 1 actor 0 selects AskEvidence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 80
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskEvidence: immediate 85 + anticipated 10 = 95; predicts Some(ProvideEvidence) at 50%; Evidence response may reduce uncertainty
+    observed Silence, error -50, expectation 50 -> 38
+  record 2 actor 1 selects Silence; expectation Expectation { challenge: 62, answer: 50 }; evidence quality 80, effort 80
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -18 + anticipated 0 = -18; predicts None at 0%; No modeled additional consequence
+  record 3 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 38 }; evidence quality 80, effort 80
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+
+G-no-challenge-history seed 42 event 13 -> later Leave
+  record 12 actor 1 selects Mislead; expectation Expectation { challenge: 10, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -48 + anticipated 0 = -48; predicts None at 0%; No modeled additional consequence
+    Explain: immediate -28 + anticipated 0 = -28; predicts Some(AskEvidence) at 10%; Explanation may require costly substantiation
+    Mislead: immediate 5 + anticipated -4 = 1; predicts Some(AskEvidence) at 10%; Unsupported lie may be challenged
+    observed Silence, error -10, expectation 10 -> 8
+    Testimony { scarce: true }: support None -> 50, revision None, trust -100 -> -100
+  record 13 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskEvidence: immediate -75 + anticipated 10 = -65; predicts Some(ProvideEvidence) at 50%; Evidence response may reduce uncertainty
+
+H-challenge-history seed 42 event 13 -> later Offer
+  record 24 actor 1 selects Silence; expectation Expectation { challenge: 90, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -48 + anticipated 0 = -48; predicts None at 0%; No modeled additional consequence
+    Explain: immediate -28 + anticipated -7 = -35; predicts Some(AskEvidence) at 90%; Explanation may require costly substantiation
+    Mislead: immediate 5 + anticipated -36 = -31; predicts Some(AskEvidence) at 90%; Unsupported lie may be challenged
+  record 25 actor 0 selects AskExplanation; expectation Expectation { challenge: 50, answer: 90 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskExplanation: immediate 28 + anticipated 0 = 28; predicts None at 0%; No modeled additional consequence
+  record 26 actor 1 selects Mislead; expectation Expectation { challenge: 90, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -48 + anticipated 0 = -48; predicts None at 0%; No modeled additional consequence
+    Explain: immediate -8 + anticipated 0 = -8; predicts None at 0%; Explanation may require costly substantiation
+    Mislead: immediate 5 + anticipated 0 = 5; predicts None at 0%; Unsupported lie may be challenged
+    Testimony { scarce: true }: support None -> 90, revision Some(Revision { before: Memory { event: 13, partner: 1, observed: Refuse, interpretation: Rejected, valence: -17 }, after: Memory { event: 13, partner: 1, observed: Refuse, interpretation: PossibleSelfProtection, valence: 0 } }), trust -17 -> 0
+  record 27 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 90 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+
+G-learning-disabled seed 42 event 13 -> later Leave
+  record 12 actor 1 selects Silence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -48 + anticipated 0 = -48; predicts None at 0%; No modeled additional consequence
+    Explain: immediate -28 + anticipated -4 = -32; predicts Some(AskEvidence) at 50%; Explanation may require costly substantiation
+    Mislead: immediate 5 + anticipated -20 = -15; predicts Some(AskEvidence) at 50%; Unsupported lie may be challenged
+  record 13 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskExplanation: immediate -12 + anticipated 0 = -12; predicts None at 0%; No modeled additional consequence
+
+I-noisy-evidence seed 42 event 1 -> later Offer
+  record 0 actor 1 selects Explain; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate 12 + anticipated 0 = 12; predicts None at 0%; No modeled additional consequence
+    Explain: immediate 32 + anticipated -4 = 28; predicts Some(AskEvidence) at 50%; Explanation may require costly substantiation
+    observed AskEvidence, error 50, expectation 50 -> 62
+    Testimony { scarce: true }: support None -> 50, revision None, trust -17 -> -17
+  record 1 actor 0 selects AskEvidence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskEvidence: immediate 85 + anticipated 10 = 95; predicts Some(ProvideEvidence) at 50%; Evidence response may reduce uncertainty
+    observed ProvideEvidence, error 50, expectation 50 -> 62
+  record 2 actor 1 selects ProvideEvidence; expectation Expectation { challenge: 62, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate 62 + anticipated 0 = 62; predicts None at 0%; No modeled additional consequence
+    Fallible { scarce: true, reliability: 80, source: 0 }: support Some(50) -> 80, revision Some(Revision { before: Memory { event: 1, partner: 1, observed: Refuse, interpretation: Rejected, valence: -17 }, after: Memory { event: 1, partner: 1, observed: Refuse, interpretation: PossibleSelfProtection, valence: 0 } }), trust -17 -> 0
+  record 3 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 62 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+
+B-delayed-lie seed 42 event 1 -> later Leave
+  record 0 actor 1 selects Silence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -48 + anticipated 0 = -48; predicts None at 0%; No modeled additional consequence
+    Explain: immediate -28 + anticipated -4 = -32; predicts Some(AskEvidence) at 50%; Explanation may require costly substantiation
+    Mislead: immediate 5 + anticipated -20 = -15; predicts Some(AskEvidence) at 50%; Unsupported lie may be challenged
+  record 1 actor 0 selects AskExplanation; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    AskExplanation: immediate 48 + anticipated 0 = 48; predicts None at 0%; No modeled additional consequence
+  record 2 actor 1 selects Mislead; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence
+    ProvideEvidence: immediate -48 + anticipated 0 = -48; predicts None at 0%; No modeled additional consequence
+    Explain: immediate -8 + anticipated 0 = -8; predicts None at 0%; Explanation may require costly substantiation
+    Mislead: immediate 5 + anticipated 0 = 5; predicts None at 0%; Unsupported lie may be challenged
+    Testimony { scarce: true }: support None -> 50, revision None, trust -17 -> -17
+  record 3 actor 0 selects Silence; expectation Expectation { challenge: 50, answer: 50 }; evidence quality 80, effort 0
+    Silence: immediate 0 + anticipated 0 = 0; predicts None at 0%; No modeled additional consequence

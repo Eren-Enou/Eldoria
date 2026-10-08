@@ -1,4 +1,12 @@
 use crate::cognition::*;
+use crate::concerns::{
+    self, ConcernPolicy, Concerns, Creation, FollowAction, FollowDecision, FollowInput,
+    FollowRecord, Status,
+};
+use crate::foresight::{
+    self, Context, ForecastRecord, Foresight, Plan, PredictionError, Predictor, Reading, Sensor,
+    Settings,
+};
 use crate::intentional::{
     self, Conversation, Intentional, Profile, TalkAction, TalkDecision, TalkInput, TalkMemory,
     TalkPolicy, TalkRecord,
@@ -9,6 +17,7 @@ use bevy_ecs::{
     schedule::SingleThreadedExecutor,
 };
 use std::collections::BTreeMap;
+mod adaptive;
 
 #[derive(Resource, Default)]
 struct Index(BTreeMap<AgentId, Entity>);
@@ -158,6 +167,9 @@ impl Simulation {
         {
             self.schedule.run(&mut self.world);
         }
+        if self.world.contains_resource::<Concerns>() {
+            self.follow_opportunities();
+        }
         if self.world.contains_resource::<Intentional>() {
             let start = self.world.resource::<Runtime>().conversation_cursor;
             let end = self.world.resource::<Runtime>().events.len();
@@ -166,6 +178,7 @@ impl Simulation {
                 if self.world.resource::<Runtime>().events[event].outcome == Some(Outcome::Refusal)
                 {
                     self.converse(event as u64);
+                    self.capture_concern(event as u64);
                 }
             }
         }
@@ -254,7 +267,326 @@ impl Simulation {
         self.world.get_resource::<Intentional>().cloned()
     }
 
+    pub fn enable_foresight(&mut self, seed: u64, sensor: Sensor) -> Result<(), String> {
+        self.require_idle()?;
+        if !(0..=90).contains(&sensor.reliability) || sensor.effort > 100 {
+            return Err("sensor reliability must be 0..90 and effort 0..100".into());
+        }
+        if self.world.contains_resource::<Foresight>() {
+            return Err("foresight already enabled".into());
+        }
+        self.enable_intentional()?;
+        let settings = self
+            .agents()
+            .iter()
+            .map(|a| (a.id, Settings::default()))
+            .collect();
+        self.world.insert_resource(Foresight {
+            seed,
+            sensor,
+            settings,
+            expectations: Default::default(),
+            forecasts: vec![],
+            errors: vec![],
+            readings: vec![],
+        });
+        self.world.insert_resource(Predictor(foresight::predict));
+        Ok(())
+    }
+    pub fn foresight(&self) -> Option<Foresight> {
+        self.world.get_resource::<Foresight>().cloned()
+    }
+    pub fn set_prediction_settings(
+        &mut self,
+        id: AgentId,
+        settings: Settings,
+    ) -> Result<(), String> {
+        self.require_idle()?;
+        if ![settings.challenge_prior, settings.answer_prior]
+            .iter()
+            .all(|v| (0..=100).contains(v))
+        {
+            return Err("prediction priors must be 0..100".into());
+        }
+        let mut state = self
+            .world
+            .get_resource_mut::<Foresight>()
+            .ok_or("enable foresight first")?;
+        *state.settings.get_mut(&id).ok_or("unknown agent")? = settings;
+        Ok(())
+    }
+    pub fn set_predictor(
+        &mut self,
+        predictor: fn(&TalkInput, &Context) -> Plan,
+    ) -> Result<(), String> {
+        self.require_idle()?;
+        self.world
+            .get_resource_mut::<Predictor>()
+            .ok_or("enable foresight first")?
+            .0 = predictor;
+        Ok(())
+    }
+
+    /// Enables unfinished intent at a boundary without retroactive concerns.
+    pub fn enable_concerns(&mut self) -> Result<(), String> {
+        self.require_idle()?;
+        if !self.world.contains_resource::<Foresight>() {
+            return Err("enable foresight first".into());
+        }
+        if self.world.contains_resource::<Concerns>() {
+            return Ok(());
+        }
+        self.world.insert_resource(Concerns {
+            pursuit_costs: self.agents().iter().map(|a| (a.id, 20)).collect(),
+            scene_cursor: self.world.resource::<Runtime>().scenes.len(),
+            ..Default::default()
+        });
+        self.world.insert_resource(ConcernPolicy(concerns::policy));
+        Ok(())
+    }
+    pub fn concerns(&self) -> Option<Concerns> {
+        self.world.get_resource::<Concerns>().cloned()
+    }
+    pub fn set_follow_cost(&mut self, owner: AgentId, cost: u32) -> Result<(), String> {
+        self.require_idle()?;
+        if cost > 100 {
+            return Err("follow cost must be 0..100".into());
+        }
+        let mut state = self
+            .world
+            .get_resource_mut::<Concerns>()
+            .ok_or("enable concerns first")?;
+        *state.pursuit_costs.get_mut(&owner).ok_or("unknown agent")? = cost;
+        Ok(())
+    }
+    pub fn set_concern_policy(
+        &mut self,
+        policy: fn(&FollowInput) -> FollowDecision,
+    ) -> Result<(), String> {
+        self.require_idle()?;
+        self.world
+            .get_resource_mut::<ConcernPolicy>()
+            .ok_or("enable concerns first")?
+            .0 = policy;
+        Ok(())
+    }
+    fn capture_concern(&mut self, event: u64) {
+        if !self.world.contains_resource::<Concerns>() {
+            return;
+        }
+        let original = &self.world.resource::<Runtime>().events[event as usize];
+        let target = original.decision.actor;
+        let owner = *original
+            .participants
+            .iter()
+            .find(|&&id| id != target)
+            .unwrap();
+        let actor = self
+            .world
+            .get::<Agent>(self.world.resource::<Index>().0[&owner])
+            .unwrap();
+        let importance = (self.world.resource::<Intentional>().profiles[&owner].relationship_goal
+            + actor.hunger / 5)
+            .clamp(0, 100);
+        let belief = self
+            .world
+            .resource::<Cognition>()
+            .beliefs
+            .get(&owner)
+            .and_then(|b| b.iter().find(|b| b.event == event));
+        let support = belief.map(|b| b.support);
+        let creation = Creation {
+            owner,
+            target,
+            event,
+            scene: original.scene,
+            importance,
+            support,
+            receipt: belief.map(|b| b.evidence),
+            retained: concerns::worth_retaining(importance, support),
+        };
+        self.world.resource_mut::<Concerns>().capture(creation);
+    }
+    fn follow_opportunities(&mut self) {
+        let start = self.world.resource::<Concerns>().scene_cursor;
+        let end = self.world.resource::<Runtime>().scenes.len();
+        self.world.resource_mut::<Concerns>().scene_cursor = end;
+        for scene_index in start..end {
+            let scene = self.world.resource::<Runtime>().scenes[scene_index].clone();
+            for owner in scene.participants {
+                let partner = *scene.participants.iter().find(|&&id| id != owner).unwrap();
+                let old = self
+                    .world
+                    .resource::<Concerns>()
+                    .items
+                    .get(&owner)
+                    .cloned()
+                    .unwrap_or_default();
+                for before in old
+                    .into_iter()
+                    .filter(|c| c.status.active() && c.created_scene < scene.id)
+                {
+                    let mut after = before.clone();
+                    after.age = after.age.saturating_add(1);
+                    let mut state = self.world.resource_mut::<Concerns>();
+                    *state
+                        .items
+                        .get_mut(&owner)
+                        .unwrap()
+                        .iter_mut()
+                        .find(|c| c.id == after.id)
+                        .unwrap() = after.clone();
+                    state.change("later encounter", Some(before), Some(after), None, None);
+                }
+                if self.world.contains_resource::<crate::inquiry::Inquiry>() {
+                    self.adaptive_follow(owner, &[partner], scene.id, None);
+                } else {
+                    self.follow_decision(owner, partner, scene.id);
+                }
+            }
+        }
+    }
+    fn follow_decision(&mut self, owner: AgentId, partner: AgentId, scene: u64) {
+        let entities = [owner, partner].map(|id| self.world.resource::<Index>().0[&id]);
+        let context = self.world.resource::<Foresight>().context(owner, partner);
+        let state = self.world.resource::<Concerns>();
+        let input = FollowInput {
+            owner,
+            partner,
+            scene,
+            hunger: self.world.get::<Agent>(entities[0]).unwrap().hunger,
+            relationship_goal: self.world.resource::<Intentional>().profiles[&owner]
+                .relationship_goal,
+            answer_probability: context.expectation.answer,
+            reliability: context.reliability,
+            pursuit_cost: state.pursuit_costs[&owner],
+            concerns: state.items.get(&owner).cloned().unwrap_or_default(),
+        };
+        let id = state.records.len() as u64;
+        let decision = (self.world.resource::<ConcernPolicy>().0)(&input);
+        let valid = decision.input == input
+            && concerns::legal(&input, decision.selected)
+            && decision
+                .candidates
+                .iter()
+                .any(|c| c.action == decision.selected)
+            && decision
+                .candidates
+                .iter()
+                .all(|c| concerns::legal(&input, c.action));
+        let selected = if valid {
+            decision.selected
+        } else {
+            FollowAction::Continue
+        };
+        let before = match selected {
+            FollowAction::Reopen(cid) | FollowAction::Abandon(cid) => {
+                input.concerns.iter().find(|c| c.id == cid).cloned()
+            }
+            FollowAction::Continue => None,
+        };
+        let food_before = entities.map(|e| self.world.get::<Agent>(e).unwrap().food);
+        let time_spent = 1 + if matches!(selected, FollowAction::Reopen(_)) {
+            input.pursuit_cost
+        } else {
+            0
+        };
+        self.world.resource_mut::<Runtime>().tick += u64::from(time_spent);
+        let tick = self.world.resource::<Runtime>().tick;
+        let mut response_conversation = None;
+        let mut actual_response = None;
+        let mut prediction_error = None;
+        let mut answer_after = input.answer_probability;
+        let mut learned = false;
+        if let FollowAction::Reopen(_) = selected {
+            let c = before.as_ref().unwrap();
+            let conversation = self.world.resource::<Intentional>().conversations.len() as u64;
+            self.converse_response(c.event, true);
+            response_conversation = Some(conversation);
+            let state = self.world.resource::<Intentional>();
+            let first = &state.records[state.conversations[conversation as usize].first_record];
+            if first.valid {
+                actual_response = Some(first.decision.selected);
+                let outcome = if first.decision.selected == TalkAction::ProvideEvidence {
+                    100
+                } else {
+                    0
+                };
+                prediction_error = Some(outcome - input.answer_probability);
+                learned = context.settings.learn;
+                if learned {
+                    answer_after = foresight::update_probability(input.answer_probability, outcome);
+                    let mut expectation = context.expectation.clone();
+                    expectation.answer = answer_after;
+                    self.world
+                        .resource_mut::<Foresight>()
+                        .expectations
+                        .entry(owner)
+                        .or_default()
+                        .insert(partner, expectation);
+                }
+            }
+        }
+        let mut after = None;
+        if let Some(before) = &before {
+            let mut state = self.world.resource_mut::<Concerns>();
+            let c = state
+                .items
+                .get_mut(&owner)
+                .unwrap()
+                .iter_mut()
+                .find(|c| c.id == before.id)
+                .unwrap();
+            let preceding = c.clone();
+            match selected {
+                FollowAction::Reopen(_) => {
+                    c.attempts = c.attempts.saturating_add(1);
+                    if c.uncertainty >= before.uncertainty {
+                        c.failures = c.failures.saturating_add(1);
+                    }
+                }
+                FollowAction::Abandon(_) => c.status = Status::Abandoned,
+                FollowAction::Continue => unreachable!(),
+            }
+            after = Some(c.clone());
+            state.change(
+                if matches!(selected, FollowAction::Reopen(_)) {
+                    "follow-up outcome"
+                } else {
+                    "pursuit no longer worthwhile"
+                },
+                Some(preceding),
+                after.clone(),
+                None,
+                Some(id),
+            );
+        }
+        let food_after = entities.map(|e| self.world.get::<Agent>(e).unwrap().food);
+        self.world
+            .resource_mut::<Concerns>()
+            .records
+            .push(FollowRecord {
+                id,
+                tick,
+                decision,
+                valid,
+                before,
+                after,
+                response_conversation,
+                actual_response,
+                prediction_error,
+                answer_after,
+                learned,
+                time_spent,
+                food_before,
+                food_after,
+            });
+    }
+
     fn converse(&mut self, event: u64) {
+        self.converse_response(event, false);
+    }
+    fn converse_response(&mut self, event: u64, follow_up: bool) {
         use TalkAction::*;
         let original = self.world.resource::<Runtime>().events[event as usize].clone();
         let speaker = original.decision.actor;
@@ -275,10 +607,26 @@ impl Simulation {
         let scarce = food <= 1 && hunger >= 60;
         let conversation = self.world.resource::<Intentional>().conversations.len() as u64;
         let first_record = self.world.resource::<Intentional>().records.len();
-        let mut last = None;
+        let mut last = follow_up.then_some(AskEvidence);
         let mut previous_claim = None;
+        if follow_up {
+            previous_claim = self
+                .world
+                .resource::<Intentional>()
+                .memories
+                .get(&listener)
+                .and_then(|m| {
+                    m.iter()
+                        .rev()
+                        .find(|m| m.event == event && m.actor == speaker && m.action == Explain)
+                })
+                .and_then(|m| m.claim);
+        }
         let mut outcome = "TurnLimit";
-        for turn in 0..4 {
+        let limit = if follow_up { 2 } else { 4 };
+        for turn in 0..limit {
+            let tick_before = self.world.resource::<Runtime>().tick;
+            let record_id = self.world.resource::<Intentional>().records.len() as u64;
             let actor_index = turn % 2;
             let actor = ids[actor_index];
             let partner = ids[1 - actor_index];
@@ -316,16 +664,35 @@ impl Simulation {
                     .memories
                     .get(&actor)
                     .map_or_else(Vec::new, |m| m.iter().cloned().collect()),
-                turns_left: (4 - turn) as u32,
+                turns_left: (limit - turn) as u32,
             };
-            let decision = (self.world.resource::<TalkPolicy>().0)(&input);
-            let valid =
-                decision.input == input && intentional::legal(&input).contains(&decision.selected);
+            let plan = self.world.get_resource::<Foresight>().map(|state| {
+                let context = state.context(actor, partner);
+                (self.world.resource::<Predictor>().0)(&input, &context)
+            });
+            let decision = plan.as_ref().map_or_else(
+                || (self.world.resource::<TalkPolicy>().0)(&input),
+                |p| p.decision.clone(),
+            );
+            let valid = decision.input == input
+                && intentional::legal(&input).contains(&decision.selected)
+                && plan.as_ref().is_none_or(|p| {
+                    let context = self.world.resource::<Foresight>().context(actor, partner);
+                    p.context == context
+                        && p.candidates.len() == decision.candidates.len()
+                        && p.candidates.iter().zip(&decision.candidates).all(|(f, c)| {
+                            f.action == c.action
+                                && f.combined == c.score
+                                && (0..=100).contains(&f.probability)
+                        })
+                        && p.candidates.iter().any(|c| c.action == decision.selected)
+                });
             let food_before = entities.map(|e| self.world.get::<Agent>(e).unwrap().food);
             let mut claim = None;
             let mut information = None;
             let mut verified_claim = None;
             let mut credibility_after = credibility_before;
+            let mut reading_records = vec![];
             if valid {
                 let kind = match decision.selected {
                     Explain => {
@@ -343,23 +710,72 @@ impl Simulation {
                     _ => None,
                 };
                 if let Some(kind) = kind {
-                    let receipt = self
-                        .receive_information(
+                    let sensor = self
+                        .world
+                        .get_resource::<Foresight>()
+                        .filter(|_| decision.selected == ProvideEvidence)
+                        .map(|s| (s.seed, s.sensor.clone()));
+                    let receipt = if let Some((seed, sensor)) = sensor {
+                        let mut final_receipt = None;
+                        for source in 0..=u8::from(sensor.second.is_some()) {
+                            let observed =
+                                foresight::reading(seed, event, speaker, source, scarce, &sensor);
+                            let receipt = self
+                                .receive_information(
+                                    speaker,
+                                    listener,
+                                    event,
+                                    EvidenceKind::Fallible {
+                                        scarce: observed,
+                                        reliability: sensor.reliability,
+                                        source,
+                                    },
+                                    None,
+                                )
+                                .expect("validated sensor and participants");
+                            reading_records.push(Reading {
+                                talk_record: record_id,
+                                receipt: receipt.id,
+                                source,
+                                scarce: observed,
+                                reliability: sensor.reliability,
+                                objectively_correct: observed == scarce,
+                            });
+                            claim = Some(observed);
+                            final_receipt = Some(receipt);
+                        }
+                        self.world.resource_mut::<Runtime>().tick += u64::from(sensor.effort);
+                        final_receipt.unwrap()
+                    } else {
+                        self.receive_information(
                             speaker,
                             listener,
                             event,
                             kind,
                             Some((50 + credibility_before).clamp(10, 90)),
                         )
-                        .expect("validated conversation participants");
+                        .expect("validated conversation participants")
+                    };
                     information = Some(receipt.id);
                     if decision.selected == ProvideEvidence {
                         if let Some(old_claim) = previous_claim {
-                            let consistent = old_claim == scarce;
-                            verified_claim = Some(consistent);
-                            credibility_after = (credibility_before
-                                + if consistent { 20 } else { -30 })
-                            .clamp(-40, 40);
+                            let weight = if reading_records.is_empty() {
+                                100
+                            } else {
+                                receipt.after.support.abs()
+                            };
+                            if weight >= 60 {
+                                let consistent = old_claim
+                                    == if reading_records.is_empty() {
+                                        scarce
+                                    } else {
+                                        receipt.after.support > 0
+                                    };
+                                verified_claim = Some(consistent);
+                                credibility_after = (credibility_before
+                                    + (if consistent { 20 } else { -30 }) * weight / 100)
+                                    .clamp(-40, 40);
+                            }
                         }
                     } else {
                         previous_claim = claim;
@@ -413,15 +829,39 @@ impl Simulation {
                 valid,
                 claim,
                 objectively_true: claim.map(|c| c == scarce),
-                verifiable: valid && decision.selected == ProvideEvidence,
+                verifiable: valid
+                    && decision.selected == ProvideEvidence
+                    && reading_records.is_empty(),
                 information,
                 credibility_before,
                 credibility_after,
                 verified_claim,
-                time_spent: 1,
+                time_spent: (tick - tick_before) as u32,
                 food_before,
                 food_after,
             });
+
+            if let Some(plan) = plan {
+                let mut state = self.world.resource_mut::<Foresight>();
+                state.forecasts.push(ForecastRecord {
+                    talk_record: record_id,
+                    context: plan.context,
+                    candidates: plan.candidates,
+                });
+                state.readings.extend(reading_records);
+
+                if valid && record_id as usize > first_record {
+                    self.observe_prediction(
+                        record_id - 1,
+                        record_id,
+                        if decision.selected == Mislead {
+                            Explain
+                        } else {
+                            decision.selected
+                        },
+                    );
+                }
+            }
             if !valid {
                 outcome = "InvalidAction";
                 break;
@@ -446,6 +886,64 @@ impl Simulation {
             end_record,
             outcome: outcome.into(),
         });
+    }
+
+    fn observe_prediction(&mut self, previous: u64, response: u64, actual: TalkAction) {
+        let prior = &self.world.resource::<Intentional>().records[previous as usize];
+        if !prior.valid {
+            return;
+        }
+        let actor = prior.decision.input.own.id;
+        let partner = prior.decision.input.partner;
+        let selected = prior.decision.selected;
+        let mut state = self.world.resource_mut::<Foresight>();
+        let forecast = state
+            .forecasts
+            .iter()
+            .find(|f| f.talk_record == previous)
+            .unwrap()
+            .clone();
+        let candidate = forecast
+            .candidates
+            .iter()
+            .find(|c| c.action == selected)
+            .unwrap();
+        if let Some(predicted) = candidate.expected_response {
+            let outcome = if actual == predicted { 100 } else { 0 };
+            let expected = candidate.probability;
+            let learned = forecast.context.settings.learn;
+            let updated = if learned {
+                foresight::update_probability(expected, outcome)
+            } else {
+                expected
+            };
+            if learned {
+                let expectation = state
+                    .expectations
+                    .entry(actor)
+                    .or_default()
+                    .entry(partner)
+                    .or_insert(forecast.context.expectation);
+                if predicted == TalkAction::AskEvidence {
+                    expectation.challenge = updated;
+                } else {
+                    expectation.answer = updated;
+                }
+            }
+            state.errors.push(PredictionError {
+                forecast_record: previous,
+                response_record: response,
+                actor,
+                partner,
+                predicted,
+                actual,
+                expected,
+                outcome,
+                error: outcome - expected,
+                updated,
+                learned,
+            });
+        }
     }
 
     fn require_idle(&self) -> Result<(), String> {
@@ -518,6 +1016,31 @@ impl Simulation {
         testimony_weight: Option<i32>,
     ) -> Result<InformationScene, String> {
         self.require_idle()?;
+        if let EvidenceKind::Fallible {
+            reliability,
+            source,
+            ..
+        } = kind
+        {
+            if !(0..=90).contains(&reliability) || source > 1 {
+                return Err("invalid fallible evidence".into());
+            }
+            if self
+                .world
+                .resource::<Cognition>()
+                .information
+                .iter()
+                .any(|i| {
+                    i.event == event
+                        && i.speaker == speaker
+                        && i.listener == listener
+                        && matches!(i.kind,EvidenceKind::Fallible{source:s,..} if s==source)
+                        && i.kind != kind
+                })
+            {
+                return Err("a received source cannot be rewritten".into());
+            }
+        }
         let runtime = self.world.resource::<Runtime>();
         let original = runtime
             .events
@@ -539,6 +1062,7 @@ impl Simulation {
             .unwrap();
         let scarce = match kind {
             EvidenceKind::Testimony { scarce } => scarce,
+            EvidenceKind::Fallible { scarce, .. } => scarce,
             EvidenceKind::Disclosure => {
                 let (food, hunger) = runtime.circumstances[event as usize][speaker_index];
                 food <= 1 && hunger >= 60
@@ -561,20 +1085,54 @@ impl Simulation {
                 testimony_weight.unwrap_or_else(|| (50 + credibility_trust / 2).clamp(0, 90))
             }
             EvidenceKind::Disclosure => 100,
+            EvidenceKind::Fallible { reliability, .. } => reliability,
         };
         let mut cognition = self.world.remove_resource::<Cognition>().unwrap();
         let id = cognition.information.len() as u64;
+        let mut positive = 0;
+        let mut negative = 0;
+        let mut has_readings = false;
+        for evidence in cognition
+            .information
+            .iter()
+            .filter(|i| i.event == event && i.listener == listener)
+            .map(|i| i.kind)
+            .chain(std::iter::once(kind))
+        {
+            if let EvidenceKind::Fallible {
+                scarce,
+                reliability,
+                ..
+            } = evidence
+            {
+                has_readings = true;
+                if scarce {
+                    positive = positive.max(reliability);
+                } else {
+                    negative = negative.max(reliability);
+                }
+            }
+        }
         let beliefs = cognition.beliefs.entry(listener).or_default();
         let before = beliefs.iter().find(|b| b.event == event).cloned();
-        let after = revise_belief(
-            before.as_ref(),
+        let after = if has_readings && kind != EvidenceKind::Disclosure {
             Belief {
                 event,
                 subject: speaker,
-                support: if scarce { reliability } else { -reliability },
+                support: positive - negative,
                 evidence: id,
-            },
-        );
+            }
+        } else {
+            revise_belief(
+                before.as_ref(),
+                Belief {
+                    event,
+                    subject: speaker,
+                    support: if scarce { reliability } else { -reliability },
+                    evidence: id,
+                },
+            )
+        };
         beliefs.retain(|b| b.event != event);
         if beliefs.len() == MEMORY_CAPACITY {
             beliefs.pop_front();
@@ -643,6 +1201,9 @@ impl Simulation {
         cognition.information.push(record.clone());
         self.world.insert_resource(cognition);
         *self.world.get_mut::<Agent>(entity).unwrap() = agent;
+        if let Some(mut concerns) = self.world.get_resource_mut::<Concerns>() {
+            concerns.receive(listener, event, record.after.support, record.id);
+        }
         Ok(record)
     }
 }

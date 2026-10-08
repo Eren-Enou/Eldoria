@@ -1,0 +1,170 @@
+Experiment 005: local unfinished intent (seed 42)
+
+reopen_strong: probe Offer; history ablation Continue
+  refusal 1: owner 0 importance 78 support None, retained true
+  scene 1 owner 0: Reopen(0); answer expectation 50 -> 62; actual Some(ProvideEvidence); cost ticks 21
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 40, benefit 89, cost 27, score 62
+    Abandon(0): gain 40, benefit 89, cost 27, score -82
+    concern 0 Resolved uncertainty 20 attempts 1 failures 0
+  receipt 0 event 1 reliability 80 support None -> 80; memory revised true; trust -17 -> 0
+  retained concern 0 event 1: Resolved, uncertainty 20, age 1, last receipt Some(0)
+
+high_cost: probe Leave; history ablation Continue
+  refusal 1: owner 0 importance 78 support None, retained true
+  scene 1 owner 0: Continue; answer expectation 50 -> 50; actual None; cost ticks 1
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 40, benefit 89, cost 107, score -18
+    Abandon(0): gain 40, benefit 89, cost 107, score -2
+  retained concern 0 event 1: Open, uncertainty 100, age 1, last receipt None
+
+relationship_high: probe Offer; history ablation Continue
+  refusal 1: owner 0 importance 78 support None, retained true
+  scene 1 owner 0: Reopen(0); answer expectation 50 -> 62; actual Some(ProvideEvidence); cost ticks 61
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 40, benefit 89, cost 67, score 22
+    Abandon(0): gain 40, benefit 89, cost 67, score -42
+    concern 0 Resolved uncertainty 20 attempts 1 failures 0
+  receipt 0 event 1 reliability 80 support None -> 80; memory revised true; trust -17 -> 0
+  retained concern 0 event 1: Resolved, uncertainty 20, age 1, last receipt Some(0)
+
+relationship_low: probe Leave; history ablation Continue
+  refusal 1: owner 0 importance 78 support None, retained true
+  scene 1 owner 0: Continue; answer expectation 50 -> 50; actual None; cost ticks 1
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 40, benefit 59, cost 67, score -8
+    Abandon(0): gain 40, benefit 59, cost 67, score -12
+  retained concern 0 event 1: Open, uncertainty 100, age 1, last receipt None
+
+abandon: probe Leave; history ablation Continue
+  refusal 1: owner 0 importance 78 support None, retained true
+  scene 1 owner 0: Abandon(0); answer expectation 50 -> 50; actual None; cost ticks 1
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 40, benefit 59, cost 107, score -48
+    Abandon(0): gain 40, benefit 59, cost 107, score 28
+    concern 0 Abandoned uncertainty 100 attempts 0 failures 0
+  retained concern 0 event 1: Abandoned, uncertainty 100, age 1, last receipt None
+
+weak: probe Leave; history ablation Continue
+  refusal 1: owner 0 importance 78 support None, retained true
+  scene 1 owner 0: Reopen(0); answer expectation 50 -> 62; actual Some(ProvideEvidence); cost ticks 21
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 20, benefit 79, cost 27, score 52
+    Abandon(0): gain 20, benefit 79, cost 27, score -72
+    concern 0 Partial uncertainty 60 attempts 1 failures 0
+  receipt 0 event 1 reliability 40 support None -> 40; memory revised false; trust -17 -> -17
+  retained concern 0 event 1: Partial, uncertainty 60, age 1, last receipt Some(0)
+
+conflicting: probe Leave; history ablation Continue
+  refusal 1: owner 0 importance 78 support None, retained true
+  scene 1 owner 0: Reopen(0); answer expectation 50 -> 62; actual Some(ProvideEvidence); cost ticks 21
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 40, benefit 89, cost 27, score 62
+    Abandon(0): gain 40, benefit 89, cost 27, score -82
+    concern 0 Partial uncertainty 100 attempts 1 failures 1
+  receipt 0 event 1 reliability 80 support None -> 80; memory revised true; trust -17 -> 0
+  receipt 1 event 1 reliability 80 support Some(80) -> 0; memory revised true; trust 0 -> -17
+  retained concern 0 event 1: Partial, uncertainty 100, age 1, last receipt Some(1)
+
+mistaken_resolution: probe Leave; history ablation Continue
+  refusal 1: owner 0 importance 78 support None, retained true
+  scene 1 owner 0: Reopen(0); answer expectation 50 -> 62; actual Some(ProvideEvidence); cost ticks 21
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 40, benefit 89, cost 27, score 62
+    Abandon(0): gain 40, benefit 89, cost 27, score -82
+    concern 0 Resolved uncertainty 20 attempts 1 failures 0
+  receipt 0 event 1 reliability 80 support None -> -80; memory revised false; trust -17 -> -17
+  retained concern 0 event 1: Resolved, uncertainty 20, age 1, last receipt Some(0)
+
+repeated_failure: probe Leave; history ablation Continue
+  refusal 1: owner 0 importance 78 support None, retained true
+  scene 1 owner 0: Reopen(0); answer expectation 50 -> 38; actual Some(Silence); cost ticks 21
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 40, benefit 89, cost 27, score 62
+    Abandon(0): gain 40, benefit 89, cost 27, score -82
+    concern 0 Open uncertainty 100 attempts 1 failures 1
+  scene 2 owner 0: Reopen(0); answer expectation 38 -> 29; actual Some(Silence); cost ticks 21
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 30, benefit 84, cost 51, score 33
+    Abandon(0): gain 30, benefit 84, cost 51, score -53
+    concern 0 Open uncertainty 100 attempts 2 failures 2
+  scene 3 owner 0: Reopen(0); answer expectation 29 -> 22; actual Some(Silence); cost ticks 21
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 23, benefit 80, cost 75, score 5
+    Abandon(0): gain 23, benefit 80, cost 75, score -25
+    concern 0 Open uncertainty 100 attempts 3 failures 3
+  scene 4 owner 0: Abandon(0); answer expectation 22 -> 22; actual None; cost ticks 1
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 17, benefit 77, cost 99, score -22
+    Abandon(0): gain 17, benefit 77, cost 99, score 2
+    concern 0 Abandoned uncertainty 100 attempts 3 failures 3
+  scene 5 owner 0: Continue; answer expectation 22 -> 22; actual None; cost ticks 1
+    Continue: gain 0, benefit 0, cost 0, score 0
+  scene 6 owner 0: Continue; answer expectation 22 -> 22; actual None; cost ticks 1
+    Continue: gain 0, benefit 0, cost 0, score 0
+  scene 7 owner 0: Continue; answer expectation 22 -> 22; actual None; cost ticks 1
+    Continue: gain 0, benefit 0, cost 0, score 0
+  scene 8 owner 0: Continue; answer expectation 22 -> 22; actual None; cost ticks 1
+    Continue: gain 0, benefit 0, cost 0, score 0
+  retained concern 0 event 1: Abandoned, uncertainty 100, age 4, last receipt None
+
+competing: probe Leave; history ablation Continue
+  refusal 1: owner 0 importance 58 support None, retained true
+  refusal 3: owner 0 importance 98 support None, retained true
+  scene 1 owner 0: Continue; answer expectation 50 -> 50; actual None; cost ticks 1
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 40, benefit 89, cost 93, score -4
+    Abandon(0): gain 40, benefit 89, cost 93, score -16
+  scene 2 owner 0: Reopen(1); answer expectation 50 -> 62; actual Some(ProvideEvidence); cost ticks 21
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 40, benefit 79, cost 31, score 48
+    Abandon(0): gain 40, benefit 79, cost 31, score -68
+    Reopen(1): gain 40, benefit 99, cost 27, score 72
+    Abandon(1): gain 40, benefit 99, cost 27, score -92
+    concern 1 Resolved uncertainty 20 attempts 1 failures 0
+  receipt 0 event 3 reliability 80 support None -> 80; memory revised true; trust -34 -> -17
+  retained concern 0 event 1: Open, uncertainty 100, age 2, last receipt None
+  retained concern 1 event 3: Resolved, uncertainty 20, age 1, last receipt Some(0)
+
+weak_repeated: probe Leave; history ablation Continue
+  refusal 1: owner 0 importance 78 support None, retained true
+  scene 1 owner 0: Reopen(0); answer expectation 50 -> 62; actual Some(ProvideEvidence); cost ticks 21
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 20, benefit 79, cost 27, score 52
+    Abandon(0): gain 20, benefit 79, cost 27, score -72
+    concern 0 Partial uncertainty 60 attempts 1 failures 0
+  scene 2 owner 0: Reopen(0); answer expectation 62 -> 71; actual Some(ProvideEvidence); cost ticks 21
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 14, benefit 76, cost 31, score 45
+    Abandon(0): gain 14, benefit 76, cost 31, score -65
+    concern 0 Partial uncertainty 60 attempts 2 failures 1
+  scene 3 owner 0: Reopen(0); answer expectation 71 -> 78; actual Some(ProvideEvidence); cost ticks 21
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 17, benefit 77, cost 55, score 22
+    Abandon(0): gain 17, benefit 77, cost 55, score -42
+    concern 0 Partial uncertainty 60 attempts 3 failures 2
+  scene 4 owner 0: Continue; answer expectation 78 -> 78; actual None; cost ticks 1
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 18, benefit 78, cost 79, score -1
+    Abandon(0): gain 18, benefit 78, cost 79, score -19
+  scene 5 owner 0: Continue; answer expectation 78 -> 78; actual None; cost ticks 1
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 18, benefit 78, cost 83, score -5
+    Abandon(0): gain 18, benefit 78, cost 83, score -15
+  scene 6 owner 0: Continue; answer expectation 78 -> 78; actual None; cost ticks 1
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 18, benefit 78, cost 87, score -9
+    Abandon(0): gain 18, benefit 78, cost 87, score -11
+  scene 7 owner 0: Continue; answer expectation 78 -> 78; actual None; cost ticks 1
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 18, benefit 78, cost 91, score -13
+    Abandon(0): gain 18, benefit 78, cost 91, score -7
+  scene 8 owner 0: Continue; answer expectation 78 -> 78; actual None; cost ticks 1
+    Continue: gain 0, benefit 0, cost 0, score 0
+    Reopen(0): gain 18, benefit 78, cost 95, score -17
+    Abandon(0): gain 18, benefit 78, cost 95, score -3
+  receipt 0 event 1 reliability 40 support None -> 40; memory revised false; trust -17 -> -17
+  receipt 1 event 1 reliability 40 support Some(40) -> 40; memory revised false; trust -17 -> -17
+  receipt 2 event 1 reliability 40 support Some(40) -> 40; memory revised false; trust -17 -> -17
+  retained concern 0 event 1: Partial, uncertainty 60, age 8, last receipt Some(2)
+
