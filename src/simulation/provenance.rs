@@ -460,7 +460,7 @@ impl Simulation {
         };
         let local = self.local_knowledge(listener);
         let settings = state.settings[&listener];
-        let evaluation = p::evaluate(&local, &k, settings);
+        let mut evaluation = p::evaluate(&local, &k, settings);
         let original = self.provenance_event(event)?;
         let subject = original.decision.actor;
         let participants: Vec<_> = if communicator == listener {
@@ -484,13 +484,38 @@ impl Simulation {
                     event,
                     EvidenceKind::Testimony { scarce: claim },
                     Some(quality),
-                    Some(evaluation.after),
+                    Some((
+                        evaluation.after,
+                        crate::assessment::Item {
+                            receipt: crate::assessment::Receipt::Provenance(id),
+                            event,
+                            communicator,
+                            message: Some(k.message),
+                            origin: k.known.map_or(
+                                crate::assessment::Origin::Unknown(communicator),
+                                crate::assessment::Origin::Known,
+                            ),
+                            claim,
+                            quality,
+                        },
+                    )),
                 )?
                 .id,
             )
         } else {
             None
         };
+        // The receipt's applied support must agree with its cognitive bridge in 008.
+        // Preserve the original provenance novelty classification and utility rule.
+        if self
+            .world
+            .contains_resource::<crate::assessment::Assessment>()
+            && let Some(receipt) = cognition_receipt
+        {
+            let info = &self.world.resource::<Cognition>().information[receipt as usize];
+            evaluation.before = info.before.as_ref().map_or(0, |b| b.support);
+            evaluation.after = info.after.support;
+        }
         let tick = self.world.resource::<Runtime>().tick;
         let food_after = participants
             .iter()

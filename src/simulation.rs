@@ -42,6 +42,41 @@ pub struct Simulation {
     schedule: Schedule,
 }
 impl Simulation {
+    /// Prospective only: no import of old receipts, beliefs or forgotten acquisitions.
+    pub fn enable_assessment(&mut self, method: crate::assessment::Method) -> Result<(), String> {
+        self.require_idle()?;
+        if !self
+            .world
+            .contains_resource::<crate::audit::RuntimeProvenance>()
+        {
+            return Err("enable provenance first".into());
+        }
+        if self
+            .world
+            .contains_resource::<crate::assessment::Assessment>()
+        {
+            return if self
+                .world
+                .resource::<crate::assessment::Assessment>()
+                .method
+                == method
+            {
+                Ok(())
+            } else {
+                Err("assessment method is fixed for a run".into())
+            };
+        }
+        self.world
+            .insert_resource(crate::assessment::Assessment::new(method));
+        self.world
+            .insert_resource(crate::assessment::Assessor(method.rule()));
+        Ok(())
+    }
+    pub fn assessment(&self) -> Option<crate::assessment::Assessment> {
+        self.world
+            .get_resource::<crate::assessment::Assessment>()
+            .cloned()
+    }
     pub fn new(agents: Vec<Agent>) -> Result<Self, String> {
         let mut world = World::new();
         let mut index = Index::default();
@@ -1060,7 +1095,7 @@ impl Simulation {
         event: u64,
         kind: EvidenceKind,
         testimony_weight: Option<i32>,
-        local_support: Option<i32>,
+        local_support: Option<(i32, crate::assessment::Item)>,
     ) -> Result<InformationScene, String> {
         self.require_idle()?;
         if let EvidenceKind::Fallible {
@@ -1150,7 +1185,41 @@ impl Simulation {
         }
         let beliefs = cognition.beliefs.entry(listener).or_default();
         let before = beliefs.iter().find(|b| b.event == event).cloned();
-        let after = if let Some(support) = local_support {
+        let unified = if self
+            .world
+            .contains_resource::<crate::assessment::Assessment>()
+        {
+            use crate::assessment::{Assessment, Assessor, Item, Origin, Receipt};
+            let incoming = local_support
+                .as_ref()
+                .map(|(_, item)| item.clone())
+                .unwrap_or_else(|| Item {
+                    receipt: Receipt::Native(id),
+                    event,
+                    communicator: speaker,
+                    message: None,
+                    origin: match kind {
+                        EvidenceKind::Testimony { .. } => Origin::Claim(speaker),
+                        EvidenceKind::Disclosure => Origin::Disclosure(speaker),
+                        EvidenceKind::Fallible { source, .. } => Origin::NativeReading {
+                            speaker,
+                            channel: source,
+                        },
+                    },
+                    claim: scarce,
+                    quality: reliability,
+                });
+            let rule = self.world.resource::<Assessor>().0;
+            Some(self.world.resource_mut::<Assessment>().receive(
+                listener,
+                incoming,
+                before.as_ref().map(|b| b.support),
+                rule,
+            ))
+        } else {
+            None
+        };
+        let after = if let Some(support) = unified.or_else(|| local_support.map(|(s, _)| s)) {
             Belief {
                 event,
                 subject: speaker,

@@ -1,3 +1,4 @@
+pub mod assessment;
 pub mod audit;
 pub mod behavior;
 pub mod cognition;
@@ -9,6 +10,7 @@ pub mod experiment004;
 pub mod experiment005;
 pub mod experiment006;
 pub mod experiment007;
+pub mod experiment008;
 pub mod foresight;
 mod history;
 pub mod inquiry;
