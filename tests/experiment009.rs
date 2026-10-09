@@ -114,17 +114,24 @@ fn selective_retention_preserves_distinctions_but_fifo_can_make_the_better_actio
     let conflict = final_point(Method::Salient, "conflict");
     assert!(conflict.positive && conflict.negative);
     assert_eq!(conflict.basis_support, 0);
-    let wrong = e::trial(42, Method::Salient, "salient_wrong", e::Config::default());
-    assert_eq!(
-        wrong
-            .points
-            .iter()
-            .find(|p| p.label == "after pressure")
-            .unwrap()
-            .basis_support,
-        -80
-    );
-    assert_eq!(wrong.points.last().unwrap().basis_support, 10);
+    for method in [Method::Quality, Method::Salient] {
+        let wrong = e::trial(42, method, "salient_wrong", e::Config::default());
+        assert_eq!(
+            wrong
+                .points
+                .iter()
+                .find(|p| p.label == "after pressure")
+                .unwrap()
+                .basis_support,
+            -80
+        );
+        assert_eq!(wrong.points.last().unwrap().basis_support, 10);
+        assert_eq!(final_point(method, "minor_later_useful").basis_support, 0);
+        assert_eq!(
+            final_point(method, "minor_later_useful").action,
+            Action::Leave
+        );
+    }
     assert_eq!(
         final_point(Method::Salient, "relevance_expires").basis_support,
         0
@@ -176,16 +183,102 @@ fn fifo_mode_replays_the_frozen008_validator_and_redelivery_is_new() {
         let forgotten = t.points.iter().find(|p| p.label == "forgotten").unwrap();
         assert_eq!(forgotten.target_items, 0);
         assert_eq!(t.points.last().unwrap().basis_support, 90);
-        assert!(
-            t.final_state
-                .base
-                .assessment
-                .unwrap()
-                .records
-                .iter()
-                .any(|r| r.incoming.event == t.target && r.incoming.quality == 90)
-        );
+        let assessment = t.final_state.base.assessment.unwrap();
+        let old = assessment
+            .records
+            .iter()
+            .find(|r| r.incoming.event == t.target && r.incoming.quality == 40)
+            .unwrap();
+        let fresh = assessment
+            .records
+            .iter()
+            .find(|r| r.incoming.event == t.target && r.incoming.quality == 90)
+            .unwrap();
+        assert_ne!(old.incoming.receipt, fresh.incoming.receipt);
+        assert_eq!(fresh.basis_before, 0);
+        assert!(fresh.retained.contains(&fresh.incoming.receipt));
+        assert!(!fresh.retained.contains(&old.incoming.receipt));
     }
+    for method in [Method::Fifo, Method::Quality, Method::Salient] {
+        let t = e::trial(42, method, "later_attribution", e::Config::default());
+        let a = t.final_state.base.assessment.unwrap();
+        let old: Vec<_> = a
+            .records
+            .iter()
+            .filter(|r| r.incoming.event == t.target && r.id < 2)
+            .map(|r| r.incoming.receipt)
+            .collect();
+        assert_eq!(old.len(), 2);
+        let revelation = a
+            .records
+            .iter()
+            .find(|r| {
+                r.incoming.event == t.target
+                    && r.incoming.communicator == 3
+                    && matches!(
+                        r.incoming.origin,
+                        world_of_individuals::assessment::Origin::Known(_)
+                    )
+            })
+            .unwrap();
+        assert!(!old.contains(&revelation.incoming.receipt));
+        assert_eq!(revelation.support, 50);
+        if method == Method::Fifo {
+            assert!(revelation.revised_attribution.is_empty());
+            assert!(
+                a.records[revelation.id as usize..]
+                    .iter()
+                    .all(|r| old.iter().all(|receipt| !r.retained.contains(receipt)))
+            );
+        } else {
+            assert_eq!(revelation.basis_before, 75);
+            assert!(!revelation.revised_attribution.is_empty());
+        }
+    }
+}
+
+#[test]
+fn grouped_default_is_fifo_and_selective_retention_requires_explicit_enable() {
+    use world_of_individuals::{assessment, experiment007, experiment008};
+    let mut default = experiment007::setup(42);
+    let mut explicit = experiment007::setup(42);
+    let event = experiment007::event(&default);
+    default
+        .enable_assessment(assessment::Method::Grouped)
+        .unwrap();
+    explicit
+        .enable_assessment(assessment::Method::Grouped)
+        .unwrap();
+    explicit.enable_retention(Method::Fifo).unwrap();
+    for _ in 0..34 {
+        for sim in [&mut default, &mut explicit] {
+            sim.communicate(
+                1,
+                0,
+                event,
+                EvidenceKind::Fallible {
+                    scarce: true,
+                    reliability: 40,
+                    source: 0,
+                },
+            )
+            .unwrap();
+        }
+    }
+    assert!(default.retention().is_none());
+    assert_eq!(assessment::CAPACITY, 32);
+    assert_eq!(default.assessment().unwrap().items[&0].len(), 32);
+    assert_eq!(
+        experiment008::snapshot(&default),
+        experiment008::snapshot(&explicit)
+    );
+    default.enable_retention(Method::Quality).unwrap();
+    assert_eq!(default.retention().unwrap().method, Method::Quality);
+    assert_eq!(default.retention().unwrap().first_assessment, 34);
+    assert_eq!(
+        experiment008::snapshot(&default),
+        experiment008::snapshot(&explicit)
+    );
 }
 fn invalid(input: &Input) -> r::Decision {
     let mut d = r::policy(input);

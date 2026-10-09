@@ -1,12 +1,19 @@
 # World of Individuals engineering instructions
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-008.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-009.md`.
+The historical `docs/experiment-contract-001-008.md` remains authoritative for 001–008.
 Preserve its mode-specific retention contracts: episode eviction does not erase
 separately established trust, expectations, concerns or legacy evidence consequences.
 Never recover unavailable cognition merely from observer history. Run the read-only
 `cargo run --release --locked -j 1 --example validate_contract` archive/replay gate
 alongside required checks; never regenerate frozen experiment evidence in place
 for an integrity audit.
+
+Experiment 009 preserves Grouped 008 assessment and capacity 32. FIFO remains the
+default; Quality and Salient are explicit research modes using only retained local
+received quality and, for Salient, current active own concern importance. Preserve
+deterministic ties, mistaken retention, new-receipt redelivery and retained-only
+attribution revision. Do not infer improved executed behavior from 009 policy probes.
 
 Build progressively toward a persistent fictional world. Experiment 001 is only
 resource interaction, subjective memory, and subsequent behavioral consequences.
