@@ -20,6 +20,7 @@ use bevy_ecs::{
 use std::collections::{BTreeMap, BTreeSet};
 mod adaptive;
 mod attention;
+mod inquiry_value;
 mod provenance;
 
 #[derive(Resource, Default)]

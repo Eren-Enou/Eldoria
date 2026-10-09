@@ -1,0 +1,25 @@
+    Blocking waiting for file lock on build directory
+   Compiling world-of-individuals v0.1.0 (C:\Users\Aaron\Eldoria)
+    Finished `bench` profile [optimized] target(s) in 8.64s
+     Running benches\throughput.rs (target\release\deps\throughput-33838017b9040e02.exe)
+mode,population,rounds,init_ms,run_ms,records,records_per_second
+experiment001,100,100,11.153,22.621,9640,426155
+experiment001,1000,100,53.449,172.733,95578,553330
+experiment002,100,100,8.060,23.309,21341,915549
+experiment002,1000,100,41.210,198.359,212751,1072554
+experiment003,100,100,8.413,28.949,25865,893480
+experiment003,1000,100,44.105,258.489,258428,999764
+experiment004,100,100,9.104,32.225,25891,803452
+experiment004,1000,100,49.995,324.149,258642,797910
+experiment005,100,100,9.989,37.581,35891,955018
+experiment005,1000,100,53.922,375.671,358642,954672
+experiment004_three_encounters,100,100,9.410,86.791,52328,602923
+experiment004_three_encounters,1000,100,55.071,1022.837,521305,509666
+experiment005_three_encounters,100,100,10.702,120.691,86788,719090
+experiment005_three_encounters,1000,100,63.769,1524.784,866109,568021
+experiment006_three_encounters,100,100,17.975,196.773,82328,418391
+experiment006_three_encounters,1000,100,80.211,1963.419,821305,418304
+experiment007_three_encounters,100,100,18.922,230.150,82328,357715
+experiment007_three_encounters,1000,100,85.718,2418.979,821305,339525
+experiment008_three_encounters,100,100,19.393,227.423,82328,362004
+experiment008_three_encounters,1000,100,75.200,2106.106,821305,389964

@@ -617,3 +617,28 @@ support triples per record. No new persistent cognitive collection is added. Ful
 010 snapshots wrap009, and observer validation checks available prefixes and fixed
 built-in scores. Alternative replacement functions need their own score replay
 validator; the experiments use only the registered built-in function.
+## Experiment 011 inquiry value
+
+`inquiry_value::policy` is an explicitly opt-in transient scorer, separate from the
+protected010 projection. `enable_inquiry_value` requires Grouped assessment, is
+prospective/fixed for a run. Combining010 and011 projections is rejected in either
+enablement order; the additional guard applies only when the new011 resource exists.
+The011 comparison path calls existing provenance policy unchanged, exact010
+CurrentNeed, or the new pure StatusValue function. Its replacement setter affects
+only StatusValue. No older default, resolution, retention, resource or capacity rule
+changes. This research result does not justify adopting the prototype as a default.
+
+The scorer receives only the already local decision plus at most8 active own support
+triples from live32-item assessment. It uses importance, existing expected_gain,
+existing cost and current distance from the existing60 threshold; no future state
+is simulated. See the frozen [formula and boundary](../experiments/011/specification.md).
+No persistent cognitive collection is added. `ValueAudit` is observer configuration
+and references using the existing010 `Record` schema; the runtime never reads those
+records to recover knowledge. Capture is conditional on the011 resource.
+
+The011 Snapshot independently validates retained prefixes/timestamps and built-in
+score selection, with the009 base validator. Checkpoints cover sequential inquiry,
+actual executed scenes and subsequent consumption. The [results](../experiments/011/results.md)
+keep unchanged/current-need/StatusValue, query effects and E_Q/E_A/F separate. A positive
+novelty estimate need not change Grouped support: positive-quality retained evidence
+can suppress claim fallback. This mismatch causes preserved allocation mistakes.

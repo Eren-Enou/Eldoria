@@ -121,3 +121,19 @@ assessment receipts, memory revisions, trust contributions and event memory caus
 connect those steps. Added read-only resource probes diagnose mediation; actual
 executed events/accounting and later inventory are the behavioral outcome. Timings
 are separate CSV. Frozen001–009 evidence and001–008 contract history stay intact.
+## Experiment 011 observer capture
+
+011 reuses010's compact query/inquiry/assessment-prefix reference and bounded support
+triples as a new observer wrapper. No new live cognitive history is added, and
+existing historical011-independent formats remain unchanged. Expected usefulness,
+cost, public availability and learned cells already live in the captured006/007 input;
+StatusValue components are recomputable from those fields and the bounded projection.
+The evaluator's summary duplicates selected information offline for inspection;
+it is not a cognition input or a second runtime collection of full query states.
+
+The new evaluator writes target outputs. New011 archival code copies/compresses only
+011 and verifies the106 protected001–010 hashes before writing. Independent Python
+reconstructs local assessment prefixes, expected gains/costs/scores/ties, actual
+resource accounting and persistence; archive-only mode verifies011 manifests without
+writes. No old archive writer is run. The protected001–010 contract remains unchanged;
+011's NO JUSTIFICATION conclusion does not freeze or promote a new default.

@@ -791,6 +791,44 @@ impl Simulation {
                 .records
                 .push(record);
         }
+        // Prospective 011 opt-in; absence leaves every previous path untouched.
+        if let Some(value) = self
+            .world
+            .get_resource::<crate::inquiry_value::ValueAudit>()
+        {
+            let mode = value.mode;
+            let assessment = self.world.resource::<crate::assessment::Assessment>();
+            let items: Vec<_> = assessment
+                .items
+                .get(&owner)
+                .into_iter()
+                .flatten()
+                .cloned()
+                .collect();
+            let record = crate::attention::Record {
+                query: self
+                    .world
+                    .resource::<crate::audit::RuntimeProvenance>()
+                    .queries
+                    .len() as u64,
+                inquiry: self.world.resource::<q::Inquiry>().records.len() as u64,
+                assessment_end: assessment.records.len(),
+                basis: crate::attention::project(&input.base.concerns, &items),
+            };
+            decision = match mode {
+                crate::inquiry_value::Mode::StatusValue => {
+                    (self.world.resource::<crate::inquiry_value::Policy>().0)(
+                        decision,
+                        &record.basis,
+                    )
+                }
+                _ => crate::inquiry_value::compare(mode, decision, &record.basis),
+            };
+            self.world
+                .resource_mut::<crate::inquiry_value::ValueAudit>()
+                .records
+                .push(record);
+        }
         let valid = decision.input == input
             && decision.decision.input == input.base
             && q::legal(&input.base, decision.decision.selected)

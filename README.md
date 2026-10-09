@@ -248,3 +248,20 @@ No mode becomes the default. Run `cargo run --release --locked -j1 --example eva
 then `python experiments/010/archive.py` and `python experiments/010/analyze.py`.
 Read-only009 compatibility uses `validate009` after decompressing its two archived
 traces into `target/compat009/`. Do not regenerate historical evidence in place.
+
+## Experiment 011: bounded inquiry value
+
+[Specification](experiments/011/specification.md) and [results](experiments/011/results.md)
+compare exact Unchanged/CurrentNeed with opt-in StatusValue across three actual
+concerns, sequential limited opportunities, fixed mirrored futures and executed
+resource consequences. **NO JUSTIFICATION for adopting StatusValue:** its new
+local distinctions mostly amplify cheap ineffective questions. Failures, partial
+gains, held-out sensitivity and persistent missed transfers remain in the evidence.
+No new persistent cognition or default change; the001–010 contract stays protected.
+
+Run `cargo run --release --locked -j1 --example evaluate011`, then
+`python examples/support/analyze011.py`. Outputs go to target. Only new011 evidence
+is archived with `python experiments/011/archive.py`; archive-only reconstruction is
+`python examples/support/analyze011.py --archive-only`. Protected compatibility uses
+the read-only `validate_contract`, `validate009` and `validate010` gates without
+regenerating older evidence. No012 or broader world mechanism is introduced.

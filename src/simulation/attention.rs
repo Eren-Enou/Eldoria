@@ -4,6 +4,13 @@ use crate::{attention::policy, provenance as p};
 impl Simulation {
     pub fn enable_attention(&mut self, mode: Mode) -> Result<(), String> {
         self.require_idle()?;
+        // Only the new 011 configuration is excluded; historical paths are identical.
+        if self
+            .world
+            .contains_resource::<crate::inquiry_value::ValueAudit>()
+        {
+            return Err("011 and 010 projections cannot be combined".into());
+        }
         if self
             .world
             .get_resource::<crate::assessment::Assessment>()
