@@ -1,9 +1,11 @@
-"""Read-only scientific reconstruction; run evaluate010 first (target outputs only).
+"""Read-only reconstruction; --archive-only needs no generated target files.
 
 Prints review evidence to stdout. Does not rewrite experiment archives or policies.
 Classification distinguishes inquiry mediation from same-inquiry assimilation.
+Without --archive-only, run evaluate010 first to compare generated target outputs.
 """
 import collections
+import argparse
 import copy
 import gzip
 import hashlib
@@ -13,6 +15,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 ARCHIVE = ROOT / "experiments/010"
 manifest = json.loads((ARCHIVE / "archive-manifest.json").read_text())
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--archive-only", action="store_true")
+archive_only = parser.parse_args().archive_only
 
 
 def frozen(name):
@@ -22,7 +27,8 @@ def frozen(name):
     for data, prefix in ((compressed, "gzip"), (raw, "json")):
         assert len(data) == expected[f"{prefix}_bytes"]
         assert hashlib.sha256(data).hexdigest() == expected[f"{prefix}_sha256"]
-    assert raw == (ROOT / f"target/experiment010/{name}.json").read_bytes(), name
+    if not archive_only:
+        assert raw == (ROOT / f"target/experiment010/{name}.json").read_bytes(), name
     return json.loads(raw)
 
 
@@ -202,10 +208,21 @@ for held, name in ((False, "seed-42"), (True, "held-out-seed-42")):
             }
         findings.append({"held": held, "case": case, "mode": mode, "config": json.loads(config),
                          "class": category, "route": route, "full_inquiry_chain": mediated,
+                         "causal_class": "E_Q" if mediated else "E_A" if category == "E" else category,
                          "inquiry_differs": inquiry, "action_differs": action, "persistent_differs": persistent,
                          "methods": methods})
 
 counts = collections.Counter((f["held"], f["mode"]) for f in findings if f["full_inquiry_chain"])
 assert counts == {(False, "CurrentNeed"): 4, (True, "CurrentNeed"): 12, (True, "Unchanged"): 1}
-print(json.dumps({"archive_and_target_bytes_match": True, "archived_trial_rows": len(rows),
+unchanged = [f for f in findings if f["mode"] == "Unchanged" and f["full_inquiry_chain"]]
+assert len(unchanged) == 1 and unchanged[0]["case"] == "redelivery"
+assert unchanged[0]["config"]["goal"] == 80 and unchanged[0]["config"]["weak"] == 55
+assert unchanged[0]["config"]["count"] == 48
+for f in findings:
+    if not f["held"] and f["case"] == "conflict":
+        assert f["causal_class"] == "E_A" and not f["full_inquiry_chain"] and f["route"].startswith("same inquiry")
+    if not f["held"] and f["case"] in ("hidden", "late_attribution"):
+        assert f["causal_class"] == "F" and not f["full_inquiry_chain"]
+print(json.dumps({"archive_integrity_verified": True,
+                  "archive_and_target_bytes_match": None if archive_only else True, "archived_trial_rows": len(rows),
                   "seed42_groups_independently_reconstructed": len(findings), "findings": findings}, indent=2))

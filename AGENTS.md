@@ -1,6 +1,7 @@
 # World of Individuals engineering instructions
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-009.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-010.md`.
+The historical `docs/experiment-contract-001-009.md` remains authoritative for 001–009.
 The historical `docs/experiment-contract-001-008.md` remains authoritative for 001–008.
 Preserve its mode-specific retention contracts: episode eviction does not erase
 separately established trust, expectations, concerns or legacy evidence consequences.
@@ -14,6 +15,13 @@ default; Quality and Salient are explicit research modes using only retained loc
 received quality and, for Salient, current active own concern importance. Preserve
 deterministic ties, mistaken retention, new-receipt redelivery and retained-only
 attribution revision. Do not infer improved executed behavior from 009 policy probes.
+
+Experiment 010 is accepted with qualification. Keep unchanged-path existence evidence
+separate from opt-in CurrentNeed findings. CurrentNeed is a local confidence-discount
+heuristic, not calibrated information value or future relevance, and remains experimental.
+Preserve E_Q (changed inquiry), E_A (same inquiry/different assimilation) and ambiguous F
+as distinct classes. Later correction cannot undo executed material history. Keep all
+negative results and the cache-free read-only 010 gate in foundation validation.
 
 Build progressively toward a persistent fictional world. Experiment 001 is only
 resource interaction, subjective memory, and subsequent behavioral consequences.

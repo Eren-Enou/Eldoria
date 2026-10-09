@@ -48,13 +48,16 @@ encounters produce agreement, refusal, and withdrawal. See
 
 ## Architecture and verification
 
-The [001–009 contract and coverage map](docs/experiment-contract-001-009.md)
+The [001–010 contract and coverage map](docs/experiment-contract-001-010.md)
 documents mode-specific locality, retention, persistent consequences, exact bounds
-and regression coverage, carrying forward the unchanged historical 001–008 map.
+and regression coverage, carrying forward the unchanged historical maps and 010's
+qualified scientific acceptance. CurrentNeed remains experimental and opt-in.
 Verify the protected foundation without writing archives (Python standard library
 is required for direct gzip/SHA-256 verification):
 `cargo run --release --locked -j 1 --example validate_contract`.
 The independent `validate009` example uses the same direct frozen-archive checks.
+The independent `validate010` example verifies 010 directly and reconstructs the
+accepted unchanged-path chain and separate E_A/F classes without generated caches.
 
 One cohesive Agent ECS component, resources for ordered scenes/history/clock, and
 one single-threaded scheduled resolver keep this first experiment small. A pure

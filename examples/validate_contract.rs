@@ -1,6 +1,8 @@
 //! Read-only archive and full-seed replay gate. Never regenerates historical files.
 #[path = "support/contract009.rs"]
 mod contract009;
+#[path = "support/contract010.rs"]
+mod contract010;
 use serde::Serialize;
 use std::{fs, path::Path};
 use world_of_individuals::{
@@ -99,4 +101,5 @@ fn main() {
         "001–008: exact archived JSON/readable reports, 129 seeded replays per mode, populations and 008 causal validation passed; no files written."
     );
     contract009::validate();
+    contract010::validate();
 }
