@@ -1,5 +1,9 @@
 # Experiment 001 architecture proposal
 
+For current source ownership and selective inspection, use the
+[architecture map](architecture-map.md). This document retains chronological design
+rationale; [the index](simulation/EXPERIMENT_HISTORY.md) summarizes current findings.
+
 Written before implementation, 2026-10-06.
 
 One library plus a CLI in one crate keeps the experimental model inspectable. Use

@@ -6,6 +6,12 @@ information, subjective episodic memory, learned relationships, reproducible
 scenarios, and causal reports. It does not demonstrate consciousness or complete
 personality. No graphics or full Bevy engine installation is needed.
 
+For engineering navigation, start with the [concise architecture map](docs/architecture-map.md),
+[experiment index](docs/simulation/EXPERIMENT_HISTORY.md) and
+[selective context workflow](docs/context-workflow.md). For an integrity audit use
+the read-only `validate_contract` gate described below; run/evaluate commands can
+overwrite evidence and should be used only for authorized target generation.
+
 ## Install and run
 
 Install Rust with Cargo and the Windows MSVC build tools (or a Rust-supported native

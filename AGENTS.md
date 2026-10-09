@@ -1,5 +1,38 @@
 # World of Individuals engineering instructions
 
+## Context and inspection workflow
+
+Start with `docs/architecture-map.md` and
+`docs/simulation/EXPERIMENT_HISTORY.md`; reuse their source/report pointers instead
+of reconstructing the architecture from every report. Follow
+`docs/context-workflow.md`. These summaries aid navigation; source, experiment
+reports and mode-specific contracts remain authoritative.
+
+Inspect Git status first and preserve unrelated work. Prefer `rg` in mapped files
+or directories, scoped globs, symbol/heading searches and bounded reads. Avoid
+repeated full-repository listings and unchanged-file reads unless scope or new
+evidence requires them. Do not dump full generated traces into context: extract
+needed fields/counts and inspect the relevant causal slice.
+
+Use targeted tests while iterating, then all required completion checks below,
+including the read-only archive/replay gate. Keep verbose logs in task-specific
+temporary files; summarize exit status, counts and failures. Inspect failures
+without hiding them behind truncation. Do not repeat passing checks at unchanged
+code/fixture revisions without a reason. Benchmark documentation-only changes
+only if a relevant workload or performance question requires it.
+
+Update affected map/index entries when ownership, mode status or findings change.
+Carry concise checkpoints with objective, revision, changed files, decisions,
+completed checks and remaining work; link detailed evidence. Verify changed files
+after compaction rather than assuming a checkpoint is current.
+
+Full codebase audits remain appropriate when requested, for cross-cutting changes,
+unknown dependencies, stale documentation, integrity failures or unexplained
+regressions. Expand inspection as necessary and state the reason/scope. Token
+economy must not weaken locality, retention contracts, validation or negative results.
+
+## Protected project contracts
+
 Cross-experiment enforcement map: `docs/experiment-contract-001-010.md`.
 The historical `docs/experiment-contract-001-009.md` remains authoritative for 001–009.
 The historical `docs/experiment-contract-001-008.md` remains authoritative for 001–008.
