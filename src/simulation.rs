@@ -22,6 +22,7 @@ mod adaptive;
 mod attention;
 mod inquiry_value;
 mod provenance;
+mod self_evaluation;
 
 #[derive(Resource, Default)]
 struct Index(BTreeMap<AgentId, Entity>);

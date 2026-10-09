@@ -1,0 +1,32 @@
+Experiment012: contextual learning self-evaluation
+Decision: ACCEPT WITH QUALIFICATION; opt-in, not adopted or protected.
+180 unique seed42 fixtures;1800 deterministic seeded rows; exact full reruns.
+Independent reconstruction and original archive raw equality passed.
+A: observer capture; B:bounded expectation updates; C:later changed choices; D:executed persistence.
+Counts include training and limited opportunities; full-history automatic queries remain separately labeled.
+
+{"asks": 60, "changed": 8, "held": false, "invalid_reply": 0, "mode": "Unchanged", "no_receipt": 29, "pause": 0, "positive_novelty_no_change": 11, "prediction_error_sum": -2440, "time": 1057, "trials": 15, "updates": 60}
+{"asks": 54, "changed": 8, "held": false, "invalid_reply": 0, "mode": "GlobalProgress", "no_receipt": 25, "pause": 6, "positive_novelty_no_change": 11, "prediction_error_sum": -2152, "time": 1025, "trials": 15, "updates": 54}
+{"asks": 60, "changed": 10, "held": false, "invalid_reply": 0, "mode": "Contextual", "no_receipt": 30, "pause": 0, "positive_novelty_no_change": 11, "prediction_error_sum": -2480, "time": 1146, "trials": 15, "updates": 60}
+{"asks": 254, "changed": 27, "held": true, "invalid_reply": 0, "mode": "Unchanged", "no_receipt": 151, "pause": 1, "positive_novelty_no_change": 31, "prediction_error_sum": -9635, "time": 4558, "trials": 45, "updates": 254}
+{"asks": 178, "changed": 12, "held": true, "invalid_reply": 0, "mode": "GlobalProgress", "no_receipt": 87, "pause": 77, "positive_novelty_no_change": 32, "prediction_error_sum": -7775, "time": 3438, "trials": 45, "updates": 178}
+{"asks": 242, "changed": 30, "held": true, "invalid_reply": 0, "mode": "Contextual", "no_receipt": 148, "pause": 13, "positive_novelty_no_change": 31, "prediction_error_sum": -10047, "time": 4563, "trials": 45, "updates": 242}
+
+Paired classifications (pairs overlap):
+{"False:GlobalProgress/Contextual:C": 9, "False:GlobalProgress/Contextual:D": 1, "False:GlobalProgress/Contextual:Equivalent": 5, "False:Unchanged/Contextual:C": 8, "False:Unchanged/Contextual:D": 1, "False:Unchanged/Contextual:Equivalent": 6, "False:Unchanged/GlobalProgress:C": 11, "False:Unchanged/GlobalProgress:D": 2, "False:Unchanged/GlobalProgress:Equivalent": 2, "True:GlobalProgress/Contextual:C": 42, "True:GlobalProgress/Contextual:D": 2, "True:GlobalProgress/Contextual:Equivalent": 1, "True:Unchanged/Contextual:C": 36, "True:Unchanged/Contextual:Equivalent": 9, "True:Unchanged/GlobalProgress:C": 42, "True:Unchanged/GlobalProgress:D": 2, "True:Unchanged/GlobalProgress:Equivalent": 1}
+
+Training/limited effort:
+{"asks": 30, "held": false, "mode": "Unchanged", "pause": 0, "phase": "training", "time": 471}
+{"asks": 30, "held": false, "mode": "Unchanged", "pause": 0, "phase": "limited", "time": 586}
+{"asks": 30, "held": false, "mode": "GlobalProgress", "pause": 0, "phase": "training", "time": 633}
+{"asks": 24, "held": false, "mode": "GlobalProgress", "pause": 6, "phase": "limited", "time": 392}
+{"asks": 30, "held": false, "mode": "Contextual", "pause": 0, "phase": "training", "time": 633}
+{"asks": 30, "held": false, "mode": "Contextual", "pause": 0, "phase": "limited", "time": 513}
+{"asks": 150, "held": true, "mode": "Unchanged", "pause": 0, "phase": "training", "time": 2619}
+{"asks": 104, "held": true, "mode": "Unchanged", "pause": 1, "phase": "limited", "time": 1939}
+{"asks": 136, "held": true, "mode": "GlobalProgress", "pause": 14, "phase": "training", "time": 2770}
+{"asks": 42, "held": true, "mode": "GlobalProgress", "pause": 63, "phase": "limited", "time": 668}
+{"asks": 150, "held": true, "mode": "Contextual", "pause": 0, "phase": "training", "time": 2749}
+{"asks": 92, "held": true, "mode": "Contextual", "pause": 13, "phase": "limited", "time": 1814}
+
+See results.md for positive/negative causal slices, limits, fixture repairs, performance and validation.

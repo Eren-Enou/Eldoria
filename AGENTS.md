@@ -66,6 +66,13 @@ and review corrections without rewriting frozen prose. No universal utility rank
 or long-term benefit of failed-inquiry learning is established. Keep cache-free011
 validation in the normal foundation gate; do not regenerate frozen evidence.
 
+Experiment 012 remains exploratory pending separate scientific review/integrity work.
+Its Contextual/GlobalProgress modes are prospective and opt-in; keep old novelty
+learning separate from observed assessment change. New per-actor cells cap at32,
+use insertion FIFO, and contain no event content. Silence does not reveal hidden
+motives. Preserve useful, misleading, missed and costly choices. Its separate
+`validate012` gate does not extend the protected001–011 contract or global defaults.
+
 Build progressively toward a persistent fictional world. Experiment 001 is only
 resource interaction, subjective memory, and subsequent behavioral consequences.
 Keep systems replaceable; do not add speculative civilization or Observer/Book UI.

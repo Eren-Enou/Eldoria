@@ -829,6 +829,7 @@ impl Simulation {
                 .records
                 .push(record);
         }
+        let (decision, self_evaluation_pending) = self.self_evaluation_decide(decision);
         let valid = decision.input == input
             && decision.decision.input == input.base
             && q::legal(&input.base, decision.decision.selected)
@@ -1043,27 +1044,45 @@ impl Simulation {
             .collect();
         let attempted_base =
             (decision.input.base != decision.decision.input).then_some(decision.input.base);
+        let outcome_record = q::Record {
+            id: inquiry_id,
+            tick,
+            meeting,
+            decision: decision.decision,
+            valid,
+            response: legacy_response,
+            novelty: category,
+            realized_value: value,
+            information_values,
+            cell_before: before,
+            cell_after: after,
+            concern_before,
+            concern_after,
+            time_spent: (tick - start) as u32,
+            food_before,
+            food_after,
+        };
+        if self_evaluation_pending.is_some() {
+            self.self_evaluation_finish(
+                crate::self_evaluation::Experience {
+                    inquiry: outcome_record.id,
+                    owner,
+                    selected: outcome_record.decision.selected,
+                    valid_learning: outcome_record.valid && outcome_record.cell_after.is_some(),
+                    status_before: outcome_record.concern_before.as_ref().map(|c| c.status),
+                    status_after: outcome_record.concern_after.as_ref().map(|c| c.status),
+                    receipt_acquired: !outcome_record.information_values.is_empty(),
+                    novelty: outcome_record.novelty,
+                    novelty_value: outcome_record.realized_value,
+                    time: outcome_record.time_spent,
+                },
+                self_evaluation_pending,
+            );
+        }
         self.world
             .resource_mut::<q::Inquiry>()
             .records
-            .push(q::Record {
-                id: inquiry_id,
-                tick,
-                meeting,
-                decision: decision.decision,
-                valid,
-                response: legacy_response,
-                novelty: category,
-                realized_value: value,
-                information_values,
-                cell_before: before,
-                cell_after: after,
-                concern_before,
-                concern_after,
-                time_spent: (tick - start) as u32,
-                food_before,
-                food_after,
-            });
+            .push(outcome_record);
         let context = self
             .world
             .resource_mut::<Contexts>()

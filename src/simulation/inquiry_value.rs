@@ -8,6 +8,12 @@ impl Simulation {
         self.require_idle()?;
         if self
             .world
+            .contains_resource::<crate::self_evaluation::Learning>()
+        {
+            return Err("012 cannot combine with 010/011 projections".into());
+        }
+        if self
+            .world
             .get_resource::<a::Assessment>()
             .is_none_or(|s| s.method != a::Method::Grouped)
         {

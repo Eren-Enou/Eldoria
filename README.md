@@ -276,4 +276,20 @@ Use `cargo run --release --locked -j 1 --example validate011` or the normal
 independently checks frozen traces/counts without writing files or reading target caches.
 The evaluator writes replay outputs to target; use isolated directories if needed.
 The archived writer is historical tooling: do not regenerate frozen011 evidence.
-Prior `validate009`/`validate010` gates remain unchanged. No012 is introduced.
+Prior `validate009`/`validate010` gates remain unchanged. The011 experiment did not introduce012.
+
+## Experiment 012: contextual learning self-evaluation
+
+[Specification](experiments/012/specification.md) and [results](experiments/012/results.md)
+compare unchanged inquiry learning with bounded source/method progress estimates,
+with and without a locally visible retained-evidence context. **ACCEPT WITH QUALIFICATION**:
+new experience changes later inquiry, sometimes causing executed persistent consequences,
+but coarse context can miss changed sources and misleading support can train optimism.
+The mechanism remains opt-in and exploratory; the protected foundation stays001–011.
+
+Run `cargo run --release --locked -j 1 --example evaluate012 -- --output target/experiment012-final`.
+Independent read-only reconstruction is
+`python -B examples/support/review012.py --self-test --replay-dir target/experiment012-final`;
+standalone `validate012` checks exact archives/replays without cache preparation or writes.
+`measure012` emits fixed-input policy timings; full trial timing is separate.
+Original001–011 evidence and defaults remain unchanged. No013 was started.

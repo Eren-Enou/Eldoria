@@ -646,3 +646,22 @@ actual executed scenes and subsequent consumption. The [results](../experiments/
 keep unchanged/current-need/StatusValue, query effects and E_Q/E_A/F separate. A positive
 novelty estimate need not change Grouped support: positive-quality retained evidence
 can suppress claim fallback. This mismatch causes preserved allocation mistakes.
+# Experiment 012: separate observed-change learning (exploratory)
+
+The opt-in `self_evaluation` module and simulation adapter add per-actor bounded
+source/method/context estimates. Context is the current retained Grouped claim-fallback
+boundary, not hidden expertise. Existing006 novelty learning remains unchanged.
+Valid selected results train a separate binary support/status-change moving average;
+the replaceable scorer discounts existing candidate gain only when a matching cell
+exists. Empty state preserves old selection, and public offer/independence rules remain.
+Cells cap at32 with insertion FIFO; they store no event proposition or support summary.
+Eviction loses estimates without observer recovery. Existing concern/trust/knowledge
+lifetimes remain separate. `Learning.records` is growing observer history with current
+inquiry references, own bounded context and update/eviction consequences; it is never
+searched for live cognition. 010/011 projections cannot combine with this new mode.
+
+`experiment012` controls fixed external encounters, legitimate receipts/inspections,
+pressure and actual resource scenes. Standalone `validate012` plus independent Python
+reconstruction verify evidence outside the protected001–011 gate. See the012
+[specification](../experiments/012/specification.md) and
+[qualified results](../experiments/012/results.md). No default adoption or013.

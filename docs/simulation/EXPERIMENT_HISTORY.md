@@ -1,6 +1,6 @@
 # World of Individuals experiment index
 
-Reviewed through 011. This is a navigation summary, not a replacement for full
+Protected through011;012 is exploratory pending separate review. This is a navigation summary, not a replacement for full
 reports or protected contracts. Historical next-experiment recommendations reflect
 their publication date. Update the affected row when an experiment concludes.
 
@@ -17,6 +17,7 @@ their publication date. Update the affected row when an experiment concludes.
 | 009: selective bounded retention | Quality/Salient help narrow retention controls but make mistakes and show no positive sharing-action advantage. Keep FIFO default, cap 32; probes are not executed gains. | [Spec](../../experiments/009/specification.md), [results](../../experiments/009/results.md) |
 | 010: retention survival to executed action | Accepted with qualification: unchanged-path existence differs from opt-in CurrentNeed results. Preserve E_Q, E_A and ambiguous F; no universal retention winner. | [Spec](../../experiments/010/specification.md), [results](../../experiments/010/results.md), [review](../experiment-010-review.md) |
 | 011: inquiry value under competing concerns | **Protected scientific result — StatusValue unadopted; negative conclusion confirmed with qualification.** Cheap queries often fail to change support/status, but partial gains and source/method learning remain real. | [Spec](../../experiments/011/specification.md), [results](../../experiments/011/results.md), [review](../experiment-011-review.md), [contract](../experiment-contract-001-011.md) |
+| 012: contextual learning self-evaluation | **Exploratory ACCEPT WITH QUALIFICATION**: separate observed-change learning alters inquiry and sometimes executed persistence; context prevents some suppression but can miss changing sources and reward misleading changes. No default/adoption or foundation extension. | [Spec](../../experiments/012/specification.md), [results](../../experiments/012/results.md), separate `validate012` / independent `review012.py` |
 
 ## Foundation and integrity
 
