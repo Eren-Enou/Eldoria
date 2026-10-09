@@ -1,7 +1,7 @@
 # Simulation Constitution
 
 These ten requirements are established in [AGENTS.md](../../AGENTS.md) and apply
-to every existing and future system. The [001–010 enforcement map](../experiment-contract-001-010.md)
+to every existing and future system. The [001–011 enforcement map](../experiment-contract-001-011.md)
 records their mode-specific implementation and coverage.
 
 1. **Identifiable causality.** Record the actual local input, selection, resolution

@@ -6,7 +6,7 @@ rows when ownership, entry points or mode boundaries change.
 
 ## Start here
 
-- Rules: [AGENTS.md](../AGENTS.md); protected [001–010 contract](experiment-contract-001-010.md),
+- Rules: [AGENTS.md](../AGENTS.md); protected [001–011 contract](experiment-contract-001-011.md),
   which links historical contracts. Read the affected mode's clauses and coverage.
 - Findings: [experiment index](simulation/EXPERIMENT_HISTORY.md).
 - Working procedure: [context workflow](context-workflow.md).
@@ -30,11 +30,11 @@ rows when ownership, entry points or mode boundaries change.
 | Unified local evidence basis and Grouped/Max support | [assessment.rs](../src/assessment.rs), `simulation.rs`, provenance resolver | `tests/experiment008.rs` |
 | FIFO/Quality/Salient retention selection | [retention.rs](../src/retention.rs), `simulation.rs` | `tests/experiment009.rs` |
 | CurrentNeed inquiry projection (experimental) | [attention.rs](../src/attention.rs), [adapter](../src/simulation/attention.rs) | `tests/experiment010.rs` |
-| StatusValue inquiry prototype (qualified negative adoption result) | [inquiry_value.rs](../src/inquiry_value.rs), [adapter](../src/simulation/inquiry_value.rs) | `tests/experiment011.rs`, [scientific review](experiment-011-review.md), `examples/support/review011.py` |
+| StatusValue inquiry prototype (protected scientific result; unadopted with qualification) | [inquiry_value.rs](../src/inquiry_value.rs), [adapter](../src/simulation/inquiry_value.rs) | `tests/experiment011.rs`, [scientific review](experiment-011-review.md), `examples/support/review011.py` |
 | Compact query references, local contexts, export reconstruction | [audit.rs](../src/audit.rs) | `tests/history_foundation.rs`, `examples/validate_history.rs` |
 | Private derived history indexes, trust replay | [history.rs](../src/history.rs), `simulation.rs` | Foundation, invariants, `tests/contract_001_008.rs` |
 | CLI and reproducible experiment fixtures | [main.rs](../src/main.rs), `src/experiment.rs`, `src/experiment002.rs` … `src/experiment011.rs` | Corresponding experiment tests/evaluators |
-| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), `examples/support/contract009.rs`, `contract010.rs`, `review010.py` | Includes cache-free 010 validation |
+| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), `examples/support/contract009.rs`, `contract010.rs`, `contract011.rs`, `review010.py`, `review011.py` | Cache-free 010/011 validation; standalone `validate011`; shared observer `summary011.rs` |
 | Throughput workload / history measurements | [throughput.rs](../benches/throughput.rs), `examples/measure_history.rs` | Separate wall-clock output; historical reports unchanged |
 
 Use `rg -n 'symbol' path/to/file.rs` to locate implementation before reading a
@@ -51,7 +51,7 @@ Modes progressively opt in: 002 cognition → 003 communication → 004 foresigh
 005 concerns → 006 inquiry → 007 provenance → 008 assessment. 009 selects retention;
 010/011 are separate optional inquiry projections, not combined defaults. Grouped
 assessment and FIFO remain the protected defaults where applicable. CurrentNeed is
-qualified research; StatusValue has no justification for adoption.
+qualified research; StatusValue's negative adoption result is protected with qualification.
 
 Episodes and beliefs are capped at 16, concerns at eight, assessment at 32;
 other mode-specific caps and lifetimes are in the contracts. Eviction does not erase

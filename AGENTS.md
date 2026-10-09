@@ -33,7 +33,8 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-010.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-011.md`.
+The historical `docs/experiment-contract-001-010.md` remains authoritative for 001–010.
 The historical `docs/experiment-contract-001-009.md` remains authoritative for 001–009.
 The historical `docs/experiment-contract-001-008.md` remains authoritative for 001–008.
 Preserve its mode-specific retention contracts: episode eviction does not erase
@@ -55,6 +56,15 @@ heuristic, not calibrated information value or future relevance, and remains exp
 Preserve E_Q (changed inquiry), E_A (same inquiry/different assimilation) and ambiguous F
 as distinct classes. Later correction cannot undo executed material history. Keep all
 negative results and the cache-free read-only 010 gate in foundation validation.
+
+Experiment 011 is a protected scientific result: StatusValue unadopted, negative
+conclusion confirmed with qualification. Preserve its exact formula, integer ties,
+controls and caps. Keep positive novelty, retained support/status progress, learned
+source/method expectations and material consequences distinct. Protect the
+same_uncertainty failure, far_resolution5→24 and same_importance0→50 partial gains,
+and review corrections without rewriting frozen prose. No universal utility ranking
+or long-term benefit of failed-inquiry learning is established. Keep cache-free011
+validation in the normal foundation gate; do not regenerate frozen evidence.
 
 Build progressively toward a persistent fictional world. Experiment 001 is only
 resource interaction, subjective memory, and subsequent behavioral consequences.

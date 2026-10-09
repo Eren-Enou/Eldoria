@@ -31,11 +31,12 @@ scientifically accepted and protected while its proposed mechanism is rejected.
 Protection preserves accepted findings and qualifications, not a mandate to adopt
 every tested mechanism.
 
-Verified at `35326ce`: Experiments 001–010 are protected by the
-[foundation contract](experiment-contract-001-010.md). Experiment 011 has results
-and a finalized [scientific review](experiment-011-review.md): confirm with
-qualification, no justification for adopting StatusValue. It is reviewed, not yet
-protected; it no longer awaits review. Reverify source, contracts and reviews before
+Experiments 001–011 are protected by the
+[foundation contract](experiment-contract-001-011.md) and its inherited historical
+maps. Experiment 011's [scientific review](experiment-011-review.md) is confirmed with
+qualification: its evidence is protected, while StatusValue remains unadopted.
+The [integrity report](integrity-audit-001-011.md) records the protection pass.
+Reverify source, contracts and reviews before
 updating status, and do not change unrelated conclusions.
 
 ## Canon and simulation evidence

@@ -305,6 +305,8 @@ def reconstruct(trial):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--replay-dir", type=Path)
+    parser.add_argument("--verify-finalized", action="store_true",
+                        help="Check frozen count/classification consistency and return compact gate output")
     args = parser.parse_args()
     manifest = json.loads((ARCHIVE / "archive-manifest.json").read_bytes())
     archives = {}
@@ -395,8 +397,91 @@ def main():
     assert negative["steps"][0]["positive_top_tie"] and negative["steps"][0]["suppressed_claim"]
     assert negative["steps"][0]["novelty"] == 50 and negative["food"][:2] == [3, 4]
     assert core[("same_uncertainty", "Unchanged")]["food"][:2] == [2, 5]
-    print(json.dumps({"reconstructed_trials": len(rows), "exact_replay_files": 3 if args.replay_dir else 0,
-                      "totals": totals, "classifications": dict(classifications), "trials": rows}, indent=2))
+    result = {"reconstructed_trials": len(rows), "exact_replay_files": 3 if args.replay_dir else 0,
+              "totals": totals, "classifications": dict(classifications)}
+    if args.verify_finalized:
+        verify_finalized(archives, rows, totals, classifications)
+        result.update(finalized_consistency_verified=True, archived_trial_rows=len(archives["summary"]))
+    else:
+        result["trials"] = rows
+    print(json.dumps(result, indent=2))
+
+
+def verify_finalized(archives, rows, totals, classifications):
+    """Extend the reviewed reconstruction; no generated cache or writer required."""
+    analysis = json.loads((ARCHIVE / "analysis.json").read_bytes())
+    identity = lambda r: (r["held"], r["case"], key(r["config"]), r["mode"])
+    seed42 = {identity(r): r for r in archives["summary"] if r["seed"] == 42}
+    assert len(seed42) == len(rows) == analysis["independently_reconstructed"] == 240
+    assert len(archives["summary"]) == analysis["trials"] == 4320
+    signatures, seeds = {}, collections.defaultdict(set)
+    for summary in archives["summary"]:
+        index = identity(summary)
+        assert summary["seed"] not in seeds[index]
+        seeds[index].add(summary["seed"])
+        signature = key([summary["actions"], summary["persistent_food"], summary["unresolved_before_resource"],
+                         [s["selected"] for s in summary["steps"]]])
+        assert signatures.setdefault(index, signature) == signature
+    assert set(seeds) == set(seed42)
+    assert all(s == set(range(16)) | {42, 2**64-1} for s in seeds.values())
+    assert analysis["seeds"] == 18 and analysis["measured_seed_invariant"]
+    expected_classes = {k.replace(",", "/"): v for k, v in analysis["class_counts"].items()}
+    assert dict(classifications) == expected_classes
+    assert not any(k.endswith(":E_A") or k.endswith(":F") for k in classifications)
+    metrics = collections.defaultdict(collections.Counter)
+    row_lookup = {identity(r): r for r in rows}
+    for held, name in ((False, "seed-42"), (True, "held-out-seed-42")):
+        for trial in archives[name]:
+            index = (held, trial["case"], key(trial["config"]), trial["mode"])
+            row, summary = row_lookup[index], seed42[index]
+            assert (row["actions"], row["food"], row["pre"], row["post"]) == (
+                summary["actions"], summary["persistent_food"], summary["pre_readiness"]["selected"],
+                summary["post_readiness"]["selected"])
+            inquiry = trial["final_state"]["base"]["base"]["base"]["base"]["inquiry"]["records"]
+            for step, recorded in zip(row["steps"], summary["steps"], strict=True):
+                assert (step["inquiry"], step["selected"], step["time"]) == (
+                    recorded["inquiry"], recorded["selected"], recorded["time"])
+                actual = inquiry[step["inquiry"]]
+                assert (actual["decision"]["candidates"], actual["response"], actual["realized_value"],
+                        actual["cell_after"]) == (recorded["candidates"], recorded["response"],
+                                                  recorded["realized_value"], recorded["cell_after"])
+            asks = [s for s in row["steps"] if s["selected"] != "Pause"]
+            old = trial["opportunities"][0]["before"]["concerns"]
+            new = trial["opportunities"][-1]["after"]["concerns"]
+            resolved = sum(c["status"] in ACTIVE and next(n for n in new if n["id"] == c["id"])["status"] == "Resolved" for c in old)
+            distinct = len({s["selected"]["Ask"]["concern"] for s in asks})
+            metrics[(held, trial["mode"])].update(dict(
+                trials=1, asks=len(asks), pause=len(row["steps"])-len(asks),
+                changed=sum(s["changed"] for s in asks), unproductive=sum(not s["changed"] for s in asks),
+                distinct_concerns=distinct, repeated_concern=len(asks)-distinct, resolved=resolved,
+                unresolved=sum(c["status"] in ACTIVE for c in new), time=sum(s["time"] for s in row["steps"]),
+                transfers=int("Accept" in row["actions"])))
+            assert summary["unresolved_before_resource"] == sum(c["status"] in ACTIVE for c in new)
+    for expected in analysis["totals"]:
+        actual = metrics[(expected["held"], expected["mode"])]
+        assert dict(actual) == {k: v for k, v in expected.items() if k not in ("held", "mode")}
+    for total in totals:
+        expected = metrics[(total["held"], total["mode"])]
+        assert (total["questions"], total["changed"], total["no_change"], total["time"]) == (
+            expected["asks"], expected["changed"], expected["unproductive"], expected["time"])
+    core = {(r["case"], r["mode"]): r for r in rows if not r["held"]}
+    for mode in ("Unchanged", "CurrentNeed"):
+        control = core[("same_uncertainty", mode)]
+        assert control["actions"] == ["Offer", "Accept"] and control["food"][:2] == [2, 5]
+        assert all(s["selected"]["Ask"]["strategy"] == "Evidence" for s in control["steps"])
+    status = core[("same_uncertainty", "StatusValue")]
+    assert status["actions"] == ["Leave"] and status["steps"][1]["new_receipts"] == 0
+    assert all(s["expectation_changed"] for s in status["steps"])
+    for mode in MODES:
+        assert all(s["selected"]["Ask"]["concern"] != 0 for s in core[("wrong_confidence", mode)]["steps"])
+        assert all(s["selected"]["Ask"]["concern"] != 1 for s in core[("minor_later", mode)]["steps"])
+        assert core[("mirrored_future", mode)]["actions"] == ["Leave"]
+        assert core[("new_opportunity", mode)]["steps"][-1]["status_after"] == "Resolved"
+    partial = next(t for t in archives["seed-42"] if t["case"] == "partial_answers" and t["mode"] == "CurrentNeed")
+    records = partial["final_state"]["base"]["base"]["base"]["base"]["inquiry"]["records"]
+    actor = [next(r for r in records[o["before"]["inquiry_end"]:o["after"]["inquiry_end"]]
+                  if r["decision"]["input"]["owner"] == 0) for o in partial["opportunities"]]
+    assert [r["cell_after"]["expected"] for r in actor] == [47, 42]
 
 
 if __name__ == "__main__":

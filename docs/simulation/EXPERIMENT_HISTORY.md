@@ -16,7 +16,7 @@ their publication date. Update the affected row when an experiment concludes.
 | 008: coherent assessment across channels | Grouped basis removes tested order/channel reversals for unchanged retained inputs/weights. False confidence and real forgetting remain possible. | [Spec](../../experiments/008/specification.md), [results](../../experiments/008/results.md) |
 | 009: selective bounded retention | Quality/Salient help narrow retention controls but make mistakes and show no positive sharing-action advantage. Keep FIFO default, cap 32; probes are not executed gains. | [Spec](../../experiments/009/specification.md), [results](../../experiments/009/results.md) |
 | 010: retention survival to executed action | Accepted with qualification: unchanged-path existence differs from opt-in CurrentNeed results. Preserve E_Q, E_A and ambiguous F; no universal retention winner. | [Spec](../../experiments/010/specification.md), [results](../../experiments/010/results.md), [review](../experiment-010-review.md) |
-| 011: inquiry value under competing concerns | **No adoption justification, confirmed with qualification**: cheap queries often fail to change support/status, but partial gains and source/method learning remain real. Opt-in research; protected contract not extended. | [Spec](../../experiments/011/specification.md), [results](../../experiments/011/results.md), [review](../experiment-011-review.md) |
+| 011: inquiry value under competing concerns | **Protected scientific result — StatusValue unadopted; negative conclusion confirmed with qualification.** Cheap queries often fail to change support/status, but partial gains and source/method learning remain real. | [Spec](../../experiments/011/specification.md), [results](../../experiments/011/results.md), [review](../experiment-011-review.md), [contract](../experiment-contract-001-011.md) |
 
 ## Foundation and integrity
 
@@ -24,11 +24,11 @@ their publication date. Update the affected row when an experiment concludes.
 |---|---|
 | History reinforcement | Compact audit references and derived indexes preserve behavior; observer storage still grows. [Results](../../reinforcement/results.md), [ownership](../history-audit.md) |
 | Frontier diagnosis | Mixed-channel assessment defect motivated 008; historical candidate analysis is not a current implementation plan. [Report](../../research/next-target/report.md) |
-| Protected 001–010 | [Contract/coverage](../experiment-contract-001-010.md) links historical maps. [Latest integrity audit](../integrity-audit-001-010.md) records its audit revision, not a perpetual current pass. |
+| Protected 001–011 | [Contract/coverage](../experiment-contract-001-011.md) inherits unchanged historical maps. [Latest integrity audit](../integrity-audit-001-011.md) protects the qualified011 result; scientific acceptance does not adopt StatusValue. |
 
 Current source pointers: [architecture map](../architecture-map.md). Run the
 read-only `cargo run --release --locked -j 1 --example validate_contract` for
-protected archive/replay validation, including cache-free 010 checks. Writer
+protected archive/replay validation, including cache-free 010/011 checks. Writer
 evaluators are for explicitly authorized experiment evidence generation, not audits.
 Full report links contain causal traces, seed controls, counters, limitations and
 reproduction details; consult those sections before making stronger claims.

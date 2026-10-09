@@ -54,16 +54,19 @@ encounters produce agreement, refusal, and withdrawal. See
 
 ## Architecture and verification
 
-The [001–010 contract and coverage map](docs/experiment-contract-001-010.md)
+The [001–011 contract and coverage map](docs/experiment-contract-001-011.md)
 documents mode-specific locality, retention, persistent consequences, exact bounds
 and regression coverage, carrying forward the unchanged historical maps and 010's
-qualified scientific acceptance. CurrentNeed remains experimental and opt-in.
+qualified scientific acceptance and 011's qualified negative adoption result.
+CurrentNeed remains experimental and opt-in; StatusValue remains unadopted.
 Verify the protected foundation without writing archives (Python standard library
 is required for direct gzip/SHA-256 verification):
 `cargo run --release --locked -j 1 --example validate_contract`.
 The independent `validate009` example uses the same direct frozen-archive checks.
 The independent `validate010` example verifies 010 directly and reconstructs the
 accepted unchanged-path chain and separate E_A/F classes without generated caches.
+`validate011` protects all three011 archives, exact replay and reviewed negative/partial
+findings without generated caches; accepting scientific evidence does not adopt its heuristic.
 
 One cohesive Agent ECS component, resources for ordered scenes/history/clock, and
 one single-threaded scheduled resolver keep this first experiment small. A pure
@@ -252,22 +255,25 @@ their finalized009 rules. The unchanged inquiry mechanism is compared with an
 opt-in current-basis need projection; its effects are conditional on that heuristic.
 No mode becomes the default. Run `cargo run --release --locked -j1 --example evaluate010`,
 then `python experiments/010/archive.py` and `python experiments/010/analyze.py`.
-Read-only009 compatibility uses `validate009` after decompressing its two archived
-traces into `target/compat009/`. Do not regenerate historical evidence in place.
+Read-only009 compatibility uses `validate009` without prepared target caches.
+Do not regenerate historical evidence in place.
 
 ## Experiment 011: bounded inquiry value
 
-[Specification](experiments/011/specification.md) and [results](experiments/011/results.md)
+[Specification](experiments/011/specification.md), [results](experiments/011/results.md)
+and [scientific review](docs/experiment-011-review.md)
 compare exact Unchanged/CurrentNeed with opt-in StatusValue across three actual
 concerns, sequential limited opportunities, fixed mirrored futures and executed
-resource consequences. **NO JUSTIFICATION for adopting StatusValue:** its new
-local distinctions mostly amplify cheap ineffective questions. Failures, partial
-gains, held-out sensitivity and persistent missed transfers remain in the evidence.
-No new persistent cognition or default change; the001–010 contract stays protected.
+resource consequences. **Protected scientific result — StatusValue unadopted;
+negative conclusion confirmed with qualification.** Cheap queries often fail to
+change retained support/status, yet partial-information gains and source/method
+learning remain real. Failures, sensitivity and persistent missed transfers are
+protected by the [001–011 contract](docs/experiment-contract-001-011.md).
+No new persistent cognition or default change; original prose corrections stay in the review.
 
-Run `cargo run --release --locked -j1 --example evaluate011`, then
-`python examples/support/analyze011.py`. Outputs go to target. Only new011 evidence
-is archived with `python experiments/011/archive.py`; archive-only reconstruction is
-`python examples/support/analyze011.py --archive-only`. Protected compatibility uses
-the read-only `validate_contract`, `validate009` and `validate010` gates without
-regenerating older evidence. No012 or broader world mechanism is introduced.
+Use `cargo run --release --locked -j 1 --example validate011` or the normal
+`validate_contract` gate. `python -B examples/support/review011.py --verify-finalized`
+independently checks frozen traces/counts without writing files or reading target caches.
+The evaluator writes replay outputs to target; use isolated directories if needed.
+The archived writer is historical tooling: do not regenerate frozen011 evidence.
+Prior `validate009`/`validate010` gates remain unchanged. No012 is introduced.
