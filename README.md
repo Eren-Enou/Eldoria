@@ -285,7 +285,8 @@ compare unchanged inquiry learning with bounded source/method progress estimates
 with and without a locally visible retained-evidence context. **ACCEPT WITH QUALIFICATION**:
 new experience changes later inquiry, sometimes causing executed persistent consequences,
 but coarse context can miss changed sources and misleading support can train optimism.
-The mechanism remains opt-in and exploratory; the protected foundation stays001–011.
+The [scientific review](docs/experiment-012-review.md) confirms ACCEPT WITH QUALIFICATION.
+The mechanism remains opt-in research; the protected foundation stays001–011.
 
 Run `cargo run --release --locked -j 1 --example evaluate012 -- --output target/experiment012-final`.
 Independent read-only reconstruction is

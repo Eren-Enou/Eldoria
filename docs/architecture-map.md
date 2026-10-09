@@ -1,6 +1,6 @@
 # Architecture map
 
-Navigation summary, protected through011 with exploratory012 implementation. Source and mode-specific
+Navigation summary, protected through011 with reviewed012 research implementation. Source and mode-specific
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
@@ -31,7 +31,7 @@ rows when ownership, entry points or mode boundaries change.
 | FIFO/Quality/Salient retention selection | [retention.rs](../src/retention.rs), `simulation.rs` | `tests/experiment009.rs` |
 | CurrentNeed inquiry projection (experimental) | [attention.rs](../src/attention.rs), [adapter](../src/simulation/attention.rs) | `tests/experiment010.rs` |
 | StatusValue inquiry prototype (protected scientific result; unadopted with qualification) | [inquiry_value.rs](../src/inquiry_value.rs), [adapter](../src/simulation/inquiry_value.rs) | `tests/experiment011.rs`, [scientific review](experiment-011-review.md), `examples/support/review011.py` |
-| Contextual observed-change learning (012 exploratory, opt-in) | [self_evaluation.rs](../src/self_evaluation.rs), [adapter](../src/simulation/self_evaluation.rs), [fixture](../src/experiment012.rs) | `tests/experiment012.rs`, independent `review012.py`, standalone `validate012`; outside protected foundation |
+| Contextual observed-change learning (012 reviewed, opt-in) | [self_evaluation.rs](../src/self_evaluation.rs), [adapter](../src/simulation/self_evaluation.rs), [fixture](../src/experiment012.rs) | `tests/experiment012.rs`, independent `review012.py`, `review012_findings.py`, standalone `validate012`; [scientific review](experiment-012-review.md); outside protected foundation |
 | Compact query references, local contexts, export reconstruction | [audit.rs](../src/audit.rs) | `tests/history_foundation.rs`, `examples/validate_history.rs` |
 | Private derived history indexes, trust replay | [history.rs](../src/history.rs), `simulation.rs` | Foundation, invariants, `tests/contract_001_008.rs` |
 | CLI and reproducible experiment fixtures | [main.rs](../src/main.rs), `src/experiment.rs`, `src/experiment002.rs` … `src/experiment012.rs` | Corresponding experiment tests/evaluators |
