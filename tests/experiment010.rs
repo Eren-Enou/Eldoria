@@ -5,6 +5,94 @@ fn run(method: Method, case: &str) -> e::Trial {
     e::trial(42, method, Mode::CurrentNeed, case, e::Config::default())
 }
 #[test]
+fn unchanged_retention_resolution_releases_inquiry_and_persists_real_transfer() {
+    let config = e::held_out()[2].clone();
+    let trials = [Method::Fifo, Method::Quality, Method::Salient]
+        .map(|m| e::trial(42, m, Mode::Unchanged, "redelivery", config.clone()));
+    let salient = &trials[2];
+    for t in &trials {
+        assert_eq!(t.points[0], salient.points[0]);
+        let records = &t.final_state.base.base.assessment.as_ref().unwrap().records;
+        let deliveries = |t: &e::Trial| {
+            t.final_state.base.base.assessment.as_ref().unwrap().records
+                [..t.points[3].assessment_end]
+                .iter()
+                .map(|r| r.incoming.clone())
+                .collect::<Vec<_>>()
+        };
+        assert_eq!(deliveries(t), deliveries(salient));
+        assert_eq!(t.points[3].agents[0].trust[&2], -17);
+        assert_eq!(
+            t.points[3]
+                .agents
+                .iter()
+                .map(|a| a.food)
+                .collect::<Vec<_>>(),
+            vec![4; 11]
+        );
+        let fresh = &records[t.points[2].assessment_end];
+        assert_ne!(fresh.incoming.receipt, records[0].incoming.receipt);
+        assert_eq!(
+            fresh.support,
+            if t.method == Method::Salient {
+                79
+            } else if t.method == Method::Fifo {
+                55
+            } else {
+                0
+            }
+        );
+        assert_eq!(
+            t.points[3].concerns[0].status.active(),
+            t.method != Method::Salient
+        );
+        let wanted = if t.method == Method::Salient {
+            inquiry::Action::Ask {
+                concern: 1,
+                source: 2,
+                strategy: inquiry::Strategy::Evidence,
+            }
+        } else {
+            inquiry::Action::Ask {
+                concern: 0,
+                source: 1,
+                strategy: inquiry::Strategy::Direct,
+            }
+        };
+        assert_eq!(e::selected(t), wanted);
+        let events = &t.final_state.base.base.base.base.base.events;
+        let resource = &events[t.points[5].event_end..];
+        assert_eq!(
+            resource[0].decision.selected,
+            if t.method == Method::Salient {
+                Action::Offer
+            } else {
+                Action::Leave
+            }
+        );
+        assert_eq!(
+            resource.iter().map(|e| e.transferred).sum::<u32>(),
+            u32::from(t.method == Method::Salient)
+        );
+        for event in resource {
+            assert_eq!(
+                event.balances_before.iter().sum::<u32>(),
+                event.balances_after.iter().sum::<u32>()
+            );
+        }
+        assert_eq!(t.consumption.consumed, 1);
+        assert_eq!(
+            t.points[7].agents[0].food,
+            if t.method == Method::Salient { 2 } else { 3 }
+        );
+        assert_eq!(
+            t.points[7].agents[2].food,
+            if t.method == Method::Salient { 5 } else { 4 }
+        );
+        t.final_state.validate().unwrap();
+    }
+}
+#[test]
 fn matched_deliveries_local_candidates_and_complete_executed_chain() {
     for case in e::CASES {
         let trials = [
