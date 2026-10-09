@@ -1,5 +1,51 @@
 # Selective context and experiment workflow
 
+## Authority and conflicts
+
+Architecture maps, experiment indexes and summaries are navigation aids, not
+independent authorities. Resolve discrepancies using the appropriate authority:
+
+- Current source code establishes actual implemented behavior.
+- Protected contracts establish behavior that must remain compatible; source that
+  violates a contract is a regression, not a replacement contract.
+- Frozen experiment evidence establishes historical observations.
+- Finalized scientific reviews establish accepted interpretations and qualifications.
+- Correct navigation documents when their pointers or summaries become outdated.
+
+Never silently alter historical evidence or reinterpret a protected experiment to
+match a summary. Report conflicts explicitly and preserve their revision context.
+
+## Research status and mechanism adoption
+
+Track research status separately from whether a mechanism should be adopted:
+
+| Status | Meaning |
+|---|---|
+| Exploratory | Experiment is still being developed or interpreted. |
+| Reviewed | Scientific conclusions have been examined and qualified. |
+| Protected | Accepted conclusions are incorporated into the foundation contract and read-only integrity validation. |
+| Rejected mechanism | Adoption of a proposed mechanism was not justified; preserve its negative evidence. |
+
+These are not mutually exclusive adoption categories: an experiment can be
+scientifically accepted and protected while its proposed mechanism is rejected.
+Protection preserves accepted findings and qualifications, not a mandate to adopt
+every tested mechanism.
+
+Verified at `35326ce`: Experiments 001–010 are protected by the
+[foundation contract](experiment-contract-001-010.md). Experiment 011 has results
+and a finalized [scientific review](experiment-011-review.md): confirm with
+qualification, no justification for adopting StatusValue. It is reviewed, not yet
+protected; it no longer awaits review. Reverify source, contracts and reviews before
+updating status, and do not change unrelated conclusions.
+
+## Canon and simulation evidence
+
+World of Individuals experiments can inform Eldoria worldbuilding, but their
+results do not automatically establish Eldoria canon. Established Eldoria lore
+likewise does not require experiments to produce predetermined historical outcomes.
+Keep fictional canon authority (see [Eldoria index](ELDORIA_INDEX.md)) separate from
+simulation evidence and scientific interpretation.
+
 ## Review findings
 
 These are observed navigation/output risks, not measured token totals:
@@ -33,25 +79,41 @@ changes or compaction. Avoid claiming a measured savings percentage from this re
    make it relevant, not for documentation-only changes.
 6. Keep deterministic evidence under the authorized target; never overwrite frozen
    archives for an integrity audit. Do not rerun writer evaluators for old modes.
-7. Review the diff, update affected map/index rows, then commit/push per AGENTS.md.
+7. When module ownership, source paths, experiment status or important conclusions
+   change, update the relevant map/index entries. Verify pointers against actual
+   repository contents and conclusions against their authorities; leave unrelated
+   statuses unchanged. Review the diff, then commit/push per AGENTS.md.
 
 Save verbose command output in a task-specific temporary log. Return command,
-exit status, test count and failures; inspect relevant log ranges when needed.
-Do not truncate failures silently. Reuse a passed check at the same code/fixture
-revision unless new changes or unresolved concerns justify rerunning it.
+exit status, test count and failures; inspect failures fully, without silent
+truncation. Final task reports must identify the commit or revision validated,
+exact commands, exit statuses, test counts, skipped checks with reasons, and
+remaining failures or unresolved issues. A pre-edit check is not validation of
+the final revision. Record any pending changes at validation time; rerun affected
+checks after later modifications. Reuse passed checks only at an unchanged relevant
+revision and state their scope accurately.
 
 For long tasks, carry a concise checkpoint: objective, HEAD, changed files, decisions,
 invariants, completed checks, unresolved issues and next action. Link source/report
 locations rather than copying entire documents. After compaction verify current
 status and changed relevant files; cached understanding is not evidence of current code.
 
-## Full audit remains available
+## Required broader inspection
 
-Expand to a complete inventory, source inspection and affected historical reports
-when requested, when changing shared interfaces/ownership/locality/persistence, or
-when integrity failures, unexplained regressions, stale maps or unknown dependencies
-make the boundary uncertain. Record the reason and audited scope. These guides are
-navigation aids, not an inspection quota or a substitute for authoritative evidence.
+Expand beyond the initially selected files when changes affect:
+
+- Cognitive capacities, memory eviction or persistent state.
+- Information locality or policy-visible inputs.
+- Historical serialization, replay or audit structure.
+- Resource production, transfers, consumption or accounting.
+- Experiment defaults or opt-in activation.
+- Shared interfaces, architecture ownership or major dependencies.
+- Unexpected regressions, integrity failures or stale navigation documents.
+
+Inspect affected callers, contracts, tests and historical reports; use a full
+codebase audit when requested or when unknown dependencies make the boundary
+uncertain. Record the reason and scope. Selective reading is an efficiency technique,
+not a restriction on necessary investigation or a substitute for authoritative evidence.
 
 ## Measuring savings prospectively
 
