@@ -1,0 +1,32 @@
+{
+  "seed-42": {
+    "gzip_bytes": 962447,
+    "gzip_sha256": "0d0a5860141a9dd4dfa0c863fb0f0d5c57ec2c41295cc3f1e7c7c6d3eb62c891",
+    "json_bytes": 25049002,
+    "json_sha256": "3d93fff8c31a20bf39e0da77fc5f0bef11c3171d4697d8f34bb41cb9a984e5d7"
+  },
+  "held-out-seed-42": {
+    "gzip_bytes": 2289989,
+    "gzip_sha256": "dcc9b43fde9da9b0863b788dbd7d611f3ee41bfc238c3c022f4f21dcb8da2fa1",
+    "json_bytes": 66636061,
+    "json_sha256": "e6d05169a0f1fe904b4fb99135c278f75b346c1ede90b8505b290482451cfccd"
+  },
+  "summary": {
+    "gzip_bytes": 492477,
+    "gzip_sha256": "235588434c7a0927c4b804894f3ae718041fc7ce2072245391d523b12d9222a1",
+    "json_bytes": 14954905,
+    "json_sha256": "0881b8448fb520b3baa9fdff31ee682965bfd034c3ec2c8d27dd8f9e6ac3e15b"
+  },
+  "development-preview": {
+    "gzip_bytes": 21989,
+    "gzip_sha256": "f0e9a6ec34ef5a7668eb76b40188c2b51ee3892664bf4d39c7dc9f9c2d76ff7f",
+    "json_bytes": 676279,
+    "json_sha256": "6de5ed760535850b5205c76e437779ef11fc951eef383cb6c33887e7ee4cd632"
+  },
+  "seed-diagnostic": {
+    "gzip_bytes": 133289,
+    "gzip_sha256": "7699c233bd25269e453ca97ca4fb51cd6d87c123307f912a1fdc9cf3f411dbc2",
+    "json_bytes": 4884038,
+    "json_sha256": "777cdeaca610516ff65e6af2cfa4f0e6c4f8b0886a4ea728d426c245017fdce6"
+  }
+}

@@ -667,3 +667,23 @@ reconstruction now share the normal protected001–012 gate. See the012
 [qualified results](../experiments/012/results.md) and
 [scientific review](experiment-012-review.md), [contract](experiment-contract-001-012.md)
 and [integrity audit](integrity-audit-001-012.md). No default adoption or013.
+
+# Experiment 013: transient reconsideration (exploratory)
+
+`experiment013` uses the existing self-evaluation policy setter after prospective
+Contextual enablement. Pulse restores a prior's candidate benefit for learned poor
+methods on every fourth own concern encounter; Ungated omits that gate. Both retain
+old novelty/progress updates, cost, known independence, candidate order and capacities.
+No new ECS/cognitive state or historical adapter behavior is added. Age comes from
+own005 concern state; observer tick/history/scenario and private provider components
+never enter this replaceable pure function.
+
+The fixture records bounded checkpoints and full final histories for24–72 scheduled
+meetings, actual source observation/relay/FIFO loss, public offers and resource scenes
+without reset. New013 snapshot validation extends the inherited receipt/bounds checks
+with the chosen prospective scorer and unchanged012 update arithmetic, rather than
+rewriting old validators. Independent Python verifies actual scores, sources and
+resources; standalone validate013 stays outside the protected001–012 foundation.
+See [specification](../experiments/013/specification.md) and
+[results](../experiments/013/results.md) for earlier executed consequences, wasted
+probing, seed/trust effects and growing audit costs. No default adoption or014.

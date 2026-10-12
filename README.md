@@ -298,4 +298,18 @@ Independent read-only reconstruction is
 the normal foundation gate and standalone `validate012` share exact frozen-byte/replay
 and independent findings checks, without cache preparation or writes.
 `measure012` emits fixed-input policy timings; full trial timing is separate.
-Original001–012 evidence and all defaults remain unchanged. No013 was started.
+Original001–012 evidence and all defaults remain unchanged. The012 protection pass did not start013.
+
+## Experiment 013: adaptive expectations in a changing world
+
+[Specification](experiments/013/specification.md) and [results](experiments/013/results.md)
+report exploratory ACCEPT WITH QUALIFICATION. Pulse uses existing local concern age
+and failed inquiry estimates to reconsider a prior without new persistent cognition.
+It can discover changed sources earlier and alter executed history, but pays for many
+failed probes; Ungated reconsideration can crowd out useful Evidence. Longer histories
+also expose preserved legacy trust effects. Neither mode is a default; foundation stays001–012.
+
+Run `cargo run --release --locked -j 1 --example evaluate013 -- --output target/experiment013-final`.
+Read-only `validate013` compares all archives/replays and independent causal reconstruction;
+`review013.py --self-test` checks archived local decisions, source transitions and resources.
+`measure013` separates fixed-input policy cost from history-length work. No014 was started.

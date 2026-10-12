@@ -19,6 +19,8 @@ their publication date. Update the affected row when an experiment concludes.
 | 011: inquiry value under competing concerns | **Protected scientific result — StatusValue unadopted; negative conclusion confirmed with qualification.** Cheap queries often fail to change support/status, but partial gains and source/method learning remain real. | [Spec](../../experiments/011/specification.md), [results](../../experiments/011/results.md), [review](../experiment-011-review.md), [contract](../experiment-contract-001-011.md) |
 | 012: contextual learning self-evaluation | **Protected scientific result — Contextual and GlobalProgress retained as opt-in research mechanisms; ACCEPT WITH QUALIFICATION; neither adopted as default.** Progress learning's material chain is shared; context alters allocation/timing and can help or harm. Preserve repair and state-necessity limits. | [Spec](../../experiments/012/specification.md), [results](../../experiments/012/results.md), [scientific review](../experiment-012-review.md), [contract](../experiment-contract-001-012.md); shared `validate012` / independent reconstruction |
 
+| 013: adaptive expectations in a changing world | **Exploratory ACCEPT WITH QUALIFICATION**: transient reconsideration can accelerate discovery/execution, but wastes opportunities; Ungated can crowd out Evidence. Longer histories reveal legacy trust effects. No new cognition/default or foundation extension. | [Spec](../../experiments/013/specification.md), [results](../../experiments/013/results.md); separate013 replay/independent checks. No014. |
+
 ## Foundation and integrity
 
 | Work | Conclusion / reference |

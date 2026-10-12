@@ -1,0 +1,20 @@
+Experiment013: adaptive expectations in a changing world
+Decision: ACCEPT WITH QUALIFICATION; transient research, no default or013 protection.
+195 seed42 combinations;1170 seeded worlds rerun exactly;195 independent reconstructions plus four diagnostic slices (two additional seed1 worlds).
+A-F are separate causal stages; paired E/F flags do not prove every mediation.
+{"asks": 147, "changed": 12, "held": false, "mode": "Unchanged", "no_receipt": 131, "pause": 189, "positive_novelty_no_change": 1, "prediction_error_sum": -4301, "reconsidered": 0, "time": 2905, "trials": 13, "updates": 147}
+{"asks": 73, "changed": 7, "held": false, "mode": "GlobalProgress", "no_receipt": 63, "pause": 263, "positive_novelty_no_change": 1, "prediction_error_sum": -2524, "reconsidered": 0, "time": 1725, "trials": 13, "updates": 73}
+{"asks": 113, "changed": 11, "held": false, "mode": "Contextual", "no_receipt": 99, "pause": 223, "positive_novelty_no_change": 1, "prediction_error_sum": -4171, "reconsidered": 0, "time": 2385, "trials": 13, "updates": 113}
+{"asks": 223, "changed": 13, "held": false, "mode": "Pulse", "no_receipt": 203, "pause": 113, "positive_novelty_no_change": 1, "prediction_error_sum": -4643, "reconsidered": 117, "time": 3457, "trials": 13, "updates": 223}
+{"asks": 336, "changed": 9, "held": false, "mode": "Ungated", "no_receipt": 305, "pause": 0, "positive_novelty_no_change": 1, "prediction_error_sum": -3812, "reconsidered": 255, "time": 4531, "trials": 13, "updates": 336}
+{"asks": 299, "changed": 19, "held": true, "mode": "Unchanged", "no_receipt": 271, "pause": 693, "positive_novelty_no_change": 2, "prediction_error_sum": -8742, "reconsidered": 0, "time": 6235, "trials": 26, "updates": 299}
+{"asks": 153, "changed": 17, "held": true, "mode": "GlobalProgress", "no_receipt": 129, "pause": 839, "positive_novelty_no_change": 2, "prediction_error_sum": -5008, "reconsidered": 0, "time": 3869, "trials": 26, "updates": 153}
+{"asks": 229, "changed": 21, "held": true, "mode": "Contextual", "no_receipt": 201, "pause": 763, "positive_novelty_no_change": 2, "prediction_error_sum": -8518, "reconsidered": 0, "time": 5177, "trials": 26, "updates": 229}
+{"asks": 601, "changed": 23, "held": true, "mode": "Pulse", "no_receipt": 564, "pause": 391, "positive_novelty_no_change": 2, "prediction_error_sum": -9317, "reconsidered": 388, "time": 8936, "trials": 26, "updates": 601}
+{"asks": 992, "changed": 19, "held": true, "mode": "Ungated", "no_receipt": 933, "pause": 0, "positive_novelty_no_change": 2, "prediction_error_sum": -7639, "reconsidered": 828, "time": 12899, "trials": 26, "updates": 992}
+
+Diagnostics:
+{"actions": [["Leave"], ["Leave"], ["Leave"], ["Leave"], ["Leave"]], "episodic_valence": 0, "expectation": 44, "food": [3, 4, 4, 4, 4, 4, 4], "memory_valence_sum": -28, "mode": "Unchanged", "offer_score": -8, "seed": 1, "trust": {"1": -28, "2": -28, "3": -28}}
+{"actions": [["Leave"], ["Leave"], ["Leave"], ["Leave"], ["Leave"]], "episodic_valence": 0, "expectation": 44, "food": [3, 4, 4, 4, 4, 4, 4], "memory_valence_sum": -28, "mode": "Pulse", "offer_score": -8, "seed": 1, "trust": {"1": -28, "2": -28, "3": 0}}
+{"actions": [["Leave"], ["Leave"], ["Leave"], ["Leave"], ["Offer", "Accept"]], "episodic_valence": 0, "expectation": 3, "food": [1, 6, 4, 4, 4, 4, 4], "memory_valence_sum": -17, "mode": "Unchanged", "offer_score": 3, "seed": 42, "trust": {"1": -17, "2": -17, "3": -17}}
+{"actions": [["Leave"], ["Leave"], ["Leave"], ["Leave"], ["Offer", "Accept"]], "episodic_valence": 0, "expectation": 3, "food": [1, 6, 4, 4, 4, 4, 4], "memory_valence_sum": -17, "mode": "Pulse", "offer_score": 3, "seed": 42, "trust": {"1": -17, "2": -17, "3": 0}}
