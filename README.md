@@ -54,10 +54,11 @@ encounters produce agreement, refusal, and withdrawal. See
 
 ## Architecture and verification
 
-The [001–011 contract and coverage map](docs/experiment-contract-001-011.md)
+The [001–012 contract and coverage map](docs/experiment-contract-001-012.md)
 documents mode-specific locality, retention, persistent consequences, exact bounds
 and regression coverage, carrying forward the unchanged historical maps and 010's
-qualified scientific acceptance and 011's qualified negative adoption result.
+qualified scientific acceptance, 011's qualified negative adoption result and012's
+qualified experiential-learning findings with both new modes retained as research.
 CurrentNeed remains experimental and opt-in; StatusValue remains unadopted.
 Verify the protected foundation without writing archives (Python standard library
 is required for direct gzip/SHA-256 verification):
@@ -286,11 +287,15 @@ with and without a locally visible retained-evidence context. **ACCEPT WITH QUAL
 new experience changes later inquiry, sometimes causing executed persistent consequences,
 but coarse context can miss changed sources and misleading support can train optimism.
 The [scientific review](docs/experiment-012-review.md) confirms ACCEPT WITH QUALIFICATION.
-The mechanism remains opt-in research; the protected foundation stays001–011.
+**Protected scientific result — Contextual and GlobalProgress retained as opt-in
+research mechanisms; ACCEPT WITH QUALIFICATION; neither adopted as default.**
+The [001–012 contract](docs/experiment-contract-001-012.md) and
+[integrity audit](docs/integrity-audit-001-012.md) preserve the qualified findings.
 
 Run `cargo run --release --locked -j 1 --example evaluate012 -- --output target/experiment012-final`.
 Independent read-only reconstruction is
 `python -B examples/support/review012.py --self-test --replay-dir target/experiment012-final`;
-standalone `validate012` checks exact archives/replays without cache preparation or writes.
+the normal foundation gate and standalone `validate012` share exact frozen-byte/replay
+and independent findings checks, without cache preparation or writes.
 `measure012` emits fixed-input policy timings; full trial timing is separate.
-Original001–011 evidence and defaults remain unchanged. No013 was started.
+Original001–012 evidence and all defaults remain unchanged. No013 was started.

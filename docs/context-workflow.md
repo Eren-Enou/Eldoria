@@ -31,11 +31,14 @@ scientifically accepted and protected while its proposed mechanism is rejected.
 Protection preserves accepted findings and qualifications, not a mandate to adopt
 every tested mechanism.
 
-Experiments 001–011 are protected by the
-[foundation contract](experiment-contract-001-011.md) and its inherited historical
+Experiments 001–012 are protected by the
+[foundation contract](experiment-contract-001-012.md) and its inherited historical
 maps. Experiment 011's [scientific review](experiment-011-review.md) is confirmed with
 qualification: its evidence is protected, while StatusValue remains unadopted.
-The [integrity report](integrity-audit-001-011.md) records the protection pass.
+Experiment012's [scientific review](experiment-012-review.md) establishes ACCEPT
+WITH QUALIFICATION; Contextual and GlobalProgress remain opt-in research mechanisms,
+neither adopted as default. Its progress and context findings remain distinct.
+The [integrity report](integrity-audit-001-012.md) records the latest protection pass.
 Reverify source, contracts and reviews before
 updating status, and do not change unrelated conclusions.
 
@@ -53,7 +56,7 @@ These are observed navigation/output risks, not measured token totals:
 
 | Source of waste | Evidence | Change |
 |---|---|---|
-| Rebuilding architecture from chronological history | `architecture.md` contains 001–011 sections; contracts and history ownership are separate | Use `architecture-map.md` for source ownership, then affected sections |
+| Rebuilding architecture from chronological history | `architecture.md` contains 001–012 sections; contracts and history ownership are separate | Use `architecture-map.md` for source ownership, then affected sections |
 | Rereading all reports to learn current conclusions | Experiment history previously stopped at 008; 009–011 results existed elsewhere | Extend the existing lightweight index, preserving negative and qualified results |
 | Broad listings/searches mix engineering with lore and generated evidence | `docs/` contains both domains; `experiments/` contains large trace archives | Choose mapped directories/files and file globs; exclude trace bodies unless needed |
 | Full file reads and oversized tool batches | Long architecture/contracts and generated JSON can exceed output budgets; truncated output hides useful context | Locate headings/symbols first and read bounded ranges; extract archive fields/counts |

@@ -1,12 +1,12 @@
 # Architecture map
 
-Navigation summary, protected through011 with reviewed012 research implementation. Source and mode-specific
+Navigation summary, protected through012 with opt-in research mechanisms. Source and mode-specific
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
 ## Start here
 
-- Rules: [AGENTS.md](../AGENTS.md); protected [001–011 contract](experiment-contract-001-011.md),
+- Rules: [AGENTS.md](../AGENTS.md); protected [001–012 contract](experiment-contract-001-012.md),
   which links historical contracts. Read the affected mode's clauses and coverage.
 - Findings: [experiment index](simulation/EXPERIMENT_HISTORY.md).
 - Working procedure: [context workflow](context-workflow.md).
@@ -31,11 +31,11 @@ rows when ownership, entry points or mode boundaries change.
 | FIFO/Quality/Salient retention selection | [retention.rs](../src/retention.rs), `simulation.rs` | `tests/experiment009.rs` |
 | CurrentNeed inquiry projection (experimental) | [attention.rs](../src/attention.rs), [adapter](../src/simulation/attention.rs) | `tests/experiment010.rs` |
 | StatusValue inquiry prototype (protected scientific result; unadopted with qualification) | [inquiry_value.rs](../src/inquiry_value.rs), [adapter](../src/simulation/inquiry_value.rs) | `tests/experiment011.rs`, [scientific review](experiment-011-review.md), `examples/support/review011.py` |
-| Contextual observed-change learning (012 reviewed, opt-in) | [self_evaluation.rs](../src/self_evaluation.rs), [adapter](../src/simulation/self_evaluation.rs), [fixture](../src/experiment012.rs) | `tests/experiment012.rs`, independent `review012.py`, `review012_findings.py`, standalone `validate012`; [scientific review](experiment-012-review.md); outside protected foundation |
+| Contextual observed-change learning (012 protected with qualification, opt-in research) | [self_evaluation.rs](../src/self_evaluation.rs), [adapter](../src/simulation/self_evaluation.rs), [fixture](../src/experiment012.rs) | `tests/experiment012.rs`, independent `review012.py`, `review012_findings.py`, shared foundation/standalone `validate012`; [scientific review](experiment-012-review.md), [contract](experiment-contract-001-012.md) |
 | Compact query references, local contexts, export reconstruction | [audit.rs](../src/audit.rs) | `tests/history_foundation.rs`, `examples/validate_history.rs` |
 | Private derived history indexes, trust replay | [history.rs](../src/history.rs), `simulation.rs` | Foundation, invariants, `tests/contract_001_008.rs` |
 | CLI and reproducible experiment fixtures | [main.rs](../src/main.rs), `src/experiment.rs`, `src/experiment002.rs` … `src/experiment012.rs` | Corresponding experiment tests/evaluators |
-| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), `examples/support/contract009.rs`, `contract010.rs`, `contract011.rs`, `review010.py`, `review011.py` | Cache-free 010/011 validation; standalone `validate011`; shared observer `summary011.rs` |
+| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), `examples/support/contract009.rs`, `contract010.rs`, `contract011.rs`, `contract012.rs`, `review010.py`, `review011.py`, `review012.py`, `review012_findings.py` | Cache-free 010–012 validation; shared standalone gates; shared observer `summary011.rs` and unchanged `experiment012::summary` |
 | Throughput workload / history measurements | [throughput.rs](../benches/throughput.rs), `examples/measure_history.rs` | Separate wall-clock output; historical reports unchanged |
 
 Use `rg -n 'symbol' path/to/file.rs` to locate implementation before reading a

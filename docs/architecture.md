@@ -646,7 +646,7 @@ actual executed scenes and subsequent consumption. The [results](../experiments/
 keep unchanged/current-need/StatusValue, query effects and E_Q/E_A/F separate. A positive
 novelty estimate need not change Grouped support: positive-quality retained evidence
 can suppress claim fallback. This mismatch causes preserved allocation mistakes.
-# Experiment 012: separate observed-change learning (reviewed research)
+# Experiment 012: separate observed-change learning (protected research)
 
 The opt-in `self_evaluation` module and simulation adapter add per-actor bounded
 source/method/context estimates. Context is the current retained Grouped claim-fallback
@@ -662,7 +662,8 @@ searched for live cognition. 010/011 projections cannot combine with this new mo
 
 `experiment012` controls fixed external encounters, legitimate receipts/inspections,
 pressure and actual resource scenes. Standalone `validate012` plus independent Python
-reconstruction verify evidence outside the protected001–011 gate. See the012
+reconstruction now share the normal protected001–012 gate. See the012
 [specification](../experiments/012/specification.md) and
 [qualified results](../experiments/012/results.md) and
-[scientific review](experiment-012-review.md). No default adoption or013.
+[scientific review](experiment-012-review.md), [contract](experiment-contract-001-012.md)
+and [integrity audit](integrity-audit-001-012.md). No default adoption or013.

@@ -33,7 +33,8 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-011.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-012.md`.
+The historical `docs/experiment-contract-001-011.md` remains authoritative for 001–011.
 The historical `docs/experiment-contract-001-010.md` remains authoritative for 001–010.
 The historical `docs/experiment-contract-001-009.md` remains authoritative for 001–009.
 The historical `docs/experiment-contract-001-008.md` remains authoritative for 001–008.
@@ -66,14 +67,17 @@ and review corrections without rewriting frozen prose. No universal utility rank
 or long-term benefit of failed-inquiry learning is established. Keep cache-free011
 validation in the normal foundation gate; do not regenerate frozen evidence.
 
-Experiment 012 is reviewed ACCEPT WITH QUALIFICATION; see
-[scientific review](docs/experiment-012-review.md). It remains research pending
-a separate integrity pass, with no default adoption.
+Experiment 012 is a protected scientific result — Contextual and GlobalProgress
+retained as opt-in research mechanisms; ACCEPT WITH QUALIFICATION; neither adopted
+as default. See the unchanged [scientific review](docs/experiment-012-review.md).
 Its Contextual/GlobalProgress modes are prospective and opt-in; keep old novelty
 learning separate from observed assessment change. New per-actor cells cap at32,
 use insertion FIFO, and contain no event content. Silence does not reveal hidden
-motives. Preserve useful, misleading, missed and costly choices. Its separate
-`validate012` gate does not extend the protected001–011 contract or global defaults.
+motives. Preserve useful, misleading, missed and costly choices. Progress learning's
+material chain is shared by both new modes; context separation demonstrates allocation,
+not unique material superiority or minimal-state necessity. Preserve repair disclosures
+and scheduled/automatic counts. The shared read-only012 gate is in normal foundation
+validation and standalone `validate012`; never regenerate frozen evidence.
 
 Build progressively toward a persistent fictional world. Experiment 001 is only
 resource interaction, subjective memory, and subsequent behavioral consequences.

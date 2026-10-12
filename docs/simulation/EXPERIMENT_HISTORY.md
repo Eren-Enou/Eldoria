@@ -1,6 +1,6 @@
 # World of Individuals experiment index
 
-Protected through011;012 is reviewed research, outside the foundation. This is a navigation summary, not a replacement for full
+Protected through012; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
 reports or protected contracts. Historical next-experiment recommendations reflect
 their publication date. Update the affected row when an experiment concludes.
 
@@ -17,7 +17,7 @@ their publication date. Update the affected row when an experiment concludes.
 | 009: selective bounded retention | Quality/Salient help narrow retention controls but make mistakes and show no positive sharing-action advantage. Keep FIFO default, cap 32; probes are not executed gains. | [Spec](../../experiments/009/specification.md), [results](../../experiments/009/results.md) |
 | 010: retention survival to executed action | Accepted with qualification: unchanged-path existence differs from opt-in CurrentNeed results. Preserve E_Q, E_A and ambiguous F; no universal retention winner. | [Spec](../../experiments/010/specification.md), [results](../../experiments/010/results.md), [review](../experiment-010-review.md) |
 | 011: inquiry value under competing concerns | **Protected scientific result — StatusValue unadopted; negative conclusion confirmed with qualification.** Cheap queries often fail to change support/status, but partial gains and source/method learning remain real. | [Spec](../../experiments/011/specification.md), [results](../../experiments/011/results.md), [review](../experiment-011-review.md), [contract](../experiment-contract-001-011.md) |
-| 012: contextual learning self-evaluation | **Reviewed ACCEPT WITH QUALIFICATION**: separate observed-change learning alters inquiry and sometimes executed persistence; context prevents some suppression but can miss changing sources and reward misleading changes. No default/adoption or foundation extension. | [Spec](../../experiments/012/specification.md), [results](../../experiments/012/results.md), [scientific review](../experiment-012-review.md), separate `validate012` / independent `review012.py` |
+| 012: contextual learning self-evaluation | **Protected scientific result — Contextual and GlobalProgress retained as opt-in research mechanisms; ACCEPT WITH QUALIFICATION; neither adopted as default.** Progress learning's material chain is shared; context alters allocation/timing and can help or harm. Preserve repair and state-necessity limits. | [Spec](../../experiments/012/specification.md), [results](../../experiments/012/results.md), [scientific review](../experiment-012-review.md), [contract](../experiment-contract-001-012.md); shared `validate012` / independent reconstruction |
 
 ## Foundation and integrity
 
@@ -25,11 +25,12 @@ their publication date. Update the affected row when an experiment concludes.
 |---|---|
 | History reinforcement | Compact audit references and derived indexes preserve behavior; observer storage still grows. [Results](../../reinforcement/results.md), [ownership](../history-audit.md) |
 | Frontier diagnosis | Mixed-channel assessment defect motivated 008; historical candidate analysis is not a current implementation plan. [Report](../../research/next-target/report.md) |
-| Protected 001–011 | [Contract/coverage](../experiment-contract-001-011.md) inherits unchanged historical maps. [Latest integrity audit](../integrity-audit-001-011.md) protects the qualified011 result; scientific acceptance does not adopt StatusValue. |
+| Protected 001–011 | [Contract/coverage](../experiment-contract-001-011.md) inherits unchanged historical maps. [011 integrity audit](../integrity-audit-001-011.md) protects the qualified011 result; scientific acceptance does not adopt StatusValue. |
+| Protected 001–012 | [Contract/coverage](../experiment-contract-001-012.md) inherits every earlier obligation. [Integrity audit](../integrity-audit-001-012.md) protects qualified012 progress/context findings, negative adaptation, repair disclosures and untested simpler alternatives. |
 
 Current source pointers: [architecture map](../architecture-map.md). Run the
 read-only `cargo run --release --locked -j 1 --example validate_contract` for
-protected archive/replay validation, including cache-free 010/011 checks. Writer
+protected archive/replay validation, including cache-free 010–012 checks. Writer
 evaluators are for explicitly authorized experiment evidence generation, not audits.
 Full report links contain causal traces, seed controls, counters, limitations and
 reproduction details; consult those sections before making stronger claims.
