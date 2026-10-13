@@ -211,3 +211,24 @@ development/
     OPEN_QUESTIONS.md
     TERMINOLOGY.md
     TIMELINE.md
+```
+
+# 6. Oceanid Foundations and Story References
+
+The authoritative [Oceanid civilization file](civilizations/OCEANIDS.md) includes
+the foundations reconciled with the supplied 2026-10-07 standalone reference:
+
+- [Oceanus and Life's Touch](civilizations/OCEANIDS.md#123-oceanus-bloom-core-descent-and-stillwater-foundations): ordinary water is distinct from Oceanus; no predetermined biological endpoint.
+- [Bloom](civilizations/OCEANIDS.md#124-the-bloom): environment-shaped viable exploration; Oceanids are not guaranteed and failure is not merely the absence of sapience.
+- [Core and Descent](civilizations/OCEANIDS.md#125-core-and-descent): deep rooting preserves continuity; maturity is not invulnerability and Ascension remains speculation.
+- [Stillwater](civilizations/OCEANIDS.md#127-stillwater): Queen-only witnessing of stored impressions; testimony may be shared, interpretation can be wrong, and no live contact is provided.
+
+[Magic](world/MAGIC.md#19-stillwater),
+[history](world/HISTORY.md#38-stillwater-testimony-and-isolated-oceans) and
+[cosmic geography](world/GEOGRAPHY_AND_COSMOS.md#50-interplanetary-communication)
+use these distinctions. Their earlier live Stillwater Communion proposal is superseded.
+An ancient fragment becoming meaningful during a later local threat remains a story
+possibility; no specific event has been added to the timeline.
+
+Strong directions, speculative institutions and unresolved mechanisms retain their
+status. These fictional foundations do not change simulation behavior or experiment evidence.

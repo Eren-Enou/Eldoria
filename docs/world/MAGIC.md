@@ -426,55 +426,43 @@ Otherwise sufficiently powerful tectonic practitioners could dominate too many a
 
 # 18. Queen-Level Capability
 
-## Tentative
+## Established Role / Physical Mechanisms Open
 
-The Ocean Queen may represent one of the most powerful tectonic practitioners within an Oceanid civilization.
+The Queen has a categorically deeper relationship to Oceanus interacting with the
+planet. Her role includes tending Descent and guarding the Core's continuity;
+it is not simply a ranking among ordinary tectonic practitioners.
 
-This would fit the existing image of the Queen as an extremely important strategic and defensive figure.
+Potential domains include existing geological stresses, hydrothermal circulation,
+hydrated rock, deep reservoirs and magma–water interactions. These do not establish
+effortless plate movement or arbitrary energy creation. Interventions can shift
+danger elsewhere, and devotion does not guarantee correct judgment.
 
-However, the relationship between:
-
-- magical power,
-- political authority,
-- succession,
-- and the Queen's unique role
-
-has not yet been fully established.
-
-Do not assume that the strongest mage automatically becomes Queen.
+Queenhood follows the special biological and metaphysical relationship documented
+in [Oceanids](../civilizations/OCEANIDS.md#126-the-queen-and-the-core), rather than
+automatically belonging to the strongest mage. Exact physical mechanisms remain open.
 
 ---
 
-# 19. Stillwater Communion
+# 19. Stillwater
 
-## Tentative
+## Established Foundation / Mechanism Open
 
-Ocean Queens may possess access to a specialized form of long-distance communication currently referred to as **Stillwater Communion**.
+**Stillwater does not connect Oceans. Water remembers them.** Water preserves or
+passes along stored memories or impressions, which the reigning Queen may witness
+alone in a Queen-only chamber centered on exceptionally still water. No Heir or
+attendant may accompany her.
 
-The current concept involves specially maintained water surfaces or pools through which Queens can communicate across planetary distance.
+The former live Queen-to-Queen **Stillwater Communion** proposal is superseded.
+Stillwater supplies neither live communication nor travel nor guaranteed prophecy.
+An impression may be partial, lack identifiable time or place, and be misunderstood
+even when accurately recalled.
 
-Potential functions include:
+The Queen may share testimony with scholars, historians or defenders. Chamber
+privacy does not require universal secrecy; dangerous information may be preserved
+under restriction. Selection, storage, physical prerequisites and limits across
+time and distance remain open.
 
-- strategic coordination,
-- exchange of defensive knowledge,
-- communication between otherwise isolated Oceans,
-- and personal companionship between rulers who share similar burdens.
-
-Important proposed limitation:
-
-**communication does not imply free physical travel.**
-
-The exact:
-
-- range,
-- cost,
-- reliability,
-- preparation,
-- participants,
-- security,
-- and relationship to ordinary Oceanid water connection
-
-remain unresolved.
+See [Oceanid foundations](../civilizations/OCEANIDS.md#127-stillwater).
 
 ---
 
@@ -1237,7 +1225,7 @@ This is important because unrestricted teleportation would dramatically affect:
 - Ocean defenses,
 - and interplanetary travel.
 
-Stillwater Communion, if retained, should therefore remain communication rather than effortless transport unless explicitly changed.
+Stillwater provides stored impressions and grants no physical transport.
 
 Any future teleportation mechanic requires careful world-level consequences.
 
@@ -1249,7 +1237,8 @@ Any future teleportation mechanic requires careful world-level consequences.
 
 Long-distance magical communication may exist in specialized forms.
 
-The strongest current concept is Queen-to-Queen Stillwater Communion.
+Stillwater is a memory phenomenon, not a long-distance messaging system. No live
+inter-Ocean Queen channel is established by it.
 
 The wider availability of magical communication remains unresolved.
 
@@ -1590,8 +1579,8 @@ The strongest currently established facts are:
 - What does tectonic magic cost?
 - How common is it?
 - How does Queen-level magic differ from ordinary capability?
-- Does Stillwater Communion exist?
-- How does it work?
+- How does Water preserve and select Stillwater impressions?
+- What limits their age, distance and physical presentation?
 
 ## Moon Clan
 

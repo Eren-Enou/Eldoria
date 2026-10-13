@@ -1310,15 +1310,13 @@ The Queen possesses a special relationship with:
 
 Earlier Oceanid development established additional Core mechanics that should be retained.
 
-Those details should be copied from the earlier Oceanid handoff rather than reconstructed from incomplete later references.
+See [section 126](#126-the-queen-and-the-core) for the integrated foundation.
 
 ---
 
-```
-
 # 64. Oceanus, Bloom, Descent, and Core
 
-## Established Earlier Foundations — Full Definitions Pending Integration
+## Established Foundations / Detailed Mechanisms Open
 
 Earlier Oceanid development established concepts known as:
 
@@ -1336,9 +1334,10 @@ Later material establishes that the Queen bears responsibility for:
 - protection of the Core,
 - and preservation of future viable paths.
 
-Until the earlier source is incorporated into this file, do not invent definitions beyond previously established material.
-
-This section should eventually be expanded directly from the earlier handoff.
+The integrated definitions and their status distinctions appear in
+[sections 123–126](#123-oceanus-bloom-core-descent-and-stillwater-foundations).
+The Bloom explores viable possibilities outward; the Core and Descent preserve
+continuity through deep, distributed rooting. Neither requires the Prisoner.
 
 ---
 
@@ -1358,11 +1357,10 @@ Stillwater instead involves **memory playback**.
 
 A Queen-only Stillwater chamber is established in earlier material.
 
-Its precise operation should be transferred from that source rather than re-created here.
+See [section 127](#127-stillwater) for the integrated foundation, testimony rules
+and unresolved mechanism. Stored impressions do not supply their own interpretation.
 
 ---
-
-```
 
 # 66. Communication Between Oceans
 
@@ -2162,26 +2160,25 @@ Current development establishes a shared relationship to Life's inherited develo
 It does not yet establish:
 
 - where the first Oceanids arose,
-- whether different Oceans produced them independently,
-- how Oceanus itself develops,
 - or how much deliberate seeding occurred.
+
+Different Ocean worlds arise independently and can produce related Oceanid lineages
+through Life's inheritance. Oceanus's conceptual development is described in
+[sections 123–125](#123-oceanus-bloom-core-descent-and-stillwater-foundations);
+the exact mechanisms and the history of any first Oceanids remain open.
 
 ---
 
 
-```
-
 # 110. Bloom
 
-## Earlier Established Concept — Integration Pending
+## Strong Direction / Established Conceptual Foundation
 
 Bloom belongs to earlier Oceanus development and remains valid unless contradicted by later canon.
 
-The current source does not restate enough of its mechanics to reconstruct it safely.
-
-Its full definition should be transferred from the previous Oceanid handoff.
-
-Do not invent a replacement merely to complete this file.
+See [section 124](#124-the-bloom). The Touch initiates environment-shaped
+evolutionary and ecological exploration, not a prepared ecosystem. Oceanids are
+not guaranteed, and their absence does not itself constitute failure.
 
 ---
 
@@ -2189,7 +2186,7 @@ Do not invent a replacement merely to complete this file.
 
 # 111. Descent
 
-## Earlier Established Concept — Integration Pending
+## Established Conceptual Model / Physical Details Open
 
 Descent remains important to:
 
@@ -2200,13 +2197,14 @@ Descent remains important to:
 
 The present material establishes that advancing or preserving Descent matters.
 
-The exact process must come from the earlier source.
+See [section 125](#125-core-and-descent). Rooting follows viable water-associated
+geological pathways over geological time; the precise physical process remains open.
 
 ---
 
 # 112. Core
 
-## Earlier Established Concept — Integration Pending
+## Established Conceptual Model / Physical Details Open
 
 The Core is a deep and critically important component of Oceanus.
 
@@ -2220,11 +2218,10 @@ Its:
 - tectonic relationship,
 - and developmental history
 
-should be copied from established earlier lore rather than guessed.
+remain subject to the distinctions in [sections 125–126](#125-core-and-descent).
+The Core is Oceanus's deep anchor, not the Prison or a uniform magical power multiplier.
 
 ---
-
-```
 
 # 113. Material Development Priorities
 
@@ -2598,6 +2595,17 @@ And their Queen should remain one of the setting's most important political cont
 
 This section expands earlier placeholder references to Oceanus, Bloom, Core, Descent, and Stillwater.
 
+**Source reconciliation (2026-10-13):** Checked against the author-supplied
+*OCEANIDS — OCEANUS, BLOOM, CORE & STILLWATER FOUNDATIONS*, compiled 2026-10-07
+from the earlier Oceanid lore handoff. This reference reorganizes earlier foundations;
+it does not replace the later biology, Queen–Heir or Court material in this file.
+
+**Status guide:** Established distinctions remain canon. **Strong Direction** marks
+the intended model with mechanisms open to refinement, rather than a finalized
+physical specification. **Possible / Not Canon** remains speculation; **Open**
+questions remain unanswered. These foundations describe how the world functions,
+not knowledge automatically possessed by every Oceanid civilization.
+
 These systems exist independently of the Prisoner and the extraordinary circumstances of the primary story.
 
 An ordinary Ocean world must be capable of developing these structures without existing merely to serve the central plot.
@@ -2606,7 +2614,7 @@ An ordinary Ocean world must be capable of developing these structures without e
 
 ## 123.1 Water, Life, and Oceanus
 
-### Strongly Established Conceptual Foundation
+### Strong Direction / Principal Distinctions Established
 
 Water alone is not Oceanus.
 
@@ -2630,6 +2638,8 @@ Instead:
 ---
 
 ## 123.2 The Touch / Seed of Life
+
+### Strong Direction / Initiating Criteria Open
 
 A suitable body of Water may receive a **Touch** or **Seed** from Life.
 
@@ -2824,6 +2834,8 @@ Oceanus therefore develops through feedback between:
 
 ## 124.4 Oceanid Inheritance
 
+### Strong Direction / Mechanism and Limits Open
+
 Life's Touch carries an inherited developmental framework capable of allowing recognizable Oceanid lineages to arise independently.
 
 This is not a completed Oceanid blueprint.
@@ -2849,6 +2861,8 @@ Oceanid emergence is not guaranteed.
 ---
 
 ## 124.5 Failed Blooms
+
+### Strong Direction / Detailed Failure Mechanisms Open
 
 A Bloom can fail.
 
@@ -3019,6 +3033,20 @@ A mature Oceanus may still suffer catastrophic surface losses.
 Its deeper systems may allow life to persist and later recover.
 
 The Bloom is therefore the beginning of Oceanus's development, not its completion.
+
+---
+
+## 125.7 Possible Further Maturity or Ascension
+
+### Possible / Not Canon
+
+A greater metaphysical relationship with Water after planetary maturity was
+considered provisionally as **Ascension**. The phrase *Life begins the Ocean, but
+Water ultimately receives it* is proposed, not canon.
+
+No agreed mechanism establishes automatic transcendence, merging of Oceans,
+disappearance or direct communication. The maturity threshold and its ultimate
+consequences remain open.
 
 ---
 
@@ -3255,6 +3283,9 @@ The Queen may share remembered information with:
 
 A Queen may also keep dangerous information restricted.
 
+A restricted archive passed from Queen to Queen was discussed as a possible
+institutional implementation. It is not an established universal office or technology.
+
 The earlier preferred principle is:
 
 > preserve dangerous knowledge under restriction rather than destroy it merely because it is currently unsafe to share.
@@ -3316,8 +3347,12 @@ The precise wider meaning and institutional expression of this phrase should rem
 
 # 128. Oceanus Development Summary
 
+The sequence below describes biological development. Stillwater is a separate
+Water-memory phenomenon, not a stage in that lifecycle.
+
 The current developmental model can be summarized as:
 
+```text
 Suitable Water and planetary conditions
             |
       Touch / Seed of Life
@@ -3341,11 +3376,14 @@ Suitable Water and planetary conditions
        long-term Oceanus
             |
       possible maturity
+```
 
 
 
-129. Important Constraints Added by These Foundations
+# 129. Important Constraints Added by These Foundations
+
 The following should now be preserved when developing Oceanids:
+
 1. Ordinary water is not automatically Oceanus.
 2. The Touch of Life opens possibility rather than installing predetermined organisms.
 3. The Bloom explores viable biological futures.

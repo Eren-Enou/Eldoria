@@ -865,25 +865,27 @@ The history of the monarchy, succession, and constitutional authority remains un
 
 ---
 
-# 38. Inter-Ocean Queen Communication
+# 38. Stillwater Testimony and Isolated Oceans
 
-## Tentative
+## Established Foundation / Specific Historical Events Open
 
-Ocean Queens from different worlds may possess specialized long-distance communication.
+The former live **Stillwater Communion** proposal is superseded. Independent Ocean
+worlds can accumulate testimony about other Queens or Oceans through Water's stored
+memories without ever contacting those civilizations.
 
-The current working concept is:
+Only the reigning Queen enters the chamber, but she may share what she witnessed.
+Its origin, date and meaning may remain unknown. Accurate testimony does not ensure
+accurate interpretation, and a remembered Queen cannot answer the witness.
 
-**Stillwater Communion.**
+An unexplained ancient image of a vessel could become useful when a similar object
+later appears in the local sky. This is a story possibility, not an established
+siege, prediction or specific historical encounter. Restricted preservation of
+dangerous knowledge is favored; a Queen-to-Queen restricted archive remains a
+possible institution, not a universal established system.
 
-Such communication could historically enable:
-
-- shared defensive doctrine,
-- exchange of military innovations,
-- awareness of threats,
-- continuity between isolated Ocean worlds,
-- and personal relationships between Queens.
-
-The exact age and origin of this system remain unresolved.
+The age of Stillwater traditions and the existence of any separate inter-Ocean
+communication system remain open. See
+[Oceanid foundations](../civilizations/OCEANIDS.md#127-stillwater).
 
 ---
 

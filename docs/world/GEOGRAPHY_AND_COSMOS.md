@@ -1080,7 +1080,10 @@ The project should choose travel mechanics only after considering their social c
 
 Communication between distant worlds may not be equivalent to travel.
 
-Ocean Queens may possess specialized long-distance communication through the tentative Stillwater Communion.
+Stillwater may provide a Queen with stored impressions of other Oceans, without
+contacting them. Its former live-communication proposal is superseded; it does not
+establish an interplanetary network or a travel route. See
+[Oceanid foundations](../civilizations/OCEANIDS.md#127-stillwater).
 
 Other civilizations may possess different systems.
 
@@ -1934,7 +1937,7 @@ These anchors are enough to begin reasoning about the world but not enough to cr
 
 - How quickly can information move?
 - Who controls communication infrastructure?
-- Is Stillwater Communion real?
+- Can separate Oceans communicate at all, and by what means independent of Stillwater?
 - What communication methods does the Moon Clan use?
 - Can ordinary families communicate across worlds?
 
