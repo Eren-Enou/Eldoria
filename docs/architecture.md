@@ -668,7 +668,7 @@ reconstruction now share the normal protected001–012 gate. See the012
 [scientific review](experiment-012-review.md), [contract](experiment-contract-001-012.md)
 and [integrity audit](integrity-audit-001-012.md). No default adoption or013.
 
-# Experiment 013: transient reconsideration (exploratory)
+# Experiment 013: transient reconsideration (reviewed, unprotected)
 
 `experiment013` uses the existing self-evaluation policy setter after prospective
 Contextual enablement. Pulse restores a prior's candidate benefit for learned poor
@@ -685,5 +685,10 @@ with the chosen prospective scorer and unchanged012 update arithmetic, rather th
 rewriting old validators. Independent Python verifies actual scores, sources and
 resources; standalone validate013 stays outside the protected001–012 foundation.
 See [specification](../experiments/013/specification.md) and
-[results](../experiments/013/results.md) for earlier executed consequences, wasted
-probing, seed/trust effects and growing audit costs. No default adoption or014.
+[original results](../experiments/013/results.md) and
+[scientific review](experiment-013-review.md) for earlier executed consequences,
+wasted probing, seed/trust effects and growing audit costs. The review corrects
+longitudinal C64 versus B64 and distinguishes retained memories outside the last-four
+partner policy window from eviction. ACCEPT WITH QUALIFICATION does not establish
+period robustness, effort justification, default adoption or foundation protection.
+No014.

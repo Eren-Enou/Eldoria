@@ -1,6 +1,6 @@
 # Architecture map
 
-Navigation summary, protected through012 with exploratory013. Source and mode-specific
+Navigation summary, protected through012 with reviewed, unprotected013. Source and mode-specific
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
@@ -32,7 +32,7 @@ rows when ownership, entry points or mode boundaries change.
 | CurrentNeed inquiry projection (experimental) | [attention.rs](../src/attention.rs), [adapter](../src/simulation/attention.rs) | `tests/experiment010.rs` |
 | StatusValue inquiry prototype (protected scientific result; unadopted with qualification) | [inquiry_value.rs](../src/inquiry_value.rs), [adapter](../src/simulation/inquiry_value.rs) | `tests/experiment011.rs`, [scientific review](experiment-011-review.md), `examples/support/review011.py` |
 | Contextual observed-change learning (012 protected with qualification, opt-in research) | [self_evaluation.rs](../src/self_evaluation.rs), [adapter](../src/simulation/self_evaluation.rs), [fixture](../src/experiment012.rs) | `tests/experiment012.rs`, independent `review012.py`, `review012_findings.py`, shared foundation/standalone `validate012`; [scientific review](experiment-012-review.md), [contract](experiment-contract-001-012.md) |
-| Transient prior reconsideration (013 exploratory) | [experiment013.rs](../src/experiment013.rs), existing self-evaluation policy setter | `tests/experiment013.rs`, `review013.py`, separate `validate013`, `measure013`, diagnostic `inspect013`; outside foundation |
+| Transient prior reconsideration (013 reviewed with qualification, unprotected) | [experiment013.rs](../src/experiment013.rs), existing self-evaluation policy setter | `tests/experiment013.rs`, `review013.py`, independent `review013_findings.py`, separate `validate013`, `measure013`, diagnostic `inspect013`; [scientific review](experiment-013-review.md); outside foundation |
 | Compact query references, local contexts, export reconstruction | [audit.rs](../src/audit.rs) | `tests/history_foundation.rs`, `examples/validate_history.rs` |
 | Private derived history indexes, trust replay | [history.rs](../src/history.rs), `simulation.rs` | Foundation, invariants, `tests/contract_001_008.rs` |
 | CLI and reproducible experiment fixtures | [main.rs](../src/main.rs), `src/experiment.rs`, `src/experiment002.rs` … `src/experiment013.rs` | Corresponding experiment tests/evaluators |

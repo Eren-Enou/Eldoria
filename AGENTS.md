@@ -79,12 +79,16 @@ not unique material superiority or minimal-state necessity. Preserve repair disc
 and scheduled/automatic counts. The shared read-only012 gate is in normal foundation
 validation and standalone `validate012`; never regenerate frozen evidence.
 
-Experiment 013 remains exploratory pending separate review. Pulse/Ungated are opt-in
+Experiment 013 is reviewed ACCEPT WITH QUALIFICATION, pending separate protection;
+see [scientific review](docs/experiment-013-review.md). Pulse/Ungated are opt-in
 transient prior reconsideration over existing own concern age and failed006 attempts;
 they preserve012 updates and add no persistent cognition. Preserve earlier discovery,
 wasted probing, public-offer crowding and seed-dependent legacy trust effects. Do not
 infer global superiority or promote either mode. Keep013 outside the protected001–012
 contract; its standalone replay/independent verification must retain all negative evidence.
+Preserve the review corrections: high-support longitudinal C64 is not B64; late
+episodic valence0 reflects the last-four partner-memory window, not episode eviction.
+The gate's schedule-phase robustness and effort justification remain unestablished.
 
 Build progressively toward a persistent fictional world. Experiment 001 is only
 resource interaction, subjective memory, and subsequent behavioral consequences.
