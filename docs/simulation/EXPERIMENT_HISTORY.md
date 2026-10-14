@@ -55,11 +55,11 @@ read-only `validate014` / independent `review014.py`. No015.
 
 ## Experiment015: self-initiated encounters and mutual availability
 
-Completed research: **ACCEPT WITH QUALIFICATION**, pending independent review;
+Independently reviewed: **ACCEPT WITH QUALIFICATION**; [review](../experiment-015-review.md);
 outside protected001–014. Actors choose contacts/consent, with genuine execution,
 persistent distribution and legitimate failures. Simple controls share benefits;
 Continue score scales, conservative caps and ordering limit comparisons. Repeated
 decline and contact starvation remain. See [specification](../../experiments/015/specification.md),
 [results](../../experiments/015/results.md), `src/encounters.rs`,
 `src/simulation/encounters.rs`, `tests/experiment015.rs`, separate `validate015` and
-independent `review015.py`. No default adoption or015 protection; no016.
+independent `review015.py` and second `review015_findings.py`. No default adoption or015 protection; no016.
