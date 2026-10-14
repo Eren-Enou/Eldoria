@@ -1,6 +1,6 @@
 # World of Individuals experiment index
 
-Protected through012; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
+Protected through013; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
 reports or protected contracts. Historical next-experiment recommendations reflect
 their publication date. Update the affected row when an experiment concludes.
 
@@ -19,7 +19,7 @@ their publication date. Update the affected row when an experiment concludes.
 | 011: inquiry value under competing concerns | **Protected scientific result — StatusValue unadopted; negative conclusion confirmed with qualification.** Cheap queries often fail to change support/status, but partial gains and source/method learning remain real. | [Spec](../../experiments/011/specification.md), [results](../../experiments/011/results.md), [review](../experiment-011-review.md), [contract](../experiment-contract-001-011.md) |
 | 012: contextual learning self-evaluation | **Protected scientific result — Contextual and GlobalProgress retained as opt-in research mechanisms; ACCEPT WITH QUALIFICATION; neither adopted as default.** Progress learning's material chain is shared; context alters allocation/timing and can help or harm. Preserve repair and state-necessity limits. | [Spec](../../experiments/012/specification.md), [results](../../experiments/012/results.md), [scientific review](../experiment-012-review.md), [contract](../experiment-contract-001-012.md); shared `validate012` / independent reconstruction |
 
-| 013: adaptive expectations in a changing world | **Reviewed ACCEPT WITH QUALIFICATION; unprotected research.** Earlier local discovery can persist materially; Pulse restrains Ungated/Evidence crowding but incurs substantial no-change effort. Period/schedule robustness and adoption are unestablished. Review corrects C64 (not B64) and retained refusal memories outside the last-four policy window. No default or foundation extension. | [Spec](../../experiments/013/specification.md), [original results](../../experiments/013/results.md), [scientific review](../experiment-013-review.md); separate013 replay and both independent readers. No014. |
+| 013: adaptive expectations in a changing world | **Protected scientific result — ACCEPT WITH QUALIFICATION; opt-in research.** Earlier local discovery can persist materially; Pulse restrains Ungated/Evidence crowding but incurs substantial no-change effort. Period/schedule robustness and adoption are unestablished. Review corrects C64 (not B64) and retained refusal memories outside the last-four policy window. No default adoption. | [Spec](../../experiments/013/specification.md), [original results](../../experiments/013/results.md), [scientific review](../experiment-013-review.md), [contract](../experiment-contract-001-013.md), [integrity audit](../integrity-audit-001-013.md); shared013 replay and both independent readers. No014. |
 
 ## Foundation and integrity
 
@@ -29,10 +29,15 @@ their publication date. Update the affected row when an experiment concludes.
 | Frontier diagnosis | Mixed-channel assessment defect motivated 008; historical candidate analysis is not a current implementation plan. [Report](../../research/next-target/report.md) |
 | Protected 001–011 | [Contract/coverage](../experiment-contract-001-011.md) inherits unchanged historical maps. [011 integrity audit](../integrity-audit-001-011.md) protects the qualified011 result; scientific acceptance does not adopt StatusValue. |
 | Protected 001–012 | [Contract/coverage](../experiment-contract-001-012.md) inherits every earlier obligation. [Integrity audit](../integrity-audit-001-012.md) protects qualified012 progress/context findings, negative adaptation, repair disclosures and untested simpler alternatives. |
+| Protected 001–013 | [Contract/coverage](../experiment-contract-001-013.md) protects qualified transient reconsideration, costly/mistaken exploration and both013 review corrections. [Integrity audit](../integrity-audit-001-013.md) records151 evidence entries and the shared read-only gate. |
 
 Current source pointers: [architecture map](../architecture-map.md). Run the
 read-only `cargo run --release --locked -j 1 --example validate_contract` for
-protected archive/replay validation, including cache-free 010–012 checks. Writer
+protected archive/replay validation, including cache-free 010–013 checks. Writer
 evaluators are for explicitly authorized experiment evidence generation, not audits.
 Full report links contain causal traces, seed controls, counters, limitations and
 reproduction details; consult those sections before making stronger claims.
+
+Latest protection: [001–013 integrity audit](../integrity-audit-001-013.md).
+[Research handoff](../research-handoff-001-013.md) recommends a narrow scarce-activity
+question; it does not start014.

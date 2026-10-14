@@ -33,7 +33,8 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-012.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-013.md`.
+The historical `docs/experiment-contract-001-012.md` remains authoritative for 001–012.
 The historical `docs/experiment-contract-001-011.md` remains authoritative for 001–011.
 The historical `docs/experiment-contract-001-010.md` remains authoritative for 001–010.
 The historical `docs/experiment-contract-001-009.md` remains authoritative for 001–009.
@@ -79,13 +80,14 @@ not unique material superiority or minimal-state necessity. Preserve repair disc
 and scheduled/automatic counts. The shared read-only012 gate is in normal foundation
 validation and standalone `validate012`; never regenerate frozen evidence.
 
-Experiment 013 is reviewed ACCEPT WITH QUALIFICATION, pending separate protection;
+Experiment 013 is a protected scientific result — ACCEPT WITH QUALIFICATION;
 see [scientific review](docs/experiment-013-review.md). Pulse/Ungated are opt-in
 transient prior reconsideration over existing own concern age and failed006 attempts;
 they preserve012 updates and add no persistent cognition. Preserve earlier discovery,
 wasted probing, public-offer crowding and seed-dependent legacy trust effects. Do not
-infer global superiority or promote either mode. Keep013 outside the protected001–012
-contract; its standalone replay/independent verification must retain all negative evidence.
+infer global superiority or promote either mode. Shared013 validation is in the normal
+foundation gate and standalone validate013, including both independent readers.
+Never regenerate frozen evidence; preserve all negative evidence and the retained preview.
 Preserve the review corrections: high-support longitudinal C64 is not B64; late
 episodic valence0 reflects the last-four partner-memory window, not episode eviction.
 The gate's schedule-phase robustness and effort justification remain unestablished.

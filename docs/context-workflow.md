@@ -31,14 +31,19 @@ scientifically accepted and protected while its proposed mechanism is rejected.
 Protection preserves accepted findings and qualifications, not a mandate to adopt
 every tested mechanism.
 
-Experiments 001–012 are protected by the
-[foundation contract](experiment-contract-001-012.md) and its inherited historical
+Experiments 001–013 are protected by the
+[foundation contract](experiment-contract-001-013.md) and its inherited historical
 maps. Experiment 011's [scientific review](experiment-011-review.md) is confirmed with
 qualification: its evidence is protected, while StatusValue remains unadopted.
 Experiment012's [scientific review](experiment-012-review.md) establishes ACCEPT
 WITH QUALIFICATION; Contextual and GlobalProgress remain opt-in research mechanisms,
 neither adopted as default. Its progress and context findings remain distinct.
-The [integrity report](integrity-audit-001-012.md) records the latest protection pass.
+Experiment013's unchanged [scientific review](experiment-013-review.md) establishes
+ACCEPT WITH QUALIFICATION; Pulse/Ungated remain optional research, not defaults.
+Preserve C64 versus B64 and retained episodes outside the last-four partner scoring
+window. Its shared read-only gate invokes both independent readers.
+The [integrity report](integrity-audit-001-013.md) records the latest protection pass;
+the [research handoff](research-handoff-001-013.md) identifies questions without starting014.
 Reverify source, contracts and reviews before
 updating status, and do not change unrelated conclusions.
 

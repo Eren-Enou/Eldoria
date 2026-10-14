@@ -54,11 +54,12 @@ encounters produce agreement, refusal, and withdrawal. See
 
 ## Architecture and verification
 
-The [001–012 contract and coverage map](docs/experiment-contract-001-012.md)
+The [001–013 contract and coverage map](docs/experiment-contract-001-013.md)
 documents mode-specific locality, retention, persistent consequences, exact bounds
 and regression coverage, carrying forward the unchanged historical maps and 010's
 qualified scientific acceptance, 011's qualified negative adoption result and012's
-qualified experiential-learning findings with both new modes retained as research.
+qualified experiential-learning findings with both new modes retained as research,
+and013's qualified transient reconsideration with both review corrections protected.
 CurrentNeed remains experimental and opt-in; StatusValue remains unadopted.
 Verify the protected foundation without writing archives (Python standard library
 is required for direct gzip/SHA-256 verification):
@@ -68,6 +69,8 @@ The independent `validate010` example verifies 010 directly and reconstructs the
 accepted unchanged-path chain and separate E_A/F classes without generated caches.
 `validate011` protects all three011 archives, exact replay and reviewed negative/partial
 findings without generated caches; accepting scientific evidence does not adopt its heuristic.
+`validate012` and `validate013` share their respective foundation helpers;013 also
+enforces the second independent reader,151-file inventory and corrected interpretation.
 
 One cohesive Agent ECS component, resources for ordered scenes/history/clock, and
 one single-threaded scheduled resolver keep this first experiment small. A pure
@@ -303,13 +306,20 @@ Original001–012 evidence and all defaults remain unchanged. The012 protection 
 ## Experiment 013: adaptive expectations in a changing world
 
 [Specification](experiments/013/specification.md) and [results](experiments/013/results.md)
-report exploratory ACCEPT WITH QUALIFICATION. Pulse uses existing local concern age
+retain original evidence; the [scientific review](docs/experiment-013-review.md)
+establishes **Protected scientific result — ACCEPT WITH QUALIFICATION** through the
+[001–013 contract](docs/experiment-contract-001-013.md). Pulse uses existing local concern age
 and failed inquiry estimates to reconsider a prior without new persistent cognition.
 It can discover changed sources earlier and alter executed history, but pays for many
 failed probes; Ungated reconsideration can crowd out useful Evidence. Longer histories
-also expose preserved legacy trust effects. Neither mode is a default; foundation stays001–012.
+also expose preserved legacy trust effects. Neither mode is a default. The review
+corrects C64 (not B64) and distinguishes the last-four partner scoring window from
+memory eviction. Period robustness and general exploration value remain unresolved.
 
 Run `cargo run --release --locked -j 1 --example evaluate013 -- --output target/experiment013-final`.
-Read-only `validate013` compares all archives/replays and independent causal reconstruction;
-`review013.py --self-test` checks archived local decisions, source transitions and resources.
+The normal foundation gate and read-only `validate013` share151-entry protection,
+all original archives/replays and both independent readers: `review013.py --self-test`
+and `review013_findings.py`. Neither requires a prepared cache or writes evidence.
 `measure013` separates fixed-input policy cost from history-length work. No014 was started.
+See the [integrity audit](docs/integrity-audit-001-013.md) and
+[next-stage research handoff](docs/research-handoff-001-013.md).
