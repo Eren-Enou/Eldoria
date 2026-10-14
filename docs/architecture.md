@@ -707,3 +707,22 @@ observer-only. `experiment014.rs` supplies matched laboratory opportunities, car
 state, explicit hunger interventions and consumption. Its research policies remain opt-in; the
 [001–014 contract](experiment-contract-001-014.md) protects reviewed semantics; see the [qualified results](../experiments/014/results.md) for
 conservative-bound and environmental-autonomy limits.
+
+## Opt-in Experiment015 invitation waves
+
+`encounters.rs` separates pure initiation and recipient choice from objective greedy
+matching; `simulation/encounters.rs` captures all proposals at one public observation,
+charges two handshake phases, checks provisional consent/availability and invokes old
+resource/provenance resolution. Existing014 code is untouched. An ECS environment
+stores only the horizon and three current commitments; pending requests cap at3.
+All executed intervals are serial with three actors, so disjoint pairs cannot exist.
+Old cognition persists with its established caps; no new invitation-learning map.
+
+`experiment015.rs` supplies co-presence, initial conditions and hunger interventions,
+not chosen pairs. Its completed [qualified research result](../experiments/015/results.md)
+includes real redistribution, failed invitations, redundant/wrong information and
+ordering-sensitive starvation. NoHistory masks only resource initiation and its
+score still affects Continue; this is not full memory loss. Independent `review015.py`
+reconstructs all previews, consent, matching, actual time/food and old learning.
+Standalone `validate015` is cache-free and separate from protected001–014. New raw
+observer captures are costly; serialized size is not live memory. No015 adoption or016.

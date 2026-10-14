@@ -145,3 +145,8 @@ Experiment014 is protected with qualification; [review](experiment-014-review.md
 Its actual-time capability and negative outcomes are distinct from unadopted activity
 heuristics. Standalone014 and the foundation share both independent readers. See
 [handoff](research-handoff-001-014.md) before proposing encounter initiation.
+
+Experiment015 is completed qualified research, not protected: see its
+[results](../experiments/015/results.md). Keep individual initiation, provisional
+consent, actual execution and material consequence distinct. Its independent reader
+and standalone gate remain separate from the001–014 foundation. No default adoption.

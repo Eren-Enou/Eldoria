@@ -21,6 +21,7 @@ use std::collections::{BTreeMap, BTreeSet};
 mod activity;
 mod adaptive;
 mod attention;
+mod encounters;
 mod inquiry_value;
 mod provenance;
 mod self_evaluation;

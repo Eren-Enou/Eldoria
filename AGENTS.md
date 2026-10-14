@@ -127,6 +127,15 @@ all168 frozen files, including the disclosed post-evaluation13-tick diagnostic.
 Experiment015 requires separate preregistration after validated foundation protection;
 no015 foundation adoption/protection or016 without a later request.
 
+Experiment015 is completed research, ACCEPT WITH QUALIFICATION pending independent
+review; see `experiments/015/results.md`. Its three-actor invitation waves preserve
+own-only proposals, independent provisional consent, declared ID arbitration, actual
+time and old resource/query resolution. Keep rejected/redundant/misleading contacts,
+starvation and ordering reversals. Simple scores also affect Continue; NoHistory
+is an asymmetric input-use ablation, not erased cognition. Counts are not welfare.
+The separate cache-free `validate015` checks exact replay and independent reconstruction;
+it does not extend protected001–014. No default adoption,015 protection or016.
+
 When a requested task is complete:
 
 1. Run all required formatting, Clippy, tests, deterministic replay checks, and relevant evaluators/benchmarks.

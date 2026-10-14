@@ -52,3 +52,14 @@ the foundation is001–014. See [specification](../../experiments/014/specificat
 [results](../../experiments/014/results.md), `src/activity.rs`,
 `src/simulation/activity.rs`, `src/experiment014.rs`, `tests/experiment014.rs` and
 read-only `validate014` / independent `review014.py`. No015.
+
+## Experiment015: self-initiated encounters and mutual availability
+
+Completed research: **ACCEPT WITH QUALIFICATION**, pending independent review;
+outside protected001–014. Actors choose contacts/consent, with genuine execution,
+persistent distribution and legitimate failures. Simple controls share benefits;
+Continue score scales, conservative caps and ordering limit comparisons. Repeated
+decline and contact starvation remain. See [specification](../../experiments/015/specification.md),
+[results](../../experiments/015/results.md), `src/encounters.rs`,
+`src/simulation/encounters.rs`, `tests/experiment015.rs`, separate `validate015` and
+independent `review015.py`. No default adoption or015 protection; no016.

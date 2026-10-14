@@ -340,3 +340,19 @@ including five separately labeled post-evaluation budget diagnostics. `measure01
 separates fixed-input cost from full-suite timings. No default changes. Normal foundation validation includes014 and both readers;
 [168-entry integrity audit](docs/integrity-audit-001-014.md). A separate
 [handoff](docs/research-handoff-001-014.md) identifies the encounter-initiation boundary.
+
+## Experiment015: self-initiated encounters and mutual availability
+
+[Specification](experiments/015/specification.md) and [results](experiments/015/results.md)
+report **ACCEPT WITH QUALIFICATION**, pending independent review. Three stationary
+individuals independently invite, accept, decline or continue their own plan; shared
+time and declared arbitration determine which existing interactions execute.
+History changes contacts and persistent distribution, but simple policies share
+benefits; repeated refusal, starvation and strong ordering effects remain. Contact
+and transfer counts are not welfare. No global default changes or015 protection.
+
+Run `cargo run --release --locked -j 1 --example evaluate015 -- --output target/experiment015-final`.
+Read-only `validate015` replays780 worlds and independently checks195 histories,
+locality, matching, accounting and all168 inherited hashes. Its normal foundation
+remains001–014. `review015.py --self-test` reconstructs evidence without a prepared
+cache; `measure015` separates fixed-input timing from full histories. No016.
