@@ -54,7 +54,7 @@ encounters produce agreement, refusal, and withdrawal. See
 
 ## Architecture and verification
 
-The [001–014 contract and coverage map](docs/experiment-contract-001-014.md)
+The [001–015 contract and coverage map](docs/experiment-contract-001-015.md)
 documents mode-specific locality, retention, persistent consequences, exact bounds
 and regression coverage, carrying forward the unchanged historical maps and 010's
 qualified scientific acceptance, 011's qualified negative adoption result and012's
@@ -349,10 +349,12 @@ individuals independently invite, accept, decline or continue their own plan; sh
 time and declared arbitration determine which existing interactions execute.
 History changes contacts and persistent distribution, but simple policies share
 benefits; repeated refusal, starvation and strong ordering effects remain. Contact
-and transfer counts are not welfare. No global default changes or015 protection.
+and transfer counts are not welfare. No global default changes. [Independent review](docs/experiment-015-review.md) accepts
+with qualification; [001–015 contract](docs/experiment-contract-001-015.md) protects the findings.
 
 Run `cargo run --release --locked -j 1 --example evaluate015 -- --output target/experiment015-final`.
 Read-only `validate015` replays780 worlds and independently checks195 histories,
-locality, matching, accounting and all168 inherited hashes. Its normal foundation
-remains001–014. `review015.py --self-test` reconstructs evidence without a prepared
-cache; `measure015` separates fixed-input timing from full histories. No016.
+locality, matching, accounting and all186 protected hashes. The normal foundation
+includes015 and both independent readers; [integrity audit](docs/integrity-audit-001-015.md). `review015.py --self-test` reconstructs evidence without a prepared
+cache; `measure015` separates fixed-input timing from full histories.
+[Handoff](docs/research-handoff-001-015.md) identifies failed-contact learning as a separate016 investigation.

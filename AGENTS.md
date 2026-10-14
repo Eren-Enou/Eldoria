@@ -33,7 +33,8 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-014.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-015.md`.
+The historical `docs/experiment-contract-001-014.md` remains authoritative for001–014.
 The historical `docs/experiment-contract-001-013.md` remains authoritative for001–013.
 The historical `docs/experiment-contract-001-012.md` remains authoritative for 001–012.
 The historical `docs/experiment-contract-001-011.md` remains authoritative for 001–011.
@@ -124,17 +125,15 @@ LocalPulse default adoption. Conservative resource admission is a bound, not act
 expected duration; rejected recipient outcomes remain unknown. The normal foundation
 gate and standalone014 share exact replay and both independent readers. Preserve
 all168 frozen files, including the disclosed post-evaluation13-tick diagnostic.
-Experiment015 requires separate preregistration after validated foundation protection;
-no015 foundation adoption/protection or016 without a later request.
+Experiment015 protection follows its separate accepted review;016 follows a new gated request.
 
-Experiment015 is completed research, ACCEPT WITH QUALIFICATION pending independent
-review; see `experiments/015/results.md`. Its three-actor invitation waves preserve
-own-only proposals, independent provisional consent, declared ID arbitration, actual
-time and old resource/query resolution. Keep rejected/redundant/misleading contacts,
-starvation and ordering reversals. Simple scores also affect Continue; NoHistory
-is an asymmetric input-use ablation, not erased cognition. Counts are not welfare.
-The separate cache-free `validate015` checks exact replay and independent reconstruction;
-it does not extend protected001–014. No default adoption,015 protection or016.
+Experiment015 is protected ACCEPT WITH QUALIFICATION; see `docs/experiment-015-review.md`
+and the001–015 contract. Preserve independent proposals/recipient consent, provisional
+acceptance, exact ordering/time, executed resource/query consequences and missing
+invitation-feedback cognition. Simple/History/NoHistory remain research; Continue scale
+coupling prevents isolated superiority claims. Order is legal/reproducible, not fair.
+Keep all186 frozen artifacts and both readers in shared/standalone015 validation.
+016 requires separate preregistration after validated protection; no default adoption.
 
 When a requested task is complete:
 

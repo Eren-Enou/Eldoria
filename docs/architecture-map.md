@@ -1,12 +1,12 @@
 # Architecture map
 
-Navigation summary, protected through014. Source and mode-specific
+Navigation summary, protected through015. Source and mode-specific
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
 ## Start here
 
-- Rules: [AGENTS.md](../AGENTS.md); protected [001–014 contract](experiment-contract-001-014.md),
+- Rules: [AGENTS.md](../AGENTS.md); protected [001–015 contract](experiment-contract-001-015.md),
   which links historical contracts. Read the affected mode's clauses and coverage.
 - Findings: [experiment index](simulation/EXPERIMENT_HISTORY.md).
 - Working procedure: [context workflow](context-workflow.md).
@@ -35,10 +35,10 @@ rows when ownership, entry points or mode boundaries change.
 | Transient prior reconsideration (013 protected with qualification, opt-in research) | [experiment013.rs](../src/experiment013.rs), existing self-evaluation policy setter | `tests/experiment013.rs`, both independent readers, shared `contract013.rs` / standalone `validate013`, `measure013`, diagnostic `inspect013`; [scientific review](experiment-013-review.md), [contract](experiment-contract-001-013.md) |
 | Compact query references, local contexts, export reconstruction | [audit.rs](../src/audit.rs) | `tests/history_foundation.rs`, `examples/validate_history.rs` |
 | Scarce-time activity allocation (014 protected with qualification, opt-in) | [activity.rs](../src/activity.rs), [clock/resolver adapter](../src/simulation/activity.rs), [fixture](../src/experiment014.rs) | `tests/experiment014.rs`, `review014.py`, read-only `validate014`, `measure014`, separate `inspect014` diagnostic; [results](../experiments/014/results.md), [scientific review](experiment-014-review.md), second `review014_findings.py` |
-| Independent invitation waves (015 reviewed with qualification, not yet protected) | [encounters.rs](../src/encounters.rs), [isolated adapter](../src/simulation/encounters.rs), [fixture](../src/experiment015.rs) | `tests/experiment015.rs`, separate `validate015` / `review015.py`, second `review015_findings.py`, `measure015`; [review](experiment-015-review.md); [results](../experiments/015/results.md); no foundation extension |
+| Independent invitation waves (015 protected with qualification) | [encounters.rs](../src/encounters.rs), [isolated adapter](../src/simulation/encounters.rs), [fixture](../src/experiment015.rs) | `tests/experiment015.rs`, shared/standalone `validate015` / `review015.py`, second `review015_findings.py`, `measure015`; [review](experiment-015-review.md); [results](../experiments/015/results.md); protected by [001–015](experiment-contract-001-015.md) |
 | Private derived history indexes, trust replay | [history.rs](../src/history.rs), `simulation.rs` | Foundation, invariants, `tests/contract_001_008.rs` |
 | CLI and reproducible experiment fixtures | [main.rs](../src/main.rs), `src/experiment.rs`, `src/experiment002.rs` … `src/experiment015.rs` | Corresponding experiment tests/evaluators |
-| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), shared `examples/support/contract009.rs` … `contract014.rs`, independent010–014 readers | Cache-free010–014 validation; shared standalone gates; historical summaries unchanged; [latest integrity audit](integrity-audit-001-014.md) |
+| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), shared `examples/support/contract009.rs` … `contract015.rs`, independent010–015 readers | Cache-free010–015 validation; shared standalone gates; historical summaries unchanged; [latest integrity audit](integrity-audit-001-015.md) |
 | Throughput workload / history measurements | [throughput.rs](../benches/throughput.rs), `examples/measure_history.rs` | Separate wall-clock output; historical reports unchanged |
 
 Use `rg -n 'symbol' path/to/file.rs` to locate implementation before reading a

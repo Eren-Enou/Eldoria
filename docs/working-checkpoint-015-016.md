@@ -1,12 +1,14 @@
 #015 review / protection /016 checkpoint
 
-Objective: ordered A independent015 review, B conditional protection, C016 failed-contact learning.
-Baseline/HEAD main=`68c34136f67ad69834cdda69a4dc7143a364ba33`, origin/main matches; initially clean.
-Stage A: source/archives reviewed; second findings reader added; verdict ACCEPT WITH QUALIFICATION.
-Decisive caveats: Continue score coupling, provisional acceptance, ID order, absent contact feedback.
-No runtime changes;18 original015 raw hashes guarded at review start,168 protected inherited entries.
-fmt/Clippy/165 tests,foundation001–014,standalone009–014, isolated015 evaluator and both readers passed. Standalone015 also passed; all Stage A gates passed; logs `%TEMP%/eldoria-015-review-016/A-*.log`.
-Files: review015_findings.py, experiment-015-review.md, affected map/index, this checkpoint.
-Next: commit and push A, then protect accepted015 findings in B; no016 before Gate B.
-B must protect18 original015 files plus168 inherited; do not assume count without actual inspection.
-No016 implementation/preregistration yet. Do not begin017. No defaults changed.
+Objective: A independent015 review, B conditional protection, C016 failed-contact learning.
+Stage A COMPLETE: main/origin `16bf660de59405e7a9f9d381b4999d4c317af8b4`, pushed.
+Reviewed015 original68c3413: ACCEPT WITH QUALIFICATION.165tests/allrequiredgates,
+isolated780world evaluator exact outputs,168old+18raw015hashes,bothreaders passed.
+Stage B VALIDATED, ready to commit:186 manifest(168unchanged+18original015),newcontract/audit/handoff,
+sharedcontract015 helper/standalonewrapper/foundationinvocation,navigation updates.
+No runtime/fixture/default changes. Both015 readers included; six corruptionchecks.
+Logs `%TEMP%/eldoria-015-review-016/B-*.log`; fmt/Clippy/165tests/foundation and standalone009–015 all exit0.
+Both readers deny writes/cache reads; emptycwd new015 exit0/files0;186hashes/18raw015/source/link/diff checks pass.
+Full186 raw-byte guard saved in temp for Stage C.
+Next: commit/push B, then016 preregistration/implementation.
+Only then preregister016. No016 treatment/spec exists yet; no017.

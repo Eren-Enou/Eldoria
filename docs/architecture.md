@@ -724,5 +724,6 @@ includes real redistribution, failed invitations, redundant/wrong information an
 ordering-sensitive starvation. NoHistory masks only resource initiation and its
 score still affects Continue; this is not full memory loss. Independent `review015.py`
 reconstructs all previews, consent, matching, actual time/food and old learning.
-Standalone `validate015` is cache-free and separate from protected001–014. New raw
-observer captures are costly; serialized size is not live memory. No015 adoption or016.
+Shared/standalone `validate015` protects001–015 with both independent readers; see
+[review](experiment-015-review.md) and [contract](experiment-contract-001-015.md). New raw
+observer captures are costly; serialized size is not live memory. No015 default adoption;016 is a separate prospective investigation.
