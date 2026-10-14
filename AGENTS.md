@@ -33,7 +33,8 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-013.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-014.md`.
+The historical `docs/experiment-contract-001-013.md` remains authoritative for001–013.
 The historical `docs/experiment-contract-001-012.md` remains authoritative for 001–012.
 The historical `docs/experiment-contract-001-011.md` remains authoritative for 001–011.
 The historical `docs/experiment-contract-001-010.md` remains authoritative for 001–010.
@@ -116,13 +117,15 @@ consciousness or broad social emergence from these experiments.
 
 ## Git Commit and Push Policy
 
-Experiment 014 is reviewed opt-in research, ACCEPT WITH QUALIFICATION; see
-`docs/experiment-014-review.md`. Protection requires a separate validated integrity pass. Preserve actual shared elapsed time, public reservation/expiration
-rules, costly missed opportunities and simple-priority controls. Local/LocalPulse
-are not defaults; the foundation remains001–013. Its separate read-only `validate014`
-and independent `review014.py` do not extend protection. Keep the post-evaluation
-13-tick exclusive-budget diagnostic distinct from preregistered sensitivity.
-See `experiments/014/results.md`; do not begin015 without a new request.
+Experiment 014 is protected ACCEPT WITH QUALIFICATION; see the scientific review
+and `docs/experiment-contract-001-014.md`. Preserve actual versus reserved time,
+single-use current windows, costly failures and simple-priority gains. No Local or
+LocalPulse default adoption. Conservative resource admission is a bound, not actual
+expected duration; rejected recipient outcomes remain unknown. The normal foundation
+gate and standalone014 share exact replay and both independent readers. Preserve
+all168 frozen files, including the disclosed post-evaluation13-tick diagnostic.
+Experiment015 requires separate preregistration after validated foundation protection;
+no015 foundation adoption/protection or016 without a later request.
 
 When a requested task is complete:
 

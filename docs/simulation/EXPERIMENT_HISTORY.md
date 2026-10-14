@@ -1,6 +1,6 @@
 # World of Individuals experiment index
 
-Protected through013; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
+Protected through014; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
 reports or protected contracts. Historical next-experiment recommendations reflect
 their publication date. Update the affected row when an experiment concludes.
 
@@ -38,17 +38,17 @@ evaluators are for explicitly authorized experiment evidence generation, not aud
 Full report links contain causal traces, seed controls, counters, limitations and
 reproduction details; consult those sections before making stronger claims.
 
-Latest protection: [001–013 integrity audit](../integrity-audit-001-013.md).
+Latest protection: [001–014 integrity audit](../integrity-audit-001-014.md).
 [Research handoff](../research-handoff-001-013.md) recommends a narrow scarce-activity
 question; it does not start014.
 
 ## Experiment 014: competing activities under scarce time
 
-Reviewed result: **ACCEPT WITH QUALIFICATION**; see the
-[scientific review](../experiment-014-review.md). Protection requires a separate integrity pass. Public deadlines/shared elapsed time can turn existing local
+Protected result: **ACCEPT WITH QUALIFICATION**; see the
+[scientific review](../experiment-014-review.md). The [001–014 contract](../experiment-contract-001-014.md) protects the qualified result. Public deadlines/shared elapsed time can turn existing local
 inquiry into executed material differences; costly inquiries can lose meals. Simple
-priority controls share the strongest positive effects. No default adoption or
-extension of protected001–013. See [specification](../../experiments/014/specification.md),
+priority controls share the strongest positive effects. No default adoption;
+the foundation is001–014. See [specification](../../experiments/014/specification.md),
 [results](../../experiments/014/results.md), `src/activity.rs`,
 `src/simulation/activity.rs`, `src/experiment014.rs`, `tests/experiment014.rs` and
 read-only `validate014` / independent `review014.py`. No015.

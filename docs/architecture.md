@@ -704,6 +704,6 @@ charges actual existing resolver ticks. The isolated resource adapter suppresses
 automatic communication so no query escapes the activity budget. Legacy run paths
 are unchanged. At most two current windows are stored; growing causal audits remain
 observer-only. `experiment014.rs` supplies matched laboratory opportunities, carried
-state, explicit hunger interventions and consumption. It is research only, outside
-protected001–013; see the [qualified results](../experiments/014/results.md) for
+state, explicit hunger interventions and consumption. Its research policies remain opt-in; the
+[001–014 contract](experiment-contract-001-014.md) protects reviewed semantics; see the [qualified results](../experiments/014/results.md) for
 conservative-bound and environmental-autonomy limits.

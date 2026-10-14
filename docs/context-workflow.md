@@ -31,8 +31,8 @@ scientifically accepted and protected while its proposed mechanism is rejected.
 Protection preserves accepted findings and qualifications, not a mandate to adopt
 every tested mechanism.
 
-Experiments 001–013 are protected by the
-[foundation contract](experiment-contract-001-013.md) and its inherited historical
+Experiments001–014 are protected by the
+[foundation contract](experiment-contract-001-014.md) and its inherited historical
 maps. Experiment 011's [scientific review](experiment-011-review.md) is confirmed with
 qualification: its evidence is protected, while StatusValue remains unadopted.
 Experiment012's [scientific review](experiment-012-review.md) establishes ACCEPT
@@ -42,8 +42,8 @@ Experiment013's unchanged [scientific review](experiment-013-review.md) establis
 ACCEPT WITH QUALIFICATION; Pulse/Ungated remain optional research, not defaults.
 Preserve C64 versus B64 and retained episodes outside the last-four partner scoring
 window. Its shared read-only gate invokes both independent readers.
-The [integrity report](integrity-audit-001-013.md) records the latest protection pass;
-the [research handoff](research-handoff-001-013.md) identifies questions without starting014.
+The [integrity report](integrity-audit-001-014.md) records the latest protection pass;
+the [research handoff](research-handoff-001-014.md) identifies questions without starting015.
 Reverify source, contracts and reviews before
 updating status, and do not change unrelated conclusions.
 
@@ -140,3 +140,8 @@ repeat counts are proxies, not token counts. Check correctness alongside savings
 same required gates, findings and preserved counterexamples; no increase in missed
 dependencies, rework or stale summaries. Publish measured results only after collecting
 data; do not install a tokenizer or add simulation instrumentation for this task.
+
+Experiment014 is protected with qualification; [review](experiment-014-review.md).
+Its actual-time capability and negative outcomes are distinct from unadopted activity
+heuristics. Standalone014 and the foundation share both independent readers. See
+[handoff](research-handoff-001-014.md) before proposing encounter initiation.

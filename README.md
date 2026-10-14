@@ -54,7 +54,7 @@ encounters produce agreement, refusal, and withdrawal. See
 
 ## Architecture and verification
 
-The [001–013 contract and coverage map](docs/experiment-contract-001-013.md)
+The [001–014 contract and coverage map](docs/experiment-contract-001-014.md)
 documents mode-specific locality, retention, persistent consequences, exact bounds
 and regression coverage, carrying forward the unchanged historical maps and 010's
 qualified scientific acceptance, 011's qualified negative adoption result and012's
@@ -328,7 +328,8 @@ See the [integrity audit](docs/integrity-audit-001-013.md) and
 
 [Specification](experiments/014/specification.md) and [results](experiments/014/results.md)
 report **ACCEPT WITH QUALIFICATION**, confirmed by the
-[scientific review](docs/experiment-014-review.md); protection is a separate gate.
+[scientific review](docs/experiment-014-review.md) and protected by the
+[001–014 contract](docs/experiment-contract-001-014.md).
 An opt-in public clock makes elapsed inquiry/resource time consume shared opportunity
 windows. Existing local cognition can change executed transfers and later state;
 information-first choices can also miss meals. Simple priorities share the strongest
@@ -336,5 +337,6 @@ benefits, and the local selector has no established overall advantage.
 Run `evaluate014 -- --output target/experiment014-final` for840 matched/replayed
 worlds; read-only `validate014` checks archives and independent reconstruction,
 including five separately labeled post-evaluation budget diagnostics. `measure014`
-separates fixed-input cost from full-suite timings. No default changes, no extension
-of protected001–013, and no015.
+separates fixed-input cost from full-suite timings. No default changes. Normal foundation validation includes014 and both readers;
+[168-entry integrity audit](docs/integrity-audit-001-014.md). A separate
+[handoff](docs/research-handoff-001-014.md) identifies the encounter-initiation boundary.
