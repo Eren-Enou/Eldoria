@@ -323,3 +323,17 @@ and `review013_findings.py`. Neither requires a prepared cache or writes evidenc
 `measure013` separates fixed-input policy cost from history-length work. No014 was started.
 See the [integrity audit](docs/integrity-audit-001-013.md) and
 [next-stage research handoff](docs/research-handoff-001-013.md).
+
+## Experiment 014: competing activities under scarce time
+
+[Specification](experiments/014/specification.md) and [results](experiments/014/results.md)
+report **ACCEPT WITH QUALIFICATION**, pending independent scientific review.
+An opt-in public clock makes elapsed inquiry/resource time consume shared opportunity
+windows. Existing local cognition can change executed transfers and later state;
+information-first choices can also miss meals. Simple priorities share the strongest
+benefits, and the local selector has no established overall advantage.
+Run `evaluate014 -- --output target/experiment014-final` for840 matched/replayed
+worlds; read-only `validate014` checks archives and independent reconstruction,
+including five separately labeled post-evaluation budget diagnostics. `measure014`
+separates fixed-input cost from full-suite timings. No default changes, no extension
+of protected001–013, and no015.

@@ -18,6 +18,7 @@ use bevy_ecs::{
     schedule::SingleThreadedExecutor,
 };
 use std::collections::{BTreeMap, BTreeSet};
+mod activity;
 mod adaptive;
 mod attention;
 mod inquiry_value;

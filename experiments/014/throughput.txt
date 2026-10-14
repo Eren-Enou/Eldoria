@@ -1,0 +1,24 @@
+   Compiling world-of-individuals v0.1.0 (C:\Users\Aaron\Eldoria)
+    Finished `bench` profile [optimized] target(s) in 4.39s
+     Running benches\throughput.rs (target\release\deps\throughput-33838017b9040e02.exe)
+mode,population,rounds,init_ms,run_ms,records,records_per_second
+experiment001,100,100,10.212,20.826,9640,462894
+experiment001,1000,100,53.083,176.183,95578,542493
+experiment002,100,100,7.991,23.236,21341,918438
+experiment002,1000,100,41.120,203.996,212751,1042916
+experiment003,100,100,7.711,26.484,25865,976638
+experiment003,1000,100,44.550,260.588,258428,991711
+experiment004,100,100,9.631,32.976,25891,785152
+experiment004,1000,100,48.423,318.135,258642,812994
+experiment005,100,100,10.394,39.733,35891,903298
+experiment005,1000,100,54.346,384.001,358642,933962
+experiment004_three_encounters,100,100,9.181,87.972,52328,594827
+experiment004_three_encounters,1000,100,52.176,975.319,521305,534497
+experiment005_three_encounters,100,100,11.044,123.375,86788,703449
+experiment005_three_encounters,1000,100,59.499,1444.808,866109,599463
+experiment006_three_encounters,100,100,12.707,137.634,82328,598165
+experiment006_three_encounters,1000,100,71.114,1595.760,821305,514679
+experiment007_three_encounters,100,100,16.942,193.808,82328,424792
+experiment007_three_encounters,1000,100,80.029,2188.050,821305,375359
+experiment008_three_encounters,100,100,16.906,189.508,82328,434430
+experiment008_three_encounters,1000,100,75.562,2117.630,821305,387842

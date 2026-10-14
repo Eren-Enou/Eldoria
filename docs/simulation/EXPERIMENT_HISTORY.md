@@ -41,3 +41,14 @@ reproduction details; consult those sections before making stronger claims.
 Latest protection: [001–013 integrity audit](../integrity-audit-001-013.md).
 [Research handoff](../research-handoff-001-013.md) recommends a narrow scarce-activity
 question; it does not start014.
+
+## Experiment 014: competing activities under scarce time
+
+Research result: **ACCEPT WITH QUALIFICATION**, pending independent review and
+separate integrity pass. Public deadlines/shared elapsed time can turn existing local
+inquiry into executed material differences; costly inquiries can lose meals. Simple
+priority controls share the strongest positive effects. No default adoption or
+extension of protected001–013. See [specification](../../experiments/014/specification.md),
+[results](../../experiments/014/results.md), `src/activity.rs`,
+`src/simulation/activity.rs`, `src/experiment014.rs`, `tests/experiment014.rs` and
+read-only `validate014` / independent `review014.py`. No015.

@@ -695,3 +695,15 @@ period robustness, effort justification or default adoption. The
 [001–013 contract](experiment-contract-001-013.md) protects these qualified findings;
 the [integrity audit](integrity-audit-001-013.md) records151 frozen evidence entries.
 No014.
+## Opt-in Experiment 014 activity clock
+
+`activity.rs` is a pure replaceable selector over own resource/inquiry previews,
+own hunger and public current windows. `simulation/activity.rs` admits one serial
+activity only if its public safe reservation fits both window and horizon, then
+charges actual existing resolver ticks. The isolated resource adapter suppresses
+automatic communication so no query escapes the activity budget. Legacy run paths
+are unchanged. At most two current windows are stored; growing causal audits remain
+observer-only. `experiment014.rs` supplies matched laboratory opportunities, carried
+state, explicit hunger interventions and consumption. It is research only, outside
+protected001–013; see the [qualified results](../experiments/014/results.md) for
+conservative-bound and environmental-autonomy limits.
