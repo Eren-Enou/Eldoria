@@ -44,8 +44,8 @@ question; it does not start014.
 
 ## Experiment 014: competing activities under scarce time
 
-Research result: **ACCEPT WITH QUALIFICATION**, pending independent review and
-separate integrity pass. Public deadlines/shared elapsed time can turn existing local
+Reviewed result: **ACCEPT WITH QUALIFICATION**; see the
+[scientific review](../experiment-014-review.md). Protection requires a separate integrity pass. Public deadlines/shared elapsed time can turn existing local
 inquiry into executed material differences; costly inquiries can lose meals. Simple
 priority controls share the strongest positive effects. No default adoption or
 extension of protected001–013. See [specification](../../experiments/014/specification.md),

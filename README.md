@@ -327,7 +327,8 @@ See the [integrity audit](docs/integrity-audit-001-013.md) and
 ## Experiment 014: competing activities under scarce time
 
 [Specification](experiments/014/specification.md) and [results](experiments/014/results.md)
-report **ACCEPT WITH QUALIFICATION**, pending independent scientific review.
+report **ACCEPT WITH QUALIFICATION**, confirmed by the
+[scientific review](docs/experiment-014-review.md); protection is a separate gate.
 An opt-in public clock makes elapsed inquiry/resource time consume shared opportunity
 windows. Existing local cognition can change executed transfers and later state;
 information-first choices can also miss meals. Simple priorities share the strongest

@@ -116,8 +116,8 @@ consciousness or broad social emergence from these experiments.
 
 ## Git Commit and Push Policy
 
-Experiment 014 is opt-in research, ACCEPT WITH QUALIFICATION pending independent
-scientific review. Preserve actual shared elapsed time, public reservation/expiration
+Experiment 014 is reviewed opt-in research, ACCEPT WITH QUALIFICATION; see
+`docs/experiment-014-review.md`. Protection requires a separate validated integrity pass. Preserve actual shared elapsed time, public reservation/expiration
 rules, costly missed opportunities and simple-priority controls. Local/LocalPulse
 are not defaults; the foundation remains001–013. Its separate read-only `validate014`
 and independent `review014.py` do not extend protection. Keep the post-evaluation
