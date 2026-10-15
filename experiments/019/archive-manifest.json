@@ -1,0 +1,26 @@
+{
+  "seed-42.jsonl.gz": {
+    "json_bytes": 328959889,
+    "json_sha256": "4be7b4fcae984973ac157955037cccc38384309dc3373cc0c85c6fe1de34d0b0",
+    "gzip_bytes": 6303407,
+    "gzip_sha256": "ee3ea9c448e2aad499d764b45d142846c5c5791165f07d5b33bb9786e2bfd5fc"
+  },
+  "held-out-seed-42.jsonl.gz": {
+    "json_bytes": 774143387,
+    "json_sha256": "3237c1f3abf71060faead6ec303b4f4c943b6e49a73c3eea6143a7f83d775ee2",
+    "gzip_bytes": 13124083,
+    "gzip_sha256": "ba29d54580de2005a30c1311380d8f46c80a16cdf134330b0abb593e6492962d"
+  },
+  "seed-1-focus.jsonl.gz": {
+    "json_bytes": 23342781,
+    "json_sha256": "b2912b5c2f64fd5fe215f6f2ee644679ea3ff47a39fc85fd25779cc9d06de14f",
+    "gzip_bytes": 443908,
+    "gzip_sha256": "223e6e46db32cf3f9bb22b8a90ba38a8676ddfa18556c22f1477f132f59419e4"
+  },
+  "summary.json.gz": {
+    "json_bytes": 624149,
+    "json_sha256": "545b1ddca4eaff58dd370588f910106c0876c6b332d87567994494310c9cafb3",
+    "gzip_bytes": 29329,
+    "gzip_sha256": "2611bbcd378ddcd0df905c12228c6e171f42b42206409376c6d94c49636626bb"
+  }
+}

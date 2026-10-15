@@ -1,0 +1,68 @@
+{
+  "Baseline/EatFirst": {
+    "pairs": 216,
+    "material_changed": 24,
+    "transfers_changed": 95,
+    "queries_changed": 24,
+    "consumed_changed": 0,
+    "someone_lower_area": 120,
+    "someone_higher_area": 152,
+    "someone_hungrier": 24,
+    "someone_less_hungry": 0
+  },
+  "Baseline/Deadline": {
+    "pairs": 216,
+    "material_changed": 24,
+    "transfers_changed": 87,
+    "queries_changed": 24,
+    "consumed_changed": 0,
+    "someone_lower_area": 128,
+    "someone_higher_area": 148,
+    "someone_hungrier": 24,
+    "someone_less_hungry": 0
+  },
+  "EatFirst/Deadline": {
+    "pairs": 216,
+    "material_changed": 0,
+    "transfers_changed": 20,
+    "queries_changed": 0,
+    "consumed_changed": 0,
+    "someone_lower_area": 32,
+    "someone_higher_area": 32,
+    "someone_hungrier": 0,
+    "someone_less_hungry": 0
+  },
+  "Baseline/Scale90": {
+    "pairs": 216,
+    "material_changed": 0,
+    "transfers_changed": 8,
+    "queries_changed": 4,
+    "consumed_changed": 0,
+    "someone_lower_area": 13,
+    "someone_higher_area": 4,
+    "someone_hungrier": 0,
+    "someone_less_hungry": 0
+  },
+  "Baseline/Scale110": {
+    "pairs": 216,
+    "material_changed": 2,
+    "transfers_changed": 16,
+    "queries_changed": 0,
+    "consumed_changed": 0,
+    "someone_lower_area": 24,
+    "someone_higher_area": 32,
+    "someone_hungrier": 1,
+    "someone_less_hungry": 1
+  },
+  "Baseline/NoHistory": {
+    "pairs": 216,
+    "material_changed": 21,
+    "transfers_changed": 62,
+    "queries_changed": 16,
+    "consumed_changed": 0,
+    "someone_lower_area": 65,
+    "someone_higher_area": 85,
+    "someone_hungrier": 8,
+    "someone_less_hungry": 17
+  }
+}

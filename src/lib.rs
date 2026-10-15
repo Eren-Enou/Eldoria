@@ -38,4 +38,6 @@ pub mod experiment017;
 pub mod opportunities;
 
 pub mod experiment018;
+pub mod experiment019;
+pub mod priorities;
 pub mod recurring;

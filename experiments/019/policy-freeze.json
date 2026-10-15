@@ -1,0 +1,8 @@
+{
+  "src/priorities.rs": "db18cb6585e84bfa6316ced5b57c4152ba481d4830445c7786c4921e3606b82e",
+  "src/simulation/priorities.rs": "779ec1ae64517b9ea2cc1b4a3f91d4744d8860d6f06256b26f015f79de3e9ccc",
+  "src/experiment019.rs": "eb5f885a02697b86e2aa3d86187840a660a6178187b9e97b1b9593027e9a6b40",
+  "experiments/019/specification.md": "0249f8c41f855bda108add05d00529d7fddda91a5793d593623b3433e0f82aec",
+  "examples/evaluate019.rs": "a09943384a8a7ecfdc43154dd6ef06a4fb5743714c6c6e408e2724fa454bf161",
+  "experiments/019/shared-extensions.diff": "dd2a031e6f71acd1295581085fd09e3e99afc5af4ec139561ad52cd95e01cd10"
+}

@@ -1,5 +1,6 @@
 mod contact_learning;
 mod opportunities;
+mod priorities;
 mod recurring;
 use crate::cognition::*;
 use crate::concerns::{

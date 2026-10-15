@@ -1,0 +1,20 @@
+{
+  "case": "ongoing",
+  "clock_value_bytes": 32,
+  "commitment_value_bytes": 48,
+  "gap_records_json_bytes": 865,
+  "gap_trial_case": "recurring",
+  "gap_trial_pauses": 9,
+  "mode": "Baseline",
+  "need_records": 576,
+  "need_records_json_bytes": 43053,
+  "new_cognitive_cells": 0,
+  "new_live_simulation_components": 0,
+  "pause_value_bytes": 64,
+  "periods": 24,
+  "point_table_json_bytes": 2157512,
+  "points": 688,
+  "seed": 42,
+  "steps": 465,
+  "trial_json_bytes": 6296760
+}

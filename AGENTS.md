@@ -264,3 +264,15 @@ development files,remain immutable. Shared foundation/standalone validate018 inc
 all three independent readers and the original exact replay.019 may proceed only
 after the protection gate passes and is committed/pushed;it remains separate opt-in
 research. No automatic019 protection/default adoption. Do not begin020.
+
+Experiment019 is completed opt-in research pending independent scientific review;
+see experiments/019/specification.md and results.md. Baseline/EatFirst/NoHistory reuse
+018 exactly at default timing. Deadline uses only the last safe public admission slot;
+Scale90/110 perturb only top Invite scores with integer truncation. Keep the six rules
+and fixtures frozen. Window/gap comparisons share total elapsed horizons;rate/stock/H
+changes are separately labeled sensitivity. No new cognition or planner. Preserve
+mostly inert small perturbations,seed/private-cooperation reversals,317 full nulls,
+conservative exclusion witness,and pressure-time gains caused by ineffective contact.
+Separate validate019 and three read-only readers do not extend001–018 protection.
+No default adoption,automatic019 protection or020. Acquisition/viewer proposals are
+scoping only;do not silently implement them as part of this experiment.

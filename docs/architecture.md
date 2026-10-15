@@ -803,3 +803,26 @@ reconvergence and measured storage. [Independently reviewed](experiment-018-revi
 with qualification;shared/standalone `validate018` now protects269 original artifacts
 under[001–018](experiment-contract-001-018.md),including all three readers and invalid
 candidate rejection. No default adoption;019 remains separate prospective research.
+
+## Opt-in Experiment019 activity priority and timing
+
+`priorities.rs` supplies six stateless callbacks over018's existing local input.
+Baseline/EatFirst/NoHistory retain their historical definitions. Two integer10%
+controls change only the top Invite score. Deadline uses the selected contact's
+public bound to defer an eligible meal at the last safe invitation slot;EatFirst is
+its ablation. It receives no actual future duration or private source state.
+
+`experiment019.rs` installs callbacks through the existing replacement API and
+reuses018 stepping/clock/consent/resource/inquiry without changing protected sources.
+`simulation/priorities.rs` only guards explicit idle sampling intervals and exposes
+an observer count. No new live ECS components or cognitive stores. Extra gap audits
+reference the existing point/need tables. Same elapsed horizons carry all state;
+public window changes and quiescent sampling are explicit experimental interventions.
+Old concern-age and Rotating phase can mediate timing effects.
+
+[Results](../experiments/019/results.md) distinguish choice,target,execution,retained
+information,material/relationship history,pressure-time and reconvergence. Mostly
+stable terminal outcomes under small perturbations coexist with consequential
+exceptions,seed reversals and ineffective-contact gains. Separate `validate019`
+checks1296 worlds/336 raw histories and independent reconstruction;the normal foundation
+remains001–018. No default adoption or automatic019 protection;no020.

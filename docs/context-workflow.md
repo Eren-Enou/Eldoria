@@ -177,3 +177,11 @@ reader. [001–018 protection](experiment-contract-001-018.md) freezes269 origin
 artifacts;preserve the invalid initial integration candidate and valid costly/null
 outcomes. No default adoption.019 is separately authorized only after Gate B passes
 and is committed/pushed;no automatic019 protection or020.
+
+Experiment019 is completed research pending independent scientific review:
+[specification](../experiments/019/specification.md),[results](../experiments/019/results.md).
+Its separate read-only gate and reconstruction do not extend001–018. Distinguish
+small-score endpoint stability from actual choice/target changes,Deadline versus its
+EatFirst ablation,and timing-induced meal efficiency from successful cooperation.
+Preserve private-cooperation/seed reversals,conservative exclusions and full nulls.
+Future acquisition/viewer documents are proposals only,not another experiment.

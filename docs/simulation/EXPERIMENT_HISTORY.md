@@ -115,3 +115,22 @@ under[001–018](../experiment-contract-001-018.md),269 original artifacts;
 [audit](../integrity-audit-001-018.md),[handoff](../research-handoff-001-018.md).
 Shared/standalone018 includes both original readers and complementary primitive scope.
 019 priorities/timing is a separate prospective investigation after Gate B;no020.
+
+## Experiment019: Robust Activity Priorities and Opportunity Timing
+
+Completed research: **ACCEPT WITH QUALIFICATION**,pending independent scientific
+review. Six stateless priority/score controls share018 physics;timing variants keep
+equal total horizons. Small10% perturbations mostly preserve terminal material but
+occasionally change actual contacts,information and persistent history. Deadline
+changes behavior versus EatFirst without terminal gains;some pressure-time gains
+come from wasted contact delaying a meal. Preserve seed/private-source reversals,
+317 full paired nulls,reconvergence,wrong/redundant inquiry and an actual four-tick
+resource transfer excluded by a six-tick window's eight-tick public reservation.
+
+[Specification](../../experiments/019/specification.md),
+[results](../../experiments/019/results.md),`src/priorities.rs`,small idle adapter,
+`src/experiment019.rs`,`tests/experiment019.rs`;separate `validate019`,primary
+`review019.py`,complementary `review019_findings.py`,post-evaluation `review019_slices.py`,
+`measure019`.1296 exact worlds,336 independent full histories/13 corruptions,840
+paired prefix checks and162 timing/order initial equalities. No new cognition,
+global adoption or019 protection;foundation remains001–018. No020.

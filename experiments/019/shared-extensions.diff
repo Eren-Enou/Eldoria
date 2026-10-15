@@ -1,0 +1,22 @@
+diff --git a/src/lib.rs b/src/lib.rs
+index 888922a..100ac42 100644
+--- a/src/lib.rs
++++ b/src/lib.rs
+@@ -38,4 +38,6 @@ pub mod experiment017;
+ pub mod opportunities;
+ 
+ pub mod experiment018;
++pub mod experiment019;
++pub mod priorities;
+ pub mod recurring;
+diff --git a/src/simulation.rs b/src/simulation.rs
+index e267f68..ac693bb 100644
+--- a/src/simulation.rs
++++ b/src/simulation.rs
+@@ -1,5 +1,6 @@
+ mod contact_learning;
+ mod opportunities;
++mod priorities;
+ mod recurring;
+ use crate::cognition::*;
+ use crate::concerns::{
