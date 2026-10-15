@@ -74,5 +74,5 @@ Continue0 is a separate recipient control,matching order remains consequential.
 [Specification](../../experiments/016/specification.md), [results](../../experiments/016/results.md),
 `src/contact_learning.rs`,`src/simulation/contact_learning.rs`,`src/experiment016.rs`,
 `tests/experiment016.rs`; standalone `validate016`, `review016.py` and `review016_benefit.py`.
-Not protected,not default,pending separate independent review. Foundation001–015;
+[Independent review](../experiment-016-review.md): ACCEPT WITH QUALIFICATION as science; Typed remains unadopted. Not yet protected; foundation001–015;
 no017. Post-evaluation positive trace extractions preserve all controls/negative archives.
