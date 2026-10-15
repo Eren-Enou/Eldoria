@@ -231,5 +231,14 @@ provisional consent,order dependence,costly until57 missed inquiry and narrow se
 Recent refusal/trust/consumption gains. Expiry is lazy; State equality alone is
 agents/counters, with stronger input/prefix checks for the positive slice. Keep all207
 artifacts and three independent readers in shared/standalone016 read-only validation.
-No default adoption.017 requires Gate B validated/committed/pushed,then preregistration;
+No default adoption.017 was preregistered after Gate B validated/committed/pushed;
 no018. Experimental scientific acceptance does not establish generally useful cooldowns.
+
+Experiment017 remains unprotected research,ACCEPT WITH QUALIFICATION;see its results.
+Preserve resource commitment/current availability versus willingness,independent
+consumption/contact choices,actual shared time/consent/release and zero new cognition.
+Inquiry stays atomic,three actors cannot form disjoint meetings,no postsetup hunger/
+profile/busy scripts. Preserve full-state contact-only null and narrow consumption
+chain/foregone transfer,NoHistory gains/losses,order effects and finite stocks.
+Separate validate017/two readers/sourcefreeze do not extend001–016 or change defaults.
+No018;017 requires separate independent review and later integrity pass.

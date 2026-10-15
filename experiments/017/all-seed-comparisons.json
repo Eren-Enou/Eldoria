@@ -1,0 +1,54 @@
+{
+  "Serial/Committed": {
+    "pairs": 188,
+    "material_changed": 0,
+    "invitations_more": 0,
+    "invitations_less": 0,
+    "queries_more": 0,
+    "queries_less": 0,
+    "transfers_more": 0,
+    "transfers_less": 0,
+    "consumed_more": 0,
+    "consumed_less": 0,
+    "someone_more_hungry": 0
+  },
+  "SerialActive/Active": {
+    "pairs": 188,
+    "material_changed": 7,
+    "invitations_more": 8,
+    "invitations_less": 20,
+    "queries_more": 0,
+    "queries_less": 0,
+    "transfers_more": 0,
+    "transfers_less": 7,
+    "consumed_more": 7,
+    "consumed_less": 0,
+    "someone_more_hungry": 0
+  },
+  "Active/NoHistory": {
+    "pairs": 188,
+    "material_changed": 34,
+    "invitations_more": 16,
+    "invitations_less": 54,
+    "queries_more": 12,
+    "queries_less": 8,
+    "transfers_more": 7,
+    "transfers_less": 27,
+    "consumed_more": 7,
+    "consumed_less": 3,
+    "someone_more_hungry": 3
+  },
+  "Committed/Active": {
+    "pairs": 188,
+    "material_changed": 28,
+    "invitations_more": 47,
+    "invitations_less": 64,
+    "queries_more": 0,
+    "queries_less": 19,
+    "transfers_more": 8,
+    "transfers_less": 33,
+    "consumed_more": 14,
+    "consumed_less": 0,
+    "someone_more_hungry": 0
+  }
+}

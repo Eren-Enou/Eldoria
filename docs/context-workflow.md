@@ -156,4 +156,10 @@ Experiment016 is protected ACCEPT WITH QUALIFICATION; Typed adoption NO JUSTIFIC
 [Review](experiment-016-review.md),[contract](experiment-contract-001-016.md),
 [results](../experiments/016/results.md). Shared foundation/standalone016 preserve207
 artifacts and three readers, including nine complementary corruption categories.
-No default adoption;017 may start only after Gate B is validated/committed/pushed.
+No default adoption;Gate B was validated/committed/pushed e968c34 before017.
+
+Experiment017 is separate unprotected research: [results](../experiments/017/results.md).
+Its resource-step/free-person consumption chain is qualified by contact-only null,
+rare material differences,atomic inquiry,three-person topology,ordering and no
+metabolism. Standalone validate017 and independent readers do not extend001–016.
+No policy adoption or018;future independent review/protection must be separate.

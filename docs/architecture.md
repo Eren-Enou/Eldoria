@@ -749,3 +749,26 @@ adoption. [Independent review](experiment-016-review.md) accepts science with qu
 [001–016 contract](experiment-contract-001-016.md) protects207 artifacts, exact original
 replay and three readers. Lazy expiry and stronger positive input/prefix checks remain
 explicit. No017 runtime is part of this protection pass.
+
+## Opt-in Experiment017 resource commitments
+
+`opportunities.rs` compares pure actor-local Wait/Consume/old Invite with unchanged
+History or outgoing-only NoHistory contact ranking. Five explicit modes isolate
+serial versus stepped resource execution, meaningful independent consumption and
+history projection. All share016 Continue0 control; no contact retry cells enabled.
+`simulation/opportunities.rs` reuses old one-event/tick ECS resource execution and
+active/busy indexes, independent consent, query/Grouped/FIFO/Contextual cognition.
+Only the free third person chooses while a resource pair is occupied. Consumption
+uses the old one-unit/40-hunger accounting at a shared tick, never double-books its
+actor, and actual termination releases the pair. Inquiry stays atomic; no concurrent
+disjoint meetings or future release oracle. No postsetup hunger/profile/busy scripts.
+
+A local observer point table references shared immutable captures; actor inputs
+come from current ECS-owned state, never the export. One48-byte commitment payload,
+zero new cognitive cells; old histories/exports still grow. Contact-only Serial and
+Committed produce identical final snapshots across188 matched configurations.
+With independent consumption,7/188 change material,concentrated in one family/two
+settings,including a foregone transfer and altered trust. NoHistory helps and harms.
+See [results](../experiments/017/results.md) for nulls,negative cases,order and storage
+limits.017 is ACCEPT WITH QUALIFICATION as research,pending independent review;
+standalone `validate017` does not extend protected001–016 or adopt a default. No018.

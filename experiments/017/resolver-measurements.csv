@@ -1,0 +1,11 @@
+kind,batch,iterations,nanoseconds,resource_events
+legacy_resolver_run,0,20,1045400,40
+resource_tick_with_policy_capture,0,20,615400,20
+legacy_resolver_run,1,20,639700,40
+resource_tick_with_policy_capture,1,20,484400,20
+legacy_resolver_run,2,20,646400,40
+resource_tick_with_policy_capture,2,20,521500,20
+legacy_resolver_run,3,20,638300,40
+resource_tick_with_policy_capture,3,20,489100,20
+legacy_resolver_run,4,20,671400,40
+resource_tick_with_policy_capture,4,20,471300,20

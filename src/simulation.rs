@@ -1,4 +1,5 @@
 mod contact_learning;
+mod opportunities;
 use crate::cognition::*;
 use crate::concerns::{
     self, ConcernPolicy, Concerns, Creation, FollowAction, FollowDecision, FollowInput,

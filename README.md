@@ -378,3 +378,23 @@ worlds,250 primary independent histories and ten post-evaluation seed1 extractio
 cost; timings are separate evidence. Shared foundation now protects001–016 and207 artifacts, including complementary
 `review016_findings.py` and nine corruption categories. [Audit](docs/integrity-audit-001-016.md),
 [handoff](docs/research-handoff-001-016.md).017 may begin only after Gate B passes.
+
+## Experiment017: Endogenous Opportunities and Changing Social Availability
+
+[Specification](experiments/017/specification.md),[results](experiments/017/results.md):
+**ACCEPT WITH QUALIFICATION as research**,pending independent review. Real selected
+resource commitments change public availability;free-person consumption can alter
+later invitations,executed transfers,trust and persistent meals. Contact-only stepping
+is inert;effects with consumption are rare and order/fixture dependent. Preserve
+foregone cooperation,history-ablation gains/losses and information without material
+benefit. Three actors,no disjoint meetings,inquiry still atomic,no metabolism or
+postsetup busy/willingness scripts. No default adoption or017 protection;no018.
+
+Run `cargo run --release --locked -j 1 --example evaluate017 -- --output target/experiment017-final`
+for authorized017 evidence generation only. Read-only `validate017` reruns940 worlds,
+checks235 independently reconstructed histories/47 groups/130 ordering controls,
+seven corruption categories,four causal slices and207 protected hashes. Independent
+`review017.py --self-test`/`review017_findings.py` need no target cache. `measure017`
+separates policy/world/serialization timing and observer point-table cost. The normal
+foundation gate remains protected through016;scientific review/protection of017 are
+separate future work.
