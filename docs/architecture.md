@@ -799,6 +799,7 @@ future release, response and relevance. Observer point references and small need
 records explain causal history; policy never reads them. Need/audit histories grow;
 the live clock and existing commitment remain fixed-size. See [018 results](../experiments/018/results.md)
 for1064 exact worlds, independent reconstruction, costly early depletion, nulls,
-reconvergence and measured storage. Separate `validate018` does not extend001–017
-protection. [Independently reviewed](experiment-018-review.md) qualified research; no default
-adoption or019.
+reconvergence and measured storage. [Independently reviewed](experiment-018-review.md)
+with qualification;shared/standalone `validate018` now protects269 original artifacts
+under[001–018](experiment-contract-001-018.md),including all three readers and invalid
+candidate rejection. No default adoption;019 remains separate prospective research.

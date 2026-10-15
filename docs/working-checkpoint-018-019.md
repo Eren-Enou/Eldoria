@@ -39,3 +39,18 @@ Review draft and navigation updated;final Gate A paragraph remains pending017/01
 Gate A complete:017/018 standalone both0;all preceding checks0. Final review records
 ACCEPT WITH QUALIFICATION and protection justified. Next exact action:finalguard,diff,
 commit/push A;then begin B. No runtime/evidence change or material defect found.
+
+Stage A committed/pushed bec1bc29ef7b95178c32f49434c25e35448af7cc;clean before B.
+B now in progress:new001–018 contract,actual269 inventory (228 unchanged+41 original018,
+28 root+13 invalid development),audit/handoff;standalone018 moved to shared
+examples/support/contract018.rs,normalfoundation invokes it and all three readers.
+Old archive/evaluator/Rust runtime/tests untouched. Updated navigation/constitution map.
+B fmt0,Clippy0,190tests0. Fullfoundation/separate009…018 running execsession20936.
+New built standalone018 passed from explicit emptycwd with Python writes/target
+cache denied (both denial self-tests pass),created0 files (session56761 closed0).
+Raw269/source6/comparison798/order56/link guards pass. Do not begin019 until B complete.
+Next:finish actual B gates,replace pending audit paragraph,finalguards,diff,commit/push.
+
+Gate B complete:normal001–018 and all standalone009…0180;all earlier B checks0.
+Audit now records actual completion. Next:finalguard/diff,commit/push protection;
+only afterward create019 specification BEFORE implementation. No019 files exist yet.

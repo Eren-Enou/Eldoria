@@ -110,5 +110,8 @@ the finding. No new planner, cognitive cells, default adoption or018 protection.
 separate `validate018`, independent `review018.py` / `review018_findings.py`,
 `measure018`.1064 exact worlds,266 independently reconstructed full histories.
 The initial clock-hook integration defect and invalid candidate remain documented
-and preserved; corrected outcomes use unchanged law, policies and fixtures. Foundation
-remains001–017. No019.
+and preserved; corrected outcomes use unchanged law, policies and fixtures. Protected
+under[001–018](../experiment-contract-001-018.md),269 original artifacts;
+[audit](../integrity-audit-001-018.md),[handoff](../research-handoff-001-018.md).
+Shared/standalone018 includes both original readers and complementary primitive scope.
+019 priorities/timing is a separate prospective investigation after Gate B;no020.

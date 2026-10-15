@@ -1,12 +1,12 @@
 # Architecture map
 
-Navigation summary, protected through017. Source and mode-specific
+Navigation summary, protected through018. Source and mode-specific
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
 ## Start here
 
-- Rules: [AGENTS.md](../AGENTS.md); protected [001–017 contract](experiment-contract-001-017.md),
+- Rules: [AGENTS.md](../AGENTS.md); protected [001–018 contract](experiment-contract-001-018.md),
   which links historical contracts. Read the affected mode's clauses and coverage.
 - Findings: [experiment index](simulation/EXPERIMENT_HISTORY.md).
 - Working procedure: [context workflow](context-workflow.md).
@@ -39,9 +39,9 @@ rows when ownership, entry points or mode boundaries change.
 | Finite contact feedback (016 protected with qualification, unadopted) | [contact_learning.rs](../src/contact_learning.rs), [adapter](../src/simulation/contact_learning.rs), [fixture](../src/experiment016.rs) | `tests/experiment016.rs`, shared/standalone `validate016`, `review016.py`, `review016_benefit.py`, complementary `review016_findings.py`; [review](experiment-016-review.md); [results](../experiments/016/results.md); [001–016 contract](experiment-contract-001-016.md) |
 | Endogenous resource commitments (017 protected with qualification) | [opportunities.rs](../src/opportunities.rs), [adapter](../src/simulation/opportunities.rs), [fixture](../src/experiment017.rs) | `tests/experiment017.rs`, shared/standalone `validate017`, independent `review017.py` / `review017_findings.py` / complementary `review017_scope.py`, `measure017`; [specification](../experiments/017/specification.md), [results](../experiments/017/results.md), [scientific review](experiment-017-review.md), [contract](experiment-contract-001-017.md); no default adoption |
 | Private derived history indexes, trust replay | [history.rs](../src/history.rs), `simulation.rs` | Foundation, invariants, `tests/contract_001_008.rs` |
-| Recurring needs and competing activities (018 independently reviewed with qualification) | [recurring.rs](../src/recurring.rs), [isolated adapter](../src/simulation/recurring.rs), [fixture](../src/experiment018.rs); conditional shared clock hooks | `tests/experiment018.rs`, separate read-only `validate018`, `review018.py` / `review018_findings.py`, complementary `review018_scope.py`, `measure018`; [specification](../experiments/018/specification.md), [results](../experiments/018/results.md), [review](experiment-018-review.md); no default adoption; protection separate |
+| Recurring needs and competing activities (018 protected with qualification) | [recurring.rs](../src/recurring.rs), [isolated adapter](../src/simulation/recurring.rs), [fixture](../src/experiment018.rs); conditional shared clock hooks | `tests/experiment018.rs`, shared/standalone read-only `validate018`, `review018.py` / `review018_findings.py`, complementary `review018_scope.py`, `measure018`; [specification](../experiments/018/specification.md), [results](../experiments/018/results.md), [review](experiment-018-review.md), [contract](experiment-contract-001-018.md);269 artifacts,no default adoption |
 | CLI and reproducible experiment fixtures | [main.rs](../src/main.rs), `src/experiment.rs`, `src/experiment002.rs` … `src/experiment018.rs` | Corresponding experiment tests/evaluators |
-| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), shared `examples/support/contract009.rs` … `contract017.rs`, independent010–017 readers | Cache-free010–017 validation; shared standalone gates; historical summaries unchanged; [latest integrity audit](integrity-audit-001-017.md) |
+| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), shared `examples/support/contract009.rs` … `contract018.rs`, independent010–018 readers | Cache-free010–018 validation; shared standalone gates; historical summaries unchanged; [latest integrity audit](integrity-audit-001-018.md) |
 | Throughput workload / history measurements | [throughput.rs](../benches/throughput.rs), `examples/measure_history.rs` | Separate wall-clock output; historical reports unchanged |
 
 Use `rg -n 'symbol' path/to/file.rs` to locate implementation before reading a

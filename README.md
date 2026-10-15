@@ -412,11 +412,15 @@ eat during resource interaction often only change timing and can leave people
 hungrier by exhausting finite stocks sooner. Preserve harmful choices, nulls,
 reconvergence, ordering and history-ablation reversals. Three people, one resource
 commitment, atomic inquiry and heuristic score scales bound the conclusion.
-No new cognitive cells, default adoption or018 foundation protection. No019.
+No new cognitive cells or default adoption. Protected by
+[001–018 contract](docs/experiment-contract-001-018.md),
+[audit](docs/integrity-audit-001-018.md),[handoff](docs/research-handoff-001-018.md).
+019 is a separate prospective investigation after Gate B;no020.
 
 Read-only `cargo run --release --locked -j 1 --example validate018` checks1064 exact
 worlds,266 full independent reconstructions,16 causal diagnostics,10 corruption
-categories and228 historical hashes without target caches. `measure018` separates
+categories and269 frozen artifacts without target caches. The normal foundation
+shares the same gate,including complementary `review018_scope.py`. `measure018` separates
 pure policy/need, world, resolver activity and serialization costs. New evidence
 generation uses `evaluate018 -- --output target/experiment018-new` only when authorized;
 never regenerate historical archives in place. The invalid first clock integration

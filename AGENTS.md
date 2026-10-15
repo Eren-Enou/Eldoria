@@ -33,7 +33,8 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-017.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-018.md`.
+The historical `docs/experiment-contract-001-017.md` remains authoritative for001–017.
 The historical `docs/experiment-contract-001-016.md` remains authoritative for001–016.
 The historical `docs/experiment-contract-001-015.md` remains authoritative for001–015.
 The historical `docs/experiment-contract-001-014.md` remains authoritative for001–014.
@@ -246,7 +247,7 @@ Shared foundation/standalone validate017 protect228 artifacts and exact original
 replay,all three readers,188 full-state nulls and narrow7/188 material effect.
 No recurring needs or disjoint concurrency are retroactively imposed on017.
 018 may begin only after the001–017 protection gate validates and is committed.
-No019 or automatic018 protection.
+018 protection requires its separate independent review/integrity gate.
 
 Experiment018 is independently reviewed ACCEPT WITH QUALIFICATION; see
 docs/experiment-018-review.md, experiments/018/results.md and specification.md. Preserve
@@ -258,4 +259,8 @@ the same-input foregone-transfer chain, reconvergence, hungrier outcomes, orderi
 and history-ablation reversals. No new cognitive cells or default adoption.
 Keep separate read-only validate018, exact replay and independent physics/cognition
 reconstruction; retain the invalid initial clock-hook candidate and regression.
-Foundation remains001–017. Do not protect018 automatically or begin019.
+Protected foundation now001–018;all269 original artifacts,including13 invalid
+development files,remain immutable. Shared foundation/standalone validate018 include
+all three independent readers and the original exact replay.019 may proceed only
+after the protection gate passes and is committed/pushed;it remains separate opt-in
+research. No automatic019 protection/default adoption. Do not begin020.

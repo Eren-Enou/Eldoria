@@ -17,6 +17,8 @@ mod contract015;
 mod contract016;
 #[path = "support/contract017.rs"]
 mod contract017;
+#[path = "support/contract018.rs"]
+mod contract018;
 use serde::Serialize;
 use std::{fs, path::Path};
 use world_of_individuals::{
@@ -123,4 +125,5 @@ fn main() {
     contract015::validate();
     contract016::validate();
     contract017::validate();
+    contract018::validate();
 }

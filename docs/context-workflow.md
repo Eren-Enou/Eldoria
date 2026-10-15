@@ -31,8 +31,8 @@ scientifically accepted and protected while its proposed mechanism is rejected.
 Protection preserves accepted findings and qualifications, not a mandate to adopt
 every tested mechanism.
 
-Experiments001–017 are protected by the
-[foundation contract](experiment-contract-001-017.md) and its inherited historical
+Experiments001–018 are protected by the
+[foundation contract](experiment-contract-001-018.md) and its inherited historical
 maps. Experiment 011's [scientific review](experiment-011-review.md) is confirmed with
 qualification: its evidence is protected, while StatusValue remains unadopted.
 Experiment012's [scientific review](experiment-012-review.md) establishes ACCEPT
@@ -42,8 +42,8 @@ Experiment013's unchanged [scientific review](experiment-013-review.md) establis
 ACCEPT WITH QUALIFICATION; Pulse/Ungated remain optional research, not defaults.
 Preserve C64 versus B64 and retained episodes outside the last-four partner scoring
 window. Its shared read-only gate invokes both independent readers.
-The [integrity report](integrity-audit-001-017.md) records the latest protection pass;
-the [research handoff](research-handoff-001-017.md) identifies recurring needs as a separate018 question.
+The [integrity report](integrity-audit-001-018.md) records the latest protection pass;
+the [research handoff](research-handoff-001-018.md) identifies activity priorities/timing as a separate019 question.
 017 is protected with qualification; its188 contact-only nulls and narrow7/188 material
 effect remain distinct. No default adoption or retroactive recurring hunger.
 Reverify source, contracts and reviews before
@@ -171,7 +171,9 @@ review/protection and must not be silently incorporated into this historical con
 Experiment018 is independently reviewed ACCEPT WITH QUALIFICATION:
 [review](experiment-018-review.md), [results](../experiments/018/results.md),
 [specification](../experiments/018/specification.md). Follow the recurring source row
-in the architecture map. Its separate `validate018` gate reconstructs need progression,
-actual activities and negative consequences. Protected foundation remains001–017;
-no automatic018 protection/default adoption. Preserve both the invalid initial clock
-integration candidate and all valid costly/null outcomes. No019.
+in the architecture map. Shared/standalone `validate018` reconstructs need progression,
+actual activities and negative consequences,including the complementary primitive
+reader. [001–018 protection](experiment-contract-001-018.md) freezes269 original
+artifacts;preserve the invalid initial integration candidate and valid costly/null
+outcomes. No default adoption.019 is separately authorized only after Gate B passes
+and is committed/pushed;no automatic019 protection or020.
