@@ -78,8 +78,8 @@ Continue0 is a separate recipient control,matching order remains consequential.
 
 ## Experiment017: Endogenous Opportunities and Changing Social Availability
 
-Completed implementation/evaluation,ACCEPT WITH QUALIFICATION as research,pending
-its own independent review. Actual resource commitments expose public occupied state;
+Independently reviewed **ACCEPT WITH QUALIFICATION**; [review](../experiment-017-review.md).
+Protection remains a separate gated pass. Actual resource commitments expose public occupied state;
 independent own consumption can change later invitations,transfers,trust and meals.
 Contact-only stepping is a full-state null in188 pairs;material effects with consumption
 occur7/188,one family/two parameter settings. Preserve foregone cooperation,NoHistory
@@ -87,5 +87,5 @@ meal gains/losses,information without meals,order dependence and stranded finite
 Inquiry remains atomic,three actors admit no disjoint meetings,needs are not renewed
 by metabolism. No new cognition/default/protection. [Spec](../../experiments/017/specification.md),
 [results](../../experiments/017/results.md),`src/opportunities.rs`,isolated adapter,
-`src/experiment017.rs`,`tests/experiment017.rs`;separate validate017/two readers/measure017.
+`src/experiment017.rs`,`tests/experiment017.rs`;separate validate017/two original readers/complementary scope reader/measure017.
 Foundation remains001–016/207 artifacts. No018.
