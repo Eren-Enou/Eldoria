@@ -1,3 +1,4 @@
+mod contact_learning;
 use crate::cognition::*;
 use crate::concerns::{
     self, ConcernPolicy, Concerns, Creation, FollowAction, FollowDecision, FollowInput,

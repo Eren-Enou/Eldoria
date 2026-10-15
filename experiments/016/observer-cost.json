@@ -1,0 +1,12 @@
+{
+  "base_wave_bytes": 9181664,
+  "case": "longitudinal",
+  "cell_value_bytes": 24,
+  "feedback_wrapper_bytes": 94976,
+  "logical_cap_per_actor": 2,
+  "mode": "Typed",
+  "seed": 42,
+  "trial_bytes": 11069331,
+  "wave_count": 146,
+  "wrapped_wave_bytes": 9276640
+}

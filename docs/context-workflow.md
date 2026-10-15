@@ -151,3 +151,9 @@ Experiment015 is protected with qualification: [review](experiment-015-review.md
 consent, real execution, asymmetric order and Continue coupling, missing invitation
 feedback and negative cases. Both readers and standalone/shared015 gate protect the
 same evidence. No default adoption;016 needs prospective preregistration after Gate B.
+
+Experiment016 is completed research,unprotected: [results](../experiments/016/results.md).
+NO JUSTIFICATION for adopting two-cell Typed; preserve real local adaptation and
+narrow simpler-control gains separately from opportunity loss and matching effects.
+Its separate gate/independent readers do not extend protected001–015. No default
+adoption; its independent scientific review is a later task. No017.

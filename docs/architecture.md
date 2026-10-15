@@ -727,3 +727,22 @@ reconstructs all previews, consent, matching, actual time/food and old learning.
 Shared/standalone `validate015` protects001–015 with both independent readers; see
 [review](experiment-015-review.md) and [contract](experiment-contract-001-015.md). New raw
 observer captures are costly; serialized size is not live memory. No015 default adoption;016 is a separate prospective investigation.
+
+## Opt-in Experiment016 finite contact feedback
+
+`contact_learning.rs` projects only own outgoing consent/meeting outcome,then uses
+at most2 own retry records (Recent1) to defer matching partner/type. They contain
+no event content,private motive or future availability. Pure choose/update functions
+are replaceable; the ECS resource supplies only the owner's current cells. Expired
+or evicted results cannot return from observer history. Resource/query consequences
+and006/012 valid-response learning keep independent lifetimes and triggers.
+
+`simulation/contact_learning.rs` is prospective. It uses existing015 input/preparation,
+matching,clock,resources and inquiry; frozen private015 wave/resolver code is copied
+locally rather than modified. Exact Unchanged trajectories are checked against015.
+Main treatment comparisons share Continue0 recipient response; original015 response
+remains an explicit reference. Matching order stays orthogonal; no recipient is forced.
+Additional audits contain tiny feedback state/signals,not another full agent snapshot;
+existing015 observer capture remains large. See [016 results](../experiments/016/results.md)
+for useful/harmful chains and costs. NO JUSTIFICATION for Typed adoption; no default
+or foundation extension,independent review pending. No017.

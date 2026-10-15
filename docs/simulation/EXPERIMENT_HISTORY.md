@@ -63,3 +63,16 @@ decline and contact starvation remain. See [specification](../../experiments/015
 [results](../../experiments/015/results.md), `src/encounters.rs`,
 `src/simulation/encounters.rs`, `tests/experiment015.rs`, shared/standalone `validate015` and
 independent `review015.py` and second `review015_findings.py`. No default adoption. [Integrity audit](../integrity-audit-001-015.md) freezes186 artifacts;016 is a separate prospective investigation.
+
+## Experiment016: Learning From Failed Contact
+
+Completed research: **NO JUSTIFICATION for adopting the two-cell Typed mechanism**.
+Legitimate bounded feedback changes voluntary contact and persistent consequences;
+fewer declines do not demonstrate useful allocation. Longer delays miss useful
+inquiry; Recent's narrow seed1 gains occur through real refusal/trust/allocation.
+Continue0 is a separate recipient control,matching order remains consequential.
+[Specification](../../experiments/016/specification.md), [results](../../experiments/016/results.md),
+`src/contact_learning.rs`,`src/simulation/contact_learning.rs`,`src/experiment016.rs`,
+`tests/experiment016.rs`; standalone `validate016`, `review016.py` and `review016_benefit.py`.
+Not protected,not default,pending separate independent review. Foundation001–015;
+no017. Post-evaluation positive trace extractions preserve all controls/negative archives.

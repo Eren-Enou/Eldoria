@@ -221,3 +221,12 @@ Keep cap 32, explicit FIFO eviction and immutable assessment records. Order/repe
 controls require identical retained inputs and fixed weights; invariance need not
 survive forgetting or legitimate credibility changes. Preserve original events,
 saturated trust replay and older mode outputs. Archive new evidence under 008.
+
+Experiment016 is completed research, NO JUSTIFICATION for adopting its two-cell Typed
+retry mechanism over simpler controls; see `experiments/016/results.md`. Preserve
+own post-wave feedback,logical caps2/Recent1,6/12/2-tick expirations,FIFO/overwrite,
+contact-type separation and no inquiry-learning from invitation failure. Control's
+Continue0 response is a separate prospective factor; exact015 remains reference.
+Keep costly missed inquiry,narrow seed1 Recent gains,ordering sensitivity and finite
+food exhaustion. Standalone validate016/readers are separate from protected001–015;
+no default adoption or016 protection. Independent review is later; do not begin017.

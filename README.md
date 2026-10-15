@@ -358,3 +358,19 @@ locality, matching, accounting and all186 protected hashes. The normal foundatio
 includes015 and both independent readers; [integrity audit](docs/integrity-audit-001-015.md). `review015.py --self-test` reconstructs evidence without a prepared
 cache; `measure015` separates fixed-input timing from full histories.
 [Handoff](docs/research-handoff-001-015.md) identifies failed-contact learning as a separate016 investigation.
+
+## Experiment016: Learning From Failed Contact
+
+[Specification](experiments/016/specification.md), [results](experiments/016/results.md):
+**NO JUSTIFICATION for adopting two-cell Typed retry state over simpler controls.**
+Own invitation outcomes can change later contact,actual refusal/trust/food history
+and persistent meals. Fewer failures often leave material unchanged; long delays
+can miss useful inquiry. A one-record control has narrow gains,with harmful choices
+and strong ordering sensitivity preserved. No default adoption or016 protection.
+
+Run `cargo run --release --locked -j 1 --example evaluate016 -- --output target/experiment016-final`
+only for authorized016 evidence generation. Read-only `validate016` checks1000 exact
+worlds,250 primary independent histories and ten post-evaluation seed1 extractions;
+`review016.py --self-test` and `review016_benefit.py` reconstruct actual causal chains.
+`measure016 -- experiments/016/observer-cost.json` separates policy/update/serialization
+cost; timings are separate evidence. Foundation remains001–015. No017.

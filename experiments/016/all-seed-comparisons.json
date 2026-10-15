@@ -1,0 +1,32 @@
+{
+  "Recent": {
+    "pairs": 200,
+    "fewer_invitations": 51,
+    "fewer_declines": 60,
+    "more_declines": 77,
+    "more_consumed": 2,
+    "less_consumed": 14,
+    "lower_hunger_sum": 12,
+    "higher_hunger_sum": 27
+  },
+  "Typed": {
+    "pairs": 200,
+    "fewer_invitations": 162,
+    "fewer_declines": 180,
+    "more_declines": 8,
+    "more_consumed": 0,
+    "less_consumed": 20,
+    "lower_hunger_sum": 10,
+    "higher_hunger_sum": 26
+  },
+  "Untyped": {
+    "pairs": 200,
+    "fewer_invitations": 170,
+    "fewer_declines": 180,
+    "more_declines": 8,
+    "more_consumed": 0,
+    "less_consumed": 20,
+    "lower_hunger_sum": 10,
+    "higher_hunger_sum": 26
+  }
+}
