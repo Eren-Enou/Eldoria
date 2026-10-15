@@ -1,0 +1,20 @@
+{
+  "seed-42.jsonl.gz": {
+    "json_bytes": 322072972,
+    "json_sha256": "1a44ac7cdf85e2cdba24ea12b725191826d8b380fee4e93beb05f381e191092d",
+    "gzip_bytes": 5838582,
+    "gzip_sha256": "506f2c846dfce43784ed4599e77bcd4e13440dce0af6268d67a907f34af2c82d"
+  },
+  "held-out-seed-42.jsonl.gz": {
+    "json_bytes": 631939851,
+    "json_sha256": "831a317630a32d33d67044c5827eafbf9de3147c58b92b1472ef3a6ed883cef7",
+    "gzip_bytes": 10024758,
+    "gzip_sha256": "5354c5a8e06930e067e6ea3224dfb9f847778cf2dbb9309f0d29639cd84987fd"
+  },
+  "summary.json.gz": {
+    "json_bytes": 463411,
+    "json_sha256": "62cda4adc157f13381a5ef9fd8344321af59189e0fbc8508202d9a21d860a8b0",
+    "gzip_bytes": 28159,
+    "gzip_sha256": "0b602cf6034c9c1c08d6f2471947892bfa61a7e7a8d67a0d2194c73bc1073be1"
+  }
+}

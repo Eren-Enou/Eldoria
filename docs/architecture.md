@@ -774,3 +774,31 @@ limits.[Independent review](experiment-017-review.md) accepts with qualification
 [001–017 contract](experiment-contract-001-017.md) protects228 original artifacts.
 Shared/standalone `validate017` includes both original readers and complementary scope
 checks. No default adoption;recurring needs require a separate prospective018 study.
+
+## Opt-in Experiment018 recurring needs
+
+`recurring.rs` adds a fixed-size physical clock and a pure, replaceable projection
+over017's own-state activity input. Epoch-based pulses progress every person's hunger
+through actual shared elapsed time, including resource, inquiry and waiting ticks.
+Pressure saturates at100; a meal consumes one owned food and reduces current pressure
+by40 after that tick's progression. This is an explicit experimental law, not a
+metabolism model. Evaluating policy does not advance needs. No new cognitive cells.
+
+`simulation/recurring.rs` isolates prospective activity control. Conditional hooks
+in shared time/response paths synchronize only when its clock resource is installed;
+old simulations have no clock. A saved listener Agent is committed before the new
+synchronization hook so it cannot erase elapsed need progression. The invalid first
+integration candidate is preserved and independently rejected. Old archived behavior
+and retention semantics remain unchanged. One commitment, three actors and atomic
+inquiry avoid introducing a planner or disjoint-meeting scheduler. All-Wait advances
+one tick;018 has no mandatory period-end meals. State carries between periods.
+
+Seven controls isolate recurrence, stepped execution, consumption priority and
+outgoing-only history projection. Public availability excludes private partner food,
+future release, response and relevance. Observer point references and small need
+records explain causal history; policy never reads them. Need/audit histories grow;
+the live clock and existing commitment remain fixed-size. See [018 results](../experiments/018/results.md)
+for1064 exact worlds, independent reconstruction, costly early depletion, nulls,
+reconvergence and measured storage. Separate `validate018` does not extend001–017
+protection. Qualified research, pending independent scientific review; no default
+adoption or019.

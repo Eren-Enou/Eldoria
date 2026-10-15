@@ -1,0 +1,278 @@
+{
+  "causal_references": {
+    "history/Recurring@101": {
+      "after_point": 100,
+      "need_records": [
+        60,
+        61
+      ],
+      "observed_point": 99,
+      "period": 2,
+      "query": null,
+      "started": null,
+      "step": 8
+    },
+    "history/Recurring@98": {
+      "after_point": 98,
+      "need_records": [
+        57,
+        59
+      ],
+      "observed_point": 95,
+      "period": 2,
+      "query": null,
+      "started": {
+        "first_event": 24,
+        "invitation": {
+          "expires": 100,
+          "kind": "Resource",
+          "proposer": 0,
+          "recipient": 2
+        },
+        "scene": 16,
+        "start": 100
+      },
+      "step": 6
+    },
+    "history/Serial@98": {
+      "after_point": 78,
+      "need_records": [
+        57,
+        62
+      ],
+      "observed_point": 75,
+      "period": 2,
+      "query": null,
+      "started": {
+        "first_event": 24,
+        "invitation": {
+          "expires": 100,
+          "kind": "Resource",
+          "proposer": 0,
+          "recipient": 2
+        },
+        "scene": 16,
+        "start": 100
+      },
+      "step": 3
+    },
+    "information/Recurring@41": {
+      "after_point": 4,
+      "need_records": [
+        0,
+        6
+      ],
+      "observed_point": 1,
+      "period": 0,
+      "query": 0,
+      "started": null,
+      "step": 0
+    },
+    "ongoing/Fixed@48": {
+      "after_point": 61,
+      "need_records": [
+        48,
+        50
+      ],
+      "observed_point": 58,
+      "period": 2,
+      "query": null,
+      "started": {
+        "first_event": 20,
+        "invitation": {
+          "expires": 50,
+          "kind": "Resource",
+          "proposer": 0,
+          "recipient": 1
+        },
+        "scene": 10,
+        "start": 50
+      },
+      "step": 0
+    },
+    "ongoing/Recurring@48": {
+      "after_point": 61,
+      "need_records": [
+        48,
+        50
+      ],
+      "observed_point": 58,
+      "period": 2,
+      "query": null,
+      "started": {
+        "first_event": 20,
+        "invitation": {
+          "expires": 50,
+          "kind": "Resource",
+          "proposer": 0,
+          "recipient": 1
+        },
+        "scene": 10,
+        "start": 50
+      },
+      "step": 0
+    },
+    "ongoing/Recurring@6": {
+      "after_point": 9,
+      "need_records": [
+        6,
+        7
+      ],
+      "observed_point": 8,
+      "period": 0,
+      "query": null,
+      "started": null,
+      "step": 4
+    },
+    "recurring/Recurring@4": {
+      "after_point": 5,
+      "need_records": [
+        4,
+        5
+      ],
+      "observed_point": 4,
+      "period": 0,
+      "query": null,
+      "started": null,
+      "step": 4
+    }
+  },
+  "different_later_query_counts": 7,
+  "distinct_first_private_responses": 6,
+  "foregone_transfer_tick": 103,
+  "harmful_common_choice_tick": 98,
+  "harmful_final_hunger": [
+    [
+      100,
+      95,
+      65
+    ],
+    [
+      100,
+      100,
+      100
+    ]
+  ],
+  "harmful_final_trust": [
+    98,
+    -68
+  ],
+  "harmful_provider_action_tick": 102,
+  "histories": 16,
+  "history_ablation_benefit": [
+    100,
+    95,
+    100
+  ],
+  "history_ablation_mixed": [
+    [
+      40,
+      35,
+      45
+    ],
+    [
+      35,
+      45,
+      45
+    ]
+  ],
+  "information_support": [
+    20,
+    60
+  ],
+  "interior_null_resource_actions": true,
+  "misleading_support": [
+    20,
+    -30
+  ],
+  "post_evaluation_diagnostics": true,
+  "private_focal_twins": 7,
+  "reconverged_material_periods": 10,
+  "redundant_support": [
+    10,
+    10
+  ],
+  "references": {
+    "formerly_useful/Recurring": {
+      "archive": "seed-42.jsonl.gz",
+      "record": 65
+    },
+    "help/NoHistory": {
+      "archive": "held-out-seed-42.jsonl.gz",
+      "record": 14
+    },
+    "help/Recurring": {
+      "archive": "held-out-seed-42.jsonl.gz",
+      "record": 9
+    },
+    "history/Recurring": {
+      "archive": "seed-42.jsonl.gz",
+      "record": 37
+    },
+    "history/Serial": {
+      "archive": "seed-42.jsonl.gz",
+      "record": 38
+    },
+    "information/Recurring": {
+      "archive": "seed-42.jsonl.gz",
+      "record": 44
+    },
+    "misleading/Recurring": {
+      "archive": "seed-42.jsonl.gz",
+      "record": 51
+    },
+    "mixed/NoHistory": {
+      "archive": "held-out-seed-42.jsonl.gz",
+      "record": 98
+    },
+    "mixed/Recurring": {
+      "archive": "held-out-seed-42.jsonl.gz",
+      "record": 93
+    },
+    "no_food/Recurring": {
+      "archive": "seed-42.jsonl.gz",
+      "record": 9
+    },
+    "no_food/Serial": {
+      "archive": "seed-42.jsonl.gz",
+      "record": 10
+    },
+    "ongoing/Fixed": {
+      "archive": "seed-42.jsonl.gz",
+      "record": 99
+    },
+    "ongoing/Recurring": {
+      "archive": "seed-42.jsonl.gz",
+      "record": 100
+    },
+    "ongoing/Serial": {
+      "archive": "seed-42.jsonl.gz",
+      "record": 101
+    },
+    "recurring/Fixed": {
+      "archive": "seed-42.jsonl.gz",
+      "record": 1
+    },
+    "recurring/Recurring": {
+      "archive": "seed-42.jsonl.gz",
+      "record": 2
+    }
+  },
+  "repeat_meals": [
+    5,
+    9,
+    13
+  ],
+  "repeated_occupation_meals": [
+    3,
+    7,
+    11,
+    15,
+    19
+  ],
+  "reversed_transfer": [
+    51,
+    52,
+    53
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "classification": "INVALID_PHYSICAL_INTEGRATION",
+  "case": "information",
+  "mode": "EatFirst",
+  "interval": 2,
+  "period": 0,
+  "inquiry": 0,
+  "actor": 0,
+  "expected_hunger": 40,
+  "recorded_hunger": 35,
+  "reason": "saved listener Agent overwrites the need update after information delivery",
+  "base_revision": "5bce73cc4f57c4e0781d30b8876a70826acfbd89",
+  "treatment_and_fixtures_retuned": false
+}

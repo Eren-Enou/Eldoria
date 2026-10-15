@@ -1,0 +1,62 @@
+{
+  "Fixed/Recurring": {
+    "pairs": 152,
+    "final_material_changed": 152,
+    "transfer_count_changed": 76,
+    "query_count_changed": 8,
+    "consumed_more": 144,
+    "consumed_less": 0,
+    "someone_hungrier": 152,
+    "someone_less_hungry": 0
+  },
+  "FixedContact/ContactOnly": {
+    "pairs": 152,
+    "final_material_changed": 152,
+    "transfer_count_changed": 74,
+    "query_count_changed": 24,
+    "consumed_more": 0,
+    "consumed_less": 0,
+    "someone_hungrier": 152,
+    "someone_less_hungry": 0
+  },
+  "ContactOnly/Recurring": {
+    "pairs": 152,
+    "final_material_changed": 144,
+    "transfer_count_changed": 81,
+    "query_count_changed": 20,
+    "consumed_more": 144,
+    "consumed_less": 0,
+    "someone_hungrier": 0,
+    "someone_less_hungry": 20
+  },
+  "Serial/Recurring": {
+    "pairs": 152,
+    "final_material_changed": 20,
+    "transfer_count_changed": 24,
+    "query_count_changed": 3,
+    "consumed_more": 0,
+    "consumed_less": 0,
+    "someone_hungrier": 20,
+    "someone_less_hungry": 0
+  },
+  "Recurring/EatFirst": {
+    "pairs": 152,
+    "final_material_changed": 12,
+    "transfer_count_changed": 73,
+    "query_count_changed": 16,
+    "consumed_more": 0,
+    "consumed_less": 0,
+    "someone_hungrier": 12,
+    "someone_less_hungry": 0
+  },
+  "Recurring/NoHistory": {
+    "pairs": 152,
+    "final_material_changed": 11,
+    "transfer_count_changed": 65,
+    "query_count_changed": 8,
+    "consumed_more": 0,
+    "consumed_less": 0,
+    "someone_hungrier": 4,
+    "someone_less_hungry": 10
+  }
+}

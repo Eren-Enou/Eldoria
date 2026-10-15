@@ -1,0 +1,17 @@
+{
+  "src/simulation.rs": {
+    "self_hooks": 5,
+    "resource_hooks": 1,
+    "reviewed_source_sha256": "dec603ffbc080b492f6d10e3c0c2c306a21645ab925a9a4bd792beed8bd53464"
+  },
+  "src/simulation/adaptive.rs": {
+    "self_hooks": 6,
+    "resource_hooks": 0,
+    "reviewed_source_sha256": "b9cc6b7951275bb9f3c5d02995359b42f7c0834017cd13265abd69f6db0ae0d3"
+  },
+  "src/simulation/provenance.rs": {
+    "self_hooks": 7,
+    "resource_hooks": 0,
+    "reviewed_source_sha256": "1f6db7edd6027fecb06fed53add7feccc010422419cc91465b98858fd4016ff7"
+  }
+}

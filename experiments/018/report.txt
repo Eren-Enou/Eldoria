@@ -1,0 +1,29 @@
+Experiment018:1064 registered worlds each exactly replayed;266 independently reconstructed fullseed42 histories.
+38 matched groups;798 overlapping comparisons;56 opening-matched order controls;10 corruption categories.
+Seven matched focal privacy twins;preserved invalid hook candidate is rejected. No statistical replication or global welfare ranking.
+Independent seed42 comparisons:
+{"any_period_material": 38, "consumed_less": 0, "consumed_more": 36, "final_material_changed": 38, "final_trust_changed": 35, "inquiry_selection_changed": 2, "pair": "Fixed/Recurring", "pairs": 38, "query_count_changed": 2, "reconverged_material": 0, "resource_action_changed": 37, "someone_hungrier": 38, "someone_less_hungry": 0, "successive_period_material": 38, "transfer_count_changed": 19}
+{"any_period_material": 38, "consumed_less": 0, "consumed_more": 0, "final_material_changed": 38, "final_trust_changed": 37, "inquiry_selection_changed": 6, "pair": "FixedContact/ContactOnly", "pairs": 38, "query_count_changed": 6, "reconverged_material": 0, "resource_action_changed": 37, "someone_hungrier": 38, "someone_less_hungry": 0, "successive_period_material": 38, "transfer_count_changed": 17}
+{"any_period_material": 36, "consumed_less": 0, "consumed_more": 36, "final_material_changed": 36, "final_trust_changed": 29, "inquiry_selection_changed": 5, "pair": "ContactOnly/Recurring", "pairs": 38, "query_count_changed": 5, "reconverged_material": 0, "resource_action_changed": 35, "someone_hungrier": 0, "someone_less_hungry": 5, "successive_period_material": 36, "transfer_count_changed": 20}
+{"any_period_material": 24, "consumed_less": 0, "consumed_more": 0, "final_material_changed": 5, "final_trust_changed": 7, "inquiry_selection_changed": 1, "pair": "Serial/Recurring", "pairs": 38, "query_count_changed": 1, "reconverged_material": 19, "resource_action_changed": 8, "someone_hungrier": 5, "someone_less_hungry": 0, "successive_period_material": 24, "transfer_count_changed": 6}
+{"any_period_material": 27, "consumed_less": 0, "consumed_more": 0, "final_material_changed": 3, "final_trust_changed": 24, "inquiry_selection_changed": 4, "pair": "Recurring/EatFirst", "pairs": 38, "query_count_changed": 4, "reconverged_material": 24, "resource_action_changed": 27, "someone_hungrier": 3, "someone_less_hungry": 0, "successive_period_material": 27, "transfer_count_changed": 18}
+{"any_period_material": 19, "consumed_less": 0, "consumed_more": 0, "final_material_changed": 2, "final_trust_changed": 33, "inquiry_selection_changed": 3, "pair": "Recurring/NoHistory", "pairs": 38, "query_count_changed": 2, "reconverged_material": 17, "resource_action_changed": 33, "someone_hungrier": 1, "someone_less_hungry": 2, "successive_period_material": 18, "transfer_count_changed": 17}
+All-seed summary comparisons:
+{"consumed_less": 0, "consumed_more": 144, "final_material_changed": 152, "pair": "Fixed/Recurring", "pairs": 152, "query_count_changed": 8, "someone_hungrier": 152, "someone_less_hungry": 0, "transfer_count_changed": 76}
+{"consumed_less": 0, "consumed_more": 0, "final_material_changed": 152, "pair": "FixedContact/ContactOnly", "pairs": 152, "query_count_changed": 24, "someone_hungrier": 152, "someone_less_hungry": 0, "transfer_count_changed": 74}
+{"consumed_less": 0, "consumed_more": 144, "final_material_changed": 144, "pair": "ContactOnly/Recurring", "pairs": 152, "query_count_changed": 20, "someone_hungrier": 0, "someone_less_hungry": 20, "transfer_count_changed": 81}
+{"consumed_less": 0, "consumed_more": 0, "final_material_changed": 20, "pair": "Serial/Recurring", "pairs": 152, "query_count_changed": 3, "someone_hungrier": 20, "someone_less_hungry": 0, "transfer_count_changed": 24}
+{"consumed_less": 0, "consumed_more": 0, "final_material_changed": 12, "pair": "Recurring/EatFirst", "pairs": 152, "query_count_changed": 16, "someone_hungrier": 12, "someone_less_hungry": 0, "transfer_count_changed": 73}
+{"consumed_less": 0, "consumed_more": 0, "final_material_changed": 11, "pair": "Recurring/NoHistory", "pairs": 152, "query_count_changed": 8, "someone_hungrier": 4, "someone_less_hungry": 10, "transfer_count_changed": 65}
+{"consumed": 62, "hunger_reduced": 1220, "mode": "Recurring", "order": "Ascending", "queries": 2, "transfers": 51, "worlds": 4}
+{"consumed": 62, "hunger_reduced": 1160, "mode": "Recurring", "order": "Descending", "queries": 1, "transfers": 54, "worlds": 4}
+{"consumed": 62, "hunger_reduced": 1230, "mode": "Recurring", "order": "Rotating", "queries": 2, "transfers": 53, "worlds": 4}
+{"consumed": 62, "hunger_reduced": 1390, "mode": "Serial", "order": "Ascending", "queries": 2, "transfers": 51, "worlds": 4}
+{"consumed": 62, "hunger_reduced": 1470, "mode": "Serial", "order": "Descending", "queries": 1, "transfers": 62, "worlds": 4}
+{"consumed": 62, "hunger_reduced": 1465, "mode": "Serial", "order": "Rotating", "queries": 2, "transfers": 54, "worlds": 4}
+{"consumed": 62, "hunger_reduced": 775, "mode": "EatFirst", "order": "Ascending", "queries": 2, "transfers": 12, "worlds": 4}
+{"consumed": 62, "hunger_reduced": 765, "mode": "EatFirst", "order": "Descending", "queries": 2, "transfers": 10, "worlds": 4}
+{"consumed": 62, "hunger_reduced": 770, "mode": "EatFirst", "order": "Rotating", "queries": 4, "transfers": 10, "worlds": 4}
+{"consumed": 62, "hunger_reduced": 1140, "mode": "NoHistory", "order": "Ascending", "queries": 2, "transfers": 33, "worlds": 4}
+{"consumed": 62, "hunger_reduced": 1305, "mode": "NoHistory", "order": "Descending", "queries": 1, "transfers": 41, "worlds": 4}
+{"consumed": 62, "hunger_reduced": 1205, "mode": "NoHistory", "order": "Rotating", "queries": 3, "transfers": 45, "worlds": 4}

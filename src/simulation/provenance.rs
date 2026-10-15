@@ -188,6 +188,7 @@ impl Simulation {
         let mut decisions = vec![opening];
         let mut roots = Vec::new();
         self.world.resource_mut::<Runtime>().tick += 1;
+        self.sync_recurring();
         if open {
             let index = original
                 .participants
@@ -211,9 +212,11 @@ impl Simulation {
                 };
                 let decision = (self.world.resource::<p::InspectionPolicy>().0)(&input);
                 self.world.resource_mut::<Runtime>().tick += 1;
+                self.sync_recurring();
                 if decision.input == input && decision.selected {
                     let claim = foresight::reading(seed, event, owner, 0, truth, &sensor);
                     self.world.resource_mut::<Runtime>().tick += u64::from(sensor.effort);
+                    self.sync_recurring();
                     let tick = self.world.resource::<Runtime>().tick;
                     let root_id = self
                         .world
@@ -351,6 +354,7 @@ impl Simulation {
         }
         let start = self.world.resource::<Runtime>().tick;
         self.world.resource_mut::<Runtime>().tick += 1;
+        self.sync_recurring();
         self.world
             .resource_mut::<q::Inquiry>()
             .contact(listener, source);
@@ -414,6 +418,7 @@ impl Simulation {
         let valid = decision.input == input
             && (decision.selected == p::ExchangeAction::Silence || input.acquired.is_some());
         self.world.resource_mut::<Runtime>().tick += 1;
+        self.sync_recurring();
         self.world
             .resource_mut::<q::Inquiry>()
             .contact(listener, source);
@@ -850,6 +855,7 @@ impl Simulation {
         };
         let start = self.world.resource::<Runtime>().tick;
         self.world.resource_mut::<Runtime>().tick += 1;
+        self.sync_recurring();
         let mut receipt = None;
         let mut value = 0;
         let mut before = None;
@@ -883,6 +889,7 @@ impl Simulation {
                 .unwrap();
             concern_before = Some(c.clone());
             self.world.resource_mut::<Runtime>().tick += u64::from(strategy.cost());
+            self.sync_recurring();
             // Preserve the original refuser's established self-knowledge channel.
             // It remains the 006 resolver when no new acquisition is being relayed.
             let reply_valid;

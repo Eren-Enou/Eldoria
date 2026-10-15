@@ -187,6 +187,7 @@ impl Simulation {
             return Err("meeting requires 2..8 distinct existing participants".into());
         }
         self.world.resource_mut::<Runtime>().tick += 1;
+        self.sync_recurring();
         let tick = self.world.resource::<Runtime>().tick;
         let meeting = self.world.resource::<Inquiry>().meetings.len() as u64;
         self.world
@@ -268,6 +269,7 @@ impl Simulation {
                 - capability.sensor.effort as i32;
             let offered = score > 0;
             self.world.resource_mut::<Runtime>().tick += 1;
+            self.sync_recurring();
             let tick = self.world.resource::<Runtime>().tick;
             let mut state = self.world.resource_mut::<Inquiry>();
             let id = state.notices.len() as u64;
@@ -439,6 +441,7 @@ impl Simulation {
             _ => 0,
         };
         self.world.resource_mut::<Runtime>().tick += u64::from(time_spent);
+        self.sync_recurring();
         let id = self.world.resource::<Inquiry>().records.len() as u64;
         let mut response = None;
         let mut category = q::Novelty::None;
@@ -735,6 +738,7 @@ impl Simulation {
                         Some(EvidenceKind::Fallible{scarce,reliability,..}) if *scarce!=observed || *reliability!=sensor.reliability));
                 if incompatible {
                     self.world.resource_mut::<Runtime>().tick += 1;
+                    self.sync_recurring();
                     return q::Response {
                         decision,
                         valid: false,
@@ -810,9 +814,11 @@ impl Simulation {
                     receipts.push(info.id);
                 }
                 self.world.resource_mut::<Runtime>().tick += u64::from(sensor.effort);
+                self.sync_recurring();
             }
         }
         self.world.resource_mut::<Runtime>().tick += 1;
+        self.sync_recurring();
         let time_spent = (self.world.resource::<Runtime>().tick - start_tick) as u32;
         q::Response {
             decision,

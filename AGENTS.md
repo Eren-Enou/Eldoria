@@ -247,3 +247,15 @@ replay,all three readers,188 full-state nulls and narrow7/188 material effect.
 No recurring needs or disjoint concurrency are retroactively imposed on017.
 018 may begin only after the001–017 protection gate validates and is committed.
 No019 or automatic018 protection.
+
+Experiment018 is completed research ACCEPT WITH QUALIFICATION, pending independent
+scientific review; see experiments/018/results.md and specification.md. Preserve
+epoch-based shared need progression, saturation, consumption after elapsed pressure,
+one-tick idle cadence, no mandatory period meals and all seven control modes.
+Three actors, one resource commitment and atomic inquiry are deliberate limits.
+Extra opportunities do not improve consumption totals in these fixtures; preserve
+the same-input foregone-transfer chain, reconvergence, hungrier outcomes, ordering
+and history-ablation reversals. No new cognitive cells or default adoption.
+Keep separate read-only validate018, exact replay and independent physics/cognition
+reconstruction; retain the invalid initial clock-hook candidate and regression.
+Foundation remains001–017. Do not protect018 automatically or begin019.

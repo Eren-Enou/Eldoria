@@ -167,3 +167,11 @@ rare material differences,atomic inquiry,three-person topology,ordering and no
 metabolism. Shared/standalone validate017 and all three independent readers protect
 228 original artifacts. No policy adoption;018 requires its own later independent
 review/protection and must not be silently incorporated into this historical contract.
+
+Experiment018 is completed research, ACCEPT WITH QUALIFICATION pending a separate
+independent scientific review: [results](../experiments/018/results.md),
+[specification](../experiments/018/specification.md). Follow the recurring source row
+in the architecture map. Its separate `validate018` gate reconstructs need progression,
+actual activities and negative consequences. Protected foundation remains001–017;
+no automatic018 protection/default adoption. Preserve both the invalid initial clock
+integration candidate and all valid costly/null outcomes. No019.

@@ -1,0 +1,18 @@
+{
+  "case": "ongoing",
+  "clock_value_bytes": 32,
+  "commitment_value_bytes": 48,
+  "max_commitments": 1,
+  "mode": "Recurring",
+  "need_record_value_bytes": 48,
+  "need_records": 576,
+  "need_records_json_bytes": 43053,
+  "new_cognitive_cells": 0,
+  "periods": 24,
+  "point_table_json_bytes": 2157512,
+  "points": 688,
+  "policy_decisions_json_bytes": 2081654,
+  "seed": 42,
+  "steps": 465,
+  "trial_json_bytes": 6296754
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "mode": "Recurring",
+    "order": "Ascending",
+    "worlds": 4,
+    "transfers": 51,
+    "queries": 2,
+    "consumed": 62,
+    "hunger_reduced": 1220
+  },
+  {
+    "mode": "Recurring",
+    "order": "Descending",
+    "worlds": 4,
+    "transfers": 54,
+    "queries": 1,
+    "consumed": 62,
+    "hunger_reduced": 1160
+  },
+  {
+    "mode": "Recurring",
+    "order": "Rotating",
+    "worlds": 4,
+    "transfers": 53,
+    "queries": 2,
+    "consumed": 62,
+    "hunger_reduced": 1230
+  },
+  {
+    "mode": "Serial",
+    "order": "Ascending",
+    "worlds": 4,
+    "transfers": 51,
+    "queries": 2,
+    "consumed": 62,
+    "hunger_reduced": 1390
+  },
+  {
+    "mode": "Serial",
+    "order": "Descending",
+    "worlds": 4,
+    "transfers": 62,
+    "queries": 1,
+    "consumed": 62,
+    "hunger_reduced": 1470
+  },
+  {
+    "mode": "Serial",
+    "order": "Rotating",
+    "worlds": 4,
+    "transfers": 54,
+    "queries": 2,
+    "consumed": 62,
+    "hunger_reduced": 1465
+  },
+  {
+    "mode": "EatFirst",
+    "order": "Ascending",
+    "worlds": 4,
+    "transfers": 12,
+    "queries": 2,
+    "consumed": 62,
+    "hunger_reduced": 775
+  },
+  {
+    "mode": "EatFirst",
+    "order": "Descending",
+    "worlds": 4,
+    "transfers": 10,
+    "queries": 2,
+    "consumed": 62,
+    "hunger_reduced": 765
+  },
+  {
+    "mode": "EatFirst",
+    "order": "Rotating",
+    "worlds": 4,
+    "transfers": 10,
+    "queries": 4,
+    "consumed": 62,
+    "hunger_reduced": 770
+  },
+  {
+    "mode": "NoHistory",
+    "order": "Ascending",
+    "worlds": 4,
+    "transfers": 33,
+    "queries": 2,
+    "consumed": 62,
+    "hunger_reduced": 1140
+  },
+  {
+    "mode": "NoHistory",
+    "order": "Descending",
+    "worlds": 4,
+    "transfers": 41,
+    "queries": 1,
+    "consumed": 62,
+    "hunger_reduced": 1305
+  },
+  {
+    "mode": "NoHistory",
+    "order": "Rotating",
+    "worlds": 4,
+    "transfers": 45,
+    "queries": 3,
+    "consumed": 62,
+    "hunger_reduced": 1205
+  }
+]

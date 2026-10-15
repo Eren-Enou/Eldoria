@@ -1,5 +1,6 @@
 mod contact_learning;
 mod opportunities;
+mod recurring;
 use crate::cognition::*;
 use crate::concerns::{
     self, ConcernPolicy, Concerns, Creation, FollowAction, FollowDecision, FollowInput,
@@ -621,6 +622,7 @@ impl Simulation {
             0
         };
         self.world.resource_mut::<Runtime>().tick += u64::from(time_spent);
+        self.sync_recurring();
         let tick = self.world.resource::<Runtime>().tick;
         let mut response_conversation = None;
         let mut actual_response = None;
@@ -874,6 +876,7 @@ impl Simulation {
                             final_receipt = Some(receipt);
                         }
                         self.world.resource_mut::<Runtime>().tick += u64::from(sensor.effort);
+                        self.sync_recurring();
                         final_receipt.unwrap()
                     } else {
                         self.receive_information(
@@ -914,6 +917,7 @@ impl Simulation {
             // Receiving information already consumes one tick; other turns do too.
             if information.is_none() {
                 self.world.resource_mut::<Runtime>().tick += 1;
+                self.sync_recurring();
             }
             let tick = self.world.resource::<Runtime>().tick;
             let food_after = entities.map(|e| self.world.get::<Agent>(e).unwrap().food);
@@ -1093,6 +1097,7 @@ impl Simulation {
             .get(&id)
             .ok_or("unknown agent")?;
         self.world.resource_mut::<Runtime>().tick += 1;
+        self.sync_recurring();
         let tick = self.world.resource::<Runtime>().tick;
         let mut a = self.world.get_mut::<Agent>(entity).unwrap();
         let food_before = a.food;
@@ -1439,6 +1444,9 @@ impl Simulation {
         cognition.information.push(record.clone());
         self.world.insert_resource(cognition);
         *self.world.get_mut::<Agent>(entity).unwrap() = agent;
+        // Commit the saved listener before018 updates hunger,so this write cannot
+        // erase elapsed pressure. No actor decision occurs inside this delivery.
+        self.sync_recurring();
         if let Some(mut concerns) = self.world.get_resource_mut::<Concerns>() {
             concerns.receive(listener, event, record.after.support, record.id);
         }
@@ -1449,6 +1457,7 @@ impl Simulation {
 fn advance(world: &mut World) {
     let mut runtime = world.remove_resource::<Runtime>().unwrap();
     runtime.tick += 1;
+    recurring::sync(world, runtime.tick);
     let policy = world.resource::<Policy>().0;
     let active: Vec<_> = runtime.active.iter().copied().collect();
     for scene_index in active {

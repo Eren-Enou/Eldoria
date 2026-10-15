@@ -1,0 +1,163 @@
+diff --git a/src/simulation.rs b/src/simulation.rs
+index c8673ec..7e8d823 100644
+--- a/src/simulation.rs
++++ b/src/simulation.rs
+@@ -1,5 +1,6 @@
+ mod contact_learning;
+ mod opportunities;
++mod recurring;
+ use crate::cognition::*;
+ use crate::concerns::{
+     self, ConcernPolicy, Concerns, Creation, FollowAction, FollowDecision, FollowInput,
+@@ -621,6 +622,7 @@ impl Simulation {
+             0
+         };
+         self.world.resource_mut::<Runtime>().tick += u64::from(time_spent);
++        self.sync_recurring();
+         let tick = self.world.resource::<Runtime>().tick;
+         let mut response_conversation = None;
+         let mut actual_response = None;
+@@ -874,6 +876,7 @@ impl Simulation {
+                             final_receipt = Some(receipt);
+                         }
+                         self.world.resource_mut::<Runtime>().tick += u64::from(sensor.effort);
++                        self.sync_recurring();
+                         final_receipt.unwrap()
+                     } else {
+                         self.receive_information(
+@@ -914,6 +917,7 @@ impl Simulation {
+             // Receiving information already consumes one tick; other turns do too.
+             if information.is_none() {
+                 self.world.resource_mut::<Runtime>().tick += 1;
++                self.sync_recurring();
+             }
+             let tick = self.world.resource::<Runtime>().tick;
+             let food_after = entities.map(|e| self.world.get::<Agent>(e).unwrap().food);
+@@ -1093,6 +1097,7 @@ impl Simulation {
+             .get(&id)
+             .ok_or("unknown agent")?;
+         self.world.resource_mut::<Runtime>().tick += 1;
++        self.sync_recurring();
+         let tick = self.world.resource::<Runtime>().tick;
+         let mut a = self.world.get_mut::<Agent>(entity).unwrap();
+         let food_before = a.food;
+@@ -1416,6 +1421,7 @@ impl Simulation {
+             agent.trust.insert(speaker, trust);
+         }
+         self.world.resource_mut::<Runtime>().tick += 1;
++        self.sync_recurring();
+         let record = InformationScene {
+             id,
+             tick: self.world.resource::<Runtime>().tick,
+@@ -1449,6 +1455,7 @@ impl Simulation {
+ fn advance(world: &mut World) {
+     let mut runtime = world.remove_resource::<Runtime>().unwrap();
+     runtime.tick += 1;
++    recurring::sync(world, runtime.tick);
+     let policy = world.resource::<Policy>().0;
+     let active: Vec<_> = runtime.active.iter().copied().collect();
+     for scene_index in active {
+diff --git a/src/simulation/adaptive.rs b/src/simulation/adaptive.rs
+index 0cb3ab4..0a75da7 100644
+--- a/src/simulation/adaptive.rs
++++ b/src/simulation/adaptive.rs
+@@ -187,6 +187,7 @@ impl Simulation {
+             return Err("meeting requires 2..8 distinct existing participants".into());
+         }
+         self.world.resource_mut::<Runtime>().tick += 1;
++        self.sync_recurring();
+         let tick = self.world.resource::<Runtime>().tick;
+         let meeting = self.world.resource::<Inquiry>().meetings.len() as u64;
+         self.world
+@@ -268,6 +269,7 @@ impl Simulation {
+                 - capability.sensor.effort as i32;
+             let offered = score > 0;
+             self.world.resource_mut::<Runtime>().tick += 1;
++            self.sync_recurring();
+             let tick = self.world.resource::<Runtime>().tick;
+             let mut state = self.world.resource_mut::<Inquiry>();
+             let id = state.notices.len() as u64;
+@@ -439,6 +441,7 @@ impl Simulation {
+             _ => 0,
+         };
+         self.world.resource_mut::<Runtime>().tick += u64::from(time_spent);
++        self.sync_recurring();
+         let id = self.world.resource::<Inquiry>().records.len() as u64;
+         let mut response = None;
+         let mut category = q::Novelty::None;
+@@ -735,6 +738,7 @@ impl Simulation {
+                         Some(EvidenceKind::Fallible{scarce,reliability,..}) if *scarce!=observed || *reliability!=sensor.reliability));
+                 if incompatible {
+                     self.world.resource_mut::<Runtime>().tick += 1;
++                    self.sync_recurring();
+                     return q::Response {
+                         decision,
+                         valid: false,
+@@ -810,9 +814,11 @@ impl Simulation {
+                     receipts.push(info.id);
+                 }
+                 self.world.resource_mut::<Runtime>().tick += u64::from(sensor.effort);
++                self.sync_recurring();
+             }
+         }
+         self.world.resource_mut::<Runtime>().tick += 1;
++        self.sync_recurring();
+         let time_spent = (self.world.resource::<Runtime>().tick - start_tick) as u32;
+         q::Response {
+             decision,
+diff --git a/src/simulation/provenance.rs b/src/simulation/provenance.rs
+index 04ab0f5..41deae3 100644
+--- a/src/simulation/provenance.rs
++++ b/src/simulation/provenance.rs
+@@ -188,6 +188,7 @@ impl Simulation {
+         let mut decisions = vec![opening];
+         let mut roots = Vec::new();
+         self.world.resource_mut::<Runtime>().tick += 1;
++        self.sync_recurring();
+         if open {
+             let index = original
+                 .participants
+@@ -211,9 +212,11 @@ impl Simulation {
+                 };
+                 let decision = (self.world.resource::<p::InspectionPolicy>().0)(&input);
+                 self.world.resource_mut::<Runtime>().tick += 1;
++                self.sync_recurring();
+                 if decision.input == input && decision.selected {
+                     let claim = foresight::reading(seed, event, owner, 0, truth, &sensor);
+                     self.world.resource_mut::<Runtime>().tick += u64::from(sensor.effort);
++                    self.sync_recurring();
+                     let tick = self.world.resource::<Runtime>().tick;
+                     let root_id = self
+                         .world
+@@ -351,6 +354,7 @@ impl Simulation {
+         }
+         let start = self.world.resource::<Runtime>().tick;
+         self.world.resource_mut::<Runtime>().tick += 1;
++        self.sync_recurring();
+         self.world
+             .resource_mut::<q::Inquiry>()
+             .contact(listener, source);
+@@ -414,6 +418,7 @@ impl Simulation {
+         let valid = decision.input == input
+             && (decision.selected == p::ExchangeAction::Silence || input.acquired.is_some());
+         self.world.resource_mut::<Runtime>().tick += 1;
++        self.sync_recurring();
+         self.world
+             .resource_mut::<q::Inquiry>()
+             .contact(listener, source);
+@@ -850,6 +855,7 @@ impl Simulation {
+         };
+         let start = self.world.resource::<Runtime>().tick;
+         self.world.resource_mut::<Runtime>().tick += 1;
++        self.sync_recurring();
+         let mut receipt = None;
+         let mut value = 0;
+         let mut before = None;
+@@ -883,6 +889,7 @@ impl Simulation {
+                 .unwrap();
+             concern_before = Some(c.clone());
+             self.world.resource_mut::<Runtime>().tick += u64::from(strategy.cost());
++            self.sync_recurring();
+             // Preserve the original refuser's established self-knowledge channel.
+             // It remains the 006 resolver when no new acquisition is being relayed.
+             let reply_valid;

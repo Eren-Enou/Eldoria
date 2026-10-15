@@ -90,3 +90,25 @@ by metabolism. No new cognition/default adoption. [Spec](../../experiments/017/s
 `src/experiment017.rs`,`tests/experiment017.rs`;shared/standalone validate017/two original readers/complementary scope reader/measure017.
 Foundation001–017 protects228 original artifacts;[integrity audit](../integrity-audit-001-017.md).
 Recurring needs remain a prospective018 question;no019.
+
+## Experiment018: Recurring Needs and Competing Independent Activities
+
+Completed research: **ACCEPT WITH QUALIFICATION**, pending independent scientific
+review. A shared elapsed-time pressure law produces repeated voluntary eating,
+contact and inquiry decisions with real effects on later opportunities. Extra
+resource-interior opportunities sometimes change only timing or intermediate state;
+in a tightly matched case, earlier consumption empties a source and prevents a later
+transfer. Serial/Recurring consumption totals match in all152 matched configurations;
+20 end with someone hungrier under Recurring. Preserve nulls, reconvergence, ordering,
+misleading/redundant inquiry and history-ablation gains and losses. Three actors,
+one resource commitment, atomic inquiry, finite stock and inherited score scales limit
+the finding. No new planner, cognitive cells, default adoption or018 protection.
+
+[Specification](../../experiments/018/specification.md),
+[results](../../experiments/018/results.md), `src/recurring.rs`,
+`src/simulation/recurring.rs`, `src/experiment018.rs`, `tests/experiment018.rs`;
+separate `validate018`, independent `review018.py` / `review018_findings.py`,
+`measure018`.1064 exact worlds,266 independently reconstructed full histories.
+The initial clock-hook integration defect and invalid candidate remain documented
+and preserved; corrected outcomes use unchanged law, policies and fixtures. Foundation
+remains001–017. No019.

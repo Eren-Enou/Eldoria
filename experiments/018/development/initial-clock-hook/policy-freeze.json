@@ -1,0 +1,8 @@
+{
+  "src/recurring.rs": "2c271d1a28d6cac9748f6e261897b57fa236902f3d744a748bbdc6c8bf27ee46",
+  "src/simulation/recurring.rs": "72bbf1392b31c43c7eef29ac746a30030ba969627f443dc00bd5c116143fb1ba",
+  "src/experiment018.rs": "7965940fd88bd5f37574fcdedb6974041674547dc98a3146de3b6fd5b86f21e9",
+  "experiments/018/specification.md": "37ea5208e6d429afb586184d5204be4ac083c14389f438c9064fae1dbd58b34e",
+  "experiments/018/shared-clock-hooks.diff": "b0bedf1839a535e00e17a32aae1efadca3dd03847a8b379a398746bb2ff78767",
+  "experiments/018/clock-hooks.json": "a99381b50c698aafd208e30a44e53d163e7dd0eeddffe5dbbb73b923750f17d2"
+}

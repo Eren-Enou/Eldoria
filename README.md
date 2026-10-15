@@ -401,3 +401,23 @@ separates policy/world/serialization timing and observer point-table cost. The n
 foundation gate protects001–017,including complementary `review017_scope.py`.
 [Contract](docs/experiment-contract-001-017.md),[integrity audit](docs/integrity-audit-001-017.md),
 [research handoff](docs/research-handoff-001-017.md).
+
+## Experiment018: Recurring Needs and Competing Independent Activities
+
+[Specification](experiments/018/specification.md), [results](experiments/018/results.md):
+**ACCEPT WITH QUALIFICATION as research**, pending independent scientific review.
+Consistent elapsed-time pressure creates repeated voluntary choices and can change
+later executed transfers, trust and material circumstances. Extra opportunities to
+eat during resource interaction often only change timing and can leave people
+hungrier by exhausting finite stocks sooner. Preserve harmful choices, nulls,
+reconvergence, ordering and history-ablation reversals. Three people, one resource
+commitment, atomic inquiry and heuristic score scales bound the conclusion.
+No new cognitive cells, default adoption or018 foundation protection. No019.
+
+Read-only `cargo run --release --locked -j 1 --example validate018` checks1064 exact
+worlds,266 full independent reconstructions,16 causal diagnostics,10 corruption
+categories and228 historical hashes without target caches. `measure018` separates
+pure policy/need, world, resolver activity and serialization costs. New evidence
+generation uses `evaluate018 -- --output target/experiment018-new` only when authorized;
+never regenerate historical archives in place. The invalid first clock integration
+candidate remains preserved alongside the valid corrected evidence.
