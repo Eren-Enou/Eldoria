@@ -54,12 +54,14 @@ encounters produce agreement, refusal, and withdrawal. See
 
 ## Architecture and verification
 
-The [001–015 contract and coverage map](docs/experiment-contract-001-015.md)
+The [001–016 contract and coverage map](docs/experiment-contract-001-016.md)
 documents mode-specific locality, retention, persistent consequences, exact bounds
 and regression coverage, carrying forward the unchanged historical maps and 010's
 qualified scientific acceptance, 011's qualified negative adoption result and012's
 qualified experiential-learning findings with both new modes retained as research,
 and013's qualified transient reconsideration with both review corrections protected.
+015's independent consent and016's bounded contact-feedback findings are protected
+with their recipient-control, ordering and negative-adoption qualifications.
 CurrentNeed remains experimental and opt-in; StatusValue remains unadopted.
 Verify the protected foundation without writing archives (Python standard library
 is required for direct gzip/SHA-256 verification):
@@ -366,11 +368,13 @@ cache; `measure015` separates fixed-input timing from full histories.
 Own invitation outcomes can change later contact,actual refusal/trust/food history
 and persistent meals. Fewer failures often leave material unchanged; long delays
 can miss useful inquiry. A one-record control has narrow gains,with harmful choices
-and strong ordering sensitivity preserved. No default adoption or016 protection.
+and strong ordering sensitivity preserved. [Independent review](docs/experiment-016-review.md): ACCEPT WITH QUALIFICATION; no default adoption.
 
 Run `cargo run --release --locked -j 1 --example evaluate016 -- --output target/experiment016-final`
 only for authorized016 evidence generation. Read-only `validate016` checks1000 exact
 worlds,250 primary independent histories and ten post-evaluation seed1 extractions;
 `review016.py --self-test` and `review016_benefit.py` reconstruct actual causal chains.
 `measure016 -- experiments/016/observer-cost.json` separates policy/update/serialization
-cost; timings are separate evidence. Foundation remains001–015. No017.
+cost; timings are separate evidence. Shared foundation now protects001–016 and207 artifacts, including complementary
+`review016_findings.py` and nine corruption categories. [Audit](docs/integrity-audit-001-016.md),
+[handoff](docs/research-handoff-001-016.md).017 may begin only after Gate B passes.

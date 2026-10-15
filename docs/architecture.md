@@ -745,4 +745,7 @@ remains an explicit reference. Matching order stays orthogonal; no recipient is 
 Additional audits contain tiny feedback state/signals,not another full agent snapshot;
 existing015 observer capture remains large. See [016 results](../experiments/016/results.md)
 for useful/harmful chains and costs. NO JUSTIFICATION for Typed adoption; no default
-or foundation extension,independent review pending. No017.
+adoption. [Independent review](experiment-016-review.md) accepts science with qualification;
+[001–016 contract](experiment-contract-001-016.md) protects207 artifacts, exact original
+replay and three readers. Lazy expiry and stronger positive input/prefix checks remain
+explicit. No017 runtime is part of this protection pass.

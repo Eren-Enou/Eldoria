@@ -1,6 +1,6 @@
 # World of Individuals experiment index
 
-Protected through015; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
+Protected through016; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
 reports or protected contracts. Historical next-experiment recommendations reflect
 their publication date. Update the affected row when an experiment concludes.
 
@@ -38,7 +38,7 @@ evaluators are for explicitly authorized experiment evidence generation, not aud
 Full report links contain causal traces, seed controls, counters, limitations and
 reproduction details; consult those sections before making stronger claims.
 
-Latest protection: [001–015 integrity audit](../integrity-audit-001-015.md).
+Latest protection: [001–016 integrity audit](../integrity-audit-001-016.md).
 [Research handoff](../research-handoff-001-013.md) recommends a narrow scarce-activity
 question; it does not start014.
 
@@ -74,5 +74,4 @@ Continue0 is a separate recipient control,matching order remains consequential.
 [Specification](../../experiments/016/specification.md), [results](../../experiments/016/results.md),
 `src/contact_learning.rs`,`src/simulation/contact_learning.rs`,`src/experiment016.rs`,
 `tests/experiment016.rs`; standalone `validate016`, `review016.py` and `review016_benefit.py`.
-[Independent review](../experiment-016-review.md): ACCEPT WITH QUALIFICATION as science; Typed remains unadopted. Not yet protected; foundation001–015;
-no017. Post-evaluation positive trace extractions preserve all controls/negative archives.
+[Independent review](../experiment-016-review.md): ACCEPT WITH QUALIFICATION as science; Typed remains unadopted. Protected by[001–016](../experiment-contract-001-016.md),207 artifacts; shared/standalone016 and three independent readers. No default adoption;017 awaits validated Gate B. Post-evaluation positive trace extractions preserve all controls/negative archives.

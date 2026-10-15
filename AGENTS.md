@@ -33,7 +33,8 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-015.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-016.md`.
+The historical `docs/experiment-contract-001-015.md` remains authoritative for001–015.
 The historical `docs/experiment-contract-001-014.md` remains authoritative for001–014.
 The historical `docs/experiment-contract-001-013.md` remains authoritative for001–013.
 The historical `docs/experiment-contract-001-012.md` remains authoritative for 001–012.
@@ -125,7 +126,7 @@ LocalPulse default adoption. Conservative resource admission is a bound, not act
 expected duration; rejected recipient outcomes remain unknown. The normal foundation
 gate and standalone014 share exact replay and both independent readers. Preserve
 all168 frozen files, including the disclosed post-evaluation13-tick diagnostic.
-Experiment015 protection follows its separate accepted review;016 follows a new gated request.
+Experiment015 and016 protection preserve their separate accepted scientific reviews.
 
 Experiment015 is protected ACCEPT WITH QUALIFICATION; see `docs/experiment-015-review.md`
 and the001–015 contract. Preserve independent proposals/recipient consent, provisional
@@ -133,7 +134,7 @@ acceptance, exact ordering/time, executed resource/query consequences and missin
 invitation-feedback cognition. Simple/History/NoHistory remain research; Continue scale
 coupling prevents isolated superiority claims. Order is legal/reproducible, not fair.
 Keep all186 frozen artifacts and both readers in shared/standalone015 validation.
-016 requires separate preregistration after validated protection; no default adoption.
+016 is separately protected with qualification; no default adoption.
 
 When a requested task is complete:
 
@@ -222,11 +223,13 @@ controls require identical retained inputs and fixed weights; invariance need no
 survive forgetting or legitimate credibility changes. Preserve original events,
 saturated trust replay and older mode outputs. Archive new evidence under 008.
 
-Experiment016 is completed research, NO JUSTIFICATION for adopting its two-cell Typed
-retry mechanism over simpler controls; see `experiments/016/results.md`. Preserve
-own post-wave feedback,logical caps2/Recent1,6/12/2-tick expirations,FIFO/overwrite,
-contact-type separation and no inquiry-learning from invitation failure. Control's
-Continue0 response is a separate prospective factor; exact015 remains reference.
-Keep costly missed inquiry,narrow seed1 Recent gains,ordering sensitivity and finite
-food exhaustion. Standalone validate016/readers are separate from protected001–015;
-no default adoption or016 protection. Independent review is later; do not begin017.
+Experiment016 is protected ACCEPT WITH QUALIFICATION as science; NO JUSTIFICATION
+for adopting two-cell Typed; see docs/experiment-016-review.md and001–016 contract.
+Preserve own post-wave feedback,caps2/Recent1,6/12/2 expiry,FIFO/overwrite,type separation,
+no inquiry/trust fabrication from failure,Continue0 as separate recipient control,
+provisional consent,order dependence,costly until57 missed inquiry and narrow seed1
+Recent refusal/trust/consumption gains. Expiry is lazy; State equality alone is
+agents/counters, with stronger input/prefix checks for the positive slice. Keep all207
+artifacts and three independent readers in shared/standalone016 read-only validation.
+No default adoption.017 requires Gate B validated/committed/pushed,then preregistration;
+no018. Experimental scientific acceptance does not establish generally useful cooldowns.

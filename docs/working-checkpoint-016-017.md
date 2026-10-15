@@ -1,17 +1,20 @@
 #016 review / protection /017 working checkpoint
 
-Objective: independent016 review, conditional foundation protection, then017.
-A COMPLETE, ready for separate commit/push. Reviewed original/main/origin revision
-2e8a1f36a649d526c206ff98b0cdb339158e00a7. ACCEPT WITH QUALIFICATION as science;
-Typed adoption NO JUSTIFICATION. Gate A passes. No runtime/archive changes.
-New review, complementary260-history verifier, navigation map/index and checkpoint.
-Nine corruption categories; harmful missed inquiry; positive Recent refusal/trust/
-consumption9→11; ordering reversals; stronger identical old inputs/prefixes verified.
-Fmt/Clippy/full174tests/foundation001–015/standalone009–016 all exit0.
-Isolated evaluator1000 exact worlds, original raw archives/summary equality pass.
-Three readers write/cache-denied pass; original analysis outputs exact.
-207 actual baseline hashes and three016 source freezes match; links/diff pass.
-B/C NOT STARTED. No017 specification/runtime. Next: commit/push A; create001–016
-contract,207-entry manifest,shared016 gate,audit/handoff/navigation; validate all,
-commit/push B and confirm Gate B before017 preregistration. Logs and raw guard:
-%TEMP%/eldoria-016-review-017. See experiment-016-review.md for scientific limits.
+Objective: gated016 review/protection,then017 endogenous opportunities.
+A COMPLETE,pushed5904f9a9e7efffbb22a52ddb922488f09fac9adc; reviewed2e8a1f3.
+ACCEPT WITH QUALIFICATION as science; Typed adoption NO JUSTIFICATION.260 independent
+full histories,nine corruption categories,harmful retry57,positive Recent9→11 through
+refusal/trust,order reversals,all old inputs/prefixes53 and lazy-expiry qualifications.
+B COMPLETE/VALIDATED,ready for separate commit/push at main HEAD5904f9a.
+001–016 contract,207 manifest (186 inherited exact+21 actual016),audit/handoff,
+shared016/normalfoundation,governance/navigation. No runtime/archive/default changes.
+All B fmt/Clippy/full174tests/foundation001–016/standalone009–016 exit0.
+New standalone016 emptycwd passes0/files0. All three readers,corruptions and raw
+archives/source freezes pass; A write/cache-denial applies unchanged reader source.
+207 actual raw-byte baseline guard,canonical/inherited inventory,links/diff all pass.
+Logs/guard: %TEMP%/eldoria-016-review-017. No processes remain from A/B checks.
+Next: review/stage Bdiff,commit/push,confirm exact remote/HEAD; only then Gate B complete.
+C NOT STARTED. No017 specification/runtime. After confirmed B: inspect014–016 timing,
+select minimum discriminating architecture,preregister before implementation,freeze,
+execute controlled/held-out/replay/independent corruption tests,measure/report;
+full foundation/standalone compatibility,207 hashes,scoped commit/push. No018/default.

@@ -31,8 +31,8 @@ scientifically accepted and protected while its proposed mechanism is rejected.
 Protection preserves accepted findings and qualifications, not a mandate to adopt
 every tested mechanism.
 
-Experiments001–015 are protected by the
-[foundation contract](experiment-contract-001-015.md) and its inherited historical
+Experiments001–016 are protected by the
+[foundation contract](experiment-contract-001-016.md) and its inherited historical
 maps. Experiment 011's [scientific review](experiment-011-review.md) is confirmed with
 qualification: its evidence is protected, while StatusValue remains unadopted.
 Experiment012's [scientific review](experiment-012-review.md) establishes ACCEPT
@@ -42,8 +42,8 @@ Experiment013's unchanged [scientific review](experiment-013-review.md) establis
 ACCEPT WITH QUALIFICATION; Pulse/Ungated remain optional research, not defaults.
 Preserve C64 versus B64 and retained episodes outside the last-four partner scoring
 window. Its shared read-only gate invokes both independent readers.
-The [integrity report](integrity-audit-001-015.md) records the latest protection pass;
-the [research handoff](research-handoff-001-015.md) identifies failed-contact questions for a separate016 investigation.
+The [integrity report](integrity-audit-001-016.md) records the latest protection pass;
+the [research handoff](research-handoff-001-016.md) identifies endogenous availability as a separate017 question.
 Reverify source, contracts and reviews before
 updating status, and do not change unrelated conclusions.
 
@@ -150,10 +150,10 @@ Experiment015 is protected with qualification: [review](experiment-015-review.md
 [contract](experiment-contract-001-015.md). Preserve independent initiation, provisional
 consent, real execution, asymmetric order and Continue coupling, missing invitation
 feedback and negative cases. Both readers and standalone/shared015 gate protect the
-same evidence. No default adoption;016 needs prospective preregistration after Gate B.
+same evidence. No default adoption;016 was separately preregistered after015 protection.
 
-Experiment016 is completed research,unprotected: [results](../experiments/016/results.md).
-NO JUSTIFICATION for adopting two-cell Typed; preserve real local adaptation and
-narrow simpler-control gains separately from opportunity loss and matching effects.
-Its separate gate/independent readers do not extend protected001–015. No default
-adoption; its independent scientific review is a later task. No017.
+Experiment016 is protected ACCEPT WITH QUALIFICATION; Typed adoption NO JUSTIFICATION.
+[Review](experiment-016-review.md),[contract](experiment-contract-001-016.md),
+[results](../experiments/016/results.md). Shared foundation/standalone016 preserve207
+artifacts and three readers, including nine complementary corruption categories.
+No default adoption;017 may start only after Gate B is validated/committed/pushed.
