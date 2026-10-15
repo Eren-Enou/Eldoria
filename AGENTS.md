@@ -248,8 +248,8 @@ No recurring needs or disjoint concurrency are retroactively imposed on017.
 018 may begin only after the001–017 protection gate validates and is committed.
 No019 or automatic018 protection.
 
-Experiment018 is completed research ACCEPT WITH QUALIFICATION, pending independent
-scientific review; see experiments/018/results.md and specification.md. Preserve
+Experiment018 is independently reviewed ACCEPT WITH QUALIFICATION; see
+docs/experiment-018-review.md, experiments/018/results.md and specification.md. Preserve
 epoch-based shared need progression, saturation, consumption after elapsed pressure,
 one-tick idle cadence, no mandatory period meals and all seven control modes.
 Three actors, one resource commitment and atomic inquiry are deliberate limits.

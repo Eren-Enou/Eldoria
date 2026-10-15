@@ -168,8 +168,8 @@ metabolism. Shared/standalone validate017 and all three independent readers prot
 228 original artifacts. No policy adoption;018 requires its own later independent
 review/protection and must not be silently incorporated into this historical contract.
 
-Experiment018 is completed research, ACCEPT WITH QUALIFICATION pending a separate
-independent scientific review: [results](../experiments/018/results.md),
+Experiment018 is independently reviewed ACCEPT WITH QUALIFICATION:
+[review](experiment-018-review.md), [results](../experiments/018/results.md),
 [specification](../experiments/018/specification.md). Follow the recurring source row
 in the architecture map. Its separate `validate018` gate reconstructs need progression,
 actual activities and negative consequences. Protected foundation remains001–017;

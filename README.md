@@ -405,7 +405,7 @@ foundation gate protects001–017,including complementary `review017_scope.py`.
 ## Experiment018: Recurring Needs and Competing Independent Activities
 
 [Specification](experiments/018/specification.md), [results](experiments/018/results.md):
-**ACCEPT WITH QUALIFICATION as research**, pending independent scientific review.
+**Independently reviewed ACCEPT WITH QUALIFICATION**; [review](docs/experiment-018-review.md).
 Consistent elapsed-time pressure creates repeated voluntary choices and can change
 later executed transfers, trust and material circumstances. Extra opportunities to
 eat during resource interaction often only change timing and can leave people

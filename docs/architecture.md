@@ -800,5 +800,5 @@ records explain causal history; policy never reads them. Need/audit histories gr
 the live clock and existing commitment remain fixed-size. See [018 results](../experiments/018/results.md)
 for1064 exact worlds, independent reconstruction, costly early depletion, nulls,
 reconvergence and measured storage. Separate `validate018` does not extend001–017
-protection. Qualified research, pending independent scientific review; no default
+protection. [Independently reviewed](experiment-018-review.md) qualified research; no default
 adoption or019.

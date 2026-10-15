@@ -93,8 +93,8 @@ Recurring needs remain a prospective018 question;no019.
 
 ## Experiment018: Recurring Needs and Competing Independent Activities
 
-Completed research: **ACCEPT WITH QUALIFICATION**, pending independent scientific
-review. A shared elapsed-time pressure law produces repeated voluntary eating,
+Independently reviewed **ACCEPT WITH QUALIFICATION**; [review](../experiment-018-review.md).
+A shared elapsed-time pressure law produces repeated voluntary eating,
 contact and inquiry decisions with real effects on later opportunities. Extra
 resource-interior opportunities sometimes change only timing or intermediate state;
 in a tightly matched case, earlier consumption empties a source and prevents a later
