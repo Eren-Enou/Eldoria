@@ -31,8 +31,8 @@ scientifically accepted and protected while its proposed mechanism is rejected.
 Protection preserves accepted findings and qualifications, not a mandate to adopt
 every tested mechanism.
 
-Experiments001–016 are protected by the
-[foundation contract](experiment-contract-001-016.md) and its inherited historical
+Experiments001–017 are protected by the
+[foundation contract](experiment-contract-001-017.md) and its inherited historical
 maps. Experiment 011's [scientific review](experiment-011-review.md) is confirmed with
 qualification: its evidence is protected, while StatusValue remains unadopted.
 Experiment012's [scientific review](experiment-012-review.md) establishes ACCEPT
@@ -42,8 +42,10 @@ Experiment013's unchanged [scientific review](experiment-013-review.md) establis
 ACCEPT WITH QUALIFICATION; Pulse/Ungated remain optional research, not defaults.
 Preserve C64 versus B64 and retained episodes outside the last-four partner scoring
 window. Its shared read-only gate invokes both independent readers.
-The [integrity report](integrity-audit-001-016.md) records the latest protection pass;
-the [research handoff](research-handoff-001-016.md) identifies endogenous availability as a separate017 question.
+The [integrity report](integrity-audit-001-017.md) records the latest protection pass;
+the [research handoff](research-handoff-001-017.md) identifies recurring needs as a separate018 question.
+017 is protected with qualification; its188 contact-only nulls and narrow7/188 material
+effect remain distinct. No default adoption or retroactive recurring hunger.
 Reverify source, contracts and reviews before
 updating status, and do not change unrelated conclusions.
 
@@ -158,8 +160,10 @@ Experiment016 is protected ACCEPT WITH QUALIFICATION; Typed adoption NO JUSTIFIC
 artifacts and three readers, including nine complementary corruption categories.
 No default adoption;Gate B was validated/committed/pushed e968c34 before017.
 
-Experiment017 is separate unprotected research: [results](../experiments/017/results.md).
+Experiment017 is protected with qualification: [review](experiment-017-review.md),
+[contract](experiment-contract-001-017.md),[results](../experiments/017/results.md).
 Its resource-step/free-person consumption chain is qualified by contact-only null,
 rare material differences,atomic inquiry,three-person topology,ordering and no
-metabolism. Standalone validate017 and independent readers do not extend001–016.
-No policy adoption or018;future independent review/protection must be separate.
+metabolism. Shared/standalone validate017 and all three independent readers protect
+228 original artifacts. No policy adoption;018 requires its own later independent
+review/protection and must not be silently incorporated into this historical contract.

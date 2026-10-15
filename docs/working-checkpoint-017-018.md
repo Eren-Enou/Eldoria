@@ -23,3 +23,33 @@ ready for separate A commit/push; exact identity will be recorded in B documents
 Next: after A push, protect reviewed017 via inherited001–017 contract, actual228-file
 inventory, shared read-only017 gate (including scope reader), audit/handoff/navigation.
 Run every B required check, commit/push B before starting018. No outstanding defect.
+
+Stage A committed/pushed0b2ff3e16a4f4626c6b6a8bdf00a2def5b3a0ce5;main/origin clean.
+Stage B implementation: new inherited contract/228-entry manifest/audit/handoff;
+shared contract017.rs and thin standalone/normal gate include complementary scope.
+Current navigation updated across AGENTS/README/map/history/architecture/workflow/
+constitution. Fmt/Clippy pass;181 tests and full foundation/standalone009–017 queued.
+228 raw+canonical/inherited207/affected links pass. No runtime source changed.
+Next: finish B validation,empty-directory write/cache-denied new gate,review diff,
+commit/push and record B before018 preregistration. Gate B not yet passed.
+
+B empty-working-directory new shared017 gate passes with Python writes/target-cache
+reads denied;0 files created. Corrected validation harness launch: first invocation
+was stopped before scientific verification because its cwd remained repository root;
+reran after explicit Set-Location to empty017 (B-empty017-corrected.log exit0).
+No simulation or evidence repair. B full181 tests passed;foundation/009–017 still running.
+
+B normal validate_contract now passed through017 (228 hashes,940 replay,three readers).
+Standalone009 passed; explicit010–017 commands running in session16418. No defects.
+Do not begin018 yet: required standalone sequence and B commit/push remain.
+
+B explicit standalone009–016 all exited0;standalone017 is the final running check
+(session16418). Foundation017 and empty-directory new gate already passed;no source/
+fixture changes since those checks. Next: await017,final raw/source/link/diff checks,
+complete audit,stage only B files,fetch/review/commit/push B,then inspect018 architecture.
+
+Gate B complete at validated pre-commit tree: every required command through standalone017
+exit0;181 tests;shared001–017 and empty-cwd write/cache-denied gate;228 original raw
+hashes,207 inherited hashes,nine sources,470 comparison/130 rederived order rows,
+links/diff. No runtime source/archives/defaults changed. Audit finalized. Next immediate
+action: review/stage B diff,fetch/commit/push B and record exact SHA before any018 work.

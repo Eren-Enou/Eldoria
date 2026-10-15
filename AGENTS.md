@@ -33,7 +33,8 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-016.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-017.md`.
+The historical `docs/experiment-contract-001-016.md` remains authoritative for001–016.
 The historical `docs/experiment-contract-001-015.md` remains authoritative for001–015.
 The historical `docs/experiment-contract-001-014.md` remains authoritative for001–014.
 The historical `docs/experiment-contract-001-013.md` remains authoritative for001–013.
@@ -231,14 +232,18 @@ provisional consent,order dependence,costly until57 missed inquiry and narrow se
 Recent refusal/trust/consumption gains. Expiry is lazy; State equality alone is
 agents/counters, with stronger input/prefix checks for the positive slice. Keep all207
 artifacts and three independent readers in shared/standalone016 read-only validation.
-No default adoption.017 was preregistered after Gate B validated/committed/pushed;
-no018. Experimental scientific acceptance does not establish generally useful cooldowns.
+No default adoption.017 was preregistered after016 Gate B validated/committed/pushed.
+Experimental scientific acceptance does not establish generally useful cooldowns.
 
-Experiment017 remains unprotected research,ACCEPT WITH QUALIFICATION;see its results.
+Experiment017 is protected ACCEPT WITH QUALIFICATION;see docs/experiment-017-review.md
+and docs/experiment-contract-001-017.md. No default adoption.
 Preserve resource commitment/current availability versus willingness,independent
 consumption/contact choices,actual shared time/consent/release and zero new cognition.
 Inquiry stays atomic,three actors cannot form disjoint meetings,no postsetup hunger/
 profile/busy scripts. Preserve full-state contact-only null and narrow consumption
 chain/foregone transfer,NoHistory gains/losses,order effects and finite stocks.
-Separate validate017/two readers/sourcefreeze do not extend001–016 or change defaults.
-No018;017 requires separate independent review and later integrity pass.
+Shared foundation/standalone validate017 protect228 artifacts and exact original
+replay,all three readers,188 full-state nulls and narrow7/188 material effect.
+No recurring needs or disjoint concurrency are retroactively imposed on017.
+018 may begin only after the001–017 protection gate validates and is committed.
+No019 or automatic018 protection.

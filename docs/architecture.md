@@ -770,5 +770,7 @@ Committed produce identical final snapshots across188 matched configurations.
 With independent consumption,7/188 change material,concentrated in one family/two
 settings,including a foregone transfer and altered trust. NoHistory helps and harms.
 See [results](../experiments/017/results.md) for nulls,negative cases,order and storage
-limits.017 is ACCEPT WITH QUALIFICATION as research,pending independent review;
-standalone `validate017` does not extend protected001–016 or adopt a default. No018.
+limits.[Independent review](experiment-017-review.md) accepts with qualification;
+[001–017 contract](experiment-contract-001-017.md) protects228 original artifacts.
+Shared/standalone `validate017` includes both original readers and complementary scope
+checks. No default adoption;recurring needs require a separate prospective018 study.

@@ -1,6 +1,6 @@
 # World of Individuals experiment index
 
-Protected through016; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
+Protected through017; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
 reports or protected contracts. Historical next-experiment recommendations reflect
 their publication date. Update the affected row when an experiment concludes.
 
@@ -38,7 +38,7 @@ evaluators are for explicitly authorized experiment evidence generation, not aud
 Full report links contain causal traces, seed controls, counters, limitations and
 reproduction details; consult those sections before making stronger claims.
 
-Latest protection: [001–016 integrity audit](../integrity-audit-001-016.md).
+Latest protection: [001–017 integrity audit](../integrity-audit-001-017.md).
 [Research handoff](../research-handoff-001-013.md) recommends a narrow scarce-activity
 question; it does not start014.
 
@@ -79,13 +79,14 @@ Continue0 is a separate recipient control,matching order remains consequential.
 ## Experiment017: Endogenous Opportunities and Changing Social Availability
 
 Independently reviewed **ACCEPT WITH QUALIFICATION**; [review](../experiment-017-review.md).
-Protection remains a separate gated pass. Actual resource commitments expose public occupied state;
+Protected by[001–017](../experiment-contract-001-017.md). Actual resource commitments expose public occupied state;
 independent own consumption can change later invitations,transfers,trust and meals.
 Contact-only stepping is a full-state null in188 pairs;material effects with consumption
 occur7/188,one family/two parameter settings. Preserve foregone cooperation,NoHistory
 meal gains/losses,information without meals,order dependence and stranded finite stocks.
 Inquiry remains atomic,three actors admit no disjoint meetings,needs are not renewed
-by metabolism. No new cognition/default/protection. [Spec](../../experiments/017/specification.md),
+by metabolism. No new cognition/default adoption. [Spec](../../experiments/017/specification.md),
 [results](../../experiments/017/results.md),`src/opportunities.rs`,isolated adapter,
-`src/experiment017.rs`,`tests/experiment017.rs`;separate validate017/two original readers/complementary scope reader/measure017.
-Foundation remains001–016/207 artifacts. No018.
+`src/experiment017.rs`,`tests/experiment017.rs`;shared/standalone validate017/two original readers/complementary scope reader/measure017.
+Foundation001–017 protects228 original artifacts;[integrity audit](../integrity-audit-001-017.md).
+Recurring needs remain a prospective018 question;no019.

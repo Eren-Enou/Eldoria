@@ -54,7 +54,7 @@ encounters produce agreement, refusal, and withdrawal. See
 
 ## Architecture and verification
 
-The [001–016 contract and coverage map](docs/experiment-contract-001-016.md)
+The [001–017 contract and coverage map](docs/experiment-contract-001-017.md)
 documents mode-specific locality, retention, persistent consequences, exact bounds
 and regression coverage, carrying forward the unchanged historical maps and 010's
 qualified scientific acceptance, 011's qualified negative adoption result and012's
@@ -62,6 +62,8 @@ qualified experiential-learning findings with both new modes retained as researc
 and013's qualified transient reconsideration with both review corrections protected.
 015's independent consent and016's bounded contact-feedback findings are protected
 with their recipient-control, ordering and negative-adoption qualifications.
+017 protects real commitments and its narrow consumption chain,188 full-state nulls,
+ordering sensitivity and lack of recurring needs;no research policy becomes default.
 CurrentNeed remains experimental and opt-in; StatusValue remains unadopted.
 Verify the protected foundation without writing archives (Python standard library
 is required for direct gzip/SHA-256 verification):
@@ -382,19 +384,20 @@ cost; timings are separate evidence. Shared foundation now protects001–016 and
 ## Experiment017: Endogenous Opportunities and Changing Social Availability
 
 [Specification](experiments/017/specification.md),[results](experiments/017/results.md):
-**ACCEPT WITH QUALIFICATION as research**,pending independent review. Real selected
+**Protected ACCEPT WITH QUALIFICATION**;[independent review](docs/experiment-017-review.md). Real selected
 resource commitments change public availability;free-person consumption can alter
 later invitations,executed transfers,trust and persistent meals. Contact-only stepping
 is inert;effects with consumption are rare and order/fixture dependent. Preserve
 foregone cooperation,history-ablation gains/losses and information without material
 benefit. Three actors,no disjoint meetings,inquiry still atomic,no metabolism or
-postsetup busy/willingness scripts. No default adoption or017 protection;no018.
+postsetup busy/willingness scripts. No default adoption;018 is a separate prospective question.
 
 Run `cargo run --release --locked -j 1 --example evaluate017 -- --output target/experiment017-final`
 for authorized017 evidence generation only. Read-only `validate017` reruns940 worlds,
 checks235 independently reconstructed histories/47 groups/130 ordering controls,
-seven corruption categories,four causal slices and207 protected hashes. Independent
+seven corruption categories,four causal slices and228 protected hashes. Independent
 `review017.py --self-test`/`review017_findings.py` need no target cache. `measure017`
 separates policy/world/serialization timing and observer point-table cost. The normal
-foundation gate remains protected through016;scientific review/protection of017 are
-separate future work.
+foundation gate protects001–017,including complementary `review017_scope.py`.
+[Contract](docs/experiment-contract-001-017.md),[integrity audit](docs/integrity-audit-001-017.md),
+[research handoff](docs/research-handoff-001-017.md).
