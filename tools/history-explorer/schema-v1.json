@@ -6,12 +6,13 @@
   "required": ["schema", "extractor_version", "source", "trial", "timeline", "actors", "reply_actors", "resource_actors"],
   "properties": {
     "schema": {"const": "woi-history-explorer/v1"},
-    "extractor_version": {"const": 1},
+    "extractor_version": {"enum": [1, 2]},
     "source": {"type": "object", "required": ["id", "experiment", "archive", "record", "seed", "case", "mode", "config", "archive_sha256", "decoded_archive_sha256", "record_sha256", "trial_fingerprint", "source_schema", "policy_freeze_sha256", "integrity", "scientific_status"], "properties": {"experiment": {"enum": ["018", "019"]}, "seed": {"type": "string"}, "record": {"type": "integer", "minimum": 1}}},
     "trial": {"type": "object", "description": "Unmodified semantic JSON of the original full 018 or 019 Trial. Source IDs, point ordinals and namespaces retain their original meanings."},
     "timeline": {"type": "array", "description": "Derived sorted navigation index. Same-tick order is presentation order, not a claim of new causation.", "items": {"type": "object", "required": ["id", "tick", "kind", "ref", "point", "step", "data"]}},
     "actors": {"type": "array", "description": "Allowlisted activity inputs by flattened period/step then individual; null means no captured activity input."},
     "reply_actors": {"type": "array", "description": "Separately captured recipient response inputs, not activity inputs carried forward."},
-    "resource_actors": {"type": "object", "description": "Own resource-decision fields only, keyed by original resource event ID."}
+    "resource_actors": {"type": "object", "description": "Own resource-decision fields only, keyed by original resource event ID."},
+    "causal": {"type": "object", "description": "Additive extractor2 observer-only typed links. Discarded and rebuilt from original source on import, never actor cognition.", "required": ["version", "observer_only", "nodes", "chains", "encounters"], "properties": {"version": {"const": 1}, "observer_only": {"const": true}}}
   }
 }

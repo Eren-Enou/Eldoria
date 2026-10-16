@@ -43,6 +43,14 @@ Previous/next, significant-event navigation, play/pause, speed, a slider, tick j
 next individual decision, source inspection and matched comparison are functional.
 The interface renders at most 45 timeline entries near the selected moment.
 
+In Observer Perspective use **Trace recorded chain (Observer)** for typed original
+links from choice through consent, arbitration, scene/query, delivery and consequence.
+The resource filters count completed encounters separately from dispositions:
+ongoing/core85 after258 has65 zero-transfer Request→Leave encounters. Click a result
+to open its exact scene and terminal event. Native null responses and provenance
+receipts are distinct. The personal summary never equates intentions with execution.
+See [causal-navigation acceptance](validation/causal-navigation-acceptance.md).
+
 Download a current viewer export from Import / export. Importing it verifies the
 trial against source membership again and rebuilds display projections; imported
 claims, timelines and actor projections are not trusted. JSON is data, never code.
@@ -60,6 +68,8 @@ Developer checks:
 python -B -m unittest discover -s tools/history-explorer/tests -v
 node --check tools/history-explorer/app.js
 node tools/history-explorer/tests/perspective.test.cjs
+node tools/history-explorer/tests/causal.test.cjs
+python -B tools/history-explorer/tests/test_causal.py --all-sources
 python -B tools/history-explorer/measure.py
 ```
 

@@ -148,6 +148,48 @@ Other useful witnesses:
   final Snapshot equality. Preset C instead has material reconvergence with unequal
   complete final Snapshots. Equal food/hunger does not erase history or relationships.
 
+## Trace actual consequences (Observer only)
+
+Choose **Observer Perspective**, then **Trace recorded chain (Observer)** in the
+reference controls. The new section follows a recorded activity cohort through
+outgoing invitations, independent recipient replies, arbitration, actual resource
+actions or inquiry, delivery and recorded consequences. The cohort selector can
+also open a different original period/step without pretending it occurred at the
+current replay moment. Click a typed node to open its exact original source record;
+the replay moves to the recorded containing moment. Before/after links open exact
+captured points. A scene result opens at its terminal resource action.
+
+Original IDs and ordinals remain separate: resource scene, resource event, native
+query, provenance query, native receipt and provenance receipt are different
+namespaces. A null native response can coexist with a real provenance delivery.
+H10 query0 now explicitly links provenance receipt1 and assessment record1,
+support20→60/Partial→Resolved. Empty H7 inquiry stays empty. Novelty, support/status
+progress and objective correctness are distinct; the interface does not label
+every reply useful or true.
+
+The **Exact typed edges** disclosure states each recorded basis for a connection.
+Earlier event nodes can be recorded memory causes; the first later resource decision
+that explicitly names a scene event is linked too. These references do not recover
+an episode for an actor or establish that it was the sole cause of a later decision.
+Missing causal links remain unknown. Pre-epoch cause records can be inspected in
+the exact-source panel with an explicit warning; no earlier replay moment is invented.
+
+Under **Find resource encounters and invitations**, choose **Completed encounters ·
+zero transferred** and set **After world tick (exclusive)** to258 in ongoing/C85.
+The result is65 completed scenes, each Request→Leave/Withdrawal, not130 actions or
+195 invitation dispositions. A click opens the original scene and its terminal
+action. Other filters distinguish transfers, Request→Refuse, other completions,
+Declined, Reciprocal and unexecuted proposal dispositions. Reciprocal is a paired
+proposal, not an additional encounter or a failed transfer. Only the first80 results
+are rendered; the displayed count includes every matching captured replay record.
+
+The personal summary separates selected activities, actual meals, resource actions,
+completed scenes and inquiries for the chosen individual. Counts cover captured
+replay periods; pre-epoch preparation is excluded. There is no interpolation of
+thought, memory or actor-private state. All these derived chains and summaries
+disappear in Actor Perspective. Original source verification/import boundaries are
+unchanged. See the [causal-navigation acceptance](../../tools/history-explorer/validation/causal-navigation-acceptance.md).
+
 ## Compare histories
 
 Compare this history opens the paired area. Select any indexed trial as the right

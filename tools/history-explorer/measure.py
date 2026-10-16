@@ -49,7 +49,7 @@ def main():
         largest=max(repo.entries.values(),key=lambda e:e['raw_bytes'])
         large=timed('largest_registered_trial',lambda:repo.get(largest['id']))
         rows[-1].update(case=large['source']['case'],mode=large['source']['mode'],archive=large['source']['archive'],record=large['source']['record'],raw_bytes=largest['raw_bytes'],export_bytes=len(v.encoded(large)),moments=len(large['timeline']))
-    output=dict(schema='viewer-performance-v1',wall_clock_only=True,application_sources={name:hashlib.sha256((HOME/name).read_bytes().replace(b'\r\n',b'\n')).hexdigest() for name in ('explorer.py','app.js','perspective.js','index.html','style.css')},notes='One engineering run, not simulation evidence or a scalability comparison. Peak working set is for this Python process, includes export/projection/comparison work; no browser heap claim. Other repository validators may run concurrently.',rows=rows)
+    output=dict(schema='viewer-performance-v1',wall_clock_only=True,application_sources={name:hashlib.sha256((HOME/name).read_bytes().replace(b'\r\n',b'\n')).hexdigest() for name in ('explorer.py','causal.py','causal.js','app.js','perspective.js','index.html','style.css')},notes='One engineering run, not simulation evidence or a scalability comparison. Peak working set is for this Python process, includes export/projection/comparison work; no browser heap claim. Other repository validators may run concurrently.',rows=rows)
     args.output.parent.mkdir(parents=True,exist_ok=True);args.output.write_text(json.dumps(output,indent=2)+'\n',encoding='utf-8');print(json.dumps(output))
 
 

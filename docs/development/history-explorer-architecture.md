@@ -111,6 +111,42 @@ The browser renders at most45 timeline entries near the current index. It loads 
 single trial or pair, not336 parsed histories. Replay advances the index; it never
 calls an evaluator or current policy. Playback can pause, change speed or jump ticks.
 
+## Typed causal navigation, extractor2
+
+`tools/history-explorer/causal.py` is a policy-free018/019 protocol reader. It builds
+observer-only nodes with verified trial identity, exact source path, original ID
+and ordinal sequence, captured tick, actor/recipient, source kind, outcome, containing
+navigation anchor and explicit before/after points where present. Edges name their
+basis: exact invitation in a recipient's incoming list, allocation/commitment identity,
+scene ID, actual query ID, typed receipt, assessment receipt or recorded memory-cause ID.
+Neither temporal adjacency nor shared numeric IDs across namespaces creates an edge.
+
+The complete source Trial remains unmodified. Nodes carry small metadata rather than
+copies of full decision inputs. Whole-world actor/state records are resolved from
+the original Trial only when an observer opens an exact source link. All explicit
+paths are checked with a strict non-evaluating resolver. Missing/duplicate referenced
+IDs reject extraction. Before-epoch memory causes can be inspected as original
+records without inventing a replay moment. Later recorded memory-use links are
+contributions, not claims of isolated causal sufficiency.
+
+The v1 display wrapper has additive `causal` metadata and extractor_version2;
+extractor1 imports remain accepted after source verification, with all derived
+fields discarded/rebuilt. No viewer module is imported by foundation validation.
+Pure `causal.js` helpers filter actual scene completions separately from invitation
+dispositions and preserve timeline anchor ordering at equal ticks. Scene filter
+navigation anchors the terminal resource event and separately displays the exact
+scene record. Result DOM is bounded at80; original timelines remain bounded at45.
+The observer-only personal summary uses recorded activity/meal/query/action data.
+
+Native response, provenance query, provenance receipt, retained assessment and
+observed learning progress are separate typed nodes. Receipt lookup matches its
+namespace and owner; it never equates a native null with no provenance delivery.
+Support/status changes do not establish truth or usefulness for a later action.
+On switching to Actor view the entire observer section is hidden and its rendered
+source/chain/summary contents are cleared. None enters actor projections or policies.
+See [acceptance](../../tools/history-explorer/validation/causal-navigation-acceptance.md)
+for real602-source traversal, fixture/corruption tests, browser node clicks and costs.
+
 ## Comparison scope
 
 Read-only Python comparison uses captured state, choices and actual records. It

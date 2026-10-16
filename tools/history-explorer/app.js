@@ -1,7 +1,7 @@
 'use strict';
 // Observational presentation only. Never score a policy or reconstruct actor cognition.
 const $ = id => document.getElementById(id);
-const S = {catalog: [], data: null, right: null, comparison: null, index: 0, actor: 0, lens: 'actor', timer: null, generation: 0, pairGeneration: 0};
+const S = {catalog: [], data: null, right: null, comparison: null, index: 0, actor: 0, lens: 'actor', timer: null, generation: 0, pairGeneration: 0, causalNode: null, chain: null};
 const significant = m => !['snapshot', 'need', 'window', 'decision'].includes(m.kind);
 const text = value => typeof value === 'string' ? value : JSON.stringify(value);
 function human(value) {
@@ -33,6 +33,41 @@ async function openHistory(id) {
  render();status('Loaded verified original '+d.source.archive+' · record '+d.source.record+'. No simulation was run.');
 }
 function current() {return S.data?.timeline[S.index];}
+function followOriginal(ref,anchor) {
+ originalValue(S.data.trial,ref);
+ const i=S.data.timeline.findIndex(m=>m.ref===anchor);
+ if(i<0){const n=S.data.causal.nodes[ref];if(n&&n.tick<S.data.trial.clock.epoch){S.causalNode=ref;S.lens='observer';render();status('Exact original record shown below; it predates the captured replay epoch. No new moment is invented.');$('causal-node').scrollIntoView({block:'center'});return;}throw new Error('No captured navigation anchor for '+ref);}
+ S.causalNode=ref;S.chain=null;S.lens='observer';go(i);$('causal-node').scrollIntoView({block:'center'});
+}
+function renderCausal() {
+ const panel=$('causal-browser');panel.hidden=S.lens!=='observer';
+ if(panel.hidden){$('causal-chain').replaceChildren();$('causal-node').replaceChildren();$('encounter-results').replaceChildren();$('personal-summary').replaceChildren();return;}
+ const c=S.data.causal;if(!c){note($('causal-chain'),'Typed links are unavailable in this older export. Reopen the verified source.');return;}
+ if(S.causalSource!==S.data.source.id){S.causalSource=S.data.source.id;S.causalNode=null;S.chain=null;$('chain-select').replaceChildren();for(const ch of c.chains){const option=el('option',`${ch.tick} · ${ch.id}${ch.scenes.length?' · scene '+ch.scenes.join(','):''}`);option.value=ch.id;$('chain-select').append(option);}}
+ const m=current();let chain=c.chains.find(ch=>ch.id===S.chain);
+ if(!chain)chain=c.chains.find(ch=>m.step&&ch.id===`periods[${m.step[0]}].steps[${m.step[1]}].activity`)??c.chains.find(ch=>ch.nodes.includes(m.ref))??c.chains[0];
+ $('chain-select').value=chain.id;const box=$('causal-chain');box.replaceChildren();
+ note(box,`Recorded cohort at tick ${chain.tick}. Its outgoing choices may differ from the edge that executed. Missing later links remain unknown; they are not inferred from time alone.`);
+ const list=el('ol');const ids=orderedChainNodes(c,chain,S.data.timeline);
+ for(const id of ids){const n=c.nodes[id],li=el('li'),o=n.outcome;let description=human(o??'Original reference');
+  if(n.source_kind==='Resource action'&&o)description=`${o.action}; transferred ${o.transferred}; food [${o.before}]→[${o.after}]; ${o.termination??'continues'}`;
+  if(n.source_kind==='Recorded interpretation'&&o)description=`${o.interpretation}; valence ${o.valence}; event ${o.event}`;
+  if(n.source_kind==='Executed inquiry'&&o)description=`${human({Ask:o.selected})}; ${o.actual_time} ticks; native field ${o.native_response===null?'null':'present'}; ${o.status_before}→${o.status_after}`;
+  if(n.source_kind==='Provenance query'&&o)description=`observed ${o.observed_at}, completed ${o.completed_at}; receipt ${o.receipt??'none'}`;
+  if(n.source_kind==='Provenance delivery'&&o)description=`receipt ${o.receipt}; received claim ${o.received_claim}; quality ${o.received_quality}`;
+  if(n.source_kind==='Retained assessment update'&&o)description=`support ${o.before}→${o.support}; ${o.retained.length} retained items`;
+  if(n.source_kind==='Observed learning consequence'&&o)description=`${o.novelty}; support ${o.support_before}→${o.support_after}; ${o.status_before}→${o.status_after}; progress is not truth`;
+  button(li,`${n.tick??'Time not captured'} · ${n.source_kind}${n.actor!==null?' · individual '+n.actor:''}${n.recipient!==null?' → '+n.recipient:''} · ${description}`,guard(()=>followOriginal(n.ref,n.anchor)));list.append(li);}box.append(list);
+ details(box,'Exact typed edges (observer references, not a universal causal graph)',chain.edges);
+ const source=$('causal-node');source.replaceChildren();if(S.causalNode){const n=c.nodes[S.causalNode];heading(source,'Original linked record');source.append(el('p',S.causalNode,'mono'));details(source,'Original value at this exact reference',originalValue(S.data.trial,S.causalNode));if(n){for(const key of ['before','after'])if(n[key])button(source,`Open ${key}: ${n[key]}`,guard(()=>followOriginal(n[key],n[key])));}}
+ const kind=$('encounter-filter').value,rows=resourceRecords(c,kind,Math.max(0,Number($('encounter-after').value)||0));
+ $('encounter-count').textContent=`${rows.length} ${['unexecuted','declined','reciprocal'].includes(kind)?'allocation dispositions (not completed encounters)':'completed resource encounters'} match · showing up to 80. Counts cover the captured replay periods, not only nearby timeline entries; pre-epoch preparation is excluded.`;
+ const result=$('encounter-results');result.replaceChildren();for(const r of rows.slice(0,80)){const li=el('li');button(li,`${r.tick} · ${r.description}`,guard(()=>followOriginal(r.ref,r.anchor)));result.append(li);}
+ const summary=$('personal-summary');summary.replaceChildren();heading(summary,`Individual ${S.actor} · recorded activity summary`);note(summary,`Captured replay from epoch ${S.data.trial.clock.epoch}; earlier preparation is excluded. No private thoughts are interpolated.`);
+ const own=S.data.timeline.filter(m=>m.kind==='decision').map(m=>projection(S.data,m,S.actor)).filter(a=>a?.phase==='activity');
+ const meals=S.data.timeline.filter(m=>m.kind==='meal'&&m.data.actor===S.actor),acts=S.data.timeline.filter(m=>m.kind==='resource'&&m.data.decision.actor===S.actor),queries=S.data.timeline.filter(m=>m.kind==='inquiry'&&m.data.decision.input.owner===S.actor);
+ table(summary,['Recorded quantity','Count'],[['Selected Consume',own.filter(a=>a.selected==='Consume').length],['Selected Invite (not execution)',own.filter(a=>a.selected==='Invite').length],['Selected Wait',own.filter(a=>a.selected==='Wait').length],['Executed meals',meals.length],['Executed resource actions',acts.length],['Completed inquiries',queries.length],['Completed scenes participated',c.encounters.filter(e=>e.completed&&e.participants.includes(S.actor)).length]]);
+}
 function stepFor(data,m) {return m.step ? data.trial.periods[m.step[0]].steps[m.step[1]].activity : null;}
 function projection(data,m,owner) {
  if(m.kind==='resource')return m.data.decision.actor===owner?data.resource_actors?.[m.data.id]??null:null;
@@ -58,7 +93,7 @@ function render() {
  $('previous').disabled=S.index===0;$('next').disabled=S.index===d.timeline.length-1;
  $('moment-kind').textContent=`WORLD TICK ${m.tick} · ${m.kind.toUpperCase()} · MOMENT ${S.index+1}/${d.timeline.length}`;
  $('moment-title').textContent=S.lens==='observer'?m.label:(projection(d,m,S.actor)?`Individual ${S.actor}: ${projection(d,m,S.actor).phase==='owned snapshot'?'owned state capture (no decision)':human(projection(d,m,S.actor).selected)}`:'Observer record selected; switch perspective for objective details.');$('moment-ref').textContent=m.ref;
- renderCards();renderInspect();renderLinks();renderList();renderPair();
+ renderCards();renderInspect();renderLinks();renderList();renderPair();renderCausal();
 }
 function renderCards() {
  const p=$('cards');p.replaceChildren(); const m=current();
@@ -172,6 +207,7 @@ function renderLinks() {
  button(box,'Next actual resource action (Observer)',()=>{S.lens='observer';nextWhere(significantResource);});
  button(box,'Next executed inquiry (Observer)',()=>{S.lens='observer';nextWhere(x=>x.kind==='inquiry');});
  button(box,'Next recorded state',()=>nextWhere(x=>x.kind==='snapshot'));
+ button(box,'Trace recorded chain (Observer)',()=>{S.lens='observer';render();$('causal-browser').scrollIntoView({block:'start'});});
  if(!refs.length)note(box,'No explicit direct precursor link captured here. Chronological navigation does not establish sole causation.');
 }
 const significantResource=x=>x.kind==='resource';
@@ -218,6 +254,8 @@ function setupPresets() {
 $('load').addEventListener('click',guard(()=>openHistory($('trial').value)));
 $('search').addEventListener('input',()=>{const matches=S.catalog.filter(e=>label(e).toLowerCase().includes($('search').value.toLowerCase()));options($('trial'),matches);$('load').disabled=matches.length===0;status(matches.length?`${matches.length} recorded trials match. Select one to open.`:'No matching trials. Change or clear the search.');});
 $('actor').addEventListener('change',()=>{S.actor=Number($('actor').value);render();});
+$('chain-select').addEventListener('change',()=>{S.chain=$('chain-select').value;renderCausal();});
+$('encounter-filter').addEventListener('change',renderCausal);$('encounter-after').addEventListener('input',renderCausal);
 $('actor-lens').addEventListener('click',()=>{S.lens='actor';render();});$('observer-lens').addEventListener('click',()=>{S.lens='observer';render();});
 $('previous').addEventListener('click',()=>go(S.index-1));$('next').addEventListener('click',()=>go(S.index+1));$('play').addEventListener('click',play);
 $('speed').addEventListener('change',()=>{if(S.timer){pause();play();}});$('scrub').addEventListener('input',()=>{pause();go(Number($('scrub').value));});

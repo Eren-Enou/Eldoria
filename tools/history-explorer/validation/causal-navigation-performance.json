@@ -1,0 +1,68 @@
+{
+  "schema": "viewer-performance-v1",
+  "wall_clock_only": true,
+  "application_sources": {
+    "explorer.py": "ee7d6698faa6473ce0a3d1a7d3dd02413b39d5a6585eacef8a9ae30ac3585b07",
+    "causal.py": "40c15599942bd9b594c64318f87feb531058883cfbea11925aeb27972ccf0ea4",
+    "causal.js": "fc4fae64170bc7685fa752586d8fb8a3c999969b5499fee496f59769ad241ae9",
+    "app.js": "ec8ea12c78f82c53a23f210f2a4c3292252715dc5b20f0771fd71f38232f9f26",
+    "perspective.js": "75fae573b3cbcfbb62c840e6b38a78165d2c9b5e04ca43636d11b88006d9ac8b",
+    "index.html": "6ea06c5b93c5f257ea0cad8fd708aecbd9726ccefd649c5b19d8c0662d6d0508",
+    "style.css": "7f9b392e1c9181155369899240f1424b92eab876dd559c96bdd5e641f41d4060"
+  },
+  "notes": "One engineering run, not simulation evidence or a scalability comparison. Peak working set is for this Python process, includes export/projection/comparison work; no browser heap claim. Other repository validators may run concurrently.",
+  "rows": [
+    {
+      "operation": "discovery_catalog",
+      "seconds": 0.11237419990357012,
+      "peak_working_set_bytes": 26161152,
+      "working_set_bytes": 25653248
+    },
+    {
+      "operation": "cold_verified_default_trial",
+      "seconds": 1.306724700029008,
+      "peak_working_set_bytes": 77410304,
+      "working_set_bytes": 37543936,
+      "raw_bytes": 1695654,
+      "export_bytes": 3493044,
+      "moments": 640
+    },
+    {
+      "operation": "cached_verified_default_trial",
+      "seconds": 0.2755767999915406,
+      "peak_working_set_bytes": 77410304,
+      "working_set_bytes": 56733696
+    },
+    {
+      "operation": "parse_and_verify_local_export",
+      "seconds": 0.5397430000593886,
+      "peak_working_set_bytes": 93736960,
+      "working_set_bytes": 83124224
+    },
+    {
+      "operation": "cold_verified_default_partner",
+      "seconds": 1.4065194999566302,
+      "peak_working_set_bytes": 125956096,
+      "working_set_bytes": 75173888
+    },
+    {
+      "operation": "matched_comparison",
+      "seconds": 0.0049591000424697995,
+      "peak_working_set_bytes": 125956096,
+      "working_set_bytes": 75358208
+    },
+    {
+      "operation": "largest_registered_trial",
+      "seconds": 3.960649500018917,
+      "peak_working_set_bytes": 209453056,
+      "working_set_bytes": 138866688,
+      "case": "longitudinal",
+      "mode": "Scale110",
+      "archive": "seed-42.jsonl.gz",
+      "record": 95,
+      "raw_bytes": 17118302,
+      "export_bytes": 31615044,
+      "moments": 2643
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import argparse
 import copy
 import gzip
 import hashlib
+import importlib.util
 import json
 import mimetypes
 from pathlib import Path
@@ -17,6 +18,9 @@ import webbrowser
 
 ROOT = Path(__file__).resolve().parents[2]
 HOME = Path(__file__).resolve().parent
+_causal_spec = importlib.util.spec_from_file_location('viewer_causal', HOME / 'causal.py')
+causal = importlib.util.module_from_spec(_causal_spec)
+_causal_spec.loader.exec_module(causal)
 SCHEMA = 'woi-history-explorer/v1'
 MAX_RECORD = 64 * 1024 * 1024
 DEFAULT = dict(window=24, idle_gap=1, interval=4, stock=12, hunger=20, order='Ascending')
@@ -382,8 +386,9 @@ class Repository:
         return self
 
     def _save(self, entry, trial):
-        data = dict(schema=SCHEMA, extractor_version=1, source=copy.deepcopy(entry), trial=trial)
+        data = dict(schema=SCHEMA, extractor_version=2, source=copy.deepcopy(entry), trial=trial)
         data['timeline'] = timeline(trial)
+        data['causal'] = causal.build(trial, entry['id'])
         # Actor projections are derived strictly from captured inputs; no audit joining.
         data['actors'] = [[None if d is None else actor_view(trial, w['activity'], owner) for owner, d in enumerate(w['activity']['decisions'])] for p in trial['periods'] for w in p['steps']]
         data['reply_actors'] = [[reply_view(trial, w['activity'], owner) for owner in range(3)] for p in trial['periods'] for w in p['steps']]
@@ -468,7 +473,7 @@ class Handler(BaseHTTPRequestHandler):
             if p.path == '/api/compare':
                 with self.server.repo.lock:
                     return self.reply(comparison(self.server.repo.get(q.get('left', [''])[0])['trial'], self.server.repo.get(q.get('right', [''])[0])['trial']))
-            assets = {'/': 'index.html', '/app.js': 'app.js', '/perspective.js': 'perspective.js', '/style.css': 'style.css'}
+            assets = {'/': 'index.html', '/app.js': 'app.js', '/perspective.js': 'perspective.js', '/causal.js': 'causal.js', '/style.css': 'style.css'}
             if p.path not in assets:
                 return self.fail('Not found', 404)
             path = HOME / assets[p.path]

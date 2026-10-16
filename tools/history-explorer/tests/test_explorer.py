@@ -163,9 +163,12 @@ class RealArchiveTests(unittest.TestCase):
 
     def test_cache_and_import_cannot_forge_projection_or_source(self):
         d=self.data();d['actors'][0][0]['own']['food']=999
+        d['causal']={'observer_only':False,'nodes':{'forged':'<script>invented receipt</script>'}}
         d['source']['scientific_status']='FORGED'
         imported=self.repo.imported(d)
         self.assertEqual(imported['actors'][0][0]['own']['food'],2)
+        self.assertTrue(imported['causal']['observer_only'])
+        self.assertNotIn('forged',imported['causal']['nodes'])
         self.assertNotEqual(imported['source']['scientific_status'],'FORGED')
         bad=copy.deepcopy(d);bad['trial']['initial']['state']['agents'][0]['food']=999
         with self.assertRaises(ValueError):self.repo.imported(bad)
