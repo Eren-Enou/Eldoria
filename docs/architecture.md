@@ -827,3 +827,13 @@ exceptions,seed reversals and ineffective-contact gains. Separate `validate019`
 checks1296 worlds/336 raw histories and independent reconstruction. Following
 [qualified scientific review](experiment-019-review.md),shared/standalone019 protects
 296 artifacts in normal001–019 foundation with four readers. No default adoption;no020.
+
+## History Explorer observational consumer
+
+The [local application](../tools/history-explorer/README.md) streams original018/019
+JSONL/gzip, verifies archive/member identities and displays a selected trial or pair.
+Python stdlib and static browser files remain outside simulation execution. The
+[technical architecture](development/history-explorer-architecture.md) defines strict
+captured-input and exact-own-point projections, separate observer state, chronological
+references and qualified comparisons. Caches/exports are non-authoritative and never
+inputs to policies, replay validation or the normal foundation. No020 or live control.

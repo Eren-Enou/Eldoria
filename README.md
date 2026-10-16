@@ -12,6 +12,23 @@ For engineering navigation, start with the [concise architecture map](docs/archi
 the read-only `validate_contract` gate described below; run/evaluate commands can
 overwrite evidence and should be used only for authorized target generation.
 
+## History Explorer — inspect actual recorded lives
+
+Launch the read-only local application with Python 3.10+; Rust is not needed to view
+existing archives:
+
+```powershell
+python -B tools/history-explorer/explorer.py
+```
+
+It opens a real Experiment019 history,with individual perspectives,recorded replay,
+causal event links and matched comparison. Source hashes/membership are verified
+before display. No simulation,policy,canon or archive is changed. Optional018 support
+is available with `--include018`. [Application and developer checks](tools/history-explorer/README.md),
+[practical guide](docs/development/history-explorer-user-guide.md),
+[architecture](docs/development/history-explorer-architecture.md) and
+[real-browser acceptance](tools/history-explorer/validation/acceptance.md).
+
 ## Install and run
 
 Install Rust with Cargo and the Windows MSVC build tools (or a Rust-supported native

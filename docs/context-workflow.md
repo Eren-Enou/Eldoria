@@ -184,4 +184,9 @@ Shared/standalone019 enforces296 original artifacts and four readers. Distinguis
 small-score endpoint stability from actual choice/target changes,Deadline versus its
 EatFirst ablation,and timing-induced meal efficiency from successful cooperation.
 Preserve private-cooperation/seed reversals,conservative exclusions and full nulls.
-Future acquisition/viewer documents are proposals only,not another experiment.
+Environmental acquisition remains a proposal. History Explorer is separately authorized
+read-only engineering: [guide](development/history-explorer-user-guide.md). It consumes
+verified original018/019 archives and never becomes an input to scientific gates or
+actor cognition. Viewer-only edits need appropriate data/projection/browser checks;
+reuse simulation checks only at an unchanged relevant Rust/fixture revision. Do not
+rebuild old evidence to adapt a viewer schema or recover missing cognition.

@@ -1,5 +1,11 @@
 # Read-only experiment-history viewer:scope only
 
+Subsequent engineering delivery: [working application](../../tools/history-explorer/README.md),
+[user guide](history-explorer-user-guide.md), [technical architecture](history-explorer-architecture.md).
+The proposal below records its original scope; the implementation/acceptance documents
+identify current supported features and limitations. This is not a new experiment.
+
+
 This proposal follows [019](../../experiments/019/results.md). It does not implement
 a viewer,change simulation behavior,start020 or authorize a game frontend. Independent
 019 review is the first scientific priority;this tool is the next low-impact engineering

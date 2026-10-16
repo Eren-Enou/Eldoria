@@ -134,3 +134,15 @@ resource transfer excluded by a six-tick window's eight-tick public reservation.
 paired prefix checks and162 timing/order initial equalities. No new cognition,
 global adoption. Protected by [001–019](../experiment-contract-001-019.md),296 original
 artifacts; [audit](../integrity-audit-001-019.md), [handoff](../research-handoff-001-019.md). No020.
+
+## Observational engineering: History Explorer
+
+[Working application](../../tools/history-explorer/README.md),
+[user guide](../development/history-explorer-user-guide.md),
+[architecture](../development/history-explorer-architecture.md),
+[acceptance evidence](../../tools/history-explorer/validation/acceptance.md).
+Local read-only018/019 consumer, not experiment020. It preserves captured actor inputs,
+exact owned Agent snapshots, separate observer knowledge, real replay and qualified
+paired comparisons. Source archives/contracts remain authoritative; derived viewer
+indexes do not validate science or become cognitive recovery channels. No new default,
+policy, environmental acquisition, canon, economy or live controller.

@@ -100,7 +100,9 @@ The gate's schedule-phase robustness and effort justification remain unestablish
 
 Build progressively toward a persistent fictional world. Experiment 001 is only
 resource interaction, subjective memory, and subsequent behavioral consequences.
-Keep systems replaceable; do not add speculative civilization or Observer/Book UI.
+Keep systems replaceable; do not add speculative civilization or live Observer/Book
+simulation features. The separately authorized read-only History Explorer is an
+observational consumer, not a simulation controller.
 
 Constitution: (1) identifiable causality, (2) information locality, (3) persistent
 consequences, (4) distinguish individual perspective from objective events,
@@ -277,5 +279,12 @@ conservative exclusion witness,and pressure-time gains caused by ineffective con
 Normal foundation and standalone validate019 share contract019.rs and four read-only
 readers; protect296 original artifacts and qualified negative/null results. See
 docs/experiment-019-review.md and docs/experiment-contract-001-019.md.
-No default adoption or020. Acquisition/viewer proposals are
-scoping only;do not silently implement them as part of this experiment.
+No default adoption or020. Environmental acquisition remains a scope proposal.
+History Explorer is separately authorized observational engineering under tools/history-explorer;
+never feed its caches/exports into actor cognition or make it a foundation dependency.
+Its explicit018/019 adapters preserve source identity and captured local/owned-state
+boundaries; do not infer missing cognition or explain old decisions with new policies.
+Run its Python data tests, actual JS owned-point tests when Node is available, and
+real browser smoke checks for changes to ingestion, projection, replay or comparison.
+See docs/development/history-explorer-user-guide.md and
+docs/development/history-explorer-architecture.md.

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>World of Individuals — History Explorer</title><link rel="stylesheet" href="/style.css"><script defer src="/perspective.js"></script><script defer src="/app.js"></script></head>
+<body>
+<header><div><p class="eyebrow">WORLD OF INDIVIDUALS</p><h1>History Explorer</h1></div><p class="tag">Recorded lives. Inspectable consequences.<br><strong>Read only · local archives</strong></p></header>
+<div id="status" role="status" aria-live="polite">Loading verified archive catalog…</div>
+<nav class="jump-nav" aria-label="History panels"><a href="#history-library">Histories</a><a href="#history-moment">Current moment</a><a href="#perspective-panel">Perspective</a></nav>
+<main tabindex="0" aria-label="History workspace">
+<aside id="history-library" class="library" aria-label="Histories and individuals">
+<label for="actor">Individual</label><select id="actor"><option value="0">Individual 0</option><option value="1">Individual 1</option><option value="2">Individual 2</option></select>
+<details id="library-drawer" open><summary>Choose a history and browse its timeline</summary>
+<h2>Open a history</h2><label for="search">Find a trial</label><input id="search" type="search" placeholder="Case, mode, seed, configuration…">
+<label for="trial">Recorded trial</label><select id="trial" size="5"></select><button id="load">Open selected history</button>
+
+<details id="file-tools"><summary>Import / export</summary><label for="import">Open a viewer export (.json)</label><input id="import" type="file" accept=".json,application/json"><button id="download">Download current export</button><p>Imported exports are checked against verified source membership. Strings remain data.</p></details>
+<h2>Real comparison examples</h2><div id="presets"></div>
+<h2>Recorded timeline</h2><label for="kind">Show recorded moments</label><select id="kind"><option value="significant">Significant events</option><option value="all">All recorded moments</option><option value="decision">Activity decisions</option><option value="resource">Resource actions</option><option value="inquiry">Executed inquiries</option><option value="meal">Meals</option><option value="need">Need progression</option><option value="gap">Observation gaps</option></select><p id="list-note"></p><ol id="events" aria-label="Recorded event list"></ol>
+</details></aside>
+<section id="history-moment" class="stage" aria-label="Current historical moment">
+<div class="titleline"><h2 id="title">Choose a recorded history</h2><span id="mode" class="badge"></span></div>
+<p id="identity"></p><p id="configuration"></p><details id="provenance"><summary>Source provenance and verification</summary><pre id="source"></pre></details>
+<section class="replay" aria-label="Replay controls"><div class="buttons"><button id="previous" title="Left arrow">← Previous</button><button id="play" title="Space">Play</button><button id="next" title="Right arrow">Next →</button><label>Speed <select id="speed"><option value="1">1×</option><option value="2">2×</option><option value="4">4×</option><option value="0.5">½×</option></select></label></div><input id="scrub" aria-label="Recorded moment" type="range" min="0" max="0" value="0"><div class="buttons"><button id="prev-event">Previous event</button><button id="next-event">Next event</button><button id="next-decision">Next decision of individual</button></div><div class="buttons"><label for="tick">Jump to world tick</label><input id="tick" type="number" min="0" value="0"><button id="jump">Jump</button></div><p>Playback displays recorded moments; it never reruns the simulation.</p></section>
+<div class="moment"><p class="eyebrow" id="moment-kind"></p><h2 id="moment-title"></h2><p id="moment-ref" class="mono"></p></div>
+<div id="cards" class="cards"></div><div id="outcome"></div>
+<section id="compare-panel" hidden><div class="titleline"><h2>Matched history comparison</h2><button id="close-compare">Return to single history</button><button id="inspect-right" disabled>Inspect right history</button></div><label for="other">Compare with another trial</label><select id="other"></select><button id="compare">Compare selected histories</button><p>Aligned by world tick, never by period number. Each state carries its exact captured tick.</p><p>Whole-world comparison findings are observer-derived and appear only in Observer Perspective.</p><div id="compare-summary"></div><div id="pair" class="pair"></div></section>
+<button id="open-compare">Compare this history…</button>
+<section class="help"><h2>Reading this history</h2><p>Selection ≠ consent ≠ matching ≠ execution. A response need not be correct or useful. A transfer is not a universal benefit.</p><p>Arrow keys: previous/next moment. Space: play/pause. N: next decision. [ / ]: significant event. Shortcuts are disabled while typing.</p></section>
+</section>
+<aside id="perspective-panel" class="inspector" aria-label="Perspective and explanation"><div class="lens-switch" role="group" aria-label="Perspective"><button id="actor-lens" aria-pressed="true">Actor Perspective</button><button id="observer-lens" aria-pressed="false">Observer Perspective</button></div><p id="lens-note"></p><div id="inspect"></div><h2>Follow recorded references</h2><div id="links"></div><details><summary>Recorded values (current perspective)</summary><pre id="raw"></pre></details></aside>
+</main><footer>Historical evidence, not generated narrative. No accounts, telemetry, policy execution or simulation controls.</footer>
+</body></html>

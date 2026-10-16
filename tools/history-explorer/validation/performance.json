@@ -1,0 +1,66 @@
+{
+  "schema": "viewer-performance-v1",
+  "wall_clock_only": true,
+  "application_sources": {
+    "explorer.py": "975e578886e1af7139be4ba002369b55c1afcc0d3398f97964ca1555ff678600",
+    "app.js": "0d738f0de38a9ac26f1596837358f240fa3ff3b04b5e34ae7203ae2be8e43faa",
+    "perspective.js": "75fae573b3cbcfbb62c840e6b38a78165d2c9b5e04ca43636d11b88006d9ac8b",
+    "index.html": "961b1f41b1125c1bae14816c2cf45b10f17c3b62322e4f9f1f15afe58ddf96bc",
+    "style.css": "074234c89ef06eb8623dab3c8e336b5c0b1d2a3090105adadad26ce7c820766d"
+  },
+  "notes": "One engineering run, not simulation evidence or a scalability comparison. Peak working set is for this Python process, includes export/projection/comparison work; no browser heap claim. Other repository validators may run concurrently.",
+  "rows": [
+    {
+      "operation": "discovery_catalog",
+      "seconds": 0.10485850006807595,
+      "peak_working_set_bytes": 25976832,
+      "working_set_bytes": 25399296
+    },
+    {
+      "operation": "cold_verified_default_trial",
+      "seconds": 1.1030160000082105,
+      "peak_working_set_bytes": 77365248,
+      "working_set_bytes": 37416960,
+      "raw_bytes": 1695654,
+      "export_bytes": 2970858,
+      "moments": 640
+    },
+    {
+      "operation": "cached_verified_default_trial",
+      "seconds": 0.2063757999567315,
+      "peak_working_set_bytes": 77365248,
+      "working_set_bytes": 55762944
+    },
+    {
+      "operation": "parse_and_verify_local_export",
+      "seconds": 0.3700315000023693,
+      "peak_working_set_bytes": 87093248,
+      "working_set_bytes": 78479360
+    },
+    {
+      "operation": "cold_verified_default_partner",
+      "seconds": 1.0345698000164703,
+      "peak_working_set_bytes": 121032704,
+      "working_set_bytes": 72921088
+    },
+    {
+      "operation": "matched_comparison",
+      "seconds": 0.0036586999194696546,
+      "peak_working_set_bytes": 121032704,
+      "working_set_bytes": 72933376
+    },
+    {
+      "operation": "largest_registered_trial",
+      "seconds": 2.7298833000240847,
+      "peak_working_set_bytes": 200716288,
+      "working_set_bytes": 133541888,
+      "case": "longitudinal",
+      "mode": "Scale110",
+      "archive": "seed-42.jsonl.gz",
+      "record": 95,
+      "raw_bytes": 17118302,
+      "export_bytes": 29472127,
+      "moments": 2643
+    }
+  ]
+}
