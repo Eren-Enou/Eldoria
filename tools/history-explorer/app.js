@@ -89,7 +89,7 @@ function renderCards() {
   }
   if(m.kind==='meal')table(outcome,['Recorded meal','Before','After'],[['Owned food',m.data.food_before,m.data.food_after],['Hunger',m.data.hunger_before,m.data.hunger_after]]);
   if(m.kind==='inquiry') {
-   note(outcome,`Executed inquiry ${m.data.id}: ${human(m.data.decision.selected)}. Actual effort ${m.data.time_spent} ticks. ${m.data.response===null?'No response received.':'Response received; correctness and useful change are separate questions.'}`);
+   note(outcome,`Executed inquiry ${m.data.id}: ${human(m.data.decision.selected)}. Actual effort ${m.data.time_spent} ticks. ${m.data.response===null?'Native response receipt field is empty. This does not exclude a provenance-channel delivery; inspect the recorded assessment and concern changes before judging information acquired.':'Native response receipt recorded; correctness and useful change are separate questions.'}`);
    table(outcome,['Native query stage','Before','After'],[['Concern status',m.data.concern_before?.status,m.data.concern_after?.status]]);
   }
   if(m.data)details(outcome,'Actual selected record',m.data);
