@@ -12,6 +12,9 @@ rows when ownership, entry points or mode boundaries change.
 - Working procedure: [context workflow](context-workflow.md).
 - Design rationale: [architecture](architecture.md), by experiment heading.
 - Observer/runtime boundary: [history audit](history-audit.md).
+- Recorded-life investigation: [019 observations](development/history-explorer-observations-019.md),
+  [first walkthrough](development/history-explorer-first-walkthrough.md) and
+  [evidence-backed priorities](development/post-019-observation-backlog.md).
 - Lore work: [Eldoria index](ELDORIA_INDEX.md); lore is not implemented simulation behavior.
 
 ## Source ownership

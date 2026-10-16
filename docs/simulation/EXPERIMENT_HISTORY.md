@@ -146,3 +146,12 @@ exact owned Agent snapshots, separate observer knowledge, real replay and qualif
 paired comparisons. Source archives/contracts remain authoritative; derived viewer
 indexes do not validate science or become cognitive recovery channels. No new default,
 policy, environmental acquisition, canon, economy or live controller.
+
+The post-evaluation [observational investigation](../development/history-explorer-observations-019.md)
+follows14 authentic019 histories through the actual browser, with an independent
+original-reference extraction. The [first walkthrough](../development/history-explorer-first-walkthrough.md)
+reproduces primary, private and exhausted lives; the [ranked backlog](../development/post-019-observation-backlog.md)
+separates tooling from prospective research. C85's130 late actions are65 Request/Leave
+encounters, not130 meetings. Finite acquisition is a recommendation, not020 or a new
+accepted treatment effect. One isolated viewer label now distinguishes native receipt
+absence from provenance delivery; simulation and historical evidence are unchanged.

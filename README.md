@@ -29,6 +29,12 @@ is available with `--include018`. [Application and developer checks](tools/histo
 [architecture](docs/development/history-explorer-architecture.md) and
 [real-browser acceptance](tools/history-explorer/validation/acceptance.md).
 
+Start with the [guided first investigation](docs/development/history-explorer-first-walkthrough.md).
+The [019 observational report](docs/development/history-explorer-observations-019.md)
+and [ranked next priorities](docs/development/post-019-observation-backlog.md) examine
+actual consequences, private reversals and repeated contact after finite food exhaustion.
+These are post-evaluation observations, not a new experiment or policy adoption.
+
 ## Install and run
 
 Install Rust with Cargo and the Windows MSVC build tools (or a Rust-supported native

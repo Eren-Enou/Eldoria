@@ -5,6 +5,10 @@ It displays what was captured, what was selected, what actually executed and how
 state continued. It does not run a simulation, invent motives, complete failed
 inquiries, change canon, offer gameplay or score policies using newer rules.
 
+For a hands-on sequence, use the [first walkthrough](history-explorer-first-walkthrough.md);
+the [observational report](history-explorer-observations-019.md) follows its exact
+original references and qualifies the resulting development recommendations.
+
 ## Start and open evidence
 
 Install Python 3.10 or later and use a modern browser. From the Eldoria repository:
