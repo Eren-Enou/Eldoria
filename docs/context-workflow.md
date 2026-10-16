@@ -31,8 +31,8 @@ scientifically accepted and protected while its proposed mechanism is rejected.
 Protection preserves accepted findings and qualifications, not a mandate to adopt
 every tested mechanism.
 
-Experiments001–018 are protected by the
-[foundation contract](experiment-contract-001-018.md) and its inherited historical
+Experiments001–019 are protected by the
+[foundation contract](experiment-contract-001-019.md) and its inherited historical
 maps. Experiment 011's [scientific review](experiment-011-review.md) is confirmed with
 qualification: its evidence is protected, while StatusValue remains unadopted.
 Experiment012's [scientific review](experiment-012-review.md) establishes ACCEPT
@@ -42,8 +42,8 @@ Experiment013's unchanged [scientific review](experiment-013-review.md) establis
 ACCEPT WITH QUALIFICATION; Pulse/Ungated remain optional research, not defaults.
 Preserve C64 versus B64 and retained episodes outside the last-four partner scoring
 window. Its shared read-only gate invokes both independent readers.
-The [integrity report](integrity-audit-001-018.md) records the latest protection pass;
-the [research handoff](research-handoff-001-018.md) identifies activity priorities/timing as a separate019 question.
+The [integrity report](integrity-audit-001-019.md) records the latest protection pass;
+the [research handoff](research-handoff-001-019.md) preserves open valuation/timing questions.
 017 is protected with qualification; its188 contact-only nulls and narrow7/188 material
 effect remain distinct. No default adoption or retroactive recurring hunger.
 Reverify source, contracts and reviews before
@@ -178,9 +178,9 @@ artifacts;preserve the invalid initial integration candidate and valid costly/nu
 outcomes. No default adoption.019 is separately authorized only after Gate B passes
 and is committed/pushed;no automatic019 protection or020.
 
-Experiment019 is completed research pending independent scientific review:
+Experiment019 is independently reviewed and protected with qualification:
 [specification](../experiments/019/specification.md),[results](../experiments/019/results.md).
-Its separate read-only gate and reconstruction do not extend001–018. Distinguish
+Shared/standalone019 enforces296 original artifacts and four readers. Distinguish
 small-score endpoint stability from actual choice/target changes,Deadline versus its
 EatFirst ablation,and timing-induced meal efficiency from successful cooperation.
 Preserve private-cooperation/seed reversals,conservative exclusions and full nulls.

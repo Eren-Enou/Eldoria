@@ -824,5 +824,6 @@ Old concern-age and Rotating phase can mediate timing effects.
 information,material/relationship history,pressure-time and reconvergence. Mostly
 stable terminal outcomes under small perturbations coexist with consequential
 exceptions,seed reversals and ineffective-contact gains. Separate `validate019`
-checks1296 worlds/336 raw histories and independent reconstruction;the normal foundation
-remains001–018. No default adoption or automatic019 protection;no020.
+checks1296 worlds/336 raw histories and independent reconstruction. Following
+[qualified scientific review](experiment-019-review.md),shared/standalone019 protects
+296 artifacts in normal001–019 foundation with four readers. No default adoption;no020.

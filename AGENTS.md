@@ -33,7 +33,8 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-018.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-019.md`.
+The historical `docs/experiment-contract-001-018.md` remains authoritative for001–018.
 The historical `docs/experiment-contract-001-017.md` remains authoritative for001–017.
 The historical `docs/experiment-contract-001-016.md` remains authoritative for001–016.
 The historical `docs/experiment-contract-001-015.md` remains authoritative for001–015.
@@ -259,13 +260,13 @@ the same-input foregone-transfer chain, reconvergence, hungrier outcomes, orderi
 and history-ablation reversals. No new cognitive cells or default adoption.
 Keep separate read-only validate018, exact replay and independent physics/cognition
 reconstruction; retain the invalid initial clock-hook candidate and regression.
-Protected foundation now001–018;all269 original artifacts,including13 invalid
+Historical001–018 protection keeps all269 original artifacts,including13 invalid
 development files,remain immutable. Shared foundation/standalone validate018 include
-all three independent readers and the original exact replay.019 may proceed only
-after the protection gate passes and is committed/pushed;it remains separate opt-in
-research. No automatic019 protection/default adoption. Do not begin020.
+all three independent readers and the original exact replay.019 was separately
+authorized after that gate was validated/committed/pushed;its later qualified review
+and explicit protection do not adopt a default. Do not begin020.
 
-Experiment019 is completed opt-in research pending independent scientific review;
+Experiment019 is independently reviewed and protected with qualification;
 see experiments/019/specification.md and results.md. Baseline/EatFirst/NoHistory reuse
 018 exactly at default timing. Deadline uses only the last safe public admission slot;
 Scale90/110 perturb only top Invite scores with integer truncation. Keep the six rules
@@ -273,6 +274,8 @@ and fixtures frozen. Window/gap comparisons share total elapsed horizons;rate/st
 changes are separately labeled sensitivity. No new cognition or planner. Preserve
 mostly inert small perturbations,seed/private-cooperation reversals,317 full nulls,
 conservative exclusion witness,and pressure-time gains caused by ineffective contact.
-Separate validate019 and three read-only readers do not extend001–018 protection.
-No default adoption,automatic019 protection or020. Acquisition/viewer proposals are
+Normal foundation and standalone validate019 share contract019.rs and four read-only
+readers; protect296 original artifacts and qualified negative/null results. See
+docs/experiment-019-review.md and docs/experiment-contract-001-019.md.
+No default adoption or020. Acquisition/viewer proposals are
 scoping only;do not silently implement them as part of this experiment.

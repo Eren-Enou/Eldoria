@@ -429,18 +429,19 @@ candidate remains preserved alongside the valid corrected evidence.
 ## Experiment019: Robust Activity Priorities and Opportunity Timing
 
 [Specification](experiments/019/specification.md),[results](experiments/019/results.md):
-**ACCEPT WITH QUALIFICATION as research**,pending independent scientific review.
+**Independently reviewed ACCEPT WITH QUALIFICATION**; [review](docs/experiment-019-review.md).
 Six stateless controls compare historical selection,meal priority,last-safe-slot
 admission,10% Invite scaling and outgoing history projection under common018 physics.
 Timing variants keep equal total horizons. Small perturbations are mostly terminally
 inert but can change real execution;private cooperation and seeded feedback reverse
 some apparent gains. Preserve ineffective-contact gains,nulls and reconvergence.
-No new cognition,default adoption or automatic019 protection. No020.
+No new cognition or default adoption. Protected by [001–019](docs/experiment-contract-001-019.md),
+[audit](docs/integrity-audit-001-019.md) and [handoff](docs/research-handoff-001-019.md). No020.
 
 Read-only `cargo run --release --locked -j 1 --example validate019` checks1296 exact
-worlds,336 raw histories,269 historical hashes and independent priorities/physics/
+worlds,336 raw histories,296 frozen artifacts and independent priorities/physics/
 admission/cognition/prefix reconstruction. `review019_slices.py` adds21 registered
 post-evaluation causal diagnostics. `measure019 -- experiments/019/observer-cost.json`
 separates work units and audit cost. New generation uses `evaluate019 -- --output`
 with an isolated target directory;never overwrite historical evidence. Foundation
-protection remains001–018.
+protection is001–019. Shared/standalone019 includes the independent scientific scope reader.
