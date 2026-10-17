@@ -1,94 +1,66 @@
-# Program020 working checkpoint
+# Program020 delivery checkpoint
 
-Objective: finish/push History Explorer milestone B,then prospectively design,
-implement,evaluate andindependentlyvalidate finiteacquisition020. No021,newcognition,
-automatic020protection/default adoption,or rewriting old archives.
+Objective:deliver/push History Explorer causal navigation,then preregister,execute
+and independently validate finite environmental acquisition020.No021,no adoption
+or automatic protection.
 
-Start main/origin:74c3f5a2c2484a7b83da080ca92dc84721979d0a;clean tree.
-Stage B COMPLETE and pushed:831d8fc39f39326f623751268e727147540aad4d.
-Stage C/D preregistration/gate PASS,committed/pushed:6c75e790456ef5d1559a114f9bce2ba6a87c1ded.
-Current stage I/J:020 runtime/evidence/results implemented,not yet committed.
-Current HEAD remains6c75e790456ef5d1559a114f9bce2ba6a87c1ded;new work includes mixed
-staged/unstaged files,so review git diff HEAD,not only the index.164 final worlds
-execute/replay exactly;all164 independently reconstructed with20 scratch corruption
-categories. Standalone validate020 exit0,including all original serialized bytes.
-Schema-only compact choice capture stores one authoritative legacy input:activity
-base for non-acquisition,acquiring_base otherwise. Reversing the encoding proved
-all164 complete histories unchanged;raw944896591→606846590B. Original trial gzip
-11207457B,source freeze12 entries;no policy/fixture tuning. All296 raw old artifacts
-remain unchanged. Packaging writer metadata was canonicalized after validation;
-current12hashes manually rechecked,simulation/reader/evidence unchanged.
-Final Rust fmt/Clippy pass;202 tests/25 result blocks including5 acquisition tests
-pass;throughput and measure020 pass. Delivery fmt/Clippy rechecked after final new
-validator arguments. All logs in %TEMP%/program020. Status JSON final-rust-status.json.
-Foundation runner (session82545) completed validate_contract exit0 (1564.37s),
-then standalone009–017 exit0.018/019 remain pending in that same live runner;
-do not restart/duplicate it. Check foundation-status.json and per-command logs.
-Full viewer discovery25 tests exit0 (100.161s);all JS checks exit0. New projection
-test was rerun after adding exact contact allocation rows and correcting same-tick
-ordering:ongoing record43@52 must show Accept,Granted,Selected Acquire in that order.
-Actual browser confirmed those exact event19/record3/choice0 rows,plus lost_contact
-1→0 Unavailable@2 with two busy claimants. This was a corrected display issue,not a
-simulation defect. Demo now2477179B. Cua finiteTab tab2 at ongoing/Need;remark final.
-Readonly receipt-time prefix guard added to reviewer and all164/20 reran with exact
-archived analysis equality. Latest standalone020 delivery gate also exit0 (70.10s).
-Supplemental report nowrecords22 Direct queries,11 receipts/retained changes and11
-without either;Evidence33-tick reservation cannot fit24/4 windows. Report sourcehash
-updated;prior five generatedreports confirmed unchanged. Raw originaltrials/analysis
-gzip unchanged. New report-derived inquiry-observations.json and audit-cost.json:
-019 C85 is zero-based84/6296760B;Owned6780650 (+7.7%),Need8419864 (+33.7%,changedhistory).
-Delivery-audit.md maps all16 required families and complete scope;verification.md
-still marks remaining foundation/standalone completion pending and needs finalization.
-Current source freeze12 hashes (report/archive/reader metadata changed after earlier
-gate;runtime/evaluator/fixtures unchanged). Rerun final hash/link/AST checks at delivery,
-not old simulation workloads without a relevant source change.
-No known simulation defect. Early reader-only issue:legacy allocation helper assumed
-three responses;new independent020 allocator correctly supports missing busy owners.
-Results ACCEPT WITH QUALIFICATION,not independent scientific review/protection/default.
-Strong sharing record33:0 winscache4,offers7/11/15,1 accepts16/event5,eats17.
-Strong harm records26/29:Closed donor1→0 executes4;Acquire0/2 busy,1 eats3,2 wins4,
-0 loses/help missed. Ongoing Owned matches019 exactly:exhaust258/65 empty scenes;
-Need exhaust213/74,Closed165/85. All finite primary worlds ultimately own no food.
-Files/results/report/verification/viewer-acceptance/maps updated. verification.md
-still correctly marks foundation completion pending;must finalize after all exits0.
-Next:finish gates,review diffs and requirement coverage,final integrity/source checks,
-finalize verification/checkpoint,commit science then optional viewer,fetch/check/push
-origin main without force. Do not mark goal complete before every check and push.
-New explicit020 finite-demo source and ten-history projection are separate from main
-018/019 schema. All displayed frames/records/ledgers checked against originals;actual
-browser contention,sharing/eating,losing balance,and576 depletion verified,no errors.
-Screenshots experiments/020/viewer-{pending,sharing}.jpg are genuine JPEGs. Demo server
-PID155280 at8766;main viewerPID25268 at8765. Cua finiteTab tab2 marked deliverable;
-remark at final;programTab tab1 is user-owned. No viewport override. No subagents.
+Base:74c3f5a2c2484a7b83da080ca92dc84721979d0a.
+Viewer milestone831d8fc39f39326f623751268e727147540aad4d and preregistration
+6c75e790456ef5d1559a114f9bce2ba6a87c1ded were separately committed/pushed before runtime.
+Science implementation/evidence commit:dee4a35 (full identity in Git).
+This checkpoint accompanies the separate020 observer adapter commit.
+Git status/log/origin are authoritative for final publication;push/clean-tree/remote
+identity are verified in the final delivery response,not simulated evidence.
 
-24 Python tests pass (90.797s);all602 original018/019 histories traverse,723418 nodes;
-Nodeactual helper/filter/order andowned-state tests pass;JS syntaxpasses.Raw296byte
-guard,7 measuredsourcehashes,Python/JSONsyntax and104 Markdownlinks pass.
-Realbrowser:C103/C107,H7/H10,C85,H182/183,C7/C10;exactsourceclicksevents1/2,
-provenance receipt1,assessment1,scene0/afterpoint5,scene46/terminalevent112.
-C85 after258filter65 completedRequest/Leave scenes,not130actions/195dispositions.
-Largest95 loads2643moments/filter116scenes(80rendered).Actorviewhides/clearsobserver
-chain/source/summary.No browsererrors.No viewportoverride.Threegenuinescreenshots.
+All implementation,analysis and required validation are complete.See
+experiments/020/{results,verification,delivery-audit}.md and verification-status.json.
+No remaining020 research implementation work.Independent scientific review and
+any protection decision remain separate future tasks;do not begin021.
 
-Typedcausal.py/causal.js:exactinvitation/scene/query/typedreceipt/causeIDs;noadjacency
-causalguesses.Same-stepmealexplicitlymatchescapturedrecipientinput;responsearrows
-identifyactualacceptedproposer;arbitrationprecedesexecutionatsametick.Extractor2is
-additivev1displaydata;importsrebuildmetadata.No historicalcognitionreconstruction.
+164 registered worlds,40 groups,274 descriptive overlapping pairs;all164 exact
+original byte replays and independent reconstructions;20 corruption categories.
+309 attempts,242 grants,67 stale failures;22 Direct queries,11 retained changes and
+11 without change.Evidence33-tick admission does not fit24/4 windows.
+Strong positive:sharing record33,cache grant4,offers7/11/15,Accept16/event5,meal17.
+Strong harm:Closed record26 donor1→0 transfers4;Acquire29 blocks it,donor eats3,
+2 wins4,0 loses.Worlds retain unequal costs,negative choices and endpoint reconvergence.
+Ongoing Owned exactly matches019:owned exhaustion258/65 later empty scenes;
+Need213/74;Closed165/85.Finite access does not sustain consumption.
+Verdict ACCEPT WITH QUALIFICATION as research,not independent peer review/adoption.
 
-Cost:singleconcurrentengineeringrun,default1.307s/largest3.961s,Pythonpeak209453056B;
-exports3493044/31615044B.No browserheap orsimulationperformanceclaim.
-Details:tools/history-explorer/validation/causal-navigation-acceptance.md.
-Originalevidence/policyfreezeunchanged.Logs/guard:%TEMP%/program020.
-LocalserverPID25268,explorer.py --no-browser,port8765.Tab1lastlargest95/Actor.
-No subagents.Knownnew viewerdefects:none.Source-onlypre-epochandmissinglocalcognition
-limitsremain.Frozen018stepperprivatehelpersmustnotbechangedforconvenience;C7must
-specifynewattemptadmission,busyexclusion,stockrevalidation,fullfailurecostandoneclock.
+All required checks exit0:fmt,locked all-target Clippy,202 Rust tests/25 result
+blocks (five acquisition regressions),normal foundation,each standalone009–019,
+standalone020,throughput and measure020.Full viewer25 tests pass;actual JS checks
+pass.Final projection regression verifies all10 displayed source histories and
+actual same-tick order:record43@52 Accept→Granted→Selected Acquire.
+296 original protected raw artifacts remain byte-identical;source12 and original
+compressed/decompressed archive hashes verified.Never regenerate old evidence.
 
-FINAL VALIDATION:foundation and every standalone009–019 exit0,all12 commands complete.
-Standalone020 current delivery gate exit0;164 exact bytes/independent histories/20
-corruptions.202 Rust tests,fmt/Clippy,throughput,measure020,25 viewer tests and final
-real-slice projection regression pass.296 original raw artifact hashes unchanged;
-source12 and original gzip/raw hashes checked. verification-status.json is complete.
-Current stage:final diff review and science/viewer commits,push pending. Do not mark
-goal complete until remote matches the final commit and the worktree is clean.
-No021;020 remains unprotected/unadopted and awaits separate scientific review.
+Raw final606846590B,gzip11207457B.Audit-only input dedup reduced944896591B by35.8%;
+all164 histories unchanged after reversing that encoding.Initial valid scratch
+remains target/program020-initial;final scratch target/program020-final.
+Same-trace Owned wall-clock about2.17×019 in one engineering run,+7.7% JSON bytes.
+No general optimization or extra cognitive state/capacity.
+
+Main Explorer:602 original sources,723418 typed nodes;exact scene/query/receipt and
+recorded memory references,source-only pre-epoch links,selected/executed distinction.
+C85 after258 filter65 completed scenes,not130 actions or195 dispositions.Actor view
+hides/clears observer panels.Real C103/C107,H7/H10,C85,H182/183,C7/C10,large95 checked.
+See tools/history-explorer/validation/causal-navigation-acceptance.md.
+
+020 finite-demo.py/html is a separate observer-only schema adapter,not legacy import.
+Ten original histories,exact fields,stock/owned/consumed ledger,live claims,full-cost
+failure,contact dispositions and later actions.All frames/records tested.Actual
+browser verified pending race,failed balance,sharing/meal,unavailable donor and576
+exhaustion.No console errors.Genuine screenshots in experiments/020/viewer-*.jpg.
+A tick-only display sort was corrected to declared physical phases;no simulation
+records changed.Native/inquiry completeness remains in original archives/readers.
+At acceptance:main serverPID25268/8765,demoPID155280/8766;Cua programTab1 user-owned,
+finiteTab2 deliverable.No viewport override.No subagents.
+
+Metadata qualifications:Owned keeps nominal family cache capacity after initial
+placement leaves stock0;capacity is not food or replenishment.Current visible zero
+is ineligible,not learned avoidance.Primary stranded/Need eventually collects all
+stock;Ignored and unaffordable duration8/four-tick windows preserve actual stranding.
+Atomic inquiry cannot cross pending claim deadlines;no provisional query block was
+exercised in the matrix.Detailed limitations remain in results,not tuned away.

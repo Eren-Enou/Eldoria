@@ -240,3 +240,13 @@ The largest registered 019 trial is17.12MB raw / approximately29.47MB exported; 
 Python measurement process peaked around201MB. Browser object memory is additional.
 Only a single trial or pair is loaded; long-history comparison can still be costly.
 No population scalability or simulation throughput improvement is claimed.
+
+## Separate Experiment020 demonstration
+
+The main018/019 reader remains unchanged by020. An explicit small observer-only
+`finite-demo.py` adapter supplies ten original020 histories with current cache stock,
+pending attempts,local selection fields,grant/failure,meals,transfers and exact source
+references. Serve `experiments/020` on localhost8766 and open `/demo.html`.
+It has no actor mode or complete inquiry browser and never feeds cognition or
+scientific validation. See the [actual acceptance and screenshots](../../experiments/020/viewer-acceptance.md)
+for commands,source verification and limitations.020 remains unprotected research.
