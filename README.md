@@ -38,6 +38,11 @@ and [ranked next priorities](docs/development/post-019-observation-backlog.md) e
 actual consequences, private reversals and repeated contact after finite food exhaustion.
 These are post-evaluation observations, not a new experiment or policy adoption.
 
+The [phase2 integration assessment](docs/development/world-of-individuals-phase-2-assessment.md)
+ranks the remaining community-readiness barriers from actual evidence. The
+[continuation checkpoint](docs/development/continuation-checkpoint.md) records active
+gates;no autonomous community or sustainable economy is claimed.
+
 ## Install and run
 
 Install Rust with Cargo and the Windows MSVC build tools (or a Rust-supported native

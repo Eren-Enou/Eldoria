@@ -15,6 +15,8 @@ rows when ownership, entry points or mode boundaries change.
 - Recorded-life investigation: [019 observations](development/history-explorer-observations-019.md),
   [first walkthrough](development/history-explorer-first-walkthrough.md) and
   [evidence-backed priorities](development/post-019-observation-backlog.md).
+- Phase2 integration diagnosis: [community-readiness assessment](development/world-of-individuals-phase-2-assessment.md);
+  [current continuation checkpoint](development/continuation-checkpoint.md).
 - Lore work: [Eldoria index](ELDORIA_INDEX.md); lore is not implemented simulation behavior.
 
 ## Source ownership

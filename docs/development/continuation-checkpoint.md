@@ -4,8 +4,8 @@ Objective: execute the user-authorized gated020 review/protection, unified Explo
 integration diagnosis, prospective021 gate, roadmap and canon-separated bridge.
 
 Starting reference: `c10ad30fd2d7b24ece46604a57a820e565a93c92`,clean `main`.
-Current published HEAD/origin main: `6cdc87edb9bd35cb95c3686164f7a5ed18b7704a`;
-validated viewer changes await their separate publication.
+Current published HEAD/origin main: `8e22d0af25b31dd7690d23e1407a6b18092aa386`;
+A/B/C are validated,published and pushed.
 Protected endpoint001–020 (321 artifacts),published as6cdc87e.
 Current research020 is independently reviewed;no default adoption.
 
@@ -36,10 +36,11 @@ captured actor inputs,claim/omission/material chains and physically qualified
 comparisons. Python full33 passed,latest pressure/material comparison passed,actual JS
 helpers pass,real positive/negative browser navigation verified. Acceptance is at
 `tools/history-explorer/validation/finite-integration/acceptance.md`;main8765 follows
-observation→claim→transfer→meal with correct protected status. Viewer commit pending. First index28.33s;selected
+observation→claim→transfer→meal with correct protected status. Viewer published as8e22d0a. First index28.33s;selected
 cold2.55–4.76s/cached0.48–2.99s in one concurrent engineering run.
 
-D assessment and F/G roadmap/canon bridge are drafted,uncommitted. Canon files unchanged.
+D assessment is validated and ready for its separate publication. F/G roadmap/canon
+bridge are drafted,uncommitted. Canon files unchanged.
 No021 specification or implementation has started before the required committed gate.
 
 ## Boundaries and next action
@@ -47,11 +48,11 @@ No021 specification or implementation has started before the required committed 
 No behavior, default, cognitive capacity, canon or original outcome changed.
 Current020 has ephemeral current sensing, finite unrenewed stock, three people,
 one cache, at most three claims and one resource commitment. Atomic query/claim
-provisional rejection has no registered witness. Current main Explorer has validated first-class020 support awaiting its separate
-commit;the separately archived original demonstration remains unchanged.
+provisional rejection has no registered witness. Current main Explorer has validated,published first-class020 support;the separately
+archived original demonstration remains unchanged.
 
-Review is separately committed/pushed. Finish Stage B validation before protection. Stage B must
-validate/freeze/commit accepted020 before behavioral021. Stage C must show original
-020 acquisition-to-later-consequence inside the main application. Stage D must
-inform prospectively frozen021 design. Do not begin022 or automatically protect021.
+A/B/C passed and are committed/pushed. Publish the source-grounded D assessment,
+then prospectively specify/gate021 before implementing any new behavior. Investigate
+passive legitimate sensing versus an explicit costly sensing action;existing social
+event memories/boolean evidence must not masquerade as quantitative cache records. Do not begin022 or automatically protect021.
 Do not change canon. Verify actual Git/files/check logs after session/context changes.
