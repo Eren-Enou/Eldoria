@@ -25,10 +25,11 @@ local port. Full data preparation is optional:
 python -B tools/history-explorer/explorer.py --prepare
 ```
 
-Normal startup discovers 336 complete 019 histories through a bundled derived
-catalog. A trial is not trusted because it appears in that list. Opening it hashes
+Normal startup discovers336 complete019 and164 complete020 histories.019 uses a
+bundled derived catalog;020 builds a derived catalog on first launch. A trial is
+not trusted because it appears in that list. Opening it hashes
 the original compressed bytes, the entire decoded archive including newlines, and
-its exact one-based JSONL record. It validates membership, identity and point
+its exact JSONL record (019 one-based,020 original zero-based). It validates membership, identity and point
 references, and checks manifest identities against protected inventory when present.
 Source provenance is expandable beneath the title. Scientific status comes from
 repository review/protection documents; an archive hash does not validate a theory.
@@ -42,6 +43,27 @@ captured input, not the generic stock/hunger configuration parameter.
 The seven preset buttons open real pairs: small score change, private reversal,
 Deadline/delayed meal, unexecuted inquiry, conservative admission, complete null and
 observation gaps. They are recorded evidence witnesses, not scripted narrative scenes.
+
+Six additional020 presets show sharing after contention, missed donor/costly failure,
+three claimants for one unit, later depletion, complete null and reconvergence.
+Inspect the right history to follow its individual decisions. In Actor Perspective,
+sharing/Need trial33 individual1 at0 sees stock1 and scores Acquire80/Invite58;
+it does not know its later loss. Observer tick4 shows separate grant/failure balances;
+tick16 shows Accept and tick17 the recipient's meal. In lost_contact/Acquire29,
+the original busy-response omission precedes Unavailable2 and the depleted result4.
+
+Filter “Acquisition admissions / busy intervals” or “Grants and failures” to navigate
+actual records. At an admission, the linked state point precedes cohort reservations;
+the admission itself gives the new busy interval. At a same-tick completion, each
+operation retains its own before/after balances while the linked point can include
+other completions. No intermediate full state is fabricated. Observer cache details
+remain hidden from actor panels. Full Grouped assessment/progress cells absent from
+captured activity inputs remain explicitly unavailable.
+
+020 comparisons include physical-start qualifications: Owned redistributes initial
+stock into inventories; Closed changes access; Ignored/Need/Acquire share open cache
+physics and differ in selection. Equal terminal food/hunger can coexist with different
+trust/history. Common-time panels show the actual captured tick, not interpolation.
 
 ## Follow an individual
 

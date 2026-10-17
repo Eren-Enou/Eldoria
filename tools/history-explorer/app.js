@@ -19,7 +19,7 @@ function button(parent, label, action) { const b=el('button',label);b.addEventLi
 function status(message, error=false) {$('status').textContent=message;$('status').classList.toggle('error',error);}
 async function api(path, options) { const r=await fetch(path,options);const data=await r.json();if(!r.ok)throw new Error(data.error || r.statusText);return data; }
 function guard(fn) { return async (...args)=>{try{await fn(...args);}catch(e){pause();status(e.message,true);}}; }
-function label(e) {const c=e.config;return `${e.experiment} · ${e.case} · ${e.mode} · seed ${e.seed} · window ${c.window ?? c.budget ?? 'not captured'} / gap ${c.idle_gap ?? 'not a recorded treatment'} / I${c.interval} / ${c.order} / stock ${c.stock} / H parameter ${c.hunger ?? 'not recorded'} · #${e.record}`;}
+function label(e) {const c=e.config;if(e.experiment==='020')return `020 · ${e.case} · ${e.mode} · seed ${e.seed} · window ${c.window} / attempt ${c.duration} / ${c.order} · original zero-based trial ${e.record}`;return `${e.experiment} · ${e.case} · ${e.mode} · seed ${e.seed} · window ${c.window ?? c.budget ?? 'not captured'} / gap ${c.idle_gap ?? 'not a recorded treatment'} / I${c.interval} / ${c.order} / stock ${c.stock} / H parameter ${c.hunger ?? 'not recorded'} · #${e.record}`;}
 function options(select, entries, selected) {select.replaceChildren();entries.forEach(e=>{const o=el('option',label(e));o.value=e.id;select.append(o);});if(selected)select.value=selected;}
 function configure(data) {
  if(data.schema !== 'woi-history-explorer/v1')throw new Error('Unknown export schema');
@@ -111,11 +111,12 @@ function renderCards() {
  if(S.lens==='observer') {
   const x=exactSnapshot(S.data,m),total=x.point.state.agents.reduce((n,a)=>n+a.food,0);
   note(outcome,`Observer balance: ${total} food owned in recorded point ${x.index} at tick ${x.point.state.tick}. No interpolation between snapshots.`);
+  if(x.point.cache){heading(outcome,'Environmental observer · finite cache');table(outcome,['Cache','Stock / capacity','Access','Pending claimants'],[[x.point.cache.id,`${x.point.cache.stock} / ${x.point.cache.capacity}`,x.point.cache.accessible?'Open':'Closed',x.point.pending.map(a=>`${a.actor}: ${a.start}→${a.end}`).join('; ')||'None']]);details(outcome,'Pending claims and deadlines (observer only)',x.point.pending);}
   if(typeof x.index==='number') {
    const capture=S.data.timeline.find(z=>z.kind==='snapshot'&&z.point===x.index);
    const consumed=S.data.timeline.filter(z=>z.kind==='meal'&&(z.tick<x.point.state.tick||z.tick===x.point.state.tick&&z.order<=capture.order)).reduce((sum,z)=>sum+z.data.consumed,0);
-   const initial=S.data.trial.initial.state.agents.reduce((sum,a)=>sum+a.food,0);
-   note(outcome,`Recorded food ledger: initial ${initial} = owned ${total} + consumed ${consumed}. ${initial===total+consumed?'Balanced at this capture.':'MISMATCH — inspect original references.'}`);
+   const initial=S.data.trial.initial.state.agents.reduce((sum,a)=>sum+a.food,0)+(S.data.trial.initial.cache?.stock??0),stock=x.point.cache?.stock??0;
+   note(outcome,`Recorded food ledger: initial ${initial} = owned ${total} + cache ${stock} + consumed ${consumed}. ${initial===total+stock+consumed?'Balanced at this capture.':'MISMATCH — inspect original references.'}`);
   }
   if(m.kind==='resource') {
    heading(outcome,`Executed ${m.data.decision.selected} by individual ${m.data.decision.actor}`);
@@ -123,6 +124,8 @@ function renderCards() {
    note(outcome,`${m.data.transferred} food transferred. Recorded termination: ${m.data.outcome??'interaction continues'}. This is not a global benefit ranking.`);
   }
   if(m.kind==='meal')table(outcome,['Recorded meal','Before','After'],[['Owned food',m.data.food_before,m.data.food_after],['Hunger',m.data.hunger_before,m.data.hunger_after]]);
+  if(m.kind==='claim'){heading(outcome,'Actual claim admission');table(outcome,['Claim','Actor','Cache','Busy interval'],[[m.data.id,m.data.actor,m.data.cache,`${m.data.start} → ${m.data.end}`]]);note(outcome,'The linked point captures state before this cohort’s reservations. Admission records the new busy interval; no physical unit is reserved and no result is yet known.');}
+  if(m.kind==='acquisition'){const r=m.data;heading(outcome,`Actual ${r.outcome} · individual ${r.attempt.actor}`);table(outcome,['Physical result','Before','After'],[['Cache stock',r.cache_before,r.cache_after],['Own food',r.food_before,r.food_after]]);note(outcome,`Claim ${r.attempt.id}, ${r.attempt.start} → ${r.completed_at}; completion rank ${r.rank}. Full time charged for failure as well as success. The linked after-point may include other completions at this same tick; this row retains this operation’s own exact balances.`);}
   if(m.kind==='inquiry') {
    note(outcome,`Executed inquiry ${m.data.id}: ${human(m.data.decision.selected)}. Actual effort ${m.data.time_spent} ticks. ${m.data.response===null?'Native response receipt field is empty. This does not exclude a provenance-channel delivery; inspect the recorded assessment and concern changes before judging information acquired.':'Native response receipt recorded; correctness and useful change are separate questions.'}`);
    table(outcome,['Native query stage','Before','After'],[['Concern status',m.data.concern_before?.status,m.data.concern_after?.status]]);
@@ -163,6 +166,7 @@ function renderInspect() {
   note(box,`Recorded selection: ${human(a.selected)}. These are historical scores and priorities, not calibrated utility or a psychological explanation.`);
   table(box,['Activity','Eligible','Score'],a.candidates.map(c=>[human(c.action??c.reply),c.eligible===undefined?'Not captured':c.eligible?'Yes':'No',c.score]),a.candidates.findIndex(c=>text(c.action??c.reply)===text(a.selected)));
   if(a.phase==='recipient')details(box,'Incoming invitations legitimately observed',a.incoming);
+  if(a.cache){heading(box,'Legitimate current environmental observation');table(box,['Cache','Observed stock','Observed at','Access','Attempt ticks'],[[a.cache.id,a.cache.stock,a.cache.observed_at,a.cache.accessible?'Open':'Closed',a.cache.duration]]);note(box,`Recorded acquisition policy ${a.acquisition_policy}. ${a.acquisition_policy==='Acquire'?'Eligible acquisition has explicit priority.':'Strict first-maximum ties retain earlier candidates.'} No later stock or claimant outcome is part of this input.`);}
   if(a.phase==='activity'&&S.data.trial.mode==='Deadline')note(box,'Historical priority: eat when eligible except when a meal would consume the last admissible invitation slot. Scores alone do not explain this priority.');
   if(a.phase==='activity'&&S.data.trial.mode==='EatFirst')note(box,'Historical priority: eligible consumption precedes score comparison.');
   heading(box,a.phase==='recipient'?'Earlier outgoing contact alternatives (captured in this response)':'Contact alternatives and public bounds');table(box,['Intent','Eligible','Score','Reserved ticks'],a.contact_candidates.map(c=>[human(c.intent),c.eligible?'Yes':'No',c.score,c.reservation]));
@@ -182,6 +186,7 @@ function renderInspect() {
    details(box,'Arbitration dispositions',s.allocations);
    details(box,'Actual execution references',{started:s.started,finished:s.finished,query:s.query,active_before:s.active_before,active_after:s.active_after,consumption:s.consumption});
    note(box,s.query===null?'This step has no executed inquiry. A planned query, if present, did not become a query here.':`Executed query id ${s.query}; follow its native record below.`);
+   if(S.data.source.experiment==='020'){const w=S.data.trial.periods[m.step[0]].steps[m.step[1]];details(box,'020 actual choices, admissions, omitted responses and completions (observer)',{choices:w.choices,admissions:w.admissions,skipped_responses:w.skipped_responses,completed:w.completed,atomic_blocked:w.atomic_blocked});}
   }
   const b=layers(S.data.trial);
   details(box,'Recorded concern transitions through captured point',b.base.concerns.transitions.slice(0,x.point.state.concerns));
@@ -192,6 +197,12 @@ function renderInspect() {
 function layers(t) {return {base:t.final_state.base.base.base.base.base,inquiry:t.final_state.base.base.base.base.inquiry,assessment:t.final_state.base.base.assessment};}
 function renderLinks() {
  const box=$('links');box.replaceChildren();const m=current(),s=stepFor(S.data,m);let refs=[];
+ if(S.lens==='actor'){
+  note(box,'Objective results and future links are hidden in Actor Perspective. The timeline is a historical navigation index, not the individual’s knowledge.');
+  button(box,'Explore recorded consequences (Observer)',()=>{S.lens='observer';render();$('causal-browser').scrollIntoView({block:'start'});});
+  button(box,'Next own captured activity decision',()=>nextWhere(x=>x.kind==='decision'&&projection(S.data,x,S.actor)?.phase==='activity'));
+  return;
+ }
  if(s) {
   refs=['before','observed','sent','admitted','after'].filter(k=>s[k]!==null).map(k=>({label:`${k}: point ${s[k]}`,ref:`points[${s[k]}]`}));
   if(s.query!==null)refs.push({label:`Executed inquiry ${s.query}`,ref:`final_state.base.base.base.base.inquiry.records[${s.query}]`});
@@ -216,7 +227,7 @@ function renderList() {
  let moments=S.data.timeline.filter(m=>kind==='all'||(kind==='significant'?significant(m):m.kind===kind));
  let at=moments.findIndex(x=>x.id>=S.index);if(at<0)at=moments.length-1;const start=Math.max(0,at-8);const shown=moments.slice(start,start+45);
  $('list-note').textContent=moments.length?`${moments.length} matching records · displaying ${shown.length} near current tick`:'No records of this kind in this history. Change the filter or inspect the other history.';
- const list=$('events');list.replaceChildren();shown.forEach(m=>{const li=el('li'),b=button(li,`${m.tick} · ${m.kind} · ${m.label}`,()=>go(m.id));b.setAttribute('aria-current',m.id===S.index);list.append(li);});
+ const list=$('events');list.replaceChildren();shown.forEach(m=>{const li=el('li'),description=S.lens==='actor'?'Historical navigation reference · objective details hidden':m.label,b=button(li,`${m.tick} · ${m.kind} · ${description}`,()=>go(m.id));b.setAttribute('aria-current',m.id===S.index);list.append(li);});
 }
 async function compareWith(id) {
  if(!S.data)return;pause();clearComparison();status('Loading paired recorded history and comparing source values…');
@@ -229,7 +240,9 @@ async function compareWith(id) {
 function renderPair() {
  if(!S.data||!S.right||!S.comparison)return;$('inspect-right').disabled=false;const c=S.comparison,p=$('compare-summary');p.replaceChildren();p.hidden=S.lens==='actor';
  if(c.first_executed_difference){const a=c.first_executed_difference.left,b=c.first_executed_difference.right;note(p,`First actual execution difference: left ${a?a.kind+' at tick '+a.tick:'has no further action'}; right ${b?b.kind+' at tick '+b.tick:'has no further action'}. Follow the source references for the actual changes.`);}
- table(p,['Comparison scope','Recorded result'],[['Initial state / profiles',c.initial_state_and_profiles_match?'Matched':'DIFFERENT'],['Configurations',c.configurations_equal?'Equal':'Different — timing or other configuration treatment'],['Physical clock settings',c.physical_settings_equal?'Equal':'DIFFERENT — not a policy-only comparison'],['Endpoints',c.equal_horizon?'Same epoch and final tick':'UNEQUAL — qualify endpoint comparison'],['First choice',c.first_choice?JSON.stringify(c.first_choice):'No observed voluntary choice difference'],['First executed difference (all action types)',c.first_executed_difference??'No difference'],['First resource event difference',c.first_resource_event_difference??'No difference'],['Intermediate material differences',`${c.material_different_shared_ticks.length} shared recorded ticks`],['Final food / hunger',c.final_material_equal?'Equal':'Different'],['Material reconvergence',c.material_reconvergence?'Yes; historical differences remain':'Not demonstrated'],['Complete final snapshot',c.full_final_snapshot_equal?'Equal':'Different — material equality does not imply full-state equality']] .map(r=>[r[0],text(r[1])]));
+ table(p,['Comparison scope','Recorded result'],[['Initial state / profiles',c.initial_state_and_profiles_match?'Matched':'DIFFERENT'],['Configurations',c.configurations_equal?'Equal':'Different — timing or other configuration treatment'],['Physical clock settings',c.physical_settings_equal?'Equal':'DIFFERENT — not a policy-only comparison'],['Endpoints',c.equal_horizon?'Same epoch and final tick':'UNEQUAL — qualify endpoint comparison'],['First choice',c.first_choice?JSON.stringify(c.first_choice):'No observed voluntary choice difference'],['First executed difference (all action types)',c.first_executed_difference??'No difference'],['First resource event difference',c.first_resource_event_difference??'No difference'],['Intermediate material differences',`${c.material_different_shared_ticks.length} shared recorded ticks`],[c.potential_supply_equal===undefined?'Final food / hunger':'Final owned + cache material / hunger',c.final_material_equal?'Equal':'Different'],['Material reconvergence',c.material_reconvergence?'Yes; historical differences remain':'Not demonstrated'],[c.potential_supply_equal===undefined?'Complete final snapshot':'Complete captured final state (legacy + environment)',c.full_final_snapshot_equal?'Equal':'Different — material equality does not imply full-state equality']] .map(r=>[r[0],text(r[1])]));
+ if(c.potential_supply_equal!==undefined)table(p,['020 physical qualification','Result'],[['Total potential supply',c.potential_supply_equal?'Equal':'Different'],['Initial owned placement',c.owned_placement_equal?'Equal':'Different — placement intervention'],['Cache access',c.cache_access_equal?'Equal':'Different — access intervention'],['Final owned food / hunger',c.owned_final_material_equal?'Equal':'Different'],['Final cache stock',c.final_cache_stock_equal?'Equal':'Different — owned equality does not imply material equality'],['Complete legacy export (includes audit history)',c.legacy_final_snapshot_equal?'Equal':'Different'],['Final directed trust',c.final_trust_equal?'Equal':'Different']]);
+ if(c.model_hunger_area){table(p,['Individual','Left model hunger area','Right model hunger area'],c.model_hunger_area.left.map((v,i)=>[i,v,c.model_hunger_area.right[i]]));note(p,c.model_hunger_area.note);}
  if(c.first_choice?.tick!==undefined)button(p,'Jump to first voluntary difference',()=>go(nearest(S.data,c.first_choice.tick)));
  if(c.material_different_shared_ticks.length)button(p,'Jump to first material difference',()=>go(nearest(S.data,c.material_different_shared_ticks[0].tick)));
  button(p,'Compare final recorded states',()=>go(S.data.timeline.length-1));
@@ -239,6 +252,7 @@ function renderPair() {
   const col=el('div');col.append(el('h3',`${d.trial.mode} · ${d.trial.case}`));const x=snapshot(d,tick);
   col.append(el('p',`World tick ${tick}; snapshot captured at ${x.point.state.tick}, point ${x.index}`));
   if(S.lens==='observer')table(col,['Individual','Food','Hunger'],x.point.state.agents.map(a=>[a.id,a.food,a.hunger]));
+  if(S.lens==='observer'&&x.point.cache)note(col,`Observer cache ${x.point.cache.id}: stock ${x.point.cache.stock}; ${x.point.pending.length} pending claims. Exact captured time above.`);
   const moments=d.timeline.filter(m=>m.kind==='decision'&&m.tick===tick);const m=moments[0];const a=m?projection(d,m,S.actor):null;
   if(a&&a.phase==='activity'){col.append(el('p',`Individual ${S.actor}: ${human(a.selected)}`));table(col,['Activity','Score','Eligible'],a.candidates.map(c=>[c.action,c.score,c.eligible?'Yes':'No']));}
   else note(col,'No captured activity decision for this individual at this exact tick.');
@@ -247,6 +261,8 @@ function renderPair() {
  }
 }
 function setupPresets() {
+ const finiteFind=(name,mode)=>S.catalog.find(e=>e.experiment==='020'&&e.seed==='42'&&e.case===name&&e.mode===mode&&e.config.duration===4&&e.config.window===24&&e.config.order===(name==='lost_contact'?'Descending':'Ascending'));
+ for(const [title,name,left,right] of [['020 · Sharing after contention','sharing','Closed','Need'],['020 · Missed donor / costly failure','lost_contact','Closed','Acquire'],['020 · Last unit, three claimants','contested','Need','Acquire'],['020 · Exhaustion and empty contact','ongoing','Owned','Need'],['020 · Complete null','empty','Ignored','Need'],['020 · Material reconvergence','contact_bias','Need','Acquire']])button($('presets'),title,guard(async()=>{const a=finiteFind(name,left),b=finiteFind(name,right);if(!a||!b)throw new Error('020 preset not indexed');await openHistory(a.id);if(S.data?.source.id===a.id)await compareWith(b.id);}));
  const defs=[['A · Small score change','useful_contact','Baseline','Scale110',{}],['B · Private cooperation reversal','unproductive_contact','Baseline','Scale110',{}],['C · Deadline / delayed meal','ongoing','EatFirst','Deadline',{stock:4}],['D · Planned inquiry loses arbitration','information','Baseline','Scale90',{order:'Descending'}],['E · Conservative short window','useful_contact','Baseline','Baseline',{}, {window:6}],['F · Complete null','no_food','Baseline','Scale90',{}],['G · Observation gaps','recurring','Baseline','Baseline',{idle_gap:5}, {}]];
  const find=(name,mode,changes)=>S.catalog.find(e=>e.experiment==='019'&&e.seed==='42'&&e.case===name&&e.mode===mode&&Object.entries({...{window:24,idle_gap:1,interval:4,stock:12,hunger:20,order:'Ascending'},...changes}).every(([k,v])=>e.config[k]===v));
  defs.forEach(([title,name,l,r,c,rc])=>button($('presets'),title,guard(async()=>{const a=find(name,l,c),b=find(name,r,rc??c);if(!a||!b)throw new Error('Preset not in indexed catalog');await openHistory(a.id);if(S.data?.source.id===a.id)await compareWith(b.id);})));

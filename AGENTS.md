@@ -283,7 +283,7 @@ docs/experiment-019-review.md and docs/experiment-contract-001-019.md.
 No default adoption.020 is separately authorized prospective research,not part of this protection.
 History Explorer is separately authorized observational engineering under tools/history-explorer;
 never feed its caches/exports into actor cognition or make it a foundation dependency.
-Its explicit018/019 adapters preserve source identity and captured local/owned-state
+Its explicit018/019/020 adapters preserve source identity and captured local/owned-state
 boundaries; do not infer missing cognition or explain old decisions with new policies.
 Run its Python data tests, actual JS owned-point tests when Node is available, and
 real browser smoke checks for changes to ingestion, projection, replay or comparison.
@@ -309,3 +309,11 @@ unexercised atomic provisional-query branch. The authorized phase2 program may
 proceed prospectively to021 only after this gate is committed. Do not begin022.
 Its separate finite-demo adapter exposes original020 observer records only;it must
 not be silently ingested as018/019 or become a simulation/cognition dependency.
+
+First-class020 Explorer support uses experiment-020-trial/v1 and zero-based original
+ordinals;old018/019 labels stay one-based. Keep cache-inclusive material equality,
+owned-state equality,legacy export (including audit) equality and full captured
+state equality distinct. Actor mode must not display future grants/failures or
+restore absent cognition from observer records. Claim admission is executed busy
+work;completion is a later physical result. See tools/history-explorer/validation/
+finite-integration/acceptance.md. No viewer cache is a foundation dependency.

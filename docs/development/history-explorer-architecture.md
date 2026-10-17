@@ -28,7 +28,7 @@ member digest, fingerprint, schema, source-freeze identity or archive digest is 
 3. Stream the whole selected decoded archive, checking SHA/length including newline
    bytes. Bound individual JSONL records at64MiB. Retain only the requested record.
 4. Verify the exact member digest (line without CR/LF terminator), semantic trial
-   fingerprint and original identity/configuration. Dispatch explicitly to018 or019.
+   fingerprint and original identity/configuration. Dispatch explicitly to018/019/020.
 5. Preserve the complete original Trial semantic JSON. Generate source-reference
    navigation and allowlisted actor projections. No policy or scoring is rerun.
 6. Deliver one selected trial or pair to the browser, HTTP gzip when accepted. Rebuild
@@ -49,6 +49,34 @@ can have zero-increment physics; the viewer preserves these facts and flags uneq
 clock settings in comparisons. Valid final018 can be indexed with --include018.
 001–017, arbitrary JSON/saves and018's invalid development bundle are unsupported.
 Unknown or invalid input is rejected rather than normalized into another experiment.
+
+020 has its own versioned `finite.py` adapter (`experiment-020-trial/v1`), export
+extractor3 and original zero-based ordinals. It reuses only unchanged nested legacy
+protocol record readers; no Trial is coerced or rewritten. Its actor projection
+reads `choices[owner].acquiring_base.contact.input` for acquisition and the ordinary
+activity decision otherwise, then allowlists the actual cache observation, policy,
+lane flag and recorded candidates/selection. Final outcomes, pending rivals and
+observer cache state never enter that projection. Import/cache display fields are
+always rebuilt. Source identity uses020's source-freeze manifest; historical export
+field `policy_freeze_sha256` names its digest for wrapper compatibility.
+
+The first020 discovery scan streams164 original records, validates the envelope
+and writes only ignored derived indexes. Cold selection rechecks full decoded archive
+membership. Cached selection verifies original compressed bytes and semantic member
+fingerprint and rebuilds projections; no complete corpus goes to the browser.
+Server retains at most two selected histories, and UI renders45 nearby entries.
+Selected largest020 source15.33MB becomes27.96MB exported; parsed/browser heap is
+not measured. [Engineering costs](../../tools/history-explorer/validation/finite-integration/performance.json)
+record28.33s first index,2.55–4.76s cold and0.48–2.99s cached selections in one run
+under concurrent validation. These are not deterministic evidence or statistics.
+
+020 typed chains link exact observation/choice/admission/attempt/outcome references.
+Explicit skipped-response entries link busy exclusion to actual unavailable invitations.
+Later owner operations are labeled chronological context unless stronger material
+evidence exists. For the sole-initial-unowned-unit case, conservation supports a
+grant→transfer→recipient-meal material link without claiming it solely caused consent
+or assigning invented IDs to fungible food. Same-tick order follows the source
+protocol: resource action, due claims, meals, then later cohort decisions.
 
 ## Actor and observer ownership
 

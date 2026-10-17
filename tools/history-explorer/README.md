@@ -20,6 +20,17 @@ original compressed and complete decoded archive and selected JSONL member befor
 showing the trial. The catalog itself is not scientific evidence and is not marked
 verified merely because it loads. No whole decoded corpus enters the browser.
 
+The main application now also supports all164 original020 histories through
+`experiment-020-trial/v1`, not an018/019 schema substitution. First launch builds
+a derived020 catalog under `target`; subsequent starts reuse it, verifying original
+membership on selection. The default catalog has500 histories (336019 +164020).
+020 labels use original **zero-based trial ordinals**;019 labels remain one-based.
+Use the020 sharing, missed-donor, last-unit, exhaustion, null and reconvergence
+presets. Actor decisions include their actual cache observation/candidates; Observer
+Perspective separately exposes claims, deadlines, grants/failures and conserved
+cache+owned+consumed balances. Causal links retain exact original references and
+qualify chronological context. [020 acceptance](validation/finite-integration/acceptance.md).
+
 Optional full verification/index preparation, creating the catalog and authentic
 default pair exports under ignored `target/history-explorer`:
 
@@ -33,7 +44,7 @@ It is not required before normal launch. Optional valid Experiment 018 support:
 python -B tools/history-explorer/explorer.py --include018
 ```
 
-That performs the slower full 018/019 index scan; it does not include 018's invalid
+That performs the slower full018/019/020 index scan; it does not include018's invalid
 development candidate. Experiments 001–017 and arbitrary unregistered archives are
 not supported by this release. Neither command runs a simulation or evaluator.
 
@@ -69,6 +80,7 @@ python -B -m unittest discover -s tools/history-explorer/tests -v
 node --check tools/history-explorer/app.js
 node tools/history-explorer/tests/perspective.test.cjs
 node tools/history-explorer/tests/causal.test.cjs
+node tools/history-explorer/tests/finite.test.cjs
 python -B tools/history-explorer/tests/test_causal.py --all-sources
 python -B tools/history-explorer/measure.py
 ```
@@ -81,10 +93,12 @@ wall-clock engineering data, not deterministic experiment outcomes.
 
 ## Separate Experiment020 demonstration
 
-The main018/019 reader remains unchanged by020. An explicit small observer-only
+The earlier020 delivery included an explicit small observer-only
 `finite-demo.py` adapter supplies ten original020 histories with current cache stock,
 pending attempts,local selection fields,grant/failure,meals,transfers and exact source
 references. Serve `experiments/020` on localhost8766 and open `/demo.html`.
 It has no actor mode or complete inquiry browser and never feeds cognition or
 scientific validation. See the [actual acceptance and screenshots](../../experiments/020/viewer-acceptance.md)
-for commands,source verification and limitations.020 remains unprotected research.
+for commands,source verification and its historical limitations. It remains preserved
+as original viewer evidence; current first-class020 support is in the main application
+above. Scientific status comes from the current review/protection documents.

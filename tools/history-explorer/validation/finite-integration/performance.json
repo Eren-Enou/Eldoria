@@ -1,0 +1,34 @@
+{
+  "note": "Single engineering run; other scientific validation may run concurrently. No browser heap or statistical inference.",
+  "catalog_seconds": 28.326517599984072,
+  "trials": 164,
+  "loads": [
+    {
+      "original_ordinal": 33,
+      "source_bytes": 2826822,
+      "export_bytes": 5171203,
+      "cold_seconds": 2.5453651000279933,
+      "cached_seconds": 0.49010729999281466,
+      "moments": 670,
+      "nodes": 719
+    },
+    {
+      "original_ordinal": 29,
+      "source_bytes": 2499802,
+      "export_bytes": 4708273,
+      "cold_seconds": 2.5790425998857245,
+      "cached_seconds": 0.47625730000436306,
+      "moments": 660,
+      "nodes": 732
+    },
+    {
+      "original_ordinal": 35,
+      "source_bytes": 15329116,
+      "export_bytes": 27956098,
+      "cold_seconds": 4.755356100038625,
+      "cached_seconds": 2.9935850999318063,
+      "moments": 2691,
+      "nodes": 3044
+    }
+  ]
+}

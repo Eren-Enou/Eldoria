@@ -23,7 +23,10 @@ python -B tools/history-explorer/explorer.py
 
 It opens a real Experiment019 history,with individual perspectives,recorded replay,
 causal event links and matched comparison. Source hashes/membership are verified
-before display. No simulation,policy,canon or archive is changed. Optional018 support
+before display. All164 original020 histories are now first-class,with captured
+actor cache observations,separate environmental observer state,claim/failed-time
+chains and physically qualified comparisons.020 ordinals are zero-based;019 labels
+remain one-based. No simulation,policy,canon or archive is changed. Optional018 support
 is available with `--include018`. [Application and developer checks](tools/history-explorer/README.md),
 [practical guide](docs/development/history-explorer-user-guide.md),
 [architecture](docs/development/history-explorer-architecture.md) and
@@ -467,24 +470,29 @@ admission/cognition/prefix reconstruction. `review019_slices.py` adds21 register
 post-evaluation causal diagnostics. `measure019 -- experiments/019/observer-cost.json`
 separates work units and audit cost. New generation uses `evaluate019 -- --output`
 with an isolated target directory;never overwrite historical evidence. Foundation
-protection is001–019. Shared/standalone019 includes the independent scientific scope reader.
+protection is001–020. Shared/standalone019 includes the independent scientific scope reader.
 
 ## Experiment020: Finite Environmental Resource Acquisition
 
 [Specification](experiments/020/specification.md),[design gate](experiments/020/design-gate.md),
 [results](experiments/020/results.md),[verification](experiments/020/verification.md):
-**ACCEPT WITH QUALIFICATION as prospective research;not independently reviewed,
-protected or adopted.** One finite co-present cache,local voluntary selection,
+**Independently reviewed ACCEPT WITH QUALIFICATION and protected through001–020;
+no policy adoption.** See the [review](docs/experiment-020-review.md),
+[contract](docs/experiment-contract-001-020.md) and [integrity audit](docs/integrity-audit-001-020.md). One finite co-present cache,local voluntary selection,
 actor reservations,costly failed claims and atomic conserving grants.164 complete
 worlds compare equal potential supply in Owned/Closed/Ignored/Need/Acquire controls.
 All164 are independently reconstructed with20 corruption categories. Sharing and
 missed help both occur;finite depletion and repetitive empty contact remain.
 
 `cargo run --release --locked -j 1 --example validate020` is a separate read-only
-gate. It does not extend the protected001–019 foundation. New evaluator output
+gate,retained unchanged because its source is frozen. Shared `contract020.rs` adds
+321 original-artifact and independent-scope checks to the normal foundation and
+`validate020_foundation`. New evaluator output
 requires a fresh directory:`evaluate020 -- --output target/experiment020-new`.
-No021 or global policy adoption. The [minimal original020 playback](experiments/020/demo.html)
+Prospective021 requires its own design gate;no022 or global policy adoption. The [minimal original020 playback](experiments/020/demo.html)
 is served with `python -m http.server 8766 --bind 127.0.0.1 --directory experiments/020`;
 open [local demonstration](http://127.0.0.1:8766/demo.html). See its
-[acceptance and limitations](experiments/020/viewer-acceptance.md). The main018/019
-History Explorer retains separate typed causal navigation and resource outcome filters.
+[historical acceptance and limitations](experiments/020/viewer-acceptance.md). The
+main History Explorer now reads all164 originals with actor/environmental views,
+typed causal navigation and cache-inclusive matched comparisons;
+[current acceptance](tools/history-explorer/validation/finite-integration/acceptance.md).

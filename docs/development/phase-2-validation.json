@@ -106,5 +106,35 @@
     "Final integrated gate used isolated build target to avoid overwriting a running Windows executable.",
     "No archive writer, viewer dependency or new simulation behavior.",
     "Wall-clock seconds are engineering observations, not deterministic evidence."
-  ]
+  ],
+  "viewer": {
+    "parent_revision": "6cdc87edb9bd35cb95c3686164f7a5ed18b7704a",
+    "python_tests": 33,
+    "python_exit": 0,
+    "node_helpers": [
+      "perspective.test.cjs",
+      "causal.test.cjs",
+      "finite.test.cjs"
+    ],
+    "node_exit": 0,
+    "browser_main": "http://127.0.0.1:8765/",
+    "browser_development": "http://127.0.0.1:8767/",
+    "browser_original_ordinals": [
+      8,
+      9,
+      12,
+      13,
+      26,
+      29,
+      31,
+      33,
+      40,
+      43
+    ],
+    "actual_main_source_to_meal": true,
+    "browser_warning_errors": [],
+    "all_original020_references": 164,
+    "performance": "tools/history-explorer/validation/finite-integration/performance.json",
+    "note": "Final full33 data tests plus actual JS and real-browser boundaries;wording changes preserve classifications."
+  }
 }

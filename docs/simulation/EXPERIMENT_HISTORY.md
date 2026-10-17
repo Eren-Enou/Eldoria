@@ -141,7 +141,7 @@ artifacts; [audit](../integrity-audit-001-019.md), [handoff](../research-handoff
 [user guide](../development/history-explorer-user-guide.md),
 [architecture](../development/history-explorer-architecture.md),
 [acceptance evidence](../../tools/history-explorer/validation/acceptance.md).
-Local read-only018/019 consumer, not experiment020. It preserves captured actor inputs,
+Local read-only018/019/020 consumer,not a simulation experiment. It preserves captured actor inputs,
 exact owned Agent snapshots, separate observer knowledge, real replay and qualified
 paired comparisons. Source archives/contracts remain authoritative; derived viewer
 indexes do not validate science or become cognitive recovery channels. No new default,
@@ -172,3 +172,8 @@ The earlier observational report recommended this later work;its historical clai
 and all296 protected artifacts remain unchanged. Prospective021 requires a separate
 validated/committed020 foundation gate;[audit](../integrity-audit-001-020.md),
 [handoff](../research-handoff-001-020.md). No adoption or automatic021 protection;no022.
+
+Main Explorer now supports all164 original020 worlds through an explicit versioned
+adapter,including actor-local cache observations,claim/busy/outcome chains and
+qualified cache-inclusive comparisons;[acceptance](../../tools/history-explorer/validation/finite-integration/acceptance.md).
+The old separate observer demo and all original evidence remain unchanged.

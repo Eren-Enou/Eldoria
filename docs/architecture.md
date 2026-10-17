@@ -828,12 +828,33 @@ checks1296 worlds/336 raw histories and independent reconstruction. Following
 [qualified scientific review](experiment-019-review.md),shared/standalone019 protects
 296 artifacts in normal001–019 foundation with four readers. No default adoption;no020.
 
+## Opt-in Experiment020 finite environmental acquisition
+
+`acquisition.rs` declares one finite stable cache,ephemeral current observations,
+Need/Acquire/ignored local selection and checked one-unit grants. The isolated
+`simulation/acquisition.rs` lifecycle reserves actors rather than units,charges
+shared elapsed time,completes ordered claims separately and preserves independent
+social response. The private experiment wrapper prevents other Simulation actions
+while claims exist. No environmental cognition,production or default change.
+
+The [qualified review](experiment-020-review.md) independently reconstructs164
+original histories,including sharing,paid depleted failures,missed donor help,
+nulls and later exhaustion. [001–020 protection](experiment-contract-001-020.md)
+keeps321 original scientific/support artifacts and inherits001–019 unchanged.
+Frozen standalone validate020 is preserved;shared contract020 checks exact source
+text parity,original byte replay,primitive/cognitive reconstruction,corruptions,
+inventory and independent scope/causal anchors. Atomic inquiry exclusivity and its
+unexercised provisional-rejection branch remain explicit limitations. Current
+known-empty exclusion is structural;there is no persistent source learning.
+
 ## History Explorer observational consumer
 
-The [local application](../tools/history-explorer/README.md) streams original018/019
+The [local application](../tools/history-explorer/README.md) streams original018/019/020
 JSONL/gzip, verifies archive/member identities and displays a selected trial or pair.
 Python stdlib and static browser files remain outside simulation execution. The
 [technical architecture](development/history-explorer-architecture.md) defines strict
 captured-input and exact-own-point projections, separate observer state, chronological
 references and qualified comparisons. Caches/exports are non-authoritative and never
-inputs to policies, replay validation or the normal foundation. No020 or live control.
+inputs to policies,replay validation or the normal foundation. The explicit finite.py
+020 adapter adds source-preserving actor/observer cache and claim views,not new
+simulation behavior or live control.

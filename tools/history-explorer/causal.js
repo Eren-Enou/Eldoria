@@ -16,7 +16,7 @@ function resourceRecords(causal,kind,after) {
 }
 function orderedChainNodes(causal,chain,timeline) {
  const order=new Map(timeline.map(m=>[m.ref,m.order]));
- const phase=n=>n.source_kind==='Completed resource encounter'?2:n.source_kind==='Recipient response'||n.source_kind==='Recorded interpretation'?1:0;
+ const phase=n=>n.source_kind==='Local cache observation'?-2:n.source_kind==='Selected acquisition'?-1:n.source_kind==='Completed resource encounter'?2:n.source_kind==='Recipient response'||n.source_kind==='Recorded interpretation'?1:0;
  return [...new Set([...chain.nodes,...chain.edges.map(e=>e.source)])].sort((a,b)=>{
   const x=causal.nodes[a],y=causal.nodes[b];return (x.tick??0)-(y.tick??0)||(order.get(x.anchor)??-1)-(order.get(y.anchor)??-1)||phase(x)-phase(y);
  });
