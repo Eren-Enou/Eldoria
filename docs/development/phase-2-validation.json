@@ -1,0 +1,110 @@
+{
+  "reviewed_revision": "c10ad30fd2d7b24ece46604a57a820e565a93c92",
+  "review_commit": "8e3b57466c5e6d78d4425e661d8d60f37c9b22eb",
+  "protected_artifacts": 321,
+  "raw_working_byte_guard": 326,
+  "rust_tests": 202,
+  "checks": [
+    {
+      "command": "cargo fmt --check",
+      "exit": 0
+    },
+    {
+      "command": "cargo clippy --locked --all-targets -j 1 -- -D warnings",
+      "exit": 0
+    },
+    {
+      "command": "cargo test --locked -j 1",
+      "exit": 0
+    },
+    {
+      "command": "cargo run --release --locked -j 1 --example validate_contract",
+      "exit": 0,
+      "scope": "Baseline001\u2013019 before protection wiring"
+    },
+    {
+      "command": "cargo run --release --locked -j 1 --target-dir target/phase2-foundation --example validate_contract",
+      "exit": 0
+    },
+    {
+      "command": "cargo run --release --locked -j 1 --example validate020",
+      "exit": 0
+    },
+    {
+      "command": "cargo run --release --locked -j 1 --example validate020_foundation",
+      "exit": 0
+    },
+    {
+      "command": "python -B examples/support/review020_scope.py",
+      "exit": 0
+    }
+  ],
+  "standalone": [
+    {
+      "check": "validate009",
+      "exit": 0,
+      "seconds": 59.3869103
+    },
+    {
+      "check": "validate010",
+      "exit": 0,
+      "seconds": 63.7100341
+    },
+    {
+      "check": "validate011",
+      "exit": 0,
+      "seconds": 13.0317147
+    },
+    {
+      "check": "validate012",
+      "exit": 0,
+      "seconds": 8.4179434
+    },
+    {
+      "check": "validate013",
+      "exit": 0,
+      "seconds": 27.8407237
+    },
+    {
+      "check": "validate014",
+      "exit": 0,
+      "seconds": 45.5073278
+    },
+    {
+      "check": "validate015",
+      "exit": 0,
+      "seconds": 88.4051996
+    },
+    {
+      "check": "validate016",
+      "exit": 0,
+      "seconds": 218.0725185
+    },
+    {
+      "check": "validate017",
+      "exit": 0,
+      "seconds": 217.8264656
+    },
+    {
+      "check": "validate018",
+      "exit": 0,
+      "seconds": 243.1063186
+    },
+    {
+      "check": "validate019",
+      "exit": 0,
+      "seconds": 312.2608732
+    }
+  ],
+  "gate_sources_lf_sha256": {
+    "examples/validate_contract.rs": "938bd89eb883b166322124099587dda500a7ed25c1a9a7deaea1c0c8c6a04a99",
+    "examples/support/contract020.rs": "71282d2463ff9c7a8bc1eef38c5567c5d2c63609f44cf5baa6d6967b9d774db6",
+    "examples/validate020_foundation.rs": "2cd353bf9ed8d67fe2b1f80286a7a9634b151faf6ba26ba8af93af82eb27c04b",
+    "examples/support/review020_scope.py": "1ea55836896a7a78ada21dae50676963feb5fb012f474ca12bfd90eed36662d0"
+  },
+  "notes": [
+    "Final integrated gate used isolated build target to avoid overwriting a running Windows executable.",
+    "No archive writer, viewer dependency or new simulation behavior.",
+    "Wall-clock seconds are engineering observations, not deterministic evidence."
+  ]
+}

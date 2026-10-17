@@ -161,12 +161,14 @@ absence from provenance delivery; simulation and historical evidence are unchang
 [Specification](../../experiments/020/specification.md),[gate](../../experiments/020/design-gate.md),
 [results](../../experiments/020/results.md),[verification](../../experiments/020/verification.md).
 Independently reviewed [ACCEPT WITH QUALIFICATION](../experiment-020-review.md),
-not yet protected.164 original complete worlds and20 corruption categories;
+protected under[001–020](../experiment-contract-001-020.md),321 original scientific/support artifacts.164 original complete worlds and20 corruption categories;
 finite acquisition can cause voluntary sharing,failed claims,missed help and unequal
 consumption. No new cognition,production,travel or default. Need/Acquire remain
 research controls. Finite depletion and empty negotiations persist. Standalone
-validate020 is separate from protected001–019. The [minimal020 observer playback](../../experiments/020/demo.html)
+frozen validate020 remains unchanged;shared contract020 adds inventory/scope to the
+normal foundation and standalone validate020_foundation. The [minimal020 observer playback](../../experiments/020/demo.html)
 uses an explicit adapter and ten authentic histories,not a legacy schema substitution.
 The earlier observational report recommended this later work;its historical claims
 and all296 protected artifacts remain unchanged. Prospective021 requires a separate
-validated/committed020 foundation gate;no022.
+validated/committed020 foundation gate;[audit](../integrity-audit-001-020.md),
+[handoff](../research-handoff-001-020.md). No adoption or automatic021 protection;no022.

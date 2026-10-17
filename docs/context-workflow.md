@@ -31,8 +31,8 @@ scientifically accepted and protected while its proposed mechanism is rejected.
 Protection preserves accepted findings and qualifications, not a mandate to adopt
 every tested mechanism.
 
-Experiments001–019 are protected by the
-[foundation contract](experiment-contract-001-019.md) and its inherited historical
+Experiments001–020 are protected by the
+[foundation contract](experiment-contract-001-020.md) and its inherited historical
 maps. Experiment 011's [scientific review](experiment-011-review.md) is confirmed with
 qualification: its evidence is protected, while StatusValue remains unadopted.
 Experiment012's [scientific review](experiment-012-review.md) establishes ACCEPT
@@ -42,8 +42,8 @@ Experiment013's unchanged [scientific review](experiment-013-review.md) establis
 ACCEPT WITH QUALIFICATION; Pulse/Ungated remain optional research, not defaults.
 Preserve C64 versus B64 and retained episodes outside the last-four partner scoring
 window. Its shared read-only gate invokes both independent readers.
-The [integrity report](integrity-audit-001-019.md) records the latest protection pass;
-the [research handoff](research-handoff-001-019.md) preserves open valuation/timing questions.
+The [integrity report](integrity-audit-001-020.md) records the latest protection pass;
+the [research handoff](research-handoff-001-020.md) preserves open valuation/timing questions.
 017 is protected with qualification; its188 contact-only nulls and narrow7/188 material
 effect remain distinct. No default adoption or retroactive recurring hunger.
 Reverify source, contracts and reviews before

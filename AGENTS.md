@@ -33,7 +33,8 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-019.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-020.md`.
+The historical `docs/experiment-contract-001-019.md` remains authoritative for001–019.
 The historical `docs/experiment-contract-001-018.md` remains authoritative for001–018.
 The historical `docs/experiment-contract-001-017.md` remains authoritative for001–017.
 The historical `docs/experiment-contract-001-016.md` remains authoritative for001–016.
@@ -289,8 +290,9 @@ real browser smoke checks for changes to ingestion, projection, replay or compar
 See docs/development/history-explorer-user-guide.md and
 docs/development/history-explorer-architecture.md.
 
-Experiment020 is independently reviewed ACCEPT WITH QUALIFICATION,not yet
-protected or adopted;see docs/experiment-020-review.md. Read experiments/020/specification.md,design-gate.md,results.md and
+Experiment020 is independently reviewed and protected ACCEPT WITH QUALIFICATION;
+no policy adoption. See docs/experiment-020-review.md and
+docs/experiment-contract-001-020.md. Read experiments/020/specification.md,design-gate.md,results.md and
 verification.md. Preserve the declared five controls,equal potential supply,four-tick
 baseline/two/eight sensitivities and deterministic claim ranks. Claims reserve actors,
 not cache units;completion rechecks stock and atomically conserves food. No observer
@@ -298,9 +300,12 @@ history,future information or partner-private state enters actor inputs. Acquisi
 adds no learning mechanism;existing bounded learning remains. Preserve failed
 claims,missed help,unequal sharing,nulls and later depletion. Atomic inquiry cannot
 leap a pending claim's deadline;do not silently replace this scheduling qualification.
-The standalone read-only validate020 does not extend validate_contract or001–019.
-Independent scientific review is complete;protection remains a separate gate.
-The authorized phase2 program may proceed to021 only after that gate validates
-and is committed. Do not begin022.
+Protect321 original artifacts (296 inherited +25 original020 scientific/support
+files),without rewriting the five original viewer-only files or any older evidence.
+Frozen standalone validate020 remains unchanged;shared contract020.rs preserves its
+exact text and parity,adds321 inventory/scope checks,and runs in validate_contract
+and validate020_foundation. Preserve qualified negative/null findings and the
+unexercised atomic provisional-query branch. The authorized phase2 program may
+proceed prospectively to021 only after this gate is committed. Do not begin022.
 Its separate finite-demo adapter exposes original020 observer records only;it must
 not be silently ingested as018/019 or become a simulation/cognition dependency.
