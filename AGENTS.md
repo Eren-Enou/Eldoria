@@ -289,8 +289,8 @@ real browser smoke checks for changes to ingestion, projection, replay or compar
 See docs/development/history-explorer-user-guide.md and
 docs/development/history-explorer-architecture.md.
 
-Experiment020 is opt-in finite environmental acquisition research,not protected or
-adopted. Read experiments/020/specification.md,design-gate.md,results.md and
+Experiment020 is independently reviewed ACCEPT WITH QUALIFICATION,not yet
+protected or adopted;see docs/experiment-020-review.md. Read experiments/020/specification.md,design-gate.md,results.md and
 verification.md. Preserve the declared five controls,equal potential supply,four-tick
 baseline/two/eight sensitivities and deterministic claim ranks. Claims reserve actors,
 not cache units;completion rechecks stock and atomically conserves food. No observer
@@ -299,6 +299,8 @@ adds no learning mechanism;existing bounded learning remains. Preserve failed
 claims,missed help,unequal sharing,nulls and later depletion. Atomic inquiry cannot
 leap a pending claim's deadline;do not silently replace this scheduling qualification.
 The standalone read-only validate020 does not extend validate_contract or001–019.
-Independent scientific review/protection remain separate tasks. Do not begin021.
+Independent scientific review is complete;protection remains a separate gate.
+The authorized phase2 program may proceed to021 only after that gate validates
+and is committed. Do not begin022.
 Its separate finite-demo adapter exposes original020 observer records only;it must
 not be silently ingested as018/019 or become a simulation/cognition dependency.
