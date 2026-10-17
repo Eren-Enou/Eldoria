@@ -1,0 +1,736 @@
+{
+  "methods": {
+    "Direct": 22
+  },
+  "queries": 22,
+  "receipts": 11,
+  "retained_changes": 11,
+  "rows": [
+    {
+      "record": 45,
+      "seed": 42,
+      "case": "information",
+      "mode": "Owned",
+      "config": {
+        "duration": 4,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 115,
+      "end": 128,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 20,
+        "support_after": 60,
+        "status_before": "Partial",
+        "status_after": "Resolved",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "record": 46,
+      "seed": 42,
+      "case": "information",
+      "mode": "Closed",
+      "config": {
+        "duration": 4,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 67,
+      "end": 80,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 20,
+        "support_after": 60,
+        "status_before": "Partial",
+        "status_after": "Resolved",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "record": 47,
+      "seed": 42,
+      "case": "information",
+      "mode": "Ignored",
+      "config": {
+        "duration": 4,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 67,
+      "end": 80,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 20,
+        "support_after": 60,
+        "status_before": "Partial",
+        "status_after": "Resolved",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "record": 48,
+      "seed": 42,
+      "case": "information",
+      "mode": "Need",
+      "config": {
+        "duration": 4,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 67,
+      "end": 80,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 20,
+        "support_after": 60,
+        "status_before": "Partial",
+        "status_after": "Resolved",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "record": 48,
+      "seed": 42,
+      "case": "information",
+      "mode": "Need",
+      "config": {
+        "duration": 4,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 1,
+      "start": 91,
+      "end": 103,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 1,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 0,
+        "support_after": 0,
+        "status_before": "Open",
+        "status_after": "Open",
+        "receipt_acquired": false,
+        "novelty": "None",
+        "novelty_value": 0,
+        "time": 12
+      }
+    },
+    {
+      "record": 49,
+      "seed": 42,
+      "case": "information",
+      "mode": "Acquire",
+      "config": {
+        "duration": 4,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 67,
+      "end": 80,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 20,
+        "support_after": 60,
+        "status_before": "Partial",
+        "status_after": "Resolved",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "record": 49,
+      "seed": 42,
+      "case": "information",
+      "mode": "Acquire",
+      "config": {
+        "duration": 4,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 1,
+      "start": 91,
+      "end": 103,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 1,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 0,
+        "support_after": 0,
+        "status_before": "Open",
+        "status_after": "Open",
+        "receipt_acquired": false,
+        "novelty": "None",
+        "novelty_value": 0,
+        "time": 12
+      }
+    },
+    {
+      "record": 60,
+      "seed": 42,
+      "case": "null",
+      "mode": "Owned",
+      "config": {
+        "duration": 4,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 54,
+      "end": 66,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 0,
+        "support_after": 0,
+        "status_before": "Open",
+        "status_after": "Open",
+        "receipt_acquired": false,
+        "novelty": "None",
+        "novelty_value": 0,
+        "time": 12
+      }
+    },
+    {
+      "record": 61,
+      "seed": 42,
+      "case": "null",
+      "mode": "Closed",
+      "config": {
+        "duration": 4,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 54,
+      "end": 66,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 0,
+        "support_after": 0,
+        "status_before": "Open",
+        "status_after": "Open",
+        "receipt_acquired": false,
+        "novelty": "None",
+        "novelty_value": 0,
+        "time": 12
+      }
+    },
+    {
+      "record": 62,
+      "seed": 42,
+      "case": "null",
+      "mode": "Ignored",
+      "config": {
+        "duration": 4,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 54,
+      "end": 66,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 0,
+        "support_after": 0,
+        "status_before": "Open",
+        "status_after": "Open",
+        "receipt_acquired": false,
+        "novelty": "None",
+        "novelty_value": 0,
+        "time": 12
+      }
+    },
+    {
+      "record": 63,
+      "seed": 42,
+      "case": "null",
+      "mode": "Need",
+      "config": {
+        "duration": 4,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 54,
+      "end": 66,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 0,
+        "support_after": 0,
+        "status_before": "Open",
+        "status_after": "Open",
+        "receipt_acquired": false,
+        "novelty": "None",
+        "novelty_value": 0,
+        "time": 12
+      }
+    },
+    {
+      "record": 64,
+      "seed": 42,
+      "case": "null",
+      "mode": "Acquire",
+      "config": {
+        "duration": 4,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 54,
+      "end": 66,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 0,
+        "support_after": 0,
+        "status_before": "Open",
+        "status_after": "Open",
+        "receipt_acquired": false,
+        "novelty": "None",
+        "novelty_value": 0,
+        "time": 12
+      }
+    },
+    {
+      "record": 76,
+      "seed": 42,
+      "case": "information",
+      "mode": "Closed",
+      "config": {
+        "duration": 2,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 67,
+      "end": 80,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 20,
+        "support_after": 60,
+        "status_before": "Partial",
+        "status_after": "Resolved",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "record": 77,
+      "seed": 42,
+      "case": "information",
+      "mode": "Need",
+      "config": {
+        "duration": 2,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 67,
+      "end": 80,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 20,
+        "support_after": 60,
+        "status_before": "Partial",
+        "status_after": "Resolved",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "record": 77,
+      "seed": 42,
+      "case": "information",
+      "mode": "Need",
+      "config": {
+        "duration": 2,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 1,
+      "start": 91,
+      "end": 103,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 1,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 0,
+        "support_after": 0,
+        "status_before": "Open",
+        "status_after": "Open",
+        "receipt_acquired": false,
+        "novelty": "None",
+        "novelty_value": 0,
+        "time": 12
+      }
+    },
+    {
+      "record": 78,
+      "seed": 42,
+      "case": "information",
+      "mode": "Acquire",
+      "config": {
+        "duration": 2,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 67,
+      "end": 80,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 20,
+        "support_after": 60,
+        "status_before": "Partial",
+        "status_after": "Resolved",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "record": 78,
+      "seed": 42,
+      "case": "information",
+      "mode": "Acquire",
+      "config": {
+        "duration": 2,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 1,
+      "start": 91,
+      "end": 103,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 1,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 0,
+        "support_after": 0,
+        "status_before": "Open",
+        "status_after": "Open",
+        "receipt_acquired": false,
+        "novelty": "None",
+        "novelty_value": 0,
+        "time": 12
+      }
+    },
+    {
+      "record": 91,
+      "seed": 42,
+      "case": "information",
+      "mode": "Closed",
+      "config": {
+        "duration": 8,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 67,
+      "end": 80,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 20,
+        "support_after": 60,
+        "status_before": "Partial",
+        "status_after": "Resolved",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "record": 92,
+      "seed": 42,
+      "case": "information",
+      "mode": "Need",
+      "config": {
+        "duration": 8,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 91,
+      "end": 104,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 20,
+        "support_after": 60,
+        "status_before": "Partial",
+        "status_after": "Resolved",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "record": 92,
+      "seed": 42,
+      "case": "information",
+      "mode": "Need",
+      "config": {
+        "duration": 8,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 1,
+      "start": 115,
+      "end": 127,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 1,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 0,
+        "support_after": 0,
+        "status_before": "Open",
+        "status_after": "Open",
+        "receipt_acquired": false,
+        "novelty": "None",
+        "novelty_value": 0,
+        "time": 12
+      }
+    },
+    {
+      "record": 93,
+      "seed": 42,
+      "case": "information",
+      "mode": "Acquire",
+      "config": {
+        "duration": 8,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 0,
+      "start": 91,
+      "end": 104,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 20,
+        "support_after": 60,
+        "status_before": "Partial",
+        "status_after": "Resolved",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "record": 93,
+      "seed": 42,
+      "case": "information",
+      "mode": "Acquire",
+      "config": {
+        "duration": 8,
+        "window": 24,
+        "order": "Ascending"
+      },
+      "id": 1,
+      "start": 115,
+      "end": 127,
+      "owner": 0,
+      "source": 2,
+      "selected": {
+        "Ask": {
+          "concern": 1,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "outcome": {
+        "support_before": 0,
+        "support_after": 0,
+        "status_before": "Open",
+        "status_after": "Open",
+        "receipt_acquired": false,
+        "novelty": "None",
+        "novelty_value": 0,
+        "time": 12
+      }
+    }
+  ]
+}

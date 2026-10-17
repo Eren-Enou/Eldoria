@@ -1,3 +1,4 @@
+mod acquisition;
 mod contact_learning;
 mod opportunities;
 mod priorities;

@@ -1,0 +1,148 @@
+{
+  "preregistration": "6c75e790456ef5d1559a114f9bce2ba6a87c1ded",
+  "viewer_prerequisite": "831d8fc39f39326f623751268e727147540aad4d",
+  "foundation": [
+    {
+      "command": "validate_contract",
+      "exit": 0,
+      "seconds": 1564.3672980000265
+    },
+    {
+      "command": "validate009",
+      "exit": 0,
+      "seconds": 79.1856549999211
+    },
+    {
+      "command": "validate010",
+      "exit": 0,
+      "seconds": 81.81193399999756
+    },
+    {
+      "command": "validate011",
+      "exit": 0,
+      "seconds": 29.04309789999388
+    },
+    {
+      "command": "validate012",
+      "exit": 0,
+      "seconds": 23.171382499975152
+    },
+    {
+      "command": "validate013",
+      "exit": 0,
+      "seconds": 49.421473199967295
+    },
+    {
+      "command": "validate014",
+      "exit": 0,
+      "seconds": 33.012787899933755
+    },
+    {
+      "command": "validate015",
+      "exit": 0,
+      "seconds": 116.51470669999253
+    },
+    {
+      "command": "validate016",
+      "exit": 0,
+      "seconds": 248.78043459996115
+    },
+    {
+      "command": "validate017",
+      "exit": 0,
+      "seconds": 239.98088519996963
+    },
+    {
+      "command": "validate018",
+      "exit": 0,
+      "seconds": 287.6965236000251
+    },
+    {
+      "command": "validate019",
+      "exit": 0,
+      "seconds": 330.2225018000463
+    }
+  ],
+  "rust": [
+    {
+      "command": "cargo fmt --check",
+      "exit": 0,
+      "seconds": 0.9187321999343112
+    },
+    {
+      "command": "cargo clippy --locked --all-targets -j 1 -- -D warnings",
+      "exit": 0,
+      "seconds": 39.124173999996856
+    },
+    {
+      "command": "cargo test --locked -j 1",
+      "exit": 0,
+      "seconds": 308.1856732000597
+    },
+    {
+      "command": "cargo bench --locked -j 1 --bench throughput",
+      "exit": 0,
+      "seconds": 23.89903680002317
+    },
+    {
+      "command": "cargo run --release --locked -j 1 --example measure020",
+      "exit": 0,
+      "seconds": 14.573390900040977
+    }
+  ],
+  "viewer_js": [
+    {
+      "check": "app syntax",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "causal syntax",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "finite demo syntax",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "causal helpers",
+      "exit": 0,
+      "stdout": "Actual JS filter:65 completed encounters,130 unexecuted dispositions,correct receipt namespace,large history and invalid reference rejection passed.\n",
+      "stderr": ""
+    },
+    {
+      "check": "actor perspective",
+      "exit": 0,
+      "stdout": "Owned-point boundary: real records103/109, private twins, no invented choice, no history recovery, legacy persistence, detached projection and missing-reference rejection passed.\n",
+      "stderr": ""
+    }
+  ],
+  "viewer_python": {
+    "tests": 25,
+    "exit": 0,
+    "seconds": 100.161
+  },
+  "final_projection_regression": {
+    "exit": 0,
+    "real_same_tick_slice": "record43@52:Accept,Granted,Selected Acquire"
+  },
+  "experiment020": {
+    "evaluator_worlds": 164,
+    "exact_archived_byte_replays": 164,
+    "independent_histories": 164,
+    "corruption_categories": 20,
+    "exit": 0
+  },
+  "protected_raw_artifacts": 296,
+  "protected_byte_identical": true,
+  "source_freeze_entries": 12,
+  "scientific_review": "not performed;separate future task",
+  "protected_through": 19,
+  "adopted": false,
+  "source_freeze_sha256_lf": "3a1a3556e7900e6a5825b1685fca18409caabd5f02ada6c3289886df47658745"
+}

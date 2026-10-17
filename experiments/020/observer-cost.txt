@@ -1,0 +1,11 @@
+   Compiling world-of-individuals v0.1.0 (C:\Users\Aaron\Eldoria)
+    Finished `release` profile [optimized] target(s) in 11.60s
+     Running `target\release\examples\measure020.exe`
+020 candidate evaluations:10000,us:13553
+020 ongoing Owned:50 trials,us:749853
+020 ongoing Owned:bytes:6780650,points:688,steps:465,claims:0,serialize_us:13325
+020 ongoing Need:50 trials,us:800566
+020 ongoing Need:bytes:8419864,points:689,steps:461,claims:12,serialize_us:19683
+020 ongoing Acquire:50 trials,us:772633
+020 ongoing Acquire:bytes:8422531,points:689,steps:461,claims:12,serialize_us:18879
+019 ongoing Baseline:50 trials,us:345107

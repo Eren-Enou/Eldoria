@@ -1,0 +1,12 @@
+{
+  "old019_zero_based_record": 84,
+  "old019_viewer_label": "C85",
+  "old019_ongoing_bytes": 6296760,
+  "new020_owned_record": 40,
+  "new020_owned_bytes": 6780650,
+  "new020_need_record": 43,
+  "new020_need_bytes": 8419864,
+  "owned_over_old_ratio": 1.0768474580577947,
+  "need_over_old_ratio": 1.3371740387119726,
+  "meaning": "Exact-trace Owned isolates added020 observer schema;Need also changes the executed history. Byte counts exclude one JSONL newline."
+}

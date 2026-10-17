@@ -133,7 +133,7 @@ resource transfer excluded by a six-tick window's eight-tick public reservation.
 `measure019`, complementary scientific `review019_scope.py`.1296 exact worlds,336 independent full histories/13 corruptions,840
 paired prefix checks and162 timing/order initial equalities. No new cognition,
 global adoption. Protected by [001–019](../experiment-contract-001-019.md),296 original
-artifacts; [audit](../integrity-audit-001-019.md), [handoff](../research-handoff-001-019.md). No020.
+artifacts; [audit](../integrity-audit-001-019.md), [handoff](../research-handoff-001-019.md).020 is separate research.
 
 ## Observational engineering: History Explorer
 
@@ -155,3 +155,17 @@ separates tooling from prospective research. C85's130 late actions are65 Request
 encounters, not130 meetings. Finite acquisition is a recommendation, not020 or a new
 accepted treatment effect. One isolated viewer label now distinguishes native receipt
 absence from provenance delivery; simulation and historical evidence are unchanged.
+
+## Experiment020 — Finite Environmental Resource Acquisition
+
+[Specification](../../experiments/020/specification.md),[gate](../../experiments/020/design-gate.md),
+[results](../../experiments/020/results.md),[verification](../../experiments/020/verification.md).
+Prospective ACCEPT WITH QUALIFICATION,not an independent scientific review or
+foundation protection.164 original complete worlds and20 corruption categories;
+finite acquisition can cause voluntary sharing,failed claims,missed help and unequal
+consumption. No new cognition,production,travel or default. Need/Acquire remain
+research controls. Finite depletion and empty negotiations persist. Standalone
+validate020 is separate from protected001–019. The [minimal020 observer playback](../../experiments/020/demo.html)
+uses an explicit adapter and ten authentic histories,not a legacy schema substitution.
+The earlier observational report recommended this later work;its historical claims
+and all296 protected artifacts remain unchanged. Do not begin021.

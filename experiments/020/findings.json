@@ -1,0 +1,94 @@
+{
+  "worlds": 164,
+  "groups": 40,
+  "pairs": 274,
+  "primary": {
+    "Closed/Ignored": {
+      "pairs": 14,
+      "voluntary_differences": 0,
+      "snapshot_differences": 0,
+      "material_during_periods": 0,
+      "final_material_differences": 0,
+      "trust_differences": 0,
+      "someone_lower_area": 0,
+      "someone_higher_area": 0
+    },
+    "Ignored/Need": {
+      "pairs": 14,
+      "voluntary_differences": 12,
+      "snapshot_differences": 12,
+      "material_during_periods": 12,
+      "final_material_differences": 1,
+      "trust_differences": 6,
+      "someone_lower_area": 12,
+      "someone_higher_area": 1
+    },
+    "Closed/Need": {
+      "pairs": 14,
+      "voluntary_differences": 12,
+      "snapshot_differences": 12,
+      "material_during_periods": 12,
+      "final_material_differences": 1,
+      "trust_differences": 6,
+      "someone_lower_area": 12,
+      "someone_higher_area": 1
+    },
+    "Need/Acquire": {
+      "pairs": 14,
+      "voluntary_differences": 2,
+      "snapshot_differences": 2,
+      "material_during_periods": 2,
+      "final_material_differences": 0,
+      "trust_differences": 1,
+      "someone_lower_area": 2,
+      "someone_higher_area": 2
+    },
+    "Owned/Need": {
+      "pairs": 14,
+      "voluntary_differences": 0,
+      "snapshot_differences": 12,
+      "material_during_periods": 9,
+      "final_material_differences": 0,
+      "trust_differences": 9,
+      "someone_lower_area": 8,
+      "someone_higher_area": 11
+    }
+  },
+  "totals": {
+    "choice_Consume": 1095,
+    "choice_Wait": 37831,
+    "consumed": 1095,
+    "choice_Invite": 21149,
+    "resource_ticks": 14322,
+    "requests": 6155,
+    "meetings": 7094,
+    "choice_Acquire": 309,
+    "Granted": 242,
+    "Depleted": 67,
+    "transfers": 1045,
+    "offers": 1073,
+    "queries": 22
+  },
+  "corruptions": [
+    "cache_identity",
+    "observation_stock",
+    "future_observation",
+    "private_leak",
+    "choice",
+    "claim_reference",
+    "deadline",
+    "duplicate_grant",
+    "missing_debit",
+    "false_success",
+    "owner",
+    "completion_order",
+    "overlap",
+    "need",
+    "meal",
+    "resource_event",
+    "missing_event",
+    "missing_record",
+    "missing_completion",
+    "elapsed_time"
+  ]
+}

@@ -184,9 +184,17 @@ Shared/standalone019 enforces296 original artifacts and four readers. Distinguis
 small-score endpoint stability from actual choice/target changes,Deadline versus its
 EatFirst ablation,and timing-induced meal efficiency from successful cooperation.
 Preserve private-cooperation/seed reversals,conservative exclusions and full nulls.
-Environmental acquisition remains a proposal. History Explorer is separately authorized
+Environmental acquisition020 is now separately authorized prospective research. History Explorer remains separately authorized
 read-only engineering: [guide](development/history-explorer-user-guide.md). It consumes
 verified original018/019 archives and never becomes an input to scientific gates or
 actor cognition. Viewer-only edits need appropriate data/projection/browser checks;
 reuse simulation checks only at an unchanged relevant Rust/fixture revision. Do not
 rebuild old evidence to adapt a viewer schema or recover missing cognition.
+
+Experiment020 is unprotected,opt-in research:[specification](../experiments/020/specification.md),
+[results](../experiments/020/results.md),[verification](../experiments/020/verification.md).
+Follow its architecture-map row for cache/claim/time code and independent reader.
+Use standalone validate020 alongside protected gates;do not add it to001–019 or
+rewrite old evidence. Keep current-stock legality separate from learned avoidance,
+initial-placement controls separate from access,and per-actor costs separate from
+global welfare.020's observer demo is an explicit separate schema adapter. No021.

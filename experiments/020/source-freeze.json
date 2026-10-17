@@ -1,0 +1,14 @@
+{
+  "src/acquisition.rs": "7b0bc16a8a60e9b5a47463bb071eaf15ce94365291ca5d69bb7b8dcdbdc42733",
+  "src/simulation/acquisition.rs": "612b31e974fffe891affe37d8bfbded9fd192a686160337bf8b18c25d6e9bc20",
+  "src/experiment020.rs": "685b09e136a511db06df4f06e6c9cb286953f05c28215c45527101b46a88833f",
+  "experiments/020/specification.md": "9c64ad3611cfcc949a09d743a4938d40088deffffb2b00525cc4b9b143ed9b99",
+  "experiments/020/design-gate.md": "a6250a110db9f074a5fd98c4707ad6e7b642f7af503f3a715b615fea5ba1c6c4",
+  "examples/evaluate020.rs": "054794aa8cf6bb371db7c42117a62ae417c929639bf8291094333f4060ec1af5",
+  "examples/support/review020.py": "076324d6aeca2033b6fca5a9090a0d9fd9b8067b67ea13eb3069eb2ebe708143",
+  "examples/validate020.rs": "8249fe90c24cf576dcbed5cb3b6fe4374f90c26cc170bb5239871cce78dd7a93",
+  "examples/measure020.rs": "21f2a87f480a7dee04feaccf2a56cbf984292c0b8c1b03605fd4db9b47c86eef",
+  "tests/acquisition.rs": "40d6de1068384a166b15289e787200e6160503645e62681f9bc19f86fd3f0ba5",
+  "experiments/020/archive.py": "2e889be653b012a53cc3622f484c61e2ee3a842b6df772792dbf0a4ce163f834",
+  "experiments/020/report.py": "6e77825aff980686e98dfe11d744411486904aa42ddbfb70726ea4356297606e"
+}

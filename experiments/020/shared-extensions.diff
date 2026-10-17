@@ -1,0 +1,14 @@
+diff --git a/src/lib.rs b/src/lib.rs
+index 100ac42..78d6716 100644
+--- a/src/lib.rs
++++ b/src/lib.rs
+@@ -39,0 +40 @@ pub mod opportunities;
++pub mod acquisition;
+@@ -41,0 +43 @@ pub mod experiment019;
++pub mod experiment020;
+diff --git a/src/simulation.rs b/src/simulation.rs
+index ac693bb..8516c6f 100644
+--- a/src/simulation.rs
++++ b/src/simulation.rs
+@@ -0,0 +1 @@
++mod acquisition;

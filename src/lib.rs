@@ -37,7 +37,9 @@ pub mod simulation;
 pub mod experiment017;
 pub mod opportunities;
 
+pub mod acquisition;
 pub mod experiment018;
 pub mod experiment019;
+pub mod experiment020;
 pub mod priorities;
 pub mod recurring;

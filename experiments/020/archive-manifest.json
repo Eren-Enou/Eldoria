@@ -1,0 +1,14 @@
+{
+  "trials.jsonl.gz": {
+    "gzip_bytes": 11207457,
+    "gzip_sha256": "57b4c5513ebfa6d8bd900e404684cf68215d713eb75ab6c42aabe67eeabd724e",
+    "json_bytes": 606846590,
+    "json_sha256": "96f1f225c8c6f53c5bcdd1be7237b45a2095a5f49218f81b9d88bd5d3b7f0433"
+  },
+  "analysis.json.gz": {
+    "gzip_bytes": 308121,
+    "gzip_sha256": "e8b2ccbca0454b8cd9d5e0f2f0d137d122373282ed77212877940bf96658028e",
+    "json_bytes": 6939253,
+    "json_sha256": "e47038b87a60b04dfaf6bfa56bc00892ec2d051e0f53011bde4d7a82de0163b5"
+  }
+}

@@ -438,7 +438,7 @@ commitment, atomic inquiry and heuristic score scales bound the conclusion.
 No new cognitive cells or default adoption. Protected by
 [001–018 contract](docs/experiment-contract-001-018.md),
 [audit](docs/integrity-audit-001-018.md),[handoff](docs/research-handoff-001-018.md).
-019 is a separate prospective investigation after Gate B;no020.
+019 followed a separate prospective gate;020 has its own later authorization.
 
 Read-only `cargo run --release --locked -j 1 --example validate018` checks1064 exact
 worlds,266 full independent reconstructions,16 causal diagnostics,10 corruption
@@ -459,7 +459,7 @@ Timing variants keep equal total horizons. Small perturbations are mostly termin
 inert but can change real execution;private cooperation and seeded feedback reverse
 some apparent gains. Preserve ineffective-contact gains,nulls and reconvergence.
 No new cognition or default adoption. Protected by [001–019](docs/experiment-contract-001-019.md),
-[audit](docs/integrity-audit-001-019.md) and [handoff](docs/research-handoff-001-019.md). No020.
+[audit](docs/integrity-audit-001-019.md) and [handoff](docs/research-handoff-001-019.md).020 is separate research.
 
 Read-only `cargo run --release --locked -j 1 --example validate019` checks1296 exact
 worlds,336 raw histories,296 frozen artifacts and independent priorities/physics/
@@ -468,3 +468,23 @@ post-evaluation causal diagnostics. `measure019 -- experiments/019/observer-cost
 separates work units and audit cost. New generation uses `evaluate019 -- --output`
 with an isolated target directory;never overwrite historical evidence. Foundation
 protection is001–019. Shared/standalone019 includes the independent scientific scope reader.
+
+## Experiment020: Finite Environmental Resource Acquisition
+
+[Specification](experiments/020/specification.md),[design gate](experiments/020/design-gate.md),
+[results](experiments/020/results.md),[verification](experiments/020/verification.md):
+**ACCEPT WITH QUALIFICATION as prospective research;not independently reviewed,
+protected or adopted.** One finite co-present cache,local voluntary selection,
+actor reservations,costly failed claims and atomic conserving grants.164 complete
+worlds compare equal potential supply in Owned/Closed/Ignored/Need/Acquire controls.
+All164 are independently reconstructed with20 corruption categories. Sharing and
+missed help both occur;finite depletion and repetitive empty contact remain.
+
+`cargo run --release --locked -j 1 --example validate020` is a separate read-only
+gate. It does not extend the protected001–019 foundation. New evaluator output
+requires a fresh directory:`evaluate020 -- --output target/experiment020-new`.
+No021 or global policy adoption. The [minimal original020 playback](experiments/020/demo.html)
+is served with `python -m http.server 8766 --bind 127.0.0.1 --directory experiments/020`;
+open [local demonstration](http://127.0.0.1:8766/demo.html). See its
+[acceptance and limitations](experiments/020/viewer-acceptance.md). The main018/019
+History Explorer retains separate typed causal navigation and resource outcome filters.

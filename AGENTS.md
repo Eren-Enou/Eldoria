@@ -266,7 +266,7 @@ Historical001–018 protection keeps all269 original artifacts,including13 inval
 development files,remain immutable. Shared foundation/standalone validate018 include
 all three independent readers and the original exact replay.019 was separately
 authorized after that gate was validated/committed/pushed;its later qualified review
-and explicit protection do not adopt a default. Do not begin020.
+and explicit protection do not adopt a default.020 requires its own authorization.
 
 Experiment019 is independently reviewed and protected with qualification;
 see experiments/019/specification.md and results.md. Baseline/EatFirst/NoHistory reuse
@@ -279,7 +279,7 @@ conservative exclusion witness,and pressure-time gains caused by ineffective con
 Normal foundation and standalone validate019 share contract019.rs and four read-only
 readers; protect296 original artifacts and qualified negative/null results. See
 docs/experiment-019-review.md and docs/experiment-contract-001-019.md.
-No default adoption or020. Environmental acquisition remains a scope proposal.
+No default adoption.020 is separately authorized prospective research,not part of this protection.
 History Explorer is separately authorized observational engineering under tools/history-explorer;
 never feed its caches/exports into actor cognition or make it a foundation dependency.
 Its explicit018/019 adapters preserve source identity and captured local/owned-state
@@ -288,3 +288,17 @@ Run its Python data tests, actual JS owned-point tests when Node is available, a
 real browser smoke checks for changes to ingestion, projection, replay or comparison.
 See docs/development/history-explorer-user-guide.md and
 docs/development/history-explorer-architecture.md.
+
+Experiment020 is opt-in finite environmental acquisition research,not protected or
+adopted. Read experiments/020/specification.md,design-gate.md,results.md and
+verification.md. Preserve the declared five controls,equal potential supply,four-tick
+baseline/two/eight sensitivities and deterministic claim ranks. Claims reserve actors,
+not cache units;completion rechecks stock and atomically conserves food. No observer
+history,future information or partner-private state enters actor inputs. Acquisition
+adds no learning mechanism;existing bounded learning remains. Preserve failed
+claims,missed help,unequal sharing,nulls and later depletion. Atomic inquiry cannot
+leap a pending claim's deadline;do not silently replace this scheduling qualification.
+The standalone read-only validate020 does not extend validate_contract or001–019.
+Independent scientific review/protection remain separate tasks. Do not begin021.
+Its separate finite-demo adapter exposes original020 observer records only;it must
+not be silently ingested as018/019 or become a simulation/cognition dependency.
