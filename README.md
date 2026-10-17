@@ -501,3 +501,12 @@ open [local demonstration](http://127.0.0.1:8766/demo.html). See its
 main History Explorer now reads all164 originals with actor/environmental views,
 typed causal navigation and cache-inclusive matched comparisons;
 [current acceptance](tools/history-explorer/validation/finite-integration/acceptance.md).
+
+## Prospective Experiment021: Local Environmental Knowledge
+
+[Specification](experiments/021/specification.md),[design gate](experiments/021/design-gate.md),
+[214 registered configurations](experiments/021/registered-matrix.json). Gated after
+validated/pushed020 protection and the phase2 assessment,before implementation or
+outcomes. Tests bounded dated observations versus current-only/no-knowledge controls
+with unchanged finite physics and acquisition scores. Passive sensing is a controlled
+channel,not active exploration. No result,default adoption or021 protection yet;no022.

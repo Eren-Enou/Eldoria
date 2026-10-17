@@ -55,6 +55,12 @@ rows when ownership, entry points or mode boundaries change.
 Use `rg -n 'symbol' path/to/file.rs` to locate implementation before reading a
 bounded range. A row identifies starting files, not permission to skip affected callers.
 
+## Prospective research
+
+021 local environmental knowledge has a[specification](../experiments/021/specification.md),
+[qualified design gate](../experiments/021/design-gate.md) and214 registered rows.
+Not implemented or evaluated yet;not protected or adopted. No022.
+
 ## Flow and boundaries
 
 Local actor state + public observations → replaceable policy → resolver checks

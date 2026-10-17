@@ -1,0 +1,2570 @@
+[
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "FreshReference",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Unobserved",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "FreshReference",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "CurrentOnly",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "LastSeen",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Expire12",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Unobserved",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "FreshReference",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Unobserved",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "FreshReference",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "CurrentOnly",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "LastSeen",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Expire12",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Unobserved",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "FreshReference",
+    "case": "empty",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "empty",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "empty",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "empty",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Unobserved",
+    "case": "empty",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "FreshReference",
+    "case": "empty",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "CurrentOnly",
+    "case": "empty",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "LastSeen",
+    "case": "empty",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Expire12",
+    "case": "empty",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Unobserved",
+    "case": "empty",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "FreshReference",
+    "case": "stale_pair",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "stale_pair",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "stale_pair",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "stale_pair",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Unobserved",
+    "case": "stale_pair",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "FreshReference",
+    "case": "stale_pair",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "CurrentOnly",
+    "case": "stale_pair",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "LastSeen",
+    "case": "stale_pair",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Expire12",
+    "case": "stale_pair",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Unobserved",
+    "case": "stale_pair",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "FreshReference",
+    "case": "contested",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "contested",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "contested",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "contested",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Unobserved",
+    "case": "contested",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "FreshReference",
+    "case": "contested",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "CurrentOnly",
+    "case": "contested",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "LastSeen",
+    "case": "contested",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Expire12",
+    "case": "contested",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Unobserved",
+    "case": "contested",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "FreshReference",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Unobserved",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "FreshReference",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "CurrentOnly",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "LastSeen",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Expire12",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Unobserved",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "FreshReference",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Unobserved",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "FreshReference",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "CurrentOnly",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "LastSeen",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Expire12",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Unobserved",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "FreshReference",
+    "case": "stranded",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "stranded",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "stranded",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "stranded",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Unobserved",
+    "case": "stranded",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "FreshReference",
+    "case": "stranded",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "CurrentOnly",
+    "case": "stranded",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "LastSeen",
+    "case": "stranded",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Expire12",
+    "case": "stranded",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Unobserved",
+    "case": "stranded",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "FreshReference",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Unobserved",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "FreshReference",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "CurrentOnly",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "LastSeen",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Expire12",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Unobserved",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "FreshReference",
+    "case": "information",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "information",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "information",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "information",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Unobserved",
+    "case": "information",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "FreshReference",
+    "case": "information",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "CurrentOnly",
+    "case": "information",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "LastSeen",
+    "case": "information",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Expire12",
+    "case": "information",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Unobserved",
+    "case": "information",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "FreshReference",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Unobserved",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "FreshReference",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "CurrentOnly",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "LastSeen",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Expire12",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Unobserved",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "FreshReference",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Unobserved",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "FreshReference",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "CurrentOnly",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "LastSeen",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Expire12",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Unobserved",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "FreshReference",
+    "case": "null",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "null",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "null",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "null",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Unobserved",
+    "case": "null",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "FreshReference",
+    "case": "null",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "CurrentOnly",
+    "case": "null",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "LastSeen",
+    "case": "null",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Expire12",
+    "case": "null",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Unobserved",
+    "case": "null",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "FreshReference",
+    "case": "last_window",
+    "config": {
+      "duration": 4,
+      "window": 4,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "last_window",
+    "config": {
+      "duration": 4,
+      "window": 4,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "last_window",
+    "config": {
+      "duration": 4,
+      "window": 4,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "last_window",
+    "config": {
+      "duration": 4,
+      "window": 4,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Unobserved",
+    "case": "last_window",
+    "config": {
+      "duration": 4,
+      "window": 4,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "FreshReference",
+    "case": "last_window",
+    "config": {
+      "duration": 4,
+      "window": 4,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "CurrentOnly",
+    "case": "last_window",
+    "config": {
+      "duration": 4,
+      "window": 4,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "LastSeen",
+    "case": "last_window",
+    "config": {
+      "duration": 4,
+      "window": 4,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Expire12",
+    "case": "last_window",
+    "config": {
+      "duration": 4,
+      "window": 4,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Acquire",
+    "mode": "Unobserved",
+    "case": "last_window",
+    "config": {
+      "duration": 4,
+      "window": 4,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 4
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 4
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 4
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 4
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 4
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 4
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 4
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 4
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 4
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 4
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 4
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 4
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 16
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 16
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 16
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 16
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 16
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 16
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 16
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 16
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 16
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 16
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 16
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "ongoing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 16
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "contested",
+    "config": {
+      "duration": 2,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "contested",
+    "config": {
+      "duration": 2,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "sharing",
+    "config": {
+      "duration": 2,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "sharing",
+    "config": {
+      "duration": 2,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "lost_contact",
+    "config": {
+      "duration": 2,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "lost_contact",
+    "config": {
+      "duration": 2,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "last_window",
+    "config": {
+      "duration": 2,
+      "window": 4,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "last_window",
+    "config": {
+      "duration": 2,
+      "window": 4,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "contested",
+    "config": {
+      "duration": 8,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "contested",
+    "config": {
+      "duration": 8,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "sharing",
+    "config": {
+      "duration": 8,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "sharing",
+    "config": {
+      "duration": 8,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "lost_contact",
+    "config": {
+      "duration": 8,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "lost_contact",
+    "config": {
+      "duration": 8,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "last_window",
+    "config": {
+      "duration": 8,
+      "window": 4,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "last_window",
+    "config": {
+      "duration": 8,
+      "window": 4,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Rotating",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Rotating",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Rotating",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "lost_contact",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Rotating",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Descending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Rotating",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 42,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "contact_bias",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Rotating",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1729,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1729,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1729,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "sharing",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1729,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1729,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1729,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "private_helpful",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1729,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1729,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1729,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "private_cautious",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1729,
+    "policy": "Need",
+    "mode": "CurrentOnly",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1729,
+    "policy": "Need",
+    "mode": "LastSeen",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  },
+  {
+    "seed": 1729,
+    "policy": "Need",
+    "mode": "Expire12",
+    "case": "single_start",
+    "config": {
+      "duration": 4,
+      "window": 24,
+      "order": "Ascending",
+      "cadence": 8
+    }
+  }
+]
