@@ -40,8 +40,9 @@ These are post-evaluation observations, not a new experiment or policy adoption.
 
 The [phase2 integration assessment](docs/development/world-of-individuals-phase-2-assessment.md)
 ranks the remaining community-readiness barriers from actual evidence. The
-[continuation checkpoint](docs/development/continuation-checkpoint.md) records active
-gates;no autonomous community or sustainable economy is claimed.
+[continuation checkpoint](docs/development/continuation-checkpoint.md) and
+[delivery audit](docs/development/phase-2-delivery.md) record completed gates and
+next review boundaries;no autonomous community or sustainable economy is claimed.
 
 ## Install and run
 
@@ -517,3 +518,8 @@ cargo run --release --locked -j 1 --example validate021
 # New evaluator outputs must use a fresh directory, never historical archives:
 cargo run --release --locked -j 1 --example evaluate021 -- --output target/my-new021
 ```
+
+The [autonomous-community roadmap](docs/development/long-term-autonomous-community-roadmap.md)
+sets evidence gates rather than promising civilizations. The
+[Eldoria research bridge](docs/development/eldoria-simulation-bridge.md) separates
+ordinary-life questions from canon and unimplemented game-support possibilities.

@@ -67,6 +67,13 @@ independent knowledge021/review021/compare021/findings021/review021_trust reader
 passive observations,unchanged020 scores/physics. Preserve stale failure,unknown
 and expiry versus persistent material;no archive recovery. No022.
 
+Forward plans:[community roadmap](development/long-term-autonomous-community-roadmap.md),
+[non-canon Eldoria bridge](development/eldoria-simulation-bridge.md). Neither authorizes
+future implementation or changes fictional authority.
+
+[Completed program audit](development/phase-2-delivery.md) links all gated deliverables
+and final verification.
+
 ## Flow and boundaries
 
 Local actor state + public observations → replaceable policy → resolver checks

@@ -106,3 +106,16 @@ research bridge grants no authority to alter fictional history or metaphysics.
 Strongest open question: does information continuity contribute behavior beyond a
 current sensor rule, or merely create avoidable wasted work under the existing
 heuristics? Preserve either answer and the costs of the mechanism.
+
+## Subsequent021 evidence, kept distinct from this preregistration diagnosis
+
+The diagnosis above was published d54df38 before021 design/code/outcomes.
+[Experiment021](../../experiments/021/results.md) now demonstrates bounded owned
+last-seen information,actual stale failures,refresh/expiry and later executed
+material/social consequences. Its214 worlds remain unprotected research,ACCEPT
+WITH QUALIFICATION. The environmental-information gap is partially addressed;
+voluntary costly sensing,renewal,spatial access,continuous alternatives and larger
+concurrency remain missing. All matched retention contrasts end with equal material projections;
+finite-supply exhaustion is still the strongest long-run barrier. The
+[roadmap](long-term-autonomous-community-roadmap.md) separates future evidence gates
+from implementation authorization. Next:independent021 scientific review,not022.
