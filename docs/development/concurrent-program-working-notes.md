@@ -2,33 +2,12 @@
 
 Provisional engineering notes,not experiment evidence or a passed022design gate.
 
-## Additional current C evidence and remaining acceptance
+## C complete
 
-All41Python tests and4actualJS testfiles pass;source references validated for214.
-New knowledge-fixtures.py/knowledge.test.cjs enforces original observation→receipt→
-retained→choice→claim→grant32→meal33 order. Actual browser confirms that ordering.
-Trial31/32 matched comparison shows changedchoice/extra4→8failedclaim,0shared-tick
-material differences. Opened32,actor2tick4:retained1@0,age4,Acquire5;clicked physical
-Depleted8 exact link,food0→0/cache0→0,full4ticks,no compensation. PNG stale-failure.
-Current browser tab5 knowledgeReadyTab is starting162/163 expiry comparison.
-CurrentActor2,Observer lens. Need finish expiry/rival52/distribution/null/storedzero
-cases,follow positive original receipt→claim→meal inUI,verify no warnings,upgrade
-main8765 safely fromverified oldPID124312,document acceptance/guide/schema/map,commit
-C separately afterB. Temporarymain-code testserver8767 PID138300/session13368.
-Source adapter knowledge.py/extractor4,distinct021schema,all214uniqueidentities
-include acquisitionpolicy. No original Trial coercion;shared physical helper protocol.
-Memory audit joins are observer-only;actorprojection uses actual Choice.retained.
-Final JS configuration header/transition table added;syntaxPASS. Latest knowledge.py
-change only relabels shared020 protocol note;testserver needs restart toserve that
-Python text change(finalmainrestartwilldo). Do not rerun wholePython suite for a
-note-only change;rerun affectedcomparison test if needed.
-
-Cost script tools/history-explorer/measure-knowledge.py completed0 (session85551).
-Fresh temp214catalog31.4268s;first-source selections2.871–4.744s/repeat0.407–2.838s;
-largest originalordinal75 line15,611,354bytes(includesLF),export28,832,026bytes.
-WindowsPSAPI processpeak316,370,944bytes≈302MiB;notbrowserheap/notisolatedadapterRAM.
-Concurrentfoundationload/OSdiskcacheuncontrolled. performance.json under knowledge-
-integration;no historicalevidencechanged. Do not claim browserheapwasmeasured.
+See tools/history-explorer/validation/knowledge-integration/acceptance.md and current
+checkpoint. All41Python/4JS,214refs,main8765 actualsource→grant→meal,negative/expiry/
+null/mixed/stored-zero/rivalcases pass. MainPID123980/tab3,prototype8766 preserved;
+8767/testtab5 stopped/closed. Csourcecommit follows B e059fcb. No022code exists.
 
 ## Prospective D investigation leads (NOT a design gate or runtime)
 
@@ -70,3 +49,30 @@ execution intervention,otherworkmatched. Uselegitimatepriortrustfixtures topermi
 Needno observer-only globalcountersinnewactorinput:consider actor-local protocol
 encountercounter/context ratherthanfeedingunobservedothers' Runtime.scene count.
 No newsemantic cognition/scoring/retentionretuning. Aboveideas arenot chosen yet.
+
+
+Further D issues to inspect prospectively:the fixed3person recurring clock cannot
+advanceactor3 insideatomicqueries. Existing Direct inquiry timewrites/calls are in
+adaptive.rs/provenance.rs,followedby sync_recurring;these files areunfrozen butold
+semanticsremainprotected. A newresource-guarded sync hook may be possible there,
+witholdworldabsent-resource no-op andall001–021exactreplay;parentRootSim staysbyte-
+identical. InspectnativeSelfKnowledge/acquiredreply branchesbeforedeclaringcoverage.
+CoreSchedule.run incrementsoneTickandprocessesallactive disjointscenes;new4clock
+couldsyncbeforethatresourcephase,withoutinstallingold3clock. Noquery overlapsany
+physicalcommitment;real admitted/rejected witnessesrequired,noinventedinteriorchoices.
+
+Do notletglobalRuntime.scene count revealunobservedothers' history innewinput;
+considerowner-local protocol encountercounter(context,notnewsemanticmemory).
+Do notreusean oldobserver-captured full outgoingInput ascurrentrecipientcognition:
+pendingprotocol mayretainintent/target,butresponseprojectionsmustusecurrentlocal
+state andexistingresponse arithmetic. NeedexplicittypedSend/Replyreservation phases
+andnonoccupyingboundedpendingtokens,not a global2tickhandshakefreezingfreeactors.
+OwnpendingduplicateInvite maskisphysicalprotocollegality,notretunedutility;register
+itprospectively. Resourcecap2vs1 is intervention;otherphysicalworkmatched.
+
+Legitimatepriorinteractions can establishpairpreferenceswhileall3otherpartners
+remaincandidates. Includepriorlesslowest-IDrankingnegative;noforcedpairingsor
+cooperation. ReusecoreResourcelegality,oldboundedcognition/caps/GroupFIFO,006/012
+queryrules and021datedknowledge. No planner/retentionretuning. NewprivateWorldwrapper
+mustnotexposeunsafe genericSimulation methodsduringclaims/handshakes. These remain
+investigationleads,not a selecteddesignorpassedgate;writeD/Ebefore022runtime.

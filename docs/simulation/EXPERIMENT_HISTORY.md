@@ -193,5 +193,7 @@ order reversal and expiry tradeoffs are preserved. Independent primitive reader,
 one-slot store never restores expired quantity from attempts/audit;owned food and
 legacy consequences may persist. No active sensing,production,travel,community claim,
 automatic022 protection or adoption. The separately authorized022 requires
-committed021 Gate B and its own prospective design. Main Explorer's explicit schemas remain018/019/020;
-021 is scientific JSON evidence,not silently coerced into020 playback.
+committed021 Gate B and its own prospective design. Main Explorer supports021 explicitly via experiment-021-trial/v1/extractor4,
+with captured-only owned slots and separate observer stock/retention/result chains;
+[actual acceptance](../../tools/history-explorer/validation/knowledge-integration/acceptance.md).
+Original021 is never silently coerced into020 playback.

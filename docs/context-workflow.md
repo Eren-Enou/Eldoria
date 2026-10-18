@@ -211,6 +211,7 @@ Independent readers are knowledge021/review021/compare021/findings021 in
 examples/support,with complementary review021_scope/review021_trust. Normal
 foundation/validate021_foundation share341inventory enforcement;original standalone
 validate021 remains frozen. Never regenerate originals in place.
-Current main Explorer supports018/019/020,not021. The continuation checkpoint and
+Current main Explorer supports018/019/020/021 through explicit versioned adapters;
+see its021 acceptance for captured-only environmental perspective/source links. The continuation checkpoint and
 community roadmap guide the separately authorized022 concurrency design after
 committed021 protection;do not begin023.

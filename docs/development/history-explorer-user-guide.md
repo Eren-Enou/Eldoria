@@ -272,3 +272,48 @@ references. Serve `experiments/020` on localhost8766 and open `/demo.html`.
 It has no actor mode or complete inquiry browser and never feeds cognition or
 scientific validation. See the [actual acceptance and screenshots](../../experiments/020/viewer-acceptance.md)
 for commands,source verification and limitations.020 remains unprotected research.
+
+
+## Experiment021: what this person last knew
+
+The same main application now includes214 original021 histories. Search `021` or
+use the seven021 presets. Need/Acquire names the acquisition policy;CurrentOnly,
+LastSeen,Expire12,FreshReference and Unobserved name the knowledge channel/retention
+mode. Source provenance retains the exact zero-based original ordinal and hashes.
+FreshReference has more free sensing and Unobserved removes the channel;the
+comparison labels these qualifications instead of declaring a memory winner.
+
+For useful continuity,open original82 (`ongoing`,Need/LastSeen,cadence8,seed42).
+Select individual0,jump to28,then **Next decision of individual** if the first moment
+is a need/state record. Actor showsfood0/hunger10,receipt3 observed24,age4,upper12;
+Acquire10 beats Invite3. No current stock or future outcome is part of that input.
+Switch to Observer and use the original chain buttons:observation24/owned receipt,
+retained choice28,claim28→32,actualgrant32 and executedmeal33. Opening a source link
+keeps its cohort context while following later consequences;the cohort selector can
+also select another original decision. Expand **Original value at this exact
+reference** for the small linked source record. This never reruns a policy.
+
+At52 in82,actor0 still hasreceipt6/stock9@48,while Observer shows actual8 after
+actor2's independent grant. At4 in32,actor2 retains1@0;its4→8claim failsDepleted.
+The comparison31/32 has equal material/legacy history despite additional paid work.
+The1/2 preset shows mixed individual hunger areas,not universal improvement.
+
+The162/163 expiry comparison has worse hunger area for all three actors even with
+one fewer failed claim. In163,open the actual **environmental Expired** transition
+at12,then Actor's next decision:food5 persists,quantity is unavailable,Acquire is
+ineligible. An audit record cannot restore it. A known empty retained source would
+instead display0. Source observation and disappearance remain separately inspectable.
+
+The121/122 preset is a complete executed/legacy null:choices,resource execution,
+material and semantic trust agree,while environmental storage/audit can differ.
+The161/163 preset shows equal semantic trust (missing entry means0) but different
+raw map shape. Do not read every full-snapshot difference as changed personal state.
+The81/82 material endpoints reconverge while directed trust differs. More transfers
+or higher trust are not automatically better outcomes.
+
+Actor state at arbitrary points may lack environmental quantity,concerns or full
+assessment. Those fields remain **not captured**,rather than being reconstructed
+from neighboring audit records. Complete original exports are observer data,so
+Actor Perspective is a semantic display boundary,not a confidentiality sandbox.
+[Acceptance,proofs and measured limits](../../tools/history-explorer/validation/knowledge-integration/acceptance.md)
+cover the actual main interface. The preserved020prototype is separate.

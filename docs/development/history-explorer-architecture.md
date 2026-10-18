@@ -28,7 +28,7 @@ member digest, fingerprint, schema, source-freeze identity or archive digest is 
 3. Stream the whole selected decoded archive, checking SHA/length including newline
    bytes. Bound individual JSONL records at64MiB. Retain only the requested record.
 4. Verify the exact member digest (line without CR/LF terminator), semantic trial
-   fingerprint and original identity/configuration. Dispatch explicitly to018/019/020.
+   fingerprint and original identity/configuration. Dispatch explicitly to018/019/020/021.
 5. Preserve the complete original Trial semantic JSON. Generate source-reference
    navigation and allowlisted actor projections. No policy or scoring is rerun.
 6. Deliver one selected trial or pair to the browser, HTTP gzip when accepted. Rebuild
@@ -244,3 +244,33 @@ references. Serve `experiments/020` on localhost8766 and open `/demo.html`.
 It has no actor mode or complete inquiry browser and never feeds cognition or
 scientific validation. See the [actual acceptance and screenshots](../../experiments/020/viewer-acceptance.md)
 for commands,source verification and limitations.020 remains unprotected research.
+
+
+## Current021 adapter boundary
+
+`tools/history-explorer/knowledge.py` defines experiment-021-trial/v1 and extractor4.
+Trial JSON is untouched. Identity adds acquisition policy;original021 ordinals are
+zero-based. Catalog714 includes214 new originals,with original manifest/freeze/member
+verification. The decoder streams the selected source archive,not a full browser
+corpus. Existing018/019/020 source meanings and identifiers remain intact.
+
+The adapter reuses unchanged physical record helpers directly,but never coerces a
+021 Trial into020. Its captured Choice.retained is the exclusive environmental
+actor source. Before/after memory audit joins occur only in the observer graph.
+Explicit receipt/retained/choice/admission/result links preserve namespaces and time.
+The JavaScript ordering helper places observation→receipt→retained→choice at same
+world ticks. Following linked results retains the source cohort context. The library
+preserves a filter typed while discovery loads and does not clear a valid picker
+selection merely because a preset opens a history outside that filter.
+
+Semantic trust comparison normalizes absent entries to0;raw map shape and final
+owned environmental slots remain separate fields. CurrentOnly unknown does not
+become a known-zero observation. Resource-decision/point projections without an
+environmental slot remain incomplete,rather than joined to audit to invent cognition.
+Schema-v1.json admits extractor4/021 and requires policy in021 source identity.
+
+[Acceptance](../../tools/history-explorer/validation/knowledge-integration/acceptance.md)
+records41Python tests,4realJavaScript testfiles,all214 source references,browser
+cases and measured costs. One selected export reaches28.83MB;Python process peak
+about302MiB in the engineering sample. Browser heap is unmeasured. No shared
+simulation-audit refactor or new cognitive input is introduced by this UI work.

@@ -358,14 +358,35 @@
       "original_working_bytes_unchanged": 346,
       "original_source_locks_unchanged": 21,
       "standalone_shared_prefix": "exact",
-      "no_behavior_changes": true
+      "no_behavior_changes": true,
+      "commit": "e059fcb18efa2918eb4a637dc4f7dca7ed1aa1e1"
     },
     "C": {
-      "status": "IN PROGRESS;not yet accepted",
+      "status": "PASS",
       "python_tests": 41,
+      "new_python_tests": 8,
       "javascript_test_files": 4,
-      "original_021_references_verified": 214,
-      "browser": "Actual local actor28 and original claim32/meal33 links inspected;remaining cases pending"
+      "all_original_021_references": 214,
+      "final_javascript_syntax_exit": 0,
+      "browser_cases": [
+        "81/82 continuity/reconvergence/social difference",
+        "82 rival52",
+        "31/32 stale4\u20138 failure",
+        "1/2 mixed distribution",
+        "162/163 expiry",
+        "121/122 executed/legacy null",
+        "161/163 stored-zero map control"
+      ],
+      "main_source_navigation": "memory_records[9].after.observation\u2192choice28\u2192grant32\u2192meal33",
+      "main_url": "http://127.0.0.1:8765/",
+      "main_server_pid": 123980,
+      "source_schema": "experiment-021-trial/v1",
+      "extractor_version": 4,
+      "original_working_bytes_unchanged": 346,
+      "simulation_checks": "Reuse unchanged simulation/validator revision verified in Stage B;UI-only changes",
+      "acceptance": "../../tools/history-explorer/validation/knowledge-integration/acceptance.md",
+      "performance": "../../tools/history-explorer/validation/knowledge-integration/performance.json",
+      "browser_heap_measured": false
     }
   },
   "raw_working_guard": "concurrent-original-working-sha256.json"

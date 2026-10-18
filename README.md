@@ -538,3 +538,11 @@ nulls and material reconvergence/social persistence. FreshReference has more fre
 sensing;none of these modes is a general memory optimum.022 is separately authorized
 prospective concurrency research,conditional on passed/committed protection and a
 design gate;no023 or automatic022 protection.
+
+
+The main local History Explorer now includes all214 original021 knowledge histories
+alongside018/019/020,with a distinct versioned adapter,actual owned retained slots,
+unknown/expiry semantics and observer receipt→choice→grant→meal navigation.
+[Run and inspect](tools/history-explorer/README.md),
+[real acceptance/screenshots/costs](tools/history-explorer/validation/knowledge-integration/acceptance.md).
+No archive rewriting,policy execution or simulation-control route is introduced.

@@ -21,7 +21,8 @@
       "enum": [
         1,
         2,
-        3
+        3,
+        4
       ]
     },
     "source": {
@@ -49,7 +50,8 @@
           "enum": [
             "018",
             "019",
-            "020"
+            "020",
+            "021"
           ]
         },
         "seed": {
@@ -58,13 +60,41 @@
         "record": {
           "type": "integer",
           "minimum": 0,
-          "description": "020 original zero-based trial ordinal;018/019 historical one-based record label. The experiment schema determines interpretation."
+          "description": "020/021 original zero-based trial ordinal;018/019 historical one-based record label. The explicit experiment schema determines interpretation."
+        },
+        "policy": {
+          "enum": [
+            "Need",
+            "Acquire"
+          ],
+          "description": "021 acquisition policy participates in source identity, distinct from knowledge mode."
         }
-      }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "experiment": {
+                "const": "021"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "policy"
+            ],
+            "properties": {
+              "source_schema": {
+                "const": "experiment-021-trial/v1"
+              }
+            }
+          }
+        }
+      ]
     },
     "trial": {
       "type": "object",
-      "description": "Unmodified semantic JSON of explicit018/019/020 original Trial.020 uses experiment-020-trial/v1 adapter;no legacy coercion."
+      "description": "Unmodified semantic JSON of explicit018/019/020/021 original Trial.020 current observation and021 owned dated knowledge use distinct versioned adapters;no legacy coercion."
     },
     "timeline": {
       "type": "array",
@@ -84,7 +114,7 @@
     },
     "actors": {
       "type": "array",
-      "description": "Allowlisted activity inputs by flattened period/step then individual; null means no captured activity input."
+      "description": "Allowlisted actual captured activity inputs by flattened period/step then individual;null means unavailable.021 environmental_knowledge reads only Choice.retained;None stays unknown,never restored from audit."
     },
     "reply_actors": {
       "type": "array",
@@ -96,7 +126,7 @@
     },
     "causal": {
       "type": "object",
-      "description": "Additive extractor2 observer-only typed links. Discarded and rebuilt from original source on import, never actor cognition.",
+      "description": "Source-specific observer-only typed links (extractors2\u20134). Discarded and rebuilt from original source on import;never actor cognition.",
       "required": [
         "version",
         "observer_only",

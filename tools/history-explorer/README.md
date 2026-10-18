@@ -23,7 +23,7 @@ verified merely because it loads. No whole decoded corpus enters the browser.
 The main application now also supports all164 original020 histories through
 `experiment-020-trial/v1`, not an018/019 schema substitution. First launch builds
 a derived020 catalog under `target`; subsequent starts reuse it, verifying original
-membership on selection. The default catalog has500 histories (336019 +164020).
+membership on selection. The default catalog now has714 histories (336019+164020+214021).
 020 labels use original **zero-based trial ordinals**;019 labels remain one-based.
 Use the020 sharing, missed-donor, last-unit, exhaustion, null and reconvergence
 presets. Actor decisions include their actual cache observation/candidates; Observer
@@ -102,3 +102,27 @@ scientific validation. See the [actual acceptance and screenshots](../../experim
 for commands,source verification and its historical limitations. It remains preserved
 as original viewer evidence; current first-class020 support is in the main application
 above. Scientific status comes from the current review/protection documents.
+
+
+## Experiment021: owned dated environmental knowledge
+
+All214 original021 worlds are first-class in the same application,through
+`experiment-021-trial/v1`/extractor4. Original ordinals are zero-based;labels and
+identifiers include both Need/Acquire policy and knowledge mode. Use the021 presets
+for useful continuity,independent rival depletion,stale full-cost work,mixed
+individual distribution,expiry,nulls and stored-zero trust. No simulation is run.
+
+Actor Perspective shows only its actual captured optional slot:receipt,date,age,
+last-seen stock,own removals and upper estimate. Unknown is not zero;no archive lookup
+fills a missing slot. Observer Perspective separately compares actual stock and
+recorded knowledge,shows expiry/overwrite/grants/failures and follows immutable
+source links. Retained relationships/food can survive quantity expiry. Comparison
+keeps material reconvergence,semantic trust and raw stored-zero map shape separate.
+
+[Actual acceptance and costs](validation/knowledge-integration/acceptance.md) and
+[user walkthrough](../../docs/development/history-explorer-user-guide.md) describe
+original81/82,31/32,1/2,162/163,121/122 and161/163. A fresh214index took31.43s in one
+run;largest selected export28.83MB. Browser heap is unmeasured;Python process peak
+about302MiB under concurrent validation. The complete corpus is not loaded into
+the browser. Optional cost reproduction:`python -B tools/history-explorer/measure-knowledge.py`.
+Viewer caches/exports are derived presentation,not foundation evidence or cognition.

@@ -1,0 +1,128 @@
+{
+  "note": "One engineering run under concurrent validation load. Independent fresh temporary cache. Source-cold means first selection in this repository instance; OS disk cache is uncontrolled. Process working set is not browser heap or isolated adapter memory.",
+  "samples": [
+    {
+      "record": 75,
+      "run": 1,
+      "source_verification": "first source/member verification",
+      "seconds": 4.743863600073382,
+      "original_bytes": 15611354,
+      "export_bytes": 28832026,
+      "timeline_moments": 3580,
+      "memory_changes": 889,
+      "process_memory": {
+        "working_set_bytes": 149602304,
+        "peak_working_set_bytes": 182804480
+      }
+    },
+    {
+      "record": 75,
+      "run": 2,
+      "source_verification": "already verified; presentation rebuilt",
+      "seconds": 2.8378077999223024,
+      "original_bytes": 15611354,
+      "export_bytes": 28832026,
+      "timeline_moments": 3580,
+      "memory_changes": 889,
+      "process_memory": {
+        "working_set_bytes": 190021632,
+        "peak_working_set_bytes": 316370944
+      }
+    },
+    {
+      "record": 82,
+      "run": 1,
+      "source_verification": "first source/member verification",
+      "seconds": 3.6261612999951467,
+      "original_bytes": 8534679,
+      "export_bytes": 17045006,
+      "timeline_moments": 2711,
+      "memory_changes": 203,
+      "process_memory": {
+        "working_set_bytes": 188780544,
+        "peak_working_set_bytes": 316370944
+      }
+    },
+    {
+      "record": 82,
+      "run": 2,
+      "source_verification": "already verified; presentation rebuilt",
+      "seconds": 1.4090233999304473,
+      "original_bytes": 8534679,
+      "export_bytes": 17045006,
+      "timeline_moments": 2711,
+      "memory_changes": 203,
+      "process_memory": {
+        "working_set_bytes": 241172480,
+        "peak_working_set_bytes": 316370944
+      }
+    },
+    {
+      "record": 32,
+      "run": 1,
+      "source_verification": "first source/member verification",
+      "seconds": 2.8710406000027433,
+      "original_bytes": 2916040,
+      "export_bytes": 5414788,
+      "timeline_moments": 727,
+      "memory_changes": 55,
+      "process_memory": {
+        "working_set_bytes": 149069824,
+        "peak_working_set_bytes": 316370944
+      }
+    },
+    {
+      "record": 32,
+      "run": 2,
+      "source_verification": "already verified; presentation rebuilt",
+      "seconds": 0.40740919997915626,
+      "original_bytes": 2916040,
+      "export_bytes": 5414788,
+      "timeline_moments": 727,
+      "memory_changes": 55,
+      "process_memory": {
+        "working_set_bytes": 147566592,
+        "peak_working_set_bytes": 316370944
+      }
+    },
+    {
+      "record": 163,
+      "run": 1,
+      "source_verification": "first source/member verification",
+      "seconds": 3.478682199958712,
+      "original_bytes": 7075341,
+      "export_bytes": 14760007,
+      "timeline_moments": 2699,
+      "memory_changes": 204,
+      "process_memory": {
+        "working_set_bytes": 121659392,
+        "peak_working_set_bytes": 316370944
+      }
+    },
+    {
+      "record": 163,
+      "run": 2,
+      "source_verification": "already verified; presentation rebuilt",
+      "seconds": 1.2559267999604344,
+      "original_bytes": 7075341,
+      "export_bytes": 14760007,
+      "timeline_moments": 2699,
+      "memory_changes": 204,
+      "process_memory": {
+        "working_set_bytes": 169144320,
+        "peak_working_set_bytes": 316370944
+      }
+    }
+  ],
+  "catalog_seconds": 31.426831200020388,
+  "catalog_entries": 214,
+  "after_index_memory": {
+    "working_set_bytes": 60628992,
+    "peak_working_set_bytes": 182804480
+  },
+  "largest_original_record": 75,
+  "final_process_memory": {
+    "working_set_bytes": 154406912,
+    "peak_working_set_bytes": 316370944
+  }
+}

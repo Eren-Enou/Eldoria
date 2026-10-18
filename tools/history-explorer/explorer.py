@@ -24,6 +24,9 @@ _causal_spec.loader.exec_module(causal)
 _finite_spec = importlib.util.spec_from_file_location('viewer_finite', HOME / 'finite.py')
 finite = importlib.util.module_from_spec(_finite_spec)
 _finite_spec.loader.exec_module(finite)
+_knowledge_spec = importlib.util.spec_from_file_location('viewer_knowledge', HOME / 'knowledge.py')
+knowledge = importlib.util.module_from_spec(_knowledge_spec)
+_knowledge_spec.loader.exec_module(knowledge)
 SCHEMA = 'woi-history-explorer/v1'
 MAX_RECORD = 64 * 1024 * 1024
 DEFAULT = dict(window=24, idle_gap=1, interval=4, stock=12, hunger=20, order='Ascending')
@@ -50,6 +53,10 @@ def layers(trial):
 
 
 def validate_trial(t, experiment):
+    if experiment == '021':
+        knowledge.validate(t)
+        layers(t)
+        return
     if experiment == '020':
         finite.validate(t)
         layers(t)
@@ -291,15 +298,16 @@ class Repository:
             e['integrity'] = 'Derived catalog entry; source not yet verified in this session'
             e['scientific_status'] = self.status(e['experiment'])
             self.entries[e['id']] = e
-        if '020' in self.experiments:
-            derived = self.cache / 'catalog-020.json'
+        for exp in ('020','021'):
+            if exp not in self.experiments: continue
+            derived = self.cache / f'catalog-{exp}.json'
             if not derived.exists():
-                temp = Repository(self.root, self.cache / 'finite-index', ('020',)).prepare()
+                temp = Repository(self.root, self.cache / f'index-{exp}', (exp,)).prepare()
                 derived.write_bytes(encoded(dict(schema=SCHEMA, entries=list(temp.entries.values()))))
             data020 = json.loads(derived.read_bytes())
-            if data020.get('schema') != SCHEMA: raise ValueError('Unknown 020 catalog schema')
+            if data020.get('schema') != SCHEMA: raise ValueError('Unknown environmental catalog schema')
             for e in data020['entries']:
-                if e['experiment'] != '020' or e['archive'] != 'trials.jsonl.gz': raise ValueError('Unsupported 020 catalog source')
+                if e['experiment'] != exp or e['archive'] != 'trials.jsonl.gz': raise ValueError('Unsupported environmental catalog source')
                 e['integrity']='Derived catalog entry; source not yet verified in this session'
                 self.entries[e['id']]=e
         return self
@@ -315,7 +323,7 @@ class Repository:
         d = self.root / 'experiments' / exp
         protected = self.root / f'docs/foundation-001-{exp}-sha256.json'
         inventory = json.loads(protected.read_bytes()) if protected.exists() else {}
-        freeze_name = 'source-freeze.json' if exp == '020' else 'policy-freeze.json'
+        freeze_name = 'source-freeze.json' if exp in ('020','021') else 'policy-freeze.json'
         for name in ('archive-manifest.json', freeze_name):
             key = f'experiments/{exp}/{name}'
             if inventory and hashlib.sha256((d / name).read_bytes().replace(b'\r\n', b'\n')).hexdigest() != inventory.get(key):
@@ -343,7 +351,7 @@ class Repository:
                 if len(line) > MAX_RECORD:
                     raise ValueError('Trial exceeds 64 MiB input bound')
                 ordinal += 1; h.update(line); size += len(line)
-                if ordinal == e['record'] + (1 if e['experiment']=='020' else 0):
+                if ordinal == e['record'] + (1 if e['experiment'] in ('020','021') else 0):
                     selected = line
         if (size, h.hexdigest()) != (expected['json_bytes'], expected['json_sha256']):
             raise ValueError('Decoded archive hash mismatch')
@@ -353,12 +361,16 @@ class Repository:
         if digest(t) != e['trial_fingerprint'] or any(e[k] != (str(t[k]) if k == 'seed' else t[k]) for k in ('seed', 'case', 'mode', 'config')):
             raise ValueError('Derived identity does not match original source')
         identity = {k:e[k] for k in ('experiment', 'archive', 'record', 'seed', 'case', 'mode', 'config')}
+        if e['experiment']=='021':
+            if e.get('policy') != t['policy']: raise ValueError('021 acquisition policy identity mismatch')
+            identity['policy'] = e['policy']
         if e['id'] != digest(dict(identity=identity, archive_sha256=expected['gzip_sha256'], schema=SCHEMA))[:24]:
             raise ValueError('Stale trial identifier; rebuild catalog with --prepare')
-        freeze = hashlib.sha256((d / ('source-freeze.json' if e['experiment']=='020' else 'policy-freeze.json')).read_bytes().replace(b'\r\n', b'\n')).hexdigest()
+        freeze = hashlib.sha256((d / ('source-freeze.json' if e['experiment'] in ('020','021') else 'policy-freeze.json')).read_bytes().replace(b'\r\n', b'\n')).hexdigest()
         if e['policy_freeze_sha256'] != freeze:
             raise ValueError('Source freeze manifest identity changed')
         e.update(source_schema=finite.VERSION if e['experiment']=='020' else 'experiment-' + e['experiment'] + '-trial', raw_bytes=len(selected), epoch=t['clock']['epoch'], end=t['clock']['last'])
+        if e['experiment']=='021': e['source_schema']=knowledge.VERSION
         e['scientific_status'] = self.status(e['experiment'])
         e['integrity'] = 'Compressed and complete decoded archive hashes verified; exact JSONL membership checked'
         self.member_verified.add(e['id'])
@@ -369,7 +381,7 @@ class Repository:
         for exp in self.experiments:
             d = self.root / 'experiments' / exp
             manifest = self.manifest(exp)
-            freeze = hashlib.sha256((d / ('source-freeze.json' if exp=='020' else 'policy-freeze.json')).read_bytes().replace(b'\r\n', b'\n')).hexdigest()
+            freeze = hashlib.sha256((d / ('source-freeze.json' if exp in ('020','021') else 'policy-freeze.json')).read_bytes().replace(b'\r\n', b'\n')).hexdigest()
             status = self.status(exp)
             for archive, expected in manifest.items():
                 if not archive.endswith('.jsonl.gz'):
@@ -387,9 +399,11 @@ class Repository:
                             raise ValueError('Trial exceeds 64 MiB input bound')
                         decoded.update(line); size += len(line); ordinal += 1
                         t = json.loads(line); validate_trial(t, exp)
-                        identity = dict(experiment=exp, archive=archive, record=ordinal-1 if exp=='020' else ordinal, seed=str(t['seed']), case=t['case'], mode=t['mode'], config=t['config'])
+                        identity = dict(experiment=exp, archive=archive, record=ordinal-1 if exp in ('020','021') else ordinal, seed=str(t['seed']), case=t['case'], mode=t['mode'], config=t['config'])
+                        if exp=='021': identity['policy']=t['policy']
                         key = digest(dict(identity=identity, archive_sha256=expected['gzip_sha256'], schema=SCHEMA))[:24]
                         entry = dict(id=key, **identity, source_schema=finite.VERSION if exp=='020' else 'experiment-' + exp + '-trial', archive_sha256=expected['gzip_sha256'], decoded_archive_sha256=expected['json_sha256'], record_sha256=hashlib.sha256(line.rstrip(b'\r\n')).hexdigest(), trial_fingerprint=digest(t), policy_freeze_sha256=freeze, scientific_status=status, integrity='Compressed and complete decoded archive hashes verified; exact JSONL membership checked', raw_bytes=len(line), epoch=t['clock']['epoch'], end=t['clock']['last'])
+                        if exp=='021': entry['source_schema']=knowledge.VERSION
                         pending.append(entry)
                         if exp == '019' and archive == 'seed-42.jsonl.gz' and t['case'] == 'useful_contact' and t['mode'] in ('Baseline', 'Scale110'):
                             demos.append((entry, line))
@@ -404,22 +418,31 @@ class Repository:
                     self._save(e, json.loads(line))
         self.measurements.append(dict(operation='catalog_and_full_archive_verification', seconds=time.perf_counter()-started, trials=len(self.entries)))
         (self.cache / 'catalog.json').write_bytes(encoded(dict(schema=SCHEMA, entries=list(self.entries.values()))))
-        if '020' in self.experiments:
+        for exp in ('020','021'):
+            if exp not in self.experiments: continue
             # The advertised --prepare path must replace stale020 discovery too.
             # Publish atomically; a partial index is never a verified member.
-            package=dict(schema=SCHEMA,entries=[e for e in self.entries.values() if e['experiment']=='020'])
+            package=dict(schema=SCHEMA,entries=[e for e in self.entries.values() if e['experiment']==exp])
             with tempfile.NamedTemporaryFile(dir=self.cache,suffix='.tmp',delete=False) as f:
                 f.write(encoded(package));temporary=Path(f.name)
-            temporary.replace(self.cache/'catalog-020.json')
+            temporary.replace(self.cache/f'catalog-{exp}.json')
         return self
 
     def _save(self, entry, trial):
         is_finite = entry['experiment']=='020'
-        data = dict(schema=SCHEMA, extractor_version=3 if is_finite else 2, source=copy.deepcopy(entry), trial=trial)
-        data['timeline'] = finite.timeline(trial,timeline) if is_finite else timeline(trial)
-        data['causal'] = finite.causal(trial,entry['id'],causal.build,causal.resolve) if is_finite else causal.build(trial, entry['id'])
+        is_knowledge = entry['experiment']=='021'
+        data = dict(schema=SCHEMA, extractor_version=4 if is_knowledge else 3 if is_finite else 2, source=copy.deepcopy(entry), trial=trial)
+        if is_knowledge:
+            data['timeline']=knowledge.timeline(trial,lambda t:finite.timeline(t,timeline))
+            data['causal']=knowledge.causal(trial,entry['id'],lambda t,i,field:finite.causal(t,i,causal.build,causal.resolve,field),causal.resolve)
+        else:
+            data['timeline'] = finite.timeline(trial,timeline) if is_finite else timeline(trial)
+            data['causal'] = finite.causal(trial,entry['id'],causal.build,causal.resolve) if is_finite else causal.build(trial, entry['id'])
         # Actor projections are derived strictly from captured inputs; no audit joining.
-        data['actors'] = [[finite.actor(trial,w,owner,actor_view) if is_finite else None if d is None else actor_view(trial,w['activity'],owner) for owner,d in enumerate(w['activity']['decisions'])] for p in trial['periods'] for w in p['steps']]
+        if is_knowledge:
+            data['actors']=[[knowledge.actor(trial,w,owner,actor_view) for owner in range(3)] for p in trial['periods'] for w in p['steps']]
+        else:
+            data['actors'] = [[finite.actor(trial,w,owner,actor_view) if is_finite else None if d is None else actor_view(trial,w['activity'],owner) for owner,d in enumerate(w['activity']['decisions'])] for p in trial['periods'] for w in p['steps']]
         data['reply_actors'] = [[reply_view(trial, w['activity'], owner) for owner in range(3)] for p in trial['periods'] for w in p['steps']]
         data['resource_actors'] = {str(e['id']): resource_view(e) for e in layers(trial)['base']['events']}
         # Atomic derived-cache replacement prevents partial exports after interruption.
@@ -448,7 +471,7 @@ class Repository:
                 return self._remember(key, self._save(e, data['trial']), started)
         with gzip.open(self.root / 'experiments' / e['experiment'] / e['archive'], 'rb') as f:
             for n, line in enumerate(f, 1):
-                if n == e['record'] + (1 if e['experiment']=='020' else 0):
+                if n == e['record'] + (1 if e['experiment'] in ('020','021') else 0):
                     if hashlib.sha256(line.rstrip(b'\r\n')).hexdigest() != e['record_sha256']:
                         raise ValueError('Source changed after indexing')
                     t = json.loads(line)
@@ -505,6 +528,8 @@ class Handler(BaseHTTPRequestHandler):
                     if left['source']['experiment'] != right['source']['experiment']:
                         raise ValueError('Compare histories from the same explicit experiment schema')
                     compare=finite.comparison if left['source']['experiment']=='020' else None
+                    if left['source']['experiment']=='021':
+                        compare=lambda a,b,common:knowledge.comparison(a,b,lambda x,y:finite.comparison(x,y,common))
                     return self.reply(compare(left['trial'],right['trial'],comparison) if compare else comparison(left['trial'],right['trial']))
             assets = {'/': 'index.html', '/app.js': 'app.js', '/perspective.js': 'perspective.js', '/causal.js': 'causal.js', '/style.css': 'style.css'}
             if p.path not in assets:
@@ -561,7 +586,7 @@ def main():
     ap.add_argument('--cache', type=Path)
     args = ap.parse_args()
     print('Preparing full archive index...' if args.prepare or args.include018 else 'Opening discovery catalog; original histories are verified on selection.', flush=True)
-    repo = Repository(cache=args.cache, experiments=('019','018','020') if args.include018 else ('019','020'))
+    repo = Repository(cache=args.cache, experiments=('019','018','020','021') if args.include018 else ('019','020','021'))
     repo.prepare() if args.prepare or args.include018 else repo.catalog()
     print(f'Catalog: {len(repo.entries)} recorded trials.', flush=True)
     if repo.measurements:

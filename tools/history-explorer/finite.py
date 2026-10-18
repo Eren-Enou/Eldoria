@@ -63,7 +63,7 @@ def timeline(t, common):
     return result
 
 
-def causal(t, identity, common, resolve):
+def causal(t, identity, common, resolve, observation_field='cache'):
     graph = common(t, identity)
     for r in t['records']:
         attempt = r['attempt']; pn,sn,owner=attempt['selection']
@@ -79,7 +79,7 @@ def causal(t, identity, common, resolve):
             return ref
         def edge(a,b,label): chain['edges'].append(dict(source=a,target=b,relation=label))
         choice=add(root+f'.choices[{owner}]','Selected acquisition',attempt['start'],root+'.activity','Acquire')
-        obs=add(choice+'.cache','Local cache observation',attempt['observation']['observed_at'],root+'.activity',attempt['observation'])
+        obs=add(choice+'.'+observation_field,'Local cache observation',attempt['observation']['observed_at'],root+'.activity',attempt['observation'])
         admitted=add(root+f'.admissions[{ci}]','Claim admission / busy interval',attempt['start'],root+f'.admissions[{ci}]',dict(start=attempt['start'],end=attempt['end']))
         completion=add(f'records[{r["id"]}]','Physical acquisition outcome',r['completed_at'],f'records[{r["id"]}]',dict(outcome=r['outcome'],stock=[r['cache_before'],r['cache_after']],owned=[r['food_before'],r['food_after']],rank=r['rank']))
         edge(obs,choice,'Captured observation used by this choice')
