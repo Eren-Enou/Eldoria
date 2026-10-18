@@ -1,0 +1,902 @@
+[
+  {
+    "case": "paired",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "paired",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "mixed",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "mixed",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "durations",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "durations",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "same_end",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "same_end",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "contenders",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "contenders",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "busy_recipient",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "busy_recipient",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "consumption",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "consumption",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "acquisition",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "acquisition",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "scarcity",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "scarcity",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "inquiry_quiet",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "inquiry_quiet",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "inquiry_conflict",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "inquiry_conflict",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "missed_contact",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "missed_contact",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "private_helpful",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "private_helpful",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "private_cautious",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "private_cautious",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "order_bias",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "order_bias",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "null",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "null",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "ongoing",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 192,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "ongoing",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 192,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "exhaustion",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 192,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "exhaustion",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 192,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "paired",
+    "seed": 42,
+    "duration": 2,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "paired",
+    "seed": 42,
+    "duration": 2,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "acquisition",
+    "seed": 42,
+    "duration": 2,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "acquisition",
+    "seed": 42,
+    "duration": 2,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "busy_recipient",
+    "seed": 42,
+    "duration": 2,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "busy_recipient",
+    "seed": 42,
+    "duration": 2,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "inquiry_conflict",
+    "seed": 42,
+    "duration": 2,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "inquiry_conflict",
+    "seed": 42,
+    "duration": 2,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "paired",
+    "seed": 42,
+    "duration": 8,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "paired",
+    "seed": 42,
+    "duration": 8,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "acquisition",
+    "seed": 42,
+    "duration": 8,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "acquisition",
+    "seed": 42,
+    "duration": 8,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "busy_recipient",
+    "seed": 42,
+    "duration": 8,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "busy_recipient",
+    "seed": 42,
+    "duration": 8,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "inquiry_conflict",
+    "seed": 42,
+    "duration": 8,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "inquiry_conflict",
+    "seed": 42,
+    "duration": 8,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "paired",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Descending",
+    "capacity": 1
+  },
+  {
+    "case": "paired",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Descending",
+    "capacity": 2
+  },
+  {
+    "case": "contenders",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Descending",
+    "capacity": 1
+  },
+  {
+    "case": "contenders",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Descending",
+    "capacity": 2
+  },
+  {
+    "case": "scarcity",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Descending",
+    "capacity": 1
+  },
+  {
+    "case": "scarcity",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Descending",
+    "capacity": 2
+  },
+  {
+    "case": "order_bias",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Descending",
+    "capacity": 1
+  },
+  {
+    "case": "order_bias",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Descending",
+    "capacity": 2
+  },
+  {
+    "case": "paired",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Rotating",
+    "capacity": 1
+  },
+  {
+    "case": "paired",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Rotating",
+    "capacity": 2
+  },
+  {
+    "case": "contenders",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Rotating",
+    "capacity": 1
+  },
+  {
+    "case": "contenders",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Rotating",
+    "capacity": 2
+  },
+  {
+    "case": "scarcity",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Rotating",
+    "capacity": 1
+  },
+  {
+    "case": "scarcity",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Rotating",
+    "capacity": 2
+  },
+  {
+    "case": "order_bias",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Rotating",
+    "capacity": 1
+  },
+  {
+    "case": "order_bias",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Rotating",
+    "capacity": 2
+  },
+  {
+    "case": "paired",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 16,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "paired",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 16,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "mixed",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 16,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "mixed",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 16,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "null",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 16,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "null",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 16,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "ongoing",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 16,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "ongoing",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 16,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "paired",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 96,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "paired",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 96,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "mixed",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 96,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "mixed",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 96,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "null",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 96,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "null",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 96,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "ongoing",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 96,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "ongoing",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 96,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "paired",
+    "seed": 1,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "paired",
+    "seed": 1,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "acquisition",
+    "seed": 1,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "acquisition",
+    "seed": 1,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "inquiry_quiet",
+    "seed": 1,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "inquiry_quiet",
+    "seed": 1,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "private_helpful",
+    "seed": 1,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "private_helpful",
+    "seed": 1,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "paired",
+    "seed": 1729,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "paired",
+    "seed": 1729,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "acquisition",
+    "seed": 1729,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "acquisition",
+    "seed": 1729,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "inquiry_quiet",
+    "seed": 1729,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "inquiry_quiet",
+    "seed": 1729,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  },
+  {
+    "case": "private_helpful",
+    "seed": 1729,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 1
+  },
+  {
+    "case": "private_helpful",
+    "seed": 1729,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 48,
+    "order": "Ascending",
+    "capacity": 2
+  }
+]
