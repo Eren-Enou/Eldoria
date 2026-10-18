@@ -1,6 +1,6 @@
 # World of Individuals experiment index
 
-Protected through020; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
+Protected through021; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
 reports or protected contracts. Historical next-experiment recommendations reflect
 their publication date. Update the affected row when an experiment concludes.
 
@@ -38,7 +38,7 @@ evaluators are for explicitly authorized experiment evidence generation, not aud
 Full report links contain causal traces, seed controls, counters, limitations and
 reproduction details; consult those sections before making stronger claims.
 
-Latest protection: [001–020 integrity audit](../integrity-audit-001-020.md).
+Latest protection: [001–021 integrity audit](../integrity-audit-001-021.md).
 [Research handoff](../research-handoff-001-013.md) recommends a narrow scarce-activity
 question; it does not start014.
 
@@ -183,7 +183,7 @@ The old separate observer demo and all original evidence remain unchanged.
 [Specification](../../experiments/021/specification.md),[design gate](../../experiments/021/design-gate.md),
 [results](../../experiments/021/results.md),[verification](../../experiments/021/verification.md).
 Preregistered214 worlds;[independent review](../experiment-021-review.md):
-ACCEPT WITH QUALIFICATION,protection gate pending,unadopted.
+ACCEPT WITH QUALIFICATION,[protected001–021](../experiment-contract-001-021.md),unadopted.
 CurrentOnly/LastSeen/Expire12 isolate retention under the same passive glimpse slots;
 FreshReference and Unobserved are frequency/channel controls. LastSeen changes43/57
 matched selections and14 period material trajectories;all57 final material states
@@ -192,5 +192,6 @@ order reversal and expiry tradeoffs are preserved. Independent primitive reader,
 28 corruption categories,all original byte replays and separate validate021. New
 one-slot store never restores expired quantity from attempts/audit;owned food and
 legacy consequences may persist. No active sensing,production,travel,community claim,
-foundation extension or022. Main Explorer's explicit schemas remain018/019/020;
+automatic022 protection or adoption. The separately authorized022 requires
+committed021 Gate B and its own prospective design. Main Explorer's explicit schemas remain018/019/020;
 021 is scientific JSON evidence,not silently coerced into020 playback.

@@ -2,7 +2,7 @@
   "starting_revision": "20c85adfe84acdefa125fc74fe6cd4093165e15d",
   "starting_branch": "main",
   "original_working_files": 346,
-  "protected_endpoint": "001-020",
+  "protected_endpoint": "001-021",
   "stages": {
     "A": {
       "status": "PASS",
@@ -81,10 +81,284 @@
       "complementary_corruptions": 8,
       "source_locks": 21,
       "original_working_bytes_unchanged": 346,
-      "independent_detail": "experiment-021-review-verification.json"
+      "independent_detail": "experiment-021-review-verification.json",
+      "commit": "5b7efd04db46915ba8c8864c5d32099a5e78f65e"
     },
     "B": {
-      "status": "DRAFT;not yet validated or protected"
+      "status": "PASS",
+      "checks": [
+        {
+          "label": "fmt",
+          "command": [
+            "cargo",
+            "fmt",
+            "--check"
+          ],
+          "exit": 0,
+          "seconds": 0.7244049999862909
+        },
+        {
+          "label": "clippy",
+          "command": [
+            "cargo",
+            "clippy",
+            "--locked",
+            "--all-targets",
+            "-j",
+            "1",
+            "--",
+            "-D",
+            "warnings"
+          ],
+          "exit": 0,
+          "seconds": 1.6573739000596106
+        },
+        {
+          "label": "tests",
+          "command": [
+            "cargo",
+            "test",
+            "--locked",
+            "-j",
+            "1"
+          ],
+          "exit": 0,
+          "seconds": 112.90331470000092
+        },
+        {
+          "label": "validate009",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate009"
+          ],
+          "exit": 0,
+          "seconds": 137.1014761000406
+        },
+        {
+          "label": "validate010",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate010"
+          ],
+          "exit": 0,
+          "seconds": 74.63301600003615
+        },
+        {
+          "label": "validate011",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate011"
+          ],
+          "exit": 0,
+          "seconds": 13.18271189997904
+        },
+        {
+          "label": "validate012",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate012"
+          ],
+          "exit": 0,
+          "seconds": 7.750964400009252
+        },
+        {
+          "label": "validate013",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate013"
+          ],
+          "exit": 0,
+          "seconds": 31.46755659999326
+        },
+        {
+          "label": "validate014",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate014"
+          ],
+          "exit": 0,
+          "seconds": 13.777385300025344
+        },
+        {
+          "label": "validate015",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate015"
+          ],
+          "exit": 0,
+          "seconds": 107.76663790002931
+        },
+        {
+          "label": "validate016",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate016"
+          ],
+          "exit": 0,
+          "seconds": 246.39711060002446
+        },
+        {
+          "label": "validate017",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate017"
+          ],
+          "exit": 0,
+          "seconds": 220.4949414000148
+        },
+        {
+          "label": "validate018",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate018"
+          ],
+          "exit": 0,
+          "seconds": 220.808518200065
+        },
+        {
+          "label": "validate019",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate019"
+          ],
+          "exit": 0,
+          "seconds": 289.15031489997637
+        },
+        {
+          "label": "validate020",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate020"
+          ],
+          "exit": 0,
+          "seconds": 77.3123497000197
+        },
+        {
+          "label": "validate021",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate021"
+          ],
+          "exit": 0,
+          "seconds": 130.9203335000202
+        },
+        {
+          "label": "validate_contract",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate_contract"
+          ],
+          "exit": 0,
+          "seconds": 1626.5754985999083
+        },
+        {
+          "label": "validate021_foundation",
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate021_foundation"
+          ],
+          "exit": 0,
+          "seconds": 177.53992520004977
+        }
+      ],
+      "protected_artifacts": 341,
+      "inherited_artifacts": 321,
+      "original_021_files": 20,
+      "rust_tests": 211,
+      "original_working_bytes_unchanged": 346,
+      "original_source_locks_unchanged": 21,
+      "standalone_shared_prefix": "exact",
+      "no_behavior_changes": true
     },
     "C": {
       "status": "IN PROGRESS;not yet accepted",
@@ -93,5 +367,6 @@
       "original_021_references_verified": 214,
       "browser": "Actual local actor28 and original claim32/meal33 links inspected;remaining cases pending"
     }
-  }
+  },
+  "raw_working_guard": "concurrent-original-working-sha256.json"
 }

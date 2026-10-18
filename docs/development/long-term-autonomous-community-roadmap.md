@@ -27,7 +27,9 @@ contention, elapsed failures and subsequent material/social consequences. Missin
 voluntary information gathering, renewed but conserved opportunities, spatial access,
 and credible continuous alternatives beyond short fixed windows.021 now adds a
 qualified distinction between owned dated observations and independently depleted
-stock;it is separate unprotected research.
+stock;it is independently reviewed/protected with qualification under001–021,
+without adoption. See the [review](../experiment-021-review.md) and
+[integrity audit](../integrity-audit-001-021.md).
 
 021 executed214 preregistered worlds. LastSeen changes43/57 matched choices and
 14 period material trajectories;all57 material endpoints match;the14 period divergences reconverge. Useful ongoing
@@ -35,14 +37,16 @@ continuity coexists with stale full-cost failures, mixed distribution, ordering
 reversal and expiry losses. CurrentOnly is a serious simpler alternative;
 FreshReference changes observation frequency and cannot isolate a memory advantage.
 See [results](../../experiments/021/results.md). No active Observe action or new
-valuation formula was added. The next session should independently review021,
-not start another experiment or protect/adopt it automatically.
+valuation formula was added. The independent review confirms the qualified result;
+the separately authorized022 program addresses concurrency after committed001–021
+protection and a prospective design gate,not memory adoption.
 
 Exit evidence: traces connect real observations to retained state to choices to
 physical revalidation and later consequences; harmful/null cases survive; no future
 or observer recovery; caps/eviction and shared clock independently checked. Do not
-claim improved behavior solely because observations persist.021 remains unprotected
-until separate review/integrity work; this program does not begin022.
+claim improved behavior solely because observations persist.021 review/protection
+is complete;the next separately authorized milestone is prospectively gated022.
+Do not automatically protect022 or begin023.
 
 ## Phase 3 — Four individuals and simultaneous independent work
 

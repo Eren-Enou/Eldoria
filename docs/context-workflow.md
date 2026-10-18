@@ -31,8 +31,8 @@ scientifically accepted and protected while its proposed mechanism is rejected.
 Protection preserves accepted findings and qualifications, not a mandate to adopt
 every tested mechanism.
 
-Experiments001–020 are protected by the
-[foundation contract](experiment-contract-001-020.md) and its inherited historical
+Experiments001–021 are protected by the
+[foundation contract](experiment-contract-001-021.md) and its inherited historical
 maps. Experiment 011's [scientific review](experiment-011-review.md) is confirmed with
 qualification: its evidence is protected, while StatusValue remains unadopted.
 Experiment012's [scientific review](experiment-012-review.md) establishes ACCEPT
@@ -42,8 +42,8 @@ Experiment013's unchanged [scientific review](experiment-013-review.md) establis
 ACCEPT WITH QUALIFICATION; Pulse/Ungated remain optional research, not defaults.
 Preserve C64 versus B64 and retained episodes outside the last-four partner scoring
 window. Its shared read-only gate invokes both independent readers.
-The [integrity report](integrity-audit-001-020.md) records the latest protection pass;
-the [research handoff](research-handoff-001-020.md) preserves open valuation/timing questions.
+The [integrity report](integrity-audit-001-021.md) records the latest protection pass;
+the [research handoff](research-handoff-001-021.md) preserves open valuation/timing questions.
 017 is protected with qualification; its188 contact-only nulls and narrow7/188 material
 effect remain distinct. No default adoption or retroactive recurring hunger.
 Reverify source, contracts and reviews before
@@ -202,12 +202,15 @@ remains an explicit separate schema.021 has a separate scientific review.
 
 ## Current021 research entry point
 
-The protected endpoint is001–020;the separate021 study is independently reviewed
-[ACCEPT WITH QUALIFICATION](experiment-021-review.md),protection gate pending,no adoption. Read experiments/021/results.md and verification.md,then
+The protected endpoint is001–021;the021 study is independently reviewed/protected
+[ACCEPT WITH QUALIFICATION](experiment-021-review.md),no adoption. Read experiments/021/results.md and verification.md,then
 specification/design-gate/registered-matrix only as relevant. For new owned state,
 inspect src/environmental_knowledge.rs;for physical timing/local projection,inspect
 src/simulation/environmental_knowledge.rs;for fixtures,src/experiment021.rs.
 Independent readers are knowledge021/review021/compare021/findings021 in
-examples/support. Use validate021 read-only;never regenerate originals in place.
+examples/support,with complementary review021_scope/review021_trust. Normal
+foundation/validate021_foundation share341inventory enforcement;original standalone
+validate021 remains frozen. Never regenerate originals in place.
 Current main Explorer supports018/019/020,not021. The continuation checkpoint and
-community roadmap guide a separate independent021 review before further work;no022.
+community roadmap guide the separately authorized022 concurrency design after
+committed021 protection;do not begin023.

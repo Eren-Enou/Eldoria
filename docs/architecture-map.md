@@ -1,12 +1,12 @@
 # Architecture map
 
-Navigation summary, protected through020. Source and mode-specific
+Navigation summary, protected through021. Source and mode-specific
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
 ## Start here
 
-- Rules: [AGENTS.md](../AGENTS.md); protected [001–020 contract](experiment-contract-001-020.md),
+- Rules: [AGENTS.md](../AGENTS.md); protected [001–021 contract](experiment-contract-001-021.md),
   which links historical contracts. Read the affected mode's clauses and coverage.
 - Findings: [experiment index](simulation/EXPERIMENT_HISTORY.md).
 - Working procedure: [context workflow](context-workflow.md).
@@ -49,24 +49,26 @@ rows when ownership, entry points or mode boundaries change.
 | Finite environmental acquisition (020 protected with qualification) | [cache/policy](../src/acquisition.rs),[isolated lifecycle](../src/simulation/acquisition.rs),[fixture](../src/experiment020.rs);no default path changes | `tests/acquisition.rs`,frozen standalone `validate020`,shared `contract020.rs`/`validate020_foundation`,`review020.py`/`review020_scope.py`,`measure020`;[specification](../experiments/020/specification.md),[results](../experiments/020/results.md),[verification](../experiments/020/verification.md);[review](experiment-020-review.md),[contract](experiment-contract-001-020.md);164 original histories,20 corruptions,321 protected artifacts;no adoption |
 | Read-only History Explorer application | [app/tooling](../tools/history-explorer/README.md), `tools/history-explorer/explorer.py`, `causal.py`/`causal.js`, `finite.py`, `perspective.js`, `app.js`; [technical guide](development/history-explorer-architecture.md) | Python real-archive and typed-link tests, JS owned-point/filter/order tests, explicit020 actor/claim/material comparison and all164 original references,[020 acceptance](../tools/history-explorer/validation/finite-integration/acceptance.md),real-browser node navigation, [original acceptance](../tools/history-explorer/validation/acceptance.md), [causal acceptance](../tools/history-explorer/validation/causal-navigation-acceptance.md); one-way consumer, no foundation dependency |
 | CLI and reproducible experiment fixtures | [main.rs](../src/main.rs), `src/experiment.rs`, `src/experiment002.rs` … `src/experiment021.rs` | Corresponding experiment tests/evaluators |
-| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), shared `examples/support/contract009.rs` … `contract020.rs`, independent010–020 readers | Cache-free010–020 validation; shared standalone gates; historical summaries unchanged; [latest integrity audit](integrity-audit-001-020.md) |
+| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), shared `examples/support/contract009.rs` … `contract021.rs`, independent010–021 readers | Cache-free010–021 validation; shared standalone gates; historical summaries unchanged; [latest integrity audit](integrity-audit-001-021.md) |
 | Throughput workload / history measurements | [throughput.rs](../benches/throughput.rs), `examples/measure_history.rs` | Separate wall-clock output; historical reports unchanged |
 
 Use `rg -n 'symbol' path/to/file.rs` to locate implementation before reading a
 bounded range. A row identifies starting files, not permission to skip affected callers.
 
-## Research outside the protected foundation
+## Latest protected environmental-knowledge result
 
 021 local environmental knowledge:[specification](../experiments/021/specification.md),
 [qualified gate](../experiments/021/design-gate.md),[results](../experiments/021/results.md),
 [verification](../experiments/021/verification.md).214 executed originals,independent
 reconstruction/exact replay;[independent review](experiment-021-review.md) accepts
-with qualification;protection gate pending,no adoption.
+with qualification;[001–021 protection](experiment-contract-001-021.md),no adoption.
 Owners:`src/environmental_knowledge.rs`,`src/simulation/environmental_knowledge.rs`,
-`src/experiment021.rs`;`tests/environmental_knowledge.rs`;separate validate021,
+`src/experiment021.rs`;`tests/environmental_knowledge.rs`;frozen original validate021,shared contract021/
+validate021_foundation/normal gate341 artifacts,complementary review021_scope,
 independent knowledge021/review021/compare021/findings021/review021_trust readers. One owned slot,
 passive observations,unchanged020 scores/physics. Preserve stale failure,unknown
-and expiry versus persistent material;no archive recovery. No022.
+and expiry versus persistent material;no archive recovery.022 is separately authorized,
+conditional on committed protection/prospective design;no023.
 
 Forward plans:[community roadmap](development/long-term-autonomous-community-roadmap.md),
 [non-canon Eldoria bridge](development/eldoria-simulation-bridge.md). Neither authorizes

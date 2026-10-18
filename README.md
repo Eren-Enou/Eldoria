@@ -523,3 +523,18 @@ The [autonomous-community roadmap](docs/development/long-term-autonomous-communi
 sets evidence gates rather than promising civilizations. The
 [Eldoria research bridge](docs/development/eldoria-simulation-bridge.md) separates
 ordinary-life questions from canon and unimplemented game-support possibilities.
+
+
+Experiment021 is independently reviewed/protected **ACCEPT WITH QUALIFICATION**,
+with no default adoption:[review](docs/experiment-021-review.md),
+[001–021 contract](docs/experiment-contract-001-021.md),
+[integrity audit](docs/integrity-audit-001-021.md),
+[handoff](docs/research-handoff-001-021.md). The normal read-only foundation gate
+includes341 original artifacts (321 inherited+20 original021),214 exact original
+replays,primitive/locality/expiry checks and both complementary scientific readers.
+Frozen standalone `validate021` remains unchanged;`validate021_foundation` shares
+the normal gate's superset. Preserve stale losses,mixed distribution,expiry tradeoffs,
+nulls and material reconvergence/social persistence. FreshReference has more free
+sensing;none of these modes is a general memory optimum.022 is separately authorized
+prospective concurrency research,conditional on passed/committed protection and a
+design gate;no023 or automatic022 protection.

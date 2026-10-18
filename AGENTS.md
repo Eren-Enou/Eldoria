@@ -33,7 +33,8 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-020.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-021.md`.
+The historical `docs/experiment-contract-001-020.md` remains authoritative for001–020.
 The historical `docs/experiment-contract-001-019.md` remains authoritative for001–019.
 The historical `docs/experiment-contract-001-018.md` remains authoritative for001–018.
 The historical `docs/experiment-contract-001-017.md` remains authoritative for001–017.
@@ -99,14 +100,19 @@ Preserve the review corrections: high-support longitudinal C64 is not B64; late
 episodic valence0 reflects the last-four partner-memory window, not episode eviction.
 The gate's schedule-phase robustness and effort justification remain unestablished.
 
-Experiment021 is separate research, ACCEPT WITH QUALIFICATION, unprotected and
-unadopted; see experiments/021/results.md and its separate validate021 gate.
-One owned dated record per actor, fixed passive glances, unchanged020 scores/physics.
-Preserve stale losses, mixed distribution, expiry tradeoffs and endpoint material
-reconvergence. Own food may persist after quantity expires; no attempt/archive
-recovery. FreshReference/Unobserved are frequency/channel controls, not pure retention
-contrasts. No active exploration, sustainable community or global adoption established.
-Do not automatically extend001–020 or begin022. Next work requires independent review.
+Experiment021 is independently reviewed/protected ACCEPT WITH QUALIFICATION;
+no adoption. See docs/experiment-021-review.md and001–021 contract/audit.
+Preserve one owned dated slot per actor,owner-local receipts,unknown distinct from0,
+passive glance slots,unchanged020 scores/physics,own debit without date refresh,
+rival depletion without omniscient updates,and expiry without archive/attempt
+recovery. Food/trust/concerns may persist separately. Protect useful/stale/mixed/
+expiry/null/reconvergent histories and semantic trust161/163 zero-map correction.
+FreshReference/Unobserved change sensing frequency/channel,not pure retention.
+Normal foundation/validate021_foundation share341-artifact enforcement and both
+complementary readers;frozen original validate021 stays unchanged. Preserve all21
+source locks,including lib.rs/simulation.rs. No default adoption/community claim.
+The separately authorized022 program requires committed/pushed Gate B and its own
+prospective concurrency design gate before runtime. Do not begin023 or protect022.
 
 Build progressively toward a persistent fictional world. Experiment 001 is only
 resource interaction, subjective memory, and subsequent behavioral consequences.
@@ -315,7 +321,8 @@ Frozen standalone validate020 remains unchanged;shared contract020.rs preserves 
 exact text and parity,adds321 inventory/scope checks,and runs in validate_contract
 and validate020_foundation. Preserve qualified negative/null findings and the
 unexercised atomic provisional-query branch. The authorized phase2 program may
-proceed prospectively to021 only after this gate is committed. Do not begin022.
+proceed prospectively to021 only after this gate is committed. The later022
+program is separately gated by001–021 protection and a prospective design.
 Its separate finite-demo adapter exposes original020 observer records only;it must
 not be silently ingested as018/019 or become a simulation/cognition dependency.
 
