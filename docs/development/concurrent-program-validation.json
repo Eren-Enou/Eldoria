@@ -1,0 +1,97 @@
+{
+  "starting_revision": "20c85adfe84acdefa125fc74fe6cd4093165e15d",
+  "starting_branch": "main",
+  "original_working_files": 346,
+  "protected_endpoint": "001-020",
+  "stages": {
+    "A": {
+      "status": "PASS",
+      "scientific_verdict": "ACCEPT WITH QUALIFICATION",
+      "reviewed_revision": "20c85adfe84acdefa125fc74fe6cd4093165e15d",
+      "checks": [
+        {
+          "command": [
+            "cargo",
+            "fmt",
+            "--check"
+          ],
+          "exit": 0,
+          "seconds": 3.893813799950294
+        },
+        {
+          "command": [
+            "cargo",
+            "clippy",
+            "--locked",
+            "--all-targets",
+            "-j",
+            "1",
+            "--",
+            "-D",
+            "warnings"
+          ],
+          "exit": 0,
+          "seconds": 3.749922899994999
+        },
+        {
+          "command": [
+            "cargo",
+            "test",
+            "--locked",
+            "-j",
+            "1"
+          ],
+          "exit": 0,
+          "seconds": 108.33577620005235
+        },
+        {
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate021"
+          ],
+          "exit": 0,
+          "seconds": 121.90685989998747
+        },
+        {
+          "command": [
+            "cargo",
+            "run",
+            "--release",
+            "--locked",
+            "-j",
+            "1",
+            "--example",
+            "validate_contract"
+          ],
+          "exit": 0,
+          "seconds": 1194.4425372999394
+        }
+      ],
+      "rust_tests": 211,
+      "exact_original_021_replays": 214,
+      "original_primitive_worlds": 214,
+      "original_corruption_categories": 28,
+      "complementary_worlds": 214,
+      "complementary_corruptions": 8,
+      "source_locks": 21,
+      "original_working_bytes_unchanged": 346,
+      "independent_detail": "experiment-021-review-verification.json"
+    },
+    "B": {
+      "status": "DRAFT;not yet validated or protected"
+    },
+    "C": {
+      "status": "IN PROGRESS;not yet accepted",
+      "python_tests": 41,
+      "javascript_test_files": 4,
+      "original_021_references_verified": 214,
+      "browser": "Actual local actor28 and original claim32/meal33 links inspected;remaining cases pending"
+    }
+  }
+}

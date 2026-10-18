@@ -1,111 +1,72 @@
-# Phase 2 continuation checkpoint
+# Concurrent-world program continuation checkpoint
 
-Objective COMPLETE:020 independent review/protection,unified main Explorer,
-community-readiness diagnosis,preregistered/executed021,roadmap and non-canon bridge.
-Inspect actual Git/source/reports before acting;this checkpoint is a navigation aid.
+Objective ACTIVE: independently review/protect021;first-class021 History Explorer;
+prospective,gated four-person concurrent022;independent evidence/observable history;
+community readiness and prospective sustained-material design. Do not begin023 or
+protect/adopt022 automatically. User request is the attached 3bb37cec program.
 
-## Branch,revision and scientific status
+## Actual starting authority
 
-Branch main. Verified source/research revision and origin main before this final
-documentation milestone:`20b68711dd5fbe1e60a2cdb58472d998c064cbcf`.
-This checkpoint/roadmap/bridge are published in the subsequent documentation-only
-commit. Resolve its exact revision with:
+Branch main,starting HEAD and origin/main
+`20c85adfe84acdefa125fc74fe6cd4093165e15d`,clean. Fetch confirmed no remote advance.
+Protected endpoint001–020 (321 scientific/support artifacts);021 unprotected research.
+The preceding program is complete;its evidence and seven commits are documented in
+[phase-2 delivery](phase-2-delivery.md),not superseded historical findings.
+Inspect actual Git/status/files after compaction;this checkpoint is navigation only.
 
-```powershell
-git log -1 --format=%H -- docs/development/continuation-checkpoint.md
-git rev-parse HEAD origin/main
-git status --short
-```
+## Current stage and review findings
 
-The final user report records the actual documentation SHA after push. Do not assume
-the inspected source revision above is the current HEAD of a later session.
-Starting reference:`c10ad30fd2d7b24ece46604a57a820e565a93c92`,initially clean.
-Protected foundation001–020:321 scientific/support artifacts. All326 original
-working files also preserved,including5 original020 viewer-only files.
-Current research021 is implemented/analyzed,ACCEPT WITH QUALIFICATION,unprotected
-and unadopted. Independent primitive reconstruction is complete;independent formal
-scientific review is the NEXT task,not already claimed. No default/canon change.
+Stage A PASS,ACCEPT WITH QUALIFICATION;all baseline checks complete. No protection
+commit or022 runtime exists yet. Stage B contract/inventory341/shared verifier are
+uncommitted drafts;normal gate is not wired to021 yet.
+New docs/experiment-021-review.md and examples/support/review021_scope.py provide
+independent review and a complementary standard-library-only reader. No earlier
+reader/evaluator/scorer/analysis imports. It independently reconstructs214 worlds,
+68027 selections,599claims/396grants/203failures/934meals/671transfers/34inquiries/
+25112memorychanges;LastSeen43changed selection histories,14period material changes,
+0final material differences,10semantic trust differences. First changed selection
+has identical old local input. Eight complementary scratch corruptions are rejected.
+Original81/82 useful chain and31/32 costly stale failure were inspected directly.
+Passive sensing is a confound for general value claims;FreshReference is a strong
+simple frequency control. Expiry preserves acquired food without restoring quantity.
+No implementation defect identified. Original evidence remains unchanged.
 
-## Published milestones
+## Running checks and exact continuation
 
-1.020 independent review:`8e3b57466c5e6d78d4425e661d8d60f37c9b22eb`.
-2.001–020 protection:`6cdc87edb9bd35cb95c3686164f7a5ed18b7704a`.
-3.Main020 Explorer:`8e22d0af25b31dd7690d23e1407a6b18092aa386`.
-4.Phase diagnosis:`d54df3840b5c6e4942c1a80fd434417126e9241e`.
-5.021 preregistration:`ee1eb6bd15c2573b39ab3e3ae9109765efc9cdca`.
-6.021 implementation/original evidence:`20b68711dd5fbe1e60a2cdb58472d998c064cbcf`.
-7.F/G roadmap,bridge,final audit:this documentation milestone (resolve above).
+Logs outside archives: %TEMP%/concurrent-program.
+run-A.py pipeline COMPLETE:fmt0,Clippy0,full Rust211pass,standalone validate0210
+(214 exact bytes,original independent214/28),normal validate_contract001–0200
+(1194.44s). Complementary214/8pass and semantic trust pass. All346original working
+bytes and21source locks unchanged. No historical evaluator/writer was run.
+Durable evidence:concurrent-program-validation.json and
+experiment-021-review-verification.json. Completed sessions98202/89697.
 
-## Verified findings and implemented mechanisms
+Stage C draft explicit knowledge.py + explorer/finite/app/causal/index wiring and
+8newPython/1newJS tests. Full Python41PASS;all4actualJS filesPASS. Browser real021
+trial82 actor0tick28 showsreceipt3@24,age4,estimate12,Acquire10vsInvite3;observer
+original causal links inspected. Layout/chain order corrected,final browser acceptance
+remaining. Test server8767 PID138300;main8765 PID124312 remains old process;do not
+claim upgraded main server yet. Browser tab5 knowledgeReadyTab;tab4 failed before
+server startup;reuse tab5. Actor proof PNG under validation/knowledge-integration.
+C draft is excluded from the separate A commit. No022 code/specification exists.
 
-020 ACCEPT WITH QUALIFICATION,protected. Complementary independent scope reader
-checks164 worlds/60,384 choices/309 claims/242 grants/67 failures/1,095 meals/
-1,045 transfers,actual sharing/missed-help/exhaustion/null anchors. Original
-standalone020 unchanged;shared normal/standalone protection adds exact source-prefix
-parity,321 inventory and independent scope checks. See ../experiment-020-review.md,
-../integrity-audit-001-020.md and ../research-handoff-001-020.md.
+Next:review A staged diff and commit/push separate independent review. Then B wire
+shared021 superset into normal gate,complete audit/handoff/governance;run B required
+checks and standalone009–021. Validate/commit/push protection before022 runtime.
+Finish C authentic main-server/browser coverage and cost/acceptance,commit/push.
+D/E architecture/preregistration;F/G gated022 implementation/full original/replay/
+independent evidence;H real lanes/readiness;I design only,no023matrix. Follow full
+attached request. No retuning/default/canon changes.
 
-021 specification/design gate/214-row matrix were published before treatment code
-and outcomes. New src/environmental_knowledge.rs owns one dated Cell per actor,
-local receipts/own debits/explicit forgetting. src/simulation/environmental_knowledge.rs
-is a private isolated lifecycle adapter;src/experiment021.rs keeps the world handle
-private during claims. Need/Acquire scores and020 physical law remain unchanged.
-Only module declarations extend parent Rust files. Unknown is not zero. Success
-cannot restore expired quantity from an attempt/audit;food and legacy consequences
-may persist. Passive fixed sensing is not a voluntary Observe action.
+## Invariants and boundaries
 
-214 registered worlds each executed twice exactly and reproduced byte-for-byte;
-independent primitive reader214/28 corruption rejections.57 matched groups/157
-contrasts. LastSeen changes43 selections/14 period material trajectories;all57
-material endpoints match;the14 observed period divergences reconverge.10 retain changed semantic directed trust values.
-Useful ongoing chain,stale full-cost claims,mixed allocation,ordering reversal,
-expiry gains/losses and nulls remain. Fresh sensing can be better. Raw trust-map
-inequality161/163 is only stored-zero shape,not changed trust. See
-../../experiments/021/results.md,verification.md and trust-comparisons.json.
+Never edit original001–021 outcomes or frozen source bodies. New module wiring may
+require established source-prefix exemptions;inspect old validators before changes.
+Keep actor knowledge separate from current stock/audit;unknown is not zero;expired
+cognition cannot be reconstructed from pending attempts. Trust/concerns/food may
+persist separately. Four-person work must preserve independent consent,one clock,
+no double booking,conservation,deterministic phases and actual source links.
+No retuning policies to force concurrent pairs. No canon edits/default adoption.
 
-## Completed validation and cost
-
-Final fmt0;locked all-target denied-warning Clippy0;full Rust211 passed/0 failed,
-including9 new locality/forgetting/compatibility tests. All17 final commands PASS:
-normal001–020,standalone009–020,protected020 wrapper,separate021 byte replay/
-independent reconstruction/corruptions,selector/control measurement and throughput.
-All326 old working bytes,21 source locks and3 original021 archive envelopes remain
-unchanged. Canonical Git diff is empty. A source-registration format-only exception
-and a post-analysis read-only trust verifier are documented;no mechanism/matrix
-retuning occurred. No known behavioral/accounting/locality defect or required failure.
-Durable proof:../../experiments/021/validation-run.json and phase-2-validation.json.
-
-One ordered engineering run:matched fresh execution/capture +7.7%,raw trace +4.5%.
-214 trials751.2MB raw/14.9MB gzip;25,112 new observer memory records. Peak RSS not
-measured;archive writer materializes raw bytes. Different-mode runtime differences
-mix changed histories and are not isolated memory cost. No general optimization.
-
-## Viewer coverage and user deliverable
-
-Main http://127.0.0.1:8765 supports018/019/020,not021.164 original020 refs,33 Python
-tests,actual JS helpers and real-browser positive/negative/null/reconvergence/
-late-empty navigation verified. Actual main source→claim→transfer→meal inspection
-works with separate Actor/Observer lenses. See ../../tools/history-explorer/
-validation/finite-integration/acceptance.md and performance.json. Main server PID
-at final inspection124312;preserved original demo8766 PID155280. Verify actual
-process/URL before reuse;do not stop user deliverables without reason.
-
-## Current stage,remaining work and stop gates
-
-A–G complete;no implementation remains authorized by this program.
-[Delivery audit](phase-2-delivery.md),[roadmap](long-term-autonomous-community-roadmap.md),
-[non-canon bridge](eldoria-simulation-bridge.md) and[phase diagnosis](world-of-individuals-phase-2-assessment.md)
-connect evidence to future questions. Canon/status sources were inspected;no
-canonical file changed. No future mechanism is authorized by a roadmap phase.
-
-NEXT:independently review021's scoring,matched prefixes,actual consequences,
-retention versus sensing controls,semantic projections and negative evidence.
-Challenge whether continuity remains useful when observing is voluntary/costly.
-Do not protect/adopt021 automatically. Do not begin022.
-
-Known limits:one finite stationary cache,three actors,passive glances,prepared
-traits/history,capped hunger,short windows,one resource pair/atomic query. The
-provisional query-blocking branch remains without a registered witness. No renewed
-supply,spatial life or continuously functioning community. Growing audit storage
-and duplicated lifecycle code constrain scale. Production,travel,institutions,
-markets,language/story generation and canon changes require separate authorization.
+Main Explorer at8765 previously supports018/019/020 only;verify actual process and
+reuse user deliverable. Preserved020 prototype at8766. No021/022 viewer claimed.

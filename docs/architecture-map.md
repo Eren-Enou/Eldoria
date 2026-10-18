@@ -60,7 +60,8 @@ bounded range. A row identifies starting files, not permission to skip affected 
 021 local environmental knowledge:[specification](../experiments/021/specification.md),
 [qualified gate](../experiments/021/design-gate.md),[results](../experiments/021/results.md),
 [verification](../experiments/021/verification.md).214 executed originals,independent
-reconstruction/exact replay;ACCEPT WITH QUALIFICATION,not protected/adopted.
+reconstruction/exact replay;[independent review](experiment-021-review.md) accepts
+with qualification;protection gate pending,no adoption.
 Owners:`src/environmental_knowledge.rs`,`src/simulation/environmental_knowledge.rs`,
 `src/experiment021.rs`;`tests/environmental_knowledge.rs`;separate validate021,
 independent knowledge021/review021/compare021/findings021/review021_trust readers. One owned slot,

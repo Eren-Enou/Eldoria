@@ -191,18 +191,19 @@ actor cognition. Viewer-only edits need appropriate data/projection/browser chec
 reuse simulation checks only at an unchanged relevant Rust/fixture revision. Do not
 rebuild old evidence to adapt a viewer schema or recover missing cognition.
 
-Experiment020 is unprotected,opt-in research:[specification](../experiments/020/specification.md),
+Experiment020 is independently reviewed/protected with qualification,opt-in research:[specification](../experiments/020/specification.md),
 [results](../experiments/020/results.md),[verification](../experiments/020/verification.md).
 Follow its architecture-map row for cache/claim/time code and independent reader.
-Use standalone validate020 alongside protected gates;do not add it to001–019 or
-rewrite old evidence. Keep current-stock legality separate from learned avoidance,
+Use frozen standalone validate020 and shared validate020_foundation alongside the
+normal protected gate;001–019 history remains unchanged. Never rewrite old evidence. Keep current-stock legality separate from learned avoidance,
 initial-placement controls separate from access,and per-actor costs separate from
-global welfare.020's observer demo is an explicit separate schema adapter. No021.
+global welfare.020 is first-class in the main Explorer;its earlier observer demo
+remains an explicit separate schema.021 has a separate scientific review.
 
 ## Current021 research entry point
 
-The protected endpoint is001–020;the separate021 study is implemented and analyzed,
-not protected/adopted. Read experiments/021/results.md and verification.md,then
+The protected endpoint is001–020;the separate021 study is independently reviewed
+[ACCEPT WITH QUALIFICATION](experiment-021-review.md),protection gate pending,no adoption. Read experiments/021/results.md and verification.md,then
 specification/design-gate/registered-matrix only as relevant. For new owned state,
 inspect src/environmental_knowledge.rs;for physical timing/local projection,inspect
 src/simulation/environmental_knowledge.rs;for fixtures,src/experiment021.rs.

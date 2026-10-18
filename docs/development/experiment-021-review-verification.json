@@ -1,0 +1,843 @@
+{
+  "reviewed_revision": "20c85adfe84acdefa125fc74fe6cd4093165e15d",
+  "method": "Independent standard-library-only original-source reconstruction; not an evaluator or old-reader import",
+  "complementary_corruptions": [
+    "foreign_receipt",
+    "invented_quantity",
+    "receipt_reuse",
+    "rejuvenated_take",
+    "unavailable_choice",
+    "false_grant",
+    "duplicate_meal",
+    "wrong_deadline"
+  ],
+  "contrasts": {
+    "Expire12": {
+      "choices": 33,
+      "final": 0,
+      "pairs": 44,
+      "periods": 12,
+      "trust": 6
+    },
+    "FreshReference": {
+      "choices": 6,
+      "final": 0,
+      "pairs": 28,
+      "periods": 6,
+      "trust": 4
+    },
+    "LastSeen": {
+      "choices": 43,
+      "final": 0,
+      "pairs": 57,
+      "periods": 14,
+      "trust": 10
+    },
+    "Unobserved": {
+      "choices": 24,
+      "final": 24,
+      "pairs": 28,
+      "periods": 24,
+      "trust": 15
+    }
+  },
+  "groups": 57,
+  "totals": {
+    "claims": 599,
+    "failures": 203,
+    "grants": 396,
+    "inquiries": 34,
+    "meals": 934,
+    "memory": 25112,
+    "selected_overestimates": 114,
+    "selections": 68027,
+    "transfers": 671,
+    "worlds": 214
+  },
+  "witnesses": {
+    "1": {
+      "area": [
+        11560,
+        10200,
+        8425
+      ],
+      "counts": {
+        "claims": 5,
+        "failures": 2,
+        "grants": 3,
+        "inquiries": 1,
+        "meals": 3,
+        "memory": 78,
+        "selected_overestimates": 0,
+        "selections": 215,
+        "transfers": 0,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          -100,
+          -100
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "11": {
+      "area": [
+        12080,
+        14400,
+        14400
+      ],
+      "counts": {
+        "claims": 2,
+        "failures": 0,
+        "grants": 2,
+        "inquiries": 0,
+        "meals": 2,
+        "memory": 98,
+        "selected_overestimates": 0,
+        "selections": 228,
+        "transfers": 0,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          -100,
+          -100
+        ],
+        [
+          0,
+          0,
+          -33
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "12": {
+      "area": [
+        14400,
+        14400,
+        12120
+      ],
+      "counts": {
+        "claims": 4,
+        "failures": 2,
+        "grants": 2,
+        "inquiries": 0,
+        "meals": 2,
+        "memory": 57,
+        "selected_overestimates": 0,
+        "selections": 218,
+        "transfers": 0,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          -100,
+          -100
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "153": {
+      "area": [
+        13040,
+        9430,
+        9430
+      ],
+      "counts": {
+        "claims": 6,
+        "failures": 3,
+        "grants": 3,
+        "inquiries": 0,
+        "meals": 3,
+        "memory": 31,
+        "selected_overestimates": 4,
+        "selections": 232,
+        "transfers": 0,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          -100,
+          -100
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "154": {
+      "area": [
+        13040,
+        9430,
+        9430
+      ],
+      "counts": {
+        "claims": 4,
+        "failures": 1,
+        "grants": 3,
+        "inquiries": 0,
+        "meals": 3,
+        "memory": 52,
+        "selected_overestimates": 2,
+        "selections": 229,
+        "transfers": 0,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          -100,
+          -100
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "161": {
+      "area": [
+        48730,
+        39270,
+        35685
+      ],
+      "counts": {
+        "claims": 12,
+        "failures": 0,
+        "grants": 12,
+        "inquiries": 0,
+        "meals": 36,
+        "memory": 190,
+        "selected_overestimates": 0,
+        "selections": 893,
+        "transfers": 26,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          100,
+          0
+        ],
+        [
+          100,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "162": {
+      "area": [
+        43035,
+        35215,
+        44115
+      ],
+      "counts": {
+        "claims": 13,
+        "failures": 1,
+        "grants": 12,
+        "inquiries": 0,
+        "meals": 36,
+        "memory": 107,
+        "selected_overestimates": 7,
+        "selections": 879,
+        "transfers": 43,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          100,
+          0
+        ],
+        [
+          100,
+          0,
+          100
+        ],
+        [
+          0,
+          100,
+          0
+        ]
+      ]
+    },
+    "163": {
+      "area": [
+        45130,
+        39050,
+        44955
+      ],
+      "counts": {
+        "claims": 12,
+        "failures": 0,
+        "grants": 12,
+        "inquiries": 0,
+        "meals": 36,
+        "memory": 204,
+        "selected_overestimates": 6,
+        "selections": 899,
+        "transfers": 20,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          100,
+          0
+        ],
+        [
+          100,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "186": {
+      "area": [
+        14400,
+        14400,
+        12080
+      ],
+      "counts": {
+        "claims": 2,
+        "failures": 0,
+        "grants": 2,
+        "inquiries": 0,
+        "meals": 2,
+        "memory": 100,
+        "selected_overestimates": 0,
+        "selections": 226,
+        "transfers": 0,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          -36,
+          -36
+        ],
+        [
+          -33,
+          0,
+          0
+        ],
+        [
+          -100,
+          -100,
+          0
+        ]
+      ]
+    },
+    "187": {
+      "area": [
+        14400,
+        14400,
+        12120
+      ],
+      "counts": {
+        "claims": 4,
+        "failures": 2,
+        "grants": 2,
+        "inquiries": 1,
+        "meals": 2,
+        "memory": 48,
+        "selected_overestimates": 0,
+        "selections": 211,
+        "transfers": 0,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          -66,
+          0,
+          0
+        ],
+        [
+          -100,
+          -100,
+          0
+        ]
+      ]
+    },
+    "2": {
+      "area": [
+        13040,
+        9430,
+        9430
+      ],
+      "counts": {
+        "claims": 4,
+        "failures": 1,
+        "grants": 3,
+        "inquiries": 0,
+        "meals": 3,
+        "memory": 54,
+        "selected_overestimates": 2,
+        "selections": 229,
+        "transfers": 0,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          -100,
+          -100
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "31": {
+      "area": [
+        13040,
+        14200,
+        10200
+      ],
+      "counts": {
+        "claims": 2,
+        "failures": 1,
+        "grants": 1,
+        "inquiries": 0,
+        "meals": 1,
+        "memory": 106,
+        "selected_overestimates": 0,
+        "selections": 227,
+        "transfers": 0,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          -100,
+          -100
+        ],
+        [
+          -32,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "32": {
+      "area": [
+        13040,
+        14200,
+        10200
+      ],
+      "counts": {
+        "claims": 3,
+        "failures": 2,
+        "grants": 1,
+        "inquiries": 0,
+        "meals": 1,
+        "memory": 55,
+        "selected_overestimates": 1,
+        "selections": 225,
+        "transfers": 0,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          -100,
+          -100
+        ],
+        [
+          -32,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "80": {
+      "area": [
+        42915,
+        35110,
+        43525
+      ],
+      "counts": {
+        "claims": 12,
+        "failures": 0,
+        "grants": 12,
+        "inquiries": 0,
+        "meals": 36,
+        "memory": 900,
+        "selected_overestimates": 0,
+        "selections": 888,
+        "transfers": 38,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          100,
+          0
+        ],
+        [
+          100,
+          0,
+          100
+        ],
+        [
+          0,
+          100,
+          0
+        ]
+      ]
+    },
+    "81": {
+      "area": [
+        45230,
+        39035,
+        45525
+      ],
+      "counts": {
+        "claims": 12,
+        "failures": 0,
+        "grants": 12,
+        "inquiries": 0,
+        "meals": 36,
+        "memory": 402,
+        "selected_overestimates": 0,
+        "selections": 898,
+        "transfers": 22,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          100,
+          0
+        ],
+        [
+          100,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "82": {
+      "area": [
+        43035,
+        35215,
+        44115
+      ],
+      "counts": {
+        "claims": 13,
+        "failures": 1,
+        "grants": 12,
+        "inquiries": 0,
+        "meals": 36,
+        "memory": 203,
+        "selected_overestimates": 5,
+        "selections": 879,
+        "transfers": 43,
+        "worlds": 1
+      },
+      "final": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          100,
+          100
+        ],
+        0
+      ],
+      "trust": [
+        [
+          0,
+          100,
+          0
+        ],
+        [
+          100,
+          0,
+          100
+        ],
+        [
+          0,
+          100,
+          0
+        ]
+      ]
+    }
+  }
+}
