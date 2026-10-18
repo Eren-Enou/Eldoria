@@ -1,0 +1,11 @@
+{
+  "experiments/021/specification.md": "7f57fb6040c5d4940c2f55967e8ae526b3d81ebf447e4b1c193154a0286c1acc",
+  "experiments/021/design-gate.md": "db53b3663afd9218530a91e0810d0e1a1df12e49396785ce67410bb1e710ca16",
+  "experiments/021/registered-matrix.json": "e77b8f8026b6697f9d995917a9e30dfe8a533da67f57d9430e8947da3da584d2",
+  "src/environmental_knowledge.rs": "34de05f38106ffc75c87b3fde625950952553a5c0480d2e2f1b1bdfa4ca21ccc",
+  "src/simulation/environmental_knowledge.rs": "ae205f333f7e3714e59e269b6984cb0018bbacd9f7212cbcc7d5a4ec6e2776a8",
+  "src/experiment021.rs": "383126d5b6c453f6f4d3e7888fffcd6659cde96c04bde9296620c316c665c78c",
+  "src/lib.rs": "0020bf81cb66fa42ceb9fd712b347f5feb3b806835d88b6e2a1126cce67a066f",
+  "src/simulation.rs": "b6399c8a0db55508935864d4fdd6d7df06cf346bf37b3a82c12d8035485d2980",
+  "tests/environmental_knowledge.rs": "ef242829d3b0a46a62f6688fb4b9cffc681654e7c5c7543c4f5e9d8e82a5bc38"
+}

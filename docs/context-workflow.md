@@ -198,3 +198,15 @@ Use standalone validate020 alongside protected gates;do not add it to001–019 o
 rewrite old evidence. Keep current-stock legality separate from learned avoidance,
 initial-placement controls separate from access,and per-actor costs separate from
 global welfare.020's observer demo is an explicit separate schema adapter. No021.
+
+## Current021 research entry point
+
+The protected endpoint is001–020;the separate021 study is implemented and analyzed,
+not protected/adopted. Read experiments/021/results.md and verification.md,then
+specification/design-gate/registered-matrix only as relevant. For new owned state,
+inspect src/environmental_knowledge.rs;for physical timing/local projection,inspect
+src/simulation/environmental_knowledge.rs;for fixtures,src/experiment021.rs.
+Independent readers are knowledge021/review021/compare021/findings021 in
+examples/support. Use validate021 read-only;never regenerate originals in place.
+Current main Explorer supports018/019/020,not021. The continuation checkpoint and
+community roadmap guide a separate independent021 review before further work;no022.

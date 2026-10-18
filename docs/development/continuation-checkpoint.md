@@ -1,61 +1,89 @@
 # Phase 2 continuation checkpoint
 
-Objective: execute the user-authorized gated020 review/protection, unified Explorer,
-integration diagnosis, prospective021 gate, roadmap and canon-separated bridge.
+Objective:complete the user-authorized020 independent review/protection,unified
+History Explorer,integration diagnosis,gated021 study,roadmap and non-canon bridge.
+Inspect actual Git/files/logs before continuing;this is navigation,not authority.
 
-Starting reference: `c10ad30fd2d7b24ece46604a57a820e565a93c92`,clean `main`.
-Current published HEAD/origin main: `d54df3840b5c6e4942c1a80fd434417126e9241e`;
-A/B/C/D are validated,published and pushed.
-Protected endpoint001–020 (321 artifacts),published as6cdc87e.
-Current research021 is prospective,gated and preregistered;not implemented or
-evaluated yet. No default adoption or automatic021 protection.
+## Revision and status
 
-## Active stage
+Branch main. Published HEAD/origin main at checkpoint inspection:
+`ee1eb6bd15c2573b39ab3e3ae9109765efc9cdca` (021 preregistration).
+This checkpoint is published with the implementation/evidence commit;resolve its
+exact revision with `git log -1 --format=%H -- docs/development/continuation-checkpoint.md`.
+The inspected parent above is a historical verification reference,not a future HEAD.
+Starting reference:`c10ad30fd2d7b24ece46604a57a820e565a93c92`,initially clean.
+Protected endpoint001–020,321 scientific/support artifacts;326 original working
+files additionally guarded,including original020 viewer-only files. Current021
+is implemented and analyzed,unprotected/unadopted;all required gates PASSED.
 
-A completed: independent020 review pushed as `8e3b57466c5e6d78d4425e661d8d60f37c9b22eb`.
-Verdict ACCEPT WITH QUALIFICATION; complementary reader
-checks all164 histories without importing earlier readers. Original standalone020
-passes164 exact byte replays and20 corruption categories. Baseline001–019 foundation,formatting,Clippy and202 Rust tests passed. See [review](../experiment-020-review.md).
+Published coherent milestones:
 
-Verified complementary totals:60,384 choices,309 claims,242 grants,1,095 meals,
-1,045 transferred units. It independently reproduces sharing33, lost_contact26/28/29,
-ongoing permanent owned exhaustion258/165/213 and65/85/74 later empty scenes.
-Raw working-byte guard in `%TEMP%/phase2-program/original-bytes.json`:326 files,
-296 inherited plus every30 original020 directory files. Not a new foundation inventory.
+1.020 review8e3b57466c5e6d78d4425e661d8d60f37c9b22eb.
+2.001–020 protection6cdc87edb9bd35cb95c3686164f7a5ed18b7704a.
+3.Main Explorer8e22d0af25b31dd7690d23e1407a6b18092aa386.
+4.Phase diagnosis d54df3840b5c6e4942c1a80fd434417126e9241e.
+5.021 preregistration ee1eb6bd15c2573b39ab3e3ae9109765efc9cdca.
 
-## Other prepared work (not completed gates)
+## Completed scientific evidence
 
-B completed validation:321-artifact inventory (296 inherited +25 scientific020 files),contract,
-shared superset retaining frozen standalone text,normal gate wiring and wrapper.
-Standalone original020 and protected020 superset passed. Final001–020 integration
-passed from `target/phase2-foundation` to avoid a Windows executable collision.
-Standalone009–019 sequence passed (exact statuses `%TEMP%/phase2-program/B-standalones.json`).
-Gate B PASS,published6cdc87e. No behavioral021 yet.
+020 ACCEPT WITH QUALIFICATION;independent scope reader checks164 worlds,60,384
+choices,309 claims/242 grants/67 failures,1,095 meals/1,045 transfers,causal sharing/
+missed-help/exhaustion anchors. Frozen standalone020 unchanged;normal foundation
+adds exact source-prefix parity,321 inventory and independent scope checks. Earlier
+202 tests and full001–020 foundation/standalones passed before021 implementation.
 
-C main-viewer adapter explicitly supports164 originals with zero-based ordinals,
-captured actor inputs,claim/omission/material chains and physically qualified
-comparisons. Python full33 passed,latest pressure/material comparison passed,actual JS
-helpers pass,real positive/negative browser navigation verified. Acceptance is at
-`tools/history-explorer/validation/finite-integration/acceptance.md`;main8765 follows
-observation→claim→transfer→meal with correct protected status. Viewer published as8e22d0a. First index28.33s;selected
-cold2.55–4.76s/cached0.48–2.99s in one concurrent engineering run.
+021 was specified and pushed before code/outcomes. One owned dated Cell per actor,
+local receipts/own debits,CurrentOnly/LastSeen/Expire12 plus fresh/no-channel controls.
+020 physical law and Need/Acquire scores unchanged;only new pub/module declarations
+in parent Rust files. Pure policy excludes observer/future/private rival state.
+Grant after forgetting cannot restore quantity;food may persist. Passive fixed
+sensing is not a voluntary Observe action. See experiments/021/specification.md.
 
-D assessment is published d54df38. E specification/design gate/214-row matrix are
-ready for separate preregistration publication;no treatment code/outcomes yet.
-F/G roadmap/canon bridge are drafted,uncommitted. Canon files unchanged.
+214 registered worlds each executed twice exactly;independent primitive reader
+verifies214 and rejects28 corruptions.57 matched groups/157 contrasts. LastSeen
+changes43 choices/14 period material trajectories;all57 final material projections
+reconverge.10 retain different final directed trust values. Useful ongoing chain,
+stale empty claims,mixed distribution,order reversal and expiry costs preserved.
+Verdict ACCEPT WITH QUALIFICATION as research;all compatibility gates PASS;
+no adoption/protection. Raw trust-map inequality161/163 is only a stored-zero
+shape difference,not a changed trust value. See experiments/021/results.md.
 
-## Boundaries and next action
+## Worktree and verification
 
-No behavior, default, cognitive capacity, canon or original outcome changed.
-Current020 has ephemeral current sensing, finite unrenewed stock, three people,
-one cache, at most three claims and one resource commitment. Atomic query/claim
-provisional rejection has no registered witness. Current main Explorer has validated,published first-class020 support;the separately
-archived original demonstration remains unchanged.
+Implemented021 source:src/environmental_knowledge.rs,src/experiment021.rs,
+src/simulation/environmental_knowledge.rs;2 parent module declarations;9 tests;
+evaluate021/validate021/measure021;independent knowledge021/review021/compare021/
+findings021/review021_trust/archive021 helpers. Original021 archives/manifests/results/verification
+are under experiments/021. Source freeze21 inputs (20 original plus read-only trust verifier);one format-only change
+is explicitly documented against preregistered hashes. No outcome retuning.
 
-A/B/C/D passed and are committed/pushed. Publish E preregistration before code.
-The gate chooses passive intermittent sensing to isolate one owned slot per actor;
-CurrentOnly/LastSeen/Expire12 share slots,FreshReference is a frequency control,
-Unobserved a channel ablation. Preserve020 physics and Need/Acquire weights. Own
-grant cannot restore an expired quantity from attempt/audit;food may persist.
-See experiments/021/specification.md for exact semantics,matrix,controls and limits. Do not begin022 or automatically protect021.
-Do not change canon. Verify actual Git/files/check logs after session/context changes.
+Verified after implementation:fmt0,locked all-target denied-warning Clippy0,
+full Rust211 passed/0 failed,9 targeted tests,214 exact evaluator replays,
+214 independent reconstructions/28 corruptions,scientific anchors,326 original
+working bytes unchanged. Full final source/fixture revision normal001–020 foundation PASSED (1,414.52s).
+Standalone009–021,protected020 wrapper,selector/control measurement and throughput
+all PASS:17 gates0,211 tests,214 original byte replays. All326 old working bytes,
+21 source locks and3 original021 archive envelopes verified unchanged after checks.
+Durable commands/statuses:experiments/021/validation-run.json;performance.txt and
+measurement-summary.json keep engineering timings separate. No known required
+failure remains. No outcome retuning or canon changes.
+
+Main Explorer8765 supports018/019/020,not021. All164020 refs,33 Python tests,
+actual JS helper tests and real browser source→claim→transfer→meal/negative/null/
+reconvergence/late-empty scenes verified. See tools/history-explorer/validation/
+finite-integration/acceptance.md and performance.json. Main server PID124312;
+preserved original demo8766 PID155280. Do not stop user deliverables.
+
+## Remaining work and stop gates
+
+E implementation/results/original evidence and final checks are complete. Publish
+this coherent validated milestone to main/origin. F/G roadmap and Eldoria bridge
+are drafted and must be separately published with final navigation/checkpoint/
+delivery audit. Original scientific evidence and global defaults remain unchanged.
+
+Known limits:one finite stationary cache,three actors,passive glimpses,short windows,
+prepared traits/history,capped hunger,one resource pair/atomic query. Provisional
+query-blocking still has no matrix witness. Source/observer history grows;private
+lifecycle duplication risks drift. No sustainable supply or continuous community.
+Next session after completion:independent021 review,not automatic protection/adoption
+or another experiment. No022,production,travel,institutions,planner or canon changes.

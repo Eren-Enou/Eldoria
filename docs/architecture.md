@@ -858,3 +858,26 @@ references and qualified comparisons. Caches/exports are non-authoritative and n
 inputs to policies,replay validation or the normal foundation. The explicit finite.py
 020 adapter adds source-preserving actor/observer cache and claim views,not new
 simulation behavior or live control.
+
+## Experiment021 — owned environmental knowledge (unprotected research)
+
+The opt-in `environmental_knowledge` module adds one owned Cell per individual
+(dated Observation plus own-take counter),separate from social episodes,Grouped
+assessment and observer records. Actor-local receipt counters reveal no rivals'
+observations. Pure Input contains only old own/public encounter state,optional own
+Cell,public duration and inquiry-lane availability. Need/Acquire preserve020 scores,
+ties and legality gates except the explicit owned-knowledge eligibility condition.
+
+The private021 lifecycle adapter preserves020 physical progression but supplies
+observations at actual free boundaries on fixed absolute slots. Completion passes
+only one's own result,not cache balances or rival data,to the store. A grant never
+resurrects an expired quantity from the attempt's observer copy;owned food persists.
+Depleted results and later sensing are new receipt channels. CurrentOnly discards,
+LastSeen retains,Expire12 removes age>=12. No active observation action is modeled.
+
+`experiment021` keeps a private Simulation wrapper while claims exist;it does not
+expose a generic handle that could advance time around deadlines. Lifecycle code
+is locally duplicated to leave frozen020 source byte-identical. Drift risk remains;
+fresh/disabled-path tests and read-only001–020/021 replays are required rather than
+assuming apparent code similarity proves compatibility. [Results](../experiments/021/results.md)
+are qualified research,not adoption/protection or general scheduling evidence.

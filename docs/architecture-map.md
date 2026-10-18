@@ -48,18 +48,24 @@ rows when ownership, entry points or mode boundaries change.
 | Activity priority/timing sensitivity (019 protected with qualification) | [priorities.rs](../src/priorities.rs), [small idle adapter](../src/simulation/priorities.rs), [fixture](../src/experiment019.rs); reuses protected018 clock/stepper | `tests/experiment019.rs`, shared/standalone `validate019`, `review019.py`, complementary `review019_findings.py`, post-evaluation `review019_slices.py`, `measure019`; [specification](../experiments/019/specification.md), [results](../experiments/019/results.md), [review](experiment-019-review.md), [contract](experiment-contract-001-019.md);296 artifacts,no adoption |
 | Finite environmental acquisition (020 protected with qualification) | [cache/policy](../src/acquisition.rs),[isolated lifecycle](../src/simulation/acquisition.rs),[fixture](../src/experiment020.rs);no default path changes | `tests/acquisition.rs`,frozen standalone `validate020`,shared `contract020.rs`/`validate020_foundation`,`review020.py`/`review020_scope.py`,`measure020`;[specification](../experiments/020/specification.md),[results](../experiments/020/results.md),[verification](../experiments/020/verification.md);[review](experiment-020-review.md),[contract](experiment-contract-001-020.md);164 original histories,20 corruptions,321 protected artifacts;no adoption |
 | Read-only History Explorer application | [app/tooling](../tools/history-explorer/README.md), `tools/history-explorer/explorer.py`, `causal.py`/`causal.js`, `finite.py`, `perspective.js`, `app.js`; [technical guide](development/history-explorer-architecture.md) | Python real-archive and typed-link tests, JS owned-point/filter/order tests, explicit020 actor/claim/material comparison and all164 original references,[020 acceptance](../tools/history-explorer/validation/finite-integration/acceptance.md),real-browser node navigation, [original acceptance](../tools/history-explorer/validation/acceptance.md), [causal acceptance](../tools/history-explorer/validation/causal-navigation-acceptance.md); one-way consumer, no foundation dependency |
-| CLI and reproducible experiment fixtures | [main.rs](../src/main.rs), `src/experiment.rs`, `src/experiment002.rs` … `src/experiment020.rs` | Corresponding experiment tests/evaluators |
+| CLI and reproducible experiment fixtures | [main.rs](../src/main.rs), `src/experiment.rs`, `src/experiment002.rs` … `src/experiment021.rs` | Corresponding experiment tests/evaluators |
 | Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), shared `examples/support/contract009.rs` … `contract020.rs`, independent010–020 readers | Cache-free010–020 validation; shared standalone gates; historical summaries unchanged; [latest integrity audit](integrity-audit-001-020.md) |
 | Throughput workload / history measurements | [throughput.rs](../benches/throughput.rs), `examples/measure_history.rs` | Separate wall-clock output; historical reports unchanged |
 
 Use `rg -n 'symbol' path/to/file.rs` to locate implementation before reading a
 bounded range. A row identifies starting files, not permission to skip affected callers.
 
-## Prospective research
+## Research outside the protected foundation
 
-021 local environmental knowledge has a[specification](../experiments/021/specification.md),
-[qualified design gate](../experiments/021/design-gate.md) and214 registered rows.
-Not implemented or evaluated yet;not protected or adopted. No022.
+021 local environmental knowledge:[specification](../experiments/021/specification.md),
+[qualified gate](../experiments/021/design-gate.md),[results](../experiments/021/results.md),
+[verification](../experiments/021/verification.md).214 executed originals,independent
+reconstruction/exact replay;ACCEPT WITH QUALIFICATION,not protected/adopted.
+Owners:`src/environmental_knowledge.rs`,`src/simulation/environmental_knowledge.rs`,
+`src/experiment021.rs`;`tests/environmental_knowledge.rs`;separate validate021,
+independent knowledge021/review021/compare021/findings021/review021_trust readers. One owned slot,
+passive observations,unchanged020 scores/physics. Preserve stale failure,unknown
+and expiry versus persistent material;no archive recovery. No022.
 
 ## Flow and boundaries
 

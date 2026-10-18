@@ -1,0 +1,28 @@
+{
+  "note": "Single concurrent engineering run;wall clock excluded from deterministic evidence.",
+  "trials": 214,
+  "execution_us": {
+    "total": 996503,
+    "median": 3726.5,
+    "p95": 13195,
+    "max": 17435
+  },
+  "replay_us": {
+    "total": 1054493,
+    "median": 3704.0,
+    "p95": 13947,
+    "max": 19588
+  },
+  "serialization_us": {
+    "total": 1745606,
+    "median": 6460.5,
+    "p95": 21797,
+    "max": 34389
+  },
+  "bytes": {
+    "total": 751188823,
+    "median": 2822714.0,
+    "p95": 8800775,
+    "max": 15611353
+  }
+}

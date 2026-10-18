@@ -177,3 +177,19 @@ Main Explorer now supports all164 original020 worlds through an explicit version
 adapter,including actor-local cache observations,claim/busy/outcome chains and
 qualified cache-inclusive comparisons;[acceptance](../../tools/history-explorer/validation/finite-integration/acceptance.md).
 The old separate observer demo and all original evidence remain unchanged.
+
+## Experiment021 — Local Environmental Knowledge and Opportunity Continuity
+
+[Specification](../../experiments/021/specification.md),[design gate](../../experiments/021/design-gate.md),
+[results](../../experiments/021/results.md),[verification](../../experiments/021/verification.md).
+Preregistered214 worlds;ACCEPT WITH QUALIFICATION as research,unprotected and unadopted.
+CurrentOnly/LastSeen/Expire12 isolate retention under the same passive glimpse slots;
+FreshReference and Unobserved are frequency/channel controls. LastSeen changes43/57
+matched selections and14 period material trajectories;all57 final material states
+reconverge. Useful ongoing continuity,stale full-cost failures,mixed distribution,
+order reversal and expiry tradeoffs are preserved. Independent primitive reader,
+28 corruption categories,all original byte replays and separate validate021. New
+one-slot store never restores expired quantity from attempts/audit;owned food and
+legacy consequences may persist. No active sensing,production,travel,community claim,
+foundation extension or022. Main Explorer's explicit schemas remain018/019/020;
+021 is scientific JSON evidence,not silently coerced into020 playback.

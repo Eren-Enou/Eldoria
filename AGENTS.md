@@ -99,6 +99,15 @@ Preserve the review corrections: high-support longitudinal C64 is not B64; late
 episodic valence0 reflects the last-four partner-memory window, not episode eviction.
 The gate's schedule-phase robustness and effort justification remain unestablished.
 
+Experiment021 is separate research, ACCEPT WITH QUALIFICATION, unprotected and
+unadopted; see experiments/021/results.md and its separate validate021 gate.
+One owned dated record per actor, fixed passive glances, unchanged020 scores/physics.
+Preserve stale losses, mixed distribution, expiry tradeoffs and endpoint material
+reconvergence. Own food may persist after quantity expires; no attempt/archive
+recovery. FreshReference/Unobserved are frequency/channel controls, not pure retention
+contrasts. No active exploration, sustainable community or global adoption established.
+Do not automatically extend001–020 or begin022. Next work requires independent review.
+
 Build progressively toward a persistent fictional world. Experiment 001 is only
 resource interaction, subjective memory, and subsequent behavioral consequences.
 Keep systems replaceable; do not add speculative civilization or live Observer/Book

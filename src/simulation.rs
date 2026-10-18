@@ -1,5 +1,6 @@
 mod acquisition;
 mod contact_learning;
+mod environmental_knowledge;
 mod opportunities;
 mod priorities;
 mod recurring;

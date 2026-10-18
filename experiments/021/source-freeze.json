@@ -1,0 +1,23 @@
+{
+  "src/environmental_knowledge.rs": "34de05f38106ffc75c87b3fde625950952553a5c0480d2e2f1b1bdfa4ca21ccc",
+  "src/simulation/environmental_knowledge.rs": "27ffd1a7330781032627d4f31723f53db96ad233cb2e38d33636b44bfdebf363",
+  "src/experiment021.rs": "383126d5b6c453f6f4d3e7888fffcd6659cde96c04bde9296620c316c665c78c",
+  "src/lib.rs": "0020bf81cb66fa42ceb9fd712b347f5feb3b806835d88b6e2a1126cce67a066f",
+  "src/simulation.rs": "b6399c8a0db55508935864d4fdd6d7df06cf346bf37b3a82c12d8035485d2980",
+  "tests/environmental_knowledge.rs": "ef242829d3b0a46a62f6688fb4b9cffc681654e7c5c7543c4f5e9d8e82a5bc38",
+  "examples/evaluate021.rs": "a9aca832f440c635595520444d29fc076dd5a8bbab1be9a7b6b21855bb93b496",
+  "examples/validate021.rs": "0061a82f34a8fb8740938f850212208891219692fa293060906e287af3ded137",
+  "examples/measure021.rs": "1375c360e2c2fdafaf3d3309ac1688e809a885e4ac40bab198b8e4ed69624012",
+  "examples/support/knowledge021.py": "f4e0cb90e711d44c94c4c1bbcbbbc2fc7466620ccce413b94fa02ca007a6e237",
+  "examples/support/review021.py": "592bf0e25a6154cee93a7425f16ddd62daba5051e01f0068de8d26055ea9d83e",
+  "examples/support/compare021.py": "373ad7dd65717b2ed7ea7f9a530e01d0b762cc35fda4df591833629aa89d08db",
+  "examples/support/findings021.py": "002e3ad8ab0d0c284736bc2908e7101d3f53297f763c8488d8b4b4ca192ebc0e",
+  "examples/support/archive021.py": "1e9073aa3bc6851df815462a83ce75ac6ac493f4e246023e0e444e4089c6c6f0",
+  "experiments/021/specification.md": "7f57fb6040c5d4940c2f55967e8ae526b3d81ebf447e4b1c193154a0286c1acc",
+  "experiments/021/design-gate.md": "db53b3663afd9218530a91e0810d0e1a1df12e49396785ce67410bb1e710ca16",
+  "experiments/021/registered-matrix.json": "e77b8f8026b6697f9d995917a9e30dfe8a533da67f57d9430e8947da3da584d2",
+  "experiments/021/preregistration-source-freeze.json": "84a007fbdbc6709372327a9e9d8fd2555575c7cc439ffbb42ff18cbcff776acc",
+  "experiments/021/format-only-after-registration.json": "7a7f651e572fb3a062da5e7eb686e089f5bd3c70c826fdbb4778a1f08c0ce444",
+  "experiments/021/causal-slices.json": "81df8fd1fad90e53fed2745cb24d72397cb5af5b075bce3753a84a557e6f00af",
+  "examples/support/review021_trust.py": "47a4d5c560fe5765e9397d14e9f6603ef7936218d5de99d9b0f955bf51c0d78a"
+}

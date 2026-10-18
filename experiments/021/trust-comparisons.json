@@ -1,0 +1,170 @@
+{
+  "definition": "directed trust values use absent entry=0; raw comparison field is exact map equality",
+  "modes": {
+    "LastSeen": {
+      "value_differences": [
+        [
+          11,
+          12
+        ],
+        [
+          71,
+          72
+        ],
+        [
+          81,
+          82
+        ],
+        [
+          86,
+          87
+        ],
+        [
+          152,
+          153
+        ],
+        [
+          155,
+          156
+        ],
+        [
+          161,
+          162
+        ],
+        [
+          176,
+          177
+        ],
+        [
+          186,
+          187
+        ],
+        [
+          188,
+          189
+        ]
+      ],
+      "shape_only_differences": []
+    },
+    "Expire12": {
+      "value_differences": [
+        [
+          11,
+          13
+        ],
+        [
+          71,
+          73
+        ],
+        [
+          81,
+          83
+        ],
+        [
+          86,
+          88
+        ],
+        [
+          152,
+          154
+        ],
+        [
+          155,
+          157
+        ]
+      ],
+      "shape_only_differences": [
+        [
+          161,
+          163
+        ]
+      ]
+    },
+    "FreshReference": {
+      "value_differences": [
+        [
+          11,
+          10
+        ],
+        [
+          71,
+          70
+        ],
+        [
+          81,
+          80
+        ],
+        [
+          86,
+          85
+        ]
+      ],
+      "shape_only_differences": []
+    },
+    "Unobserved": {
+      "value_differences": [
+        [
+          11,
+          14
+        ],
+        [
+          41,
+          44
+        ],
+        [
+          46,
+          49
+        ],
+        [
+          51,
+          54
+        ],
+        [
+          56,
+          59
+        ],
+        [
+          61,
+          64
+        ],
+        [
+          66,
+          69
+        ],
+        [
+          71,
+          74
+        ],
+        [
+          76,
+          79
+        ],
+        [
+          81,
+          84
+        ],
+        [
+          86,
+          89
+        ],
+        [
+          91,
+          94
+        ],
+        [
+          96,
+          99
+        ],
+        [
+          101,
+          104
+        ],
+        [
+          106,
+          109
+        ]
+      ],
+      "shape_only_differences": []
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "src/simulation/environmental_knowledge.rs": {
+    "preregistered": "ae205f333f7e3714e59e269b6984cb0018bbacd9f7212cbcc7d5a4ec6e2776a8",
+    "formatted": "27ffd1a7330781032627d4f31723f53db96ad233cb2e38d33636b44bfdebf363",
+    "reason": "rustfmt whitespace only; reconstructed pre-format hash and whitespace-stripped equality verified"
+  }
+}

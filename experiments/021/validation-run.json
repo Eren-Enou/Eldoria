@@ -1,0 +1,279 @@
+{
+  "registered_commit": "ee1eb6bd15c2573b39ab3e3ae9109765efc9cdca",
+  "source_freeze_sha256": "61bda6270a68ec3688e398df64ec2bab08c9ef8cc3abb93b6fef901e2e1023f3",
+  "source_locks": 21,
+  "checks": [
+    {
+      "name": "foundation",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate_contract"
+      ],
+      "exit": 0,
+      "seconds": 1414.5246138999937
+    },
+    {
+      "name": "validate009",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate009"
+      ],
+      "exit": 0,
+      "seconds": 71.87251050001942
+    },
+    {
+      "name": "validate010",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate010"
+      ],
+      "exit": 0,
+      "seconds": 77.06939389999025
+    },
+    {
+      "name": "validate011",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate011"
+      ],
+      "exit": 0,
+      "seconds": 28.070631799986586
+    },
+    {
+      "name": "validate012",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate012"
+      ],
+      "exit": 0,
+      "seconds": 21.959013600018807
+    },
+    {
+      "name": "validate013",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate013"
+      ],
+      "exit": 0,
+      "seconds": 44.75389940000605
+    },
+    {
+      "name": "validate014",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate014"
+      ],
+      "exit": 0,
+      "seconds": 29.139492099988274
+    },
+    {
+      "name": "validate015",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate015"
+      ],
+      "exit": 0,
+      "seconds": 109.51916939998046
+    },
+    {
+      "name": "validate016",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate016"
+      ],
+      "exit": 0,
+      "seconds": 221.27601820009295
+    },
+    {
+      "name": "validate017",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate017"
+      ],
+      "exit": 0,
+      "seconds": 192.43930600001477
+    },
+    {
+      "name": "validate018",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate018"
+      ],
+      "exit": 0,
+      "seconds": 220.71659009996802
+    },
+    {
+      "name": "validate019",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate019"
+      ],
+      "exit": 0,
+      "seconds": 274.9826958000194
+    },
+    {
+      "name": "validate020",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate020"
+      ],
+      "exit": 0,
+      "seconds": 100.57793220004532
+    },
+    {
+      "name": "validate021",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate021"
+      ],
+      "exit": 0,
+      "seconds": 146.96645029995125
+    },
+    {
+      "name": "measure021",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "measure021"
+      ],
+      "exit": 0,
+      "seconds": 11.278460399946198
+    },
+    {
+      "name": "throughput",
+      "command": [
+        "cargo",
+        "bench",
+        "--locked",
+        "-j",
+        "1",
+        "--bench",
+        "throughput"
+      ],
+      "exit": 0,
+      "seconds": 17.893051499966532
+    },
+    {
+      "name": "validate020_foundation",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate020_foundation"
+      ],
+      "exit": 0,
+      "seconds": 114.11234820005484
+    }
+  ],
+  "format_exit": 0,
+  "clippy_all_targets_exit": 0,
+  "rust_test_exit": 0,
+  "rust_tests_passed": 211,
+  "targeted_tests": 9,
+  "evaluator_exact_trials": 214,
+  "original_byte_replays": 214,
+  "independent_histories": 214,
+  "corruption_categories": 28,
+  "matched_groups": 57,
+  "comparisons": 157,
+  "semantic_trust_checker_exit": 0,
+  "original_working_bytes_checked": 326,
+  "original_working_bytes_unchanged": true,
+  "canonical_foundation_artifacts": 321,
+  "original021_archive_manifests_verified": true,
+  "canon_git_diff_empty": true,
+  "note": "Wall-clock durations are engineering data;001\u2013020 remains protected,021 remains separate research."
+}

@@ -1,0 +1,53 @@
+{
+  "note": "One ordered engineering run;different-mode histories differ;fresh-control overhead includes store/audit. Serialization interval includes tallying memory-audit bytes.",
+  "candidate_10000_us": 13796,
+  "models": {
+    "FreshReference": {
+      "execution_20_us": 294172,
+      "bytes": 8800775,
+      "memory_records": 900,
+      "memory_audit_bytes": 300783,
+      "steps": 461,
+      "serialization_and_audit_tally_us": 18503
+    },
+    "CurrentOnly": {
+      "execution_20_us": 275957,
+      "bytes": 7056230,
+      "memory_records": 402,
+      "memory_audit_bytes": 88307,
+      "steps": 458,
+      "serialization_and_audit_tally_us": 13466
+    },
+    "LastSeen": {
+      "execution_20_us": 282990,
+      "bytes": 8534678,
+      "memory_records": 203,
+      "memory_audit_bytes": 67081,
+      "steps": 462,
+      "serialization_and_audit_tally_us": 17234
+    },
+    "Expire12": {
+      "execution_20_us": 278473,
+      "bytes": 8526016,
+      "memory_records": 217,
+      "memory_audit_bytes": 68549,
+      "steps": 462,
+      "serialization_and_audit_tally_us": 17335
+    },
+    "Unobserved": {
+      "execution_20_us": 284105,
+      "bytes": 8034135,
+      "memory_records": 0,
+      "memory_audit_bytes": 2,
+      "steps": 460,
+      "serialization_and_audit_tally_us": 14759
+    }
+  },
+  "matched020": {
+    "execution_20_us": 273111,
+    "bytes": 8419864
+  },
+  "fresh_execution_ratio": 1.077115165628627,
+  "fresh_bytes_ratio": 1.045239566814856,
+  "legacy_throughput_rows": 20
+}

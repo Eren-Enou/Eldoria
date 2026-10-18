@@ -137,3 +137,22 @@ reconstructs local assessment prefixes, expected gains/costs/scores/ties, actual
 resource accounting and persistence; archive-only mode verifies011 manifests without
 writes. No old archive writer is run. The protected001–010 contract remains unchanged;
 011's NO JUSTIFICATION conclusion does not freeze or promote a new default.
+
+## Experiment021 observer capture (unprotected research)
+
+New owned environmental state caps at one Cell per actor. Owner-local monotonic
+receipt numbers contain no event content. Sense/own-take/depleted/expired/discarded
+records keep immutable before/after plus observer-only physical or point references.
+These growing audit arrays are excluded from policy Input. Attempts retain the
+old observation for causal audit even after the cognitive copy disappears;no code
+may use that copy to restore unavailable quantity. Physical food,legacy trust and
+other separately established state have their own persistence contracts.
+
+021 Choice stores the retained Cell and references the old decision once:the base
+is stored only for Acquire,otherwise the existing activity decision supplies it.
+Points/histories remain the larger cost;one bounded cell does not bound observer
+storage. Original214 worlds total751,189,037 uncompressed JSON bytes. Timings are
+separate from deterministic evidence;see [verification](../experiments/021/verification.md).
+The standalone validate021 checks its own originals and independent reconstructions.
+It does not extend the protected001–020 contract. Explorer currently supports explicit
+018/019/020 schemas;021 is not coerced into an older adapter.

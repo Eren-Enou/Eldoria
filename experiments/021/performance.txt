@@ -1,0 +1,32 @@
+Single ordered Windows engineering run;wall clocks are not deterministic evidence.
+
+021 candidate evaluations:10000,us:13796
+021 ongoing FreshReference:20 trials,us:294172,bytes:8800775,memory_records:900,memory_audit_bytes:300783,steps:461,serialize_us:18503
+021 ongoing CurrentOnly:20 trials,us:275957,bytes:7056230,memory_records:402,memory_audit_bytes:88307,steps:458,serialize_us:13466
+021 ongoing LastSeen:20 trials,us:282990,bytes:8534678,memory_records:203,memory_audit_bytes:67081,steps:462,serialize_us:17234
+021 ongoing Expire12:20 trials,us:278473,bytes:8526016,memory_records:217,memory_audit_bytes:68549,steps:462,serialize_us:17335
+021 ongoing Unobserved:20 trials,us:284105,bytes:8034135,memory_records:0,memory_audit_bytes:2,steps:460,serialize_us:14759
+020 matched fresh ongoing Need:20 trials,us:273111,bytes:8419864
+
+Legacy throughput workloads (001–008;not a021 population benchmark):
+mode,population,rounds,init_ms,run_ms,records,records_per_second
+experiment001,100,100,11.310,21.943,9640,439320
+experiment001,1000,100,56.056,172.534,95578,553967
+experiment002,100,100,8.471,23.765,21341,898001
+experiment002,1000,100,42.343,200.145,212751,1062986
+experiment003,100,100,7.829,26.633,25865,971164
+experiment003,1000,100,46.314,264.390,258428,977449
+experiment004,100,100,9.878,33.971,25891,762139
+experiment004,1000,100,49.540,324.834,258642,796228
+experiment005,100,100,9.661,37.214,35891,964446
+experiment005,1000,100,54.395,385.172,358642,931122
+experiment004_three_encounters,100,100,9.848,85.794,52328,609923
+experiment004_three_encounters,1000,100,51.443,961.803,521305,542008
+experiment005_three_encounters,100,100,12.203,135.706,86788,639528
+experiment005_three_encounters,1000,100,59.068,1397.939,866109,619561
+experiment006_three_encounters,100,100,12.538,134.680,82328,611287
+experiment006_three_encounters,1000,100,65.381,1578.612,821305,520270
+experiment007_three_encounters,100,100,14.310,173.644,82328,474119
+experiment007_three_encounters,1000,100,70.639,1990.116,821305,412692
+experiment008_three_encounters,100,100,15.272,175.075,82328,470244
+experiment008_three_encounters,1000,100,69.635,2007.110,821305,409198

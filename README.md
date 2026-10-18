@@ -502,11 +502,18 @@ main History Explorer now reads all164 originals with actor/environmental views,
 typed causal navigation and cache-inclusive matched comparisons;
 [current acceptance](tools/history-explorer/validation/finite-integration/acceptance.md).
 
-## Prospective Experiment021: Local Environmental Knowledge
+## Experiment021: Local Environmental Knowledge (research)
 
-[Specification](experiments/021/specification.md),[design gate](experiments/021/design-gate.md),
-[214 registered configurations](experiments/021/registered-matrix.json). Gated after
-validated/pushed020 protection and the phase2 assessment,before implementation or
-outcomes. Tests bounded dated observations versus current-only/no-knowledge controls
-with unchanged finite physics and acquisition scores. Passive sensing is a controlled
-channel,not active exploration. No result,default adoption or021 protection yet;no022.
+[Specification](experiments/021/specification.md),[qualified design gate](experiments/021/design-gate.md),
+[results](experiments/021/results.md),[verification](experiments/021/verification.md).
+214 preregistered worlds, exact replay and independent reconstruction. One owned
+last-seen record can change real acquisition, meals and later social/material
+history; stale positives can also waste full-cost claims. All retention contrasts
+reconverge materially by the endpoint. ACCEPT WITH QUALIFICATION,unprotected and
+unadopted;fixed passive sensing is not exploration. Foundation remains001–020;no022.
+
+```powershell
+cargo run --release --locked -j 1 --example validate021
+# New evaluator outputs must use a fresh directory, never historical archives:
+cargo run --release --locked -j 1 --example evaluate021 -- --output target/my-new021
+```
