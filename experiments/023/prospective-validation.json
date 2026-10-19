@@ -1,0 +1,11 @@
+{
+  "stage": "prospective-only",
+  "matched_pairs": 20,
+  "reporting_placebos": 2,
+  "root_compiled_source_bindings": 64,
+  "maximum_existing_reservation": 33,
+  "drain": 33,
+  "treatment_executed": false,
+  "source_bindings_valid": true,
+  "qualification": "Implementation still requires host100original022exactbyteparity. No outcome proof."
+}

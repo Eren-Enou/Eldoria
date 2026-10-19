@@ -155,3 +155,7 @@ No viewer output becomes cognition or scientific-gate input.022 remains prospect
 Main Explorer022adapter: `tools/history-explorer/concurrent_history.py` and
 `native-concurrent.js`; captured-only four-person perspective, typed causal joins
 and capacity comparison. [Acceptance](development/main022-viewer-acceptance.md).
+
+Prospective023continuous-opportunity design: [architecture](development/continuous-world-architecture.md),
+[registration](../experiments/023/specification.md),42fixedrows. No treatment result yet;
+source-preserving host100original022byteparity required before execution.

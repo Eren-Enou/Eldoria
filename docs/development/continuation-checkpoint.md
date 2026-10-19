@@ -89,3 +89,14 @@ No console warnings/errors. CSScontrast/axis visuallyverified. Evidence/cost:
 main022-viewer-acceptance.md, main022-viewer-cost.json, continuous-world-browser/.
 Main server156880, tab3phaseTab handoffmarked. Ccommit/pushnext. ThenD/Earchitecture
 andprospectivegate BEFORE023treatment. Earlier unfinished C notes superseded.
+
+
+## D/E prospective registration checkpoint
+
+C published29e19d2. Correct per-inherited-normalization361inventory and378raworiginal
+hash checks PASS afterC. An ad-hoc blanketLF normalization incorrectly flagged
+pre013files; it was a checker error, not changed evidence; corrected guard passes.
+D purebudgetprobe75/80lateunmaskedchoices change, no executednewoutcome claimed.
+New architecture/spec/designgate,42rowfixedmatrix +allrootcompiledsourcebindings.
+Rootfmt/Clippy PASS; rootalltests55737 PASS. PublishD/Ebeforeany treatmentcode.
+New host MUSTfirst reproduce100original022bytes; frozenparents remain untouched.

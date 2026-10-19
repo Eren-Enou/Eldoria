@@ -235,3 +235,9 @@ authorized authentic fallback, not full main-viewer022integration or new science
 complete the development assessment. No023was implemented or numerically registered.
 The absolute-phase registration discrepancy is disclosed in022results; only
 implemented comparison-epoch scheduling is validated.
+
+## Experiment023 - continuous opportunities (prospective)
+
+[Specification](../../experiments/023/specification.md), [design gate](../../experiments/023/design-gate.md).
+42fixed configurations; experimental source-preserving host and nodefaultadoption.
+No treatment outcome or023protection yet. No024/materialproduction.
