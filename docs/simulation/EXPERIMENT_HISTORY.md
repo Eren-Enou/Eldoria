@@ -197,3 +197,20 @@ committed021 Gate B and its own prospective design. Main Explorer supports021 ex
 with captured-only owned slots and separate observer stock/retention/result chains;
 [actual acceptance](../../tools/history-explorer/validation/knowledge-integration/acceptance.md).
 Original021 is never silently coerced into020 playback.
+
+## Experiment022 — Four-Individual Concurrent Activities
+
+[Specification](../../experiments/022/specification.md),
+[prospective gate](../../experiments/022/design-gate.md),
+[results](../../experiments/022/results.md), [verification](../../experiments/022/verification.md).
+ACCEPT WITH QUALIFICATION as controlled scheduling research; not adopted/protected.
+Registration1f81324 preceded runtime/outcomes.100worlds/50capacity pairs include
+84case-label-neutral histories.41concurrent rows reach two social scenes;24pairs
+have interim food-ledger differences,15terminal food-ledger,20terminal hunger and
+31semantic-trust differences;9whole-history capacity nulls. Independent primitive
+reader,23corruption categories and100exact byte replays pass. Four owned lives,
+independent replies, disjoint reservations and shared time conserve material.
+Contact/meal counts and hunger costs can move in opposite directions. Current
+inquiries are globally exclusive; physical masks and protocol rejections remain
+distinct.192ticks span passive observation windows, not reopened social budgets.
+Protected foundation stays001–021. No023, production, planner or canon change.

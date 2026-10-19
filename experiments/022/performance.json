@@ -1,0 +1,511 @@
+{
+  "kind": "wall-clock evidence; excluded from deterministic histories",
+  "utc": "2026-10-19T02:38:31.814909+00:00",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "logical_cpus": 24,
+  "rustc": "rustc 1.99.0 (b940084d7 2026-09-28)",
+  "scope": "simulation includes final history/cognition validation; serialization timed separately; process peak spans24 sequential samples; no matched pre-change performance baseline",
+  "source_freeze_sha256": "c2fd1e03613a58c02932e14134179049f2fc328cf1c4fcdb9dec63c6b9abc983",
+  "peak_working_set_bytes": 14573568,
+  "peak_poll_samples": 67,
+  "checks": [
+    {
+      "name": "throughput",
+      "exit": 0,
+      "wall_seconds": 19.988394999993034
+    },
+    {
+      "name": "measure-build",
+      "exit": 0,
+      "wall_seconds": 10.110206600045785
+    },
+    {
+      "name": "measure022",
+      "exit": 0,
+      "wall_seconds": 0.2634146000491455
+    }
+  ],
+  "samples": [
+    {
+      "boundaries": 48,
+      "bytes": 701795,
+      "capacity": 1,
+      "case": "paired",
+      "choices": 84,
+      "repeat": 0,
+      "serialization_ns": 1444800,
+      "simulation_ns": 2253200,
+      "transitions": 214,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 48,
+      "bytes": 701795,
+      "capacity": 1,
+      "case": "paired",
+      "choices": 84,
+      "repeat": 1,
+      "serialization_ns": 1243300,
+      "simulation_ns": 1581700,
+      "transitions": 214,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 48,
+      "bytes": 701795,
+      "capacity": 1,
+      "case": "paired",
+      "choices": 84,
+      "repeat": 2,
+      "serialization_ns": 1263600,
+      "simulation_ns": 1426500,
+      "transitions": 214,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 48,
+      "bytes": 723839,
+      "capacity": 2,
+      "case": "paired",
+      "choices": 83,
+      "repeat": 0,
+      "serialization_ns": 1400000,
+      "simulation_ns": 1481100,
+      "transitions": 226,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 48,
+      "bytes": 723839,
+      "capacity": 2,
+      "case": "paired",
+      "choices": 83,
+      "repeat": 1,
+      "serialization_ns": 1659900,
+      "simulation_ns": 1590300,
+      "transitions": 226,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 48,
+      "bytes": 723839,
+      "capacity": 2,
+      "case": "paired",
+      "choices": 83,
+      "repeat": 2,
+      "serialization_ns": 1653300,
+      "simulation_ns": 1439300,
+      "transitions": 226,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 48,
+      "bytes": 692819,
+      "capacity": 1,
+      "case": "acquisition",
+      "choices": 82,
+      "repeat": 0,
+      "serialization_ns": 1285100,
+      "simulation_ns": 1855700,
+      "transitions": 232,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 48,
+      "bytes": 692819,
+      "capacity": 1,
+      "case": "acquisition",
+      "choices": 82,
+      "repeat": 1,
+      "serialization_ns": 1353900,
+      "simulation_ns": 1521500,
+      "transitions": 232,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 48,
+      "bytes": 692819,
+      "capacity": 1,
+      "case": "acquisition",
+      "choices": 82,
+      "repeat": 2,
+      "serialization_ns": 1375100,
+      "simulation_ns": 1476600,
+      "transitions": 232,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 48,
+      "bytes": 695481,
+      "capacity": 2,
+      "case": "acquisition",
+      "choices": 78,
+      "repeat": 0,
+      "serialization_ns": 1362400,
+      "simulation_ns": 1532700,
+      "transitions": 224,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 48,
+      "bytes": 695481,
+      "capacity": 2,
+      "case": "acquisition",
+      "choices": 78,
+      "repeat": 1,
+      "serialization_ns": 1430300,
+      "simulation_ns": 1412200,
+      "transitions": 224,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 48,
+      "bytes": 695481,
+      "capacity": 2,
+      "case": "acquisition",
+      "choices": 78,
+      "repeat": 2,
+      "serialization_ns": 1397000,
+      "simulation_ns": 1833100,
+      "transitions": 224,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 35,
+      "bytes": 542519,
+      "capacity": 1,
+      "case": "inquiry_quiet",
+      "choices": 71,
+      "repeat": 0,
+      "serialization_ns": 1090800,
+      "simulation_ns": 1480100,
+      "transitions": 180,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 35,
+      "bytes": 542519,
+      "capacity": 1,
+      "case": "inquiry_quiet",
+      "choices": 71,
+      "repeat": 1,
+      "serialization_ns": 1354700,
+      "simulation_ns": 1413700,
+      "transitions": 180,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 35,
+      "bytes": 542519,
+      "capacity": 1,
+      "case": "inquiry_quiet",
+      "choices": 71,
+      "repeat": 2,
+      "serialization_ns": 1073700,
+      "simulation_ns": 1432400,
+      "transitions": 180,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 35,
+      "bytes": 542519,
+      "capacity": 2,
+      "case": "inquiry_quiet",
+      "choices": 71,
+      "repeat": 0,
+      "serialization_ns": 1074200,
+      "simulation_ns": 1268200,
+      "transitions": 180,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 35,
+      "bytes": 542519,
+      "capacity": 2,
+      "case": "inquiry_quiet",
+      "choices": 71,
+      "repeat": 1,
+      "serialization_ns": 1187900,
+      "simulation_ns": 1255200,
+      "transitions": 180,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 35,
+      "bytes": 542519,
+      "capacity": 2,
+      "case": "inquiry_quiet",
+      "choices": 71,
+      "repeat": 2,
+      "serialization_ns": 1162400,
+      "simulation_ns": 1431200,
+      "transitions": 180,
+      "world_ticks": 48
+    },
+    {
+      "boundaries": 192,
+      "bytes": 3499203,
+      "capacity": 1,
+      "case": "ongoing",
+      "choices": 262,
+      "repeat": 0,
+      "serialization_ns": 6268800,
+      "simulation_ns": 6196400,
+      "transitions": 1012,
+      "world_ticks": 192
+    },
+    {
+      "boundaries": 192,
+      "bytes": 3499203,
+      "capacity": 1,
+      "case": "ongoing",
+      "choices": 262,
+      "repeat": 1,
+      "serialization_ns": 6495700,
+      "simulation_ns": 6494700,
+      "transitions": 1012,
+      "world_ticks": 192
+    },
+    {
+      "boundaries": 192,
+      "bytes": 3499203,
+      "capacity": 1,
+      "case": "ongoing",
+      "choices": 262,
+      "repeat": 2,
+      "serialization_ns": 7214900,
+      "simulation_ns": 6338900,
+      "transitions": 1012,
+      "world_ticks": 192
+    },
+    {
+      "boundaries": 192,
+      "bytes": 3209609,
+      "capacity": 2,
+      "case": "ongoing",
+      "choices": 235,
+      "repeat": 0,
+      "serialization_ns": 9295700,
+      "simulation_ns": 6822800,
+      "transitions": 934,
+      "world_ticks": 192
+    },
+    {
+      "boundaries": 192,
+      "bytes": 3209609,
+      "capacity": 2,
+      "case": "ongoing",
+      "choices": 235,
+      "repeat": 1,
+      "serialization_ns": 6517900,
+      "simulation_ns": 8060500,
+      "transitions": 934,
+      "world_ticks": 192
+    },
+    {
+      "boundaries": 192,
+      "bytes": 3209609,
+      "capacity": 2,
+      "case": "ongoing",
+      "choices": 235,
+      "repeat": 2,
+      "serialization_ns": 6578900,
+      "simulation_ns": 7016200,
+      "transitions": 934,
+      "world_ticks": 192
+    }
+  ],
+  "legacy_throughput": [
+    {
+      "mode": "experiment001",
+      "population": "100",
+      "rounds": "100",
+      "init_ms": "10.953",
+      "run_ms": "21.469",
+      "records": "9640",
+      "records_per_second": "449013"
+    },
+    {
+      "mode": "experiment001",
+      "population": "1000",
+      "rounds": "100",
+      "init_ms": "57.689",
+      "run_ms": "179.529",
+      "records": "95578",
+      "records_per_second": "532381"
+    },
+    {
+      "mode": "experiment002",
+      "population": "100",
+      "rounds": "100",
+      "init_ms": "8.233",
+      "run_ms": "24.308",
+      "records": "21341",
+      "records_per_second": "877945"
+    },
+    {
+      "mode": "experiment002",
+      "population": "1000",
+      "rounds": "100",
+      "init_ms": "42.758",
+      "run_ms": "201.787",
+      "records": "212751",
+      "records_per_second": "1054337"
+    },
+    {
+      "mode": "experiment003",
+      "population": "100",
+      "rounds": "100",
+      "init_ms": "7.659",
+      "run_ms": "27.227",
+      "records": "25865",
+      "records_per_second": "949976"
+    },
+    {
+      "mode": "experiment003",
+      "population": "1000",
+      "rounds": "100",
+      "init_ms": "47.137",
+      "run_ms": "273.076",
+      "records": "258428",
+      "records_per_second": "946359"
+    },
+    {
+      "mode": "experiment004",
+      "population": "100",
+      "rounds": "100",
+      "init_ms": "9.747",
+      "run_ms": "34.113",
+      "records": "25891",
+      "records_per_second": "758986"
+    },
+    {
+      "mode": "experiment004",
+      "population": "1000",
+      "rounds": "100",
+      "init_ms": "51.479",
+      "run_ms": "334.307",
+      "records": "258642",
+      "records_per_second": "773666"
+    },
+    {
+      "mode": "experiment005",
+      "population": "100",
+      "rounds": "100",
+      "init_ms": "9.772",
+      "run_ms": "37.535",
+      "records": "35891",
+      "records_per_second": "956211"
+    },
+    {
+      "mode": "experiment005",
+      "population": "1000",
+      "rounds": "100",
+      "init_ms": "53.681",
+      "run_ms": "382.681",
+      "records": "358642",
+      "records_per_second": "937183"
+    },
+    {
+      "mode": "experiment004_three_encounters",
+      "population": "100",
+      "rounds": "100",
+      "init_ms": "8.952",
+      "run_ms": "88.071",
+      "records": "52328",
+      "records_per_second": "594158"
+    },
+    {
+      "mode": "experiment004_three_encounters",
+      "population": "1000",
+      "rounds": "100",
+      "init_ms": "55.439",
+      "run_ms": "1048.057",
+      "records": "521305",
+      "records_per_second": "497401"
+    },
+    {
+      "mode": "experiment005_three_encounters",
+      "population": "100",
+      "rounds": "100",
+      "init_ms": "13.310",
+      "run_ms": "145.409",
+      "records": "86788",
+      "records_per_second": "596855"
+    },
+    {
+      "mode": "experiment005_three_encounters",
+      "population": "1000",
+      "rounds": "100",
+      "init_ms": "66.078",
+      "run_ms": "1593.007",
+      "records": "866109",
+      "records_per_second": "543694"
+    },
+    {
+      "mode": "experiment006_three_encounters",
+      "population": "100",
+      "rounds": "100",
+      "init_ms": "14.169",
+      "run_ms": "150.131",
+      "records": "82328",
+      "records_per_second": "548375"
+    },
+    {
+      "mode": "experiment006_three_encounters",
+      "population": "1000",
+      "rounds": "100",
+      "init_ms": "72.469",
+      "run_ms": "1764.355",
+      "records": "821305",
+      "records_per_second": "465499"
+    },
+    {
+      "mode": "experiment007_three_encounters",
+      "population": "100",
+      "rounds": "100",
+      "init_ms": "16.401",
+      "run_ms": "187.487",
+      "records": "82328",
+      "records_per_second": "439112"
+    },
+    {
+      "mode": "experiment007_three_encounters",
+      "population": "1000",
+      "rounds": "100",
+      "init_ms": "75.730",
+      "run_ms": "2209.490",
+      "records": "821305",
+      "records_per_second": "371717"
+    },
+    {
+      "mode": "experiment008_three_encounters",
+      "population": "100",
+      "rounds": "100",
+      "init_ms": "18.493",
+      "run_ms": "203.486",
+      "records": "82328",
+      "records_per_second": "404589"
+    },
+    {
+      "mode": "experiment008_three_encounters",
+      "population": "1000",
+      "rounds": "100",
+      "init_ms": "76.829",
+      "run_ms": "2251.925",
+      "records": "821305",
+      "records_per_second": "364712"
+    }
+  ],
+  "full_registered_suite": {
+    "scope": "all100registered worlds, simulation+validation+JSONL disk writing; Windows process peak; no matched baseline",
+    "exit": 0,
+    "wall_seconds": 0.4924961000215262,
+    "peak_working_set_bytes": 9424896,
+    "peak_poll_samples": 197,
+    "raw_bytes": 83762712,
+    "raw_sha256": "32955966b1aec83610fc879deeaa1e77704ccdb4baf9e707a6f9d94e99186b0f",
+    "exact_original_bytes": true
+  },
+  "measurement_conditions": "Protected validation jobs finished before measurement. Local read-only servers and browser remained open; OS scheduling/disk cache uncontrolled. No matched pre-change baseline."
+}

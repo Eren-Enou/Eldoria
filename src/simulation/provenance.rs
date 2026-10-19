@@ -189,6 +189,7 @@ impl Simulation {
         let mut roots = Vec::new();
         self.world.resource_mut::<Runtime>().tick += 1;
         self.sync_recurring();
+        self.concurrent_sync();
         if open {
             let index = original
                 .participants
@@ -213,10 +214,12 @@ impl Simulation {
                 let decision = (self.world.resource::<p::InspectionPolicy>().0)(&input);
                 self.world.resource_mut::<Runtime>().tick += 1;
                 self.sync_recurring();
+                self.concurrent_sync();
                 if decision.input == input && decision.selected {
                     let claim = foresight::reading(seed, event, owner, 0, truth, &sensor);
                     self.world.resource_mut::<Runtime>().tick += u64::from(sensor.effort);
                     self.sync_recurring();
+                    self.concurrent_sync();
                     let tick = self.world.resource::<Runtime>().tick;
                     let root_id = self
                         .world
@@ -355,6 +358,7 @@ impl Simulation {
         let start = self.world.resource::<Runtime>().tick;
         self.world.resource_mut::<Runtime>().tick += 1;
         self.sync_recurring();
+        self.concurrent_sync();
         self.world
             .resource_mut::<q::Inquiry>()
             .contact(listener, source);
@@ -419,6 +423,7 @@ impl Simulation {
             && (decision.selected == p::ExchangeAction::Silence || input.acquired.is_some());
         self.world.resource_mut::<Runtime>().tick += 1;
         self.sync_recurring();
+        self.concurrent_sync();
         self.world
             .resource_mut::<q::Inquiry>()
             .contact(listener, source);
@@ -552,6 +557,8 @@ impl Simulation {
         } else {
             None
         };
+        // Opt-in four-person pressure follows the completed cognitive bridge.
+        self.concurrent_sync();
         // The receipt's applied support must agree with its cognitive bridge in 008.
         // Preserve the original provenance novelty classification and utility rule.
         if self
@@ -709,13 +716,15 @@ impl Simulation {
             scene,
             hunger: self.provenance_own(owner).unwrap().hunger,
             relationship_goal: talk.profiles[&owner].relationship_goal,
-            concerns: self
-                .world
-                .resource::<Concerns>()
-                .items
-                .get(&owner)
-                .cloned()
-                .unwrap_or_default(),
+            concerns: self.concurrent_concern_projection(
+                owner,
+                self.world
+                    .resource::<Concerns>()
+                    .items
+                    .get(&owner)
+                    .cloned()
+                    .unwrap_or_default(),
+            ),
             sources: available
                 .iter()
                 .map(|&id| q::Source {
@@ -856,6 +865,7 @@ impl Simulation {
         let start = self.world.resource::<Runtime>().tick;
         self.world.resource_mut::<Runtime>().tick += 1;
         self.sync_recurring();
+        self.concurrent_sync();
         let mut receipt = None;
         let mut value = 0;
         let mut before = None;
@@ -887,9 +897,16 @@ impl Simulation {
                 .iter()
                 .find(|c| c.id == concern)
                 .unwrap();
-            concern_before = Some(c.clone());
+            concern_before = Some(
+                self.world.resource::<Concerns>().items[&owner]
+                    .iter()
+                    .find(|actual| actual.id == c.id)
+                    .unwrap()
+                    .clone(),
+            );
             self.world.resource_mut::<Runtime>().tick += u64::from(strategy.cost());
             self.sync_recurring();
+            self.concurrent_sync();
             // Preserve the original refuser's established self-knowledge channel.
             // It remains the 006 resolver when no new acquisition is being relayed.
             let reply_valid;

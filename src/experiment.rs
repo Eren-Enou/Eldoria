@@ -380,3 +380,7 @@ pub fn human_report(report: &Report) -> String {
     writeln!(out, "\nSeparate measurements: {:?}\nHuman output is capped per stage; JSON retains every agent/event.\nInterpretations and utility scores are model hypotheses, not psychological facts.", report.metrics).unwrap();
     out
 }
+
+/// Prospective four-person research; no historical default changes.
+#[path = "experiment022.rs"]
+pub mod concurrent;

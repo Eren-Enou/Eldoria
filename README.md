@@ -44,6 +44,20 @@ ranks the remaining community-readiness barriers from actual evidence. The
 [delivery audit](docs/development/phase-2-delivery.md) record completed gates and
 next review boundaries;no autonomous community or sustainable economy is claimed.
 
+## Four-person concurrency research
+
+Experiment022 executes100 registered four-person worlds, comparing one versus two
+simultaneous social commitments under one clock. Independent reconstruction and
+exact byte replay pass; the finding is ACCEPT WITH QUALIFICATION, with harmful,
+failed and complete-null cases preserved. It is opt-in research outside the
+protected001–021 foundation. See [results](experiments/022/results.md),
+[verification](experiments/022/verification.md) and the
+[concurrency architecture](docs/development/concurrent-world-architecture.md).
+
+Read-only reproduction: `cargo run --release --locked -j 1 --example validate022`.
+The separate `experiment022` runner requires a new isolated JSONL output filename;
+never regenerate frozen evidence in place. No023 or default adoption is authorized.
+
 ## Install and run
 
 Install Rust with Cargo and the Windows MSVC build tools (or a Rust-supported native

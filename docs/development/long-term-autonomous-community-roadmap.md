@@ -62,6 +62,13 @@ replay. Measure observer/runtime cost at four before making scalability claims.
 Do not automatically replace the scheduler. Extract shared lifecycle code only
 after its ownership/semantic equivalence can be demonstrated against frozen paths.
 
+022 now passes the controlled four-person prerequisite with qualification:
+[results](../../experiments/022/results.md), [verification](../../experiments/022/verification.md).
+One clock supports disjoint resource scenes, claims and meals with distinct owned
+histories. It does not justify increasing population or calling this continuous
+community life. Atomic inquiry, public closing budgets, contact dominance and
+finite exhaustion remain limits. No automatic protection/adoption or023 follows.
+
 ## Phase 4 — Sustained material opportunities
 
 Finite cache depletion cannot support indefinite consumption. A prospective physical

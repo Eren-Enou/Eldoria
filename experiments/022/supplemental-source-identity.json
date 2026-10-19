@@ -1,0 +1,9 @@
+{
+  "scope": "Post-evaluation coverage/tests/performance helpers; supplements original60, no foundation extension",
+  "canonical_lf_sha256": {
+    "examples/support/review022_coverage.py": "cf8df6f3a7cfd789ee318d6ba2bb809231dd443a1770e118195ceaba092b45d6",
+    "examples/support/measure022.py": "50e07e5bbc1b430c156b6f73a34c6cece88534aa2ade7201d291f992abcae1fa",
+    "examples/support/measure022_suite.py": "91ff75eaa8269a0f4a85b3393f9a84790ddb96581262c251f96ee314996b27f6",
+    "tests/concurrent_physical_gates.rs": "d658e85fb1fd9daf74283b54aadb97a28e53310edb052df970c8f7155cab2f14"
+  }
+}

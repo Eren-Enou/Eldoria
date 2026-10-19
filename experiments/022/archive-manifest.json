@@ -1,0 +1,33 @@
+{
+  "trials.jsonl.gz": {
+    "gzip_bytes": 2286504,
+    "gzip_sha256": "f8d6c5b8de0d955bb316f89ec1dba11a0712311f9d45f49e3fb8e17fb1a0635c",
+    "json_bytes": 83762712,
+    "json_sha256": "32955966b1aec83610fc879deeaa1e77704ccdb4baf9e707a6f9d94e99186b0f",
+    "records": 100
+  },
+  "analysis.json.gz": {
+    "gzip_bytes": 284,
+    "gzip_sha256": "69d4111ab5f5a15968beef5f8193b69c2cb15b34ab65ad835f79cb2b239b6dbf",
+    "json_bytes": 547,
+    "json_sha256": "986c7014b835015071651592741d8cb1e22b0e0323461442dbe71a5bbb42a381"
+  },
+  "reports.json.gz": {
+    "gzip_bytes": 6150,
+    "gzip_sha256": "9021c47a1a61433d7cd65f0054cddb7698b38e364be1ac44cf1838edc42c63b7",
+    "json_bytes": 135165,
+    "json_sha256": "99a2e35f10229ed011670cb2be4f98a791a9a8236ea6b45fe3990f5074f314bc"
+  },
+  "comparisons.json.gz": {
+    "gzip_bytes": 6808,
+    "gzip_sha256": "199e7021e8a9df00b6112e5a521bfc3820437841f8174138bbdfc3bdaa2fbee2",
+    "json_bytes": 142426,
+    "json_sha256": "9b7bfb6804c913a95bab56d28241e0b3f8a732011850c71ebd54e26f4dfd0472"
+  },
+  "causal-slices.json.gz": {
+    "gzip_bytes": 1471,
+    "gzip_sha256": "cfae34ece1a14f57e2b667fd7ee60d6df16c945a8729e826ef9fd6ce2ec04fd3",
+    "json_bytes": 24255,
+    "json_sha256": "d65c1477e9fbea94529d1b754f429ace93d572ab1cb616ee57fe0aeddbaa8aea"
+  }
+}

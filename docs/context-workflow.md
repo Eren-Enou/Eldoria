@@ -215,3 +215,15 @@ Current main Explorer supports018/019/020/021 through explicit versioned adapter
 see its021 acceptance for captured-only environmental perspective/source links. The continuation checkpoint and
 community roadmap guide the separately authorized022 concurrency design after
 committed021 protection;do not begin023.
+
+## Completed022 research entry point
+
+Start with experiments/022/results.md and verification.md, then implementation-notes
+and the mapped isolated adapter. Registered100worlds are immutable research evidence;
+use `cargo run --release --locked -j 1 --example validate022`, which is read-only,
+cache-free and separate from protected001–021. The original archive/source freeze
+and supplemental coverage identities have distinct scopes. Do not rerun archive022
+in place. Query masks are not executed inquiries; matching food ledgers do not prove
+matching hunger. The fixed-ID diagnostic's historical name is corrected in results,
+not by rewriting original reports. Preserve84unique case-label-neutral histories,
+parameter-sensitivity status, mixed harms and9complete capacity nulls.

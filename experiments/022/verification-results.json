@@ -1,0 +1,109 @@
+{
+  "scope": "Executed checks, not a prepared validation cache",
+  "starting_revision": "20c85adfe84acdefa125fc74fe6cd4093165e15d",
+  "registration_revision": "1f81324",
+  "rust_tests": {
+    "passed": 217,
+    "groups": 28,
+    "failed": 0
+  },
+  "fmt_exit": 0,
+  "clippy_exit": 0,
+  "legacy_gates": [
+    {
+      "name": "validate009",
+      "exit": 0,
+      "seconds": 180.86025360005442
+    },
+    {
+      "name": "validate010",
+      "exit": 0,
+      "seconds": 131.1203389998991
+    },
+    {
+      "name": "validate011",
+      "exit": 0,
+      "seconds": 34.264033299987204
+    },
+    {
+      "name": "validate012",
+      "exit": 0,
+      "seconds": 25.014340299996547
+    },
+    {
+      "name": "validate013",
+      "exit": 0,
+      "seconds": 51.22614769998472
+    },
+    {
+      "name": "validate014",
+      "exit": 0,
+      "seconds": 33.45341199997347
+    },
+    {
+      "name": "validate015",
+      "exit": 0,
+      "seconds": 137.3303612000309
+    },
+    {
+      "name": "validate016",
+      "exit": 0,
+      "seconds": 283.0671723000705
+    },
+    {
+      "name": "validate017",
+      "exit": 0,
+      "seconds": 250.31819320004433
+    },
+    {
+      "name": "validate018",
+      "exit": 0,
+      "seconds": 289.17421119997744
+    },
+    {
+      "name": "validate019",
+      "exit": 0,
+      "seconds": 361.306101199938
+    },
+    {
+      "name": "validate_contract",
+      "exit": 0,
+      "seconds": 1873.8435248000314
+    },
+    {
+      "name": "validate020",
+      "exit": 0,
+      "seconds": 125.31351719994564
+    },
+    {
+      "name": "validate021",
+      "exit": 0,
+      "seconds": 163.1406646000687
+    },
+    {
+      "name": "validate020_foundation",
+      "exit": 0,
+      "seconds": 134.84080590005033
+    },
+    {
+      "name": "validate021_foundation",
+      "exit": 0,
+      "seconds": 194.96226539998315
+    }
+  ],
+  "original022": {
+    "exact_byte_replays": 100,
+    "independent_primitive_worlds": 100,
+    "scratch_corruptions_rejected": 23,
+    "source_locks": 60,
+    "gzip_artifacts": 5
+  },
+  "publication_integrity": {
+    "unchanged_original_working_files": 346,
+    "unchanged021_source_locks": 21,
+    "unchanged022_source_locks": 60,
+    "unchanged_runtime_raw_hashes": 6
+  },
+  "performance": "performance.json",
+  "limitations": "verification.md"
+}

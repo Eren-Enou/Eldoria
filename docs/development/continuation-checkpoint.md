@@ -1,77 +1,56 @@
 # Concurrent-world program continuation checkpoint
 
-Objective ACTIVE: independent021 review/protection;first-class021 Explorer;
-prospectively gated four-person concurrent022;independent evidence/observable
-history;community readiness and sustained-material design. No023,no automatic
-022protection/adoption,default or canon changes. Full request:attachment3bb37cec.
-Inspect actual Git/source after compaction before relying on this checkpoint.
+Objective ACTIVE: attachment3bb37cec nine-stage program. No023, no canon/default
+change, no automatic022 protection. Inspect actual Git/files before relying on
+this checkpoint. [Working notes](concurrent-program-working-notes.md).
 
-## Branch,revision and gates
+## Revision and completed gates
 
-Branch main,start clean20c85adfe84acdefa125fc74fe6cd4093165e15d.
-A independent review committed/pushed5b7efd04db46915ba8c8864c5d32099a5e78f65e.
-B protection committed/pushed e059fcb18efa2918eb4a637dc4f7dca7ed1aa1e1.
-Protected endpoint001–021:341artifacts,321inherited+20original021,no adoption.
-C mainExplorer acceptance PASS;this checkpoint accompanies the separate Ccommit.
-Before Cpublication HEAD ise059fcb;resolve finalCwith `git log -1 --format=%H --
-tools/history-explorer/knowledge.py`,actualHEAD/origin/status. No022runtime/spec/matrix.
+Branch main; parent HEAD/origin1f813241fc7ba19afea7a6f8e4f7138cdc4a8205 before the
+F/G publication containing this checkpoint. A review5b7efd0 ACCEPT WITH QUALIFICATION;
+B protectione059fcb (001–021,341artifacts); Cmain021Explorer8ac1548;
+D/Earchitecture/preregistration1f81324 before022runtime/outcomes.
+F/G complete: opt-in four-person runtime,100registered worlds, independent primitive
+reader,23corruptions, exact replay, measured cost and qualified results. See
+[022 results](../../experiments/022/results.md), [verification](../../experiments/022/verification.md),
+[executed metadata](../../experiments/022/verification-results.json).
 
-## Completed science and validation
+## Evidence and checks
 
-021 independent ACCEPT WITH QUALIFICATION. See ../experiment-021-review.md and
-experiment-021-review-verification.json. Complementary standard-library-only
-reader imports no evaluator/earlier reader/analysis/scorer.214worlds/68027selections,
-599claims396grants203failures934meals671transfers34queries25112memorychanges.
-LastSeen43changed choice histories/14period-material divergences/0final material/
-10semantic trust differences. First changed choice has identical old local input.
-Preserve useful81/82,stale31/32,mixed/order/expiry/null/FreshReference controls and
-161/163raw stored-zero exception. Passive sensing does not establish general value.
+Original022 archive100members,83,762,712raw/2,286,504gzip bytes; gzipSHA
+f8d6c5b8de0d955bb316f89ec1dba11a0712311f9d45f49e3fb8e17fb1a0635c.
+Five original compressed artifacts,60canonicalLF source locks;4prior design files
+bound to registration commit. No regeneration in place. Original346files and
+21original021source locks unchanged at publication;6runtime raw hashes unchanged.
+Fmt/Clippy PASS;217Rusttests/28groups PASS;16historical gates PASS, including normal
+001–021/341artifact validation.022PASS100exact-byte/primitive,23corruptions.
+Throughput20rows PASS;24samples median1.3–7.0ms run/validation; serialization similar.
+Full100world stream0.49s/9.42MB process working set; raw83.76MB/gzip2.29MB.
+All logs in %TEMP%/concurrent-program. Old expensive checks need no unchanged rerun.
 
-A:fmt0,Clippy0,211Rusttests,original021214exactbyte/primitive214+28corruptions,
-complementary214+8corruptions,semantictrust0,normal001–0200(1194.44s).
-B:fmt0,Clippy0,211Rusttests,normal001–0210(1626.58s),standalone009–021all0,
-shared validate021_foundation0(177.54s). All18checksPASS. All346original working
-bytes/21source locks unchanged;341inventory/321inheritance/exactprefixPASS.
-Durable concurrent-program-validation.json and concurrent-original-working-sha256.json.
-Logs %TEMP%/concurrent-program/A-*.log,B-*.log;A-checks.json/B-checks.json.
-Sessions98202/97405 COMPLETE;do not poll/repeat unchanged passing checks.
-Frozen validate021.rs remains unchanged;normal/shared wrapper retain exactprefix.
-No historical writer/evaluator ran. No benchmark warranted for review/validator edits.
+## Scientific boundaries
 
-## Completed C engineering
+41/50concurrent rows reach two social scenes;24interim food-ledger/15terminal
+food-ledger/20terminal hunger/31semantictrust differences;9complete capacity nulls.
+100rows have84case-label-neutral histories. No statistical/global welfare claim.
+Frozen fixed-ID diagnostic counts104partitioncrossings;100cross actual priorpairs.
+12executedqueries,31protocol-blocked admissions,52masked local candidates stay
+separate. Claim-mask original13@14 is conservative pre-proposal exclusion, not
+proof a consented query would leap that deadline.192ticks span24passive observation
+windows, not reopening closed social budgets. All harms/nulls preserved.
 
-Explicit knowledge.py schemaexperiment-021-trial/v1/extractor4,214uniqueoriginal
-identities includingNeed/Acquirepolicy;zero-basedordinals;captured-only ownslot.
-FullPython41PASS,all4actualJS filesPASS,finalsyntax0;all214nodes/anchors/source refs
-checked. Realbrowser covers81/82,82rival52,31/32,1/2,162/163,121/122,161/163.
-Finalmain8765 source navigation clicked memory_records[9].after.observation@24,
-expandedstock12,thenclaim/grant32,meal33(food1→0,hunger15→0). Sourcecohort28context
-persists through linkedresults. ActorUnknown/expiry isnotfilledfromaudit;ownfood5
-persists in163at12. Semantic/rawtrustseparate. Libraryearly-searchracefixedandtested.
-Browserconsolewarnings/errors0. See knowledge-integration/acceptance.md andPNGs.
-All346originalworkingbytesunchangedafterC;simulation/validator sourceunchanged
-fromB,soRustcheckreuseislegitimate. No extraRust/throughput rerun forUI-onlyedits.
+## Viewer and remaining work
 
-Mainhttp://127.0.0.1:8765 PID123980,hiddenlocalserver,currentcode,cache
- target/history-explorer-concurrent. Tab3 phaseTab retainedasdeliverable at82meal33,
-Observerlens/sourcecohort28. Browser2 binding reused;aftercompactioncall
-cua.rewriteDocumentation beforeUI. Preserved020prototype8766 PID155280/tab2finiteTab
-also retained. Testserver8767 PID138300 STOPPED;testtab5 CLOSED. No activevalidators.
-Costsample0:catalog31.43s/214;first2.87–4.74s/repeat0.41–2.84s;maxexport28.83MB;
-PythonPSAPIpeak316.37MB≈302MiB. Browserheapunmeasured,concurrentloadnotcalibrated.
-Session85551complete0,performance.json keptseparatefromsimulationevidence.
+Hpreview browser acceptance COMPLETE on native originals: shared scenes, independent
+releases, tripleactivity, competing claims, busy consent, atomic inquiry, actor-only
+inputs, source references, null/long histories. New4Python and legacy41Python plus
+4legacyJS suites PASS. Separate preview http://127.0.0.1:8768 (concurrent_preview.py);
+main018–021 Explorer8765. Browser2tab6 and main3 markedDeliverable. Actual screenshots
+and [acceptance](../../tools/history-explorer/validation/concurrent-preview/acceptance.md),
+[nine-step walkthrough](four-person-history-walkthrough.md) are task-owned Hfiles
+awaiting separate commit. This is NOT full main-viewer022integration.
 
-## Next exact actions
-
-1.Review/stage Cfiles only,diff/commit/push. AllCacceptance/checkscomplete.
-2.D concurrency ownership investigation/architecture document BEFORE runtime.
-3.E prospective022spec/matrix/designgate BEFORE outcomes/behavior implementation.
-4.F/G onlyafterdesignPASS:bounded4personregistry,actualevidence,exactreplay,
-independentreader/corruptions/fullcompatibility/performance. B/Cscientificgatespass.
-5.H authenticoverlapinspection/readiness;I designonlyfiniteinputconversion,no023matrix.
-
-[Working notes](concurrent-program-working-notes.md) retain provisionalDleads and
-Cdetails. Parentlib.rs/simulation.rs are021source-locked;keepbyte-identical. Unfrozen
-extension-point scan and clock/query issues are investigationleads,not approved
-architecture. No022code exists. No newpolicy/cognition/planner or forcedpair choices.
-Never restore unavailable cognition from audit;food/trust/concerns maypersist.
+Next: commit/push F/G, then Hpreview; write required community-readiness and
+prospective finite-input conversion design ONLY, no023matrix/runtime. Update required
+indexes/checkpoint; audit all attachment criteria; commit/push finaldocs, then stop.
+No live validation job remains. Do not run historical evidence writers.

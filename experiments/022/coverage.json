@@ -1,0 +1,549 @@
+{
+  "original_worlds": 100,
+  "archive_sha256": "f8d6c5b8de0d955bb316f89ec1dba11a0712311f9d45f49e3fb8e17fb1a0635c",
+  "classification": "post-evaluation primitive coverage; no new outcomes",
+  "counts": {
+    "sole_received_unit_enables_actual_meal": 44,
+    "resource_overlaps_Claim": 204,
+    "resource_overlaps_Meal": 151,
+    "resource_claim_meal_same_clock": 92,
+    "competing_recipient": 259,
+    "busy_recipient_rejected": 247,
+    "transfers_across_fixed_id_partition": 104,
+    "transfer_across_actual_prior_pairs": 100,
+    "same_tick_resource_completions": 92,
+    "terminal_food_ledger_unequal_pairs": 15,
+    "terminal_hunger_unequal_pairs": 20,
+    "different_finish_resource_overlap": 104,
+    "overlapping_agreement_and_failure": 99,
+    "food_ledger_reconverges_hunger_does_not": 5,
+    "masked_local_questions": 52,
+    "masked_query_during_Claim": 1,
+    "masked_query_during_Reply": 25,
+    "blocked_admission_due_protocol": 31,
+    "complete_null_pair": 9,
+    "masked_query_during_Resource": 26,
+    "continuous_192_tick_world": 4
+  },
+  "examples": {
+    "sole_received_unit_enables_actual_meal": {
+      "ordinal": 0,
+      "owner": 0,
+      "transfer_ref": "final_state.base.base.base.base.base.events[32]",
+      "meal_ref": "final_state.base.base.base.base.base.cognition.consumption[5]",
+      "received_at": 46,
+      "consumed_at": 49,
+      "interpretation": "material availability only; no global utility ranking"
+    },
+    "resource_overlaps_Claim": {
+      "ordinal": 0,
+      "resource": {
+        "commitment": 23,
+        "participants": [
+          2,
+          3
+        ],
+        "start": 14,
+        "end": 16,
+        "start_ref": "transitions[46]",
+        "release_ref": "transitions[51]"
+      },
+      "other": {
+        "commitment": 24,
+        "participants": [
+          0
+        ],
+        "start": 14,
+        "end": 18,
+        "start_ref": "transitions[47]",
+        "release_ref": "transitions[59]"
+      }
+    },
+    "resource_overlaps_Meal": {
+      "ordinal": 0,
+      "resource": {
+        "commitment": 23,
+        "participants": [
+          2,
+          3
+        ],
+        "start": 14,
+        "end": 16,
+        "start_ref": "transitions[46]",
+        "release_ref": "transitions[51]"
+      },
+      "other": {
+        "commitment": 26,
+        "participants": [
+          1
+        ],
+        "start": 15,
+        "end": 16,
+        "start_ref": "transitions[50]",
+        "release_ref": "transitions[52]"
+      }
+    },
+    "resource_claim_meal_same_clock": {
+      "ordinal": 0,
+      "tick": 15,
+      "activities": [
+        {
+          "commitment": 23,
+          "participants": [
+            2,
+            3
+          ],
+          "start": 14,
+          "end": 16,
+          "start_ref": "transitions[46]",
+          "release_ref": "transitions[51]"
+        },
+        {
+          "commitment": 24,
+          "participants": [
+            0
+          ],
+          "start": 14,
+          "end": 18,
+          "start_ref": "transitions[47]",
+          "release_ref": "transitions[59]"
+        },
+        {
+          "commitment": 26,
+          "participants": [
+            1
+          ],
+          "start": 15,
+          "end": 16,
+          "start_ref": "transitions[50]",
+          "release_ref": "transitions[52]"
+        }
+      ]
+    },
+    "competing_recipient": {
+      "ordinal": 0,
+      "tick": 19,
+      "response_ref": "boundaries[13].responses[0]",
+      "selected": {
+        "Accept": 1
+      },
+      "incoming": 2
+    },
+    "busy_recipient_rejected": {
+      "ordinal": 0,
+      "admission_ref": "admissions[10]",
+      "tick": 16,
+      "blockers": [
+        {
+          "commitment": 24,
+          "participants": [
+            0
+          ],
+          "start": 14,
+          "end": 18,
+          "start_ref": "transitions[47]",
+          "release_ref": "transitions[59]"
+        }
+      ]
+    },
+    "transfer_across_actual_prior_pairs": {
+      "ordinal": 1,
+      "event_ref": "final_state.base.base.base.base.base.events[15]",
+      "tick": 20,
+      "participants": [
+        1,
+        3
+      ],
+      "before": [
+        3,
+        3
+      ],
+      "after": [
+        2,
+        4
+      ]
+    },
+    "same_tick_resource_completions": {
+      "ordinal": 1,
+      "a": {
+        "commitment": 8,
+        "participants": [
+          0,
+          1
+        ],
+        "start": 8,
+        "end": 10,
+        "start_ref": "transitions[16]",
+        "release_ref": "transitions[18]"
+      },
+      "b": {
+        "commitment": 9,
+        "participants": [
+          2,
+          3
+        ],
+        "start": 8,
+        "end": 10,
+        "start_ref": "transitions[17]",
+        "release_ref": "transitions[19]"
+      }
+    },
+    "different_finish_resource_overlap": {
+      "ordinal": 3,
+      "a": {
+        "commitment": 64,
+        "participants": [
+          0,
+          1
+        ],
+        "start": 33,
+        "end": 36,
+        "start_ref": "transitions[126]",
+        "release_ref": "transitions[133]"
+      },
+      "b": {
+        "commitment": 65,
+        "participants": [
+          2,
+          3
+        ],
+        "start": 34,
+        "end": 35,
+        "start_ref": "transitions[129]",
+        "release_ref": "transitions[130]"
+      }
+    },
+    "overlapping_agreement_and_failure": {
+      "ordinal": 3,
+      "a": {
+        "commitment": 64,
+        "participants": [
+          0,
+          1
+        ],
+        "start": 33,
+        "end": 36,
+        "start_ref": "transitions[126]",
+        "release_ref": "transitions[133]"
+      },
+      "b": {
+        "commitment": 65,
+        "participants": [
+          2,
+          3
+        ],
+        "start": 34,
+        "end": 35,
+        "start_ref": "transitions[129]",
+        "release_ref": "transitions[130]"
+      },
+      "outcomes": [
+        "Agreement",
+        "Withdrawal"
+      ]
+    },
+    "food_ledger_reconverges_hunger_does_not": {
+      "serial": 4,
+      "concurrent": 5,
+      "serial_hunger": [
+        40,
+        30,
+        5,
+        40
+      ],
+      "concurrent_hunger": [
+        25,
+        25,
+        25,
+        5
+      ],
+      "interpretation": "resource ledger equality is not physiological or full-state equality"
+    },
+    "masked_query_during_Claim": {
+      "ordinal": 13,
+      "tick": 14,
+      "choice_ref": "boundaries[8].choices[2]",
+      "question": {
+        "Ask": {
+          "concern": 0,
+          "source": 0,
+          "strategy": "Direct"
+        }
+      },
+      "blockers": [
+        {
+          "commitment": 16,
+          "participants": [
+            2
+          ],
+          "start": 11,
+          "end": 15,
+          "start_ref": "transitions[30]",
+          "release_ref": "transitions[40]"
+        }
+      ]
+    },
+    "masked_query_during_Reply": {
+      "ordinal": 13,
+      "tick": 27,
+      "choice_ref": "boundaries[21].choices[2]",
+      "question": {
+        "Ask": {
+          "concern": 0,
+          "source": 0,
+          "strategy": "Direct"
+        }
+      },
+      "blockers": [
+        {
+          "commitment": 42,
+          "participants": [
+            2
+          ],
+          "start": 27,
+          "end": 28,
+          "start_ref": "transitions[84]",
+          "release_ref": "transitions[89]"
+        }
+      ]
+    },
+    "blocked_admission_due_protocol": {
+      "ordinal": 18,
+      "admission_ref": "admissions[1]",
+      "tick": 21,
+      "invitation": {
+        "proposer": 0,
+        "recipient": 3,
+        "kind": "Inquiry",
+        "expires": 21
+      },
+      "physical_blockers": [],
+      "later_same_tick_admissions": [
+        "admissions[2]",
+        "admissions[3]",
+        "admissions[4]"
+      ]
+    },
+    "complete_null_pair": {
+      "serial": 18,
+      "concurrent": 19
+    },
+    "masked_query_during_Resource": {
+      "ordinal": 27,
+      "tick": 29,
+      "choice_ref": "boundaries[26].choices[0]",
+      "question": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "blockers": [
+        {
+          "commitment": 62,
+          "participants": [
+            1,
+            3
+          ],
+          "start": 29,
+          "end": 30,
+          "start_ref": "transitions[124]",
+          "release_ref": "transitions[127]"
+        }
+      ]
+    },
+    "continuous_192_tick_world": {
+      "ordinal": 32,
+      "start": 6,
+      "end": 198,
+      "passive_observation_windows": 24,
+      "closed_social_window_reopening": false
+    }
+  },
+  "equivalent_case_labels": [
+    [
+      {
+        "ordinal": 0,
+        "case": "paired",
+        "capacity": 1
+      },
+      {
+        "ordinal": 6,
+        "case": "same_end",
+        "capacity": 1
+      }
+    ],
+    [
+      {
+        "ordinal": 1,
+        "case": "paired",
+        "capacity": 2
+      },
+      {
+        "ordinal": 7,
+        "case": "same_end",
+        "capacity": 2
+      }
+    ],
+    [
+      {
+        "ordinal": 8,
+        "case": "contenders",
+        "capacity": 1
+      },
+      {
+        "ordinal": 28,
+        "case": "order_bias",
+        "capacity": 1
+      }
+    ],
+    [
+      {
+        "ordinal": 9,
+        "case": "contenders",
+        "capacity": 2
+      },
+      {
+        "ordinal": 29,
+        "case": "order_bias",
+        "capacity": 2
+      }
+    ],
+    [
+      {
+        "ordinal": 10,
+        "case": "busy_recipient",
+        "capacity": 1
+      },
+      {
+        "ordinal": 22,
+        "case": "missed_contact",
+        "capacity": 1
+      },
+      {
+        "ordinal": 24,
+        "case": "private_helpful",
+        "capacity": 1
+      }
+    ],
+    [
+      {
+        "ordinal": 11,
+        "case": "busy_recipient",
+        "capacity": 2
+      },
+      {
+        "ordinal": 23,
+        "case": "missed_contact",
+        "capacity": 2
+      },
+      {
+        "ordinal": 25,
+        "case": "private_helpful",
+        "capacity": 2
+      }
+    ],
+    [
+      {
+        "ordinal": 54,
+        "case": "contenders",
+        "capacity": 1
+      },
+      {
+        "ordinal": 58,
+        "case": "order_bias",
+        "capacity": 1
+      }
+    ],
+    [
+      {
+        "ordinal": 55,
+        "case": "contenders",
+        "capacity": 2
+      },
+      {
+        "ordinal": 59,
+        "case": "order_bias",
+        "capacity": 2
+      }
+    ],
+    [
+      {
+        "ordinal": 62,
+        "case": "contenders",
+        "capacity": 1
+      },
+      {
+        "ordinal": 66,
+        "case": "order_bias",
+        "capacity": 1
+      }
+    ],
+    [
+      {
+        "ordinal": 63,
+        "case": "contenders",
+        "capacity": 2
+      },
+      {
+        "ordinal": 67,
+        "case": "order_bias",
+        "capacity": 2
+      }
+    ],
+    [
+      {
+        "ordinal": 68,
+        "case": "paired",
+        "capacity": 1
+      },
+      {
+        "ordinal": 74,
+        "case": "ongoing",
+        "capacity": 1
+      }
+    ],
+    [
+      {
+        "ordinal": 69,
+        "case": "paired",
+        "capacity": 2
+      },
+      {
+        "ordinal": 75,
+        "case": "ongoing",
+        "capacity": 2
+      }
+    ],
+    [
+      {
+        "ordinal": 76,
+        "case": "paired",
+        "capacity": 1
+      },
+      {
+        "ordinal": 82,
+        "case": "ongoing",
+        "capacity": 1
+      }
+    ],
+    [
+      {
+        "ordinal": 77,
+        "case": "paired",
+        "capacity": 2
+      },
+      {
+        "ordinal": 83,
+        "case": "ongoing",
+        "capacity": 2
+      }
+    ]
+  ],
+  "unique_histories_after_ignoring_case_label": 84,
+  "interpretation_notes": {
+    "original_cross_bootstrap_pair_transfers_key": "The frozen reports key uses the fixed ID partition0/1 versus2/3, including worlds without two bootstrap pairs.104is that diagnostic;100transfers actually cross two executed prior pairs. No original archive was changed.",
+    "repetitions": "The100registered worlds include case-label equivalents; frequencies describe this fixed grid, not independent statistical samples."
+  }
+}

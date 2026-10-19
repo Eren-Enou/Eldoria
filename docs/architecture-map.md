@@ -55,6 +55,19 @@ rows when ownership, entry points or mode boundaries change.
 Use `rg -n 'symbol' path/to/file.rs` to locate implementation before reading a
 bounded range. A row identifies starting files, not permission to skip affected callers.
 
+## Four-person concurrent research (unprotected022)
+
+The bounded extension lives at `src/experiment022.rs` through
+`experiment::concurrent`, and private `src/simulation/concurrent.rs` under adaptive.
+Guarded adaptive/provenance time/context hooks are no-ops without opt-in state;
+frozen lib.rs/simulation.rs and021sources remain unchanged. Four live reservations,
+one per actor; core resource scenes share a clock with claims/meals. Atomic inquiry
+remains globally exclusive. See [design](development/concurrent-world-architecture.md),
+[results](../experiments/022/results.md), [verification](../experiments/022/verification.md).
+Tests: concurrent.rs/concurrent_physical_gates.rs. Read-only validate022, independent
+review022/corrupt022, complementary review022_coverage and measure022 own their
+respective original/derived/wall-clock boundaries. This is not001–022 protection.
+
 ## Latest protected environmental-knowledge result
 
 021 local environmental knowledge:[specification](../experiments/021/specification.md),

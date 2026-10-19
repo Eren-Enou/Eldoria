@@ -1,5 +1,7 @@
 //! Opt-in integration; prior communication/follow-up paths remain untouched.
 use super::*;
+#[path = "concurrent.rs"]
+mod concurrent;
 use crate::inquiry::{self as q, Inquiry, InquiryPolicy};
 
 pub(super) fn signature(info: &InformationScene) -> q::Signature {
@@ -188,6 +190,7 @@ impl Simulation {
         }
         self.world.resource_mut::<Runtime>().tick += 1;
         self.sync_recurring();
+        self.concurrent_sync();
         let tick = self.world.resource::<Runtime>().tick;
         let meeting = self.world.resource::<Inquiry>().meetings.len() as u64;
         self.world
@@ -270,6 +273,7 @@ impl Simulation {
             let offered = score > 0;
             self.world.resource_mut::<Runtime>().tick += 1;
             self.sync_recurring();
+            self.concurrent_sync();
             let tick = self.world.resource::<Runtime>().tick;
             let mut state = self.world.resource_mut::<Inquiry>();
             let id = state.notices.len() as u64;
@@ -442,6 +446,7 @@ impl Simulation {
         };
         self.world.resource_mut::<Runtime>().tick += u64::from(time_spent);
         self.sync_recurring();
+        self.concurrent_sync();
         let id = self.world.resource::<Inquiry>().records.len() as u64;
         let mut response = None;
         let mut category = q::Novelty::None;
@@ -704,6 +709,7 @@ impl Simulation {
                         Some((50 + credibility_before).clamp(10, 90)),
                     )
                     .unwrap();
+                self.concurrent_sync();
                 sig.push(signature(&info));
                 receipts.push(info.id);
             } else if action == TalkAction::ProvideEvidence {
@@ -739,6 +745,7 @@ impl Simulation {
                 if incompatible {
                     self.world.resource_mut::<Runtime>().tick += 1;
                     self.sync_recurring();
+                    self.concurrent_sync();
                     return q::Response {
                         decision,
                         valid: false,
@@ -769,6 +776,7 @@ impl Simulation {
                             None,
                         )
                         .unwrap();
+                    self.concurrent_sync();
                     let s = signature(&info);
                     let previous = self
                         .world
@@ -815,10 +823,12 @@ impl Simulation {
                 }
                 self.world.resource_mut::<Runtime>().tick += u64::from(sensor.effort);
                 self.sync_recurring();
+                self.concurrent_sync();
             }
         }
         self.world.resource_mut::<Runtime>().tick += 1;
         self.sync_recurring();
+        self.concurrent_sync();
         let time_spent = (self.world.resource::<Runtime>().tick - start_tick) as u32;
         q::Response {
             decision,

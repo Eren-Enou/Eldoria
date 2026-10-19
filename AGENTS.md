@@ -33,6 +33,17 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
+Experiment022 is completed opt-in concurrency research, ACCEPT WITH QUALIFICATION;
+the protected endpoint remains001–021. Inspect experiments/022/results.md,
+verification.md and implementation-notes.md. Native originals have100worlds,
+60source locks and5compressed archives; validate022 independently reconstructs,
+rejects23scratch corruptions and repeats100exact byte runs. Never regenerate them
+in place. Preserve explicit reservations, independent consent, one shared epoch
+clock, owned contexts and conservative exclusive inquiries. Query masks, rejected
+admissions and executed queries are different observations. More contact is not
+better by definition; terminal food equality can hide hunger differences. No023,
+automatic protection or global default change follows from this research.
+
 Cross-experiment enforcement map: `docs/experiment-contract-001-021.md`.
 The historical `docs/experiment-contract-001-020.md` remains authoritative for001–020.
 The historical `docs/experiment-contract-001-019.md` remains authoritative for001–019.
