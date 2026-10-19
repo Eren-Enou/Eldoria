@@ -203,13 +203,15 @@ Original021 is never silently coerced into020 playback.
 The separate [independent scientific review](../experiment-022-review.md) accepts
 with qualification at9fb6da8; source/primitive/scoring/count reconstruction and the
 normal001–021gate pass. Original evidence remains unchanged. Conditional protection
-is a separate stage; the review does not adopt the scheduler or establish an
-absolute-phase result.
+now passes: [001–022contract](../experiment-contract-001-022.md),
+[integrity audit](../integrity-audit-001-022.md),361artifacts. Protection does not
+adopt the scheduler or establish an absolute-phase result.
 
 [Specification](../../experiments/022/specification.md),
 [prospective gate](../../experiments/022/design-gate.md),
 [results](../../experiments/022/results.md), [verification](../../experiments/022/verification.md).
-ACCEPT WITH QUALIFICATION as controlled scheduling research; not adopted/protected.
+ACCEPT WITH QUALIFICATION as controlled scheduling research; independently
+reviewed/protected through022, not adopted.
 Registration1f81324 preceded runtime/outcomes.100worlds/50capacity pairs include
 84case-label-neutral histories.41concurrent rows reach two social scenes;24pairs
 have interim food-ledger differences,15terminal food-ledger,20terminal hunger and
@@ -219,7 +221,9 @@ independent replies, disjoint reservations and shared time conserve material.
 Contact/meal counts and hunger costs can move in opposite directions. Current
 inquiries are globally exclusive; physical masks and protocol rejections remain
 distinct.192ticks span passive observation windows, not reopened social budgets.
-Protected foundation stays001–021. No023, production, planner or canon change.
+Protected foundation is001–022/361artifacts. Continuous-opportunity023is separately
+authorized after protection publication and a prospective gate; no production,
+planner,024or canon change.
 
 The [separate native022preview](../../tools/history-explorer/validation/concurrent-preview/acceptance.md)
 and [actual four-person walkthrough](../development/four-person-history-walkthrough.md)

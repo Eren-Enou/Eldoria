@@ -1,12 +1,12 @@
 # Architecture map
 
-Navigation summary, protected through021. Source and mode-specific
+Navigation summary, protected through022. Source and mode-specific
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
 ## Start here
 
-- Rules: [AGENTS.md](../AGENTS.md); protected [001–021 contract](experiment-contract-001-021.md),
+- Rules: [AGENTS.md](../AGENTS.md); protected [001–022 contract](experiment-contract-001-022.md),
   which links historical contracts. Read the affected mode's clauses and coverage.
 - Findings: [experiment index](simulation/EXPERIMENT_HISTORY.md).
 - Working procedure: [context workflow](context-workflow.md).
@@ -49,18 +49,19 @@ rows when ownership, entry points or mode boundaries change.
 | Finite environmental acquisition (020 protected with qualification) | [cache/policy](../src/acquisition.rs),[isolated lifecycle](../src/simulation/acquisition.rs),[fixture](../src/experiment020.rs);no default path changes | `tests/acquisition.rs`,frozen standalone `validate020`,shared `contract020.rs`/`validate020_foundation`,`review020.py`/`review020_scope.py`,`measure020`;[specification](../experiments/020/specification.md),[results](../experiments/020/results.md),[verification](../experiments/020/verification.md);[review](experiment-020-review.md),[contract](experiment-contract-001-020.md);164 original histories,20 corruptions,321 protected artifacts;no adoption |
 | Read-only History Explorer application | [app/tooling](../tools/history-explorer/README.md), `tools/history-explorer/explorer.py`, `causal.py`/`causal.js`, `finite.py`/`knowledge.py`, `perspective.js`, `app.js`; [technical guide](development/history-explorer-architecture.md) | Python real-archive and typed-link tests, JS owned-point/filter/order tests, explicit020/021 actor/claim/material/knowledge comparison,all164/214 original references,[020 acceptance](../tools/history-explorer/validation/finite-integration/acceptance.md),[021 acceptance](../tools/history-explorer/validation/knowledge-integration/acceptance.md),real-browser node navigation, [original acceptance](../tools/history-explorer/validation/acceptance.md), [causal acceptance](../tools/history-explorer/validation/causal-navigation-acceptance.md); one-way consumer, no foundation dependency |
 | CLI and reproducible experiment fixtures | [main.rs](../src/main.rs), `src/experiment.rs`, `src/experiment002.rs` … `src/experiment021.rs` | Corresponding experiment tests/evaluators |
-| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), shared `examples/support/contract009.rs` … `contract021.rs`, independent010–021 readers | Cache-free010–021 validation; shared standalone gates; historical summaries unchanged; [latest integrity audit](integrity-audit-001-021.md) |
+| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), shared `examples/support/contract009.rs` … `contract022.rs`, independent010–022 readers | Cache-free010–021 validation; shared standalone gates; historical summaries unchanged; [latest integrity audit](integrity-audit-001-022.md) |
 | Throughput workload / history measurements | [throughput.rs](../benches/throughput.rs), `examples/measure_history.rs` | Separate wall-clock output; historical reports unchanged |
 
 Use `rg -n 'symbol' path/to/file.rs` to locate implementation before reading a
 bounded range. A row identifies starting files, not permission to skip affected callers.
 
-## Four-person concurrent research (reviewed, unprotected022)
+## Four-person concurrent research (reviewed/protected022)
 
 [Independent022review](experiment-022-review.md) at9fb6da8 passes Gate A:
 ACCEPT WITH QUALIFICATION. The implemented comparison-epoch scheduler and matched
 capacity findings stand; absolute phase invariance and continuous opportunities
-remain untested. StageB protection is conditional on its actual new gate.
+remain untested. StageB passes: [001–022contract](experiment-contract-001-022.md),
+[integrity audit](integrity-audit-001-022.md),361original artifacts; no adoption.
 
 The bounded extension lives at `src/experiment022.rs` through
 `experiment::concurrent`, and private `src/simulation/concurrent.rs` under adaptive.
@@ -71,7 +72,8 @@ remains globally exclusive. See [design](development/concurrent-world-architectu
 [results](../experiments/022/results.md), [verification](../experiments/022/verification.md).
 Tests: concurrent.rs/concurrent_physical_gates.rs. Read-only validate022, independent
 review022/corrupt022, complementary review022_coverage and measure022 own their
-respective original/derived/wall-clock boundaries. This is not001–022 protection.
+respective original/derived/wall-clock boundaries. Sharedcontract022/
+validate022_foundation/normalgate protect361artifacts and independent review anchors.
 
 Observation: separate `tools/history-explorer/concurrent_preview.py` serves native
 original022members; concurrent-model.js owns interval/actor projections, concurrent.js

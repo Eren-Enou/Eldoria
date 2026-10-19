@@ -49,14 +49,17 @@ next review boundaries;no autonomous community or sustainable economy is claimed
 Experiment022 executes100 registered four-person worlds, comparing one versus two
 simultaneous social commitments under one clock. Independent reconstruction and
 exact byte replay pass; the finding is ACCEPT WITH QUALIFICATION, with harmful,
-failed and complete-null cases preserved. It is opt-in research outside the
-protected001–021 foundation. See [results](experiments/022/results.md),
+failed and complete-null cases preserved. It remains opt-in research, now part of the
+protected001–022 foundation as qualified scientific evidence, without adoption.
+See [independent review](docs/experiment-022-review.md), [contract](docs/experiment-contract-001-022.md),
+[integrity audit](docs/integrity-audit-001-022.md), [results](experiments/022/results.md),
 [verification](experiments/022/verification.md) and the
 [concurrency architecture](docs/development/concurrent-world-architecture.md).
 
 Read-only reproduction: `cargo run --release --locked -j 1 --example validate022`.
 The separate `experiment022` runner requires a new isolated JSONL output filename;
-never regenerate frozen evidence in place. No023 or default adoption is authorized.
+never regenerate frozen evidence in place. No default adoption is authorized;
+023requires its separate prospective scheduling gate.
 
 Inspect original four-person histories in the separate read-only preview:
 `python -B tools/history-explorer/concurrent_preview.py --port 8768`, then open

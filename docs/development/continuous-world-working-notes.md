@@ -105,3 +105,31 @@ past isexplicitlyprecomparison; no syntheticclock/periods fields in022Trial.
 ComparisonswholeworldsummaryhiddenActor; paircardsowncapturedinputexacttickonly.
 AddrealarchivePython/JS/HTTPtests, legacy41Python+4JS, actualmainbrowserall10cases.
 Assethandlerdoesnotyetserve nativeJS, frontendstillold—unfinishedtaskworkingcode.
+
+
+## Latest gate outcomes / prospective correction
+
+A14077d5 published; B361artifactshared+normalPASS, all15legacy0, source/rawguards0
+changed. Bpublicationnext. No023code/spec/matrix yet. Cfrontend wired andNative7 /
+full48+preview4 /4legacyJS allPASS. Verifiedmainserver156880; tab3phaseTabactual
+main022original1@9Observer. NeedsreloadafterCSSaxis/contrastfix; accept10browsercases.
+
+Important prospectiveD correction BEFORE anyregistration/code: inquirycostsactual
+Direct10,Evidence28 (src/inquiry.rs29–33), maxcompoundreservation33, not35.
+Rejectu64::MAXInput.end idea: JSexactnumericdisplay suffers. PreferContinuous
+publicend=now+MAX_EXISTING_RESERVATION(33), independentofreporting/evaluationend;
+thisisminimalrollingpublicaffordanceprojection, no scorechange/futureknowledge.
+Every currentordinaryaction'sknownreservationfits33; revalidateactualmaxbeforeE.
+Windowedpublicend=nextreportboundary(start+period*k), no state/clockreset.
+TheendmustberecomputedAFTER atomicadmission jumps beforecollectingnewordinary
+choices. Originalconcurrent_boundary capturesendbeforeadmit; newversionedboundary
+coordinator mustexplicitlyshadow/reprojectafterquery. Evaluatorstopguard after
+querymustnotallow newchoicespastnominalstop. Allthisisprospectivedesignthinking,
+notregisteredsemanticsoroutcomes. Derivecommonboundeddrain from33maxreservation;
+chooseexactD prospectively (33coverslastpriorproposal+query with1tickslack),
+reportnominalstopunfinishedworkvscommonactualdrainedendpointseparately.
+Reporting-only annotations canbederivedobserverrecords fromactualprimitives/
+intervals, neveractorinput/restartedwork orpassiveobservations. Continuousreport
+periodplacebo shouldleaveallphysical/ownedchoicehistory unchanged; controlperiod
+changespublicbudgetbydesign. Fullbehavioralnull mustdistinguish directtreatment
+inputend/eligibilitydifferences fromidenticalselected/executed/persistentstate.

@@ -31,8 +31,8 @@ scientifically accepted and protected while its proposed mechanism is rejected.
 Protection preserves accepted findings and qualifications, not a mandate to adopt
 every tested mechanism.
 
-Experiments001–021 are protected by the
-[foundation contract](experiment-contract-001-021.md) and its inherited historical
+Experiments001–022 are protected by the
+[foundation contract](experiment-contract-001-022.md) and its inherited historical
 maps. Experiment 011's [scientific review](experiment-011-review.md) is confirmed with
 qualification: its evidence is protected, while StatusValue remains unadopted.
 Experiment012's [scientific review](experiment-012-review.md) establishes ACCEPT
@@ -42,8 +42,8 @@ Experiment013's unchanged [scientific review](experiment-013-review.md) establis
 ACCEPT WITH QUALIFICATION; Pulse/Ungated remain optional research, not defaults.
 Preserve C64 versus B64 and retained episodes outside the last-four partner scoring
 window. Its shared read-only gate invokes both independent readers.
-The [integrity report](integrity-audit-001-021.md) records the latest protection pass;
-the [research handoff](research-handoff-001-021.md) preserves open valuation/timing questions.
+The [integrity report](integrity-audit-001-022.md) records the latest protection pass;
+the [research handoff](research-handoff-001-022.md) preserves open valuation/timing questions.
 017 is protected with qualification; its188 contact-only nulls and narrow7/188 material
 effect remain distinct. No default adoption or retroactive recurring hunger.
 Reverify source, contracts and reviews before
@@ -233,3 +233,19 @@ For the completed nine-stage program, read the concise checkpoint and
 conversion design are prospective next-step boundaries, not additional simulation
 results. An independently authorized next session should review022first. Do not
 edit its frozen Work enum/host files or register023from the design document.
+
+
+## Current022 protection and023authorization boundary
+
+022independent review at9fb6da8 accepts with qualification; newcontract/audit bind
+361original artifacts,341inherited unchanged+20original022files. Original022
+standalone remains frozen; sharedcontract022/validate022_foundation/normalgate add
+inventory/parity and review022_findings with explicit source identities. Every
+original22source lock remains intact. Preserve comparison-relative clock law,
+absolute-phase discrepancy, query classes, terminal-food/hunger distinction,
+duplicate-label sensitivities and negative/null anchors. No default adoption.
+
+The current First Continuous World program separately authorizes023scheduling
+research after actualBprotection publication and prospectiveEgate. It does not
+authorize material preparation or024. Inspect checkpoint and research-handoff-001-022;
+do not patch protectedparents to wire a newmode or reuse viewer-derived cognition.

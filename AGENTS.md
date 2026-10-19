@@ -33,29 +33,33 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-The separately authorized First Continuous World program reviews022and may protect
-001–022only after actual gates. Its023study concerns continuous opportunities,
+The separately authorized First Continuous World program has reviewed022and
+validated001–022protection. Its023study concerns continuous opportunities,
 not material production; implementation requires committed/pushed022protection
 and a new prospective design gate. Do not begin024or implement finite conversion.
 Read docs/experiment-022-review.md and the current continuation checkpoint.
 
-Experiment022 is completed opt-in concurrency research, ACCEPT WITH QUALIFICATION;
-the protected endpoint remains001–021. Inspect experiments/022/results.md,
+Experiment022 is independently reviewed/protected opt-in concurrency research,
+ACCEPT WITH QUALIFICATION; the protected endpoint is001–022 (361artifacts). Inspect experiments/022/results.md,
 verification.md and implementation-notes.md. Native originals have100worlds,
 60source locks and5compressed archives; validate022 independently reconstructs,
-rejects23scratch corruptions and repeats100exact byte runs. Never regenerate them
+rejects23scratch corruptions and repeats100exact byte runs. Normalfoundation and
+validate022_foundation additionally protect361originals, exactstandalone/shared
+parity and independent review anchors/4controls. Never regenerate them
 in place. Preserve explicit reservations, independent consent, one shared epoch
 clock, owned contexts and conservative exclusive inquiries. Query masks, rejected
 admissions and executed queries are different observations. More contact is not
-better by definition; terminal food equality can hide hunger differences. No023,
-automatic protection or global default change follows from this research.
+better by definition; terminal food equality can hide hunger differences. No new
+experiment, automatic adoption or global default change follows from protection.
 
 022's implementation uses comparison-epoch pulse/sensing boundaries despite
 prospective absolute-phase prose; preserve this disclosed qualification, not an
 absolute-phase claim. Readiness and sustained-material-opportunity documents under
-docs/development are design/assessment only: no023runtime or numerical matrix.
+docs/development remain material design/assessment only; they authorize no production
+runtime or numerical material-study matrix.023is separately authorized scheduling research.
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-021.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-022.md`.
+The historical `docs/experiment-contract-001-021.md` remains authoritative for001–021.
 The historical `docs/experiment-contract-001-020.md` remains authoritative for001–020.
 The historical `docs/experiment-contract-001-019.md` remains authoritative for001–019.
 The historical `docs/experiment-contract-001-018.md` remains authoritative for001–018.
