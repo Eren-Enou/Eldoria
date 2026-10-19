@@ -1,0 +1,11 @@
+{
+  "stage": "source-host-before-treatment",
+  "originals": 100,
+  "exact_original_bytes": true,
+  "decoded_sha256": "32955966b1aec83610fc879deeaa1e77704ccdb4baf9e707a6f9d94e99186b0f",
+  "preregistration_commit": "cf946fa",
+  "root_sources_unchanged": true,
+  "with_versioned023_module_exact_bytes": true,
+  "with_versioned023_module_sha256": "32955966b1aec83610fc879deeaa1e77704ccdb4baf9e707a6f9d94e99186b0f",
+  "final_formatted_runtime_host_exact_bytes": true
+}

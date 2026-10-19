@@ -1,0 +1,245 @@
+{
+  "rows": [
+    {
+      "ordinal": 13,
+      "owner": 0,
+      "query_ref": "history.final_state.base.base.base.base.inquiry.records[0]",
+      "start": 6,
+      "completion": 19,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "native_response_present": false,
+      "provenance_receipt_ref": "history.final_state.base.base.base.provenance.receipts[1]",
+      "communicator": 2,
+      "listener": 0,
+      "cognition_receipt": 0,
+      "novelty_value": 40,
+      "observed_progress": {
+        "support_before": 0,
+        "support_after": 50,
+        "status_before": "Open",
+        "status_after": "Partial",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "ordinal": 15,
+      "owner": 0,
+      "query_ref": "history.final_state.base.base.base.base.inquiry.records[0]",
+      "start": 12,
+      "completion": 25,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "native_response_present": false,
+      "provenance_receipt_ref": "history.final_state.base.base.base.provenance.receipts[1]",
+      "communicator": 2,
+      "listener": 0,
+      "cognition_receipt": 0,
+      "novelty_value": 40,
+      "observed_progress": {
+        "support_before": 0,
+        "support_after": 50,
+        "status_before": "Open",
+        "status_after": "Partial",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "ordinal": 33,
+      "owner": 0,
+      "query_ref": "history.final_state.base.base.base.base.inquiry.records[0]",
+      "start": 6,
+      "completion": 19,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "native_response_present": false,
+      "provenance_receipt_ref": "history.final_state.base.base.base.provenance.receipts[1]",
+      "communicator": 2,
+      "listener": 0,
+      "cognition_receipt": 0,
+      "novelty_value": 40,
+      "observed_progress": {
+        "support_before": 0,
+        "support_after": 50,
+        "status_before": "Open",
+        "status_after": "Partial",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "ordinal": 36,
+      "owner": 0,
+      "query_ref": "history.final_state.base.base.base.base.inquiry.records[0]",
+      "start": 6,
+      "completion": 19,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "native_response_present": false,
+      "provenance_receipt_ref": "history.final_state.base.base.base.provenance.receipts[1]",
+      "communicator": 2,
+      "listener": 0,
+      "cognition_receipt": 0,
+      "novelty_value": 40,
+      "observed_progress": {
+        "support_before": 0,
+        "support_after": 50,
+        "status_before": "Open",
+        "status_after": "Partial",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "ordinal": 37,
+      "owner": 0,
+      "query_ref": "history.final_state.base.base.base.base.inquiry.records[0]",
+      "start": 6,
+      "completion": 19,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "native_response_present": false,
+      "provenance_receipt_ref": "history.final_state.base.base.base.provenance.receipts[1]",
+      "communicator": 2,
+      "listener": 0,
+      "cognition_receipt": 0,
+      "novelty_value": 40,
+      "observed_progress": {
+        "support_before": 0,
+        "support_after": 50,
+        "status_before": "Open",
+        "status_after": "Partial",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "ordinal": 38,
+      "owner": 0,
+      "query_ref": "history.final_state.base.base.base.base.inquiry.records[0]",
+      "start": 12,
+      "completion": 25,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "native_response_present": false,
+      "provenance_receipt_ref": "history.final_state.base.base.base.provenance.receipts[1]",
+      "communicator": 2,
+      "listener": 0,
+      "cognition_receipt": 0,
+      "novelty_value": 40,
+      "observed_progress": {
+        "support_before": 0,
+        "support_after": 50,
+        "status_before": "Open",
+        "status_after": "Partial",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "ordinal": 39,
+      "owner": 0,
+      "query_ref": "history.final_state.base.base.base.base.inquiry.records[0]",
+      "start": 12,
+      "completion": 25,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "native_response_present": false,
+      "provenance_receipt_ref": "history.final_state.base.base.base.provenance.receipts[1]",
+      "communicator": 2,
+      "listener": 0,
+      "cognition_receipt": 0,
+      "novelty_value": 40,
+      "observed_progress": {
+        "support_before": 0,
+        "support_after": 50,
+        "status_before": "Open",
+        "status_after": "Partial",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    },
+    {
+      "ordinal": 41,
+      "owner": 0,
+      "query_ref": "history.final_state.base.base.base.base.inquiry.records[0]",
+      "start": 6,
+      "completion": 19,
+      "selected": {
+        "Ask": {
+          "concern": 0,
+          "source": 2,
+          "strategy": "Direct"
+        }
+      },
+      "native_response_present": false,
+      "provenance_receipt_ref": "history.final_state.base.base.base.provenance.receipts[1]",
+      "communicator": 2,
+      "listener": 0,
+      "cognition_receipt": 0,
+      "novelty_value": 40,
+      "observed_progress": {
+        "support_before": 0,
+        "support_after": 50,
+        "status_before": "Open",
+        "status_after": "Partial",
+        "receipt_acquired": true,
+        "novelty": "New",
+        "novelty_value": 40,
+        "time": 13
+      }
+    }
+  ],
+  "qualification": "Native006response object is not the whole007delivery route. Presence/novelty/retained support/status progress and material usefulness are distinct. All recorded023queries are Direct; no utility or truth calibration inferred."
+}

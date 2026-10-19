@@ -1,0 +1,224 @@
+{
+  "status": "PASS",
+  "scientific_decision": "ACCEPT WITH QUALIFICATION; pending independentreview, no protection/adoption",
+  "original_worlds": 42,
+  "exact_replays": 42,
+  "independent_reconstructions": 42,
+  "original_scratch_categories_rejected": 19,
+  "supplemental_terminal_query_controls": 2,
+  "matched_prefixes": 20,
+  "registered_coverage": [
+    16,
+    16
+  ],
+  "actual_inquiry_routes_checked": 8,
+  "reporting_placebos_exact": 2,
+  "root_tests": 217,
+  "prototype_tests": 4,
+  "main_viewer_tests": 56,
+  "preview_tests": 4,
+  "legacy_javascript_suites": 4,
+  "root_foundation_endpoint": "001-022",
+  "protected_originals": 361,
+  "initial_original_working_byte_files": 378,
+  "original_runtime_source_bindings": 80,
+  "original_validation_helper_locks": 5,
+  "originals_changed": [],
+  "checks": [
+    {
+      "name": "final-root-fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.913
+    },
+    {
+      "name": "final-explicit-proto-fmt",
+      "command": [
+        "rustfmt",
+        "--check",
+        "--edition",
+        "2024",
+        "prototypes/continuous-world/src/model.rs",
+        "prototypes/continuous-world/src/coordinator.rs"
+      ],
+      "exit": 0,
+      "seconds": 0.083
+    },
+    {
+      "name": "final-proto-fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--manifest-path",
+        "prototypes/continuous-world/Cargo.toml",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.234
+    },
+    {
+      "name": "final-root-clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "-j",
+        "1",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit": 0,
+      "seconds": 0.683
+    },
+    {
+      "name": "final-proto-clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/continuous-world/Cargo.toml",
+        "--target-dir",
+        "target/continuous-world",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit": 0,
+      "seconds": 9.332
+    },
+    {
+      "name": "final-proto-tests",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/continuous-world/Cargo.toml",
+        "--target-dir",
+        "target/continuous-world"
+      ],
+      "exit": 0,
+      "seconds": 24.339
+    },
+    {
+      "name": "final-root-tests",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "1"
+      ],
+      "exit": 0,
+      "seconds": 117.477
+    },
+    {
+      "name": "final-023-gate",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate023"
+      ],
+      "exit": 0,
+      "seconds": 23.796
+    },
+    {
+      "name": "final-foundation",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate_contract"
+      ],
+      "exit": 0,
+      "seconds": 1439.006
+    }
+  ],
+  "additional_checks": [
+    {
+      "name": "final-current-proto-fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--manifest-path",
+        "prototypes/continuous-world/Cargo.toml",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.235
+    },
+    {
+      "name": "final-current-proto-clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/continuous-world/Cargo.toml",
+        "--target-dir",
+        "target/continuous-world",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit": 0,
+      "seconds": 0.444
+    },
+    {
+      "name": "final-current-proto-tests",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/continuous-world/Cargo.toml",
+        "--target-dir",
+        "target/continuous-world"
+      ],
+      "exit": 0,
+      "seconds": 3.095
+    },
+    {
+      "name": "final-56-main-viewer",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/history-explorer/tests",
+        "-v"
+      ],
+      "exit": 0,
+      "seconds": 267.399
+    }
+  ],
+  "scope_note": "All commands executed successfully except superseded wrong-directory preview discovery (zero tests/exit5), corrected4test suite passes. Source/archives/specification unchanged; walltimes separate from deterministic evidence."
+}

@@ -1,0 +1,23 @@
+{
+  "scope": "Post-evaluation analysis/validation identities, NOT an extension of the pre-run80file source freeze or001-022foundation",
+  "helpers_sha256": {
+    "examples/support/slices023.py": "8d8cba4d41406bcd956becc824232d205ecf4bad0dec65dd25af28aee15b7876",
+    "examples/support/coverage023.py": "a39d5e23c4bd54c0c3e0c481722d04905dc6f8f1473d790f1a7ecbab2dcba883",
+    "examples/support/review023_endpoints.py": "e7db16583e3327b7700eae461d10bddabef8940ef20e35b3883430ddfe763879",
+    "examples/support/review023_inquiry.py": "b2282173b25e82b2ffa4e490f2f300ad0199b43901d1e1962d40c116a650928d",
+    "examples/support/validate_continuous_demo.py": "6182577e1ddc7e9ef6db1aa5cf7564f4455f08b4c559a07b53f82efafd3a2592",
+    "examples/validate023.rs": "ee6cd9b72d441eda77de4c854f635e811f539b63f87d77bc514450525101d322",
+    "prototypes/continuous-world/tests/owned_bounds.rs": "5af223d22d056aa459f63524c5bfb2a837512aa42c0385c5e745ac1bccbf0dd0"
+  },
+  "derived_sha256": {
+    "experiments/023/independent-metrics.json": "a69ecfe1e68fbe597f9b23d84aef2d75c94692e11ebf93a811911e33b58ddefe",
+    "experiments/023/comparisons.json": "269f05164de3d8046cad9bd9ff639b28531efcc3d119cc13760bca67a90f5017",
+    "experiments/023/causal-slices.json": "c6d54df76e5d7847b86a1c785c6fb8c1f66f4e7b72ba8667e8d074dae9665fd0",
+    "experiments/023/coverage.json": "4939e1646d0cb7f29588a45dd8e8d709ae3f75333844a71628c077414c2ad81d",
+    "experiments/023/endpoint-audit.json": "9e0c3b7144d43c626d491cd1d6feddfb97bcae8711d817993c9b6bcf77c86ea3",
+    "experiments/023/inquiry-outcome-audit.json": "0e3120d625481a833e875c5c684cc770b67a2cdbfbd749156d6031a500ad7220",
+    "experiments/023/corruption-controls.json": "6f78eab339a10f69645a3807c1f6e313d551b971ad35dd88d91135094dc28d73"
+  },
+  "original_archive_sha256": "c4bd87738a09bb93c0dc3bbe8214ff312738c8a530b82158968e83f9e22387d4",
+  "original_runtime_sources_unchanged": true
+}

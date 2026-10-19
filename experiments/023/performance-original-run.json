@@ -1,0 +1,8 @@
+{
+  "kind": "Wall-clock/process evidence, separate from deterministic originals",
+  "first_registered_matrix_seconds": 0.39363070006947964,
+  "process_peak_working_set_bytes": 13537280,
+  "memory_samples": 20,
+  "process_scope": "Full recording/serialization process, includes observer history; not isolated deep live cognition heap",
+  "conditions": "Release executable, sequential matrix; no other benchmark or simulation process running; idle local viewer/app remain"
+}

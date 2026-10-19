@@ -1,0 +1,1186 @@
+{
+  "schema": "experiment-023-causal-slices/v1",
+  "archive_sha256": "c4bd87738a09bb93c0dc3bbe8214ff312738c8a530b82158968e83f9e22387d4",
+  "matched_prefix_audit": [
+    {
+      "ordinals": [
+        0,
+        1
+      ],
+      "through_tick": 10,
+      "captured_inputs_checked": 8,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        2,
+        3
+      ],
+      "through_tick": 10,
+      "captured_inputs_checked": 6,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        4,
+        5
+      ],
+      "through_tick": 10,
+      "captured_inputs_checked": 10,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        6,
+        7
+      ],
+      "through_tick": 10,
+      "captured_inputs_checked": 9,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        8,
+        9
+      ],
+      "through_tick": 10,
+      "captured_inputs_checked": 8,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        10,
+        11
+      ],
+      "through_tick": 7,
+      "captured_inputs_checked": 16,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        12,
+        13
+      ],
+      "through_tick": 4,
+      "captured_inputs_checked": 4,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        14,
+        15
+      ],
+      "through_tick": 4,
+      "captured_inputs_checked": 4,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        16,
+        17
+      ],
+      "through_tick": 10,
+      "captured_inputs_checked": 8,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        18,
+        19
+      ],
+      "through_tick": 10,
+      "captured_inputs_checked": 8,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        20,
+        21
+      ],
+      "through_tick": 34,
+      "captured_inputs_checked": 4,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        22,
+        23
+      ],
+      "through_tick": 4,
+      "captured_inputs_checked": 8,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        24,
+        25
+      ],
+      "through_tick": 24,
+      "captured_inputs_checked": 26,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        26,
+        27
+      ],
+      "through_tick": 10,
+      "captured_inputs_checked": 8,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        28,
+        29
+      ],
+      "through_tick": 10,
+      "captured_inputs_checked": 6,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        30,
+        31
+      ],
+      "through_tick": 10,
+      "captured_inputs_checked": 8,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        32,
+        33
+      ],
+      "through_tick": 4,
+      "captured_inputs_checked": 4,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        34,
+        35
+      ],
+      "through_tick": 23,
+      "captured_inputs_checked": 28,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        36,
+        37
+      ],
+      "through_tick": 45,
+      "captured_inputs_checked": 47,
+      "identical_except_registered_public_end": true
+    },
+    {
+      "ordinals": [
+        38,
+        39
+      ],
+      "through_tick": 45,
+      "captured_inputs_checked": 57,
+      "identical_except_registered_public_end": true
+    }
+  ],
+  "positive_continuation": {
+    "ordinal": 1,
+    "actor_local_before": {
+      "ref": "history.boundaries[8].choices[0]",
+      "tick": 14,
+      "owner": 0,
+      "food": 0,
+      "hunger": 30,
+      "public_end": 47,
+      "retained": {
+        "owner": 0,
+        "receipt": 1,
+        "observation": {
+          "id": 0,
+          "observed_at": 14,
+          "stock": 4,
+          "accessible": true,
+          "duration": 4
+        },
+        "own_takes": 0
+      },
+      "selected": "Acquire",
+      "candidates": [
+        {
+          "action": "Wait",
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "action": "Consume",
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "action": "Invite",
+          "eligible": true,
+          "score": 13
+        },
+        {
+          "action": "Acquire",
+          "eligible": true,
+          "score": 30
+        }
+      ],
+      "contact": {
+        "Invite": {
+          "recipient": 1,
+          "kind": "Resource"
+        }
+      },
+      "contact_candidates": [
+        {
+          "intent": "Wait",
+          "reservation": 0,
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 1,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": true,
+          "score": 13
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 2,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": true,
+          "score": 13
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 3,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": true,
+          "score": 13
+        }
+      ]
+    },
+    "admitted_claim_ref": "history.transitions[40]",
+    "checkpoint_ref": "checkpoints[0]",
+    "grant_ref": "history.grants[0]",
+    "new_local_input": {
+      "ref": "history.boundaries[12].choices[0]",
+      "tick": 18,
+      "owner": 0,
+      "food": 1,
+      "hunger": 35,
+      "public_end": 51,
+      "retained": {
+        "owner": 0,
+        "receipt": 1,
+        "observation": {
+          "id": 0,
+          "observed_at": 14,
+          "stock": 4,
+          "accessible": true,
+          "duration": 4
+        },
+        "own_takes": 1
+      },
+      "selected": "Invite",
+      "candidates": [
+        {
+          "action": "Wait",
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "action": "Consume",
+          "eligible": true,
+          "score": 35
+        },
+        {
+          "action": "Invite",
+          "eligible": true,
+          "score": 48
+        },
+        {
+          "action": "Acquire",
+          "eligible": false,
+          "score": -1
+        }
+      ],
+      "contact": {
+        "Invite": {
+          "recipient": 2,
+          "kind": "Resource"
+        }
+      },
+      "contact_candidates": [
+        {
+          "intent": "Wait",
+          "reservation": 0,
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 1,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 2,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": true,
+          "score": 48
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 3,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": false,
+          "score": -1
+        }
+      ]
+    },
+    "downstream_accept_ref": "history.final_state.base.base.base.base.base.events[17]",
+    "observer_effect": {
+      "grant": {
+        "commitment": 20,
+        "tick": 18,
+        "owner": 0,
+        "stock_before": 4,
+        "stock_after": 3,
+        "food_before": 0,
+        "food_after": 1,
+        "outcome": "Granted"
+      },
+      "later_transfer": 1,
+      "later_participants": [
+        0,
+        2
+      ],
+      "later_food": [
+        0,
+        2
+      ]
+    },
+    "qualification": "This is a continuation/material-use chain, not a net benefit. Control0cannot fit a4tickclaim at14 before17 and acquires at17, finishing21; its hunger/state already differ after choice10."
+  },
+  "clean_unproductive_cost": {
+    "ordinals": [
+      10,
+      11
+    ],
+    "windowed_choice": {
+      "ref": "history.boundaries[4].choices[2]",
+      "tick": 7,
+      "owner": 2,
+      "food": 1,
+      "hunger": 5,
+      "public_end": 14,
+      "retained": {
+        "owner": 2,
+        "receipt": 0,
+        "observation": {
+          "id": 0,
+          "observed_at": 3,
+          "stock": 1,
+          "accessible": true,
+          "duration": 4
+        },
+        "own_takes": 0
+      },
+      "selected": "Consume",
+      "candidates": [
+        {
+          "action": "Wait",
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "action": "Consume",
+          "eligible": true,
+          "score": 5
+        },
+        {
+          "action": "Invite",
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "action": "Acquire",
+          "eligible": false,
+          "score": -1
+        }
+      ],
+      "contact": "Wait",
+      "contact_candidates": [
+        {
+          "intent": "Wait",
+          "reservation": 0,
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 0,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 1,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 3,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": false,
+          "score": -1
+        }
+      ]
+    },
+    "continuous_choice": {
+      "ref": "history.boundaries[4].choices[2]",
+      "tick": 7,
+      "owner": 2,
+      "food": 1,
+      "hunger": 5,
+      "public_end": 40,
+      "retained": {
+        "owner": 2,
+        "receipt": 0,
+        "observation": {
+          "id": 0,
+          "observed_at": 3,
+          "stock": 1,
+          "accessible": true,
+          "duration": 4
+        },
+        "own_takes": 0
+      },
+      "selected": "Invite",
+      "candidates": [
+        {
+          "action": "Wait",
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "action": "Consume",
+          "eligible": true,
+          "score": 5
+        },
+        {
+          "action": "Invite",
+          "eligible": true,
+          "score": 64
+        },
+        {
+          "action": "Acquire",
+          "eligible": false,
+          "score": -1
+        }
+      ],
+      "contact": {
+        "Invite": {
+          "recipient": 0,
+          "kind": "Resource"
+        }
+      },
+      "contact_candidates": [
+        {
+          "intent": "Wait",
+          "reservation": 0,
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 0,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": true,
+          "score": 64
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 1,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": true,
+          "score": 48
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 3,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": true,
+          "score": 48
+        }
+      ]
+    },
+    "continuous_pending_choice": {
+      "ref": "history.boundaries[5].choices[0]",
+      "tick": 8,
+      "owner": 2,
+      "food": 1,
+      "hunger": 5,
+      "public_end": 41,
+      "retained": {
+        "owner": 2,
+        "receipt": 0,
+        "observation": {
+          "id": 0,
+          "observed_at": 3,
+          "stock": 1,
+          "accessible": true,
+          "duration": 4
+        },
+        "own_takes": 0
+      },
+      "selected": "Consume",
+      "candidates": [
+        {
+          "action": "Wait",
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "action": "Consume",
+          "eligible": true,
+          "score": 5
+        },
+        {
+          "action": "Invite",
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "action": "Acquire",
+          "eligible": false,
+          "score": -1
+        }
+      ],
+      "contact": "Wait",
+      "contact_candidates": [
+        {
+          "intent": "Wait",
+          "reservation": 0,
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 0,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 1,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 3,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": false,
+          "score": -1
+        }
+      ]
+    },
+    "windowed_meal_ref": "history.final_state.base.base.base.base.base.cognition.consumption[3]",
+    "continuous_meal_ref": "history.final_state.base.base.base.base.base.cognition.consumption[3]",
+    "zero_transfer_event_ref": "history.final_state.base.base.base.base.base.events[3]",
+    "windowed_meal": {
+      "tick": 8,
+      "actor": 2,
+      "food_before": 1,
+      "food_after": 0,
+      "hunger_before": 5,
+      "hunger_after": 0,
+      "consumed": 1
+    },
+    "continuous_meal": {
+      "tick": 9,
+      "actor": 2,
+      "food_before": 1,
+      "food_after": 0,
+      "hunger_before": 5,
+      "hunger_after": 0,
+      "consumed": 1
+    },
+    "event": {
+      "id": 3,
+      "tick": 10,
+      "scene": 1,
+      "participants": [
+        2,
+        0
+      ],
+      "decision": {
+        "actor": 2,
+        "observation": {
+          "partner": 0,
+          "last_signal": null,
+          "amount": 1,
+          "turns_left": 6
+        },
+        "food": 0,
+        "hunger": 0,
+        "generosity": 60,
+        "caution": 20,
+        "expectation": 67,
+        "trust": 8,
+        "episodic_valence": 8,
+        "memory_causes": [
+          2,
+          1,
+          0
+        ],
+        "candidates": [
+          {
+            "action": "Request",
+            "score": -38
+          },
+          {
+            "action": "Leave",
+            "score": 0
+          }
+        ],
+        "selected": "Leave"
+      },
+      "balances_before": [
+        0,
+        0
+      ],
+      "balances_after": [
+        0,
+        0
+      ],
+      "transferred": 0,
+      "outcome": "Withdrawal",
+      "interpretations": [
+        {
+          "event": 3,
+          "partner": 0,
+          "observed": "Leave",
+          "interpretation": "Departure",
+          "valence": 0
+        },
+        {
+          "event": 3,
+          "partner": 2,
+          "observed": "Leave",
+          "interpretation": "Departure",
+          "valence": 0
+        }
+      ]
+    },
+    "hunger_area_continuous_minus_windowed": [
+      0,
+      0,
+      5,
+      0
+    ],
+    "qualification": "Clean modest cost: first matched choice differs only in budget. Contact displaces immediate meal, pending token permits meal a tick later, admitted scene then Leave/no transfer. Does not prove every contact is harmful or authorize retuning."
+  },
+  "costly_choice": {
+    "ordinals": [
+      4,
+      5
+    ],
+    "windowed_first": {
+      "ref": "history.boundaries[4].choices[0]",
+      "tick": 10,
+      "owner": 0,
+      "food": 1,
+      "hunger": 25,
+      "public_end": 17,
+      "retained": {
+        "owner": 0,
+        "receipt": 0,
+        "observation": {
+          "id": 0,
+          "observed_at": 6,
+          "stock": 4,
+          "accessible": true,
+          "duration": 4
+        },
+        "own_takes": 0
+      },
+      "selected": "Consume",
+      "candidates": [
+        {
+          "action": "Wait",
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "action": "Consume",
+          "eligible": true,
+          "score": 25
+        },
+        {
+          "action": "Invite",
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "action": "Acquire",
+          "eligible": false,
+          "score": -1
+        }
+      ],
+      "contact": "Wait",
+      "contact_candidates": [
+        {
+          "intent": "Wait",
+          "reservation": 0,
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 1,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 2,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 3,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": false,
+          "score": -1
+        }
+      ]
+    },
+    "continuous_first": {
+      "ref": "history.boundaries[4].choices[0]",
+      "tick": 10,
+      "owner": 0,
+      "food": 1,
+      "hunger": 25,
+      "public_end": 43,
+      "retained": {
+        "owner": 0,
+        "receipt": 0,
+        "observation": {
+          "id": 0,
+          "observed_at": 6,
+          "stock": 4,
+          "accessible": true,
+          "duration": 4
+        },
+        "own_takes": 0
+      },
+      "selected": "Invite",
+      "candidates": [
+        {
+          "action": "Wait",
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "action": "Consume",
+          "eligible": true,
+          "score": 25
+        },
+        {
+          "action": "Invite",
+          "eligible": true,
+          "score": 108
+        },
+        {
+          "action": "Acquire",
+          "eligible": false,
+          "score": -1
+        }
+      ],
+      "contact": {
+        "Invite": {
+          "recipient": 1,
+          "kind": "Resource"
+        }
+      },
+      "contact_candidates": [
+        {
+          "intent": "Wait",
+          "reservation": 0,
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 1,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": true,
+          "score": 108
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 2,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 3,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": true,
+          "score": 48
+        }
+      ]
+    },
+    "later_continuous_choice": {
+      "ref": "history.boundaries[12].choices[0]",
+      "tick": 18,
+      "owner": 0,
+      "food": 1,
+      "hunger": 35,
+      "public_end": 51,
+      "retained": {
+        "owner": 0,
+        "receipt": 1,
+        "observation": {
+          "id": 0,
+          "observed_at": 14,
+          "stock": 2,
+          "accessible": true,
+          "duration": 4
+        },
+        "own_takes": 1
+      },
+      "selected": "Invite",
+      "candidates": [
+        {
+          "action": "Wait",
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "action": "Consume",
+          "eligible": true,
+          "score": 35
+        },
+        {
+          "action": "Invite",
+          "eligible": true,
+          "score": 94
+        },
+        {
+          "action": "Acquire",
+          "eligible": false,
+          "score": -1
+        }
+      ],
+      "contact": {
+        "Invite": {
+          "recipient": 1,
+          "kind": "Resource"
+        }
+      },
+      "contact_candidates": [
+        {
+          "intent": "Wait",
+          "reservation": 0,
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 1,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": true,
+          "score": 94
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 2,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": true,
+          "score": 48
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 3,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": false,
+          "score": -1
+        }
+      ]
+    },
+    "hunger_area_continuous_minus_windowed": [
+      2915,
+      525,
+      30,
+      405
+    ],
+    "windowed_final_food": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "continuous_final_food": [
+      1,
+      3,
+      0,
+      0
+    ],
+    "windowed_final_hunger": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "continuous_final_hunger": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "qualification": "At first divergence inputs match except budget; continued contact outranks an eligible meal. Higher hunger area for allfour is a measured cost, not comprehensive welfare.",
+    "actual_control_meal_ref": "history.final_state.base.base.base.base.base.cognition.consumption[2]",
+    "control_meal": {
+      "tick": 11,
+      "actor": 0,
+      "food_before": 1,
+      "food_after": 0,
+      "hunger_before": 25,
+      "hunger_after": 0,
+      "consumed": 1
+    }
+  },
+  "inquiry_crossing": {
+    "ordinal": 13,
+    "selection": {
+      "ref": "history.boundaries[0].choices[0]",
+      "tick": 4,
+      "owner": 0,
+      "food": 0,
+      "hunger": 0,
+      "public_end": 37,
+      "retained": {
+        "owner": 0,
+        "receipt": 0,
+        "observation": {
+          "id": 0,
+          "observed_at": 4,
+          "stock": 0,
+          "accessible": true,
+          "duration": 4
+        },
+        "own_takes": 0
+      },
+      "selected": "Invite",
+      "candidates": [
+        {
+          "action": "Wait",
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "action": "Consume",
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "action": "Invite",
+          "eligible": true,
+          "score": 43
+        },
+        {
+          "action": "Acquire",
+          "eligible": false,
+          "score": -1
+        }
+      ],
+      "contact": {
+        "Invite": {
+          "recipient": 2,
+          "kind": "Inquiry"
+        }
+      },
+      "contact_candidates": [
+        {
+          "intent": "Wait",
+          "reservation": 0,
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 1,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": true,
+          "score": -2
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 2,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": true,
+          "score": -2
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 3,
+              "kind": "Resource"
+            }
+          },
+          "reservation": 8,
+          "eligible": true,
+          "score": -2
+        },
+        {
+          "intent": {
+            "Invite": {
+              "recipient": 2,
+              "kind": "Inquiry"
+            }
+          },
+          "reservation": 15,
+          "eligible": true,
+          "score": 43
+        }
+      ]
+    },
+    "checkpoint_ref": "checkpoints[0]",
+    "query_ref": "history.final_state.base.base.base.base.inquiry.records[0]",
+    "tick": 19,
+    "time_spent": 13,
+    "selected": {
+      "Ask": {
+        "concern": 0,
+        "source": 2,
+        "strategy": "Direct"
+      }
+    },
+    "response_present": false,
+    "realized_value": 40,
+    "qualification": "Legitimate information outcome; no material benefit in zerofood fixture. Longer48periodcontrols36/37both complete one query; shortperiod11masks allDirect15 reservations."
+  }
+}

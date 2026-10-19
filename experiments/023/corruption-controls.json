@@ -1,0 +1,116 @@
+[
+  {
+    "category": "world tick",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": ""
+  },
+  {
+    "category": "reporting checkpoint",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": "checkpoint / unfinished work references"
+  },
+  {
+    "category": "actor reservation",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": "double booking"
+  },
+  {
+    "category": "commitment identity",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": ""
+  },
+  {
+    "category": "deadline",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": ""
+  },
+  {
+    "category": "duplicate release",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": "wrong/missing release"
+  },
+  {
+    "category": "skipped completion",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": "double booking"
+  },
+  {
+    "category": "double-booked actor",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": "double booking"
+  },
+  {
+    "category": "double resource transfer",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": ""
+  },
+  {
+    "category": "false consent",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": ""
+  },
+  {
+    "category": "future observation",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": ""
+  },
+  {
+    "category": "incorrect need pulse",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": ""
+  },
+  {
+    "category": "missing claimed output",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": ""
+  },
+  {
+    "category": "ghost action after nominal cutoff",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": ""
+  },
+  {
+    "category": "lost unfinished commitment",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": "checkpoint / unfinished work references"
+  },
+  {
+    "category": "false terminal snapshot",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": ""
+  },
+  {
+    "category": "restored forgotten cognition",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": ""
+  },
+  {
+    "category": "invalid arbitration",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": ""
+  },
+  {
+    "category": "wrong event reference",
+    "rejected": true,
+    "error": "AssertionError",
+    "detail": ""
+  }
+]

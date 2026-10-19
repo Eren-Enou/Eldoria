@@ -85,3 +85,17 @@ selected action, consent, admission, execution and material change. Existing
 atomic inquiry can still dominate timing. Mechanically generated host adds build
 maintenance cost; parity and source identity are required. Preserve failed outcomes.
 The separate package must remain experimental, without foundation/default adoption.
+
+
+## Post-implementation source audit correction
+
+The prospective storage paragraph's phrase **32episodes** was incorrect. The
+unchanged `src/model.rs::MEMORY_CAPACITY` is16;32 applies to retained assessment,
+provenance and learning cells. The formal023specification required unchanged
+cognition; the80file pre-run source freeze binds that existing16limit. Original
+42histories reach at most16captured own episodes, with no capacity increase.
+The original prospective sentence is retained above as a disclosed documentation
+error; it is not the actual cap. No registered specification, runtime source,
+archive or retention rule was changed to correct it. A new narrowly targeted
+`owned_bounds` regression supplements the original loose<=32test, which was
+insufficient by itself to enforce the actual inherited episode limit.

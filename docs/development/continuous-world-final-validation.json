@@ -1,0 +1,316 @@
+{
+  "protected_endpoint": "001-022",
+  "protected_original_artifacts": 361,
+  "historical_working_byte_files": 378,
+  "changed_originals": [],
+  "original023_pre_run_source_bindings": 80,
+  "original023_validation_helpers": 5,
+  "original023_archive_sha256": "c4bd87738a09bb93c0dc3bbe8214ff312738c8a530b82158968e83f9e22387d4",
+  "checks": [
+    {
+      "name": "final-root-fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.913
+    },
+    {
+      "name": "final-explicit-proto-fmt",
+      "command": [
+        "rustfmt",
+        "--check",
+        "--edition",
+        "2024",
+        "prototypes/continuous-world/src/model.rs",
+        "prototypes/continuous-world/src/coordinator.rs"
+      ],
+      "exit": 0,
+      "seconds": 0.083
+    },
+    {
+      "name": "final-proto-fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--manifest-path",
+        "prototypes/continuous-world/Cargo.toml",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.234
+    },
+    {
+      "name": "final-root-clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "-j",
+        "1",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit": 0,
+      "seconds": 0.683
+    },
+    {
+      "name": "final-proto-clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/continuous-world/Cargo.toml",
+        "--target-dir",
+        "target/continuous-world",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit": 0,
+      "seconds": 9.332
+    },
+    {
+      "name": "final-proto-tests",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/continuous-world/Cargo.toml",
+        "--target-dir",
+        "target/continuous-world"
+      ],
+      "exit": 0,
+      "seconds": 24.339
+    },
+    {
+      "name": "final-root-tests",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "1"
+      ],
+      "exit": 0,
+      "seconds": 117.477
+    },
+    {
+      "name": "final-023-gate",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate023"
+      ],
+      "exit": 0,
+      "seconds": 23.796
+    },
+    {
+      "name": "final-foundation",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate_contract"
+      ],
+      "exit": 0,
+      "seconds": 1439.006
+    }
+  ],
+  "qualification": "Current full foundation gate executed after023implementation; all required entries exit0. Supplemental/new viewer checks recorded separately; wall times are gate costs, not simulation benchmark evidence.",
+  "additional_current_checks": [
+    {
+      "name": "final-current-proto-fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--manifest-path",
+        "prototypes/continuous-world/Cargo.toml",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.235
+    },
+    {
+      "name": "final-current-proto-clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/continuous-world/Cargo.toml",
+        "--target-dir",
+        "target/continuous-world",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit": 0,
+      "seconds": 0.444
+    },
+    {
+      "name": "final-current-proto-tests",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/continuous-world/Cargo.toml",
+        "--target-dir",
+        "target/continuous-world"
+      ],
+      "exit": 0,
+      "seconds": 3.095
+    },
+    {
+      "name": "final-56-main-viewer",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/history-explorer/tests",
+        "-v"
+      ],
+      "exit": 0,
+      "seconds": 267.399
+    }
+  ],
+  "viewer_checks": [
+    {
+      "name": "H-all-main-viewer-tests",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/history-explorer/tests",
+        "-v"
+      ],
+      "exit": 0,
+      "seconds": 313.544
+    },
+    {
+      "name": "H-original-preview-tests",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_concurrent_preview.py",
+        "-v"
+      ],
+      "exit": 5,
+      "seconds": 0.16,
+      "superseded": "Wrong discovery directory; zero tests. Corrected command below."
+    },
+    {
+      "name": "H-preview-corrected",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/history-explorer",
+        "-p",
+        "test_concurrent_preview.py",
+        "-v"
+      ],
+      "exit": 0,
+      "seconds": 2.073
+    },
+    {
+      "name": "H-js-perspective",
+      "command": [
+        "node",
+        "tools/history-explorer/tests/perspective.test.cjs"
+      ],
+      "exit": 0,
+      "seconds": 0.973
+    },
+    {
+      "name": "H-js-causal",
+      "command": [
+        "node",
+        "tools/history-explorer/tests/causal.test.cjs"
+      ],
+      "exit": 0,
+      "seconds": 5.749
+    },
+    {
+      "name": "H-js-finite",
+      "command": [
+        "node",
+        "tools/history-explorer/tests/finite.test.cjs"
+      ],
+      "exit": 0,
+      "seconds": 1.715
+    },
+    {
+      "name": "H-js-knowledge",
+      "command": [
+        "node",
+        "tools/history-explorer/tests/knowledge.test.cjs"
+      ],
+      "exit": 0,
+      "seconds": 1.485
+    },
+    {
+      "name": "H-app-syntax",
+      "command": [
+        "node",
+        "--check",
+        "tools/history-explorer/app.js"
+      ],
+      "exit": 0,
+      "seconds": 0.061
+    },
+    {
+      "name": "H-native-syntax",
+      "command": [
+        "node",
+        "--check",
+        "tools/history-explorer/native-concurrent.js"
+      ],
+      "exit": 0,
+      "seconds": 0.075
+    }
+  ],
+  "viewer_final_full_test_count": 56,
+  "prototype_current_test_count": 4
+}

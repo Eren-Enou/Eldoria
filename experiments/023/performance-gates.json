@@ -1,0 +1,9 @@
+{
+  "exact_replay_seconds": 0.6821545999264345,
+  "independent_reader_seconds": 10.246023599989712,
+  "gzip_serialization_seconds": 0.9685677000088617,
+  "full_decompression_seconds": 0.08855029998812824,
+  "decoded_bytes": 75343581,
+  "compressed_bytes": 1811033,
+  "qualification": "Sequential wall-clock samples on Windows; original source/archives unchanged; no active benchmark/simulation alongside. Replay includes Python gzip streaming; reader is separate from runner. Compression in scratch memory matches originalbytes. No general scalability or deep-heap claim."
+}

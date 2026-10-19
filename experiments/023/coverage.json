@@ -1,0 +1,156 @@
+{
+  "cases": [
+    {
+      "case": "single activity continuation",
+      "ordinal": 13,
+      "references": [
+        "checkpoints[0]"
+      ],
+      "covered": true,
+      "detail": "Single globally exclusive inquiry spans reporting15; no other actor decisions invented."
+    },
+    {
+      "case": "two disjoint ongoing resource scenes",
+      "ordinal": 1,
+      "references": [
+        "history.transitions[16]",
+        "history.transitions[17]"
+      ],
+      "covered": true,
+      "detail": "Two independently consented resource commitments at8."
+    },
+    {
+      "case": "resource scene crossing checkpoint",
+      "ordinal": 19,
+      "references": [
+        "checkpoints[0]"
+      ],
+      "covered": true,
+      "detail": "{'checkpoint': 17, 'commitment': 25, 'source': 8, 'kind': 'Resource'}"
+    },
+    {
+      "case": "different concurrent completion times",
+      "ordinal": 3,
+      "references": [
+        "history.transitions"
+      ],
+      "covered": true,
+      "detail": "The first pair is released10while the other continues to11."
+    },
+    {
+      "case": "delayed meal near former closing boundary",
+      "ordinal": 11,
+      "references": [
+        "history.boundaries[4].choices[2]"
+      ],
+      "covered": true,
+      "detail": "Compared10/11meal at8versus9; causal-slices clean_unproductive_cost."
+    },
+    {
+      "case": "claim crossing checkpoint",
+      "ordinal": 1,
+      "references": [
+        "checkpoints[0]",
+        "history.grants[0]"
+      ],
+      "covered": true,
+      "detail": "Claim20:14-18across17."
+    },
+    {
+      "case": "pending invitation crosses checkpoint",
+      "ordinal": 1,
+      "references": [
+        "checkpoints[0]"
+      ],
+      "covered": true,
+      "detail": "Own protocol references survive report; no renewal/reset."
+    },
+    {
+      "case": "blocked recipient",
+      "ordinal": 11,
+      "references": [
+        "history.admissions[0]"
+      ],
+      "covered": true,
+      "detail": "Busy recipient is unavailable, not a fabricated rejecting reply."
+    },
+    {
+      "case": "inquiry reaches commitment deadline",
+      "ordinal": 13,
+      "references": [
+        "history.transitions",
+        "history.final_state.base.base.base.base.inquiry.records[0]"
+      ],
+      "covered": true,
+      "detail": "Direct query6-19; selected method cost10plus3. Supplemental wrong-query-deadline control rejects."
+    },
+    {
+      "case": "stale environmental observation",
+      "ordinal": 1,
+      "references": [
+        "history.boundaries[12].choices[0]"
+      ],
+      "covered": true,
+      "detail": "Own upperbound3; observer stock2excluded from policy."
+    },
+    {
+      "case": "continued activity after ALL food exhausted",
+      "ordinal": 23,
+      "references": [
+        "history.transitions[18]"
+      ],
+      "covered": true,
+      "detail": "All oneinitialunit consumed by5; later empty contact persists. Distinct from19cacheexhaustion with heldfood."
+    },
+    {
+      "case": "genuine idle opportunity",
+      "ordinal": 21,
+      "references": [
+        "history.boundaries[0]"
+      ],
+      "covered": true,
+      "detail": "One registered ordinary tick at zerofood/zerohunger; drain is not voluntary idle."
+    },
+    {
+      "case": "full selected/executed/state null",
+      "ordinal": 21,
+      "references": [
+        "history"
+      ],
+      "covered": true,
+      "detail": "20/21equal except intended public-end input projection; raw inputs are not claimed equal."
+    },
+    {
+      "case": "harmful opportunity cost",
+      "ordinal": 11,
+      "references": [
+        "history.boundaries[4].choices[2]",
+        "history.final_state.base.base.base.base.base.events[3]"
+      ],
+      "covered": true,
+      "detail": "Invite64displaces Consume5, meal delayed one tick, sceneLeave/no transfer."
+    },
+    {
+      "case": "multi-checkpoint sustained history",
+      "ordinal": 17,
+      "references": [
+        "checkpoints"
+      ],
+      "covered": true,
+      "detail": "192ordinaryticks, same fouractors, no reset, simultaneous work preserved."
+    },
+    {
+      "case": "finite cutoff with unfinished work",
+      "ordinal": 1,
+      "references": [
+        "checkpoints[5]",
+        "checkpoints[9]"
+      ],
+      "covered": true,
+      "detail": "Nominal70work/pending retained, settled at103. Separate H3regression covers inquiry-spanned cutoff."
+    }
+  ],
+  "covered": 16,
+  "total": 16,
+  "qualification": "Witness extraction after fixed outcomes, not fixture tuning. Some references name whole typed collections where ordering is itself evidence. Not statistical coverage of natural worlds."
+}
