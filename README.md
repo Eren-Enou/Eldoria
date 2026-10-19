@@ -58,6 +58,14 @@ Read-only reproduction: `cargo run --release --locked -j 1 --example validate022
 The separate `experiment022` runner requires a new isolated JSONL output filename;
 never regenerate frozen evidence in place. No023 or default adoption is authorized.
 
+Inspect original four-person histories in the separate read-only preview:
+`python -B tools/history-explorer/concurrent_preview.py --port 8768`, then open
+<http://127.0.0.1:8768/>. The [nine-step walkthrough](docs/development/four-person-history-walkthrough.md)
+follows real invitations, consent, simultaneous transfers and later consequences.
+This is an authentic research demonstration; full022main-Explorer integration
+remains separate. The main application also supports all214original021histories,
+with owned dated knowledge and separate observer stock.
+
 ## Install and run
 
 Install Rust with Cargo and the Windows MSVC build tools (or a Rust-supported native

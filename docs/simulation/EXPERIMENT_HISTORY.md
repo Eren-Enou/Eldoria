@@ -214,3 +214,8 @@ Contact/meal counts and hunger costs can move in opposite directions. Current
 inquiries are globally exclusive; physical masks and protocol rejections remain
 distinct.192ticks span passive observation windows, not reopened social budgets.
 Protected foundation stays001–021. No023, production, planner or canon change.
+
+The [separate native022preview](../../tools/history-explorer/validation/concurrent-preview/acceptance.md)
+and [actual four-person walkthrough](../development/four-person-history-walkthrough.md)
+show simultaneous activities and source-linked individual decisions. This is the
+authorized authentic fallback, not full main-viewer022integration or new science.

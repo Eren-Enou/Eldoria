@@ -126,3 +126,27 @@ run;largest selected export28.83MB. Browser heap is unmeasured;Python process pe
 about302MiB under concurrent validation. The complete corpus is not loaded into
 the browser. Optional cost reproduction:`python -B tools/history-explorer/measure-knowledge.py`.
 Viewer caches/exports are derived presentation,not foundation evidence or cognition.
+
+## Separate native022 research preview
+
+```powershell
+python -B tools/history-explorer/concurrent_preview.py --port 8768
+```
+
+Open <http://127.0.0.1:8768/>. All100original022worlds are available through their
+native `experiment-022-trial/v1` identities. Four actor lanes share one clock;
+captured choices, independent consent, admissions, actual events, claims, meals,
+need pulses and releases have exact original references. Actor Perspective uses
+only its captured owned input. The server binds localhost, verifies source/archive
+identity, caches at most2members and has no mutation/run endpoint.
+
+This is a **separate read-only demonstration**, not full022main-Explorer integration.
+The main three-person/multi-period schemas are not silently reused for four-person
+multiple-scene worlds. [Nine-step walkthrough](../../docs/development/four-person-history-walkthrough.md),
+[actual browser acceptance and screenshots](validation/concurrent-preview/acceptance.md).
+There is no paired-comparison UI or semantic trust explorer in this preview.
+
+Targeted checks: `python -B -m unittest discover -s tools/history-explorer -p test_concurrent_preview.py -v`,
+`node tools/history-explorer/concurrent.test.cjs`, and `node --check tools/history-explorer/concurrent.js`.
+Existing viewer suites remain separate. Scientific validation never depends on
+these presentation adapters.

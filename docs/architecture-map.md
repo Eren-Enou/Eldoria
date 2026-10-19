@@ -68,6 +68,13 @@ Tests: concurrent.rs/concurrent_physical_gates.rs. Read-only validate022, indepe
 review022/corrupt022, complementary review022_coverage and measure022 own their
 respective original/derived/wall-clock boundaries. This is not001–022 protection.
 
+Observation: separate `tools/history-explorer/concurrent_preview.py` serves native
+original022members; concurrent-model.js owns interval/actor projections, concurrent.js
+renders four lanes and original references. No simulation dependency on viewer.
+[Browser acceptance](../tools/history-explorer/validation/concurrent-preview/acceptance.md),
+[walkthrough](development/four-person-history-walkthrough.md). Full main022adapter
+is outstanding; main018–021 schemas are not coerced.
+
 ## Latest protected environmental-knowledge result
 
 021 local environmental knowledge:[specification](../experiments/021/specification.md),
