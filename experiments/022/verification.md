@@ -109,6 +109,12 @@ matrix; no prepared verification cache is authoritative.
 
 ## Limits of verification
 
+The original independent reader validates comparison-epoch need/sensing, while
+prospective architecture/gate prose said absolute boundaries. The final audit
+discloses this discrepancy in implementation-notes/results. Verification does
+not prove absolute-phase invariance or exact adherence to that sentence; each
+capacity comparison does keep the same initial epoch. No archived output changed.
+
 The 100 rows are a bounded deterministic grid with equivalent labels and three
 seeds, not a statistical population. Physical-work query exclusion is observed
 as a pre-proposal mask; all 31 rejected inquiry admissions are protocol-deadline

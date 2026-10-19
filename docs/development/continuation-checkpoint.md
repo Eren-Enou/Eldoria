@@ -1,56 +1,58 @@
 # Concurrent-world program continuation checkpoint
 
-Objective ACTIVE: attachment3bb37cec nine-stage program. No023, no canon/default
-change, no automatic022 protection. Inspect actual Git/files before relying on
-this checkpoint. [Working notes](concurrent-program-working-notes.md).
+Attachment3bb37cec stages A–I are delivered. No023, numerical future matrix,
+canon/default change or automatic022protection. Inspect actual Git/status before
+resuming. [Full delivery and acceptance audit](concurrent-program-delivery.md).
 
-## Revision and completed gates
+## Revision and protected boundary
 
-Branch main; HEAD/origin85cbda0 before Hpreview publication. F/Gruntime/evidence
-commit85cbda0 is pushed. A review5b7efd0 ACCEPT WITH QUALIFICATION;
-B protectione059fcb (001–021,341artifacts); Cmain021Explorer8ac1548;
-D/Earchitecture/preregistration1f81324 before022runtime/outcomes.
-F/G complete: opt-in four-person runtime,100registered worlds, independent primitive
-reader,23corruptions, exact replay, measured cost and qualified results. See
-[022 results](../../experiments/022/results.md), [verification](../../experiments/022/verification.md),
-[executed metadata](../../experiments/022/verification-results.json).
+Authored on main at c4cf0a96a3b6ec6770439d516b5420de7bb7fb7a; the documentation
+commit containing this checkpoint completes publication. Resolve its exact identity
+with `git log -1 -- docs/development/concurrent-program-delivery.md`.
+A021review5b7efd0 ACCEPT WITH QUALIFICATION; B001–021protectione059fcb/341artifacts;
+Cmain021Explorer8ac1548; D/Earchitecture/preregistration1f81324 before022runtime;
+F/Gruntime/evidence85cbda0; Hnativepreviewc4cf0a9. All are pushed to origin main.
+022is completed research ACCEPT WITH QUALIFICATION, unprotected and unadopted.
 
-## Evidence and checks
+## Evidence and verification
 
-Original022 archive100members,83,762,712raw/2,286,504gzip bytes; gzipSHA
-f8d6c5b8de0d955bb316f89ec1dba11a0712311f9d45f49e3fb8e17fb1a0635c.
-Five original compressed artifacts,60canonicalLF source locks;4prior design files
-bound to registration commit. No regeneration in place. Original346files and
-21original021source locks unchanged at publication;6runtime raw hashes unchanged.
-Fmt/Clippy PASS;217Rusttests/28groups PASS;16historical gates PASS, including normal
-001–021/341artifact validation.022PASS100exact-byte/primitive,23corruptions.
-Throughput20rows PASS;24samples median1.3–7.0ms run/validation; serialization similar.
-Full100world stream0.49s/9.42MB process working set; raw83.76MB/gzip2.29MB.
-All logs in %TEMP%/concurrent-program. Old expensive checks need no unchanged rerun.
+Original022:100native members/50capacity pairs,83,762,712raw/2,286,504gzip bytes;
+archiveSHAf8d6c5b8de0d955bb316f89ec1dba11a0712311f9d45f49e3fb8e17fb1a0635c.
+5original compressed artifacts,60canonicalLF source locks,4prior design identities;
+4supplemental coverage/test/performance identities. Never regenerate originals.
+Fmt/Clippy PASS;217Rusttests/28groups PASS;16historical gates PASS including normal
+001–021/341artifact gate.022PASS100exact JSON-byte/primitive reruns,23corruptions.
+Throughput20rows,24samples and full100world measurement PASS. Durable metadata:
+experiments/022/verification-results.json; detailed logs %TEMP%/concurrent-program.
+Final publication audit:346original working files,21original021locks,60original022
+locks and5original022archives unchanged;431affected-document links valid.
 
-## Scientific boundaries
+## Preserved scientific qualifications
 
-41/50concurrent rows reach two social scenes;24interim food-ledger/15terminal
-food-ledger/20terminal hunger/31semantictrust differences;9complete capacity nulls.
-100rows have84case-label-neutral histories. No statistical/global welfare claim.
-Frozen fixed-ID diagnostic counts104partitioncrossings;100cross actual priorpairs.
-12executedqueries,31protocol-blocked admissions,52masked local candidates stay
-separate. Claim-mask original13@14 is conservative pre-proposal exclusion, not
-proof a consented query would leap that deadline.192ticks span24passive observation
-windows, not reopening closed social budgets. All harms/nulls preserved.
+41/50concurrent rows reach2socials;24interim food-ledger/15terminal ledger/20terminal
+hunger/31semantictrust differences;9whole-history capacity nulls.100rows contain84
+case-label-neutral histories.104fixed-IDcrossings vs100across actualpriorpairs.
+12executedqueries vs31protocol-blocked admissions vs52masked local candidates;
+claim mask13@14is conservative exclusion, not proof of a would-be deadline jump.
+192ticks span24passive windows, not reopened social budgets. Extra contact is not
+better by definition; food-ledger equality can hide hunger differences.
+Final source audit disclosed prospective absolute pulse/cadence prose versus
+actual comparison-start epoch; matched capacity pairs share epochs, but absolute
+phase invariance/exact design-sentence adherence are untested. Originals unchanged.
 
-## Viewer and remaining work
+## Observation and next boundary
 
-Hpreview browser acceptance COMPLETE on native originals: shared scenes, independent
-releases, tripleactivity, competing claims, busy consent, atomic inquiry, actor-only
-inputs, source references, null/long histories. New4Python and legacy41Python plus
-4legacyJS suites PASS. Separate preview http://127.0.0.1:8768 (concurrent_preview.py);
-main018–021 Explorer8765. Browser2tab6 and main3 markedDeliverable. Actual screenshots
-and [acceptance](../../tools/history-explorer/validation/concurrent-preview/acceptance.md),
-[nine-step walkthrough](four-person-history-walkthrough.md) are accepted Hfiles
-in the separate preview publication. This is NOT full main-viewer022integration.
+Main018–021Explorer: python -B tools/history-explorer/explorer.py, localhost8765.
+Native022preview: python -B tools/history-explorer/concurrent_preview.py --port 8768.
+All100originals, four lanes, actor-only captured input, consent/material/source links;
+[nine-step walkthrough](four-person-history-walkthrough.md). This is the authorized
+separate authentic fallback, not full main022integration. Browser acceptance complete;
+new4+legacy41Python tests,4legacyJS suites and newmodel/syntax checks PASS. Browser2
+maintab3/previewtab6 retained; usertab1 untouched. Live servers localhost8765/8768.
 
-Next: publish accepted Hpreview; write required community-readiness and
-prospective finite-input conversion design ONLY, no023matrix/runtime. Update required
-indexes/checkpoint; audit all attachment criteria; commit/push finaldocs, then stop.
-No live validation job remains. Do not run historical evidence writers.
+[Readiness](four-individual-community-readiness.md): retain four people; controlled
+scheduling works, continuous community not established. [Material design](sustained-material-opportunity-design.md)
+is finite source→owned escrow→edible/waste with real time/local choice, design only.
+No live validation job remains. No required current-program work remains after
+publication. Next session: independently review022and disclosed phase/horizon/query
+limits; do not freeze/adopt it or implement/register023without explicit authorization.

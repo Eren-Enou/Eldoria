@@ -1,23 +1,18 @@
-# Concurrent program working notes
+# Concurrent program evidence pointers
 
-The concise [checkpoint](continuation-checkpoint.md) is current at F/G publication.
-Detailed decisions/evidence now live in durable stage artifacts rather than temporary
-job handles: [021 review](../experiment-021-review.md), [021 integrity](../integrity-audit-001-021.md),
-[architecture](concurrent-world-architecture.md), [022 implementation notes](../../experiments/022/implementation-notes.md),
+The nine-stage attachment3bb37cec program is delivered; see the
+[checkpoint](continuation-checkpoint.md) and [acceptance audit](concurrent-program-delivery.md).
+Detailed decisions live in [022implementation notes](../../experiments/022/implementation-notes.md),
 [results](../../experiments/022/results.md), [verification](../../experiments/022/verification.md),
-[coverage](../../experiments/022/coverage.json), [performance](../../experiments/022/performance.json).
+[coverage](../../experiments/022/coverage.json), [performance](../../experiments/022/performance.json),
+[readiness](four-individual-community-readiness.md) and [prospective material design](sustained-material-opportunity-design.md).
 
-A/B/C/D-E published5b7efd0/e059fcb/8ac1548/1f81324. Runtime/evidence complete and
-unchanged through all checks; Hbrowser complete, preview/walkthrough pending commit.
-Readiness/material-design still pending. No023, protection, adoption or canon change.
+No active validation job or unfulfilled runtime stage remains. Verbose temporary
+logs are under %TEMP%/concurrent-program. Do not restart completed jobs or regenerate
+originals. Browser2main3/preview6 are deliverables; localhost8765/8768 serve them.
+No023, automatic022protection/adoption, numerical future matrix or canon change.
 
-Local outputs/logs: %TEMP%/concurrent-program. All validation/performance processes
-finished successfully; do not restart them or regenerate archives. Main8765,
-old020demo8766 and022preview8768 remain local servers. Cua browser2, tab6concurrentTab
-and3phaseTab kept as deliverables; usertab1 untouched. After compaction restore CUA
-documentation before browser actions. Source identities and raw archive guards are
-recorded in022verification-results.json and the original346-file manifest.
-
-Interpretation corrections worth preserving: fixed-ID104 vs actual-prior-pair100;
-84unique neutral histories; hunger vs food-ledger reconvergence; query mask vs
-protocol rejection vs execution; repeated passive windows vs reopened social budgets.
+Preserve qualifications: fixed-ID104 vs actual-prior-pair100;84unique neutral
+histories; hunger vs food-ledger equality; masks vs protocol rejection vs query;
+passive windows vs reopened budgets; prospective absolute phases vs implemented
+comparison epoch. Review022before authorizing its reuse or the next material study.

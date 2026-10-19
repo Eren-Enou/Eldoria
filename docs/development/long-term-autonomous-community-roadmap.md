@@ -69,6 +69,13 @@ histories. It does not justify increasing population or calling this continuous
 community life. Atomic inquiry, public closing budgets, contact dominance and
 finite exhaustion remain limits. No automatic protection/adoption or023 follows.
 
+The [readiness assessment](four-individual-community-readiness.md) recommends keeping
+four people. The [finite-input conversion design](sustained-material-opportunity-design.md)
+specifies source, escrow, output/waste, cost, locality and validation without code
+or a new numerical matrix. Review022and resolve temporal-phase/horizon semantics
+before authorizing that study. Main-viewer022integration remains separate; the
+authentic preview/walkthrough is already available.
+
 ## Phase 4 — Sustained material opportunities
 
 Finite cache depletion cannot support indefinite consumption. A prospective physical

@@ -29,6 +29,13 @@ No retention, inquiry, resource or recipient scores were retuned. The subsequent
 implementation corrections and exact phase refinement are described in
 [implementation notes](implementation-notes.md).
 
+Final source/document audit found a temporal-registration discrepancy: prospective
+prose specified absolute pulse/cadence boundaries; actual originals use the
+comparison-start epoch for both. All matched pairs have identical initial epochs,
+and primitive accounting validates that implemented law. These results establish
+the implemented epoch-relative scheduler, not absolute-phase invariance or exact
+adherence to that design sentence. Original design and evidence remain unchanged.
+
 Some labeled families intentionally have equivalent conditions. Ignoring only
 the case label leaves **84 distinct full histories**, or 42 distinct matched
 configuration pairs. Thus neither 100 runs, seed replication, nor the frequencies

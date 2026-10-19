@@ -1,0 +1,16 @@
+{
+  "scope": "Final read-only publication/document audit; runtime check evidence remains experiments/022/verification-results.json",
+  "authored_revision": "c4cf0a96a3b6ec6770439d516b5420de7bb7fb7a",
+  "old_working_files_unchanged": 346,
+  "original021_source_locks_unchanged": 21,
+  "original022_source_locks_unchanged": 60,
+  "original022_gzip_and_raw_hashes_unchanged": 5,
+  "supplemental_sources_unchanged": 4,
+  "local_document_links_checked": 431,
+  "broken_links": 0,
+  "registered_future_experiments": false,
+  "protected_endpoint": "001-021",
+  "research022": "ACCEPT WITH QUALIFICATION; unprotected, unadopted",
+  "runtime_changes_after_required_checks": false,
+  "final_disclosed_qualification": "prospective absolute pulse/cadence prose differs from implemented comparison epoch; matched pairs share epochs"
+}

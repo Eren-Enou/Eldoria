@@ -227,3 +227,9 @@ in place. Query masks are not executed inquiries; matching food ledgers do not p
 matching hunger. The fixed-ID diagnostic's historical name is corrected in results,
 not by rewriting original reports. Preserve84unique case-label-neutral histories,
 parameter-sensitivity status, mixed harms and9complete capacity nulls.
+
+For the completed nine-stage program, read the concise checkpoint and
+[delivery audit](development/concurrent-program-delivery.md). Readiness and finite
+conversion design are prospective next-step boundaries, not additional simulation
+results. An independently authorized next session should review022first. Do not
+edit its frozen Work enum/host files or register023from the design document.

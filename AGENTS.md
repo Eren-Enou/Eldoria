@@ -44,6 +44,11 @@ admissions and executed queries are different observations. More contact is not
 better by definition; terminal food equality can hide hunger differences. No023,
 automatic protection or global default change follows from this research.
 
+022's implementation uses comparison-epoch pulse/sensing boundaries despite
+prospective absolute-phase prose; preserve this disclosed qualification, not an
+absolute-phase claim. Readiness and sustained-material-opportunity documents under
+docs/development are design/assessment only: no023runtime or numerical matrix.
+
 Cross-experiment enforcement map: `docs/experiment-contract-001-021.md`.
 The historical `docs/experiment-contract-001-020.md` remains authoritative for001–020.
 The historical `docs/experiment-contract-001-019.md` remains authoritative for001–019.

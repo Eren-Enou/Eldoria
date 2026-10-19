@@ -94,6 +94,19 @@ the declared initial physical intervention. There is no post-start world reset.
 
 ## Post-evaluation interpretation corrections
 
+The prospective architecture/gate called need pulses and sensing cadence
+“absolute.” The preserved implementation instead anchors both to comparison
+start: need at `start+4k`, sensing at `start+cadence*k` when free. This is a
+registration-to-implementation discrepancy, not evidence that absolute world
+phases were tested. It was identified in the final document/source audit; the
+originals and prospective documents remain unchanged. The independent reader
+validates the implemented law, and each matched capacity pair has the same
+bootstrap start/epoch. Thus matched capacity results and shared-time conservation
+remain interpretable under the implemented law; transfer across initial phases
+and exact preregistration adherence are not established. This qualification is
+additional to the material-phase refinement above. No outcome is regenerated to
+erase the discrepancy, and no retrospective policy/fixture tuning is performed.
+
 The original `cross_bootstrap_pair_transfers` diagnostic counts104events across
 the fixed ID partition{0,1}/{2,3};100cross two genuinely executed prior pairs.
 The complementary [coverage](coverage.json) and [results](results.md) preserve both

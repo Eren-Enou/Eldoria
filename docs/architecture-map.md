@@ -75,6 +75,12 @@ renders four lanes and original references. No simulation dependency on viewer.
 [walkthrough](development/four-person-history-walkthrough.md). Full main022adapter
 is outstanding; main018–021 schemas are not coerced.
 
+Next-boundary assessment: [four-person readiness](development/four-individual-community-readiness.md)
+and [finite-input material design](development/sustained-material-opportunity-design.md).
+Both are post-evaluation/design documents, not023authorization or implementation.
+The [program delivery audit](development/concurrent-program-delivery.md) maps gates,
+validation and remaining limitations.
+
 ## Latest protected environmental-knowledge result
 
 021 local environmental knowledge:[specification](../experiments/021/specification.md),

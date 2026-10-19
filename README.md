@@ -66,6 +66,11 @@ This is an authentic research demonstration; full022main-Explorer integration
 remains separate. The main application also supports all214original021histories,
 with owned dated knowledge and separate observer stock.
 
+The [community-readiness assessment](docs/development/four-individual-community-readiness.md)
+finds a working controlled prerequisite, not continuous community life. The
+[finite-input material design](docs/development/sustained-material-opportunity-design.md)
+is prospective only; no production mechanism or023 was implemented.
+
 ## Install and run
 
 Install Rust with Cargo and the Windows MSVC build tools (or a Rust-supported native
