@@ -1,0 +1,35 @@
+{
+  "catalog_seconds": 2.852082,
+  "entries": 100,
+  "samples": [
+    {
+      "ordinal": 1,
+      "load_seconds": 0.061847,
+      "encode_seconds": 0.014268,
+      "export_bytes": 946348,
+      "source_trial_bytes": 723839,
+      "moments": 430,
+      "intervals": 113
+    },
+    {
+      "ordinal": 35,
+      "load_seconds": 0.308364,
+      "encode_seconds": 0.072033,
+      "export_bytes": 4927474,
+      "source_trial_bytes": 4025504,
+      "moments": 1702,
+      "intervals": 441
+    },
+    {
+      "ordinal": 1,
+      "load_seconds": 0.033294,
+      "encode_seconds": 0.015547,
+      "export_bytes": 946348,
+      "source_trial_bytes": 723839,
+      "moments": 430,
+      "intervals": 113
+    }
+  ],
+  "decoded_member_cache_cap": 2,
+  "qualification": "Sequential wall-clock on this Windows host; encoded bytes are not live heap. No statistical speed claim; original source verification included."
+}

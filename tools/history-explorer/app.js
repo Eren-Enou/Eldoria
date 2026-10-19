@@ -19,21 +19,33 @@ function button(parent, label, action) { const b=el('button',label);b.addEventLi
 function status(message, error=false) {$('status').textContent=message;$('status').classList.toggle('error',error);}
 async function api(path, options) { const r=await fetch(path,options);const data=await r.json();if(!r.ok)throw new Error(data.error || r.statusText);return data; }
 function guard(fn) { return async (...args)=>{try{await fn(...args);}catch(e){pause();status(e.message,true);}}; }
-function label(e) {const c=e.config;if(e.experiment==='021')return `021 · ${e.case} · ${e.policy} / ${e.mode} · seed ${e.seed} · glimpse ${c.cadence} / window ${c.window} / attempt ${c.duration} / ${c.order} · original zero-based trial ${e.record}`;if(e.experiment==='020')return `020 · ${e.case} · ${e.mode} · seed ${e.seed} · window ${c.window} / attempt ${c.duration} / ${c.order} · original zero-based trial ${e.record}`;return `${e.experiment} · ${e.case} · ${e.mode} · seed ${e.seed} · window ${c.window ?? c.budget ?? 'not captured'} / gap ${c.idle_gap ?? 'not a recorded treatment'} / I${c.interval} / ${c.order} / stock ${c.stock} / H parameter ${c.hunger ?? 'not recorded'} · #${e.record}`;}
+function label(e) {const c=e.config;if(e.experiment==='022')return `022 · ${e.case} · social capacity ${c.capacity} · seed ${e.seed} · claim ${c.duration} / horizon ${c.horizon} / ${c.order} · original zero-based trial ${e.record}`;if(e.experiment==='021')return `021 · ${e.case} · ${e.policy} / ${e.mode} · seed ${e.seed} · glimpse ${c.cadence} / window ${c.window} / attempt ${c.duration} / ${c.order} · original zero-based trial ${e.record}`;if(e.experiment==='020')return `020 · ${e.case} · ${e.mode} · seed ${e.seed} · window ${c.window} / attempt ${c.duration} / ${c.order} · original zero-based trial ${e.record}`;return `${e.experiment} · ${e.case} · ${e.mode} · seed ${e.seed} · window ${c.window ?? c.budget ?? 'not captured'} / gap ${c.idle_gap ?? 'not a recorded treatment'} / I${c.interval} / ${c.order} / stock ${c.stock} / H parameter ${c.hunger ?? 'not recorded'} · #${e.record}`;}
 function options(select, entries, selected) {select.replaceChildren();entries.forEach(e=>{const o=el('option',label(e));o.value=e.id;select.append(o);});if(selected)select.value=selected;}
+function nativeEnv(){return {S,$,el,note,heading,table,details,button,human,go,openHistory,guard,status};}
+function configureActorOptions(data){
+ let fourth=$('actor').querySelector('option[value="3"]');
+ if(!fourth){fourth=el('option','Individual 3');fourth.value='3';$('actor').append(fourth);}
+ const native=NativeConcurrent.is(data);fourth.hidden=!native;fourth.disabled=!native;
+ if(!native&&S.actor>2)S.actor=0;$('actor').value=String(S.actor);
+}
 function configure(data) {
  if(data.schema !== 'woi-history-explorer/v1')throw new Error('Unknown export schema');
+ if(data.source.experiment==='022'){
+  if(!NativeConcurrent.is(data)||data.source.source_schema!=='experiment-022-trial/v1'||data.extractor_version!==5)throw new Error('022 requires the explicit native four-person adapter');
+  data.stepMap=new Map();return data;
+ }
  data.stepMap = new Map();let flat=0;data.trial.periods.forEach((p,pn)=>p.steps.forEach((w,sn)=>data.stepMap.set(`${pn}/${sn}`,flat++)));
  return data;
 }
 function clearComparison() {S.right=null;S.comparison=null;$('inspect-right').disabled=true;$('compare-summary').replaceChildren();$('pair').replaceChildren();}
 async function openHistory(id) {
  pause();const generation=++S.generation;status('Loading one verified trial…');
- const d=configure(await api('/api/trial?id='+encodeURIComponent(id)));if(generation!==S.generation)return;S.data=d;clearComparison();S.index=Math.max(0,d.timeline.findIndex(m=>m.kind==='decision'));$('compare-panel').hidden=true;if([...$('trial').options].some(o=>o.value===id))$('trial').value=id;
+ const d=configure(await api('/api/trial?id='+encodeURIComponent(id)));if(generation!==S.generation)return;S.data=d;S.causalNode=null;S.chain=null;configureActorOptions(d);clearComparison();S.index=Math.max(0,d.timeline.findIndex(m=>m.kind==='decision'));$('compare-panel').hidden=true;if([...$('trial').options].some(o=>o.value===id))$('trial').value=id;
  render();status('Loaded verified original '+d.source.archive+' · record '+d.source.record+'. No simulation was run.');
 }
 function current() {return S.data?.timeline[S.index];}
 function followOriginal(ref,anchor) {
+ if(NativeConcurrent.is(S.data))return NativeConcurrent.original(nativeEnv(),ref);
  originalValue(S.data.trial,ref);
  const priorChain=S.data.causal.chains.find(ch=>ch.id===$('chain-select').value);
  const i=S.data.timeline.findIndex(m=>m.ref===anchor);
@@ -41,6 +53,7 @@ function followOriginal(ref,anchor) {
  S.causalNode=ref;S.chain=priorChain?.nodes.includes(ref)?priorChain.id:null;S.lens='observer';go(i);$('causal-node').scrollIntoView({block:'center'});
 }
 function renderCausal() {
+ if(NativeConcurrent.is(S.data))return NativeConcurrent.renderCausal(nativeEnv());
  const panel=$('causal-browser');panel.hidden=S.lens!=='observer';
  if(panel.hidden){$('causal-chain').replaceChildren();$('causal-node').replaceChildren();$('encounter-results').replaceChildren();$('personal-summary').replaceChildren();return;}
  const c=S.data.causal;if(!c){note($('causal-chain'),'Typed links are unavailable in this older export. Reopen the verified source.');return;}
@@ -71,6 +84,7 @@ function renderCausal() {
 }
 function stepFor(data,m) {return m.step ? data.trial.periods[m.step[0]].steps[m.step[1]].activity : null;}
 function projection(data,m,owner) {
+ if(NativeConcurrent.is(data))return NativeConcurrent.project(data,m,owner);
  if(m.kind==='resource')return m.data.decision.actor===owner?data.resource_actors?.[m.data.id]??null:null;
  if(m.step){const index=data.stepMap.get(m.step.join('/'));const local=m.kind==='decision'?data.actors[index][owner]:m.kind==='consent'?data.reply_actors?.[index]?.[owner]??null:null;if(local)return local;}
  return m.point!==null?capturedOwnedPoint(data.trial,m.point,owner):null;
@@ -85,6 +99,8 @@ function pause() {if(S.timer)clearInterval(S.timer);S.timer=null;$('play').textC
 function play() {if(S.timer){pause();return;}if(!S.data)return;$('play').textContent='Pause';S.timer=setInterval(()=>{if(S.index>=S.data.timeline.length-1){pause();return;}go(S.index+1);},1000/Number($('speed').value));}
 function render() {
  if(!S.data)return;
+ if(NativeConcurrent.is(S.data)){NativeConcurrent.render(nativeEnv());renderList();renderPair();return;}
+ $('concurrent-lanes').hidden=true;$('concurrent-lanes').replaceChildren();$('concurrent-link').hidden=true;$('cards').classList.remove('concurrent-cards','concurrent-owned');
  const d=S.data,t=d.trial,m=current();
  $('title').textContent=t.case.replaceAll('_',' ');$('mode').textContent=t.mode;
  $('identity').textContent=`Experiment ${d.source.experiment} · Seed ${d.source.seed} · ticks ${t.clock.epoch}–${t.clock.last} · ${t.config.order} order`;
@@ -243,6 +259,7 @@ async function compareWith(id) {
  $('compare-panel').hidden=false;$('other').value=id;renderPair();status('Paired comparison ready. Descriptions are derived; original references remain available.');
 }
 function renderPair() {
+ if(S.data&&S.right&&S.comparison?.native_concurrency)return NativeConcurrent.renderPair(nativeEnv());
  if(!S.data||!S.right||!S.comparison)return;$('inspect-right').disabled=false;const c=S.comparison,p=$('compare-summary');p.replaceChildren();p.hidden=S.lens==='actor';
  if(c.first_executed_difference){const a=c.first_executed_difference.left,b=c.first_executed_difference.right;note(p,`First actual execution difference: left ${a?a.kind+' at tick '+a.tick:'has no further action'}; right ${b?b.kind+' at tick '+b.tick:'has no further action'}. Follow the source references for the actual changes.`);}
  table(p,['Comparison scope','Recorded result'],[['Initial state / profiles',c.initial_state_and_profiles_match?'Matched':'DIFFERENT'],['Configurations',c.configurations_equal?'Equal':'Different — timing or other configuration treatment'],['Physical clock settings',c.physical_settings_equal?'Equal':'DIFFERENT — not a policy-only comparison'],['Endpoints',c.equal_horizon?'Same epoch and final tick':'UNEQUAL — qualify endpoint comparison'],['First choice',c.first_choice?JSON.stringify(c.first_choice):'No observed voluntary choice difference'],['First executed difference (all action types)',c.first_executed_difference??'No difference'],['First resource event difference',c.first_resource_event_difference??'No difference'],['Intermediate material differences',`${c.material_different_shared_ticks.length} shared recorded ticks`],[c.potential_supply_equal===undefined?'Final food / hunger':'Final owned + cache material / hunger',c.final_material_equal?'Equal':'Different'],['Material reconvergence',c.material_reconvergence?'Yes; historical differences remain':'Not demonstrated'],[c.potential_supply_equal===undefined?'Complete final snapshot':'Complete captured final state (legacy + environment)',c.full_final_snapshot_equal?'Equal':'Different — material equality does not imply full-state equality']] .map(r=>[r[0],text(r[1])]));
@@ -267,6 +284,12 @@ function renderPair() {
  }
 }
 function setupPresets() {
+ if(S.catalog.some(e=>e.experiment==='022'))for(const [title,left,right] of [
+  ['022 · Two simultaneous resource scenes',0,1],['022 · Different completion times',4,5],
+  ['022 · Claim and meal beside resource work',12,13],['022 · Busy recipient / missed contact',10,11],
+  ['022 · One grant / one depleted claim',14,15],['022 · Atomic inquiry / capacity null',20,21],
+  ['022 · Complete capacity null',30,31],['022 · Long resource exhaustion',34,35],['022 · Mixed individual costs',2,3]
+ ])button($('presets'),title,guard(async()=>{const a=S.catalog.find(e=>e.experiment==='022'&&e.record===left),b=S.catalog.find(e=>e.experiment==='022'&&e.record===right);if(!a||!b)throw new Error('Native022 preset not indexed');await openHistory(a.id);if(S.data?.source.id===a.id)await compareWith(b.id);}));
  for(const [title,left,right] of [['021 · Useful continuity / later social difference',81,82],['021 · Rival depletion / old knowledge',80,82],['021 · Full-cost stale information',31,32],['021 · Mixed individual distribution',1,2],['021 · Expiry removes work / loses continuity',162,163],['021 · Complete null',121,122],['021 · Stored-zero trust control',161,163]])button($('presets'),title,guard(async()=>{const a=S.catalog.find(e=>e.experiment==='021'&&e.record===left),b=S.catalog.find(e=>e.experiment==='021'&&e.record===right);if(!a||!b)throw new Error('021 preset not indexed');await openHistory(a.id);if(S.data?.source.id===a.id)await compareWith(b.id);}));
  const finiteFind=(name,mode)=>S.catalog.find(e=>e.experiment==='020'&&e.seed==='42'&&e.case===name&&e.mode===mode&&e.config.duration===4&&e.config.window===24&&e.config.order===(name==='lost_contact'?'Descending':'Ascending'));
  for(const [title,name,left,right] of [['020 · Sharing after contention','sharing','Closed','Need'],['020 · Missed donor / costly failure','lost_contact','Closed','Acquire'],['020 · Last unit, three claimants','contested','Need','Acquire'],['020 · Exhaustion and empty contact','ongoing','Owned','Need'],['020 · Complete null','empty','Ignored','Need'],['020 · Material reconvergence','contact_bias','Need','Acquire']])button($('presets'),title,guard(async()=>{const a=finiteFind(name,left),b=finiteFind(name,right);if(!a||!b)throw new Error('020 preset not indexed');await openHistory(a.id);if(S.data?.source.id===a.id)await compareWith(b.id);}));
@@ -277,7 +300,7 @@ function setupPresets() {
 $('load').addEventListener('click',guard(()=>openHistory($('trial').value)));
 $('search').addEventListener('input',()=>{const matches=S.catalog.filter(e=>label(e).toLowerCase().includes($('search').value.toLowerCase()));options($('trial'),matches);$('load').disabled=matches.length===0;status(matches.length?`${matches.length} recorded trials match. Select one to open.`:'No matching trials. Change or clear the search.');});
 $('actor').addEventListener('change',()=>{S.actor=Number($('actor').value);render();});
-$('chain-select').addEventListener('change',()=>{S.chain=$('chain-select').value;renderCausal();});
+$('chain-select').addEventListener('change',()=>{S.chain=$('chain-select').value;if(NativeConcurrent.is(S.data))S.causalNode=null;renderCausal();});
 $('encounter-filter').addEventListener('change',renderCausal);$('encounter-after').addEventListener('input',renderCausal);
 $('actor-lens').addEventListener('click',()=>{S.lens='actor';render();});$('observer-lens').addEventListener('click',()=>{S.lens='observer';render();});
 $('previous').addEventListener('click',()=>go(S.index-1));$('next').addEventListener('click',()=>go(S.index+1));$('play').addEventListener('click',play);
@@ -287,10 +310,10 @@ $('next-decision').addEventListener('click',()=>nextWhere(m=>m.kind==='decision'
 $('jump').addEventListener('click',()=>{if(S.data)go(nearest(S.data,Number($('tick').value)));});$('kind').addEventListener('change',renderList);
 $('open-compare').addEventListener('click',()=>{$('compare-panel').hidden=false;$('compare-panel').scrollIntoView({block:'start',behavior:'smooth'});});
 $('compare').addEventListener('click',guard(()=>compareWith($('other').value)));
-$('inspect-right').addEventListener('click',guard(async()=>{if(!S.right)return;const key=S.right.source.id,tick=current().tick;await openHistory(key);if(S.data.source.id===key&&tick>S.data.trial.clock.epoch)go(nearest(S.data,tick));}));
+$('inspect-right').addEventListener('click',guard(async()=>{if(!S.right)return;const key=S.right.source.id,tick=current().tick;await openHistory(key);if(S.data.source.id===key&&tick>(NativeConcurrent.is(S.data)?S.data.trial.start:S.data.trial.clock.epoch))go(nearest(S.data,tick));}));
 $('close-compare').addEventListener('click',()=>{S.pairGeneration++;clearComparison();$('compare-panel').hidden=true;});
 $('download').addEventListener('click',()=>{if(!S.data)return;const a=el('a');a.href='/api/export?id='+encodeURIComponent(S.data.source.id);a.download=`history-${S.data.source.id}.json`;document.body.append(a);a.click();a.remove();});
-$('import').addEventListener('change',guard(async()=>{const file=$('import').files[0];if(!file)return;pause();const generation=++S.generation;$('import').value='';if(file.size>64*1024*1024)throw new Error('Export exceeds 64 MiB bound');status('Checking imported export against source membership…');const imported=configure(await api('/api/import',{method:'POST',headers:{'Content-Type':'application/json'},body:await file.text()}));if(generation!==S.generation)return;S.data=imported;S.index=0;clearComparison();$('search').value='';options($('trial'),S.catalog,S.data.source.id);$('load').disabled=false;$('compare-panel').hidden=true;render();status('Imported export verified against original registered trial.');}));
+$('import').addEventListener('change',guard(async()=>{const file=$('import').files[0];if(!file)return;pause();const generation=++S.generation;$('import').value='';if(file.size>64*1024*1024)throw new Error('Export exceeds 64 MiB bound');status('Checking imported export against source membership…');const imported=configure(await api('/api/import',{method:'POST',headers:{'Content-Type':'application/json'},body:await file.text()}));if(generation!==S.generation)return;S.data=imported;S.causalNode=null;S.chain=null;configureActorOptions(imported);S.index=0;clearComparison();$('search').value='';options($('trial'),S.catalog,S.data.source.id);$('load').disabled=false;$('compare-panel').hidden=true;render();status('Imported export verified against original registered trial.');}));
 document.addEventListener('keydown',e=>{if(['INPUT','SELECT','TEXTAREA','BUTTON','SUMMARY'].includes(document.activeElement?.tagName))return;if(e.key==='ArrowRight'){e.preventDefault();go(S.index+1);}if(e.key==='ArrowLeft'){e.preventDefault();go(S.index-1);}if(e.key===' '){e.preventDefault();play();}if(e.key.toLowerCase()==='n')$('next-decision').click();if(e.key==='[')nextWhere(significant,-1);if(e.key===']')nextWhere(significant);});
 const narrowLayout=window.matchMedia('(max-width:700px)');
 function arrangeLibrary(){ $('library-drawer').open=!narrowLayout.matches; }

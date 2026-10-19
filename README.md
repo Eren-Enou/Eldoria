@@ -61,7 +61,10 @@ The separate `experiment022` runner requires a new isolated JSONL output filenam
 never regenerate frozen evidence in place. No default adoption is authorized;
 023requires its separate prospective scheduling gate.
 
-Inspect original four-person histories in the separate read-only preview:
+Inspect original four-person histories in the main read-only History Explorer:
+`python -B tools/history-explorer/explorer.py`, then choose an022preset.
+See [main integration acceptance](docs/development/main022-viewer-acceptance.md).
+The earlier separate preview also remains available:
 `python -B tools/history-explorer/concurrent_preview.py --port 8768`, then open
 <http://127.0.0.1:8768/>. The [nine-step walkthrough](docs/development/four-person-history-walkthrough.md)
 follows real invitations, consent, simultaneous transfers and later consequences.

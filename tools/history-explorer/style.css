@@ -3,3 +3,10 @@
 .jump-nav{display:none;position:sticky;top:0;z-index:10;background:#193c40;gap:1px}.jump-nav a{flex:1;text-align:center;padding:9px 5px;color:#fff;text-decoration:none;font-size:13px}.jump-nav a:hover{background:#285356}.jump-nav a:focus-visible{outline:3px solid #d79332;outline-offset:-3px}#history-library,#history-moment,#perspective-panel{scroll-margin-top:48px}#library-drawer>summary{background:white;padding:9px;border:1px solid var(--line);border-radius:5px;margin-top:10px}@media(max-width:1150px){.jump-nav{display:flex}}
 th{white-space:nowrap}
 #causal-browser{border-top:3px solid var(--orange);margin:24px 0;padding-top:10px;scroll-margin-top:48px}#causal-chain ol,#encounter-results{padding-left:20px;max-height:460px;overflow:auto}#causal-chain li,#encounter-results li{margin:7px 0}#causal-chain button,#encounter-results button{text-align:left;font-size:12px;overflow-wrap:anywhere}#causal-node{scroll-margin-top:55px}#causal-node .mono{border-left:3px solid var(--orange);padding:10px;background:white}#encounter-after{max-width:160px}
+
+/* Native four-person histories: source-specific lanes, not a legacy period schema. */
+.concurrent-lanes{max-width:1900px;margin:0 auto;padding:18px 30px;background:#142f33;color:#edf4ea;border-bottom:3px solid #9ebda7;scroll-margin-top:48px}
+.concurrent-lanes .note{color:#c7ddd5}.concurrent-lanes h2{margin-top:0}.concurrent-lanes svg{width:100%;height:auto;display:block}.concurrent-lanes svg [role=button]{cursor:pointer}.concurrent-lanes svg [role=button]:focus{stroke:#fff;stroke-width:2}
+.concurrent-lanes[hidden],#concurrent-link[hidden]{display:none!important}.cards.concurrent-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.cards.concurrent-owned{grid-template-columns:1fr}
+
+.concurrent-lanes .note{background:transparent;color:#d6e5df;border-color:#426461}.concurrent-axis{max-width:100%;overflow-x:auto}.concurrent-axis svg{min-width:900px}

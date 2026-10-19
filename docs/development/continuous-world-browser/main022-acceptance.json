@@ -1,0 +1,82 @@
+{
+  "cases": [
+    {
+      "ordinal": 5,
+      "requested_tick": 10,
+      "identity": "Experiment 022 · original zero-based trial 5 · seed 42 · ticks 6–54",
+      "lanes": "Four individuals · original 5 · world tick 10\n\nActual participant reservations from start to release. Blank lanes can still be blocked by an exclusive inquiry.\n\nIndividual 0\nIndividual 1\nIndividual 2\nIndividual 3\n6\n10\n14\n18\n22\n26\n30\n34\n38\n42\n46\n50\n54\n\nGreen: resource · sand: claim · blue: meal · purple: inquiry · teal: send/reply. Dots mark observations. Click an interval for its original; scroll the timeline horizontally when needed.\n\nAfter starts at tick 10: 1 social scenes; 3 physical commitments. Local input cards retain their original pre-reservation availability."
+    },
+    {
+      "ordinal": 0,
+      "requested_tick": 15,
+      "identity": "Experiment 022 · original zero-based trial 0 · seed 42 · ticks 6–54",
+      "lanes": "Four individuals · original 0 · world tick 15\n\nActual participant reservations from start to release. Blank lanes can still be blocked by an exclusive inquiry.\n\nIndividual 0\nIndividual 1\nIndividual 2\nIndividual 3\n6\n10\n14\n18\n22\n26\n30\n34\n38\n42\n46\n50\n54\n\nGreen: resource · sand: claim · blue: meal · purple: inquiry · teal: send/reply. Dots mark observations. Click an interval for its original; scroll the timeline horizontally when needed.\n\nAfter starts at tick 15: 1 social scenes; 3 physical commitments. Local input cards retain their original pre-reservation availability."
+    },
+    {
+      "ordinal": 11,
+      "requested_tick": 6,
+      "identity": "Experiment 022 · original zero-based trial 11 · seed 42 · ticks 3–51",
+      "lanes": "Four individuals · original 11 · world tick 6\n\nActual participant reservations from start to release. Blank lanes can still be blocked by an exclusive inquiry.\n\nIndividual 0\nIndividual 1\nIndividual 2\nIndividual 3\n3\n7\n11\n15\n19\n23\n27\n31\n35\n39\n43\n47\n51\n\nGreen: resource · sand: claim · blue: meal · purple: inquiry · teal: send/reply. Dots mark observations. Click an interval for its original; scroll the timeline horizontally when needed.\n\nAfter starts at tick 6: 0 social scenes; 2 physical commitments. Local input cards retain their original pre-reservation availability."
+    },
+    {
+      "ordinal": 15,
+      "requested_tick": 10,
+      "identity": "Experiment 022 · original zero-based trial 15 · seed 42 · ticks 6–54",
+      "lanes": "Four individuals · original 15 · world tick 10\n\nActual participant reservations from start to release. Blank lanes can still be blocked by an exclusive inquiry.\n\nIndividual 0\nIndividual 1\nIndividual 2\nIndividual 3\n6\n10\n14\n18\n22\n26\n30\n34\n38\n42\n46\n50\n54\n\nGreen: resource · sand: claim · blue: meal · purple: inquiry · teal: send/reply. Dots mark observations. Click an interval for its original; scroll the timeline horizontally when needed.\n\nAfter starts at tick 10: 0 social scenes; 4 physical commitments. Local input cards retain their original pre-reservation availability."
+    },
+    {
+      "ordinal": 20,
+      "requested_tick": 8,
+      "identity": "Experiment 022 · original zero-based trial 20 · seed 42 · ticks 4–52",
+      "lanes": "Four individuals · original 20 · world tick 8\n\nActual participant reservations from start to release. Blank lanes can still be blocked by an exclusive inquiry.\n\nIndividual 0\nIndividual 1\nIndividual 2\nIndividual 3\n4\n8\n12\n16\n20\n24\n28\n32\n36\n40\n44\n48\n52\n\nGreen: resource · sand: claim · blue: meal · purple: inquiry · teal: send/reply. Dots mark observations. Click an interval for its original; scroll the timeline horizontally when needed.\n\nAfter starts at tick 8: 0 social scenes; 3 physical commitments. Local input cards retain their original pre-reservation availability."
+    },
+    {
+      "ordinal": 18,
+      "requested_tick": 8,
+      "identity": "Experiment 022 · original zero-based trial 18 · seed 42 · ticks 4–52",
+      "lanes": "Four individuals · original 18 · world tick 8\n\nActual participant reservations from start to release. Blank lanes can still be blocked by an exclusive inquiry.\n\nIndividual 0\nIndividual 1\nIndividual 2\nIndividual 3\n4\n8\n12\n16\n20\n24\n28\n32\n36\n40\n44\n48\n52\n\nGreen: resource · sand: claim · blue: meal · purple: inquiry · teal: send/reply. Dots mark observations. Click an interval for its original; scroll the timeline horizontally when needed.\n\nAfter starts at tick 8: 0 social scenes; 1 physical commitments. Local input cards retain their original pre-reservation availability."
+    },
+    {
+      "ordinal": 31,
+      "requested_tick": 30,
+      "identity": "Experiment 022 · original zero-based trial 31 · seed 42 · ticks 0–48",
+      "lanes": "Four individuals · original 31 · world tick 30\n\nActual participant reservations from start to release. Blank lanes can still be blocked by an exclusive inquiry.\n\nIndividual 0\nIndividual 1\nIndividual 2\nIndividual 3\n0\n4\n8\n12\n16\n20\n24\n28\n32\n36\n40\n44\n48\n\nGreen: resource · sand: claim · blue: meal · purple: inquiry · teal: send/reply. Dots mark observations. Click an interval for its original; scroll the timeline horizontally when needed.\n\nAfter starts at tick 30: 1 social scenes; 3 physical commitments. Local input cards retain their original pre-reservation availability."
+    },
+    {
+      "ordinal": 35,
+      "requested_tick": 100,
+      "identity": "Experiment 022 · original zero-based trial 35 · seed 42 · ticks 6–198",
+      "lanes": "Four individuals · original 35 · world tick 100\n\nActual participant reservations from start to release. Blank lanes can still be blocked by an exclusive inquiry.\n\nIndividual 0\nIndividual 1\nIndividual 2\nIndividual 3\n6\n22\n38\n54\n70\n86\n102\n118\n134\n150\n166\n182\n198\n\nGreen: resource · sand: claim · blue: meal · purple: inquiry · teal: send/reply. Dots mark observations. Click an interval for its original; scroll the timeline horizontally when needed.\n\nAfter starts at tick 100: 0 social scenes; 4 physical commitments. Local input cards retain their original pre-reservation availability."
+    },
+    {
+      "ordinal": 3,
+      "requested_tick": 20,
+      "identity": "Experiment 022 · original zero-based trial 3 · seed 42 · ticks 6–54",
+      "lanes": "Four individuals · original 3 · world tick 20\n\nActual participant reservations from start to release. Blank lanes can still be blocked by an exclusive inquiry.\n\nIndividual 0\nIndividual 1\nIndividual 2\nIndividual 3\n6\n10\n14\n18\n22\n26\n30\n34\n38\n42\n46\n50\n54\n\nGreen: resource · sand: claim · blue: meal · purple: inquiry · teal: send/reply. Dots mark observations. Click an interval for its original; scroll the timeline horizontally when needed.\n\nAfter starts at tick 20: 1 social scenes; 2 physical commitments. Local input cards retain their original pre-reservation availability."
+    }
+  ],
+  "four_actor_choices": [
+    {
+      "actor": 0,
+      "text": "Actor Perspective\nObserver Perspective\n\nOnly this individual’s original captured input or explicit owned snapshot. No observer stock, private response context, nearest-state interpolation or archive recovery.\n\nactivity · original boundaries[0].choices[0]\nOwned state\tCaptured value\nIndividual\t0\nFood\t2\nHunger\t20\nGenerosity / caution / expectation\t60 / 20 / 3\nOwn directed trust\nOwn retained episodes\n\nOwn receipt 0: stock 4 observed at 6; own takes 0; retained upper bound 4. Current observer stock is excluded.\n\nPublic individual\tCaptured availability\n0\tAvailable\n1\tAvailable\n2\tAvailable\n3\tAvailable\nActivity\tScore\tEligible\nWait\t0\tYes\nConsume\t20\tYes\nInvite\t96\tYes\nAcquire\t-1\tNo\nContact candidate\tScore\tEligible\nWait\t0\tYes\nResource contact with individual 1\t96\tYes\nResource contact with individual 2\t48\tYes\nResource contact with individual 3\t48\tYes\nOwn concerns and encounter context\nOwn captured inquiry state\n\nExclusive inquiry lane available. A local query candidate is not an executed inquiry.\n\nSelected: Invite.\n\nFollow recorded references\n\nExact owned source: boundaries[0].choices[0]\n\nRecorded values (current perspective)"
+    },
+    {
+      "actor": 1,
+      "text": "Actor Perspective\nObserver Perspective\n\nOnly this individual’s original captured input or explicit owned snapshot. No observer stock, private response context, nearest-state interpolation or archive recovery.\n\nactivity · original boundaries[0].choices[1]\nOwned state\tCaptured value\nIndividual\t1\nFood\t2\nHunger\t20\nGenerosity / caution / expectation\t60 / 20 / 62\nOwn directed trust\nOwn retained episodes\n\nOwn receipt 0: stock 4 observed at 6; own takes 0; retained upper bound 4. Current observer stock is excluded.\n\nPublic individual\tCaptured availability\n0\tAvailable\n1\tAvailable\n2\tAvailable\n3\tAvailable\nActivity\tScore\tEligible\nWait\t0\tYes\nConsume\t20\tYes\nInvite\t64\tYes\nAcquire\t-1\tNo\nContact candidate\tScore\tEligible\nWait\t0\tYes\nResource contact with individual 0\t64\tYes\nResource contact with individual 2\t48\tYes\nResource contact with individual 3\t48\tYes\nOwn concerns and encounter context\nOwn captured inquiry state\n\nExclusive inquiry lane available. A local query candidate is not an executed inquiry.\n\nSelected: Invite.\n\nFollow recorded references\n\nExact owned source: boundaries[0].choices[1]\n\nRecorded values (current perspective)"
+    },
+    {
+      "actor": 2,
+      "text": "Actor Perspective\nObserver Perspective\n\nOnly this individual’s original captured input or explicit owned snapshot. No observer stock, private response context, nearest-state interpolation or archive recovery.\n\nactivity · original boundaries[0].choices[2]\nOwned state\tCaptured value\nIndividual\t2\nFood\t2\nHunger\t20\nGenerosity / caution / expectation\t60 / 20 / 67\nOwn directed trust\nOwn retained episodes\n\nOwn receipt 0: stock 4 observed at 6; own takes 0; retained upper bound 4. Current observer stock is excluded.\n\nPublic individual\tCaptured availability\n0\tAvailable\n1\tAvailable\n2\tAvailable\n3\tAvailable\nActivity\tScore\tEligible\nWait\t0\tYes\nConsume\t20\tYes\nInvite\t108\tYes\nAcquire\t-1\tNo\nContact candidate\tScore\tEligible\nWait\t0\tYes\nResource contact with individual 0\t48\tYes\nResource contact with individual 1\t48\tYes\nResource contact with individual 3\t108\tYes\nOwn concerns and encounter context\nOwn captured inquiry state\n\nExclusive inquiry lane available. A local query candidate is not an executed inquiry.\n\nSelected: Invite.\n\nFollow recorded references\n\nExact owned source: boundaries[0].choices[2]\n\nRecorded values (current perspective)"
+    },
+    {
+      "actor": 3,
+      "text": "Actor Perspective\nObserver Perspective\n\nOnly this individual’s original captured input or explicit owned snapshot. No observer stock, private response context, nearest-state interpolation or archive recovery.\n\nactivity · original boundaries[0].choices[3]\nOwned state\tCaptured value\nIndividual\t3\nFood\t2\nHunger\t20\nGenerosity / caution / expectation\t60 / 20 / 69\nOwn directed trust\nOwn retained episodes\n\nOwn receipt 0: stock 4 observed at 6; own takes 0; retained upper bound 4. Current observer stock is excluded.\n\nPublic individual\tCaptured availability\n0\tAvailable\n1\tAvailable\n2\tAvailable\n3\tAvailable\nActivity\tScore\tEligible\nWait\t0\tYes\nConsume\t20\tYes\nInvite\t64\tYes\nAcquire\t-1\tNo\nContact candidate\tScore\tEligible\nWait\t0\tYes\nResource contact with individual 0\t48\tYes\nResource contact with individual 1\t48\tYes\nResource contact with individual 2\t64\tYes\nOwn concerns and encounter context\nOwn captured inquiry state\n\nExclusive inquiry lane available. A local query candidate is not an executed inquiry.\n\nSelected: Invite.\n\nFollow recorded references\n\nExact owned source: boundaries[0].choices[3]\n\nRecorded values (current perspective)"
+    }
+  ],
+  "additional_checks": [
+    "Original35@100 scene43 individual1 actual Refuse input food0 hunger100 trust38 valence0 Refuse11 Leave0",
+    "Original18@8 no captured owned decision; query0/2 interval6–19",
+    "Original30/31 complete null all comparison fields equal",
+    "Return021 clamps actor3 to0 and disables3 after verified load"
+  ]
+}

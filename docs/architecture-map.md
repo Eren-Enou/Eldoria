@@ -151,3 +151,7 @@ receipt/retention/claim/results. Unknown/expiry,independent rival depletion,sema
 versus raw trust and reconvergence remain distinct. Full41Python/4JS tests and real
 main8765 source→grant→meal acceptance pass;[evidence](../tools/history-explorer/validation/knowledge-integration/acceptance.md).
 No viewer output becomes cognition or scientific-gate input.022 remains prospective.
+
+Main Explorer022adapter: `tools/history-explorer/concurrent_history.py` and
+`native-concurrent.js`; captured-only four-person perspective, typed causal joins
+and capacity comparison. [Acceptance](development/main022-viewer-acceptance.md).

@@ -27,6 +27,9 @@ _finite_spec.loader.exec_module(finite)
 _knowledge_spec = importlib.util.spec_from_file_location('viewer_knowledge', HOME / 'knowledge.py')
 knowledge = importlib.util.module_from_spec(_knowledge_spec)
 _knowledge_spec.loader.exec_module(knowledge)
+_concurrent_spec = importlib.util.spec_from_file_location('viewer_concurrent_history', HOME / 'concurrent_history.py')
+concurrent_history = importlib.util.module_from_spec(_concurrent_spec)
+_concurrent_spec.loader.exec_module(concurrent_history)
 SCHEMA = 'woi-history-explorer/v1'
 MAX_RECORD = 64 * 1024 * 1024
 DEFAULT = dict(window=24, idle_gap=1, interval=4, stock=12, hunger=20, order='Ascending')
@@ -53,6 +56,9 @@ def layers(trial):
 
 
 def validate_trial(t, experiment):
+    if experiment == '022':
+        concurrent_history.validate(t)
+        return
     if experiment == '021':
         knowledge.validate(t)
         layers(t)
@@ -282,6 +288,7 @@ class Repository:
         self.experiments = experiments
         self.member_verified = set()
         self.lock = threading.RLock()
+        self.concurrent = concurrent_history.Source(self.root) if '022' in experiments else None
 
     def catalog(self):
         """Fast discovery only. No scientific/integrity claim from a derived index.
@@ -310,6 +317,8 @@ class Repository:
                 if e['experiment'] != exp or e['archive'] != 'trials.jsonl.gz': raise ValueError('Unsupported environmental catalog source')
                 e['integrity']='Derived catalog entry; source not yet verified in this session'
                 self.entries[e['id']]=e
+        if self.concurrent is not None:
+            self.entries.update(self.concurrent.catalog(self.status('022')))
         return self
 
     def status(self, exp):
@@ -323,7 +332,7 @@ class Repository:
         d = self.root / 'experiments' / exp
         protected = self.root / f'docs/foundation-001-{exp}-sha256.json'
         inventory = json.loads(protected.read_bytes()) if protected.exists() else {}
-        freeze_name = 'source-freeze.json' if exp in ('020','021') else 'policy-freeze.json'
+        freeze_name = 'source-freeze.json' if exp in ('020','021','022') else 'policy-freeze.json'
         for name in ('archive-manifest.json', freeze_name):
             key = f'experiments/{exp}/{name}'
             if inventory and hashlib.sha256((d / name).read_bytes().replace(b'\r\n', b'\n')).hexdigest() != inventory.get(key):
@@ -335,6 +344,8 @@ class Repository:
         return manifest
 
     def verify_member(self, e):
+        if e['experiment'] == '022':
+            return self.concurrent.get(e)
         d = self.root / 'experiments' / e['experiment']
         manifest = self.manifest(e['experiment'])
         if e['archive'] not in manifest or not e['archive'].endswith('.jsonl.gz') or Path(e['archive']).name != e['archive']:
@@ -379,6 +390,8 @@ class Repository:
     def prepare(self):
         started = time.perf_counter()
         for exp in self.experiments:
+            if exp == '022':
+                continue
             d = self.root / 'experiments' / exp
             manifest = self.manifest(exp)
             freeze = hashlib.sha256((d / ('source-freeze.json' if exp in ('020','021') else 'policy-freeze.json')).read_bytes().replace(b'\r\n', b'\n')).hexdigest()
@@ -416,6 +429,8 @@ class Repository:
                 # the complete decoded envelope has passed its hash check.
                 for e, line in demos:
                     self._save(e, json.loads(line))
+        if self.concurrent is not None:
+            self.entries.update(self.concurrent.catalog(self.status('022')))
         self.measurements.append(dict(operation='catalog_and_full_archive_verification', seconds=time.perf_counter()-started, trials=len(self.entries)))
         (self.cache / 'catalog.json').write_bytes(encoded(dict(schema=SCHEMA, entries=list(self.entries.values()))))
         for exp in ('020','021'):
@@ -429,6 +444,10 @@ class Repository:
         return self
 
     def _save(self, entry, trial):
+        if entry['experiment'] == '022':
+            # Native exports reference captured inputs in the one original Trial;
+            # no second full actor-state array or legacy schema is manufactured.
+            return concurrent_history.export(entry, trial)
         is_finite = entry['experiment']=='020'
         is_knowledge = entry['experiment']=='021'
         data = dict(schema=SCHEMA, extractor_version=4 if is_knowledge else 3 if is_finite else 2, source=copy.deepcopy(entry), trial=trial)
@@ -457,6 +476,9 @@ class Repository:
         if key not in self.entries:
             raise ValueError('Unknown registered trial')
         e = self.entries[key]; path = self.cache / (key + '.json')
+        if e['experiment'] == '022':
+            e['scientific_status'] = self.status('022')
+            return self._remember(key, self._save(e, self.concurrent.get(e)), started)
         self.manifest(e['experiment'])
         e['scientific_status'] = self.status(e['experiment'])
         if key not in self.member_verified:
@@ -527,11 +549,13 @@ class Handler(BaseHTTPRequestHandler):
                     left=self.server.repo.get(q.get('left',[''])[0]);right=self.server.repo.get(q.get('right',[''])[0])
                     if left['source']['experiment'] != right['source']['experiment']:
                         raise ValueError('Compare histories from the same explicit experiment schema')
+                    if left['source']['experiment'] == '022':
+                        return self.reply(concurrent_history.comparison(left, right))
                     compare=finite.comparison if left['source']['experiment']=='020' else None
                     if left['source']['experiment']=='021':
                         compare=lambda a,b,common:knowledge.comparison(a,b,lambda x,y:finite.comparison(x,y,common))
                     return self.reply(compare(left['trial'],right['trial'],comparison) if compare else comparison(left['trial'],right['trial']))
-            assets = {'/': 'index.html', '/app.js': 'app.js', '/perspective.js': 'perspective.js', '/causal.js': 'causal.js', '/style.css': 'style.css'}
+            assets = {'/': 'index.html', '/app.js': 'app.js', '/perspective.js': 'perspective.js', '/causal.js': 'causal.js', '/native-concurrent.js': 'native-concurrent.js', '/style.css': 'style.css'}
             if p.path not in assets:
                 return self.fail('Not found', 404)
             path = HOME / assets[p.path]
@@ -586,7 +610,7 @@ def main():
     ap.add_argument('--cache', type=Path)
     args = ap.parse_args()
     print('Preparing full archive index...' if args.prepare or args.include018 else 'Opening discovery catalog; original histories are verified on selection.', flush=True)
-    repo = Repository(cache=args.cache, experiments=('019','018','020','021') if args.include018 else ('019','020','021'))
+    repo = Repository(cache=args.cache, experiments=('019','018','020','021','022') if args.include018 else ('019','020','021','022'))
     repo.prepare() if args.prepare or args.include018 else repo.catalog()
     print(f'Catalog: {len(repo.entries)} recorded trials.', flush=True)
     if repo.measurements:

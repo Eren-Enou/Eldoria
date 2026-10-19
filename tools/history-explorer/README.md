@@ -23,7 +23,7 @@ verified merely because it loads. No whole decoded corpus enters the browser.
 The main application now also supports all164 original020 histories through
 `experiment-020-trial/v1`, not an018/019 schema substitution. First launch builds
 a derived020 catalog under `target`; subsequent starts reuse it, verifying original
-membership on selection. The default catalog now has714 histories (336019+164020+214021).
+membership on selection. The default catalog now has814 histories (336019+164020+214021+100022).
 020 labels use original **zero-based trial ordinals**;019 labels remain one-based.
 Use the020 sharing, missed-donor, last-unit, exhaustion, null and reconvergence
 presets. Actor decisions include their actual cache observation/candidates; Observer
@@ -150,3 +150,22 @@ Targeted checks: `python -B -m unittest discover -s tools/history-explorer -p te
 `node tools/history-explorer/concurrent.test.cjs`, and `node --check tools/history-explorer/concurrent.js`.
 Existing viewer suites remain separate. Scientific validation never depends on
 these presentation adapters.
+
+## Native four-person 022 support in the main application
+
+Normal launch now includes all100 source-verified original022 histories, using
+`experiment-022-trial/v1` directly. Select the022 presets or search022. Zero-based
+original ordinals, archive hashes and source locks remain visible. Observer
+Perspective adds four lanes on one shared axis; scroll the axis horizontally on
+narrow screens. Intervals run from actual reservation to actual release. Click
+an interval, cohort, scene or original-reference button to inspect the source.
+Actor Perspective shows only the selected actor's captured input, including
+recipient and resource decisions; it leaves atomic interiors and absent inputs
+empty. Inquiry completion does not expose a partner's private response context.
+
+Capacity comparisons distinguish first admission, executed event, missing decision
+opportunity and selected choice at a common actor/tick. Food reconvergence need
+not imply hunger or relationship reconvergence. The original finite public budget
+and comparison-start phase remain explicit; this is historical playback, not a
+continuous live world. The older separate preview remains available but is no
+longer required for022. [Main integration acceptance](../../docs/development/main022-viewer-acceptance.md).

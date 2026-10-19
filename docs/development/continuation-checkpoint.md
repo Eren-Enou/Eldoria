@@ -76,3 +76,16 @@ Observer. Initialnarrow screenshotcaughtlowcontrastnotes/tinyaxis; CSSbackground
 and900pxhorizontalaxisfixed, reloadbrowserforthenewUI. No newPNGs savedyet.
 FullCbrowser10cases, SourcePrivacy/links/comparison/reconvergence/legacy021compat,
 performance/docs andcommit stillpending. Do notcallCcompleteyet.
+
+
+## Current checkpoint after B publication / C acceptance
+
+HEAD/origin355c690: GateB protection published separately after all actual checks.
+Main022 viewer frontend/backend complete. Full48Python+4preview+4legacyJS PASS;
+7native tests repeated after finalcomparisonfields PASS. Actual main8765 browser
+all10cases exercised, all4ownedopeningchoices, actual recipient3, executed
+Refuse43@100/original35, atomic18@8noowninput, null30/31 and return021clamp3to0.
+No console warnings/errors. CSScontrast/axis visuallyverified. Evidence/cost:
+main022-viewer-acceptance.md, main022-viewer-cost.json, continuous-world-browser/.
+Main server156880, tab3phaseTab handoffmarked. Ccommit/pushnext. ThenD/Earchitecture
+andprospectivegate BEFORE023treatment. Earlier unfinished C notes superseded.

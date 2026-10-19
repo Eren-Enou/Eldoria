@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>World of Individuals — History Explorer</title><link rel="stylesheet" href="/style.css"><script defer src="/perspective.js"></script><script defer src="/causal.js"></script><script defer src="/app.js"></script></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>World of Individuals — History Explorer</title><link rel="stylesheet" href="/style.css"><script defer src="/perspective.js"></script><script defer src="/causal.js"></script><script defer src="/native-concurrent.js"></script><script defer src="/app.js"></script></head>
 <body>
 <header><div><p class="eyebrow">WORLD OF INDIVIDUALS</p><h1>History Explorer</h1></div><p class="tag">Recorded lives. Inspectable consequences.<br><strong>Read only · local archives</strong></p></header>
 <div id="status" role="status" aria-live="polite">Loading verified archive catalog…</div>
-<nav class="jump-nav" aria-label="History panels"><a href="#history-library">Histories</a><a href="#history-moment">Current moment</a><a href="#perspective-panel">Perspective</a></nav>
+<nav class="jump-nav" aria-label="History panels"><a href="#history-library">Histories</a><a href="#history-moment">Current moment</a><a href="#perspective-panel">Perspective</a><a id="concurrent-link" href="#concurrent-lanes" hidden>Concurrent lanes</a></nav>
+<section id="concurrent-lanes" class="concurrent-lanes" hidden aria-label="Four concurrent histories"></section>
 <main tabindex="0" aria-label="History workspace">
 <aside id="history-library" class="library" aria-label="Histories and individuals">
 <label for="actor">Individual</label><select id="actor"><option value="0">Individual 0</option><option value="1">Individual 1</option><option value="2">Individual 2</option></select>
@@ -13,7 +14,7 @@
 
 <details id="file-tools"><summary>Import / export</summary><label for="import">Open a viewer export (.json)</label><input id="import" type="file" accept=".json,application/json"><button id="download">Download current export</button><p>Imported exports are checked against verified source membership. Strings remain data.</p></details>
 <h2>Real comparison examples</h2><div id="presets"></div>
-<h2>Recorded timeline</h2><label for="kind">Show recorded moments</label><select id="kind"><option value="significant">Significant events</option><option value="all">All recorded moments</option><option value="decision">Activity decisions</option><option value="claim">Acquisition admissions / busy intervals</option><option value="acquisition">Grants and failures</option><option value="resource">Resource actions</option><option value="inquiry">Executed inquiries</option><option value="meal">Meals</option><option value="environmental_memory">Environmental receipts / expiry</option><option value="need">Need progression</option><option value="gap">Observation gaps</option></select><p id="list-note"></p><ol id="events" aria-label="Recorded event list"></ol>
+<h2>Recorded timeline</h2><label for="kind">Show recorded moments</label><select id="kind"><option value="significant">Significant events</option><option value="all">All recorded moments</option><option value="decision">Activity decisions</option><option value="claim">Acquisition admissions / busy intervals</option><option value="acquisition">Grants and failures</option><option value="resource">Resource actions</option><option value="inquiry">Executed inquiries</option><option value="meal">Meals</option><option value="environmental_memory">Environmental receipts / expiry</option><option value="need">Need progression</option><option value="gap">Observation gaps</option><option value="commitment">Commitment starts</option><option value="release">Actual releases</option><option value="admission">Admissions and rejections</option><option value="reply">Recipient decisions</option><option value="information">Information delivery</option></select><p id="list-note"></p><ol id="events" aria-label="Recorded event list"></ol>
 </details></aside>
 <section id="history-moment" class="stage" aria-label="Current historical moment">
 <div class="titleline"><h2 id="title">Choose a recorded history</h2><span id="mode" class="badge"></span></div>
