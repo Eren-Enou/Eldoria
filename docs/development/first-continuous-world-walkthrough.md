@@ -17,7 +17,7 @@ cargo run --release --locked -j 1 --manifest-path prototypes/continuous-world/Ca
 python -B tools/history-explorer/explorer.py --continuous experiments/023 --continuous target/my-continuous-world.jsonl
 ```
 
-Open the printed loopback URL. Add `--port8769` if8765is already occupied. In the
+Open the printed loopback URL. Add `--port 8769` if8765is already occupied. In the
 library choose **023 - Open actual prototype run** (middle dots in the actual UI).
 Observer Perspective displays all four lanes on one shared axis; Actor Perspective
 shows only the selected individual's exact captured input or owned snapshot.

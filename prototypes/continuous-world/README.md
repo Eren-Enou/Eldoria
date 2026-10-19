@@ -12,13 +12,13 @@ python -B tools/history-explorer/explorer.py --continuous experiments/023 --cont
 
 The output filename must be NEW. Choose another filename for a repeat; existing
 files and protected001-022/reinforcement output locations are rejected. If8765is
-already in use, add `--port8769` to the viewer command. Select **023 - Open actual
+already in use, add `--port 8769` to the viewer command. Select **023 - Open actual
 prototype run** (the button uses a middle dot in the interface), then Observer
 Perspective. Browser playback reads an already executed history; it does not
 advance or control the world. `--continuous` is an explicit viewer source opt-in.
 The ordinary viewer still defaults to its historical019example.
 
-`--ticks192` gives192ticks of ordinary decision opportunities after the controlled
+`--ticks 192` gives192ticks of ordinary decision opportunities after the controlled
 bootstrap. The SAME world then drains already proposed/admitted work for33real
 ticks; no new ordinary choices occur during drain. For this example: start6,
 nominal stop198, final231. Needs still advance. Final silence is a testing endpoint,

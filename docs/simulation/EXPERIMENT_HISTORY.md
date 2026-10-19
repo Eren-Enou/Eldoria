@@ -254,3 +254,9 @@ Isolatedsource-preserving host,100old022exactreplays,42newindependent/bytereruns
 19scratchcategories+2supplementalcontrols. Main optional023adapter displays genuine
 four-personhistory and reporting boundaries. [Walkthrough](../development/first-continuous-world-walkthrough.md),
 [readiness](../development/continuous-world-readiness.md). No024/materialproduction.
+
+First Continuous World A–I delivery: [report](../development/first-continuous-world-delivery.md),
+[acceptance evidence](../development/continuous-world-completion-audit.md) and
+[readiness](../development/continuous-world-readiness.md). Continuous individual
+activity is qualified; sustainable community life is not established. Immediate
+next gate: independent 023 review, with protection/adoption kept separate.

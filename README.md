@@ -26,7 +26,7 @@ python -B tools/history-explorer/explorer.py --continuous experiments/023 --cont
 
 Choose a NEW output filename. The192ordinary ticks are followed by33charged drain
 ticks; for paired: start6, nominal198, final231. Choose the actualprototype button
-in the main viewer. Add `--port8769` if8765is occupied. The viewer reads completed
+in the main viewer. Add `--port 8769` if8765is occupied. The viewer reads completed
 history; the CLI executes the actual world. [Runner guide](prototypes/continuous-world/README.md),
 [walkthrough](docs/development/first-continuous-world-walkthrough.md),
 [results](experiments/023/results.md), [verification](experiments/023/verification.md),
@@ -601,3 +601,10 @@ unknown/expiry semantics and observer receipt→choice→grant→meal navigation
 [Run and inspect](tools/history-explorer/README.md),
 [real acceptance/screenshots/costs](tools/history-explorer/validation/knowledge-integration/acceptance.md).
 No archive rewriting,policy execution or simulation-control route is introduced.
+
+The completed First Continuous World program's
+[delivery report](docs/development/first-continuous-world-delivery.md) answers the
+fifteen scientific questions; its [completion audit](docs/development/continuous-world-completion-audit.md)
+maps all twenty acceptance requirements to actual evidence. See
+[readiness](docs/development/continuous-world-readiness.md) for the qualified
+community verdict and conditional future material study.

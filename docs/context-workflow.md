@@ -266,3 +266,10 @@ Physicalphase/reporting/nominalcutoff/drain are distinct; do not infer rest from
 no post-cutoff choices or utility from more contact. Keep cap16episode correction,
 null native vsactual provenance response, and cachevsALLfoodexhaustion distinct.
 No024or automatic material-process/policy implementation follows.
+
+For the completed First Continuous World program, start with the
+[delivery report](development/first-continuous-world-delivery.md) and
+[completion audit](development/continuous-world-completion-audit.md), then follow
+causal slices and validation records rather than reading full generated histories.
+The next scientific action is independent 023 review, not a rerun or a material
+implementation. Inspect actual Git before relying on the pre-publication checkpoint.

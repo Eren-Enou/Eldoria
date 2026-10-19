@@ -161,3 +161,30 @@ supply and policies. It requires actualprotection publication and prospectively
 gated architecture before treatment. Four-person main-viewer integration is
 separate read-only engineering. Finite conversion remains a potential later024,
 not023; no production or024implementation is authorized by this roadmap.
+
+## First Continuous World — completed boundary
+
+The separately authorized A–I program is complete through a qualified prototype:
+[delivery report](first-continuous-world-delivery.md),
+[completion evidence](continuous-world-completion-audit.md) and
+[readiness decision](continuous-world-readiness.md).
+This supersedes prospective next-step statements above: 022 has been independently
+reviewed and conditionally protected through 001–022 (361 artifacts); its native
+four-person histories now work in the main History Explorer. No default adoption
+follows. The implemented epoch-versus-prospective-absolute qualification remains.
+
+Experiment 023 was registered before implementation, then executed in 42 original
+worlds. Nineteen of 20 matched pairs change choices/execution; 20 worlds have strict
+report crossings. Positive, harmful, null and reconvergent outcomes survive exact
+replay and independent reconstruction. Continuous permission can delay meals and
+increase futile contact; finite exhaustion and unused held food remain distinct.
+The same four actors retain independent state and physical accounting across reports.
+The CLI and optional main-viewer adapter are delivered; bounded runs are not a
+real-time/resumable community service.
+
+023 remains experimental and unprotected pending independent scientific review.
+The immediate next gate is that review, then any separately accepted integrity pass.
+The next material candidate is finite-input preparation under escrow, time and
+waste conservation, only with new authorization/preregistration. Diagnose contact
+versus consumption values separately; do not disguise failures with added supply.
+No 024, production, larger population, economy or canon change was begun.

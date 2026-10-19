@@ -172,3 +172,9 @@ Main optional023consumer: `tools/history-explorer/continuous_history.py` and nat
 frontend; explicit envelope/physical schemas, reporting markers and actual delivery
 IDs, customprototype source label. [Acceptance](development/main023-viewer-acceptance.md).
 No evaluator/viewer dependency in scientific authority. No production/024/adoption.
+
+Final program references: [delivery report](development/first-continuous-world-delivery.md),
+[20-item acceptance audit](development/continuous-world-completion-audit.md),
+[readiness and material decision](development/continuous-world-readiness.md).
+These supersede older prospective next-step statements: 023 is completed research,
+unprotected pending independent review; no 024 or production was begun.
