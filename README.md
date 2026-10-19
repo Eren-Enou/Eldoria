@@ -12,6 +12,28 @@ For engineering navigation, start with the [concise architecture map](docs/archi
 the read-only `validate_contract` gate described below; run/evaluate commands can
 overwrite evidence and should be used only for authorized target generation.
 
+## First Continuous World - optional023prototype
+
+Four persistent individuals now execute one bounded continuous-opportunity world
+across reporting checkpoints. The42world scheduling study is ACCEPT WITH
+QUALIFICATION, pending independent023review; protected history remains001-022.
+More opportunity can delay meals and increase hunger. No production/default adoption.
+
+```powershell
+cargo run --release --locked -j 1 --manifest-path prototypes/continuous-world/Cargo.toml --target-dir target/continuous-world --bin continuous-world -- run target/my-continuous-world.jsonl --case paired --ticks 192 --period 11 --seed 42
+python -B tools/history-explorer/explorer.py --continuous experiments/023 --continuous target/my-continuous-world.jsonl
+```
+
+Choose a NEW output filename. The192ordinary ticks are followed by33charged drain
+ticks; for paired: start6, nominal198, final231. Choose the actualprototype button
+in the main viewer. Add `--port8769` if8765is occupied. The viewer reads completed
+history; the CLI executes the actual world. [Runner guide](prototypes/continuous-world/README.md),
+[walkthrough](docs/development/first-continuous-world-walkthrough.md),
+[results](experiments/023/results.md), [verification](experiments/023/verification.md),
+[readiness/future material decision](docs/development/continuous-world-readiness.md).
+Read-only023gate: `cargo run --release --locked -j 1 --example validate023`.
+No024or material-production implementation follows from this result.
+
 ## History Explorer — inspect actual recorded lives
 
 Launch the read-only local application with Python 3.10+; Rust is not needed to view

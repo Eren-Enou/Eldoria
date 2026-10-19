@@ -19,7 +19,7 @@ function button(parent, label, action) { const b=el('button',label);b.addEventLi
 function status(message, error=false) {$('status').textContent=message;$('status').classList.toggle('error',error);}
 async function api(path, options) { const r=await fetch(path,options);const data=await r.json();if(!r.ok)throw new Error(data.error || r.statusText);return data; }
 function guard(fn) { return async (...args)=>{try{await fn(...args);}catch(e){pause();status(e.message,true);}}; }
-function label(e) {const c=e.config;if(e.experiment==='022')return `022 · ${e.case} · social capacity ${c.capacity} · seed ${e.seed} · claim ${c.duration} / horizon ${c.horizon} / ${c.order} · original zero-based trial ${e.record}`;if(e.experiment==='021')return `021 · ${e.case} · ${e.policy} / ${e.mode} · seed ${e.seed} · glimpse ${c.cadence} / window ${c.window} / attempt ${c.duration} / ${c.order} · original zero-based trial ${e.record}`;if(e.experiment==='020')return `020 · ${e.case} · ${e.mode} · seed ${e.seed} · window ${c.window} / attempt ${c.duration} / ${c.order} · original zero-based trial ${e.record}`;return `${e.experiment} · ${e.case} · ${e.mode} · seed ${e.seed} · window ${c.window ?? c.budget ?? 'not captured'} / gap ${c.idle_gap ?? 'not a recorded treatment'} / I${c.interval} / ${c.order} / stock ${c.stock} / H parameter ${c.hunger ?? 'not recorded'} · #${e.record}`;}
+function label(e) {const c=e.config;if(e.experiment==='023')return `023 · ${e.registered?'registered':'custom prototype'} · ${e.case} · ${c.mode} · seed ${e.seed} · period ${c.period} / nominal ${c.horizon} / ${c.phase} · original zero-based trial ${e.record}`;if(e.experiment==='022')return `022 · ${e.case} · social capacity ${c.capacity} · seed ${e.seed} · claim ${c.duration} / horizon ${c.horizon} / ${c.order} · original zero-based trial ${e.record}`;if(e.experiment==='021')return `021 · ${e.case} · ${e.policy} / ${e.mode} · seed ${e.seed} · glimpse ${c.cadence} / window ${c.window} / attempt ${c.duration} / ${c.order} · original zero-based trial ${e.record}`;if(e.experiment==='020')return `020 · ${e.case} · ${e.mode} · seed ${e.seed} · window ${c.window} / attempt ${c.duration} / ${c.order} · original zero-based trial ${e.record}`;return `${e.experiment} · ${e.case} · ${e.mode} · seed ${e.seed} · window ${c.window ?? c.budget ?? 'not captured'} / gap ${c.idle_gap ?? 'not a recorded treatment'} / I${c.interval} / ${c.order} / stock ${c.stock} / H parameter ${c.hunger ?? 'not recorded'} · #${e.record}`;}
 function options(select, entries, selected) {select.replaceChildren();entries.forEach(e=>{const o=el('option',label(e));o.value=e.id;select.append(o);});if(selected)select.value=selected;}
 function nativeEnv(){return {S,$,el,note,heading,table,details,button,human,go,openHistory,guard,status};}
 function configureActorOptions(data){
@@ -30,6 +30,10 @@ function configureActorOptions(data){
 }
 function configure(data) {
  if(data.schema !== 'woi-history-explorer/v1')throw new Error('Unknown export schema');
+ if(data.source.experiment==='023'){
+  if(!NativeConcurrent.is(data)||data.source.source_schema!=='experiment-023-trial/v1'||data.trial.schema!=='experiment-023-physical-history/v1'||data.extractor_version!==6||!data.continuous)throw new Error('023 requires its explicit continuous-world adapter');
+  data.stepMap=new Map();return data;
+ }
  if(data.source.experiment==='022'){
   if(!NativeConcurrent.is(data)||data.source.source_schema!=='experiment-022-trial/v1'||data.extractor_version!==5)throw new Error('022 requires the explicit native four-person adapter');
   data.stepMap=new Map();return data;
@@ -284,6 +288,8 @@ function renderPair() {
  }
 }
 function setupPresets() {
+ if(S.catalog.some(e=>e.experiment==='023'&&e.registered))for(const [title,left,right]of [['023 · Reporting crossing / mixed costs',0,1],['023 · Continuous inquiry / short control',12,13],['023 · Long finite resource exhaustion',18,19],['023 · Genuine behavior null',20,21],['023 · Longer inquiry control',36,37]])button($('presets'),title,guard(async()=>{const a=S.catalog.find(e=>e.experiment==='023'&&e.registered&&e.record===left),b=S.catalog.find(e=>e.experiment==='023'&&e.registered&&e.record===right);if(!a||!b)throw new Error('023preset source absent');await openHistory(a.id);if(S.data?.source.id===a.id)await compareWith(b.id);}));
+ for(const entry of S.catalog.filter(e=>e.experiment==='023'&&!e.registered))button($('presets'),'023 · Open actual prototype run',guard(()=>openHistory(entry.id)));
  if(S.catalog.some(e=>e.experiment==='022'))for(const [title,left,right] of [
   ['022 · Two simultaneous resource scenes',0,1],['022 · Different completion times',4,5],
   ['022 · Claim and meal beside resource work',12,13],['022 · Busy recipient / missed contact',10,11],

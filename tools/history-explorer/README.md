@@ -169,3 +169,27 @@ not imply hunger or relationship reconvergence. The original finite public budge
 and comparison-start phase remain explicit; this is historical playback, not a
 continuous live world. The older separate preview remains available but is no
 longer required for022. [Main integration acceptance](../../docs/development/main022-viewer-acceptance.md).
+
+
+## Optional first continuous world (023)
+
+```powershell
+python -B tools/history-explorer/explorer.py --continuous experiments/023
+```
+
+This adds42original023research worlds through an explicit version6adapter; it does
+not extend the protected001-022foundation or adopt a simulation policy. Add another
+`--continuous target/my-continuous-world.jsonl` to inspect an actual CLI-generated
+custom run. Custom data is clearly labelled outside the registered matrix. Use the
+[runner](../../prototypes/continuous-world/README.md) to generate it without source edits.
+Default viewer behavior and older schemas remain unchanged.
+
+The native body retains its original023physical-history schema. Checkpoint markers
+show reporting/nominal/final boundaries and actual spanning commitments. Source
+paths use `history.*` inside the original envelope; `checkpoints[*]` are separate
+observer annotations. Actor inputs never inherit a checkpoint's observer state.
+The actual provenance delivery route is linked even when the legacy native response
+field is null. More contact or a receipt alone is not proof of material benefit.
+
+[Actual browser/tests/cost acceptance](../../docs/development/main023-viewer-acceptance.md),
+[walkthrough](../../docs/development/first-continuous-world-walkthrough.md).

@@ -1,7 +1,7 @@
 'use strict';
 // Native022 presentation. Policy inputs stay distinct from observer joins.
 const NativeConcurrent = (() => {
- const is = data => data?.source?.experiment === '022' && data.native_concurrency === true;
+ const is = data => ['022','023'].includes(data?.source?.experiment) && data.native_concurrency === true;
  function resolve(root, path) {
   const parts = path.match(/[A-Za-z_][A-Za-z_0-9]*|\[\d+\]/g) || [];
   const rebuilt = parts.map((part,index) => part.startsWith('[') ? part : (index ? '.' : '') + part).join('');
@@ -10,6 +10,8 @@ const NativeConcurrent = (() => {
   for(const part of parts){const key=part.startsWith('[')?Number(part.slice(1,-1)):part;if(value===null||typeof value!=='object'||!Object.prototype.hasOwnProperty.call(value,key))throw new Error('Missing native original reference');value=value[key];}
   return value;
  }
+ function resolveData(data,ref){return ref.startsWith('checkpoints[')&&data.continuous?resolve(data.continuous,ref):resolve(data.trial,ref);}
+ function sourceRef(data,ref){return data.continuous&&!ref.startsWith('checkpoints[')?'history.'+ref:ref;}
  function project(data,moment,owner) {
   if(!Number.isInteger(owner)||owner<0||owner>3)return null;
   const trial=data.trial, ref=moment.ref;
@@ -29,7 +31,7 @@ const NativeConcurrent = (() => {
   return null;
  }
  function original(env,ref){
-  const {S,go}=env;resolve(S.data.trial,ref);S.lens='observer';S.causalNode=ref;
+  const {S,go}=env;resolveData(S.data,ref);S.lens='observer';S.causalNode=ref;
   S.chain=S.data.causal.chains.find(ch=>ch.nodes.includes(ref))?.id??null;
   const node=S.data.causal.nodes[ref], fallback=ref.match(/^boundaries\[\d+\]/)?.[0];
   const index=S.data.timeline.findIndex(m=>m.ref===(node?.anchor??fallback??ref));
@@ -40,6 +42,7 @@ const NativeConcurrent = (() => {
   const {S,$,el,note}=env, data=S.data,t=data.trial,host=$('concurrent-lanes');host.replaceChildren();host.hidden=S.lens!=='observer';
   if(host.hidden)return;
   host.append(el('h2',`Four individuals · original ${data.source.record} · world tick ${moment.tick}`));
+  if(data.continuous)note(host,`Experiment023 · ${data.continuous.config.mode} opportunities · reporting period ${data.continuous.config.period}`);
   note(host,'Actual participant reservations from start to release. Blank lanes can still be blocked by an exclusive inquiry.');
   const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 1000 235');svg.setAttribute('role','img');svg.setAttribute('aria-label','Four concurrent individual lanes on one shared world-time axis');
   const scale=870/Math.max(1,t.end-t.start),x=tick=>110+(tick-t.start)*scale;
@@ -58,8 +61,13 @@ const NativeConcurrent = (() => {
   }
   const step=Math.max(4,Math.ceil((t.end-t.start)/12/4)*4);
   for(let tick=t.start;tick<=t.end;tick+=step)node('text',{x:x(tick),y:225,fill:'#b7cfca','font-size':12},tick);
+  if(data.continuous)for(const [index,checkpoint]of data.continuous.checkpoints.entries()){
+   const nominal=checkpoint.labels.includes('NominalStop');node('line',{x1:x(checkpoint.tick),x2:x(checkpoint.tick),y1:8,y2:205,stroke:nominal?'#ec927b':'#719a9c','stroke-width':nominal?2:1,'stroke-dasharray':nominal?'2 2':'4 4'});const mark=node('rect',{x:x(checkpoint.tick)-5,y:8,width:10,height:197,fill:'transparent',tabindex:0,role:'button','aria-label':`${checkpoint.labels.join(' / ')} checkpoint at ${checkpoint.tick}; ${checkpoint.active.length} active commitments`});
+   const title=document.createElementNS(ns,'title');title.textContent=`${checkpoint.labels.join(' / ')} @ ${checkpoint.tick} · checkpoints[${index}]`;mark.append(title);mark.onclick=()=>original(env,`checkpoints[${index}]`);mark.onkeydown=e=>{if(e.key==='Enter')mark.onclick();};
+  }
   node('line',{x1:x(moment.tick),x2:x(moment.tick),y1:8,y2:205,stroke:'#f3d98f','stroke-width':2});const axis=el('div',undefined,'concurrent-axis');axis.append(svg);host.append(axis);
   note(host,'Green: resource · sand: claim · blue: meal · purple: inquiry · teal: send/reply. Dots mark observations. Click an interval for its original; scroll the timeline horizontally when needed.');
+  if(data.continuous)note(host,`Dashed lines: observer reporting checkpoints; red: nominal cutoff ${t.start+data.continuous.config.horizon}. Existing work drains with real time/needs to ${t.end}; no new ordinary choices after cutoff. Checkpoint markers open exact original references.`);
   const active=data.intervals.filter(c=>c.start<=moment.tick&&moment.tick<c.end);
   note(host,`After starts at tick ${moment.tick}: ${active.filter(c=>c.kind==='Resource').length} social scenes; ${active.length} physical commitments. Local input cards retain their original pre-reservation availability.`);
  }
@@ -106,7 +114,7 @@ const NativeConcurrent = (() => {
   const chain=data.causal.chains.find(ch=>ch.id===S.chain)??data.causal.chains.find(ch=>ch.nodes.includes(m.ref));select.value=chain?.id??'';
   if(chain){S.chain=chain.id;for(const ref of chain.nodes)graphButton(env,$('causal-chain'),data.causal.nodes[ref]?.label??ref,ref);}else note($('causal-chain'),'Choose an original invitation or physical-work cohort. No causal chain is inferred merely from nearby timestamps.');
   note($('causal-chain'),data.causal.note);
-  const ref=S.causalNode??m.ref;heading($('causal-node'),'Exact original record');note($('causal-node'),`${data.source.id} · original zero-based trial ${data.source.record} · ${ref}`);details($('causal-node'),'Original recorded values',resolve(data.trial,ref));
+  const ref=S.causalNode??m.ref;heading($('causal-node'),'Exact original record');note($('causal-node'),`${data.source.id} · original zero-based trial ${data.source.record} · ${sourceRef(data,ref)}`);details($('causal-node'),'Original recorded values',resolveData(data,ref));
   const filter=$('encounter-filter').value,after=Number($('encounter-after').value),rows=[];
   if(['unexecuted','declined','reciprocal'].includes(filter)){
    for(const [index,a]of data.trial.admissions.entries())if(a.tick>after&&(filter==='unexecuted'?!['Execute','Reciprocal'].includes(a.reason):a.reason===(filter==='declined'?'Declined':'Reciprocal')))rows.push({ref:`admissions[${index}]`,label:`${a.tick} · ${a.invitation.proposer} → ${a.invitation.recipient}: ${a.reason}`});
@@ -124,22 +132,22 @@ const NativeConcurrent = (() => {
  }
  function render(env){
   const {S,$,el,note,heading,table,details,human}=env,d=S.data,t=d.trial,m=d.timeline[S.index],observer=S.lens==='observer';
-  $('title').textContent=t.config.case.replaceAll('_',' ');$('mode').textContent=`Social capacity ${t.config.capacity}`;
-  $('identity').textContent=`Experiment 022 · original zero-based trial ${d.source.record} · seed ${t.config.seed} · ticks ${t.start}–${t.end}`;
-  $('configuration').textContent=`Observer metadata: ${t.config.order} order; claim ${t.config.duration}; passive cadence ${t.config.cadence}; need +5 per 4 ticks from comparison start. This original finite-window research does not establish continuous opportunities or absolute-phase invariance.`;
+  $('title').textContent=t.config.case.replaceAll('_',' ');$('mode').textContent=d.continuous?`${d.continuous.config.mode} opportunities · reporting period ${d.continuous.config.period}`:`Social capacity ${t.config.capacity}`;
+  $('identity').textContent=`Experiment ${d.source.experiment} · original zero-based trial ${d.source.record} · seed ${d.source.seed} · ticks ${t.start}–${t.end}`;
+  $('configuration').textContent=d.continuous?`Observer metadata: ${d.continuous.config.phase} physical phase; nominal stop ${t.start+d.continuous.config.horizon}, charged drain to ${t.end}. Reporting checkpoints do not refresh cognition or reset the world. Original references use history.*; checkpoints[*] belong to the original023envelope. ${d.source.registered?'Registered research, not protected or adopted.':'Actual custom prototype source; not registered scientific evidence.'}`:`Observer metadata: ${t.config.order} order; claim ${t.config.duration}; passive cadence ${t.config.cadence}; need +5 per 4 ticks from comparison start. This original finite-window research does not establish continuous opportunities or absolute-phase invariance.`;
   $('source').textContent=JSON.stringify(d.source,null,2);$('scrub').max=d.timeline.length-1;$('scrub').value=S.index;$('tick').value=m.tick;$('previous').disabled=S.index===0;$('next').disabled=S.index===d.timeline.length-1;
   $('actor-lens').setAttribute('aria-pressed',!observer);$('observer-lens').setAttribute('aria-pressed',observer);
   $('concurrent-link').hidden=!observer;
   $('perspective-panel').classList.toggle('observer',observer);
   $('moment-kind').textContent=`WORLD TICK ${m.tick} · ${m.kind.toUpperCase()} · MOMENT ${S.index+1}/${d.timeline.length}`;
-  const view=project(d,m,S.actor);$('moment-title').textContent=observer?m.label:view?`Individual ${S.actor} · ${view.phase}${view.selected===undefined?'':': '+human(view.selected)}`:'No owned decision input at this record';$('moment-ref').textContent=m.ref;
+  const view=project(d,m,S.actor);$('moment-title').textContent=observer?m.label:view?`Individual ${S.actor} · ${view.phase}${view.selected===undefined?'':': '+human(view.selected)}`:'No owned decision input at this record';$('moment-ref').textContent=sourceRef(d,m.ref);
   for(const id of ['cards','outcome','inspect','links'])$(id).replaceChildren();$('cards').classList.toggle('concurrent-cards',observer);$('cards').classList.toggle('concurrent-owned',!observer);
   $('lens-note').textContent=observer?'Objective recorded history and typed causal navigation. Physical vectors are reconstructed from actual operations; they never become actor knowledge.':'Only this individual’s original captured input or explicit owned snapshot. No observer stock, private response context, nearest-state interpolation or archive recovery.';
   if(observer){
    const point=d.observer_physical.find(p=>p.tick===m.tick);note($('outcome'),'Observer balances after all recorded physical operations at this world tick. The selected record retains its own exact before/after context.');
    if(point){for(let owner=0;owner<4;owner++){const card=el('article');card.append(el('h3',`Individual ${owner}`));note(card,`Food ${point.food[owner]} · hunger ${point.hunger[owner]}`);$('cards').append(card);}note($('outcome'),`Actual cache stock ${point.stock}; consumed ${point.consumed}.`);}
    const active=d.intervals.filter(c=>c.start<=m.tick&&m.tick<c.end);table($('outcome'),['Actual commitment','Participants','Start','Release','Bound'],active.map(c=>[`${c.kind} #${c.id}`,c.owners.join(' / '),c.start,c.end,c.deadline]));
-   details($('inspect'),'Selected original record',resolve(t,m.ref));graphButton(env,$('links'),'Inspect exact original '+m.ref,m.ref);$('raw').textContent=JSON.stringify(resolve(t,m.ref),null,2);
+   details($('inspect'),'Selected original record',resolveData(d,m.ref));graphButton(env,$('links'),'Inspect exact original '+m.ref,m.ref);$('raw').textContent=JSON.stringify(resolveData(d,m.ref),null,2);
   }else{
    S.causalNode=null;ownInput(env,$('inspect'),view);note($('cards'),view?'Owned captured context; another person’s state is excluded.':'No replacement state is inferred from other records.');$('raw').textContent=JSON.stringify(view,null,2);
    if(view)note($('links'),`Exact owned source: ${view.ref}`);
@@ -148,7 +156,7 @@ const NativeConcurrent = (() => {
  }
  function renderPair(env){
   const {S,$,el,note,table,details}=env,c=S.comparison,host=$('compare-summary'),pair=$('pair');host.replaceChildren();pair.replaceChildren();host.hidden=S.lens==='actor';$('inspect-right').disabled=false;
-  table(host,['Comparison scope','Result'],[['Same physical start/profiles',c.initial_state_and_profiles_match?'Yes':'NO'],['Only capacity differs in configuration',c.matched_except_capacity&&c.capacity_contrast?'Yes':'NO — not a matched capacity treatment'],['Same evaluation endpoints',c.equal_horizon?'Yes':'NO'],['First admission difference',c.first_admission?.tick??'None'],['First executed difference',c.first_executed?.tick??'None'],['First missing ordinary decision opportunity',c.first_opportunity?.tick??'None'],['First different selected choice at a shared actor/tick',c.first_common_selected_choice?.tick??'None'],['First food-ledger difference',c.first_material??'None'],['Later food-ledger reconvergence',c.material_reconvergence??'None'],['Terminal food ledger',c.terminal_food_equal?'Equal':'Different'],['Terminal hunger',c.terminal_hunger_equal?'Equal':'Different'],['Terminal directed trust (missing = 0)',c.semantic_trust_equal?'Equal':'Different'],['Complete trial equality except capacity',c.complete_null_except_capacity?'Yes':'No'],['Hunger-area right minus left',c.hunger_area_right_minus_left.join(' / ')]]);
+  table(host,['Comparison scope','Result'],[['Same physical start/profiles',c.initial_state_and_profiles_match?'Yes':'NO'],[c.opportunity_treatment?'Matched public-opportunity treatment':'Only capacity differs in configuration',c.opportunity_treatment?(c.matched_except_mode&&c.mode_contrast?`${c.left_mode} / ${c.right_mode}`:'NO — not a matched opportunity pair'):(c.matched_except_capacity&&c.capacity_contrast?'Yes':'NO — not a matched capacity treatment')],['Same evaluation endpoints',c.equal_horizon?'Yes':'NO'],['First admission difference',c.first_admission?.tick??'None'],['First executed difference',c.first_executed?.tick??'None'],['First missing ordinary decision opportunity',c.first_opportunity?.tick??'None'],['First different selected choice at a shared actor/tick',c.first_common_selected_choice?.tick??'None'],['First food-ledger difference',c.first_material??'None'],['Later food-ledger reconvergence',c.material_reconvergence??'None'],['Terminal food ledger',c.terminal_food_equal?'Equal':'Different'],['Terminal hunger',c.terminal_hunger_equal?'Equal':'Different'],['Terminal directed trust (missing = 0)',c.semantic_trust_equal?'Equal':'Different'],[c.opportunity_treatment?'Full state/choice trace equal apart from projected Input.end':'Complete trial equality except capacity',(c.opportunity_treatment?c.full_state_trace_null:c.complete_null_except_capacity)?'Yes':'No'],['Hunger-area right minus left',c.hunger_area_right_minus_left.join(' / ')]]);
   note(host,c.note);details(host,'Actual material/contact counts',{left:c.left_metrics,right:c.right_metrics});
   for(const [label,difference]of [['admission',c.first_admission],['execution',c.first_executed]])if(difference){
    for(const [side,data]of [['left',S.data],['right',S.right]]){
@@ -160,12 +168,12 @@ const NativeConcurrent = (() => {
   details(host,'Final recorded directed trust',{left:S.data.trial.final_agents.map(a=>({owner:a.id,trust:a.trust})),right:S.right.trial.final_agents.map(a=>({owner:a.id,trust:a.trust})),raw_map_shape_equal:c.raw_trust_equal});
   const tick=S.data.timeline[S.index].tick;
   for(const [data,points]of [[S.data,c.left_physical],[S.right,c.right_physical]]){
-   const col=el('section');col.append(el('h3',`Original ${data.source.record} · capacity ${data.trial.config.capacity}`));note(col,`Shared world tick ${tick}; source ${data.source.id}`);
+   const col=el('section');col.append(el('h3',data.continuous?`Original ${data.source.record} · ${data.continuous.config.mode}`:`Original ${data.source.record} · capacity ${data.trial.config.capacity}`));note(col,`Shared world tick ${tick}; source ${data.source.id}`);
    if(S.lens==='observer'){const p=points.find(p=>p.tick===tick);if(p){table(col,['Individual','Food','Hunger'],p.food.map((food,owner)=>[owner,food,p.hunger[owner]]));note(col,`Cache ${p.stock}; consumed ${p.consumed}. Physical reconstruction only; no cognitive interpolation.`);}else note(col,'This tick is outside this recorded world.');}
    else {const moment=data.timeline.find(m=>m.kind==='decision'&&m.tick===tick),view=moment?project(data,moment,S.actor):null;ownInput(env,col,view);}
    pair.append(col);
   }
  }
- return {is,resolve,project,original,render,renderCausal,renderPair};
+ return {is,resolve,resolveData,sourceRef,project,original,render,renderCausal,renderPair};
 })();
 if(typeof module!=='undefined')module.exports=NativeConcurrent;

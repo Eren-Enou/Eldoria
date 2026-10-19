@@ -1,0 +1,49 @@
+{
+  "entries": 42,
+  "catalog_seconds": 2.710819,
+  "samples": [
+    {
+      "ordinal": 1,
+      "load_seconds": 0.090491,
+      "encode_seconds": 0.02502,
+      "export_bytes": 1582648,
+      "original_member_bytes": 1232036,
+      "moments": 687,
+      "intervals": 171,
+      "causal_nodes": 841
+    },
+    {
+      "ordinal": 18,
+      "load_seconds": 0.776383,
+      "encode_seconds": 0.201941,
+      "export_bytes": 13429011,
+      "original_member_bytes": 12419682,
+      "moments": 1986,
+      "intervals": 405,
+      "causal_nodes": 2509
+    },
+    {
+      "ordinal": 13,
+      "load_seconds": 0.122541,
+      "encode_seconds": 0.026641,
+      "export_bytes": 1443890,
+      "original_member_bytes": 1125733,
+      "moments": 620,
+      "intervals": 160,
+      "causal_nodes": 764
+    },
+    {
+      "ordinal": 1,
+      "load_seconds": 0.121456,
+      "encode_seconds": 0.027393,
+      "export_bytes": 1582648,
+      "original_member_bytes": 1232036,
+      "moments": 687,
+      "intervals": 171,
+      "causal_nodes": 841
+    }
+  ],
+  "decoded_source_cache_cap": 2,
+  "derived_export_cache_cap": 2,
+  "qualification": "Sequential local Python backend samples after all heavy validation/benchmarks completed. Original hashes/schema guarded. Includes source/hash verification and derived joins; not full browser render/network time or deep heap. Only selected members exported; decoded corpus streamed."
+}

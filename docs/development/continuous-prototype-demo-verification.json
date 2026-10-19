@@ -1,0 +1,41 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "examples/support/validate_continuous_demo.py",
+    "target/first-continuous-world-demo.jsonl"
+  ],
+  "independent": {
+    "independent_prototype_reconstruction": "PASS",
+    "rows": [
+      {
+        "ordinal": 0,
+        "case": "paired",
+        "mode": "Continuous",
+        "start": 6,
+        "nominal_stop": 198,
+        "final": 231,
+        "strict_crossings": 10,
+        "queries": 0,
+        "social": 89,
+        "final_food": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "final_hunger": [
+          100,
+          100,
+          100,
+          100
+        ]
+      }
+    ]
+  },
+  "exact_replay": "023: 1 exact byte replays PASS",
+  "source_file": "target/first-continuous-world-demo.jsonl",
+  "source_sha256": "24e6046ec2af86d6bee7a3c2e3cb6a1b95459522f783f39192167f75e946b5be",
+  "registered": false,
+  "qualification": "Actual custom demo, not part of42scientific originals; regenerate only to a NEW path."
+}

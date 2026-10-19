@@ -150,12 +150,25 @@ knowledge-mode identity. Actor reads actual Choice.retained;Observer links origi
 receipt/retention/claim/results. Unknown/expiry,independent rival depletion,semantic
 versus raw trust and reconvergence remain distinct. Full41Python/4JS tests and real
 main8765 source→grant→meal acceptance pass;[evidence](../tools/history-explorer/validation/knowledge-integration/acceptance.md).
-No viewer output becomes cognition or scientific-gate input.022 remains prospective.
+No viewer output becomes cognition or scientific-gate input. Native022/023 support is described below.
 
 Main Explorer022adapter: `tools/history-explorer/concurrent_history.py` and
 `native-concurrent.js`; captured-only four-person perspective, typed causal joins
 and capacity comparison. [Acceptance](development/main022-viewer-acceptance.md).
 
-Prospective023continuous-opportunity design: [architecture](development/continuous-world-architecture.md),
-[registration](../experiments/023/specification.md),42fixedrows. No treatment result yet;
-source-preserving host100original022byteparity required before execution.
+## Continuous opportunities (023, completed research)
+
+[Architecture](development/continuous-world-architecture.md),
+[specification](../experiments/023/specification.md), [results](../experiments/023/results.md),
+[verification](../experiments/023/verification.md), [walkthrough](development/first-continuous-world-walkthrough.md).
+Separate `prototypes/continuous-world` workspace: guarded `generate_host.py` module
+paths/bootstrap, `src/coordinator.rs` newpublicend/cutoff, `src/model.rs` config/
+observercheckpoint refs. All original root modules remain immutable. Read-only
+`examples/validate023.rs`, `review023.py` +scratch/supplemental readers.42worlds,
+20pairs/2placebos,19selected/executed differences; costly/mixed/null outcomes retained.
+ACCEPT WITH QUALIFICATION pending independentreview; protected endpoint stays001-022.
+
+Main optional023consumer: `tools/history-explorer/continuous_history.py` and native
+frontend; explicit envelope/physical schemas, reporting markers and actual delivery
+IDs, customprototype source label. [Acceptance](development/main023-viewer-acceptance.md).
+No evaluator/viewer dependency in scientific authority. No production/024/adoption.

@@ -33,11 +33,23 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-The separately authorized First Continuous World program has reviewed022and
-validated001–022protection. Its023study concerns continuous opportunities,
-not material production; implementation requires committed/pushed022protection
-and a new prospective design gate. Do not begin024or implement finite conversion.
-Read docs/experiment-022-review.md and the current continuation checkpoint.
+The First Continuous World program reviewed/protected022and prospectively registered
+023atcf946fa. Experiment023is completed opt-in continuous-opportunity research,
+ACCEPT WITH QUALIFICATION pending independentreview; it is NOT protected/adopted.
+Preserve its42original worlds,80pre-run source bindings,5validation-helper locks,
+matched20pairs/2reportplacebos, harms/nulls and exactread-onlyvalidate023gate.
+Its isolated prototypes/continuous-world host compiles frozen root modules by path;
+do not weaken001-022source locks or rewrite parent methods to simplify later work.
+
+023Windowednextreportend versus Continuousnow+33 changes eligibility only. Preserve
+post-query reprojection, independent consent, single clock, nominalstop/no new
+ordinarychoice and actual charged33tickdrain. Checkpoints are observer ID/ref
+annotations; they do not reset state or restore cognition. Episodic cap remains16
+(the prospective architecture's32estimate is disclosed as wrong); evidence and
+learning32, concerns8, ownenvironment slot1. Null native inquiry response does not
+imply no provenance receipt; keep receipt, novelty and observed progress distinct.
+No024/materialproduction, globaladoption or001-023foundation extension is authorized.
+Read experiments/023/results.md, verification.md and the continuation checkpoint.
 
 Experiment022 is independently reviewed/protected opt-in concurrency research,
 ACCEPT WITH QUALIFICATION; the protected endpoint is001–022 (361artifacts). Inspect experiments/022/results.md,

@@ -249,3 +249,20 @@ The current First Continuous World program separately authorizes023scheduling
 research after actualBprotection publication and prospectiveEgate. It does not
 authorize material preparation or024. Inspect checkpoint and research-handoff-001-022;
 do not patch protectedparents to wire a newmode or reuse viewer-derived cognition.
+
+
+## Current023research boundary
+
+023is completed opt-in scheduling research, ACCEPT WITH QUALIFICATION pending
+independentreview. It does not extend the protected001-022endpoint. Read its
+specification/results/verification, original source/member manifests, supplemental
+matched/endpoint/inquiry audits and [readiness](development/continuous-world-readiness.md).
+Use separate read-only `validate023`; no historical archive writers.80pre-run root/
+host bindings are immutable; later validation/docs do not rewrite that freeze.
+The source-preserving Cargo host is a new ownership boundary; root source edits
+would affect protected identity even if a few probes still matched. Actor scopes
+remain actualcaptured inputs; main native023viewer is an independent consumer.
+Physicalphase/reporting/nominalcutoff/drain are distinct; do not infer rest from
+no post-cutoff choices or utility from more contact. Keep cap16episode correction,
+null native vsactual provenance response, and cachevsALLfoodexhaustion distinct.
+No024or automatic material-process/policy implementation follows.

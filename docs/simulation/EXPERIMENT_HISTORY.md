@@ -236,8 +236,21 @@ complete the development assessment. No023was implemented or numerically registe
 The absolute-phase registration discrepancy is disclosed in022results; only
 implemented comparison-epoch scheduling is validated.
 
-## Experiment023 - continuous opportunities (prospective)
+## Experiment023 - continuous opportunities (completed, unprotected)
 
-[Specification](../../experiments/023/specification.md), [design gate](../../experiments/023/design-gate.md).
-42fixed configurations; experimental source-preserving host and nodefaultadoption.
-No treatment outcome or023protection yet. No024/materialproduction.
+[Specification](../../experiments/023/specification.md), [gate](../../experiments/023/design-gate.md),
+[results](../../experiments/023/results.md), [verification](../../experiments/023/verification.md).
+Preregistrationcf946fa preceded treatment;42worlds/20matchedpairs/2exactreportplacebos.
+19pairs change choices/execution;12terminalfood,5hunger,19trust differences;1true
+selected/executed/state null ignoringintentionalendprojection.14pairs have at least
+one higher fullhungerarea underContinuous,7atleastone lower (beforecutoff14/6).
+Single-world state/commitments persist across reports;33tickchargeddrain preserves
+unfinishedwork. No scoring/retention/food/default change. Cap16episodes unchanged,
+not the architecture'sdisclosed32estimate. All8Directqueries deliver provenance
+receipts despite nullnative response fields; novelty/progress/materialuse distinct.
+
+ACCEPT WITH QUALIFICATION pending independentreview; not protected/adopted.
+Isolatedsource-preserving host,100old022exactreplays,42newindependent/bytereruns,
+19scratchcategories+2supplementalcontrols. Main optional023adapter displays genuine
+four-personhistory and reporting boundaries. [Walkthrough](../development/first-continuous-world-walkthrough.md),
+[readiness](../development/continuous-world-readiness.md). No024/materialproduction.

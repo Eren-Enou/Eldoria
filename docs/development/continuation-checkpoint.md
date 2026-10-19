@@ -1,102 +1,124 @@
-# First Continuous World continuation checkpoint
+# First Continuous World - active delivery checkpoint
 
-Goal ACTIVE: attachmentb0b8dfac, stagesA–I. Reference9fb6da8. No024or material
-production. Actual branch main HEAD/origin14077d5 (separateA review published).
-B actualchecks PASS: protectedendpoint001–022/361; publishing separately next. Preserve unrelated
-work; all uncommittedfiles here are task-ownedB/C. InspectGit/files before relying
-on this checkpoint. [Working notes](continuous-world-working-notes.md).
+Goal ACTIVE, attachmentb0b8dfac, reference9fb6da8. Branchmain, HEAD/origincf946fa
+(last verified publication). No024/materialproduction/default/canon changes. No
+subagents. All uncommitted files listed by Git belong to this program; inspect
+actual status/files on continuation. This checkpoint supersedes older working notes.
 
-## A complete and published
+## Published gates
 
-Independent022review ACCEPT WITH QUALIFICATION,14077d5. Newfindingsreader imports
-no022reader/evaluator/viewer; physicaltick/accounting, initialpairmatching,
-resource-contact/recipient arithmetic andsignedinteger ties independentlychecked.
-100worlds/50pairs,41two-social,24interim/15terminalfood/20terminalhunger/31trust,
-9fullnulls,84unique label-neutral histories.64worlds offabsolute4phase; preserve
-actualepoch law andprospective discrepancy. Original100byte/primitive/23controls
-plusnew100independent/4controls PASS. fmt/Clippy/217tests PASS; normal001–021PASS
-1368.82s. Durableexperiment-022-review-verification.json+findings.json. Original
-378rawfiles/60source locks unchanged. A sessions84261/25912 COMPLETE0 collected.
+- A14077d5: independent022review ACCEPT WITH QUALIFICATION.100worlds/50pairs,
+  41peak2,24interim/15terminalfood/20hunger/31trust,9nulls,84label-neutral histories.
+  Preserve implemented comparison-epoch vs prospectiveabsolute discrepancy.
+- B355c690: protected001-022endpoint,361actual artifacts (341unchanged+20original022).
+  Shared/standaloneprefix, independent review anchors and normalgate allpass.
+- C29e19d2: MAIN native022adapter,4lanes/owned inputs/typed causal comparisons;
+  authentic browser all10cases;48Python+4preview+4JS passed atthatrevision.
+- D/Ecf946fa: architecture +42rowfixed023preregistration, pushed BEFORE treatment.
+  20matchedpairs +2reportplacebos; no production. Purelatebudgetprobe75/80changes,
+  no executedbenefit claimed. All64rootcompiledfiles bound before newhost.
 
-## B implemented, allvalidation PASS, publication next
+## Implemented/evaluated, not yet committed
 
-New001–022contract/inventory/audit(PENDING)/handoff, sharedcontract022original
-standalone exactprefix, validate022_foundation wrapper andnormalgateextension.
-InventoryACTUAL361=341unchanged+20original022directoryfiles. Originalvalidate022.rs,
-all60source locks andall archives unchanged. Newreader/anchoridentityboundinshared
-extension. Initialformat/parity issues corrected; fmt/Clippy/217tests pass.
-Bdriver87718 COMPLETE0 collected: fmt/Clippy/217tests,shared022foundation60.69s
-andnormal001–022gate1496.08s PASS. All15legacystandalones COMPLETE0 (66901collected).
-AuditnowGateB:PASS; durablecontinuous-world-validation.json records actualchecks
-andallmainRust/Cargo fingerprints. PublishB separately BEFORE023treatment code.
+Isolated prototypes/continuous-world Cargo host compiles immutable root source
+by path, appends privatechild and mechanically reuses bootstrap. Original parent
+function bodies untouched.100original022bytes reproduced beforetreatment, with023
+module, and finalformattedhost.80pre-run source bindings unchanged.
+Windowednextreportend vs Continuousnow+33; publicend recomputed AFTER atomicjump.
+Newordinarychoices stop nominalT; oldprotocol/work drains tocommonT+33. Epoch/Absolute
+prospective phases. Checkpoints ID/ref-only observerannotations, not cognitiveinputs.
 
-Legacyprotectedstandalonepipeline66901 COMPLETE0,15gates009..021 +020/021foundation.
-AllPASS; legacy-checks.json. No historicalwriter.
-Do not repeat passing oldgates atunchangedlibrary/fixture revision unnecessarily.
+42originals archived: experiments/023/trials.jsonl.gz, SHA
+c4bd87738a09bb93c0dc3bbe8214ff312738c8a530b82158968e83f9e22387d4.
+75343581decoded /1811033gzipbytes. Source80+5validationhelpers unchanged.
+42independentfullreconstructions,42exactbytereruns,19scratchcategories PASS.
+Additional terminalghost/querydeadline variants2PASS, prefix20/coverage16of16/
+nominal-drain/inquiryroute audits PASS. All378oldworkingbytefiles/361protected
+entries unchanged. Durable continuous-world-final-validation.json.
 
-## C independent engineering underway, NOT complete
+Outcomes:19/20selected+executed differences;12terminalfood,5hunger,19trust;1full
+state/selected/executednull ignoringintentionalendprojection;2exactreportplacebos;
+20worldsstrictcrossing;26nominalunfinished;3temporaryfoodreconvergences.
+14pairsanyhigherfullhungerarea/7anylower (beforeNominal14/6).15morezero-transfer.
+Positive1claim20:14-18across17, grant0, nextowninput18, actualtransfer22.
+Cleannegative10/11actor2@7Invite64overConsume5 ->meal9vs8 ->Leave10zero-transfer,
+area+5. Larger4/5allfourhigherareas; heldfoodunused.19cache0butheldfood2;23ALLfood
+consumed5thenemptycontactcontinues. Keep these distinct, not universalwelfare.
 
-Newconcurrent_history.py native022streaming/60-source/100-member Source,2member
-cache, typedtimeline/interval/causalgraph, fourcaptured-only ownedprojections,
-observerphysicalvectors andcapacitycomparison. explorer.py explicit022backend
-catalog/get/import/export/compare/CLI dispatch. Source/projection/graph smoke for
-1/5/0/15/18/31/33/99 andMainRepository100catalog/export/import PASS beforelatest
-smallquerytimelineaddition. 0/1 comparison admission8/execution9/missingopportunity8/
-firstCOMMONselectedchoice16; hungerarea[-840,45,-1350,100]. Complete30/31nullPASS.
-No scientificreader imports. NO frontendnativeguards/renderer/tests/browseryet:
-app.js stillassumesperiods/clock/3actors. Cfilesnotstaged/committed. Do notclaimmain
-022viewer works untilfinished. Existing8765server oldcodeinmemory; usertabuntouched.
+Actualepisodiccap16 (source), not mistaken32prospectivearchitecture estimate.
+FormalSpec unchangedcognition; originalruntime preserved16. Appendeddisclosure +new
+owned_bounds regression; original<=32testwasweak. No raw/spec/runtime rewrite.
 
-NextC: native-concurrent.js projector/renderer; guard configure/projection/render/
-renderCausal/renderPair/followOriginal; resetcohort/source onhistoryswitch; dynamic
-actor3; shared-axis4lanes section+assetallowlist; recordnativekindfilters/presets.
-Do notaddfakeperiods/clock to022Trial. Actorusesonlyactualchoice/reply/resource/
-querySELECTION(noresponseprivatecontext)/ownedsnapshot, no nearest-auditbackfill.
-Smallobserverphysicalvectors fromactualops areobserver-only. Inputtimes distinct
-from querycompletion/boundarytime. FullPython/JS/HTTP/source/privacy tests,
-legacy41Python+4JS, actualbrowser10cases, screenshots andcostbeforeCcommit.
+All8Directqueries have native response=None but explicit provenance receipt1,
+cognitionreceipt0; support0->50, Open->Partial, novelty40distinct. Observergraph now
+joins query via actor/action/start/completionduration then explicit inquiry/receiptIDs.
+Do not call nativeNone noinformation; no newEvidencequery empiricallyexecuted.
 
-## Remaining full program
+## Actual final checks already complete
 
-D/E architecture+prospective023gate/matrix committed beforetreatment. Freezeownership
-iscritical: original022locks parents andqueryhooks. Workingnotes describe apossible
-separateCargo source-preserving host compilingimmutablemodules bypath andappending
-onlyprivatechildwiring, reusingoldState/hooks; feasibilitynotdecided/proven yet.
-Do notweakenlocksorrewritehistoricalparents. No023runtime/spec/matrix exists.
-ThenF/Gcontinuousstudy/readers/replay/corruptions/performance, HsupportedCLI+realviewer/
-walkthrough, Ireadiness+nextmaterialdecisiononly. Maintain qualified harms/nulls,
-finiteevaluation/drain/commonend, no foodspawn/default/canonchange. Goalnotcomplete.
+Finalpipeline80837 COMPLETE0 collected. Rootfmt/Clippy/217tests PASS; originalproto
+3tests PASS; newexact16bound targetedPASS; currentprotofmt/alltargetClippy/ALL4tests
+PASS. Finalrootvalidate023 PASS23.796s. Normal001-022validate_contract PASS1439.006s.
+All15protectedstandalones passedGateB atbyte-identicalroot/fixtures. Throughput
+finalisolatedPASS, preservedexperiments/023/throughput.txt. Initialthroughput overlapped
+viewerdiscovery and superseded; initialbadpreviewdiscovery0tests/exit5 corrected4PASS.
 
-Cfrontend nowwired inapp.js/native-concurrent.js/index/style andassetallowlist.
-7nativePython/JS testsPASS; full48Python+oldpreview4+4legacyJS+syntaxPASS (4388
-collected). Latest7targeted tests aftercomparisonsourcelinksPASS20.93s; session
-30086mayneedcollectonly. MainserverrestartedverifiedprojectPID156880 localhost8765
---cachetarget/history-explorer-concurrent. Browser2tab3phaseTab atoriginal1tick9
-Observer. Initialnarrow screenshotcaughtlowcontrastnotes/tinyaxis; CSSbackground
-and900pxhorizontalaxisfixed, reloadbrowserforthenewUI. No newPNGs savedyet.
-FullCbrowser10cases, SourcePrivacy/links/comparison/reconvergence/legacy021compat,
-performance/docs andcommit stillpending. Do notcallCcompleteyet.
+CurrentFULL56viewer suite55013 running; logfinal-56-main-viewer.log. Earlier55full
+PASS313.544s, new8native023target PASS afterquerygraphjoin. FourlegacyJS +syntaxPASS,
+oldseparatepreview4PASS. Collect55013, inspectfailures ifany. No other heavyjobs.
+Tasklogs: %TEMP%/first-continuous-world; final-checks.json/final-current-checks.json.
+
+## Browser/prototype status
+
+Mainserver147988 currentcommand includes --continuous experiments/023 and
+--continuous target/first-continuous-world-demo.jsonl, port8765, cachecontinuous;
+backgroundhidden. Verify exactcmdline before restart. Latestsourcecausalnoteappend
+not yetloadedinservermemory: restart once atfinalbrowserpass, sameargs/cache.
+CUA selectedbrowser2; tab3phaseTab. Need rewriteDocumentation aftercompaction.
+Actualbrowser verified023claimcheckpoint17, typedrefs, actor0@14Acquire30vs13,
+actor0@18upper3vsobserver2, query15noactorbackfill, actualprovenance receipt1via
+cohort, cleannegative11@7Invite64vsConsume5/Leave10, null20/21allmatch. Screenshots
+main023-crossing.png actualandvisuallyQA; needfinalcustomdemo screenshot and
+browseracceptanceJSON/docs, legacy022/021return smoke, consolecheck, tabdeliverable.
+Checkpointclickzero-widthline bug fixedbyrecthitregion, actualmouseclickworks.
+
+ActualCLI demo target/first-continuous-world-demo.jsonl: paired seed42 H192 P11
+Continuous. start6/T198/final231,89social/10strictcrossings,food[1,1,0,0],cache0,
+hunger100all. IndependentandexactreplayPASS; durablecontinuous-prototype-demo-verification.json.
+Customrunisnot42registered evidence. Main Source023preservesenvelope/physicalschema
+losslessly; no scientificreader/evaluatorimports; optional--continuous only.
+
+## Remaining exact work
+
+1Collect55013/full56. Finishactualbrowsercustomdemo, queryroute/currentlegend,
+  long/nominal/final andlegacyreturn; saveproof/screenshots, main023acceptance.
+2Afterallheavychecks complete, measureselected023viewerload/API/exportcost; no
+  concurrentbenchmark/validation. Existingprocesspeak13.537MBincludesaudit, active
+  payload304bytesnotdeepheap; fullcostsresults.md/performancefiles.
+3Finishverification/readiness/navigation/docs. results.md/verification.md,
+  protoREADME, walkthrough/readinessdrafts exist. Add analysismanifest fornew
+  supplementalhelpers/derivedfiles withoutmodifyingoriginal80freeze/5locks.
+4Reviewdiff/guard+allchecks. Fetchmainandpublishcoherent5runtime/evidence,
+  6prototype/mainviewer,7readiness/futuredecision commits. No forcepush.
+  Rootnormal/oldstandalones neednotrepeatunchangedcode again.
+5Createfinaldeliveryreport withPartsA-F +15questions/20acceptanceproofs/exactcommits.
+  Currentreadiness: technicalcontinuousworldqualified, notsustainablecommunity.
+  Nextimmediatestepindependent023review; nextmaterialstudyconditionalfiniteprep,
+  likely024onlyafternewauthorization. No024implementation.
+6Verifypublication, allhashes, currentartifacts andrequiredscope; onlythenupdate_goal
+  complete andsendself-containedfinalsummary withactualcommands/proofs/commits.
 
 
-## Current checkpoint after B publication / C acceptance
+## Latest verified publication / remaining delivery
 
-HEAD/origin355c690: GateB protection published separately after all actual checks.
-Main022 viewer frontend/backend complete. Full48Python+4preview+4legacyJS PASS;
-7native tests repeated after finalcomparisonfields PASS. Actual main8765 browser
-all10cases exercised, all4ownedopeningchoices, actual recipient3, executed
-Refuse43@100/original35, atomic18@8noowninput, null30/31 and return021clamp3to0.
-No console warnings/errors. CSScontrast/axis visuallyverified. Evidence/cost:
-main022-viewer-acceptance.md, main022-viewer-cost.json, continuous-world-browser/.
-Main server156880, tab3phaseTab handoffmarked. Ccommit/pushnext. ThenD/Earchitecture
-andprospectivegate BEFORE023treatment. Earlier unfinished C notes superseded.
-
-
-## D/E prospective registration checkpoint
-
-C published29e19d2. Correct per-inherited-normalization361inventory and378raworiginal
-hash checks PASS afterC. An ad-hoc blanketLF normalization incorrectly flagged
-pre013files; it was a checker error, not changed evidence; corrected guard passes.
-D purebudgetprobe75/80lateunmaskedchoices change, no executednewoutcome claimed.
-New architecture/spec/designgate,42rowfixedmatrix +allrootcompiledsourcebindings.
-Rootfmt/Clippy PASS; rootalltests55737 PASS. PublishD/Ebeforeany treatmentcode.
-New host MUSTfirst reproduce100original022bytes; frozenparents remain untouched.
+Runtime/evidence milestone5 ec941d8fbafe985a4c2026e409998587d71e9d4e pushed and
+HEAD/origin verifiedequal. Fullcurrent56viewer suite55013 COMPLETE0collected
+267.399s. CurrentprototypeALL4tests/fmt/Clippy PASS. Allothergates remainPASS.
+Main source15232 nowfinalcode on8765 (verifycmdlinebeforetouching). Actualbrowser
+queryreceiptlink17/19, customdemo17/198/231, old022two-scenes and021actorclamp
+allverified; consoleempty; tab3markedDeliverable. BrowserJSON/PNGs and
+main023acceptance/cost docs ready. Viewer42catalog2.711s,selected1load.090s,
+long18.776s/export13.429MB; noheavychecksconcurrent.
+Nextpublish6viewer/prototype/navdocs, then7readiness/delivery/completionaudit.
+No furtherbehavior orsourcefreeze changes. Finalold/newhashguard +publication
+verification before goalcomplete. Earlierremainingsteps1-3 superseded bythisnote.

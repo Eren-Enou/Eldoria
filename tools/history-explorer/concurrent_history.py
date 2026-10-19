@@ -48,8 +48,8 @@ def work(commitment):
     return 'Resource' if isinstance(commitment['work'], dict) else commitment['work']
 
 
-def validate(trial):
-    if trial.get('schema') != VERSION or len(trial.get('initial', [])) != 4:
+def validate(trial, version=VERSION):
+    if trial.get('schema') != version or len(trial.get('initial', [])) != 4:
         raise ValueError('Unsupported native022 schema; no021 conversion allowed')
     if [a['id'] for a in trial['initial']] != [0, 1, 2, 3]:
         raise ValueError('Invalid native022 individual identities')

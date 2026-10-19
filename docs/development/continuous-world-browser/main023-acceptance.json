@@ -1,0 +1,67 @@
+{
+  "main_url": "http://127.0.0.1:8765/",
+  "registered_cases": [
+    {
+      "ordinal": 1,
+      "check": "Claim20/22 span14–18 over report17; checkpoint refs and actor0Acquire30vsInvite13 inspected"
+    },
+    {
+      "ordinal": 1,
+      "check": "Actor0at18 food1/H35, own upper3 vs observercache2, no archive backfill"
+    },
+    {
+      "ordinal": 11,
+      "check": "Actor2at7 Invite64vsConsume5; actualLeave10zero-transfer"
+    },
+    {
+      "ordinals": [
+        20,
+        21
+      ],
+      "check": "No selected/executed/state difference except intended publicend input"
+    },
+    {
+      "ordinal": 13,
+      "check": "Report15insidequery6–19has no actor input; cohort follows actual query/provenance1/cognition0 receipt IDs"
+    }
+  ],
+  "custom_demo": {
+    "file": "target/first-continuous-world-demo.jsonl",
+    "registered": false,
+    "start": 6,
+    "nominal": 198,
+    "final": 231,
+    "inspected_report": 17,
+    "nominal_commitment": {
+      "id": 479,
+      "participants": [
+        0,
+        2
+      ],
+      "start": 198,
+      "release": 200,
+      "bound": 204
+    },
+    "final_food": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "final_hunger": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "final_cache": 0,
+    "final_consumed": 10,
+    "final_active": 0
+  },
+  "legacy_checks": [
+    "022original1@9stilltwo simultaneoussocialscenes",
+    "021loadedactual0–576schema; actor3disabledandselectionclamped0"
+  ],
+  "console_warnings_errors": [],
+  "scope": "ActualmainbrowserDOMinteractionandscreenshots; no evaluator/runner invoked by viewer. Browserselect waits use stable loaded identity, not transientstatus."
+}
