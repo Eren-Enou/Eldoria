@@ -55,7 +55,12 @@ rows when ownership, entry points or mode boundaries change.
 Use `rg -n 'symbol' path/to/file.rs` to locate implementation before reading a
 bounded range. A row identifies starting files, not permission to skip affected callers.
 
-## Four-person concurrent research (unprotected022)
+## Four-person concurrent research (reviewed, unprotected022)
+
+[Independent022review](experiment-022-review.md) at9fb6da8 passes Gate A:
+ACCEPT WITH QUALIFICATION. The implemented comparison-epoch scheduler and matched
+capacity findings stand; absolute phase invariance and continuous opportunities
+remain untested. StageB protection is conditional on its actual new gate.
 
 The bounded extension lives at `src/experiment022.rs` through
 `experiment::concurrent`, and private `src/simulation/concurrent.rs` under adaptive.

@@ -1,0 +1,89 @@
+{
+  "reviewed_revision": "9fb6da887b5e2e82ff268ed916c4501c9f19e26a",
+  "gate_a": "PASS",
+  "verdict": "ACCEPT WITH QUALIFICATION",
+  "checks": [
+    {
+      "name": "A-fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 4.165081099956296
+    },
+    {
+      "name": "A-clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "-j",
+        "1",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit": 0,
+      "seconds": 4.018381199915893
+    },
+    {
+      "name": "A-tests",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "1"
+      ],
+      "exit": 0,
+      "seconds": 107.25735990004614
+    },
+    {
+      "name": "A-validate022",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate022"
+      ],
+      "exit": 0,
+      "seconds": 10.151878800010309
+    },
+    {
+      "name": "A-foundation",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate_contract"
+      ],
+      "exit": 0,
+      "seconds": 1368.8246545000002
+    }
+  ],
+  "rust_tests": 217,
+  "test_groups": 28,
+  "original_working_files_unchanged": 378,
+  "source_locks022_unchanged": 60,
+  "original022_exact_byte_replays": 100,
+  "original022_primitive_worlds": 100,
+  "original022_corruptions_rejected": 23,
+  "additional_independent_worlds": 100,
+  "additional_scratch_rejected": 4,
+  "independent_helper": "examples/support/review022_findings.py",
+  "independent_helper_canonical_lf_sha256": "22957e6c8e937f0888e7de717f28698315078871a6956aba4d3ebef3c7ef9519",
+  "findings": "experiment-022-review-findings.json",
+  "protected_endpoint": "001-021",
+  "limitations": "No absolute-phase invariance, continuous opportunities, adoption or natural group emergence established; legacy standalone pipeline continues for StageB"
+}

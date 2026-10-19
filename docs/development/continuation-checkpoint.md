@@ -1,58 +1,40 @@
-# Concurrent-world program continuation checkpoint
+# First continuous-world program checkpoint
 
-Attachment3bb37cec stages A–I are delivered. No023, numerical future matrix,
-canon/default change or automatic022protection. Inspect actual Git/status before
-resuming. [Full delivery and acceptance audit](concurrent-program-delivery.md).
+ACTIVE objective: attachmentb0b8dfac, First Continuous World stagesA–I. Authorized
+reference9fb6da887b5e2e82ff268ed916c4501c9f19e26a, main=origin/main, clean start.
+Original protected endpoint001–021/341artifacts.022original100worlds is under
+independent review; no023treatment code or registration yet. Material preparation
+is NOT023; do not implement production or begin024. User supersedes old no023
+navigation instructions, conditional on current scientific gates.
 
-## Revision and protected boundary
+A PASS: ACCEPT WITH QUALIFICATION, preparing separate review publication. New read-only review022_findings.py independently reconstructs
+physical operations, all pair initial matching, resource-contact arithmetic,
+recipient scores/ties and published counts without importing022reader/evaluator.
+100worlds/50pairs,41two-social,24interim/15terminalfood/20terminalhunger/31trust,
+9complete nulls,84label-neutral histories reproduced;4additional scratch controls
+rejected.64worlds start off absolute4tick phase. Original reader/source/23controls
+and100exact-byte gate passed at reference. fmt/Clippy/217Rusttests passed.
+A normal001–021 gate COMPLETE0,1368.82s; detailed logs under %TEMP%/first-continuous-world.
+A review verification metadata is durable in experiment-022-review-verification.json. Independent
+Rustcheck driver84261 COMPLETE0. No source/behavior/archive modifications.
+Raw initial guard378tracked experiment/reinforcement files in
+continuous-original-working-sha256.json; all source locks remain unchanged.
 
-Authored on main at c4cf0a96a3b6ec6770439d516b5420de7bb7fb7a; the documentation
-commit containing this checkpoint completes publication. Resolve its exact identity
-with `git log -1 -- docs/development/concurrent-program-delivery.md`.
-A021review5b7efd0 ACCEPT WITH QUALIFICATION; B001–021protectione059fcb/341artifacts;
-Cmain021Explorer8ac1548; D/Earchitecture/preregistration1f81324 before022runtime;
-F/Gruntime/evidence85cbda0; Hnativepreviewc4cf0a9. All are pushed to origin main.
-022is completed research ACCEPT WITH QUALIFICATION, unprotected and unadopted.
+Next: commit/push independently acceptedA separately, then executeB protection. Then protect361expected originals(341+20actual022,
+verify count), shared frozen022gate parity+newreader, fullBchecks/commit/push before
+any023behavior. Viewer022mainintegration is independent read-only engineering;
+inspect existing adapters and preserve018–021. ProspectiveD/E architecture must
+resolve frozen parent-module ownership and absolute-vs-relative phases BEFORE
+newruntime. Do not edit any of02260source locks just to wire023. Consider a
+source-preserving versioned host if no ordinary unfrozen entrypoint covers query
+need hooks; no architecture decision/behavior code yet.
 
-## Evidence and verification
+Previous completed program remains documented in concurrent-program-delivery.md;
+new work is distinct. All current logs %TEMP%/first-continuous-world. No subagents
+requested or spawned. Maintain concise updates/checkpoints; do not mark goalcomplete
+until full requested prototype and all scientific gates/acceptance are delivered.
 
-Original022:100native members/50capacity pairs,83,762,712raw/2,286,504gzip bytes;
-archiveSHAf8d6c5b8de0d955bb316f89ec1dba11a0712311f9d45f49e3fb8e17fb1a0635c.
-5original compressed artifacts,60canonicalLF source locks,4prior design identities;
-4supplemental coverage/test/performance identities. Never regenerate originals.
-Fmt/Clippy PASS;217Rusttests/28groups PASS;16historical gates PASS including normal
-001–021/341artifact gate.022PASS100exact JSON-byte/primitive reruns,23corruptions.
-Throughput20rows,24samples and full100world measurement PASS. Durable metadata:
-experiments/022/verification-results.json; detailed logs %TEMP%/concurrent-program.
-Final publication audit:346original working files,21original021locks,60original022
-locks and5original022archives unchanged;431affected-document links valid.
-
-## Preserved scientific qualifications
-
-41/50concurrent rows reach2socials;24interim food-ledger/15terminal ledger/20terminal
-hunger/31semantictrust differences;9whole-history capacity nulls.100rows contain84
-case-label-neutral histories.104fixed-IDcrossings vs100across actualpriorpairs.
-12executedqueries vs31protocol-blocked admissions vs52masked local candidates;
-claim mask13@14is conservative exclusion, not proof of a would-be deadline jump.
-192ticks span24passive windows, not reopened social budgets. Extra contact is not
-better by definition; food-ledger equality can hide hunger differences.
-Final source audit disclosed prospective absolute pulse/cadence prose versus
-actual comparison-start epoch; matched capacity pairs share epochs, but absolute
-phase invariance/exact design-sentence adherence are untested. Originals unchanged.
-
-## Observation and next boundary
-
-Main018–021Explorer: python -B tools/history-explorer/explorer.py, localhost8765.
-Native022preview: python -B tools/history-explorer/concurrent_preview.py --port 8768.
-All100originals, four lanes, actor-only captured input, consent/material/source links;
-[nine-step walkthrough](four-person-history-walkthrough.md). This is the authorized
-separate authentic fallback, not full main022integration. Browser acceptance complete;
-new4+legacy41Python tests,4legacyJS suites and newmodel/syntax checks PASS. Browser2
-maintab3/previewtab6 retained; usertab1 untouched. Live servers localhost8765/8768.
-
-[Readiness](four-individual-community-readiness.md): retain four people; controlled
-scheduling works, continuous community not established. [Material design](sustained-material-opportunity-design.md)
-is finite source→owned escrow→edible/waste with real time/local choice, design only.
-No live validation job remains. No required current-program work remains after
-publication. Next session: independently review022and disclosed phase/horizon/query
-limits; do not freeze/adopt it or implement/register023without explicit authorization.
+Independent Cbackend underway whileread-onlygatesrun: concurrent_history.py and
+explorer.py native022dispatch smoke pass; frontendNOTwired, CNOTcomplete. Exclude
+theseCfilesfromAcommit; seeworkingnotes. Legacy15standalonepipeline66901running,
+currentlythrough016PASS; logslegacy-checks.json. No023codeorregistration.

@@ -33,6 +33,12 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
+The separately authorized First Continuous World program reviews022and may protect
+001–022only after actual gates. Its023study concerns continuous opportunities,
+not material production; implementation requires committed/pushed022protection
+and a new prospective design gate. Do not begin024or implement finite conversion.
+Read docs/experiment-022-review.md and the current continuation checkpoint.
+
 Experiment022 is completed opt-in concurrency research, ACCEPT WITH QUALIFICATION;
 the protected endpoint remains001–021. Inspect experiments/022/results.md,
 verification.md and implementation-notes.md. Native originals have100worlds,

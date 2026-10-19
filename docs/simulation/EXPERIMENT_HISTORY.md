@@ -200,6 +200,12 @@ Original021 is never silently coerced into020 playback.
 
 ## Experiment022 — Four-Individual Concurrent Activities
 
+The separate [independent scientific review](../experiment-022-review.md) accepts
+with qualification at9fb6da8; source/primitive/scoring/count reconstruction and the
+normal001–021gate pass. Original evidence remains unchanged. Conditional protection
+is a separate stage; the review does not adopt the scheduler or establish an
+absolute-phase result.
+
 [Specification](../../experiments/022/specification.md),
 [prospective gate](../../experiments/022/design-gate.md),
 [results](../../experiments/022/results.md), [verification](../../experiments/022/verification.md).
