@@ -33,6 +33,23 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
+Current program: attachmentf602f11c independently reviewed024at873b524 and
+conditionally protected001–024. See docs/experiment-024-review.md (published
+4dfc71c), docs/experiment-contract-001-024.md and the actual integrity audit.
+The inventory contains408artifacts:386inherited unchanged+22original024files;
+425raw originals remain guarded. Protect exact MealRelief law/ties/eligibility,
+independent consent, old physics/cognition, harm0/1, benefit6/7, exhaustion,
+nulls/reconvergence and work-start versus completed-effect timing. No adoption.
+
+025is separately authorized only after published GateB and its own published
+prospective physical/locality/time design gate. Use a versioned successor, retain
+old source freezes and prove feature-off parity before treatment. Raw access-closed
+controls and feature-off compatibility are distinct; preserve one logical source
+slot, true conservation, full failure effort and independent later use. No026,
+automatic025protection, preparation default, general planner or canon change.
+Older no025/024-protection statements below describe historical program boundaries;
+they do not override this newly authorized gated program.
+
 The activity-valuation program (attachment 963863ea) independently reviewed and
 conditionally protected 023, then preregistered and evaluated 024. Qualified
 001–023 protection contains 386 original artifacts: 361 inherited entries and 25
@@ -80,7 +97,8 @@ absolute-phase claim. Readiness and sustained-material-opportunity documents und
 docs/development remain material design/assessment only; they authorize no production
 runtime or numerical material-study matrix.023is separately authorized scheduling research.
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-023.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-024.md`.
+The historical `docs/experiment-contract-001-023.md` remains authoritative for001–023.
 The historical `docs/experiment-contract-001-022.md` remains authoritative for001–022.
 The historical `docs/experiment-contract-001-021.md` remains authoritative for001–021.
 The historical `docs/experiment-contract-001-020.md` remains authoritative for001–020.

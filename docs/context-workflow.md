@@ -308,3 +308,21 @@ under docs/development are recommendations, not025 registration or implementatio
 When checking later changes, reuse passing gates only after their relevant source/
 fixture identities are confirmed unchanged. Inspect the completion audit and
 current checkpoint; earlier next-step statements describe historical milestones.
+
+## Current qualified001–024foundation
+
+The [024review](experiment-024-review.md) is ACCEPT WITH QUALIFICATION, published
+4dfc71c at873b524. [Contract](experiment-contract-001-024.md), [audit](integrity-audit-001-024.md)
+and [handoff](research-handoff-001-024.md) protect408original artifacts,386inherited
+unchanged+22original024files;425raw originals remain guarded. Fresh extended normal
+gate, standalone024foundation, formatting/Clippy/217tests pass. Protection does not
+adopt MealRelief. Preserve harm0/1, benefit6/7, exhaustion, nulls, source identity
+and actual starts versus completed effects. Earlier status paragraphs describe
+historical publication boundaries.
+
+Attachmentf602f11c separately authorizes025only through published protection and
+prospective physical/locality/time gates. New code must be a versioned successor
+with feature-off parity before treatment. Access-closed primary controls may
+receive raw observations that overwrite ready knowledge; do not claim those are
+old-world parity controls or secretly keep two usable environmental slots. No026,
+automatic025protection/default adoption or canon change. See the current checkpoint.

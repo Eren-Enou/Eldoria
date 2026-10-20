@@ -12,11 +12,13 @@ For engineering navigation, start with the [concise architecture map](docs/archi
 the read-only `validate_contract` gate described below; run/evaluate commands can
 overwrite evidence and should be used only for authorized target generation.
 
-Current protected endpoint: [qualified001–023 protection](docs/experiment-contract-001-023.md),
-386original artifacts. The [independent023review](docs/experiment-023-review.md)
-accepts with qualification. [Experiment 024](experiments/024/results.md) is complete
-causal research, ACCEPT WITH QUALIFICATION and unadopted. Its separate 56-world
-evidence is outside the protected foundation. No material production or025 exists.
+Current protected endpoint: [qualified001–024protection](docs/experiment-contract-001-024.md),
+408original artifacts (386inherited+22original024). The [independent024review](docs/experiment-024-review.md)
+accepts with qualification: actual useful, harmful and null consequences remain.
+MealRelief stays unadopted. [Integrity checks](docs/integrity-audit-001-024.md) include
+both independent reconstruction and exact replay. The separately authorized025
+material-preparation study requires its own published prospective gate; no025
+runtime,026or canon change follows from protection.
 
 ## First Continuous World - optional023prototype
 
@@ -636,7 +638,7 @@ more meals and four fewer; seven raise at least one actor's cumulative hunger.
 Eight pairs remain behavior/state nulls apart from score fields. Exhaustion can
 consume all finite food without becoming a sustainable world. All 56 exact replays,
 independent reconstructions and 34 corruption controls pass; see
-[verification](experiments/024/verification.md). This is not adoption or 024 protection.
+[verification](experiments/024/verification.md). Original reports predate the separate [qualified024protection](docs/integrity-audit-001-024.md); this is not default adoption.
 
 ```powershell
 cargo run --release --locked -j 1 --example validate024

@@ -1,6 +1,6 @@
 # Architecture map
 
-Navigation summary, protected through023. Source and mode-specific
+Navigation summary, protected through024. Source and mode-specific
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
@@ -8,12 +8,13 @@ rows when ownership, entry points or mode boundaries change.
 
 The [independent024review](experiment-024-review.md) accepts with qualification at873b524.
 [Review checks](development/finite-material-review-validation.json) preserve all originals.
-Qualified001–024 protection and prospective025 design are separately gated; no025
-runtime or default adoption follows from review. See the [checkpoint](development/continuation-checkpoint.md).
+Qualified [001–024protection](integrity-audit-001-024.md) passes:408original artifacts,
+386inherited+22original024. Prospective025 design is separately gated; no025
+runtime or default adoption follows from review/protection. See the [checkpoint](development/continuation-checkpoint.md).
 
 ## Start here
 
-- Rules: [AGENTS.md](../AGENTS.md); protected [001–023 contract](experiment-contract-001-023.md),
+- Rules: [AGENTS.md](../AGENTS.md); protected [001–024 contract](experiment-contract-001-024.md),
   which links historical contracts. Read the affected mode's clauses and coverage.
 - Findings: [experiment index](simulation/EXPERIMENT_HISTORY.md).
 - Working procedure: [context workflow](context-workflow.md).
@@ -57,7 +58,7 @@ runtime or default adoption follows from review. See the [checkpoint](developmen
 | Read-only History Explorer application | [app/tooling](../tools/history-explorer/README.md), `tools/history-explorer/explorer.py`, `causal.py`/`causal.js`, `finite.py`/`knowledge.py`, `perspective.js`, `app.js`; [technical guide](development/history-explorer-architecture.md) | Python real-archive and typed-link tests, JS owned-point/filter/order tests, explicit020/021 actor/claim/material/knowledge comparison,all164/214 original references,[020 acceptance](../tools/history-explorer/validation/finite-integration/acceptance.md),[021 acceptance](../tools/history-explorer/validation/knowledge-integration/acceptance.md),real-browser node navigation, [original acceptance](../tools/history-explorer/validation/acceptance.md), [causal acceptance](../tools/history-explorer/validation/causal-navigation-acceptance.md); one-way consumer, no foundation dependency |
 | Opt-in 024 decision inspection | `tools/history-explorer/valuation_history.py`, explicit `--valuation`; main `native-concurrent.js` / `app.js` | Version8 lossless024 envelope, 56 original references / 27 scientific comparisons, owned score terms, timed meal deferrals, privacy and read-only routes; [actual acceptance](development/main024-viewer-acceptance.md); old023adapter remains7 |
 | CLI and reproducible experiment fixtures | [main.rs](../src/main.rs), `src/experiment.rs`, `src/experiment002.rs` … `src/experiment021.rs` | Corresponding experiment tests/evaluators |
-| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), shared `contract009.rs` through `contract023.rs`, standalone original/foundation gates and independent readers | Source-bound cache-free001–023 integrity, immutable original archives, accepted review anchors and exact replay; [latest audit](integrity-audit-001-023.md). Separate `validate024` checks unprotected research; no viewer dependency |
+| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), shared `contract009.rs` through `contract024.rs`, standalone original/foundation gates and independent readers | Source-bound cache-free001–024 integrity, immutable original archives, accepted review anchors and exact replay; [latest audit](integrity-audit-001-024.md). Frozen `validate024` remains unchanged; `validate024_foundation` adds accepted independent review checks; no viewer dependency |
 | Throughput workload / history measurements | [throughput.rs](../benches/throughput.rs), `examples/measure_history.rs` | Separate wall-clock output; historical reports unchanged |
 
 Use `rg -n 'symbol' path/to/file.rs` to locate implementation before reading a

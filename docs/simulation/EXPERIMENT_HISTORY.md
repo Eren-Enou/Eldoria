@@ -1,6 +1,6 @@
 # World of Individuals experiment index
 
-Protected through021; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
+Protected through024; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
 reports or protected contracts. Historical next-experiment recommendations reflect
 their publication date. Update the affected row when an experiment concludes.
 
@@ -38,7 +38,7 @@ evaluators are for explicitly authorized experiment evidence generation, not aud
 Full report links contain causal traces, seed controls, counters, limitations and
 reproduction details; consult those sections before making stronger claims.
 
-Latest protection: [001–021 integrity audit](../integrity-audit-001-021.md).
+Latest protection: [001–024 integrity audit](../integrity-audit-001-024.md).
 [Research handoff](../research-handoff-001-013.md) recommends a narrow scarce-activity
 question; it does not start014.
 
@@ -312,5 +312,6 @@ work starts,19completed-effect differences,19terminal food/trust and13hunger
 differences,8behavioral/state nulls and3food reconvergences. Earlier meal0/1 is
 harmful on all full-run hunger areas;6/7 gives specific benefit;finite exhaustion
 remains. Start18 versus first completed effect19 is explicit. Qualified protection
-is suitable but pending. MealRelief remains unadopted. New025research requires
+passes with408original artifacts (386inherited+22original024). MealRelief remains
+unadopted. New025research requires
 published001–024protection and its own prospective gate; no026/canon change.

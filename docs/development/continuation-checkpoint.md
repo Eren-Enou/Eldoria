@@ -28,7 +28,24 @@ originals unchanged, all22original024files captured unchanged. No archive writer
 
 ## Next
 
-Publish independent review separately. Then add001–024contract/inventory(shared
-read-only validation), preserving386inherited keys exactly and all22actual024
-original files. Run fresh extended normal foundation and required checks before
-protection commit/push. No025runtime before published GateB and prospective025gate.
+Independent review published/remote-verified4dfc71c74cffd917d2071585226e127bee9b00c7.
+001–024contract/inventory and additive shared validation are in working tree:
+408entries=386inherited exact+22original024. No original source/evidence changed.
+FreshBfmt/Clippy/217tests, extended normal001–024foundation (1578.726s) and
+standalone validate024_foundation (110.040s) PASS. Durable record:
+finite-material-foundation-validation.json; logs%TEMP%/finite-material-preparation.
+GateB checks pass; publish protection separately and verify actual remote before
+025runtime.408portable/425raw originals and all inherited gates passed.
+
+Architecture investigation and025registration DRAFTS are also in working tree,
+not part of protection commit: finite-material-preparation-architecture.md and
+experiments/025/{specification.md,design-gate.md,registered-matrix.json}.
+50fixed prospective rows=24access pairs+2report placebos, fixedBaseline; H−known
+workduration;2raw→1edible+1waste;6/12/32tickwork;one tagged source slot. No025
+runtime/outcomes. Matrix structure/pairs/placebos/duration bound checked.
+Feature-off old-world parity and new access-closed controls are explicitly different;
+raw observation can overwrite ready knowledge in both primary arms. Obtain missing
+attachment tail before claiming full program completion. No025runtime before
+published GateB and prospectively published025gate. Next: finish B, update current
+map/index/AGENTS/README status, commit only protection files, push/verify. Then
+finalize/publish prospective C–G separately before any025runtime code.
