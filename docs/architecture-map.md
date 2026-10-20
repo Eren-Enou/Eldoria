@@ -1,12 +1,12 @@
 # Architecture map
 
-Navigation summary, protected through022. Source and mode-specific
+Navigation summary, protected through023. Source and mode-specific
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
 ## Start here
 
-- Rules: [AGENTS.md](../AGENTS.md); protected [001–022 contract](experiment-contract-001-022.md),
+- Rules: [AGENTS.md](../AGENTS.md); protected [001–023 contract](experiment-contract-001-023.md),
   which links historical contracts. Read the affected mode's clauses and coverage.
 - Findings: [experiment index](simulation/EXPERIMENT_HISTORY.md).
 - Working procedure: [context workflow](context-workflow.md).
@@ -183,3 +183,9 @@ Current authorized activity-valuation program: [independent 023 review](experime
 at 336ab08 accepts with qualification. Its new complementary score/physical checker
 is `examples/support/review023_findings.py`; findings and executed review validation
 are under docs/development. Protection and dependent 024 work have separate gates.
+
+001–023 protection checks now pass: [contract](experiment-contract-001-023.md),
+[audit](integrity-audit-001-023.md), [handoff](research-handoff-001-023.md),386original
+artifacts. Shared `contract023.rs`, standalone `validate023_foundation` and normal
+foundation preserve the unchanged original023gate, then verify inventory/parity,
+new review anchors and supplemental audits. No viewer dependency or default adoption.

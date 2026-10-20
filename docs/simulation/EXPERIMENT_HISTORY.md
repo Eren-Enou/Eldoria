@@ -260,3 +260,18 @@ First Continuous World A–I delivery: [report](../development/first-continuous-
 [readiness](../development/continuous-world-readiness.md). Continuous individual
 activity is qualified; sustainable community life is not established. Immediate
 next gate: independent 023 review, with protection/adoption kept separate.
+
+## Independent 023 review and conditional protection
+
+[Scientific review](../experiment-023-review.md) at336ab08 accepts with qualification,
+published in5ff98ff. A new independent score/physical/count checker reproduces42
+worlds/20pairs/two reporting placebos,19choice differences,12terminalfood/fivehunger/
+19trust differences,one null,three reconvergences,20crossing worlds and26nominal
+unfinished. Five additional corruptions rejected. Preserve severe period11control,
+phase/drain limits,16episode cap and native-null versus actual receipt distinction.
+[001–023contract](../experiment-contract-001-023.md) and
+[audit](../integrity-audit-001-023.md) protect386originals (361inherited+25original023)
+after passing full normal/standalone validation; no default adoption. This supersedes
+the earlier delivery's pending-review status without rewriting original023prose.
+024valuation is now separately authorized behind diagnosis/preregistration gates;
+no material production or025is authorized.

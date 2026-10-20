@@ -1,0 +1,457 @@
+{
+  "stage": "B accepted001-023foundation",
+  "review_commit": "5ff98ff47db48706078fd18ed985d5acb29eadac",
+  "protected_original_artifacts": 386,
+  "inherited_entries": 361,
+  "new_original023_files": 25,
+  "raw_unchanged_files": 403,
+  "root_tests": 217,
+  "required_checks": [
+    {
+      "name": "B-fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.837,
+      "log": "%TEMP%/activity-valuation-024/B-fmt.log"
+    },
+    {
+      "name": "B-clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "-j",
+        "1",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit": 0,
+      "seconds": 2.424,
+      "log": "%TEMP%/activity-valuation-024/B-clippy.log"
+    },
+    {
+      "name": "B-tests",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "1"
+      ],
+      "exit": 0,
+      "seconds": 126.307,
+      "log": "%TEMP%/activity-valuation-024/B-tests.log"
+    },
+    {
+      "name": "B-foundation",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate_contract"
+      ],
+      "exit": 0,
+      "seconds": 1798.239,
+      "log": "%TEMP%/activity-valuation-024/B-foundation.log"
+    }
+  ],
+  "standalone_checks": [
+    {
+      "name": "B-standalone-validate009",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate009"
+      ],
+      "exit": 0,
+      "seconds": 65.632,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate009.log"
+    },
+    {
+      "name": "B-standalone-validate010",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate010"
+      ],
+      "exit": 0,
+      "seconds": 72.982,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate010.log"
+    },
+    {
+      "name": "B-standalone-validate011",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate011"
+      ],
+      "exit": 0,
+      "seconds": 68.068,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate011.log"
+    },
+    {
+      "name": "B-standalone-validate012",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate012"
+      ],
+      "exit": 0,
+      "seconds": 8.564,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate012.log"
+    },
+    {
+      "name": "B-standalone-validate013",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate013"
+      ],
+      "exit": 0,
+      "seconds": 35.503,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate013.log"
+    },
+    {
+      "name": "B-standalone-validate014",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate014"
+      ],
+      "exit": 0,
+      "seconds": 15.483,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate014.log"
+    },
+    {
+      "name": "B-standalone-validate015",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate015"
+      ],
+      "exit": 0,
+      "seconds": 114.517,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate015.log"
+    },
+    {
+      "name": "B-standalone-validate016",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate016"
+      ],
+      "exit": 0,
+      "seconds": 257.208,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate016.log"
+    },
+    {
+      "name": "B-standalone-validate017",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate017"
+      ],
+      "exit": 0,
+      "seconds": 224.823,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate017.log"
+    },
+    {
+      "name": "B-standalone-validate018",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate018"
+      ],
+      "exit": 0,
+      "seconds": 238.488,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate018.log"
+    },
+    {
+      "name": "B-standalone-validate019",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate019"
+      ],
+      "exit": 0,
+      "seconds": 314.84,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate019.log"
+    },
+    {
+      "name": "B-standalone-validate020",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate020"
+      ],
+      "exit": 0,
+      "seconds": 83.488,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate020.log"
+    },
+    {
+      "name": "B-standalone-validate021",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate021"
+      ],
+      "exit": 0,
+      "seconds": 141.633,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate021.log"
+    },
+    {
+      "name": "B-standalone-validate022",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate022"
+      ],
+      "exit": 0,
+      "seconds": 11.501,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate022.log"
+    },
+    {
+      "name": "B-standalone-validate020_foundation",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate020_foundation"
+      ],
+      "exit": 0,
+      "seconds": 97.937,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate020_foundation.log"
+    },
+    {
+      "name": "B-standalone-validate021_foundation",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate021_foundation"
+      ],
+      "exit": 0,
+      "seconds": 166.657,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate021_foundation.log"
+    },
+    {
+      "name": "B-standalone-validate022_foundation",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate022_foundation"
+      ],
+      "exit": 0,
+      "seconds": 17.521,
+      "log": "%TEMP%/activity-valuation-024/B-standalone-validate022_foundation.log"
+    }
+  ],
+  "additional_fresh_checks": [
+    {
+      "command": "cargo run --release --locked -j 1 --example validate023",
+      "exit": 0,
+      "stage": "A"
+    },
+    {
+      "command": "cargo run --release --locked -j 1 --example validate023_foundation",
+      "exit": 0,
+      "stage": "B targeted"
+    }
+  ],
+  "source_sha256": {
+    "Cargo.lock": "bc3d47aff578ab02920aa60062e540bb32ffeddddcde803c48da7774d870f1f0",
+    "Cargo.toml": "2a20ba1699c82809731e60c1d184026d4c512f8efbe5561d7a647c42c5feaa7b",
+    "examples/support/contract009.rs": "55a8b9132d31cd76fc37fa0d607e5b4ec25f0cd063c9380b1eb06f02ed1a6bf0",
+    "examples/support/contract010.rs": "17453b64cf2bc5342f2e464fa6967d8781078be24ffaa95f7e86230b88092dbc",
+    "examples/support/contract011.rs": "7839875b01c3b487f807a04516d250bd480bd852f8930af056edcfa2176e39e8",
+    "examples/support/contract012.rs": "61558652934c30a67d7aab8f962ee7009b7bd1c37630dcf7a2b3d81a21ae5d20",
+    "examples/support/contract013.rs": "036d18b0da9096a5b696608611c5ab8b82abcc0b0dc09eaa64d6840285c28c87",
+    "examples/support/contract014.rs": "2fa40117d47d98474be307715c33b8ff80974502e2a2679b629ea5dcdfaad28a",
+    "examples/support/contract015.rs": "38aa7b26f8d8654aca9b06609212dfdbbe8ce9f217e009e1d6c217b5e873e5f9",
+    "examples/support/contract016.rs": "fc5aec3bab2a311ef8fc0c6a5d688b9f2bf320c073b3d19954f21f114b6d6741",
+    "examples/support/contract017.rs": "08f6857240257f3141f523c051bfcd78031c7a5f98fcc97029f335762f3eacd5",
+    "examples/support/contract018.rs": "07d0b3da3f5a36c8865342bb6df9e5c91fd627c416c7bbd9240190dff0cf588f",
+    "examples/support/contract019.rs": "eb122710559a53d950fe9152142f49c5862725e3147047c472180318f18c5dae",
+    "examples/support/contract020.rs": "71282d2463ff9c7a8bc1eef38c5567c5d2c63609f44cf5baa6d6967b9d774db6",
+    "examples/support/contract021.rs": "a20431a5eee257abd5054ee21a6956232832881abd3d54a78daac656e6191618",
+    "examples/support/contract022.rs": "3234897c9dc6915c09591d9d5c5d1840b90ccaab29d79d8014e08cc0c52111f6",
+    "examples/support/contract023.rs": "3f27c4dfd85dbfa1f6efeddd96ca83ed6cbd94909d4f47f4e3858981cb934ea8",
+    "examples/validate009.rs": "7f87ab1c64c1cac37c20e798e9d675709bc2f9cc4c77bdfa9971ea5752f51fb5",
+    "examples/validate010.rs": "4b26fadab4472a5b6a1df9a899c2b47953357401d05950e8539e6ee010d40bed",
+    "examples/validate011.rs": "40cf354f6ff635425bd036ef93581d0d071cb09e1a1e54926e24dd160c380cf3",
+    "examples/validate012.rs": "47616696423f3935f8f67c372211941525054c04b0e93b5a833c403f4e5b3e38",
+    "examples/validate013.rs": "8e9417413af56cc4d82ebc7c90a241a1bdd463dc883f50a3156527b5b1ad89aa",
+    "examples/validate014.rs": "255ddae3d96828ab4e01c2984076f7ee0981dfb8c091462f57cdc10eb83f6463",
+    "examples/validate015.rs": "aa44cb0ca8c73b42696d1728f9b48c7112bfd62e4cc703776c5598cdc91ae331",
+    "examples/validate016.rs": "208fcaafdc115329885e42a2376a997e2e735f4fdec371cce2a3447c6dde021c",
+    "examples/validate017.rs": "05dbc64614611c6e911d02f2bd11138d4eaacdea40175bdac6135fd8bce56ace",
+    "examples/validate018.rs": "d152c07d1c7b307be2ec7424c76e32bdde10023744a903c49e1261440bfb7cde",
+    "examples/validate019.rs": "1df125687d7cc4a7692e7fb695ef78720e7a3223734389b414800a418a187409",
+    "examples/validate020.rs": "8249fe90c24cf576dcbed5cb3b6fe4374f90c26cc170bb5239871cce78dd7a93",
+    "examples/validate020_foundation.rs": "2cd353bf9ed8d67fe2b1f80286a7a9634b151faf6ba26ba8af93af82eb27c04b",
+    "examples/validate021.rs": "0061a82f34a8fb8740938f850212208891219692fa293060906e287af3ded137",
+    "examples/validate021_foundation.rs": "347d6d99392d1ce2867b3ff473e9b11cf2ee79915e45c8340f3fb7de6e261289",
+    "examples/validate022.rs": "ab6835c83c3318bc6ae7c2eeef7717175d34b79b39b9a4abf5e43795ed92ff60",
+    "examples/validate022_foundation.rs": "61f23fe4cdca891df0f6eb7b7daecea4df32ab213a3b376dc54041cbfe81e093",
+    "examples/validate023.rs": "ee6cd9b72d441eda77de4c854f635e811f539b63f87d77bc514450525101d322",
+    "examples/validate023_foundation.rs": "84d67cb2174d95aa3a35b852a9f864237df562c706099f705a7faf378b404298",
+    "examples/validate_contract.rs": "b2225a4f32c27ec4165ef8114be658f6686cb470ef941eb447a6af861116060e",
+    "examples/validate_history.rs": "faafca94fbd4dfaa2f88de90b029586e72ab065654435453e94a448d57b01bb6",
+    "src/acquisition.rs": "7b0bc16a8a60e9b5a47463bb071eaf15ce94365291ca5d69bb7b8dcdbdc42733",
+    "src/activity.rs": "a1e0453659dc000a5ec0e57d5c9f452e9b4c44514afe9017fe63e8e0ff073eb5",
+    "src/assessment.rs": "ab212af43629006a1de14b9adcf219bfff2d3d53b8c6f6fb58fbaea95e30f459",
+    "src/attention.rs": "9c0ef3926cb026e351e101664be584ff88d7748c6af6d6018bf27ba0228948fa",
+    "src/audit.rs": "3f067a10ea7ac015797146f58827ec7f3617a67d31431a61165264d4ca5cfdd3",
+    "src/behavior.rs": "8877d4637ecdd83d2384e095fee4c54b1123f98c393a2292f126ffd611ea9eef",
+    "src/cognition.rs": "9a0ad97014bfcb19c1dfb9f19d57e7b9479c474af9c598eb74047b8cbea089c2",
+    "src/concerns.rs": "0a695474c794cd1cb5cb1264a894c5249f5d2edf937515bd32af0f20087b015d",
+    "src/contact_learning.rs": "b275b67968edb642233facd244c5de3757750689522a82dd454375dc4d482f10",
+    "src/encounters.rs": "48848f27a0435ab2bad04702c24b60c791019c892e5ce55844daea4d1f12d77d",
+    "src/environmental_knowledge.rs": "34de05f38106ffc75c87b3fde625950952553a5c0480d2e2f1b1bdfa4ca21ccc",
+    "src/experiment.rs": "16a3b68e0e49a62adb0d16e39edf0560dd394e7dbfb3b4c036212b192d39ee38",
+    "src/experiment002.rs": "b8ec88500cdfa22fa76d708a5c4e8e895db3b38340e45f305318d9e121eb089d",
+    "src/experiment003.rs": "d078d49e858741b5c32599c33877386ba1b9224b3a717384e986c16bf64a66eb",
+    "src/experiment004.rs": "c7c90e23c4cd30866497ce00cad7ea1e5de1f566e71ee841d972029d17749bc6",
+    "src/experiment005.rs": "904e23e219390c106533ecc0212540d7dc80004d774a926ef1e3425282f8c1d7",
+    "src/experiment006.rs": "61e65cc63e7984cef774d654931e1e44fe8cabac3d945f6d55a30291b96764de",
+    "src/experiment007.rs": "3692d77944c3a219529e65eca8189a3f7c090cb87e8d23579aeb5c174822933d",
+    "src/experiment008.rs": "178f5698e5800b40009741c75beeda239604fbc3c7494ad9c91c9dda38ca553b",
+    "src/experiment009.rs": "ccfe74cc7bfc50ffca781932faa1afb586330ea831bcbadbfc9f92200f597acf",
+    "src/experiment010.rs": "2056c778e2bae01c6658ca9f81fbd4a89e133e0f1e6d5883fe9b0f5f34c5d3cf",
+    "src/experiment011.rs": "c8f1c01f62977999bf0d79e3d00cf4f1250d2ce4ebf2d3173bfd7bb2c67755c4",
+    "src/experiment012.rs": "588486b60c60cc505a667d3ba2c6f0a6ef4489e9f8bbeca38d23773b55f2a8f5",
+    "src/experiment013.rs": "22b2616903a6250207aa359457773967e03ce62915d814d8b1d48f5a8f06aee5",
+    "src/experiment014.rs": "7811c234113882436b7ec84e06beef0698342532f40776e9e794af0fd1eba820",
+    "src/experiment015.rs": "4d9b893fae276eae584de9ed84068e4fd4ff17942d8fc75dede71d5d103ad964",
+    "src/experiment016.rs": "20900cdf4626394c6c6ab8357ae1414744de29df4faf988038eed8b09a9ce0f3",
+    "src/experiment017.rs": "8620c2eb784ef4078518e6270827b7e0aef7fff314e9cc9b14ab328e3afc839e",
+    "src/experiment018.rs": "7965940fd88bd5f37574fcdedb6974041674547dc98a3146de3b6fd5b86f21e9",
+    "src/experiment019.rs": "eb5f885a02697b86e2aa3d86187840a660a6178187b9e97b1b9593027e9a6b40",
+    "src/experiment020.rs": "685b09e136a511db06df4f06e6c9cb286953f05c28215c45527101b46a88833f",
+    "src/experiment021.rs": "383126d5b6c453f6f4d3e7888fffcd6659cde96c04bde9296620c316c665c78c",
+    "src/experiment022.rs": "22e5e5127238487c44cbc46c95dc7b3175d2fdb538d9581a554e0a054781433c",
+    "src/foresight.rs": "94bc863ffda1ed6bdd0f188cf580e37486d3badb5abc4d87d3adde1942c786be",
+    "src/history.rs": "fe19142ed8a8fc0646fc2b5f2a63fe9656e0482953ef39bbc61a57f729dfdb86",
+    "src/inquiry.rs": "8f97e940e25a5d385b87b4d82ff9ad1a206b0f9153f4623d68c23c5a87d1f6d1",
+    "src/inquiry_value.rs": "651142fe6345998b8c88fd9a082d6d66d8c657a1f1899212d5f88719098da825",
+    "src/intentional.rs": "66f011c692bbef7d137cb6c35c1e4805584594437e45929f290c23fc7497a823",
+    "src/lib.rs": "0020bf81cb66fa42ceb9fd712b347f5feb3b806835d88b6e2a1126cce67a066f",
+    "src/main.rs": "37ffb2aa72f8fc9c357b1aa242b3c843a95ac283e995056d1261deeffc75c670",
+    "src/model.rs": "ea71ac31c3d5c171feaf275b5a0ee5fd3499eb61d328d2bbd1ff0addf6022e82",
+    "src/opportunities.rs": "5b76207ceb3d397c17d4de7ee76bf38f11ef000d006fee80e248260aeb9616de",
+    "src/priorities.rs": "db18cb6585e84bfa6316ced5b57c4152ba481d4830445c7786c4921e3606b82e",
+    "src/provenance.rs": "ff23dff1c0b96f8f6a6452fc8ff49f4a1db6723edda2bf26ce33b0e1d6000d4b",
+    "src/recurring.rs": "2c271d1a28d6cac9748f6e261897b57fa236902f3d744a748bbdc6c8bf27ee46",
+    "src/retention.rs": "9cd0a8dc39bd03107600363bef3f4d822d21b07f881870de07fdf476f1647073",
+    "src/self_evaluation.rs": "9d7e1f6319a856958f33525fe9de2b31f277ddbbd78a7a0d6b245c61d4cd0f0c",
+    "src/simulation/acquisition.rs": "612b31e974fffe891affe37d8bfbded9fd192a686160337bf8b18c25d6e9bc20",
+    "src/simulation/activity.rs": "5734a90de8b160c201d3eb694b81792187c104d5aeea39b8d537dc1fc606519d",
+    "src/simulation/adaptive.rs": "88c04b41fdcd97c31b96dabcdf6ecd1b042b41567c1e00bb79d3b959e1903707",
+    "src/simulation/attention.rs": "ccfeade541eb0c0a1db279911640c084ad90c7a3a70aee7f95f869dc3de5755e",
+    "src/simulation/concurrent.rs": "a31e0d634b3893cc9df8d30a37f4d95a977e1f12f6b109215e3731b7209b4dee",
+    "src/simulation/contact_learning.rs": "983dc96153f25c7122a94635296e28a1ebc94be002d1c8941194f9514293f12e",
+    "src/simulation/encounters.rs": "3fc3db489611a4e3ca9cb38855df26da5a7e0152f958c6c5aeab99204e8ea0f5",
+    "src/simulation/environmental_knowledge.rs": "27ffd1a7330781032627d4f31723f53db96ad233cb2e38d33636b44bfdebf363",
+    "src/simulation/inquiry_value.rs": "5ec945faad759234c66a6273405f218822d14433dc72975f9a4d5462df974fe8",
+    "src/simulation/opportunities.rs": "e134dadfb0e2e411fa366a374d5df77549f28cc99b60c0bdc51749666c9b2c85",
+    "src/simulation/priorities.rs": "779ec1ae64517b9ea2cc1b4a3f91d4744d8860d6f06256b26f015f79de3e9ccc",
+    "src/simulation/provenance.rs": "57380bf340550f1dd158a58b43535730fe7b13f3df0960059c8fd5ba809ed8a5",
+    "src/simulation/recurring.rs": "72bbf1392b31c43c7eef29ac746a30030ba969627f443dc00bd5c116143fb1ba",
+    "src/simulation/self_evaluation.rs": "2d9de4bd2a1143997e422efdfbaf3b2c24b102669f3030dde84ac6fd17336f03",
+    "src/simulation.rs": "b6399c8a0db55508935864d4fdd6d7df06cf346bf37b3a82c12d8035485d2980"
+  },
+  "qualification": "Validation costs include concurrent validation/viewer testing, not runtime performance. Original standalone/source locks/archives unchanged; no writer or viewer cache used."
+}

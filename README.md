@@ -12,6 +12,11 @@ For engineering navigation, start with the [concise architecture map](docs/archi
 the read-only `validate_contract` gate described below; run/evaluate commands can
 overwrite evidence and should be used only for authorized target generation.
 
+Current scientific endpoint: [qualified001–023 protection](docs/experiment-contract-001-023.md),
+386original artifacts. The [independent023review](docs/experiment-023-review.md)
+accepts with qualification. A separately gated activity-valuation program is now
+authorized; no new policy is adopted, and no material production or025is underway.
+
 ## First Continuous World - optional023prototype
 
 Four persistent individuals now execute one bounded continuous-opportunity world
@@ -608,3 +613,10 @@ fifteen scientific questions; its [completion audit](docs/development/continuous
 maps all twenty acceptance requirements to actual evidence. See
 [readiness](docs/development/continuous-world-readiness.md) for the qualified
 community verdict and conditional future material study.
+
+The subsequent [independent023review](docs/experiment-023-review.md) accepts with
+qualification. [001–023protection](docs/experiment-contract-001-023.md) now passes
+its [integrity checks](docs/integrity-audit-001-023.md) for386original artifacts,
+without adopting Continuous scheduling. The newly authorized activity-valuation
+program requires diagnosis and published024preregistration before treatment;
+material preparation and025remain outside scope.

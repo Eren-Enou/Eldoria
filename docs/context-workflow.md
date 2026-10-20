@@ -273,3 +273,20 @@ For the completed First Continuous World program, start with the
 causal slices and validation records rather than reading full generated histories.
 The next scientific action is independent 023 review, not a rerun or a material
 implementation. Inspect actual Git before relying on the pre-publication checkpoint.
+
+## Qualified 001–023 protection
+
+Independent023review accepts with qualification at336ab08, published5ff98ff.
+[Contract](experiment-contract-001-023.md), [audit](integrity-audit-001-023.md) and
+[handoff](research-handoff-001-023.md) extend the endpoint to386original artifacts,
+361inherited unchanged plus25original023files. All required checks passed; verify
+protection's separate remote publication before dependent024implementation.
+Use shared normalfoundation/validate023_foundation and keep originalvalidate023,
+source80/helper5/raw403 and qualified negative/null findings unchanged. New review
+and main-viewer exports are not original treatment outcomes. No adoption follows.
+
+The current program separately authorizes activity-valuation diagnosis and gated
+024research. Complete diagnosis, publish fixed law/matrix and design gate, then
+implement only the designated local score intervention. No preparation/new supply,
+025,planner,automatic024protection or canon change. Earlier prospective next-step
+prohibitions refer to their historical authorization boundaries.

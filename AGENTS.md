@@ -36,14 +36,15 @@ economy must not weaken locality, retention contracts, validation or negative re
 The newly authorized activity-valuation program (attachment 963863ea) supersedes
 earlier next-experiment prohibitions only through its explicit scientific gates.
 023 review at 336ab08 accepts with qualification; see docs/experiment-023-review.md.
-Qualified 001–023 protection must actually pass and be published before dependent
-024 implementation. Finish observational diagnosis, then publish fixed 024
+Qualified 001–023 protection has passed all checks (386 original artifacts; 361
+inherited unchanged plus25original023 files). Its separate publication must be
+verified before dependent024implementation. Finish observational diagnosis, then publish fixed024
 registration before treatment code/outcomes. No material preparation, new supply,
 025, planner, automatic 024 protection, policy adoption or canon change is authorized.
 
 The First Continuous World program reviewed/protected022and prospectively registered
-023atcf946fa. Experiment023is completed opt-in continuous-opportunity research,
-ACCEPT WITH QUALIFICATION pending independentreview; it is NOT protected/adopted.
+023atcf946fa. Its original delivery left023unprotected; the new independent review
+and001–023integrity pass now protect qualified023science without default adoption.
 Preserve its42original worlds,80pre-run source bindings,5validation-helper locks,
 matched20pairs/2reportplacebos, harms/nulls and exactread-onlyvalidate023gate.
 Its isolated prototypes/continuous-world host compiles frozen root modules by path;
@@ -56,11 +57,12 @@ annotations; they do not reset state or restore cognition. Episodic cap remains1
 (the prospective architecture's32estimate is disclosed as wrong); evidence and
 learning32, concerns8, ownenvironment slot1. Null native inquiry response does not
 imply no provenance receipt; keep receipt, novelty and observed progress distinct.
-No024/materialproduction, globaladoption or001-023foundation extension is authorized.
+024valuation research is separately authorized only through the gates above.
+No material production,025,global adoption or automatic024protection is authorized.
 Read experiments/023/results.md, verification.md and the continuation checkpoint.
 
 Experiment022 is independently reviewed/protected opt-in concurrency research,
-ACCEPT WITH QUALIFICATION; the protected endpoint is001–022 (361artifacts). Inspect experiments/022/results.md,
+ACCEPT WITH QUALIFICATION; its historical001–022 extension has361artifacts. Inspect experiments/022/results.md,
 verification.md and implementation-notes.md. Native originals have100worlds,
 60source locks and5compressed archives; validate022 independently reconstructs,
 rejects23scratch corruptions and repeats100exact byte runs. Normalfoundation and
@@ -78,7 +80,8 @@ absolute-phase claim. Readiness and sustained-material-opportunity documents und
 docs/development remain material design/assessment only; they authorize no production
 runtime or numerical material-study matrix.023is separately authorized scheduling research.
 
-Cross-experiment enforcement map: `docs/experiment-contract-001-022.md`.
+Cross-experiment enforcement map: `docs/experiment-contract-001-023.md`.
+The historical `docs/experiment-contract-001-022.md` remains authoritative for001–022.
 The historical `docs/experiment-contract-001-021.md` remains authoritative for001–021.
 The historical `docs/experiment-contract-001-020.md` remains authoritative for001–020.
 The historical `docs/experiment-contract-001-019.md` remains authoritative for001–019.
