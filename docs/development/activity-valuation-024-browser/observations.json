@@ -1,0 +1,57 @@
+[
+  {
+    "check": "matched pair0/1 at tick18",
+    "identity": "Experiment 024 · original zero-based trial 0 · seed 42 · ticks 6–103",
+    "comparison": "Comparison scope\tResult\nSame physical start/profiles\tYes\nMatched activity-valuation treatment\tBaseline / MealRelief\nSame evaluation endpoints\tYes\nFirst admission difference\t20\nFirst executed difference\t19\nFirst missing ordinary decision opportunity\t19\nFirst different selected choice at a shared actor/tick\t18\nFirst food-ledger difference\t19\nLater food-ledger reconvergence\tNone\nTerminal food ledger\tDifferent\nTerminal hunger\tDifferent\nTerminal directed trust (missing = 0)\tDifferent\nComplete physical/history body equality\tNo\nHunger-area right minus left\t55 / 1985 / 215 / 1560\n\nObserver-only024comparison. Only ordinary eligible Consume valuation changes; public opportunities, independent consent, finite supply and physical laws are unchanged. Later outcomes were unavailable to selection. Counts and hunger area are distinct dimensions, not a welfare score.\n\nActual material/contact counts\n\nFirst different score: tick 6, individual 0; exact local inputs match. A score difference may leave the selected activity unchanged.\n\nleft rule\tActivity\tBase\tMeal relief\tFinal\nBaseline\tWait\t0\t0\t0\nBaseline\tConsume\t20\t0\t20\nBaseline\tInvite\t96\t0\t96\nBaseline\tAcquire\t-1\t0\t-1\nInspect left original score terms · valuations[0]\nright rule\tActivity\tBase\tMeal relief\tFinal\nMealRelief\tWait\t0\t0\t0\nMealRelief\tConsume\t20\t20\t40\nMealRelief\tInvite\t96\t0\t96\nMealRelief\tAcquire\t-1\t0\t-1\nInspect right original score terms · valuations[0]Inspect left first admission difference · admissions[12]Inspect right first execution difference · final_state.base.base.base.base.base.cognition.consumption[2]\nFinal recorded directed trust"
+  },
+  {
+    "check": "right first executed meal",
+    "identity": "Experiment 024 · original zero-based trial 1 · seed 42 · ticks 6–103",
+    "reference": "history.final_state.base.base.base.base.base.cognition.consumption[2]",
+    "record": "Selected original record\n{\n  \"actor\": 0,\n  \"consumed\": 1,\n  \"food_after\": 0,\n  \"food_before\": 1,\n  \"hunger_after\": 0,\n  \"hunger_before\": 35,\n  \"tick\": 19\n}"
+  },
+  {
+    "check": "actual social transfer after treatment meal",
+    "identity": "Experiment 024 · original zero-based trial 1 · seed 42 · ticks 6–103",
+    "reference": "history.final_state.base.base.base.base.base.events[15]",
+    "record": "Selected original record\n{\n  \"balances_after\": [\n    2,\n    4\n  ],\n  \"balances_before\": [\n    3,\n    3\n  ],\n  \"decision\": {\n    \"actor\": 3,\n    \"candidates\": [\n      {\n        \"action\": \"Accept\",\n        \"score\": 21\n      },\n      {\n        \"action\": \"Refuse\",\n        \"score\": -18\n      },\n      {\n        \"action\": \"Leave\",\n        \"score\": 0\n      }\n    ],\n    \"caution\": 20,\n    \"episodic_valence\": 0,\n    \"expectation\": 69,\n    \"food\": 3,\n    \"generosity\": 60,\n    \"hunger\": 5,\n    \"memory_causes\": [\n      14\n    ],\n    \"observation\": {\n      \"amount\": 1,\n      \"last_signal\": {\n        \"action\": \"Offer\",\n        \"actor\": 1\n      },\n      \"partner\": 1,\n      \"turns_left\": 5\n    },\n    \"selected\": \"Accept\",\n    \"trust\": 0\n  },\n  \"id\": 15,\n  \"interpretations\": [\n    {\n      \"event\": 15,\n      \"interpretation\": \"HelpGiven\",\n      \"observed\": \"Accept\",\n      \"partner\": 3,\n      \"valence\": 8\n    },\n    {\n      \"event\": 15,\n      \"interpretation\": \"HelpReceived\",\n      \"observed\": \"Accept\",\n      \"partner\": 1,\n      \"valence\": 30\n    }\n  ],\n  \"outcome\": \"Agreement\",\n  \"participants\": [\n    1,\n    3\n  ],\n  \"scene\": 6,\n  \"tick\": 20,\n  \"transferred\": 1\n}"
+  },
+  {
+    "check": "genuine valuation null20/21",
+    "identity": "Experiment 024 · original zero-based trial 20 · seed 42 · ticks 0–34",
+    "comparison": "Comparison scope\tResult\nSame physical start/profiles\tYes\nMatched activity-valuation treatment\tBaseline / MealRelief\nSame evaluation endpoints\tYes\nFirst admission difference\tNone\nFirst executed difference\tNone\nFirst missing ordinary decision opportunity\tNone\nFirst different selected choice at a shared actor/tick\tNone\nFirst food-ledger difference\tNone\nLater food-ledger reconvergence\tNone\nTerminal food ledger\tEqual\nTerminal hunger\tEqual\nTerminal directed trust (missing = 0)\tEqual\nComplete physical/history body equality\tYes\nHunger-area right minus left\t0 / 0 / 0 / 0\n\nObserver-only024comparison. Only ordinary eligible Consume valuation changes; public opportunities, independent consent, finite supply and physical laws are unchanged. Later outcomes were unavailable to selection. Counts and hunger area are distinct dimensions, not a welfare score.\n\nActual material/contact counts\nFinal recorded directed trust"
+  },
+  {
+    "check": "executed inquiry/native null and typed delivery chain",
+    "identity": "Experiment 024 · original zero-based trial 12 · seed 42 · ticks 4–101",
+    "reference": "history.final_state.base.base.base.base.inquiry.records[0]",
+    "selected": {
+      "Ask": {
+        "concern": 0,
+        "source": 2,
+        "strategy": "Direct"
+      }
+    },
+    "response": null,
+    "time_spent": 13,
+    "realized_value": 40,
+    "chain": "Individual 0: InviteSend #0 · startedOriginal proposal captured in pending protocolIndependent reply by individual 20 → 2 · Inquiry: ExecuteQuery #2 · startedExecuted inquiry 0 · individual 0Provenance query0 refers to inquiry0Actual provenance receipt1: communicator2 to listener0Information receipt 0 · listener 0Query #2 · releasedIndividual 0: InviteIndividual 2: Invite\n\nJoins use original invitation sources, reply references, commitment and scene IDs. Later input is availability context, not proof of a unique motive. Query execution joins use actor, selected action and exact start/completion duration; delivery then follows explicit inquiry/receipt IDs. Null native response does not imply no provenance receipt."
+  },
+  {
+    "check": "actor query view excludes later delivery/response context",
+    "reference": "history.final_state.base.base.base.base.inquiry.records[0]",
+    "owned": "inquiry selection · original final_state.base.base.base.base.inquiry.records[0].decision\n\nOwned inquiry selection input at tick 6; the selected timeline record marks completion. Partner-private response decision context is excluded.\n\nOwn inquiry input\nInquiry alternative\tScore\nPause\t0\nAsk individual 2, concern 0, Direct\t45\nAsk individual 2, concern 0, Evidence\t37\nAsk individual 3, concern 0, Direct\t45\nAsk individual 3, concern 0, Evidence\t37\n\nSelected: Ask individual 2, concern 0, Direct.",
+    "observerGraphVisible": false
+  },
+  {
+    "check": "finite exhaustion18/19",
+    "identity": "Experiment 024 · original zero-based trial 18 · seed 42 · ticks 6–423",
+    "comparison": "Comparison scope\tResult\nSame physical start/profiles\tYes\nMatched activity-valuation treatment\tBaseline / MealRelief\nSame evaluation endpoints\tYes\nFirst admission difference\t16\nFirst executed difference\t15\nFirst missing ordinary decision opportunity\t15\nFirst different selected choice at a shared actor/tick\t14\nFirst food-ledger difference\t15\nLater food-ledger reconvergence\tNone\nTerminal food ledger\tDifferent\nTerminal hunger\tEqual\nTerminal directed trust (missing = 0)\tDifferent\nComplete physical/history body equality\tNo\nHunger-area right minus left\t-2070 / 0 / -2640 / 0\n\nObserver-only024comparison. Only ordinary eligible Consume valuation changes; public opportunities, independent consent, finite supply and physical laws are unchanged. Later outcomes were unavailable to selection. Counts and hunger area are distinct dimensions, not a welfare score.\n\nActual material/contact counts\n\nFirst different score: tick 6, individual 0; exact local inputs match. A score difference may leave the selected activity unchanged.\n\nleft rule\tActivity\tBase\tMeal relief\tFinal\nBaseline\tWait\t0\t0\t0\nBaseline\tConsume\t20\t0\t20\nBaseline\tInvite\t96\t0\t96\nBaseline\tAcquire\t-1\t0\t-1\nInspect left original score terms · valuations[0]\nright rule\tActivity\tBase\tMeal relief\tFinal\nMealRelief\tWait\t0\t0\t0\nMealRelief\tConsume\t20\t20\t40\nMealRelief\tInvite\t96\t0\t96\nMealRelief\tAcquire\t-1\t0\t-1\nInspect right original score terms · valuations[0]Inspect left first admission difference · admissions[8]Inspect right first admission difference · admissions[8]Inspect right first execution difference · final_state.base.base.base.base.base.cognition.consumption[2]\nFinal recorded directed trust"
+  },
+  {
+    "check": "owned food neglected at H100",
+    "identity": "Experiment 024 · original zero-based trial 18 · seed 42 · ticks 6–423",
+    "reference": "history.boundaries[66]",
+    "owned": "activity · original boundaries[66].choices[2]\nOwned state\tCaptured value\nIndividual\t2\nFood\t1\nHunger\t100\nGenerosity / caution / expectation\t60 / 20 / 67\nOwn directed trust\nOwn retained episodes\n\nOwn receipt 4: stock 0 observed at 54; own takes 0; retained upper bound 0. Current observer stock is excluded.\n\nPublic individual\tCaptured availability\n0\tAvailable\n1\tAvailable\n2\tAvailable\n3\tAvailable\nActivity\tScore\tEligible\nWait\t0\tYes\nConsume\t100\tYes\nInvite\t132\tYes\nAcquire\t-1\tNo\n\nCaptured Baseline rule: eligible Consume = H; other scores unchanged. Own H=100. Stable first maximum: Wait, Consume, Invite, Acquire. Source valuations[71].\n\nActivity\tBase\tMeal relief\tFinal\tEligible\nWait\t0\t0\t0\tYes\nConsume\t100\t0\t100\tYes\nInvite\t132\t0\t132\tYes\nAcquire\t-1\t0\t-1\tNo\nOwn captured valuation terms\nContact candidate\tScore\tEligible\nWait\t0\tYes\nResource contact with individual 0\t115\tYes\nResource contact with individual 1\t108\tYes\nResource contact with individual 3\t132\tYes\nOwn concerns and encounter context\nOwn captured inquiry state\n\nExclusive inquiry lane available. A local query candidate is not an executed inquiry.\n\nSelected: Invite."
+  }
+]

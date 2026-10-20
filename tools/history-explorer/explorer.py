@@ -33,6 +33,9 @@ _concurrent_spec.loader.exec_module(concurrent_history)
 _continuous_spec = importlib.util.spec_from_file_location('viewer_continuous_history', HOME / 'continuous_history.py')
 continuous_history = importlib.util.module_from_spec(_continuous_spec)
 _continuous_spec.loader.exec_module(continuous_history)
+_valuation_spec = importlib.util.spec_from_file_location('viewer_valuation_history', HOME / 'valuation_history.py')
+valuation_history = importlib.util.module_from_spec(_valuation_spec)
+_valuation_spec.loader.exec_module(valuation_history)
 SCHEMA = 'woi-history-explorer/v1'
 MAX_RECORD = 64 * 1024 * 1024
 DEFAULT = dict(window=24, idle_gap=1, interval=4, stock=12, hunger=20, order='Ascending')
@@ -281,7 +284,7 @@ def itertools_zip(a, b):
 
 
 class Repository:
-    def __init__(self, root=ROOT, cache=None, experiments=('019',), continuous=()):
+    def __init__(self, root=ROOT, cache=None, experiments=('019',), continuous=(), valuations=()):
         self.root = Path(root).resolve()
         self.cache = Path(cache or self.root / 'target/history-explorer').resolve()
         if self.cache == self.root or (self.root / 'experiments') in (self.cache, *self.cache.parents):
@@ -293,6 +296,7 @@ class Repository:
         self.lock = threading.RLock()
         self.concurrent = concurrent_history.Source(self.root) if '022' in experiments else None
         self.continuous = [continuous_history.Source(self.root, path) for path in continuous]
+        self.valuations = [valuation_history.Source(self.root, path) for path in valuations]
         self.continuous_entries = {}
 
     def catalog(self):
@@ -324,8 +328,8 @@ class Repository:
                 self.entries[e['id']]=e
         if self.concurrent is not None:
             self.entries.update(self.concurrent.catalog(self.status('022')))
-        for source in self.continuous:
-            entries = source.catalog(self.status('023')); self.entries.update(entries)
+        for source in self.continuous + self.valuations:
+            entries = source.catalog(self.status(getattr(source,'experiment','023'))); self.entries.update(entries)
             self.continuous_entries.update({key:source for key in entries})
         return self
 
@@ -439,8 +443,8 @@ class Repository:
                     self._save(e, json.loads(line))
         if self.concurrent is not None:
             self.entries.update(self.concurrent.catalog(self.status('022')))
-        for source in self.continuous:
-            entries=source.catalog(self.status('023'));self.entries.update(entries)
+        for source in self.continuous + self.valuations:
+            entries=source.catalog(self.status(getattr(source,'experiment','023')));self.entries.update(entries)
             self.continuous_entries.update({key:source for key in entries})
         self.measurements.append(dict(operation='catalog_and_full_archive_verification', seconds=time.perf_counter()-started, trials=len(self.entries)))
         (self.cache / 'catalog.json').write_bytes(encoded(dict(schema=SCHEMA, entries=list(self.entries.values()))))
@@ -455,6 +459,8 @@ class Repository:
         return self
 
     def _save(self, entry, trial):
+        if entry['experiment'] == '024':
+            return valuation_history.export(entry, trial)
         if entry['experiment'] == '023':
             return continuous_history.export(entry, trial)
         if entry['experiment'] == '022':
@@ -489,7 +495,7 @@ class Repository:
         if key not in self.entries:
             raise ValueError('Unknown registered trial')
         e = self.entries[key]; path = self.cache / (key + '.json')
-        if e['experiment'] == '023':
+        if e['experiment'] in ('023','024'):
             return self._remember(key, self._save(e, self.continuous_entries[key].get(e)), started)
         if e['experiment'] == '022':
             e['scientific_status'] = self.status('022')
@@ -529,10 +535,11 @@ class Repository:
     def imported(self, data):
         if not isinstance(data,dict) or data.get('schema') != SCHEMA or not isinstance(data.get('source'),dict):
             raise ValueError('Unknown viewer export schema or missing source identity')
-        if isinstance(data,dict) and data.get('source', {}).get('experiment') == '023':
+        if isinstance(data,dict) and data.get('source', {}).get('experiment') in ('023','024'):
             key=data['source'].get('id'); e=self.entries.get(key)
-            if e is None or key not in self.continuous_entries or digest(continuous_history.rebuild(data)) != e['trial_fingerprint']:
-                raise ValueError('023export does not match a verified source; quarantined')
+            adapter=valuation_history if data['source']['experiment']=='024' else continuous_history
+            if e is None or key not in self.continuous_entries or digest(adapter.rebuild(data)) != e['trial_fingerprint']:
+                raise ValueError('Continuous/valuation export does not match a verified source; quarantined')
             return self._save(e,self.continuous_entries[key].get(e))
         if not isinstance(data, dict) or data.get('schema') != SCHEMA:
             raise ValueError('Unknown viewer export schema')
@@ -571,6 +578,8 @@ class Handler(BaseHTTPRequestHandler):
                     left=self.server.repo.get(q.get('left',[''])[0]);right=self.server.repo.get(q.get('right',[''])[0])
                     if left['source']['experiment'] != right['source']['experiment']:
                         raise ValueError('Compare histories from the same explicit experiment schema')
+                    if left['source']['experiment'] == '024':
+                        return self.reply(valuation_history.comparison(left, right))
                     if left['source']['experiment'] == '023':
                         return self.reply(continuous_history.comparison(left, right))
                     if left['source']['experiment'] == '022':
@@ -633,9 +642,10 @@ def main():
     ap.add_argument('--include018', action='store_true', help='Also index the protected 018 schema (extra scan)')
     ap.add_argument('--cache', type=Path)
     ap.add_argument('--continuous', type=Path, action='append', default=[], help='Explicit023registered directory or actual bounded prototype JSONL; repeat for both')
+    ap.add_argument('--valuation', type=Path, action='append', default=[], help='Explicit024 registered directory or actual bounded prototype JSONL')
     args = ap.parse_args()
     print('Preparing full archive index...' if args.prepare or args.include018 else 'Opening discovery catalog; original histories are verified on selection.', flush=True)
-    repo = Repository(cache=args.cache, experiments=('019','018','020','021','022') if args.include018 else ('019','020','021','022'), continuous=args.continuous)
+    repo = Repository(cache=args.cache, experiments=('019','018','020','021','022') if args.include018 else ('019','020','021','022'), continuous=args.continuous, valuations=args.valuation)
     repo.prepare() if args.prepare or args.include018 else repo.catalog()
     print(f'Catalog: {len(repo.entries)} recorded trials.', flush=True)
     if repo.measurements:

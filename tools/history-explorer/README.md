@@ -193,3 +193,42 @@ field is null. More contact or a receipt alone is not proof of material benefit.
 
 [Actual browser/tests/cost acceptance](../../docs/development/main023-viewer-acceptance.md),
 [walkthrough](../../docs/development/first-continuous-world-walkthrough.md).
+
+## Optional activity valuation histories (024)
+
+```powershell
+python -B tools/history-explorer/explorer.py --continuous experiments/023 --valuation experiments/024
+```
+
+The explicit version 8 adapter adds all 56 original 024 histories without changing
+default discovery or the version 7 adapter for 023. The original
+`experiment-024-trial/v1` envelope and `experiment-024-physical-history/v1` body
+remain lossless. Runtime-source, compressed/decoded archive and member hashes are
+verified. Repeat `--valuation` with an actual prototype JSONL to inspect a custom
+run, clearly outside registered scientific evidence. The prototype runner defaults
+to Baseline; the viewer never executes or tunes a policy.
+
+Use **024 · Costly earlier meal**, jump to tick 18, select individual 0 and choose
+**Next decision of individual**. Actor Perspective shows captured own food/hunger,
+local source receipt, legal alternatives and the original four-term score audit.
+The matched columns show Baseline Consume35 versus MealRelief Consume70, against
+the same Invite48. An exact score reference uses `valuations[*]`; physical and
+decision references use `history.*`; checkpoints stay observer annotations.
+
+Observer Perspective separately shows first choice/execution/material differences,
+physical balances, final trust and actual hunger-area effects. The first different
+score can precede the first different action: those are reported separately.
+**Recorded activity evidence** finds owned-food/eligible-meal deferrals with an
+actual positive-duration commitment, plus actual transfer and inquiry records.
+Completion hunger is an observer value after all operations at that tick. Existing
+cohort links and lanes connect send, reply, consent, admission and actual release.
+A no-transfer scene is not automatically classified as useless.
+
+Presets retain useful contact, costly earlier consumption, finite exhaustion,
+unchanged information delivery, a complete null and longer-horizon evidence.
+Query links distinguish native null from actual provenance/cognitive receipt.
+Neither observer outcomes nor comparison summaries fill an absent Actor input.
+Imported presentation fields are rebuilt from verified originals; altered original
+terms or checkpoints are quarantined. Scientific validation remains separate.
+
+[Actual browser, privacy, comparison and cost acceptance](../../docs/development/main024-viewer-acceptance.md).

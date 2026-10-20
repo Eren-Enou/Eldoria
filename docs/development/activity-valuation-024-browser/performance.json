@@ -1,0 +1,48 @@
+{
+  "scope": "Separate Python source verification and observer projection; no simulator or browser rendering. Fresh derived Repository, warm OS source cache, otherwise idle simulation/tests; existing local viewer idle. No isolated actor heap claim.",
+  "catalog_worlds": 56,
+  "catalog_seconds": 6.143083999981172,
+  "rows": [
+    {
+      "ordinal": 0,
+      "source_verify_and_projection_seconds": 0.10177539999131113,
+      "serialization_seconds": 0.024619600037112832,
+      "export_bytes": 1658057,
+      "timeline_records": 687,
+      "valuation_audits": 93,
+      "retained_source_members": 1,
+      "retained_exports": 1
+    },
+    {
+      "ordinal": 1,
+      "source_verify_and_projection_seconds": 0.0973119999980554,
+      "serialization_seconds": 0.02402260003145784,
+      "export_bytes": 1601865,
+      "timeline_records": 678,
+      "valuation_audits": 86,
+      "retained_source_members": 2,
+      "retained_exports": 2
+    },
+    {
+      "ordinal": 52,
+      "source_verify_and_projection_seconds": 1.5402044999646023,
+      "serialization_seconds": 0.3284016000106931,
+      "export_bytes": 22994358,
+      "timeline_records": 7033,
+      "valuation_audits": 848,
+      "retained_source_members": 2,
+      "retained_exports": 2
+    },
+    {
+      "ordinal": 53,
+      "source_verify_and_projection_seconds": 2.2396461000898853,
+      "serialization_seconds": 0.4402881999267265,
+      "export_bytes": 30900094,
+      "timeline_records": 7236,
+      "valuation_audits": 797,
+      "retained_source_members": 2,
+      "retained_exports": 2
+    }
+  ],
+  "cache_bound": 2
+}

@@ -1,0 +1,76 @@
+{
+  "full_python_suite": {
+    "command": "python -B -m unittest discover -s tools/history-explorer/tests",
+    "exit": 0,
+    "tests": 65,
+    "seconds": 333.689,
+    "log_sha256": "903504ed885d6a0ae424b90dbcff7cd81bde0db470ae7219ff14080c99068492"
+  },
+  "targeted_python_suite": {
+    "tests": 8,
+    "seconds": 56.277,
+    "exit": 0
+  },
+  "javascript_checks": [
+    {
+      "command": [
+        "node",
+        "tools/history-explorer/tests/perspective.test.cjs"
+      ],
+      "exit": 0,
+      "qualification": "Executed successfully before the prior logging wrapper hit Windows console Unicode encoding failure"
+    },
+    {
+      "command": [
+        "node",
+        "tools/history-explorer/tests/causal.test.cjs"
+      ],
+      "exit": 0,
+      "qualification": "Executed successfully before the prior logging wrapper hit Windows console Unicode encoding failure"
+    },
+    {
+      "command": [
+        "node",
+        "tools/history-explorer/tests/finite.test.cjs"
+      ],
+      "exit": 0,
+      "qualification": "Executed successfully before the prior logging wrapper hit Windows console Unicode encoding failure"
+    },
+    {
+      "command": [
+        "node",
+        "tools/history-explorer/tests/knowledge.test.cjs"
+      ],
+      "exit": 0
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "tools/history-explorer/app.js"
+      ],
+      "exit": 0
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "tools/history-explorer/native-concurrent.js"
+      ],
+      "exit": 0
+    }
+  ],
+  "source_sha256": {
+    "tools/history-explorer/explorer.py": "22ce258dce1af1c4fc756600fc5c9b0e0c5c92413dd15c5fad9e9a139e5b0978",
+    "tools/history-explorer/valuation_history.py": "56719aebe768e59390ac2db55e6a225d4325847883a23f14fb046abfb291ef6a",
+    "tools/history-explorer/continuous_history.py": "ef6fdfe693708b922b4b3e018b0cb6e838e49a6aeee4b796c270cda9581950f9",
+    "tools/history-explorer/concurrent_history.py": "f6ee53a578b13efd7f5d1213cfaaae265184972835f11fc069a3086a81c14269",
+    "tools/history-explorer/app.js": "67eedbf2bfca4aaf58de9726d4116e5308440539cd624e2d9a69495ec2c1a46d",
+    "tools/history-explorer/native-concurrent.js": "7e0920f5f3417a6d1d0105687f9634792016e43bbde5d05ad1a8f632d7113ff5",
+    "tools/history-explorer/tests/test_valuation_main.py": "05a99254e093fcd51c9db0562c435b72a01014fe812d3d2e35747b347997868c",
+    "tools/history-explorer/tests/valuation-native.test.cjs": "fc2be8a8f52eeda22e6bf949bf59929fd4b1f2a5c6a6ed972e8791832f424980"
+  },
+  "browser_observations_sha256": "9f94d1c226a93b06890b0167f0ff7d865ea8cb79fc4051d72beb92016ec6b1cd",
+  "scientific_archive_sha256": "98da25f34239d8c704c0fffad33d33c4194d8ada46771ff11ba2c0abead19b2f",
+  "viewer_is_scientific_dependency": false
+}

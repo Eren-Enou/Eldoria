@@ -13,7 +13,8 @@ worlds, independent results,34 corruption controls and56 exact replays passed.
 ## Repository and published milestones
 
 Branch main. Last verified published HEAD/origin:
-80325c1e85bbdef0344d7b723618becbf0208ef8 (D/E preregistration).
+d5fa6a721c7dce809ccc191e1ae86712dfac8463 (runtime and original 024 evidence).
+D/E preregistration:80325c1e85bbdef0344d7b723618becbf0208ef8.
 A independent023review:5ff98ff47db48706078fd18ed985d5acb29eadac.
 B foundation:4da9fdcd03da31e72512f51979a966e64f7e9e79.
 C diagnosis/viewer fix:ce646dce4c0e4d4cd7095ab7f53553d75dcc5551.
@@ -98,11 +99,38 @@ pre-publication source checks passed96/17,386protected and403raw originals;
 all100 StageB validator-source bindings unchanged. No live validation jobs.
 Supplementary SHA manifest records post-run reports separately from pre-run locks.
 
-Finish milestone5 verification/supplemental evidence manifest, review diff, commit
-and push main safely. Then explicit versioned024mainviewer adapter/decision terms/
-matchedcomparison/missedmeal and usefulcontact navigation, privacy/source tests,
-allPython/JS tests and actual browser. Keep old023adapterversion7 and oldoutputs
-intact. Record authentic screenshot. Then post-024-community-readiness.md14answers,
-review sustained-material-opportunity-design.md and write futurehandoff(no025),
-update affected maps/indexes, finalPartsAâ€“F and20acceptancecriteria audit. Publish
-milestones6/7, verify actual remote, markgoal complete onlywhen all fullscope proven.
+Milestone 5 is published and remote-verified at d5fa6a721c7dce809ccc191e1ae86712dfac8463.
+
+## I viewer integration complete, publication pending
+
+Explicit valuation_history.py, version 8, --valuation opt-in; 56 original 024
+sources keep explicit envelope/physical schema and lossless rebuild. Main own
+perspective adds only exact boundary/choice score audit; observer later outcomes
+remain separate. Matched score versus choice differences, actual timed meal
+deferrals, transfers and inquiry-delivery links are navigable. Old 023 adapter
+remains unchanged at version 7. All 8 targeted tests PASS (56.277s), full 65 tests
+PASS (333.689s), all four standalone JS suites and both changed syntax checks PASS.
+A Windows console logging wrapper failed after three successful suites; escaped
+logging completed remaining checks. Browser caught text-encoding regression from
+an edit; repaired before full suite/acceptance. No simulation/source/archive defect.
+
+Actual browser tab 8, valuationLive024, same browser 2. Old tab 7 cached an error
+page after restart; fresh same-browser tab recovered. Server PID137204, exact
+no-browser port8765 command includes --continuous experiments/023, prior actual
+023 demo and --valuation experiments/024 (verify live before touching). Browser
+verified 0/1 tick18 scores, actual treatment meal19, actual transfer20, null20/21,
+query12 native-null/provenance/cognitive receipt route and baseline18 actor2@72
+food1/H100/Invite132>Consume100. Three authentic screenshots and raw observations
+under activity-valuation-024-browser; main024-viewer-acceptance.md documents checks.
+Viewer-only performance catalog6.143s; long exports22.99/30.90MB, cache bound2;
+not simulation/actor heap measurements. No live validation jobs remain.
+
+J/K readiness and future handoff drafted in post-024-community-readiness.md
+(14 questions) and post-024-material-preparation-handoff.md. They are uncommitted
+and need final scope/readability audit; no 025 registration or implementation.
+
+Next: review/publish viewer milestone 6 (only relevant files, tests already pass),
+then finish J/K and navigation/status updates, full final Parts A–F delivery report,
+20-criterion evidence audit and source/archive identity check. Publish final
+milestone 7, verify remote main and clean tree, leave a useful browser view.
+Do not mark the goal complete until every explicit requirement is proven.
