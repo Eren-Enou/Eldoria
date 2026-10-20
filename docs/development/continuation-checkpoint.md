@@ -8,8 +8,9 @@ actual viewing, post024readiness and future material-work handoff. No025/materia
 preparation/new supply/planner/welfare optimizer/default adoption/automatic024
 protection/canon changes. No subagents authorized or used.
 
-Branch main. Published B HEAD/origin last verified:
-4da9fdcd03da31e72512f51979a966e64f7e9e79. Review A:5ff98ff47db48706078fd18ed985d5acb29eadac. Starting reference336ab08354bda6dbdb5171e4066e28ea28344b6b.
+Branch main. Published C HEAD/origin last verified:
+ce646dce4c0e4d4cd7095ab7f53553d75dcc5551. B:4da9fdcd03da31e72512f51979a966e64f7e9e79.
+Review A:5ff98ff47db48706078fd18ed985d5acb29eadac. Starting reference336ab08354bda6dbdb5171e4066e28ea28344b6b.
 Initial tree was clean. Current changes are ours, separated by milestone below.
 B publication was verified against remote. Do not claim E registration publication until actually pushed.
 Inspect actual Git/files and revalidate live handles after resuming.
@@ -46,7 +47,7 @@ No live validation jobs remain. No benchmark for validation-only B. Bpublished
 4da9fdcd03da31e72512f51979a966e64f7e9e79; remote verified. C/D/Eremain separate
 commits; no024implementation before fixedEregistration publication.
 
-## C completed and verified; this checkpoint is part of its publication milestone
+## C completed and published in ce646dce4c0e4d4cd7095ab7f53553d75dcc5551
 
 examples/support/diagnose023_activity.py and docs/development/
 continuous-activity-valuation-{diagnosis.md,observations.json}; expected read-only
@@ -89,9 +90,9 @@ Tab7markedHandoff thisturn; markagain whencontinuing. Don’t close unrelated ta
 
 C includes diagnosis/observations/helper/browser/validation/minimal viewerrepair,
 map/index and READMEversion update. No valuation treatment implemented. Resolve
-this separate publication with actualGit after push; E drafts remain uncommitted.
+this separate publication in ce646dc (remote verified); E remains the next milestone.
 
-## D/E prospective drafts ready, UNPUBLISHED, no treatment code/outcomes
+## D/E prospective registration ready; this checkpoint belongs to its publication milestone
 
 New docs/development/activity-valuation-architecture.md compares four alternatives.
 New experiments/024/specification.md, design-gate.md and registered-matrix.json.
@@ -106,9 +107,11 @@ Fixed56worlds:20originalContinuousconfigs023odd1..39 ×2valuationmodes (40rows);
 newseeds7/17×paired/consumption/exhaustion×2 (12rows); exhaustionH768×2 (2rows);
 pairedperiod17reportplacebo pervaluation (2rows).27matchedpairs +2reportplacebos.
 No policy or simulation evaluation used to select this matrix. No retuning allowed.
-No024Rust/evaluator/runtime exists yet. DESIGN CONDITIONALpendingactualBpublication
-andEregistrationpublication; updatefinalgate only when dependencies satisfied.
-AfterCpublication, finalize/publish E spec/exactlaw/matrix BEFOREimplementation.
+No024Rust/evaluator/runtime exists yet. Static prospective checks PASS and recorded
+in experiments/024/prospective-validation.json:386original identities/361inheritance,
+80+5source locks,56configs/27pairs/2placebos,20priorconfigs/links, no runtime/outcomes.
+DESIGNPASSforconditionalimplementationAFTEREregistrationremoteverification. B/C
+publication alreadyverified. Publish E spec/exactlaw/matrix BEFOREimplementation.
 Then implementsource-preservingseparateopt-inhost, proveBaselineparity beforefinal
 treatment, freezeoriginalsources, runall56withoutchangingregisteredlaw, archiveonly
 newoutputs, independentlyreconstructandtestcorruptions, measurecosts, actualviewer,

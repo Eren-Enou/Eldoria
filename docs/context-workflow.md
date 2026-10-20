@@ -290,3 +290,14 @@ The current program separately authorizes activity-valuation diagnosis and gated
 implement only the designated local score intervention. No preparation/new supply,
 025,planner,automatic024protection or canon change. Earlier prospective next-step
 prohibitions refer to their historical authorization boundaries.
+
+## Prospective024valuation boundary
+
+023review/protection and observational diagnosis are separately published. Read
+experiments/024/specification.md and design-gate.md before implementing. Fixed
+56worlds/27pairs/two reporting placebos compare Baseline and MealRelief; only an
+eligible ordinary meal's score receives min(current own hunger,40). The function
+must use local input/declared candidates only. Do not change recipients, physics,
+retention, sensing, supply or default modes. Preserve source-frozen parents and
+prove Baseline parity before final treatment. No outcome-directed tuning,025,
+material preparation or automatic024protection follows.

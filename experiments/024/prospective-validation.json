@@ -1,0 +1,20 @@
+{
+  "status": "Prospective design/locality/identity checks PASS; runtime gates remain",
+  "protected_commit": "4da9fdcd03da31e72512f51979a966e64f7e9e79",
+  "diagnosis_commit": "ce646dce4c0e4d4cd7095ab7f53553d75dcc5551",
+  "worlds": 56,
+  "matched_pairs": 27,
+  "report_placebos": 2,
+  "original_source023_control_configs": 20,
+  "protected_artifacts": 386,
+  "inherited_entries": 361,
+  "no024_runtime_or_outcomes_present": true,
+  "registered_documents_sha256": {
+    "experiments/024/specification.md": "d277b2ff5574d0169cd59ae9acdad017fbeaa29386567aa885b85e0d34b762b0",
+    "experiments/024/design-gate.md": "3f41ed23b1790d952eea3c194f0cf2b088424101bcb14a2ca95b07bd5aa3c0bd",
+    "experiments/024/registered-matrix.json": "1157fa293c5e7a4cd046874d007d97490755043e60159817004079754fa84700",
+    "docs/development/activity-valuation-architecture.md": "511283e208a2ea8774e1d21821734571edcf6badfc61e94e45c422c852d0fb45",
+    "docs/development/continuous-activity-valuation-diagnosis.md": "7df26e60f0f594e2512bd011e1c0cfbabf2b55e979a7f95dc013a1a94735dbfc"
+  },
+  "qualification": "Static prospective checks; no treatment implementation or simulation outcomes. A design pass is not an empirical result. Final host parity and source/runtime checks remain mandatory."
+}

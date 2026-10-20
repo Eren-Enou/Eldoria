@@ -195,3 +195,13 @@ primitive observational helper `diagnose023_activity.py`, bounded findings and a
 browser captures under docs/development. Read-only023adapter version7repairs final
 checkpoint timeline IDs; all42index/reference regression,57main tests and four
 legacyJS suites pass. This changes historical navigation only, not simulation.
+
+## Prospectively gated 024 valuation research
+
+[Architecture](development/activity-valuation-architecture.md),
+[specification](../experiments/024/specification.md),
+[design gate](../experiments/024/design-gate.md) and fixed56-world matrix.
+Baseline versus MealRelief changes only eligible ordinary Consume fromHtoH+min(H,40)
+after old masks. No treatment implementation/outcomes at registration. Mandatory
+pre-treatment source-host baseline parity; no scheduler/consent/supply/cognition
+change. Main001–023remains protected;024unadopted and not automatically protected.

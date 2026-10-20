@@ -282,3 +282,15 @@ zero-transfer versus useful material/information outcomes. See
 [diagnosis](../development/continuous-activity-valuation-diagnosis.md). A newly found
 observer navigation defect is disclosed and repaired in derived adapter7with a
 before/after failing regression; original runtime/archives remain unchanged.
+
+## Experiment024 — prospective activity valuation
+
+[Specification](../../experiments/024/specification.md),
+[design gate](../../experiments/024/design-gate.md),
+[architecture](../development/activity-valuation-architecture.md).
+Fixed56worlds:27matched Baseline/MealRelief pairs and two reporting placebos.
+One ordinary-consumption score changes,H→H+min(H,40),with unchanged eligibility,
+other scores, recipient consent, timing, supply and cognition. Source-host baseline
+parity is mandatory before final treatment. At registration no implementation or
+outcome exists. This is not an empirical finding, default adoption,024protection,
+material preparation or025authorization.

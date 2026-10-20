@@ -392,3 +392,14 @@ trust with missing=0 separately from raw map shape. Preserve nulls,mixed outcome
 material reconvergence and scope qualifications. Main8765 acceptance and41Python/
 4JS tests are documented in knowledge-integration/acceptance.md. No viewer dependency
 in scientific gates.022 concurrency remains separately prospectively gated.
+
+## Experiment024prospective law
+
+Read experiments/024/specification.md, design-gate.md and registered-matrix.json.
+Fixed56worlds/27pairs/two report placebos; Baseline versus MealRelief. Only eligible
+ordinary Consume score H becomes H+min(H,40), after inherited protocol masks.
+Other candidate scores, ties, eligibility, recipient responses, scheduler, physical
+supply/hunger and bounded cognition stay unchanged. Do not retune after outcome
+inspection. Publish registration before treatment code; demonstrate inherited
+Baseline parity before final treatment evidence.024remains unadopted/unprotected;
+no025or material preparation is authorized.

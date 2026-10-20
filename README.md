@@ -620,3 +620,9 @@ its [integrity checks](docs/integrity-audit-001-023.md) for386original artifacts
 without adopting Continuous scheduling. The newly authorized activity-valuation
 program requires diagnosis and published024preregistration before treatment;
 material preparation and025remain outside scope.
+
+Experiment024is now prospectively gated as
+[local activity valuation](experiments/024/specification.md), with a fixed56-world
+matrix. It compares the unchanged rule with a bounded own-meal relief bonus;
+registration precedes implementation/outcomes. New modes remain opt-in research,
+with independent validation and negative/null findings required.
