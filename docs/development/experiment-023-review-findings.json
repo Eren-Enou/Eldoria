@@ -1,0 +1,700 @@
+{
+  "reviewed_revision": "336ab08354bda6dbdb5171e4066e28ea28344b6b",
+  "summary": {
+    "worlds": 42,
+    "strict_crossing_worlds": 20,
+    "unfinished_nominal_worlds": 26,
+    "choice": 19,
+    "terminal_food": 12,
+    "terminal_hunger": 5,
+    "terminal_trust": 19,
+    "complete_null": 1,
+    "reconverged": 3,
+    "higher_area": 14,
+    "lower_area": 7,
+    "more_zero_transfer": 15,
+    "pairs": 20,
+    "exact_report_placebos": 2
+  },
+  "pairs": [
+    {
+      "ordinals": [
+        0,
+        1
+      ],
+      "hunger_area_delta": [
+        515,
+        -1485,
+        355,
+        -1790
+      ],
+      "choice": true,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": true,
+      "lower_area": true,
+      "more_zero_transfer": true
+    },
+    {
+      "ordinals": [
+        2,
+        3
+      ],
+      "hunger_area_delta": [
+        -765,
+        -1305,
+        4800,
+        2890
+      ],
+      "choice": true,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": true,
+      "lower_area": true,
+      "more_zero_transfer": true
+    },
+    {
+      "ordinals": [
+        4,
+        5
+      ],
+      "hunger_area_delta": [
+        2915,
+        525,
+        30,
+        405
+      ],
+      "choice": true,
+      "terminal_food": true,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": true,
+      "lower_area": false,
+      "more_zero_transfer": true
+    },
+    {
+      "ordinals": [
+        6,
+        7
+      ],
+      "hunger_area_delta": [
+        2915,
+        525,
+        0,
+        385
+      ],
+      "choice": true,
+      "terminal_food": true,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": true,
+      "lower_area": false,
+      "more_zero_transfer": true
+    },
+    {
+      "ordinals": [
+        8,
+        9
+      ],
+      "hunger_area_delta": [
+        1775,
+        2565,
+        0,
+        0
+      ],
+      "choice": true,
+      "terminal_food": true,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": true,
+      "lower_area": false,
+      "more_zero_transfer": true
+    },
+    {
+      "ordinals": [
+        10,
+        11
+      ],
+      "hunger_area_delta": [
+        0,
+        0,
+        5,
+        0
+      ],
+      "choice": true,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": true,
+      "higher_area": true,
+      "lower_area": false,
+      "more_zero_transfer": true
+    },
+    {
+      "ordinals": [
+        12,
+        13
+      ],
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "choice": true,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": false,
+      "lower_area": false,
+      "more_zero_transfer": true
+    },
+    {
+      "ordinals": [
+        14,
+        15
+      ],
+      "hunger_area_delta": [
+        0,
+        5,
+        0,
+        5
+      ],
+      "choice": true,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": true,
+      "higher_area": true,
+      "lower_area": false,
+      "more_zero_transfer": true
+    },
+    {
+      "ordinals": [
+        16,
+        17
+      ],
+      "hunger_area_delta": [
+        515,
+        -2325,
+        355,
+        -3985
+      ],
+      "choice": true,
+      "terminal_food": true,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": true,
+      "lower_area": true,
+      "more_zero_transfer": true
+    },
+    {
+      "ordinals": [
+        18,
+        19
+      ],
+      "hunger_area_delta": [
+        2070,
+        420,
+        0,
+        -360
+      ],
+      "choice": true,
+      "terminal_food": true,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": true,
+      "higher_area": true,
+      "lower_area": true,
+      "more_zero_transfer": true
+    },
+    {
+      "ordinals": [
+        20,
+        21
+      ],
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "choice": false,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": false,
+      "complete_null": true,
+      "reconverged": false,
+      "higher_area": false,
+      "lower_area": false,
+      "more_zero_transfer": false
+    },
+    {
+      "ordinals": [
+        22,
+        23
+      ],
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "choice": true,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": false,
+      "lower_area": false,
+      "more_zero_transfer": true
+    },
+    {
+      "ordinals": [
+        24,
+        25
+      ],
+      "hunger_area_delta": [
+        40,
+        -395,
+        380,
+        -260
+      ],
+      "choice": true,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": true,
+      "lower_area": true,
+      "more_zero_transfer": false
+    },
+    {
+      "ordinals": [
+        26,
+        27
+      ],
+      "hunger_area_delta": [
+        -150,
+        355,
+        155,
+        -520
+      ],
+      "choice": true,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": true,
+      "lower_area": true,
+      "more_zero_transfer": true
+    },
+    {
+      "ordinals": [
+        28,
+        29
+      ],
+      "hunger_area_delta": [
+        2160,
+        -645,
+        3645,
+        2135
+      ],
+      "choice": true,
+      "terminal_food": true,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": true,
+      "lower_area": true,
+      "more_zero_transfer": false
+    },
+    {
+      "ordinals": [
+        30,
+        31
+      ],
+      "hunger_area_delta": [
+        2835,
+        3280,
+        2835,
+        900
+      ],
+      "choice": true,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": true,
+      "lower_area": false,
+      "more_zero_transfer": false
+    },
+    {
+      "ordinals": [
+        32,
+        33
+      ],
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "choice": true,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": false,
+      "lower_area": false,
+      "more_zero_transfer": true
+    },
+    {
+      "ordinals": [
+        34,
+        35
+      ],
+      "hunger_area_delta": [
+        2875,
+        2875,
+        0,
+        0
+      ],
+      "choice": true,
+      "terminal_food": true,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": true,
+      "lower_area": false,
+      "more_zero_transfer": false
+    },
+    {
+      "ordinals": [
+        36,
+        37
+      ],
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "choice": true,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": false,
+      "lower_area": false,
+      "more_zero_transfer": true
+    },
+    {
+      "ordinals": [
+        38,
+        39
+      ],
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "choice": true,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "complete_null": false,
+      "reconverged": false,
+      "higher_area": false,
+      "lower_area": false,
+      "more_zero_transfer": true
+    }
+  ],
+  "witnesses": {
+    "0": {
+      "social": 9,
+      "meals": 12,
+      "transfers": 2,
+      "zero_transfer": 7,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        95,
+        100,
+        95
+      ],
+      "area": [
+        4065,
+        3660,
+        4065,
+        3660
+      ],
+      "stock": 0
+    },
+    "1": {
+      "social": 28,
+      "meals": 8,
+      "transfers": 15,
+      "zero_transfer": 13,
+      "final_food": [
+        1,
+        0,
+        0,
+        3
+      ],
+      "final_hunger": [
+        100,
+        55,
+        100,
+        50
+      ],
+      "area": [
+        4580,
+        2175,
+        4420,
+        1870
+      ],
+      "stock": 0
+    },
+    "10": {
+      "social": 11,
+      "meals": 4,
+      "transfers": 0,
+      "zero_transfer": 11,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "area": [
+        8340,
+        5540,
+        5145,
+        5500
+      ],
+      "stock": 0
+    },
+    "11": {
+      "social": 29,
+      "meals": 4,
+      "transfers": 0,
+      "zero_transfer": 29,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "area": [
+        8340,
+        5540,
+        5150,
+        5500
+      ],
+      "stock": 0
+    },
+    "18": {
+      "social": 69,
+      "meals": 5,
+      "transfers": 2,
+      "zero_transfer": 67,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "area": [
+        36910,
+        36810,
+        38980,
+        36810
+      ],
+      "stock": 0
+    },
+    "19": {
+      "social": 172,
+      "meals": 3,
+      "transfers": 87,
+      "zero_transfer": 85,
+      "final_food": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "area": [
+        38980,
+        37230,
+        38980,
+        36450
+      ],
+      "stock": 0
+    },
+    "20": {
+      "social": 0,
+      "meals": 0,
+      "transfers": 0,
+      "zero_transfer": 0,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "area": [
+        640,
+        640,
+        640,
+        640
+      ],
+      "stock": 0
+    },
+    "21": {
+      "social": 0,
+      "meals": 0,
+      "transfers": 0,
+      "zero_transfer": 0,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "area": [
+        640,
+        640,
+        640,
+        640
+      ],
+      "stock": 0
+    },
+    "22": {
+      "social": 11,
+      "meals": 1,
+      "transfers": 0,
+      "zero_transfer": 11,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "area": [
+        8340,
+        9500,
+        9500,
+        9500
+      ],
+      "stock": 0
+    },
+    "23": {
+      "social": 30,
+      "meals": 1,
+      "transfers": 0,
+      "zero_transfer": 30,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "area": [
+        8340,
+        9500,
+        9500,
+        9500
+      ],
+      "stock": 0
+    }
+  },
+  "rejected_controls": [
+    "wrong_public_end",
+    "wrong_consume_score",
+    "partner_private_input",
+    "wrong_phase",
+    "false_final_food"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "reference": "336ab08354bda6dbdb5171e4066e28ea28344b6b",
+  "stage": "A independent023review",
+  "protected_endpoint": "001-022",
+  "protected_artifacts": 361,
+  "raw_original_guard_files": 403,
+  "checks": [
+    {
+      "command": "cargo run --release --locked -j 1 --example validate023",
+      "exit": 0,
+      "log": "%TEMP%/activity-valuation-024/A-validate023.log"
+    },
+    {
+      "command": "python -B examples/support/review023_findings.py --output docs/development/experiment-023-review-findings.json",
+      "exit": 0,
+      "worlds": 42,
+      "new_scratch_controls": 5
+    },
+    {
+      "command": "python -B examples/support/slices023.py --verify",
+      "exit": 0
+    },
+    {
+      "command": "python -B examples/support/coverage023.py --verify",
+      "exit": 0
+    },
+    {
+      "command": "python -B examples/support/review023_endpoints.py --verify",
+      "exit": 0
+    },
+    {
+      "command": "python -B examples/support/review023_inquiry.py --verify",
+      "exit": 0
+    }
+  ],
+  "scope": "Review-only complementary reconstruction; original cognitive/primitive gate remains separately executed; no original archive writer used"
+}

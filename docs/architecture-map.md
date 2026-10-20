@@ -178,3 +178,8 @@ Final program references: [delivery report](development/first-continuous-world-d
 [readiness and material decision](development/continuous-world-readiness.md).
 These supersede older prospective next-step statements: 023 is completed research,
 unprotected pending independent review; no 024 or production was begun.
+
+Current authorized activity-valuation program: [independent 023 review](experiment-023-review.md)
+at 336ab08 accepts with qualification. Its new complementary score/physical checker
+is `examples/support/review023_findings.py`; findings and executed review validation
+are under docs/development. Protection and dependent 024 work have separate gates.

@@ -33,6 +33,14 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
+The newly authorized activity-valuation program (attachment 963863ea) supersedes
+earlier next-experiment prohibitions only through its explicit scientific gates.
+023 review at 336ab08 accepts with qualification; see docs/experiment-023-review.md.
+Qualified 001–023 protection must actually pass and be published before dependent
+024 implementation. Finish observational diagnosis, then publish fixed 024
+registration before treatment code/outcomes. No material preparation, new supply,
+025, planner, automatic 024 protection, policy adoption or canon change is authorized.
+
 The First Continuous World program reviewed/protected022and prospectively registered
 023atcf946fa. Experiment023is completed opt-in continuous-opportunity research,
 ACCEPT WITH QUALIFICATION pending independentreview; it is NOT protected/adopted.
