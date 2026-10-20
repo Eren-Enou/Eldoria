@@ -1,0 +1,37 @@
+{
+  "status": "PASS prospective only; no runtime/outcomes",
+  "protected_commit": "68b4c70d3a1d2c3d6df9269d25c9b8efa9a7443b",
+  "review_commit": "4dfc71c74cffd917d2071585226e127bee9b00c7",
+  "registered_worlds": 50,
+  "primary_access_pairs": 24,
+  "reporting_placebos": 2,
+  "fixed_valuation": "Baseline",
+  "compatibility_old_worlds_required": 56,
+  "conversion_mass_units": [
+    2,
+    1,
+    1
+  ],
+  "public_total_work_durations": [
+    6,
+    12,
+    32
+  ],
+  "design_questions": 24,
+  "checks": [
+    "pair configs differ only access",
+    "placebo configs differ only report period and observer labels",
+    "positive phases fit33",
+    "single-source glance offsets valid/disjoint",
+    "no025runtime/outcomes exist",
+    "actual protection remote matches",
+    "all107validated foundation source bindings unchanged"
+  ],
+  "registered_documents_sha256": {
+    "docs/development/finite-material-preparation-architecture.md": "90b4fb61395d31e5b532d9e9583a8fa6943105864ee2713b81a580263cec7a46",
+    "experiments/025/specification.md": "00e32e1d6fceea26e968026c93fd2b0334aa70e081778add3ee26dfa3428d2cc",
+    "experiments/025/design-gate.md": "cc1de90a740e113354e4855e04fedb02567a9e3480c9aa612f9b928b7104af07",
+    "experiments/025/registered-matrix.json": "efd166ec24ac60938f5a8429138f59c2b385be80eb299b5cd0bedd572995dc3e"
+  },
+  "qualification": "Detailed attachment ends mid-sentence atI3; missing tail requested. Known C\u2013G requirements prospectively specified; obtain/reconcile remaining detailed J\u2013L/completion instructions before claiming program delivery."
+}

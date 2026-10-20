@@ -34,18 +34,32 @@ Independent review published/remote-verified4dfc71c74cffd917d2071585226e127bee9b
 FreshBfmt/Clippy/217tests, extended normal001–024foundation (1578.726s) and
 standalone validate024_foundation (110.040s) PASS. Durable record:
 finite-material-foundation-validation.json; logs%TEMP%/finite-material-preparation.
-GateB checks pass; publish protection separately and verify actual remote before
-025runtime.408portable/425raw originals and all inherited gates passed.
+GateB published/actualremote-verified68b4c70d3a1d2c3d6df9269d25c9b8efa9a7443b.
+408portable/425raw originals and all inherited gates passed;107validated source
+bindings unchanged.
 
-Architecture investigation and025registration DRAFTS are also in working tree,
-not part of protection commit: finite-material-preparation-architecture.md and
+Architecture investigation and025prospective registration are the next separate
+publication (not part of protection commit): finite-material-preparation-architecture.md and
 experiments/025/{specification.md,design-gate.md,registered-matrix.json}.
 50fixed prospective rows=24access pairs+2report placebos, fixedBaseline; H−known
 workduration;2raw→1edible+1waste;6/12/32tickwork;one tagged source slot. No025
 runtime/outcomes. Matrix structure/pairs/placebos/duration bound checked.
-Feature-off old-world parity and new access-closed controls are explicitly different;
-raw observation can overwrite ready knowledge in both primary arms. Obtain missing
-attachment tail before claiming full program completion. No025runtime before
-published GateB and prospectively published025gate. Next: finish B, update current
-map/index/AGENTS/README status, commit only protection files, push/verify. Then
-finalize/publish prospective C–G separately before any025runtime code.
+Feature-off old-world parity (all56old024worlds,raw0,no new observations) and new
+access-closed controls are explicitly different; raw observation can overwrite
+ready knowledge in both primary arms. No hidden second slot. Primary full material
+reconvergence after waste differs from edible-holdings equality; sibling enabled
+order/effort contrasts are registered separately. Actual chosen Prepare must never
+be serialized as a legacy Wait/Claim placeholder.
+
+C–G prospective validation PASS:50configs,24access-only pairs,2report-only placebos,
+phases6/12/32<=33, all24design questions answered, source hashes/no-runtime checked.
+Publish/remote-verify this registration before any025runtime code. Missing attachment
+tail still requested; reconcile detailed J–L before overall completion claim.
+
+Next after registration publication: versioned prototypes/material-preparation
+host, generated025-only Work::Prepare/type namespace and new actual-choice/history
+records. Preserve frozen024host, add explicit reversible scheduler/type/ledger/slot
+seams. No new query coroutine; old global exclusivity blocks all live Prepare work.
+Pre-treatment56old parity, pure policy and physical/cognitive/scheduler controls,
+then source/helper freeze before first of50treatment worlds. No retuning/matrix
+expansion or forced food use. Original001–024sources/evidence remain immutable.

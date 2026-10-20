@@ -315,3 +315,13 @@ remains. Start18 versus first completed effect19 is explicit. Qualified protecti
 passes with408original artifacts (386inherited+22original024). MealRelief remains
 unadopted. New025research requires
 published001–024protection and its own prospective gate; no026/canon change.
+
+## Experiment025: prospectively registered finite preparation
+
+[Specification](../../experiments/025/specification.md), [gate](../../experiments/025/design-gate.md),
+[architecture](../development/finite-material-preparation-architecture.md):50fixed
+worlds,24access-only pairs+2report placebos, Baseline fixed. No runtime/outcomes
+yet; require separate remote-verified registration before implementation.2raw→
+1edible+1waste is a finite separation law, not renewable production. One retained
+source slot, positive two-phase effort, conserved escrow, full failure cost and
+independent later use; ignored work, harm and nulls remain valid. No026or adoption.

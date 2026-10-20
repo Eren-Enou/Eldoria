@@ -12,6 +12,15 @@ Qualified [001–024protection](integrity-audit-001-024.md) passes:408original a
 386inherited+22original024. Prospective025 design is separately gated; no025
 runtime or default adoption follows from review/protection. See the [checkpoint](development/continuation-checkpoint.md).
 
+## Prospective025boundary
+
+[Architecture](development/finite-material-preparation-architecture.md),
+[registration](../experiments/025/specification.md) and [gate](../experiments/025/design-gate.md)
+fix50worlds before code/outcomes:24access-only pairs,2report placebos, fixedBaseline,
+one tagged source slot and conserved2raw→1edible+1waste. GateB is published68b4c70.
+No025runtime or result exists; its own registration must be published before code.
+No default adoption/automatic025protection/026/canon change.
+
 ## Start here
 
 - Rules: [AGENTS.md](../AGENTS.md); protected [001–024 contract](experiment-contract-001-024.md),
