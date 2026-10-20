@@ -12,16 +12,17 @@ For engineering navigation, start with the [concise architecture map](docs/archi
 the read-only `validate_contract` gate described below; run/evaluate commands can
 overwrite evidence and should be used only for authorized target generation.
 
-Current scientific endpoint: [qualified001–023 protection](docs/experiment-contract-001-023.md),
+Current protected endpoint: [qualified001–023 protection](docs/experiment-contract-001-023.md),
 386original artifacts. The [independent023review](docs/experiment-023-review.md)
-accepts with qualification. A separately gated activity-valuation program is now
-authorized; no new policy is adopted, and no material production or025is underway.
+accepts with qualification. [Experiment 024](experiments/024/results.md) is complete
+causal research, ACCEPT WITH QUALIFICATION and unadopted. Its separate 56-world
+evidence is outside the protected foundation. No material production or025 exists.
 
 ## First Continuous World - optional023prototype
 
 Four persistent individuals now execute one bounded continuous-opportunity world
-across reporting checkpoints. The42world scheduling study is ACCEPT WITH
-QUALIFICATION, pending independent023review; protected history remains001-022.
+across reporting checkpoints. The 42-world scheduling study is independently accepted with qualification and
+protected through 001–023.
 More opportunity can delay meals and increase hunger. No production/default adoption.
 
 ```powershell
@@ -37,7 +38,8 @@ history; the CLI executes the actual world. [Runner guide](prototypes/continuous
 [results](experiments/023/results.md), [verification](experiments/023/verification.md),
 [readiness/future material decision](docs/development/continuous-world-readiness.md).
 Read-only023gate: `cargo run --release --locked -j 1 --example validate023`.
-No024or material-production implementation follows from this result.
+024 is a separately preregistered valuation study; no material production follows
+from either result.
 
 ## History Explorer — inspect actual recorded lives
 
@@ -617,12 +619,38 @@ community verdict and conditional future material study.
 The subsequent [independent023review](docs/experiment-023-review.md) accepts with
 qualification. [001–023protection](docs/experiment-contract-001-023.md) now passes
 its [integrity checks](docs/integrity-audit-001-023.md) for386original artifacts,
-without adopting Continuous scheduling. The newly authorized activity-valuation
-program requires diagnosis and published024preregistration before treatment;
-material preparation and025remain outside scope.
+without adopting Continuous scheduling. The subsequent activity-valuation program
+completed diagnosis and published024 preregistration before treatment; material
+preparation and025 remain outside scope.
 
-Experiment024is now prospectively gated as
-[local activity valuation](experiments/024/specification.md), with a fixed56-world
-matrix. It compares the unchanged rule with a bounded own-meal relief bonus;
-registration precedes implementation/outcomes. New modes remain opt-in research,
-with independent validation and negative/null findings required.
+## Experiment 024 — locally grounded activity valuation
+
+The [published preregistration](experiments/024/specification.md) preceded a fixed
+56-world study: 27 Baseline/MealRelief pairs and two reporting placebos. Only an
+eligible ordinary Consume score changes from H to H+min(H,40). Source, timing,
+consent, cognition, supply and all other scores remain unchanged. Baseline remains
+the prototype default. No outcome-directed retuning occurred.
+
+[Results](experiments/024/results.md): 19 pairs change executed histories, 15 have
+more meals and four fewer; seven raise at least one actor's cumulative hunger.
+Eight pairs remain behavior/state nulls apart from score fields. Exhaustion can
+consume all finite food without becoming a sustainable world. All 56 exact replays,
+independent reconstructions and 34 corruption controls pass; see
+[verification](experiments/024/verification.md). This is not adoption or 024 protection.
+
+```powershell
+cargo run --release --locked -j 1 --example validate024
+python -B tools/history-explorer/explorer.py --continuous experiments/023 --valuation experiments/024
+```
+
+The real main viewer exposes exact own-state score terms, matched decisions,
+actual meals/transfers, timed meal deferrals and separate observer consequences.
+Use the **024 · Costly earlier meal** preset and inspect tick18, individual0.
+[Runner guide](prototypes/activity-valuation/README.md),
+[actual viewer acceptance](docs/development/main024-viewer-acceptance.md),
+[community readiness](docs/development/post-024-community-readiness.md),
+[future material handoff](docs/development/post-024-material-preparation-handoff.md).
+The handoff does not register or implement025. The
+[delivery report](docs/development/activity-valuation-delivery.md) and
+[completion audit](docs/development/activity-valuation-completion-audit.md) cover
+the entire review, protection, diagnosis, experiment and viewing program.

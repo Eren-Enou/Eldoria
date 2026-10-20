@@ -283,14 +283,23 @@ zero-transfer versus useful material/information outcomes. See
 observer navigation defect is disclosed and repaired in derived adapter7with a
 before/after failing regression; original runtime/archives remain unchanged.
 
-## Experiment024 — prospective activity valuation
+## Experiment 024 — local activity valuation (completed, unadopted)
 
-[Specification](../../experiments/024/specification.md),
-[design gate](../../experiments/024/design-gate.md),
-[architecture](../development/activity-valuation-architecture.md).
-Fixed56worlds:27matched Baseline/MealRelief pairs and two reporting placebos.
-One ordinary-consumption score changes,H→H+min(H,40),with unchanged eligibility,
-other scores, recipient consent, timing, supply and cognition. Source-host baseline
-parity is mandatory before final treatment. At registration no implementation or
-outcome exists. This is not an empirical finding, default adoption,024protection,
-material preparation or025authorization.
+[Preregistration](../../experiments/024/specification.md) published before treatment;
+[results](../../experiments/024/results.md) ACCEPT WITH QUALIFICATION. Baseline and
+MealRelief compare 27 matched pairs plus two report placebos. Only eligible
+ordinary Consume receives min(own H,40); no physics/consent/cognitive change.
+19 pairs change execution and persistent outcomes; eight have behavior/state nulls
+apart from score fields. More meals occur in 15 pairs, fewer in four; higher hunger
+for some actors remains a real cost. Finite food still exhausts. Inquiry outcomes
+do not change in the tested fixtures.
+
+[Verification](../../experiments/024/verification.md): full and complementary
+independent reconstruction, 56 exact byte replays, all 34 corruption controls
+rejected, all386 protected artifacts and403 raw originals unchanged. Source96 and
+validation17 were frozen before outcomes. Separate `validate024` does not extend
+001–023 or adopt the rule. [Main viewer](../development/main024-viewer-acceptance.md)
+uses explicit024 schema/version8. [Readiness](../development/post-024-community-readiness.md)
+and [future handoff](../development/post-024-material-preparation-handoff.md) recommend
+only a separately authorized finite delayed-work study. No025 or material supply
+was added.

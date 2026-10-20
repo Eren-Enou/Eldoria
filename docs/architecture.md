@@ -881,3 +881,40 @@ is locally duplicated to leave frozen020 source byte-identical. Drift risk remai
 fresh/disabled-path tests and read-only001–020/021 replays are required rather than
 assuming apparent code similarity proves compatibility. [Results](../experiments/021/results.md)
 are qualified research,not adoption/protection or general scheduling evidence.
+
+## Experiment 024: isolated ordinary activity valuation
+
+Current protected scheduling authority is the qualified
+[001–023 contract](experiment-contract-001-023.md), including four persistent
+individuals, Continuous public opportunities, observer reporting checkpoints,
+nominal stopping and a charged completion period. Historical mode sections above
+retain their own semantics. Neither Continuous nor 024 is a root default.
+
+`prototypes/activity-valuation` compiles the immutable root/023 host in a separate
+workspace. Its generator verifies original locks and reverses every declared
+coordinator substitution exactly. Only the ordinary decision's final scoring seam
+after existing protocol masks changes. Recipient reply, consent, admission,
+reservation, clock, sensing, resource, inquiry, meal, claim and drain bodies remain
+unchanged. Pre-treatment parity checked42original byte reruns and22new Baseline
+bodies/checkpoints, apart from the explicitly declared024physical schema.
+
+The replaceable pure selector receives an existing actor-local `Input` and four
+legitimate candidates. Baseline preserves scores; MealRelief adds min(H,40) only
+to eligible Consume. Stable first-maximum order and all eligibility remain exact.
+It adds no goal planner, future estimate, partner-private projection, learned
+weight or cognitive field. Incoming consent can still reserve an actor before
+the ordinary selection. Acquire/Consume retain their mutually exclusive own-food
+eligibility and compete with contact sequentially in continuing histories.
+
+The new `valuation::Trial` explicitly stores its config, original physical body,
+checkpoints and scalar audit records referencing boundary/choice pairs. Policy
+labels/families/source ordinals are external configuration/observer metadata,
+not selector inputs. Actual later effects arise through established resolvers.
+The separate `validate024` reconstructs original primitives/scores and exact byte
+replays without extending normal foundation validation or changing old defaults.
+
+[Preregistered architecture](development/activity-valuation-architecture.md),
+[results](../experiments/024/results.md) and [verification](../experiments/024/verification.md)
+document mixed material/social outcomes, nulls, computational/storage cost and
+limitations. MealRelief remains unadopted research. Future delayed material work
+requires a separate authorization and gate; no025/preparation system exists here.

@@ -156,3 +156,45 @@ separate from deterministic evidence;see [verification](../experiments/021/verif
 The standalone validate021 checks its own originals and independent reconstructions.
 It does not extend the protected001–020 contract. Explorer currently supports explicit
 018/019/020 schemas;021 is not coerced into an older adapter.
+
+## Current 024 valuation audit and main historical inspection
+
+The qualified protected endpoint is001–023. Experiment024 has separate original
+research evidence and does not extend that inventory. Its explicit
+`experiment-024-trial/v1` envelope retains a versioned024physical body, config,
+reporting checkpoints and `valuations`. Each scalar valuation record identifies
+one existing boundary/choice and stores eligibility, base score, meal bonus,
+final score and selection for four candidates. It does not duplicate the full
+owned input or become an ECS/actor component. The actor receives no observer
+history or outcome classification through this audit.
+
+The full primitive reader independently reconstructs legitimate input, cognition,
+retention, scores/ties, consent, time and accounting. A separate reader reconstructs
+physical timelines and contact/activity arithmetic. Exact original/source/member
+hashes,27matched prefixes,2reportplacebos and34scratch corruption controls supplement
+56byte replays. A later completion or attribution cannot restore unavailable
+cognition, erase executed consequences or retroactively change selected scores.
+Separately established trust/concerns retain their earlier mode-specific lifetimes.
+
+The main viewer is an independent, one-way source consumer. Its explicit024adapter
+uses schema/version8; original023 remains7. Lossless imports are rebuilt from
+verified original membership, discarding poisoned derived fields. Actor projection
+uses only the selected individual's exact captured decision and matching scalar
+audit. Reporting/observer snapshots and later provenance/physical outcomes never
+fill absent owned cognition. References distinguish `history.*`, `checkpoints[*]`
+and `valuations[*]` within the actual new envelope; no earlier schema is fabricated.
+
+Observer comparison keeps first score difference, first choice, actual started
+commitment, completed physical effect and terminal state conceptually distinct.
+The archived024 `first_execution` measure compares completion effects, not starts;
+the [supplemental start audit](development/activity-valuation-started-work-audit.json)
+checks that difference explicitly. Actual time-spending eligible-meal deferrals,
+transfers and inquiry delivery can be inspected without assigning global utility.
+
+Recorded observer history still grows. Scalar audits account for about2.11% of
+decoded024storage; full histories dominate. Two-entry viewer caches and bounded
+actor memory do not establish bounded total observer/browser memory. See
+[verification](../experiments/024/verification.md) and
+[actual browser acceptance](development/main024-viewer-acceptance.md) for separate
+runtime, reconstruction and viewing costs. No live tuning or source mutation is
+provided by History Explorer.

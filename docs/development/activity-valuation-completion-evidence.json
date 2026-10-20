@@ -1,0 +1,167 @@
+{
+  "scope": "Final read-only current-state identity/ancestry and artifact audit; previously executed full gates reused only with exact relevant source identities. No treatment or archive regenerated.",
+  "protected_artifacts": 386,
+  "inherited_entries": 361,
+  "raw_originals": 403,
+  "unchanged_foundation_gate_source_bindings": 100,
+  "source024": 96,
+  "validation024": 17,
+  "prior_milestone_commits": [
+    "5ff98ff47db48706078fd18ed985d5acb29eadac",
+    "4da9fdcd03da31e72512f51979a966e64f7e9e79",
+    "ce646dce4c0e4d4cd7095ab7f53553d75dcc5551",
+    "80325c1e85bbdef0344d7b723618becbf0208ef8",
+    "d5fa6a721c7dce809ccc191e1ae86712dfac8463",
+    "9702f3ca4730a9dba4f3e3af02aa690e77a154ec"
+  ],
+  "chronological_ancestry": true,
+  "registration_commit_contains_no_runtime_or_outcomes": true,
+  "root_library_and_old_experiment_diff_empty": true,
+  "no025_or_024_foundation": true,
+  "scientific_summary": {
+    "worlds": 56,
+    "pairs": 27,
+    "report_placebos": 2,
+    "selected_differences": 19,
+    "executed_differences": 19,
+    "terminal_food_differences": 19,
+    "terminal_hunger_differences": 13,
+    "terminal_trust_differences": 19,
+    "full_history_body_nulls": 4,
+    "body_nulls_ignoring_only_consume_scores": 8,
+    "temporary_food_reconvergences": 3,
+    "pairs_any_higher_hunger_area": 7,
+    "pairs_any_lower_hunger_area": 15
+  },
+  "all034_corruption_results_rejected": true,
+  "standalone_invocations": 19,
+  "root_tests": 217,
+  "prototype_tests": 7,
+  "viewer_tests": 65,
+  "viewer_bound_source_files": 8,
+  "readiness_questions": 14,
+  "delivery_parts": 6,
+  "acceptance_criteria": 20,
+  "sequential_acquisition_contact_consumption": [
+    {
+      "ordinal": 0,
+      "choice_ref": "history.boundaries[8].choices[0]",
+      "own": {
+        "id": 0,
+        "food": 0,
+        "hunger": 30
+      },
+      "retained": {
+        "owner": 0,
+        "receipt": 1,
+        "observation": {
+          "id": 0,
+          "observed_at": 14,
+          "stock": 4,
+          "accessible": true,
+          "duration": 4
+        },
+        "own_takes": 0
+      },
+      "candidates": [
+        {
+          "action": "Wait",
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "action": "Consume",
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "action": "Invite",
+          "eligible": true,
+          "score": 13
+        },
+        {
+          "action": "Acquire",
+          "eligible": true,
+          "score": 30
+        }
+      ],
+      "grant_ref": "history.grants[0]",
+      "grant": {
+        "commitment": 20,
+        "tick": 18,
+        "owner": 0,
+        "stock_before": 4,
+        "stock_after": 3,
+        "food_before": 0,
+        "food_after": 1,
+        "outcome": "Granted"
+      }
+    },
+    {
+      "ordinal": 1,
+      "choice_ref": "history.boundaries[8].choices[0]",
+      "own": {
+        "id": 0,
+        "food": 0,
+        "hunger": 30
+      },
+      "retained": {
+        "owner": 0,
+        "receipt": 1,
+        "observation": {
+          "id": 0,
+          "observed_at": 14,
+          "stock": 4,
+          "accessible": true,
+          "duration": 4
+        },
+        "own_takes": 0
+      },
+      "candidates": [
+        {
+          "action": "Wait",
+          "eligible": true,
+          "score": 0
+        },
+        {
+          "action": "Consume",
+          "eligible": false,
+          "score": -1
+        },
+        {
+          "action": "Invite",
+          "eligible": true,
+          "score": 13
+        },
+        {
+          "action": "Acquire",
+          "eligible": true,
+          "score": 30
+        }
+      ],
+      "grant_ref": "history.grants[0]",
+      "grant": {
+        "commitment": 20,
+        "tick": 18,
+        "owner": 0,
+        "stock_before": 4,
+        "stock_after": 3,
+        "food_before": 0,
+        "food_after": 1,
+        "outcome": "Granted"
+      }
+    }
+  ],
+  "started_work_audit_sha256": "037ec045522a3d5a78b1eeae135d41902c8b726f4c3f461d5c4346fd95fb1849",
+  "publication": "First six milestones published and remotely verified. Final handoff commit/remote verification is recorded by the final task response; no circular self hash is embedded.",
+  "original023_lock_counts": {
+    "experiments/023/source-freeze.json": 80,
+    "experiments/023/validation-source-locks.json": 5
+  },
+  "started_work_reconstruction": {
+    "command": "python -B examples/support/review024_starts.py experiments/024/trials.jsonl.gz --expected docs/development/activity-valuation-started-work-audit.json --comparisons experiments/024/comparisons.json",
+    "exit": 0,
+    "helper_sha256": "6d68e5b17ab1ad67349c7ee5b30d785521c150c3bd3c0beb4f20fc9a00d74baa",
+    "source_scope": "Read-only post-outcome supplementary timing interpretation; no simulation/policy import or archived metric change"
+  }
+}

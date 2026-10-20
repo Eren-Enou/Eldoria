@@ -178,7 +178,7 @@ python -B tools/history-explorer/explorer.py --continuous experiments/023
 ```
 
 This adds42original023research worlds through an explicit version7adapter; it does
-not extend the protected001-022foundation or adopt a simulation policy. Add another
+not extend the protected001–023 foundation or adopt a simulation policy. Add another
 `--continuous target/my-continuous-world.jsonl` to inspect an actual CLI-generated
 custom run. Custom data is clearly labelled outside the registered matrix. Use the
 [runner](../../prototypes/continuous-world/README.md) to generate it without source edits.

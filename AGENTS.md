@@ -33,14 +33,14 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-The newly authorized activity-valuation program (attachment 963863ea) supersedes
-earlier next-experiment prohibitions only through its explicit scientific gates.
-023 review at 336ab08 accepts with qualification; see docs/experiment-023-review.md.
-Qualified 001–023 protection has passed all checks (386 original artifacts; 361
-inherited unchanged plus25original023 files). Its separate publication must be
-verified before dependent024implementation. Finish observational diagnosis, then publish fixed024
-registration before treatment code/outcomes. No material preparation, new supply,
-025, planner, automatic 024 protection, policy adoption or canon change is authorized.
+The activity-valuation program (attachment 963863ea) independently reviewed and
+conditionally protected 023, then preregistered and evaluated 024. Qualified
+001–023 protection contains 386 original artifacts: 361 inherited entries and 25
+original023 files. See docs/experiment-023-review.md and the current handoff.
+024 is ACCEPT WITH QUALIFICATION as causal research, remains unadopted and outside
+that protected foundation. Preserve its registered law, source freeze, original
+outcomes, costs and nulls. No material preparation, new supply,025, planner,
+automatic024 protection, policy adoption or canon change is authorized.
 
 The First Continuous World program reviewed/protected022and prospectively registered
 023atcf946fa. Its original delivery left023unprotected; the new independent review
@@ -393,13 +393,19 @@ material reconvergence and scope qualifications. Main8765 acceptance and41Python
 4JS tests are documented in knowledge-integration/acceptance.md. No viewer dependency
 in scientific gates.022 concurrency remains separately prospectively gated.
 
-## Experiment024prospective law
+## Experiment 024 completed research law
 
 Read experiments/024/specification.md, design-gate.md and registered-matrix.json.
 Fixed56worlds/27pairs/two report placebos; Baseline versus MealRelief. Only eligible
 ordinary Consume score H becomes H+min(H,40), after inherited protocol masks.
 Other candidate scores, ties, eligibility, recipient responses, scheduler, physical
 supply/hunger and bounded cognition stay unchanged. Do not retune after outcome
-inspection. Publish registration before treatment code; demonstrate inherited
-Baseline parity before final treatment evidence.024remains unadopted/unprotected;
-no025or material preparation is authorized.
+inspection. Published registration preceded treatment; 42 original reruns and
+22 new Baseline bodies passed pre-treatment parity. Read results.md and
+verification.md: 19/27 pairs change execution, eight behavior/state nulls remain,
+and earlier consumption can raise later hunger or reduce total meals. Do not rank
+all scenes, transfers or meals as universal benefit. The separate validate024 gate
+checks 56 originals, 34 corruption controls and exact replay without extending the
+foundation. Main viewer --valuation uses explicit schema/version8, owned scalar
+terms and separately labeled later observer outcomes. Future material handoff is
+recommendation only; no025 or preparation implementation is authorized.

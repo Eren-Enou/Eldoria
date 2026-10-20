@@ -50,7 +50,7 @@ rows when ownership, entry points or mode boundaries change.
 | Read-only History Explorer application | [app/tooling](../tools/history-explorer/README.md), `tools/history-explorer/explorer.py`, `causal.py`/`causal.js`, `finite.py`/`knowledge.py`, `perspective.js`, `app.js`; [technical guide](development/history-explorer-architecture.md) | Python real-archive and typed-link tests, JS owned-point/filter/order tests, explicit020/021 actor/claim/material/knowledge comparison,all164/214 original references,[020 acceptance](../tools/history-explorer/validation/finite-integration/acceptance.md),[021 acceptance](../tools/history-explorer/validation/knowledge-integration/acceptance.md),real-browser node navigation, [original acceptance](../tools/history-explorer/validation/acceptance.md), [causal acceptance](../tools/history-explorer/validation/causal-navigation-acceptance.md); one-way consumer, no foundation dependency |
 | Opt-in 024 decision inspection | `tools/history-explorer/valuation_history.py`, explicit `--valuation`; main `native-concurrent.js` / `app.js` | Version8 lossless024 envelope, 56 original references / 27 scientific comparisons, owned score terms, timed meal deferrals, privacy and read-only routes; [actual acceptance](development/main024-viewer-acceptance.md); old023adapter remains7 |
 | CLI and reproducible experiment fixtures | [main.rs](../src/main.rs), `src/experiment.rs`, `src/experiment002.rs` … `src/experiment021.rs` | Corresponding experiment tests/evaluators |
-| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), shared `examples/support/contract009.rs` … `contract022.rs`, independent010–022 readers | Cache-free010–021 validation; shared standalone gates; historical summaries unchanged; [latest integrity audit](integrity-audit-001-022.md) |
+| Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), shared `contract009.rs` through `contract023.rs`, standalone original/foundation gates and independent readers | Source-bound cache-free001–023 integrity, immutable original archives, accepted review anchors and exact replay; [latest audit](integrity-audit-001-023.md). Separate `validate024` checks unprotected research; no viewer dependency |
 | Throughput workload / history measurements | [throughput.rs](../benches/throughput.rs), `examples/measure_history.rs` | Separate wall-clock output; historical reports unchanged |
 
 Use `rg -n 'symbol' path/to/file.rs` to locate implementation before reading a
@@ -172,13 +172,15 @@ ACCEPT WITH QUALIFICATION pending independentreview; protected endpoint stays001
 Main optional023consumer: `tools/history-explorer/continuous_history.py` and native
 frontend; explicit envelope/physical schemas, reporting markers and actual delivery
 IDs, customprototype source label. [Acceptance](development/main023-viewer-acceptance.md).
-No evaluator/viewer dependency in scientific authority. No production/024/adoption.
+No evaluator/viewer dependency in scientific authority. That earlier delivery did
+not implement production or024, or adopt a default.
 
 Final program references: [delivery report](development/first-continuous-world-delivery.md),
 [20-item acceptance audit](development/continuous-world-completion-audit.md),
 [readiness and material decision](development/continuous-world-readiness.md).
-These supersede older prospective next-step statements: 023 is completed research,
-unprotected pending independent review; no 024 or production was begun.
+Those reports preserve the earlier delivery status. The independent review and
+001–023 protection below supersede its pending-review status;024 was subsequently
+preregistered and completed separately. No production was begun.
 
 Current authorized activity-valuation program: [independent 023 review](experiment-023-review.md)
 at 336ab08 accepts with qualification. Its new complementary score/physical checker
@@ -197,12 +199,24 @@ browser captures under docs/development. Read-only023adapter version7repairs fin
 checkpoint timeline IDs; all42index/reference regression,57main tests and four
 legacyJS suites pass. This changes historical navigation only, not simulation.
 
-## Prospectively gated 024 valuation research
+## Completed 024 valuation research — opt-in, unadopted
 
-[Architecture](development/activity-valuation-architecture.md),
-[specification](../experiments/024/specification.md),
-[design gate](../experiments/024/design-gate.md) and fixed56-world matrix.
-Baseline versus MealRelief changes only eligible ordinary Consume fromHtoH+min(H,40)
-after old masks. No treatment implementation/outcomes at registration. Mandatory
-pre-treatment source-host baseline parity; no scheduler/consent/supply/cognition
-change. Main001–023remains protected;024unadopted and not automatically protected.
+[Architecture](development/activity-valuation-architecture.md) and
+[fixed preregistration](../experiments/024/specification.md) preceded implementation
+in `prototypes/activity-valuation`. The generated host verifies frozen parents and
+reverses every declared ordinary-selection substitution. Only eligible Consume
+receives min(H,40); all other scores, legality, cognition, consent and physics stay
+unchanged. The pre-treatment 42 original / 22 new Baseline parity gate passed.
+
+[Results](../experiments/024/results.md): 56 worlds, 27 matched pairs, two exact
+reporting placebos; 19 execution differences, eight behavioral nulls after score
+projection, harmful earlier meals, finite relief and persistent social/material
+consequences. `review024.py`, complementary `review024_findings.py`, `analyze024.py`
+and the separate root `validate024` check primitives/scores, 34 scratch corruptions,
+exact replay and source/archive identity. [Verification](../experiments/024/verification.md).
+No root default or frozen parent changes; protected endpoint remains 001–023.
+
+[Main viewer acceptance](development/main024-viewer-acceptance.md),
+[post024 readiness](development/post-024-community-readiness.md),
+[future finite material-work handoff](development/post-024-material-preparation-handoff.md).
+Neither 024 protection nor material preparation/025 follows automatically.

@@ -1,0 +1,1947 @@
+{
+  "scope": "Supplemental observer measurement clarification; original024 metrics and outcomes unchanged. The archived first_execution comparer measures completed resource/claim/meal/query effects, not commitment starts. All19 changed pairs start different committed work at their first selected difference; completed primitive effects follow.",
+  "pairs": [
+    {
+      "ordinals": [
+        0,
+        1
+      ],
+      "first_started_commitment_difference": 18,
+      "left": [
+        {
+          "ref": "history.transitions[60]",
+          "commitment": {
+            "id": 30,
+            "work": {
+              "Resource": {
+                "scene": 6
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 18,
+            "deadline": 24,
+            "source": 10
+          }
+        },
+        {
+          "ref": "history.transitions[61]",
+          "commitment": {
+            "id": 31,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        },
+        {
+          "ref": "history.transitions[62]",
+          "commitment": {
+            "id": 32,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[60]",
+          "commitment": {
+            "id": 30,
+            "work": {
+              "Resource": {
+                "scene": 6
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 18,
+            "deadline": 24,
+            "source": 10
+          }
+        },
+        {
+          "ref": "history.transitions[61]",
+          "commitment": {
+            "id": 31,
+            "work": "Meal",
+            "participants": [
+              0
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        },
+        {
+          "ref": "history.transitions[62]",
+          "commitment": {
+            "id": 32,
+            "work": "Meal",
+            "participants": [
+              2
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        2,
+        3
+      ],
+      "first_started_commitment_difference": 11,
+      "left": [
+        {
+          "ref": "history.transitions[24]",
+          "commitment": {
+            "id": 12,
+            "work": "Reply",
+            "participants": [
+              0
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        },
+        {
+          "ref": "history.transitions[25]",
+          "commitment": {
+            "id": 13,
+            "work": "Reply",
+            "participants": [
+              1
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        },
+        {
+          "ref": "history.transitions[26]",
+          "commitment": {
+            "id": 14,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        },
+        {
+          "ref": "history.transitions[27]",
+          "commitment": {
+            "id": 15,
+            "work": "Send",
+            "participants": [
+              3
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[24]",
+          "commitment": {
+            "id": 12,
+            "work": "Reply",
+            "participants": [
+              0
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        },
+        {
+          "ref": "history.transitions[25]",
+          "commitment": {
+            "id": 13,
+            "work": "Reply",
+            "participants": [
+              1
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        },
+        {
+          "ref": "history.transitions[26]",
+          "commitment": {
+            "id": 14,
+            "work": "Meal",
+            "participants": [
+              2
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        },
+        {
+          "ref": "history.transitions[27]",
+          "commitment": {
+            "id": 15,
+            "work": "Send",
+            "participants": [
+              3
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        4,
+        5
+      ],
+      "first_started_commitment_difference": 6,
+      "left": [
+        {
+          "ref": "history.transitions[0]",
+          "commitment": {
+            "id": 0,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 6,
+            "deadline": 7,
+            "source": 0
+          }
+        },
+        {
+          "ref": "history.transitions[1]",
+          "commitment": {
+            "id": 1,
+            "work": "Send",
+            "participants": [
+              1
+            ],
+            "start": 6,
+            "deadline": 7,
+            "source": 0
+          }
+        },
+        {
+          "ref": "history.transitions[2]",
+          "commitment": {
+            "id": 2,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 6,
+            "deadline": 7,
+            "source": 0
+          }
+        },
+        {
+          "ref": "history.transitions[3]",
+          "commitment": {
+            "id": 3,
+            "work": "Claim",
+            "participants": [
+              3
+            ],
+            "start": 6,
+            "deadline": 10,
+            "source": 0
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[0]",
+          "commitment": {
+            "id": 0,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 6,
+            "deadline": 7,
+            "source": 0
+          }
+        },
+        {
+          "ref": "history.transitions[1]",
+          "commitment": {
+            "id": 1,
+            "work": "Send",
+            "participants": [
+              1
+            ],
+            "start": 6,
+            "deadline": 7,
+            "source": 0
+          }
+        },
+        {
+          "ref": "history.transitions[2]",
+          "commitment": {
+            "id": 2,
+            "work": "Meal",
+            "participants": [
+              2
+            ],
+            "start": 6,
+            "deadline": 7,
+            "source": 0
+          }
+        },
+        {
+          "ref": "history.transitions[3]",
+          "commitment": {
+            "id": 3,
+            "work": "Claim",
+            "participants": [
+              3
+            ],
+            "start": 6,
+            "deadline": 10,
+            "source": 0
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        6,
+        7
+      ],
+      "first_started_commitment_difference": 54,
+      "left": [
+        {
+          "ref": "history.transitions[228]",
+          "commitment": {
+            "id": 114,
+            "work": "Reply",
+            "participants": [
+              2
+            ],
+            "start": 54,
+            "deadline": 55,
+            "source": 48
+          }
+        },
+        {
+          "ref": "history.transitions[229]",
+          "commitment": {
+            "id": 115,
+            "work": "Reply",
+            "participants": [
+              3
+            ],
+            "start": 54,
+            "deadline": 55,
+            "source": 48
+          }
+        },
+        {
+          "ref": "history.transitions[230]",
+          "commitment": {
+            "id": 116,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 54,
+            "deadline": 55,
+            "source": 48
+          }
+        },
+        {
+          "ref": "history.transitions[231]",
+          "commitment": {
+            "id": 117,
+            "work": "Send",
+            "participants": [
+              1
+            ],
+            "start": 54,
+            "deadline": 55,
+            "source": 48
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[228]",
+          "commitment": {
+            "id": 114,
+            "work": "Reply",
+            "participants": [
+              2
+            ],
+            "start": 54,
+            "deadline": 55,
+            "source": 48
+          }
+        },
+        {
+          "ref": "history.transitions[229]",
+          "commitment": {
+            "id": 115,
+            "work": "Reply",
+            "participants": [
+              3
+            ],
+            "start": 54,
+            "deadline": 55,
+            "source": 48
+          }
+        },
+        {
+          "ref": "history.transitions[230]",
+          "commitment": {
+            "id": 116,
+            "work": "Meal",
+            "participants": [
+              0
+            ],
+            "start": 54,
+            "deadline": 55,
+            "source": 48
+          }
+        },
+        {
+          "ref": "history.transitions[231]",
+          "commitment": {
+            "id": 117,
+            "work": "Send",
+            "participants": [
+              1
+            ],
+            "start": 54,
+            "deadline": 55,
+            "source": 48
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        8,
+        9
+      ],
+      "first_started_commitment_difference": 58,
+      "left": [
+        {
+          "ref": "history.transitions[267]",
+          "commitment": {
+            "id": 134,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 58,
+            "deadline": 59,
+            "source": 52
+          }
+        },
+        {
+          "ref": "history.transitions[268]",
+          "commitment": {
+            "id": 135,
+            "work": "Send",
+            "participants": [
+              1
+            ],
+            "start": 58,
+            "deadline": 59,
+            "source": 52
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[267]",
+          "commitment": {
+            "id": 134,
+            "work": "Meal",
+            "participants": [
+              0
+            ],
+            "start": 58,
+            "deadline": 59,
+            "source": 52
+          }
+        },
+        {
+          "ref": "history.transitions[268]",
+          "commitment": {
+            "id": 135,
+            "work": "Send",
+            "participants": [
+              1
+            ],
+            "start": 58,
+            "deadline": 59,
+            "source": 52
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        10,
+        11
+      ],
+      "first_started_commitment_difference": null,
+      "left": null,
+      "right": null
+    },
+    {
+      "ordinals": [
+        12,
+        13
+      ],
+      "first_started_commitment_difference": null,
+      "left": null,
+      "right": null
+    },
+    {
+      "ordinals": [
+        14,
+        15
+      ],
+      "first_started_commitment_difference": null,
+      "left": null,
+      "right": null
+    },
+    {
+      "ordinals": [
+        16,
+        17
+      ],
+      "first_started_commitment_difference": 18,
+      "left": [
+        {
+          "ref": "history.transitions[60]",
+          "commitment": {
+            "id": 30,
+            "work": {
+              "Resource": {
+                "scene": 6
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 18,
+            "deadline": 24,
+            "source": 10
+          }
+        },
+        {
+          "ref": "history.transitions[61]",
+          "commitment": {
+            "id": 31,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        },
+        {
+          "ref": "history.transitions[62]",
+          "commitment": {
+            "id": 32,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[60]",
+          "commitment": {
+            "id": 30,
+            "work": {
+              "Resource": {
+                "scene": 6
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 18,
+            "deadline": 24,
+            "source": 10
+          }
+        },
+        {
+          "ref": "history.transitions[61]",
+          "commitment": {
+            "id": 31,
+            "work": "Meal",
+            "participants": [
+              0
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        },
+        {
+          "ref": "history.transitions[62]",
+          "commitment": {
+            "id": 32,
+            "work": "Meal",
+            "participants": [
+              2
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        18,
+        19
+      ],
+      "first_started_commitment_difference": 14,
+      "left": [
+        {
+          "ref": "history.transitions[40]",
+          "commitment": {
+            "id": 20,
+            "work": {
+              "Resource": {
+                "scene": 4
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 14,
+            "deadline": 20,
+            "source": 6
+          }
+        },
+        {
+          "ref": "history.transitions[41]",
+          "commitment": {
+            "id": 21,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        },
+        {
+          "ref": "history.transitions[42]",
+          "commitment": {
+            "id": 22,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[40]",
+          "commitment": {
+            "id": 20,
+            "work": {
+              "Resource": {
+                "scene": 4
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 14,
+            "deadline": 20,
+            "source": 6
+          }
+        },
+        {
+          "ref": "history.transitions[41]",
+          "commitment": {
+            "id": 21,
+            "work": "Meal",
+            "participants": [
+              0
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        },
+        {
+          "ref": "history.transitions[42]",
+          "commitment": {
+            "id": 22,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        20,
+        21
+      ],
+      "first_started_commitment_difference": null,
+      "left": null,
+      "right": null
+    },
+    {
+      "ordinals": [
+        22,
+        23
+      ],
+      "first_started_commitment_difference": null,
+      "left": null,
+      "right": null
+    },
+    {
+      "ordinals": [
+        24,
+        25
+      ],
+      "first_started_commitment_difference": 18,
+      "left": [
+        {
+          "ref": "history.transitions[60]",
+          "commitment": {
+            "id": 30,
+            "work": {
+              "Resource": {
+                "scene": 6
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 18,
+            "deadline": 24,
+            "source": 10
+          }
+        },
+        {
+          "ref": "history.transitions[61]",
+          "commitment": {
+            "id": 31,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        },
+        {
+          "ref": "history.transitions[62]",
+          "commitment": {
+            "id": 32,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[60]",
+          "commitment": {
+            "id": 30,
+            "work": {
+              "Resource": {
+                "scene": 6
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 18,
+            "deadline": 24,
+            "source": 10
+          }
+        },
+        {
+          "ref": "history.transitions[61]",
+          "commitment": {
+            "id": 31,
+            "work": "Meal",
+            "participants": [
+              0
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        },
+        {
+          "ref": "history.transitions[62]",
+          "commitment": {
+            "id": 32,
+            "work": "Meal",
+            "participants": [
+              2
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        26,
+        27
+      ],
+      "first_started_commitment_difference": 18,
+      "left": [
+        {
+          "ref": "history.transitions[60]",
+          "commitment": {
+            "id": 30,
+            "work": {
+              "Resource": {
+                "scene": 6
+              }
+            },
+            "participants": [
+              2,
+              0
+            ],
+            "start": 18,
+            "deadline": 24,
+            "source": 10
+          }
+        },
+        {
+          "ref": "history.transitions[61]",
+          "commitment": {
+            "id": 31,
+            "work": "Send",
+            "participants": [
+              1
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        },
+        {
+          "ref": "history.transitions[62]",
+          "commitment": {
+            "id": 32,
+            "work": "Send",
+            "participants": [
+              3
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[60]",
+          "commitment": {
+            "id": 30,
+            "work": {
+              "Resource": {
+                "scene": 6
+              }
+            },
+            "participants": [
+              2,
+              0
+            ],
+            "start": 18,
+            "deadline": 24,
+            "source": 10
+          }
+        },
+        {
+          "ref": "history.transitions[61]",
+          "commitment": {
+            "id": 31,
+            "work": "Meal",
+            "participants": [
+              1
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        },
+        {
+          "ref": "history.transitions[62]",
+          "commitment": {
+            "id": 32,
+            "work": "Meal",
+            "participants": [
+              3
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        28,
+        29
+      ],
+      "first_started_commitment_difference": 11,
+      "left": [
+        {
+          "ref": "history.transitions[24]",
+          "commitment": {
+            "id": 12,
+            "work": "Reply",
+            "participants": [
+              0
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        },
+        {
+          "ref": "history.transitions[25]",
+          "commitment": {
+            "id": 13,
+            "work": "Reply",
+            "participants": [
+              1
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        },
+        {
+          "ref": "history.transitions[26]",
+          "commitment": {
+            "id": 14,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        },
+        {
+          "ref": "history.transitions[27]",
+          "commitment": {
+            "id": 15,
+            "work": "Send",
+            "participants": [
+              3
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[24]",
+          "commitment": {
+            "id": 12,
+            "work": "Reply",
+            "participants": [
+              0
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        },
+        {
+          "ref": "history.transitions[25]",
+          "commitment": {
+            "id": 13,
+            "work": "Reply",
+            "participants": [
+              1
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        },
+        {
+          "ref": "history.transitions[26]",
+          "commitment": {
+            "id": 14,
+            "work": "Meal",
+            "participants": [
+              2
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        },
+        {
+          "ref": "history.transitions[27]",
+          "commitment": {
+            "id": 15,
+            "work": "Send",
+            "participants": [
+              3
+            ],
+            "start": 11,
+            "deadline": 12,
+            "source": 5
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        30,
+        31
+      ],
+      "first_started_commitment_difference": 54,
+      "left": [
+        {
+          "ref": "history.transitions[219]",
+          "commitment": {
+            "id": 110,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 54,
+            "deadline": 55,
+            "source": 48
+          }
+        },
+        {
+          "ref": "history.transitions[220]",
+          "commitment": {
+            "id": 111,
+            "work": "Send",
+            "participants": [
+              3
+            ],
+            "start": 54,
+            "deadline": 55,
+            "source": 48
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[219]",
+          "commitment": {
+            "id": 110,
+            "work": "Meal",
+            "participants": [
+              2
+            ],
+            "start": 54,
+            "deadline": 55,
+            "source": 48
+          }
+        },
+        {
+          "ref": "history.transitions[220]",
+          "commitment": {
+            "id": 111,
+            "work": "Send",
+            "participants": [
+              3
+            ],
+            "start": 54,
+            "deadline": 55,
+            "source": 48
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        32,
+        33
+      ],
+      "first_started_commitment_difference": null,
+      "left": null,
+      "right": null
+    },
+    {
+      "ordinals": [
+        34,
+        35
+      ],
+      "first_started_commitment_difference": 44,
+      "left": [
+        {
+          "ref": "history.transitions[179]",
+          "commitment": {
+            "id": 90,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 44,
+            "deadline": 45,
+            "source": 38
+          }
+        },
+        {
+          "ref": "history.transitions[180]",
+          "commitment": {
+            "id": 91,
+            "work": "Send",
+            "participants": [
+              1
+            ],
+            "start": 44,
+            "deadline": 45,
+            "source": 38
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[179]",
+          "commitment": {
+            "id": 90,
+            "work": "Meal",
+            "participants": [
+              0
+            ],
+            "start": 44,
+            "deadline": 45,
+            "source": 38
+          }
+        },
+        {
+          "ref": "history.transitions[180]",
+          "commitment": {
+            "id": 91,
+            "work": "Send",
+            "participants": [
+              1
+            ],
+            "start": 44,
+            "deadline": 45,
+            "source": 38
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        36,
+        37
+      ],
+      "first_started_commitment_difference": null,
+      "left": null,
+      "right": null
+    },
+    {
+      "ordinals": [
+        38,
+        39
+      ],
+      "first_started_commitment_difference": null,
+      "left": null,
+      "right": null
+    },
+    {
+      "ordinals": [
+        40,
+        41
+      ],
+      "first_started_commitment_difference": 18,
+      "left": [
+        {
+          "ref": "history.transitions[60]",
+          "commitment": {
+            "id": 30,
+            "work": {
+              "Resource": {
+                "scene": 6
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 18,
+            "deadline": 24,
+            "source": 10
+          }
+        },
+        {
+          "ref": "history.transitions[61]",
+          "commitment": {
+            "id": 31,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        },
+        {
+          "ref": "history.transitions[62]",
+          "commitment": {
+            "id": 32,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[60]",
+          "commitment": {
+            "id": 30,
+            "work": {
+              "Resource": {
+                "scene": 6
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 18,
+            "deadline": 24,
+            "source": 10
+          }
+        },
+        {
+          "ref": "history.transitions[61]",
+          "commitment": {
+            "id": 31,
+            "work": "Meal",
+            "participants": [
+              0
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        },
+        {
+          "ref": "history.transitions[62]",
+          "commitment": {
+            "id": 32,
+            "work": "Meal",
+            "participants": [
+              2
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        42,
+        43
+      ],
+      "first_started_commitment_difference": 22,
+      "left": [
+        {
+          "ref": "history.transitions[68]",
+          "commitment": {
+            "id": 34,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        },
+        {
+          "ref": "history.transitions[69]",
+          "commitment": {
+            "id": 35,
+            "work": "Send",
+            "participants": [
+              1
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        },
+        {
+          "ref": "history.transitions[70]",
+          "commitment": {
+            "id": 36,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        },
+        {
+          "ref": "history.transitions[71]",
+          "commitment": {
+            "id": 37,
+            "work": "Send",
+            "participants": [
+              3
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[68]",
+          "commitment": {
+            "id": 34,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        },
+        {
+          "ref": "history.transitions[69]",
+          "commitment": {
+            "id": 35,
+            "work": "Send",
+            "participants": [
+              1
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        },
+        {
+          "ref": "history.transitions[70]",
+          "commitment": {
+            "id": 36,
+            "work": "Meal",
+            "participants": [
+              2
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        },
+        {
+          "ref": "history.transitions[71]",
+          "commitment": {
+            "id": 37,
+            "work": "Send",
+            "participants": [
+              3
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        44,
+        45
+      ],
+      "first_started_commitment_difference": 14,
+      "left": [
+        {
+          "ref": "history.transitions[40]",
+          "commitment": {
+            "id": 20,
+            "work": {
+              "Resource": {
+                "scene": 4
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 14,
+            "deadline": 20,
+            "source": 6
+          }
+        },
+        {
+          "ref": "history.transitions[41]",
+          "commitment": {
+            "id": 21,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        },
+        {
+          "ref": "history.transitions[42]",
+          "commitment": {
+            "id": 22,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[40]",
+          "commitment": {
+            "id": 20,
+            "work": {
+              "Resource": {
+                "scene": 4
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 14,
+            "deadline": 20,
+            "source": 6
+          }
+        },
+        {
+          "ref": "history.transitions[41]",
+          "commitment": {
+            "id": 21,
+            "work": "Meal",
+            "participants": [
+              0
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        },
+        {
+          "ref": "history.transitions[42]",
+          "commitment": {
+            "id": 22,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        46,
+        47
+      ],
+      "first_started_commitment_difference": 18,
+      "left": [
+        {
+          "ref": "history.transitions[60]",
+          "commitment": {
+            "id": 30,
+            "work": {
+              "Resource": {
+                "scene": 6
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 18,
+            "deadline": 24,
+            "source": 10
+          }
+        },
+        {
+          "ref": "history.transitions[61]",
+          "commitment": {
+            "id": 31,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        },
+        {
+          "ref": "history.transitions[62]",
+          "commitment": {
+            "id": 32,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[60]",
+          "commitment": {
+            "id": 30,
+            "work": {
+              "Resource": {
+                "scene": 6
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 18,
+            "deadline": 24,
+            "source": 10
+          }
+        },
+        {
+          "ref": "history.transitions[61]",
+          "commitment": {
+            "id": 31,
+            "work": "Meal",
+            "participants": [
+              0
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        },
+        {
+          "ref": "history.transitions[62]",
+          "commitment": {
+            "id": 32,
+            "work": "Meal",
+            "participants": [
+              2
+            ],
+            "start": 18,
+            "deadline": 19,
+            "source": 12
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        48,
+        49
+      ],
+      "first_started_commitment_difference": 22,
+      "left": [
+        {
+          "ref": "history.transitions[68]",
+          "commitment": {
+            "id": 34,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        },
+        {
+          "ref": "history.transitions[69]",
+          "commitment": {
+            "id": 35,
+            "work": "Send",
+            "participants": [
+              1
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        },
+        {
+          "ref": "history.transitions[70]",
+          "commitment": {
+            "id": 36,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        },
+        {
+          "ref": "history.transitions[71]",
+          "commitment": {
+            "id": 37,
+            "work": "Send",
+            "participants": [
+              3
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[68]",
+          "commitment": {
+            "id": 34,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        },
+        {
+          "ref": "history.transitions[69]",
+          "commitment": {
+            "id": 35,
+            "work": "Send",
+            "participants": [
+              1
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        },
+        {
+          "ref": "history.transitions[70]",
+          "commitment": {
+            "id": 36,
+            "work": "Meal",
+            "participants": [
+              2
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        },
+        {
+          "ref": "history.transitions[71]",
+          "commitment": {
+            "id": 37,
+            "work": "Send",
+            "participants": [
+              3
+            ],
+            "start": 22,
+            "deadline": 23,
+            "source": 16
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        50,
+        51
+      ],
+      "first_started_commitment_difference": 14,
+      "left": [
+        {
+          "ref": "history.transitions[40]",
+          "commitment": {
+            "id": 20,
+            "work": {
+              "Resource": {
+                "scene": 4
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 14,
+            "deadline": 20,
+            "source": 6
+          }
+        },
+        {
+          "ref": "history.transitions[41]",
+          "commitment": {
+            "id": 21,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        },
+        {
+          "ref": "history.transitions[42]",
+          "commitment": {
+            "id": 22,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[40]",
+          "commitment": {
+            "id": 20,
+            "work": {
+              "Resource": {
+                "scene": 4
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 14,
+            "deadline": 20,
+            "source": 6
+          }
+        },
+        {
+          "ref": "history.transitions[41]",
+          "commitment": {
+            "id": 21,
+            "work": "Meal",
+            "participants": [
+              0
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        },
+        {
+          "ref": "history.transitions[42]",
+          "commitment": {
+            "id": 22,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        }
+      ]
+    },
+    {
+      "ordinals": [
+        52,
+        53
+      ],
+      "first_started_commitment_difference": 14,
+      "left": [
+        {
+          "ref": "history.transitions[40]",
+          "commitment": {
+            "id": 20,
+            "work": {
+              "Resource": {
+                "scene": 4
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 14,
+            "deadline": 20,
+            "source": 6
+          }
+        },
+        {
+          "ref": "history.transitions[41]",
+          "commitment": {
+            "id": 21,
+            "work": "Send",
+            "participants": [
+              0
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        },
+        {
+          "ref": "history.transitions[42]",
+          "commitment": {
+            "id": 22,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        }
+      ],
+      "right": [
+        {
+          "ref": "history.transitions[40]",
+          "commitment": {
+            "id": 20,
+            "work": {
+              "Resource": {
+                "scene": 4
+              }
+            },
+            "participants": [
+              1,
+              3
+            ],
+            "start": 14,
+            "deadline": 20,
+            "source": 6
+          }
+        },
+        {
+          "ref": "history.transitions[41]",
+          "commitment": {
+            "id": 21,
+            "work": "Meal",
+            "participants": [
+              0
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        },
+        {
+          "ref": "history.transitions[42]",
+          "commitment": {
+            "id": 22,
+            "work": "Send",
+            "participants": [
+              2
+            ],
+            "start": 14,
+            "deadline": 15,
+            "source": 8
+          }
+        }
+      ]
+    }
+  ],
+  "changed_pairs": 19
+}

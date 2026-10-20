@@ -251,10 +251,10 @@ authorize material preparation or024. Inspect checkpoint and research-handoff-00
 do not patch protectedparents to wire a newmode or reuse viewer-derived cognition.
 
 
-## Current023research boundary
+## Historical 023 delivery boundary
 
-023is completed opt-in scheduling research, ACCEPT WITH QUALIFICATION pending
-independentreview. It does not extend the protected001-022endpoint. Read its
+At its original delivery,023 was completed opt-in scheduling research pending
+independent review. Later qualified protection and024 status appear below. Read its
 specification/results/verification, original source/member manifests, supplemental
 matched/endpoint/inquiry audits and [readiness](development/continuous-world-readiness.md).
 Use separate read-only `validate023`; no historical archive writers.80pre-run root/
@@ -271,8 +271,8 @@ For the completed First Continuous World program, start with the
 [delivery report](development/first-continuous-world-delivery.md) and
 [completion audit](development/continuous-world-completion-audit.md), then follow
 causal slices and validation records rather than reading full generated histories.
-The next scientific action is independent 023 review, not a rerun or a material
-implementation. Inspect actual Git before relying on the pre-publication checkpoint.
+The original next action was independent023 review, completed by the subsequent
+program below. Inspect actual Git before relying on a historical checkpoint.
 
 ## Qualified 001–023 protection
 
@@ -291,13 +291,20 @@ implement only the designated local score intervention. No preparation/new suppl
 025,planner,automatic024protection or canon change. Earlier prospective next-step
 prohibitions refer to their historical authorization boundaries.
 
-## Prospective024valuation boundary
+## Current 024 research boundary
 
-023review/protection and observational diagnosis are separately published. Read
-experiments/024/specification.md and design-gate.md before implementing. Fixed
-56worlds/27pairs/two reporting placebos compare Baseline and MealRelief; only an
-eligible ordinary meal's score receives min(current own hunger,40). The function
-must use local input/declared candidates only. Do not change recipients, physics,
-retention, sensing, supply or default modes. Preserve source-frozen parents and
-prove Baseline parity before final treatment. No outcome-directed tuning,025,
-material preparation or automatic024protection follows.
+023 review/protection, diagnosis and fixed024 preregistration were separately
+published before treatment. Completed024 is ACCEPT WITH QUALIFICATION and remains
+opt-in/unadopted outside protected001–023. Start with experiments/024/results.md,
+verification.md and the architecture-map pointers. The pure ordinary Consume law
+H+min(H,40), frozen source bindings,56 original worlds,27 pairs/two placebos,
+negative costs and nulls must remain unchanged. No recipient, physical, retention,
+sensing or default rule changed. The separate validate024 checks primitive/score
+reconstruction, corruption controls and exact replay; viewer caches are excluded.
+
+Main --valuation is an authentic version8 original consumer. Owned scalar audit
+terms never become future/observer knowledge. Final readiness and material handoff
+under docs/development are recommendations, not025 registration or implementation.
+When checking later changes, reuse passing gates only after their relevant source/
+fixture identities are confirmed unchanged. Inspect the completion audit and
+current checkpoint; earlier next-step statements describe historical milestones.
