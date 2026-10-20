@@ -1,0 +1,2567 @@
+{
+  "scope": "Independent post-publication review, primitive operations and score projection; no evaluator imports",
+  "archive_sha256": "98da25f34239d8c704c0fffad33d33c4194d8ada46771ff11ba2c0abead19b2f",
+  "counts": {
+    "terminal_food": 19,
+    "terminal_hunger": 13,
+    "terminal_trust": 19,
+    "behavior_state_null": 8,
+    "changed_choices": 19,
+    "changed_starts": 19,
+    "changed_completed_effects": 19,
+    "more_meals": 15,
+    "fewer_meals": 4,
+    "temporary_food_reconvergence": 3
+  },
+  "pairs": [
+    {
+      "ordinals": [
+        0,
+        1
+      ],
+      "first_choice": 18,
+      "first_start": 18,
+      "first_completed_effect": 19,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        8,
+        7
+      ],
+      "full_area_delta": [
+        55,
+        1985,
+        215,
+        1560
+      ],
+      "pre_stop_area_delta": [
+        -105,
+        500,
+        55,
+        240
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        2,
+        3
+      ],
+      "first_choice": 11,
+      "first_start": 11,
+      "first_completed_effect": 12,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        6,
+        8
+      ],
+      "full_area_delta": [
+        2320,
+        -850,
+        -2160,
+        -3890
+      ],
+      "pre_stop_area_delta": [
+        1825,
+        -25,
+        -1960,
+        -2345
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        4,
+        5
+      ],
+      "first_choice": 6,
+      "first_start": 6,
+      "first_completed_effect": 7,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        6,
+        8
+      ],
+      "full_area_delta": [
+        -1320,
+        -1850,
+        -110,
+        -25
+      ],
+      "pre_stop_area_delta": [
+        -600,
+        -560,
+        -110,
+        -25
+      ],
+      "food_reconvergence": 9
+    },
+    {
+      "ordinals": [
+        6,
+        7
+      ],
+      "first_choice": 54,
+      "first_start": 54,
+      "first_completed_effect": 55,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        8,
+        10
+      ],
+      "full_area_delta": [
+        -1320,
+        -1850,
+        0,
+        0
+      ],
+      "pre_stop_area_delta": [
+        -600,
+        -560,
+        0,
+        0
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        8,
+        9
+      ],
+      "first_choice": 58,
+      "first_start": 58,
+      "first_completed_effect": 59,
+      "terminal_food": true,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        1,
+        3
+      ],
+      "full_area_delta": [
+        -1160,
+        -1120,
+        0,
+        0
+      ],
+      "pre_stop_area_delta": [
+        -440,
+        -400,
+        0,
+        0
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        10,
+        11
+      ],
+      "first_choice": null,
+      "first_start": null,
+      "first_completed_effect": null,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": false,
+      "behavior_state_null": true,
+      "meals": [
+        4,
+        4
+      ],
+      "full_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pre_stop_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        12,
+        13
+      ],
+      "first_choice": null,
+      "first_start": null,
+      "first_completed_effect": null,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": false,
+      "behavior_state_null": true,
+      "meals": [
+        0,
+        0
+      ],
+      "full_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pre_stop_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        14,
+        15
+      ],
+      "first_choice": null,
+      "first_start": null,
+      "first_completed_effect": null,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": false,
+      "behavior_state_null": true,
+      "meals": [
+        4,
+        4
+      ],
+      "full_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pre_stop_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        16,
+        17
+      ],
+      "first_choice": 18,
+      "first_start": 18,
+      "first_completed_effect": 19,
+      "terminal_food": true,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        10,
+        12
+      ],
+      "full_area_delta": [
+        -1665,
+        2840,
+        -1905,
+        720
+      ],
+      "pre_stop_area_delta": [
+        -1665,
+        2840,
+        -1905,
+        720
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        18,
+        19
+      ],
+      "first_choice": 14,
+      "first_start": 14,
+      "first_completed_effect": 15,
+      "terminal_food": true,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        3,
+        5
+      ],
+      "full_area_delta": [
+        -2070,
+        0,
+        -2640,
+        0
+      ],
+      "pre_stop_area_delta": [
+        -2070,
+        0,
+        -2640,
+        0
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        20,
+        21
+      ],
+      "first_choice": null,
+      "first_start": null,
+      "first_completed_effect": null,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": false,
+      "behavior_state_null": true,
+      "meals": [
+        0,
+        0
+      ],
+      "full_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pre_stop_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        22,
+        23
+      ],
+      "first_choice": null,
+      "first_start": null,
+      "first_completed_effect": null,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": false,
+      "behavior_state_null": true,
+      "meals": [
+        1,
+        1
+      ],
+      "full_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pre_stop_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        24,
+        25
+      ],
+      "first_choice": 18,
+      "first_start": 18,
+      "first_completed_effect": 19,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        8,
+        7
+      ],
+      "full_area_delta": [
+        55,
+        1985,
+        215,
+        1560
+      ],
+      "pre_stop_area_delta": [
+        -105,
+        500,
+        55,
+        240
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        26,
+        27
+      ],
+      "first_choice": 18,
+      "first_start": 18,
+      "first_completed_effect": 19,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        7,
+        9
+      ],
+      "full_area_delta": [
+        -80,
+        -1380,
+        345,
+        -900
+      ],
+      "pre_stop_area_delta": [
+        -80,
+        -720,
+        180,
+        -405
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        28,
+        29
+      ],
+      "first_choice": 11,
+      "first_start": 11,
+      "first_completed_effect": 12,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        4,
+        8
+      ],
+      "full_area_delta": [
+        -1240,
+        -1910,
+        -3890,
+        -1725
+      ],
+      "pre_stop_area_delta": [
+        -1040,
+        -830,
+        -3470,
+        -1705
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        30,
+        31
+      ],
+      "first_choice": 54,
+      "first_start": 54,
+      "first_completed_effect": 55,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        1,
+        9
+      ],
+      "full_area_delta": [
+        -1200,
+        -1160,
+        -3515,
+        -2795
+      ],
+      "pre_stop_area_delta": [
+        -560,
+        -520,
+        -1060,
+        -665
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        32,
+        33
+      ],
+      "first_choice": null,
+      "first_start": null,
+      "first_completed_effect": null,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": false,
+      "behavior_state_null": true,
+      "meals": [
+        0,
+        0
+      ],
+      "full_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pre_stop_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        34,
+        35
+      ],
+      "first_choice": 44,
+      "first_start": 44,
+      "first_completed_effect": 45,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        1,
+        5
+      ],
+      "full_area_delta": [
+        -1640,
+        -4190,
+        0,
+        0
+      ],
+      "pre_stop_area_delta": [
+        -1480,
+        -2890,
+        0,
+        0
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        36,
+        37
+      ],
+      "first_choice": null,
+      "first_start": null,
+      "first_completed_effect": null,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": false,
+      "behavior_state_null": true,
+      "meals": [
+        0,
+        0
+      ],
+      "full_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pre_stop_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        38,
+        39
+      ],
+      "first_choice": null,
+      "first_start": null,
+      "first_completed_effect": null,
+      "terminal_food": false,
+      "terminal_hunger": false,
+      "terminal_trust": false,
+      "behavior_state_null": true,
+      "meals": [
+        4,
+        4
+      ],
+      "full_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pre_stop_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        40,
+        41
+      ],
+      "first_choice": 18,
+      "first_start": 18,
+      "first_completed_effect": 19,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        8,
+        7
+      ],
+      "full_area_delta": [
+        55,
+        1985,
+        215,
+        1560
+      ],
+      "pre_stop_area_delta": [
+        -105,
+        500,
+        55,
+        240
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        42,
+        43
+      ],
+      "first_choice": 22,
+      "first_start": 22,
+      "first_completed_effect": 23,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        8,
+        10
+      ],
+      "full_area_delta": [
+        -1320,
+        -1850,
+        -10,
+        0
+      ],
+      "pre_stop_area_delta": [
+        -600,
+        -560,
+        -10,
+        0
+      ],
+      "food_reconvergence": 24
+    },
+    {
+      "ordinals": [
+        44,
+        45
+      ],
+      "first_choice": 14,
+      "first_start": 14,
+      "first_completed_effect": 15,
+      "terminal_food": true,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        3,
+        5
+      ],
+      "full_area_delta": [
+        -2070,
+        0,
+        -2640,
+        0
+      ],
+      "pre_stop_area_delta": [
+        -2070,
+        0,
+        -2640,
+        0
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        46,
+        47
+      ],
+      "first_choice": 18,
+      "first_start": 18,
+      "first_completed_effect": 19,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        8,
+        7
+      ],
+      "full_area_delta": [
+        55,
+        1985,
+        215,
+        1560
+      ],
+      "pre_stop_area_delta": [
+        -105,
+        500,
+        55,
+        240
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        48,
+        49
+      ],
+      "first_choice": 22,
+      "first_start": 22,
+      "first_completed_effect": 23,
+      "terminal_food": true,
+      "terminal_hunger": true,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        8,
+        10
+      ],
+      "full_area_delta": [
+        -1320,
+        -1850,
+        -10,
+        0
+      ],
+      "pre_stop_area_delta": [
+        -600,
+        -560,
+        -10,
+        0
+      ],
+      "food_reconvergence": 24
+    },
+    {
+      "ordinals": [
+        50,
+        51
+      ],
+      "first_choice": 14,
+      "first_start": 14,
+      "first_completed_effect": 15,
+      "terminal_food": true,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        3,
+        5
+      ],
+      "full_area_delta": [
+        -2070,
+        0,
+        -2640,
+        0
+      ],
+      "pre_stop_area_delta": [
+        -2070,
+        0,
+        -2640,
+        0
+      ],
+      "food_reconvergence": null
+    },
+    {
+      "ordinals": [
+        52,
+        53
+      ],
+      "first_choice": 14,
+      "first_start": 14,
+      "first_completed_effect": 15,
+      "terminal_food": true,
+      "terminal_hunger": false,
+      "terminal_trust": true,
+      "behavior_state_null": false,
+      "meals": [
+        3,
+        5
+      ],
+      "full_area_delta": [
+        -2070,
+        0,
+        -2640,
+        0
+      ],
+      "pre_stop_area_delta": [
+        -2070,
+        0,
+        -2640,
+        0
+      ],
+      "food_reconvergence": null
+    }
+  ],
+  "worlds": [
+    {
+      "ordinal": 0,
+      "meals": 8,
+      "area": [
+        4580,
+        2175,
+        4420,
+        1870
+      ],
+      "pre_stop_area": [
+        2000,
+        1080,
+        1840,
+        940
+      ],
+      "final_food": [
+        1,
+        0,
+        0,
+        3,
+        0,
+        8
+      ],
+      "final_hunger": [
+        100,
+        55,
+        100,
+        50
+      ],
+      "decisions": 93
+    },
+    {
+      "ordinal": 1,
+      "meals": 7,
+      "area": [
+        4635,
+        4160,
+        4635,
+        3430
+      ],
+      "pre_stop_area": [
+        1895,
+        1580,
+        1895,
+        1180
+      ],
+      "final_food": [
+        1,
+        0,
+        1,
+        3,
+        0,
+        7
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        90
+      ],
+      "decisions": 86
+    },
+    {
+      "ordinal": 2,
+      "meals": 6,
+      "area": [
+        3300,
+        3110,
+        9500,
+        6980
+      ],
+      "pre_stop_area": [
+        1215,
+        1025,
+        6200,
+        3680
+      ],
+      "final_food": [
+        0,
+        0,
+        1,
+        3,
+        0,
+        6
+      ],
+      "final_hunger": [
+        85,
+        85,
+        100,
+        100
+      ],
+      "decisions": 89
+    },
+    {
+      "ordinal": 3,
+      "meals": 8,
+      "area": [
+        5620,
+        2260,
+        7340,
+        3090
+      ],
+      "pre_stop_area": [
+        3040,
+        1000,
+        4240,
+        1335
+      ],
+      "final_food": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        8
+      ],
+      "final_hunger": [
+        100,
+        60,
+        100,
+        75
+      ],
+      "decisions": 77
+    },
+    {
+      "ordinal": 4,
+      "meals": 6,
+      "area": [
+        6980,
+        4940,
+        5110,
+        4470
+      ],
+      "pre_stop_area": [
+        3680,
+        2060,
+        2230,
+        1730
+      ],
+      "final_food": [
+        1,
+        3,
+        0,
+        0,
+        0,
+        6
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 86
+    },
+    {
+      "ordinal": 5,
+      "meals": 8,
+      "area": [
+        5660,
+        3090,
+        5000,
+        4445
+      ],
+      "pre_stop_area": [
+        3080,
+        1500,
+        2120,
+        1705
+      ],
+      "final_food": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        8
+      ],
+      "final_hunger": [
+        100,
+        70,
+        100,
+        100
+      ],
+      "decisions": 87
+    },
+    {
+      "ordinal": 6,
+      "meals": 8,
+      "area": [
+        6980,
+        4940,
+        4210,
+        4390
+      ],
+      "pre_stop_area": [
+        3680,
+        2060,
+        1630,
+        1650
+      ],
+      "final_food": [
+        1,
+        3,
+        0,
+        0,
+        0,
+        8
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 94
+    },
+    {
+      "ordinal": 7,
+      "meals": 10,
+      "area": [
+        5660,
+        3090,
+        4210,
+        4390
+      ],
+      "pre_stop_area": [
+        3080,
+        1500,
+        1630,
+        1650
+      ],
+      "final_food": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        10
+      ],
+      "final_hunger": [
+        100,
+        70,
+        100,
+        100
+      ],
+      "decisions": 97
+    },
+    {
+      "ordinal": 8,
+      "meals": 1,
+      "area": [
+        6980,
+        6980,
+        5205,
+        6980
+      ],
+      "pre_stop_area": [
+        3680,
+        3680,
+        2205,
+        3680
+      ],
+      "final_food": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 79
+    },
+    {
+      "ordinal": 9,
+      "meals": 3,
+      "area": [
+        5820,
+        5860,
+        5205,
+        6980
+      ],
+      "pre_stop_area": [
+        3240,
+        3280,
+        2205,
+        3680
+      ],
+      "final_food": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        3
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 83
+    },
+    {
+      "ordinal": 10,
+      "meals": 4,
+      "area": [
+        8340,
+        5540,
+        5150,
+        5500
+      ],
+      "pre_stop_area": [
+        5040,
+        2440,
+        2150,
+        2400
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 90
+    },
+    {
+      "ordinal": 11,
+      "meals": 4,
+      "area": [
+        8340,
+        5540,
+        5150,
+        5500
+      ],
+      "pre_stop_area": [
+        5040,
+        2440,
+        2150,
+        2400
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 90
+    },
+    {
+      "ordinal": 12,
+      "meals": 0,
+      "area": [
+        5500,
+        5500,
+        5500,
+        5500
+      ],
+      "pre_stop_area": [
+        2400,
+        2400,
+        2400,
+        2400
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 87
+    },
+    {
+      "ordinal": 13,
+      "meals": 0,
+      "area": [
+        5500,
+        5500,
+        5500,
+        5500
+      ],
+      "pre_stop_area": [
+        2400,
+        2400,
+        2400,
+        2400
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 87
+    },
+    {
+      "ordinal": 14,
+      "meals": 4,
+      "area": [
+        5500,
+        5150,
+        5500,
+        5150
+      ],
+      "pre_stop_area": [
+        2400,
+        2150,
+        2400,
+        2150
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 97
+    },
+    {
+      "ordinal": 15,
+      "meals": 4,
+      "area": [
+        5500,
+        5150,
+        5500,
+        5150
+      ],
+      "pre_stop_area": [
+        2400,
+        2150,
+        2400,
+        2150
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 97
+    },
+    {
+      "ordinal": 16,
+      "meals": 10,
+      "area": [
+        17380,
+        14120,
+        17220,
+        12460
+      ],
+      "pre_stop_area": [
+        14080,
+        10820,
+        13920,
+        9160
+      ],
+      "final_food": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        10
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 221
+    },
+    {
+      "ordinal": 17,
+      "meals": 12,
+      "area": [
+        15715,
+        16960,
+        15315,
+        13180
+      ],
+      "pre_stop_area": [
+        12415,
+        13660,
+        12015,
+        9880
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        12
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 215
+    },
+    {
+      "ordinal": 18,
+      "meals": 3,
+      "area": [
+        38980,
+        37230,
+        38980,
+        36450
+      ],
+      "pre_stop_area": [
+        35680,
+        33930,
+        35680,
+        33150
+      ],
+      "final_food": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        3
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 420
+    },
+    {
+      "ordinal": 19,
+      "meals": 5,
+      "area": [
+        36910,
+        37230,
+        36340,
+        36450
+      ],
+      "pre_stop_area": [
+        33610,
+        33930,
+        33040,
+        33150
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 413
+    },
+    {
+      "ordinal": 20,
+      "meals": 0,
+      "area": [
+        640,
+        640,
+        640,
+        640
+      ],
+      "pre_stop_area": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "decisions": 4
+    },
+    {
+      "ordinal": 21,
+      "meals": 0,
+      "area": [
+        640,
+        640,
+        640,
+        640
+      ],
+      "pre_stop_area": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "decisions": 4
+    },
+    {
+      "ordinal": 22,
+      "meals": 1,
+      "area": [
+        8340,
+        9500,
+        9500,
+        9500
+      ],
+      "pre_stop_area": [
+        5040,
+        6200,
+        6200,
+        6200
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 72
+    },
+    {
+      "ordinal": 23,
+      "meals": 1,
+      "area": [
+        8340,
+        9500,
+        9500,
+        9500
+      ],
+      "pre_stop_area": [
+        5040,
+        6200,
+        6200,
+        6200
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 72
+    },
+    {
+      "ordinal": 24,
+      "meals": 8,
+      "area": [
+        4580,
+        2175,
+        4420,
+        1870
+      ],
+      "pre_stop_area": [
+        2000,
+        1080,
+        1840,
+        940
+      ],
+      "final_food": [
+        1,
+        0,
+        0,
+        3,
+        0,
+        8
+      ],
+      "final_hunger": [
+        100,
+        55,
+        100,
+        50
+      ],
+      "decisions": 93
+    },
+    {
+      "ordinal": 25,
+      "meals": 7,
+      "area": [
+        4635,
+        4160,
+        4635,
+        3430
+      ],
+      "pre_stop_area": [
+        1895,
+        1580,
+        1895,
+        1180
+      ],
+      "final_food": [
+        1,
+        0,
+        1,
+        3,
+        0,
+        7
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        90
+      ],
+      "decisions": 86
+    },
+    {
+      "ordinal": 26,
+      "meals": 7,
+      "area": [
+        3510,
+        4420,
+        3815,
+        3545
+      ],
+      "pre_stop_area": [
+        1260,
+        1840,
+        1400,
+        1460
+      ],
+      "final_food": [
+        4,
+        1,
+        0,
+        0,
+        0,
+        7
+      ],
+      "final_hunger": [
+        90,
+        100,
+        95,
+        85
+      ],
+      "decisions": 92
+    },
+    {
+      "ordinal": 27,
+      "meals": 9,
+      "area": [
+        3430,
+        3040,
+        4160,
+        2645
+      ],
+      "pre_stop_area": [
+        1180,
+        1120,
+        1580,
+        1055
+      ],
+      "final_food": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        9
+      ],
+      "final_hunger": [
+        90,
+        80,
+        100,
+        70
+      ],
+      "decisions": 102
+    },
+    {
+      "ordinal": 28,
+      "meals": 4,
+      "area": [
+        8580,
+        5370,
+        10220,
+        8580
+      ],
+      "pre_stop_area": [
+        5280,
+        2370,
+        6920,
+        5280
+      ],
+      "final_food": [
+        1,
+        3,
+        2,
+        0,
+        0,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 82
+    },
+    {
+      "ordinal": 29,
+      "meals": 8,
+      "area": [
+        7340,
+        3460,
+        6330,
+        6855
+      ],
+      "pre_stop_area": [
+        4240,
+        1540,
+        3450,
+        3575
+      ],
+      "final_food": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        8
+      ],
+      "final_hunger": [
+        100,
+        80,
+        100,
+        100
+      ],
+      "decisions": 94
+    },
+    {
+      "ordinal": 30,
+      "meals": 1,
+      "area": [
+        7140,
+        7140,
+        7140,
+        4760
+      ],
+      "pre_stop_area": [
+        3840,
+        3840,
+        3840,
+        1950
+      ],
+      "final_food": [
+        1,
+        3,
+        1,
+        2,
+        4,
+        1
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 61
+    },
+    {
+      "ordinal": 31,
+      "meals": 9,
+      "area": [
+        5940,
+        5980,
+        3625,
+        1965
+      ],
+      "pre_stop_area": [
+        3280,
+        3320,
+        2780,
+        1285
+      ],
+      "final_food": [
+        0,
+        2,
+        1,
+        0,
+        0,
+        9
+      ],
+      "final_hunger": [
+        100,
+        100,
+        45,
+        40
+      ],
+      "decisions": 71
+    },
+    {
+      "ordinal": 32,
+      "meals": 0,
+      "area": [
+        7100,
+        7100,
+        7100,
+        7100
+      ],
+      "pre_stop_area": [
+        3800,
+        3800,
+        3800,
+        3800
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 103
+    },
+    {
+      "ordinal": 33,
+      "meals": 0,
+      "area": [
+        7100,
+        7100,
+        7100,
+        7100
+      ],
+      "pre_stop_area": [
+        3800,
+        3800,
+        3800,
+        3800
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 103
+    },
+    {
+      "ordinal": 34,
+      "meals": 1,
+      "area": [
+        8740,
+        8740,
+        6395,
+        8740
+      ],
+      "pre_stop_area": [
+        5440,
+        5440,
+        3185,
+        5440
+      ],
+      "final_food": [
+        1,
+        3,
+        0,
+        0,
+        0,
+        1
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 104
+    },
+    {
+      "ordinal": 35,
+      "meals": 5,
+      "area": [
+        7100,
+        4550,
+        6395,
+        8740
+      ],
+      "pre_stop_area": [
+        3960,
+        2550,
+        3185,
+        5440
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "final_hunger": [
+        100,
+        80,
+        100,
+        100
+      ],
+      "decisions": 118
+    },
+    {
+      "ordinal": 36,
+      "meals": 0,
+      "area": [
+        8700,
+        8700,
+        8700,
+        8700
+      ],
+      "pre_stop_area": [
+        5400,
+        5400,
+        5400,
+        5400
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 119
+    },
+    {
+      "ordinal": 37,
+      "meals": 0,
+      "area": [
+        8700,
+        8700,
+        8700,
+        8700
+      ],
+      "pre_stop_area": [
+        5400,
+        5400,
+        5400,
+        5400
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 119
+    },
+    {
+      "ordinal": 38,
+      "meals": 4,
+      "area": [
+        8700,
+        8350,
+        8700,
+        8350
+      ],
+      "pre_stop_area": [
+        5400,
+        5050,
+        5400,
+        5050
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 129
+    },
+    {
+      "ordinal": 39,
+      "meals": 4,
+      "area": [
+        8700,
+        8350,
+        8700,
+        8350
+      ],
+      "pre_stop_area": [
+        5400,
+        5050,
+        5400,
+        5050
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 129
+    },
+    {
+      "ordinal": 40,
+      "meals": 8,
+      "area": [
+        4580,
+        2175,
+        4420,
+        1870
+      ],
+      "pre_stop_area": [
+        2000,
+        1080,
+        1840,
+        940
+      ],
+      "final_food": [
+        1,
+        0,
+        0,
+        3,
+        0,
+        8
+      ],
+      "final_hunger": [
+        100,
+        55,
+        100,
+        50
+      ],
+      "decisions": 93
+    },
+    {
+      "ordinal": 41,
+      "meals": 7,
+      "area": [
+        4635,
+        4160,
+        4635,
+        3430
+      ],
+      "pre_stop_area": [
+        1895,
+        1580,
+        1895,
+        1180
+      ],
+      "final_food": [
+        1,
+        0,
+        1,
+        3,
+        0,
+        7
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        90
+      ],
+      "decisions": 86
+    },
+    {
+      "ordinal": 42,
+      "meals": 8,
+      "area": [
+        6980,
+        4940,
+        4220,
+        4390
+      ],
+      "pre_stop_area": [
+        3680,
+        2060,
+        1640,
+        1650
+      ],
+      "final_food": [
+        1,
+        3,
+        0,
+        0,
+        0,
+        8
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 93
+    },
+    {
+      "ordinal": 43,
+      "meals": 10,
+      "area": [
+        5660,
+        3090,
+        4210,
+        4390
+      ],
+      "pre_stop_area": [
+        3080,
+        1500,
+        1630,
+        1650
+      ],
+      "final_food": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        10
+      ],
+      "final_hunger": [
+        100,
+        70,
+        100,
+        100
+      ],
+      "decisions": 97
+    },
+    {
+      "ordinal": 44,
+      "meals": 3,
+      "area": [
+        38980,
+        37230,
+        38980,
+        36450
+      ],
+      "pre_stop_area": [
+        35680,
+        33930,
+        35680,
+        33150
+      ],
+      "final_food": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        3
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 415
+    },
+    {
+      "ordinal": 45,
+      "meals": 5,
+      "area": [
+        36910,
+        37230,
+        36340,
+        36450
+      ],
+      "pre_stop_area": [
+        33610,
+        33930,
+        33040,
+        33150
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 413
+    },
+    {
+      "ordinal": 46,
+      "meals": 8,
+      "area": [
+        4580,
+        2175,
+        4420,
+        1870
+      ],
+      "pre_stop_area": [
+        2000,
+        1080,
+        1840,
+        940
+      ],
+      "final_food": [
+        1,
+        0,
+        0,
+        3,
+        0,
+        8
+      ],
+      "final_hunger": [
+        100,
+        55,
+        100,
+        50
+      ],
+      "decisions": 93
+    },
+    {
+      "ordinal": 47,
+      "meals": 7,
+      "area": [
+        4635,
+        4160,
+        4635,
+        3430
+      ],
+      "pre_stop_area": [
+        1895,
+        1580,
+        1895,
+        1180
+      ],
+      "final_food": [
+        1,
+        0,
+        1,
+        3,
+        0,
+        7
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        90
+      ],
+      "decisions": 86
+    },
+    {
+      "ordinal": 48,
+      "meals": 8,
+      "area": [
+        6980,
+        4940,
+        4220,
+        4390
+      ],
+      "pre_stop_area": [
+        3680,
+        2060,
+        1640,
+        1650
+      ],
+      "final_food": [
+        1,
+        3,
+        0,
+        0,
+        0,
+        8
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 93
+    },
+    {
+      "ordinal": 49,
+      "meals": 10,
+      "area": [
+        5660,
+        3090,
+        4210,
+        4390
+      ],
+      "pre_stop_area": [
+        3080,
+        1500,
+        1630,
+        1650
+      ],
+      "final_food": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        10
+      ],
+      "final_hunger": [
+        100,
+        70,
+        100,
+        100
+      ],
+      "decisions": 97
+    },
+    {
+      "ordinal": 50,
+      "meals": 3,
+      "area": [
+        38980,
+        37230,
+        38980,
+        36450
+      ],
+      "pre_stop_area": [
+        35680,
+        33930,
+        35680,
+        33150
+      ],
+      "final_food": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        3
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 420
+    },
+    {
+      "ordinal": 51,
+      "meals": 5,
+      "area": [
+        36910,
+        37230,
+        36340,
+        36450
+      ],
+      "pre_stop_area": [
+        33610,
+        33930,
+        33040,
+        33150
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 413
+    },
+    {
+      "ordinal": 52,
+      "meals": 3,
+      "area": [
+        77380,
+        75630,
+        77380,
+        74850
+      ],
+      "pre_stop_area": [
+        74080,
+        72330,
+        74080,
+        71550
+      ],
+      "final_food": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        3
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 848
+    },
+    {
+      "ordinal": 53,
+      "meals": 5,
+      "area": [
+        75310,
+        75630,
+        74740,
+        74850
+      ],
+      "pre_stop_area": [
+        72010,
+        72330,
+        71440,
+        71550
+      ],
+      "final_food": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "decisions": 797
+    },
+    {
+      "ordinal": 54,
+      "meals": 8,
+      "area": [
+        4580,
+        2175,
+        4420,
+        1870
+      ],
+      "pre_stop_area": [
+        2000,
+        1080,
+        1840,
+        940
+      ],
+      "final_food": [
+        1,
+        0,
+        0,
+        3,
+        0,
+        8
+      ],
+      "final_hunger": [
+        100,
+        55,
+        100,
+        50
+      ],
+      "decisions": 93
+    },
+    {
+      "ordinal": 55,
+      "meals": 7,
+      "area": [
+        4635,
+        4160,
+        4635,
+        3430
+      ],
+      "pre_stop_area": [
+        1895,
+        1580,
+        1895,
+        1180
+      ],
+      "final_food": [
+        1,
+        0,
+        1,
+        3,
+        0,
+        7
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        90
+      ],
+      "decisions": 86
+    }
+  ],
+  "reporting_placebos": 2
+}

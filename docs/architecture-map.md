@@ -4,6 +4,13 @@ Navigation summary, protected through023. Source and mode-specific
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
+## Current gated program
+
+The [independent024review](experiment-024-review.md) accepts with qualification at873b524.
+[Review checks](development/finite-material-review-validation.json) preserve all originals.
+Qualified001–024 protection and prospective025 design are separately gated; no025
+runtime or default adoption follows from review. See the [checkpoint](development/continuation-checkpoint.md).
+
 ## Start here
 
 - Rules: [AGENTS.md](../AGENTS.md); protected [001–023 contract](experiment-contract-001-023.md),

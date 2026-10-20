@@ -303,3 +303,14 @@ uses explicit024 schema/version8. [Readiness](../development/post-024-community-
 and [future handoff](../development/post-024-material-preparation-handoff.md) recommend
 only a separately authorized finite delayed-work study. No025 or material supply
 was added.
+
+## Independent024review and next gated program
+
+[Review](../experiment-024-review.md): ACCEPT WITH QUALIFICATION at873b524. A new
+standard-library-only primitive reconstruction confirms19changed selections,19actual
+work starts,19completed-effect differences,19terminal food/trust and13hunger
+differences,8behavioral/state nulls and3food reconvergences. Earlier meal0/1 is
+harmful on all full-run hunger areas;6/7 gives specific benefit;finite exhaustion
+remains. Start18 versus first completed effect19 is explicit. Qualified protection
+is suitable but pending. MealRelief remains unadopted. New025research requires
+published001–024protection and its own prospective gate; no026/canon change.

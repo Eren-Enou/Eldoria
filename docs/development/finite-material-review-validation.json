@@ -1,0 +1,68 @@
+{
+  "scope": "Stage A independent024 review at873b524; no original outcomes replaced",
+  "reviewed_revision": "873b5240e7b99ec4d8f780c49a9f2cf8abfe81e4",
+  "fresh_checks": [
+    {
+      "command": "cargo fmt --check",
+      "exit": 0,
+      "log": "%TEMP%/finite-material-preparation/A-fmt.log"
+    },
+    {
+      "command": "cargo clippy --locked --all-targets -j 1 -- -D warnings",
+      "exit": 0,
+      "log": "%TEMP%/finite-material-preparation/A-clippy.log"
+    },
+    {
+      "command": "cargo test --locked -j 1",
+      "exit": 0,
+      "log": "%TEMP%/finite-material-preparation/A-test.log"
+    },
+    {
+      "command": "cargo run --release --locked -j 1 --example validate024",
+      "exit": 0,
+      "log": "%TEMP%/finite-material-preparation/A-validate024.log"
+    },
+    {
+      "command": "cargo test --release --locked -j 1 --manifest-path prototypes/activity-valuation/Cargo.toml --target-dir target/activity-valuation",
+      "exit": 0,
+      "log": "%TEMP%/finite-material-preparation/A-prototype-test.log"
+    }
+  ],
+  "root_tests": 217,
+  "prototype_tests": 7,
+  "new_independent_review": "56 original worlds,27pairs,2placebos;6 scratch controls rejected",
+  "historical_gate_reuse": {
+    "record": "docs/development/activity-valuation-foundation-validation.json",
+    "source_bindings_reverified": 100,
+    "qualification": "Prior normal001-023 gate/legacy standalones reused only at identical relevant source hashes for review; new001-024 protection requires fresh extended normal gate."
+  },
+  "source_sha256": {
+    "examples/support/review024_audit.py": "20ca411d669331d5707e9507d0f08561636dfa32248cfab1f7a90d87a1667db3",
+    "docs/development/experiment-024-review-findings.json": "ccfac71a9b8a517db0a5e0eedcc22632e6f326691f0efa2c05b38c095d31cd6d"
+  },
+  "original024_raw_sha256": {
+    "experiments/024/archive-manifest.json": "32a20c5f30a0f7df3c78df7967903b9141e76e61274c8fe3662f5cb756f64dd1",
+    "experiments/024/causal-slices.json": "c79ccc1b2afa2ca79f2925b9844d9753f73ce82310e4b7412680f12131881c62",
+    "experiments/024/comparisons.json": "051ba94f38165da702aca281e3e6690a7185a128f6fb98b74c2b87b7ae37bc8c",
+    "experiments/024/completion-checks.json": "d42adbf138e1bf2149404a8c5818690011f520cab2602f895073c256c8f33680",
+    "experiments/024/corruption-controls.json": "760be48a7a7c46fa294bc68f59b696e17828264a8606f28fd14ab66f0e9de2a6",
+    "experiments/024/design-gate.md": "f6b1252f72d98df3b805276536f9758019d7950bf7509750f4d983d36ae99f87",
+    "experiments/024/independent-findings.json": "2f185ce38ae4c39b2fc93b0b86dc89a8f1bd06f6d3c94004717ba5caae391425",
+    "experiments/024/independent-metrics.json": "2d08386b277655fe92a8a69e95a5e205ec66574f0450d8eb7ef06860c2b1ac56",
+    "experiments/024/inherited-source-bindings.json": "3dbd76dd1a9bc5e0c8857ca708554d7096efcf9163efc9fa7f3a5a2e6e07df84",
+    "experiments/024/performance-original-run.json": "7596df531ccdb47175e31532fa6c81afbd2ee96c2a8dbdbe30875409d7c5c503",
+    "experiments/024/performance.json": "681be8afa675e9c74b4a819c73f6c22d8c62aff63dacccc1101311b823a508ae",
+    "experiments/024/prospective-validation.json": "eeb282f7ed7f3d29e37aeeb846918b1a75267531134dea56937a878bb065b869",
+    "experiments/024/registered-matrix.json": "d5512cd9ecebb2c43edbcfb269c52cabb1338728d130cd19e2f5a14afa2528de",
+    "experiments/024/results.md": "08306edd46446f1b10a48b7acf0241836da8ef60e211dfca458a13c8b7957ef0",
+    "experiments/024/runtime-gate.json": "d1d97ef4c690cb1fa45a660ffcd493a167209740ed6af53857e70c081ff1ba7e",
+    "experiments/024/source-freeze.json": "307cb911bd45d512bfb560c0adf8897cdd66e0e08abecd7b3c80200caee81ec4",
+    "experiments/024/specification.md": "b79d6673b09b0a68958f877326b55a474ed419cf91261dfa65a2db9130ed5c18",
+    "experiments/024/supplemental-evidence-sha256.json": "1d457a8f900140b5e63b00909c1eb33edcbb49f4ef1156e82be40f68d934b6ea",
+    "experiments/024/trials.jsonl.gz": "98da25f34239d8c704c0fffad33d33c4194d8ada46771ff11ba2c0abead19b2f",
+    "experiments/024/validation-source-locks.json": "40611591dfe16c4b32a1c67dfa9f80d88c76217bbf856fcd9d622bdaef408e36",
+    "experiments/024/verification.json": "77674041b490a6bfd1d574197e988b0f78d006b6afd133a114320f94ca4496f4",
+    "experiments/024/verification.md": "3e6bca91bb44abb12d69f257ce393496f96f4cb025110c32694863d9e050662d"
+  },
+  "unchanged_raw_historical_files": 403
+}
