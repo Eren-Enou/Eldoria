@@ -1,0 +1,94 @@
+[
+  {
+    "name": "root-fmt",
+    "command": [
+      "cargo",
+      "fmt",
+      "--check"
+    ],
+    "exit": 0,
+    "seconds": 2.057548200013116,
+    "log": "C:\\Users\\Aaron\\AppData\\Local\\Temp\\activity-valuation-024\\H-root-fmt.log"
+  },
+  {
+    "name": "root-clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--locked",
+      "--all-targets",
+      "-j",
+      "1",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit": 0,
+    "seconds": 2.5520925999153405,
+    "log": "C:\\Users\\Aaron\\AppData\\Local\\Temp\\activity-valuation-024\\H-root-clippy.log"
+  },
+  {
+    "name": "root-test",
+    "command": [
+      "cargo",
+      "test",
+      "--locked",
+      "-j",
+      "1"
+    ],
+    "exit": 0,
+    "seconds": 114.86535970005207,
+    "log": "C:\\Users\\Aaron\\AppData\\Local\\Temp\\activity-valuation-024\\H-root-test.log"
+  },
+  {
+    "name": "prototype-fmt",
+    "command": [
+      "cargo",
+      "fmt",
+      "--manifest-path",
+      "prototypes/activity-valuation/Cargo.toml",
+      "--check"
+    ],
+    "exit": 0,
+    "seconds": 0.199068000074476,
+    "log": "C:\\Users\\Aaron\\AppData\\Local\\Temp\\activity-valuation-024\\H-prototype-fmt.log"
+  },
+  {
+    "name": "prototype-clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--manifest-path",
+      "prototypes/activity-valuation/Cargo.toml",
+      "--target-dir",
+      "target/activity-valuation",
+      "--locked",
+      "--all-targets",
+      "-j",
+      "1",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit": 0,
+    "seconds": 1.30885200004559,
+    "log": "C:\\Users\\Aaron\\AppData\\Local\\Temp\\activity-valuation-024\\H-prototype-clippy.log"
+  },
+  {
+    "name": "prototype-test",
+    "command": [
+      "cargo",
+      "test",
+      "--manifest-path",
+      "prototypes/activity-valuation/Cargo.toml",
+      "--target-dir",
+      "target/activity-valuation",
+      "--locked",
+      "-j",
+      "1"
+    ],
+    "exit": 0,
+    "seconds": 4.431236600037664,
+    "log": "C:\\Users\\Aaron\\AppData\\Local\\Temp\\activity-valuation-024\\H-prototype-test.log"
+  }
+]

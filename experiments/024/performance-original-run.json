@@ -1,0 +1,8 @@
+{
+  "kind": "Separate wall-clock/process measurement, not deterministic simulation evidence",
+  "first_registered_matrix_seconds": 1.0604255999205634,
+  "process_peak_working_set_bytes": 22687744,
+  "memory_samples": 196,
+  "process_scope": "Entire sequential recording/serialization process; includes observer history/audit, not isolated deep live cognition heap",
+  "conditions": "Release executable after successful warm build; no other benchmark/simulation/validation process running; idle local viewer/app remain"
+}

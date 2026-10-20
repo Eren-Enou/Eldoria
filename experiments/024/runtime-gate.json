@@ -1,0 +1,18 @@
+{
+  "status": "PASS before final treatment",
+  "preregistration_commit": "80325c1e85bbdef0344d7b723618becbf0208ef8",
+  "compiled_original023_exact_byte_replays": 42,
+  "new_baseline_exact_continuous_bodies": 22,
+  "allowed_body_difference": "Only explicit physical schema023\u2192024; all other serialized history bytes and checkpoints exact",
+  "new_baseline_audit": "All meal_relief terms0 and final scores equal base",
+  "selector_tests": 4,
+  "inherited_library_unit_tests": 3,
+  "prototype_fmt": "PASS",
+  "explicit_model_rustfmt": "PASS",
+  "prototype_all_target_clippy": "PASS",
+  "root_fmt": "PASS",
+  "root_all_target_clippy": "PASS",
+  "full_and_complementary_readers": "Baseline-only smoke PASS",
+  "original_raw_files_unchanged": 403,
+  "qualification": "No MealRelief world/final treatment outcome has run; synthetic pure-selector tests are controls, not experimental outcome evidence. No physical/cognitive/consent source changed."
+}

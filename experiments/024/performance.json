@@ -1,0 +1,36 @@
+{
+  "scope": "Separate wall-clock recording/serialization throughput, not isolated simulation or cognitive heap; warm release executable, sequential workloads, idle viewer/app",
+  "matrix_samples_seconds": [
+    0.9643993999343365,
+    1.2828679999802262,
+    0.9120356000494212
+  ],
+  "matrix_median_seconds": 0.9643993999343365,
+  "worlds_per_second": 58.06722816689112,
+  "exact_decoded_replay_each_sample": true,
+  "exact_byte_replay_seconds": 1.582997199962847,
+  "full_independent_reader_seconds": 68.56166350003332,
+  "compressed_bytes": 4816228,
+  "totals": {
+    "bytes": 177596722,
+    "history_bytes": 173723186,
+    "valuation_audit_bytes": 3752089,
+    "choices": 8668
+  },
+  "long_rows": [
+    {
+      "bytes": 18933292,
+      "history_bytes": 18555405,
+      "valuation_audit_bytes": 367476,
+      "choices": 848
+    },
+    {
+      "bytes": 26798528,
+      "history_bytes": 26441549,
+      "valuation_audit_bytes": 346403,
+      "choices": 797
+    }
+  ],
+  "scratch_logs": "C:\\Users\\Aaron\\Eldoria\\target\\024-measure-i8jst9v9",
+  "conditions_qualification": "Matrix/replay samples were sequential and otherwise idle. During the independent-reader timing, a supplementary causal-slice extraction ran for about3.5seconds; reader timing is indicative, not an isolated benchmark. No baseline-versus-treatment speed inference is made."
+}

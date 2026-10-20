@@ -1,0 +1,21 @@
+{
+  "read_only_gate": {
+    "command": "cargo run --release --locked -j 1 --example validate024",
+    "exit": 0,
+    "log_sha256": "5f3722e78431db2ed75e5c239cc5c899458980e07df3cf1307b18eb28d891078",
+    "worlds": 56,
+    "exact_byte_replays": 56,
+    "matched_prefixes": 27,
+    "report_placebos": 2,
+    "rejected_corruptions": 34
+  },
+  "protected_original_artifacts": 386,
+  "raw_original_files": 403,
+  "unchanged_stage_b_source_bindings": 100,
+  "pre_run_source_bindings": 96,
+  "pre_run_validation_bindings": 17,
+  "root_tests": 217,
+  "prototype_tests": 7,
+  "foundation_gate_reuse": "Stage B actual full normal gate and standalones remain applicable: all100 relevant source bindings unchanged; original386 and raw403 identities freshly checked. No earlier archive/source was edited.",
+  "qualification": "024 remains separate research, unadopted and outside protected001\u2013023; no new source or policy weights after outcomes."
+}

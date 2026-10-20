@@ -1,0 +1,14 @@
+{
+  "examples/support/slices024.py": "2a28fde171ab91b9a1e41cff0a022221f32036075a6b3d228673589e00dd1160",
+  "experiments/024/archive-manifest.json": "2b5f2aecef1f4f664b6ff2ecbf5ae0397202a47377ec13f716d256c0f3da9368",
+  "experiments/024/independent-metrics.json": "12aeff32c501efe0ed0707e958a5a0644d8f56528eb8b3916e7c66a45c662ab3",
+  "experiments/024/independent-findings.json": "a7a349dc8895fede39e46d12b69288c5211a3390126615f49c5e8a3da89b448d",
+  "experiments/024/comparisons.json": "9d95e758ecac4b4c47f1845553309b18b078d94434d7d07ee8b711b87cc6dccc",
+  "experiments/024/corruption-controls.json": "3482758e58ff6055b594c82428566d1ba074730e44d33fdaf5373f622165b669",
+  "experiments/024/causal-slices.json": "966b306c0af9a3743c701d35957c4ce86f1f9e21a18724889541fa9af02b09e6",
+  "experiments/024/results.md": "289d422e172bf7c738ee128003ccdf35a3381f8149d5d8ea7519fb3eecf5edc8",
+  "experiments/024/verification.md": "3e6bca91bb44abb12d69f257ce393496f96f4cb025110c32694863d9e050662d",
+  "experiments/024/completion-checks.json": "7f5f74679711805f0c6712e673a1490de9af030118544ce99962d8486d9efa0c",
+  "experiments/024/performance.json": "a2fb5e26169e54bfd748e8867e72e709f8d6e7ba358c9786e8b821af5ee033ff",
+  "experiments/024/performance-original-run.json": "d71ef7a705db98f863f7d7290dd60d845c2ce371594e38714840550506bb9a62"
+}

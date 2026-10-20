@@ -1,118 +1,108 @@
-# Continuous activity valuation — active checkpoint
+# From Continuous Activity to Meaningful Decisions â€” active checkpoint
 
-Goal ACTIVE, full attachment:
+Goal ACTIVE: full Aâ€“K program in
 C:/Users/Aaron/.codex/attachments/963863ea-53a0-4492-b4ee-23a8374fb69c/pasted-text-1.txt.
-Program A–K: review/protect023, observational diagnosis, architecture/fixed024
-registration, gated opt-in implementation, evaluation/independent reconstruction,
-actual viewing, post024readiness and future material-work handoff. No025/material
-preparation/new supply/planner/welfare optimizer/default adoption/automatic024
-protection/canon changes. No subagents authorized or used.
+Do not stop at implementation or passing tests. Remaining required work includes
+024 publication, authentic History Explorer integration/browser acceptance,
+post024 readiness, future material-work handoff, final Parts Aâ€“F delivery and
+requirement-by-requirement completion audit. No025, material work, new supply,
+planner, global optimizer, default adoption, automatic024 protection or lore edits.
+No subagents authorized or used. Previous turn made progress: final56 original
+worlds, independent results,34 corruption controls and56 exact replays passed.
 
-Branch main. Published C HEAD/origin last verified:
-ce646dce4c0e4d4cd7095ab7f53553d75dcc5551. B:4da9fdcd03da31e72512f51979a966e64f7e9e79.
-Review A:5ff98ff47db48706078fd18ed985d5acb29eadac. Starting reference336ab08354bda6dbdb5171e4066e28ea28344b6b.
-Initial tree was clean. Current changes are ours, separated by milestone below.
-B publication was verified against remote. Do not claim E registration publication until actually pushed.
-Inspect actual Git/files and revalidate live handles after resuming.
+## Repository and published milestones
 
-## A completed and published
+Branch main. Last verified published HEAD/origin:
+80325c1e85bbdef0344d7b723618becbf0208ef8 (D/E preregistration).
+A independent023review:5ff98ff47db48706078fd18ed985d5acb29eadac.
+B foundation:4da9fdcd03da31e72512f51979a966e64f7e9e79.
+C diagnosis/viewer fix:ce646dce4c0e4d4cd7095ab7f53553d75dcc5551.
+Start336ab08354bda6dbdb5171e4066e28ea28344b6b. Inspect actual Git state after
+resuming. Current uncommitted changes are task-owned024 runtime/evidence/reports.
+Do not claim their publication until push and actual remote revision are verified.
 
-Independent023review ACCEPT WITH QUALIFICATION. New self-contained
-examples/support/review023_findings.py imports no022/023reader/evaluator/viewer;
-all42physical timelines and every activity/contact score/eligibility/tie checked,
-five new scratch controls rejected. Its findings JSON and review/validation are
-published. Original validate023 freshPASS; slices/coverage/endpoint/inquiry audits
-freshPASS. Preserve source80/helper5, cap16, Direct native-null/provenance progress,
-phase/short-control/drain qualifications. No runtime defect found.
-Raw403 guard: docs/development/activity-valuation-original-working-sha256.json.
-This includes378old working files +25original023files. All remain byte-identical.
+## Completed Aâ€“E
 
-## B completed and published
+023 independently ACCEPT WITH QUALIFICATION: all42 primitive/score histories,
+20matched pairs,19choice/execution,12terminalfood,5terminalhunger,19trust;
+real nulls, reconvergence and harmful contact preserved. Local query native null
+and provenance receipt remain separate. Episodic cap16, reporting-only boundaries,
+nominal stopping and charged33drain qualified. See docs/experiment-023-review.md.
+Foundation001â€“023 protected386 artifacts (361inherited +25original023files).
+All403 original working raw hashes unchanged. Normal foundation validator PASS
+1798.239seconds,217root testsPASS and all17standalones009â€“022 plus appropriate
+foundation wrappersPASS; original023 and new023foundation separatelyPASS.
+Durable command/source evidence:
+docs/development/activity-valuation-foundation-validation.json (100bindings).
+All100 relevant source bindings rechecked unchanged during H.
 
-New docs/experiment-contract-001-023.md, foundation-001-023-sha256.json,
-integrity-audit-001-023.md, research-handoff-001-023.md. Actual386 entries =361
-inherited key/hashes unchanged +25original023files; no review/viewer originals.
-New examples/support/contract023.rs exact frozen validate023prefix plus explicit
-extension; new validate023_foundation.rs; normal validate_contract includes it.
-Old standalone/source/archives untouched. Targeted new foundation gate PASS.
-Initial fmt only requested new argument wrapping; new helper formatted, thenPASS.
+C: docs/development/continuous-activity-valuation-diagnosis.md and observations
+reconstruct7193 choices/951eligible meals/738nonselected,180atH100. Actual main
+browser inspected originals19,10/11,1,2,13,21. Found viewer navigation stale IDs;
+minimal post-sort ID repair, extractor7;9target and57full viewer tests plus4JS
+suitesPASS. No simulation defect. Screenshot/actual observations under
+activity-valuation-browser. Server lastPID161040 on127.0.0.1:8765 (verify live).
+CUA selectedbrowser2, valuationTab024 tab7; rewriteDocumentation after compaction.
 
-Required-check session3812 COMPLETE0collected: rootfmtPASS(.837s),ClippyPASS
-(2.424s),217testsPASS(126.307s),full normal001–023gatePASS(1798.239s).
-Standalone session76557 COMPLETE0collected: ALL17checks009–022plus020/021/022
-foundationPASS. Original023standalone freshA and new023foundation freshB PASS.
-Durable docs/development/activity-valuation-foundation-validation.json binds exact
-commands/exits/timings and relevant source identities. Raw403/inventory386 unchanged.
-No live validation jobs remain. No benchmark for validation-only B. Bpublished
-4da9fdcd03da31e72512f51979a966e64f7e9e79; remote verified. C/D/Eremain separate
-commits; no024implementation before fixedEregistration publication.
+FixedE specification/design-gate/matrix published before implementation.56worlds:
+27Baseline/MealRelief pairs +2reportplacebos.20originalContinuousconfigpairs,
+6seed-sensitive pairs,1longH768pair. One primary intervention:
+eligible Consume score Hâ†’H+min(H,40), after old pending masks. Other scores,
+first-max ties, physics, source, consent, cognition and capacities unchanged.
+Alternatives considered in activity-valuation-architecture.md. Never retune now.
 
-## C completed and published in ce646dce4c0e4d4cd7095ab7f53553d75dcc5551
+## Completed F/G and scientific H evidence, unpublished
 
-examples/support/diagnose023_activity.py and docs/development/
-continuous-activity-valuation-{diagnosis.md,observations.json}; expected read-only
-rerunPASS. All42worlds7193choices,951eligible meals,738nonselected,180atH100.
-Not statistical frequencies; includesreportplacebos/repeateddependentchoices.
-Original19has104H100food-owned non-meal opportunities; at72 actor2 food1:
-trust98,V28,Request84,Offer66,+50-2→Invite132overConsume100. At77food2:
-Offer128,+50-2→176. Even neutraltrust atH100/C20Request60+50-2=108>Consume100;
-trust is not uniquely necessary. Own food excludes Acquire but not Request value.
+New isolated prototypes/activity-valuation workspace uses frozen oldhost plus
+explicit reversible ordinary-selector seams. Baseline default, MealRelief opt-in,
+no rootlib behavior changes. Explicit024envelope/physicalschema. Actual pre-run
+42oldexactbytes/22newBaselinehistorybodiesPASS (only explicit schema differs),
+4selectorcontrols+3inheritedunitPASS,fmt/ClippyPASS. Before first MealRelief world:
+96source/registration and17validation inputs frozen. No source edits after outcome
+inspection. Runtime outputcreate_new, prohibited in experiments/reinforcement.
 
-Useful actual contact: original2 actor2@6Invite85>Acquire80,food0/H80;
-transfer11event10 food0→1,H85; actualmeal12 H85→45. ThenAcquire45selected12.
-Original1@18Invite48>Consume35 aftergrant; actualtransfer22event17[1,1]→[0,2].
-Clean10/11 actor2@7food1/H5: contactexcluded vsInvite64; actualmeal8vs9,
-Leave10/no transfer; area+5. Materialreconverges9buttrustintegral/historydiffer.
-Original13actualquery19 joinsprovenance receipt1→cognitive0 despite nativeNone.
-Original21nullonlyWait withfood0/H0/contact-2. Don’t call all contact useless.
+Original56world matrix complete. Archive SHA256:
+98da25f34239d8c704c0fffad33d33c4194d8ada46771ff11ba2c0abead19b2f.
+Decoded:fa650c05cf433a5723df4e5f4be81bddc1065d8cdfc50d161dad5d51010a26d7.
+Independent fullreader56PASS, complementary56timelines/27matchedprefixes/2exact
+placebosPASS, all34scratch controls rejected. Actual full
+cargo run --release --locked -j1 --example validate024 COMPLETE0(session55379
+collected): all386/403oldidentities and96/17sources, savedmetrics/findings/
+comparisons,34controls and56exactRustbyte replaysPASS. Logs TEMP/activity-valuation-024/H-validate024.log.
+Supplemental slices024.py (not in pre-run freeze) produces27pairs/12boundedwitnesses.
 
-FOUND/REPAIRED a read-only VIEWER bug, no simulation bug:023inserted/sortedreport
-checkpoints after oldtimelineIDs were assigned; event-list clicks could open wrong
-record. Actualresource22clickedneed22. Newall42ID/index/reference regressionFAILED
-beforefix; repairedby assigning IDs after finalsort, derivedEXTRACTOR6→7 and matching
-app.js guard/testexpectation. No frozen science/runtime/source modified.
-Current nine023testsPASS31.452s; FULL57viewertestsPASS326.880s (session73116collected0).
-FourlegacyJS suites+appsyntaxPASS(session67676collected0). Durable
-activity-valuation-diagnosis-validation.json. Do not repeat unchanged tests.
-Originalreview/publication prose preserved; diagnosis discloses earlier testgap.
+Results ACCEPT WITH QUALIFICATION, not adoption:19choice/execution pairs,
+19terminalfood/19trust/13terminalhunger differences;8behavior/state nulls ignoring
+onlyConsume score,4fullbody nulls;3temporaryfood reconvergences.15moremeal pairs,
+4fewer;7pairs anyactorhigherfullarea and15anylower(overlap),19anylowerprestop.
+Paired0/1 costly treatment: meals8â†’7, fullarea[55,1985,215,1560]. Consumption6/7
+meals8â†’10, area[-1320,-1850,0,0]. Exhaustion18/19 meals3â†’5, allfoodconsumed,
+H100eligiblemissed104â†’0, area[-2070,0,-2640,0], scenes172â†’189 but transfers87â†’4.
+H768replicatesfinite relief, everyoneeventuallyH100. All10queries remain identical
+Direct native-null/provenancereceipt/support0â†’50/Openâ†’Partial; noquery treatment
+effect. All outcomes retained. See experiments/024/results.md, comparisons,
+independent-findings and causal-slices for original references.
 
-Actualbrowser CUA valuationTab024 tab7, selectedbrowser2, currentlyoriginal21owned
-Wait. phaseTab oldtab3 gotconnection-error data page during serverrestart; do notuse.
-Newserver PID161040 verified listening127.0.0.1:8765, command sameexplicit023+demo;
-verify exactcmdline beforetouchingprocess. No needrestart. CUA rewriteDocumentation
-requiredaftercompaction; browser-troubleshooting/local-web-development docs read.
-Node diagnosisBrowser024 array capturedactual11,10,1,2,13,21; invalid pre-fix event
-captureexcluded/disclosed. Saved docs/development/activity-valuation-browser/
-observations.json. Genuine original19-owned-food-neglect.png visuallyQA (ownsource
-correct via Nextdecision even before indexfix). Newbrowser actualAccept22opensexact
-history.final_state.base.base.base.base.base.events[17]; transfer11/meal12alsoverified.
-Tab7markedHandoff thisturn; markagain whencontinuing. Don’t close unrelated tabs.
+Performance separateJSON: firstmatrix1.0604s/peak22,687,744bytes working set;
+3matrix samples median.9644s (~58.1worlds/s), every decodedhash exact. Replay1.583s.
+Fullreader68.56s overlapped3.5s supplementarysliceextraction (qualified, notisolated).
+Compressed4,816,228bytes,decoded177,596,722bytes,3,752,089auditbytes(2.11%),8668choices.
+No isolatedcognitiveheap/oldnewruntimecomparison claim. Fullobserver histories grow.
 
-C includes diagnosis/observations/helper/browser/validation/minimal viewerrepair,
-map/index and READMEversion update. No valuation treatment implemented. Resolve
-this separate publication in ce646dc (remote verified); E remains the next milestone.
+## Live checks / next exact actions
 
-## D/E prospective registration ready; this checkpoint belongs to its publication milestone
+Root/prototype completion checks COMPLETE0, session48115 collected. All six
+commands passed: root/prototype fmt, locked all-target Clippy -D warnings,217root
+and7prototype tests. completion-checks.json stores actual exits/timings. Fresh
+pre-publication source checks passed96/17,386protected and403raw originals;
+all100 StageB validator-source bindings unchanged. No live validation jobs.
+Supplementary SHA manifest records post-run reports separately from pre-run locks.
 
-New docs/development/activity-valuation-architecture.md compares four alternatives.
-New experiments/024/specification.md, design-gate.md and registered-matrix.json.
-PrimaryMealRelief: eligibleConsumeH→H+min(H,40), other scores/eligibility/contact
-selection/ties unchanged; Baselinezeroaddition.40fromexistingmeal law, not fitted.
-Purelocalfinalselector AFTER oldpendingmasks. No new cognition or future inputs.
-Other candidates(timecost/retainedfeedback/combined) deferred for isolation.
-Food0Acquire vsfoodpositiveConsume remain mutuallyexclusive; allthree compete
-sequentially incontinuingstate, not by changing law toforce3wayeligibility.
-
-Fixed56worlds:20originalContinuousconfigs023odd1..39 ×2valuationmodes (40rows);
-newseeds7/17×paired/consumption/exhaustion×2 (12rows); exhaustionH768×2 (2rows);
-pairedperiod17reportplacebo pervaluation (2rows).27matchedpairs +2reportplacebos.
-No policy or simulation evaluation used to select this matrix. No retuning allowed.
-No024Rust/evaluator/runtime exists yet. Static prospective checks PASS and recorded
-in experiments/024/prospective-validation.json:386original identities/361inheritance,
-80+5source locks,56configs/27pairs/2placebos,20priorconfigs/links, no runtime/outcomes.
-DESIGNPASSforconditionalimplementationAFTEREregistrationremoteverification. B/C
-publication alreadyverified. Publish E spec/exactlaw/matrix BEFOREimplementation.
-Then implementsource-preservingseparateopt-inhost, proveBaselineparity beforefinal
-treatment, freezeoriginalsources, runall56withoutchangingregisteredlaw, archiveonly
-newoutputs, independentlyreconstructandtestcorruptions, measurecosts, actualviewer,
-readinessandfuture025handoff. Do not stop at a smaller milestone ormarkgoalcomplete.
+Finish milestone5 verification/supplemental evidence manifest, review diff, commit
+and push main safely. Then explicit versioned024mainviewer adapter/decision terms/
+matchedcomparison/missedmeal and usefulcontact navigation, privacy/source tests,
+allPython/JS tests and actual browser. Keep old023adapterversion7 and oldoutputs
+intact. Record authentic screenshot. Then post-024-community-readiness.md14answers,
+review sustained-material-opportunity-design.md and write futurehandoff(no025),
+update affected maps/indexes, finalPartsAâ€“F and20acceptancecriteria audit. Publish
+milestones6/7, verify actual remote, markgoal complete onlywhen all fullscope proven.
