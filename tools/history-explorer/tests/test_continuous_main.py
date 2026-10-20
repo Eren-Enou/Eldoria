@@ -13,9 +13,17 @@ class ContinuousMain(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):cls.temp.cleanup()
     def data(self,n):return self.repo.get(next(k for k,v in self.repo.entries.items() if v['record']==n))
+    def test_timeline_ids_follow_final_checkpoint_order(self):
+        # The main event list calls go(moment.id); IDs must address the final
+        # sorted timeline, including inserted observer checkpoints.
+        for ordinal in range(42):
+            data=self.data(ordinal)
+            self.assertEqual([m.get('id') for m in data['timeline']],list(range(len(data['timeline']))),ordinal)
+            for moment in data['timeline']:
+                self.assertEqual(data['timeline'][moment['id']]['ref'],moment['ref'])
     def test_explicit_schema_and_lossless_original(self):
         self.assertEqual(len(self.repo.entries),42);data=self.data(1)
-        self.assertEqual(data['extractor_version'],6);self.assertEqual(data['source']['source_schema'],'experiment-023-trial/v1')
+        self.assertEqual(data['extractor_version'],7);self.assertEqual(data['source']['source_schema'],'experiment-023-trial/v1')
         self.assertEqual(data['trial']['schema'],'experiment-023-physical-history/v1')
         self.assertNotIn('periods',data['trial']);self.assertNotIn('clock',data['trial'])
         self.assertEqual(e.digest(e.continuous_history.rebuild(data)),data['source']['trial_fingerprint'])

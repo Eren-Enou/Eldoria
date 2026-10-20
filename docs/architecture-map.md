@@ -189,3 +189,9 @@ are under docs/development. Protection and dependent 024 work have separate gate
 artifacts. Shared `contract023.rs`, standalone `validate023_foundation` and normal
 foundation preserve the unchanged original023gate, then verify inventory/parity,
 new review anchors and supplemental audits. No viewer dependency or default adoption.
+
+Current activity-valuation diagnosis: [report](development/continuous-activity-valuation-diagnosis.md),
+primitive observational helper `diagnose023_activity.py`, bounded findings and actual
+browser captures under docs/development. Read-only023adapter version7repairs final
+checkpoint timeline IDs; all42index/reference regression,57main tests and four
+legacyJS suites pass. This changes historical navigation only, not simulation.

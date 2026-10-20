@@ -9,7 +9,7 @@ _native_spec=importlib.util.spec_from_file_location('viewer023_primitives',Path(
 native=importlib.util.module_from_spec(_native_spec);_native_spec.loader.exec_module(native)
 VERSION='experiment-023-trial/v1'
 PHYSICAL='experiment-023-physical-history/v1'
-EXTRACTOR=6
+EXTRACTOR=7
 
 def validate(original):
     if set(original)!={'schema','config','history','checkpoints'} or original['schema']!=VERSION:
@@ -120,6 +120,9 @@ def export(entry,original):
         moment=dict(tick=checkpoint['tick'],kind='checkpoint',ref=ref,label=label,owners=[],phase=15)
         moments.append(moment);nodes[ref]=dict(moment,anchor=ref)
     moments.sort(key=lambda x:(x['tick'],x.get('phase',0),x['ref']))
+    # Main navigation indexes the final timeline. Inherited IDs predate inserted
+    # checkpoints and therefore cannot be retained after sorting this projection.
+    for index,moment in enumerate(moments):moment['id']=index
     return data
 
 def without_public_end(value):

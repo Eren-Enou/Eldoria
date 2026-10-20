@@ -1,0 +1,47 @@
+{
+  "stage": "C observational diagnosis and read-only navigation repair",
+  "reference": "336ab08354bda6dbdb5171e4066e28ea28344b6b",
+  "originals_unchanged": 403,
+  "adapter_version": 7,
+  "checks": [
+    {
+      "command": "python -B -m unittest discover -s tools/history-explorer/tests -p test_continuous_main.py -k test_timeline_ids_follow_final_checkpoint_order",
+      "exit": 1,
+      "scope": "Expected pre-repair regression failure: missing/stale timeline IDs after checkpoint insertion"
+    },
+    {
+      "command": "python -B -m unittest discover -s tools/history-explorer/tests -p test_continuous_main.py",
+      "exit": 0,
+      "tests": 9,
+      "seconds": 31.452
+    },
+    {
+      "command": "python -B -m unittest discover -s tools/history-explorer/tests",
+      "exit": 0,
+      "tests": 57,
+      "seconds": 326.88
+    },
+    {
+      "command": "node --check tools/history-explorer/app.js",
+      "exit": 0
+    },
+    {
+      "command": "node tools/history-explorer/tests/perspective.test.cjs",
+      "exit": 0
+    },
+    {
+      "command": "node tools/history-explorer/tests/causal.test.cjs",
+      "exit": 0
+    },
+    {
+      "command": "node tools/history-explorer/tests/finite.test.cjs",
+      "exit": 0
+    },
+    {
+      "command": "node tools/history-explorer/tests/knowledge.test.cjs",
+      "exit": 0
+    }
+  ],
+  "browser_evidence": "activity-valuation-browser/observations.json",
+  "qualification": "Original023 science/runtime untouched; observer-derived navigation IDs only. Before/after regression and genuine browser exact-reference checks, not policy retuning."
+}

@@ -31,7 +31,7 @@ function configureActorOptions(data){
 function configure(data) {
  if(data.schema !== 'woi-history-explorer/v1')throw new Error('Unknown export schema');
  if(data.source.experiment==='023'){
-  if(!NativeConcurrent.is(data)||data.source.source_schema!=='experiment-023-trial/v1'||data.trial.schema!=='experiment-023-physical-history/v1'||data.extractor_version!==6||!data.continuous)throw new Error('023 requires its explicit continuous-world adapter');
+  if(!NativeConcurrent.is(data)||data.source.source_schema!=='experiment-023-trial/v1'||data.trial.schema!=='experiment-023-physical-history/v1'||data.extractor_version!==7||!data.continuous)throw new Error('023 requires its explicit continuous-world adapter');
   data.stepMap=new Map();return data;
  }
  if(data.source.experiment==='022'){

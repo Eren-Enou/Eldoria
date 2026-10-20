@@ -275,3 +275,10 @@ after passing full normal/standalone validation; no default adoption. This super
 the earlier delivery's pending-review status without rewriting original023prose.
 024valuation is now separately authorized behind diagnosis/preregistration gates;
 no material production or025is authorized.
+
+023 observational valuation diagnosis is complete: actual local score decomposition,
+meal/contact/acquisition witnesses, persistent trust versus bounded episodes and
+zero-transfer versus useful material/information outcomes. See
+[diagnosis](../development/continuous-activity-valuation-diagnosis.md). A newly found
+observer navigation defect is disclosed and repaired in derived adapter7with a
+before/after failing regression; original runtime/archives remain unchanged.

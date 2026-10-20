@@ -8,10 +8,10 @@ actual viewing, post024readiness and future material-work handoff. No025/materia
 preparation/new supply/planner/welfare optimizer/default adoption/automatic024
 protection/canon changes. No subagents authorized or used.
 
-Branch main. Published A HEAD/origin last verified:
-5ff98ff47db48706078fd18ed985d5acb29eadac. Starting reference336ab08354bda6dbdb5171e4066e28ea28344b6b.
+Branch main. Published B HEAD/origin last verified:
+4da9fdcd03da31e72512f51979a966e64f7e9e79. Review A:5ff98ff47db48706078fd18ed985d5acb29eadac. Starting reference336ab08354bda6dbdb5171e4066e28ea28344b6b.
 Initial tree was clean. Current changes are ours, separated by milestone below.
-Do not claim B protection or E registration publication until actually pushed.
+B publication was verified against remote. Do not claim E registration publication until actually pushed.
 Inspect actual Git/files and revalidate live handles after resuming.
 
 ## A completed and published
@@ -26,7 +26,7 @@ phase/short-control/drain qualifications. No runtime defect found.
 Raw403 guard: docs/development/activity-valuation-original-working-sha256.json.
 This includes378old working files +25original023files. All remain byte-identical.
 
-## B checks PASSED, separate publication pending
+## B completed and published
 
 New docs/experiment-contract-001-023.md, foundation-001-023-sha256.json,
 integrity-audit-001-023.md, research-handoff-001-023.md. Actual386 entries =361
@@ -42,11 +42,11 @@ Standalone session76557 COMPLETE0collected: ALL17checks009–022plus020/021/022
 foundationPASS. Original023standalone freshA and new023foundation freshB PASS.
 Durable docs/development/activity-valuation-foundation-validation.json binds exact
 commands/exits/timings and relevant source identities. Raw403/inventory386 unchanged.
-No live validation jobs remain. No benchmark for validation-only B. Stage ONLYB
-files and authority/index/checkpoint updates, commit/push protection, verify remote
-before dependent024implementation. C/D/E drafts must remain separate commits.
+No live validation jobs remain. No benchmark for validation-only B. Bpublished
+4da9fdcd03da31e72512f51979a966e64f7e9e79; remote verified. C/D/Eremain separate
+commits; no024implementation before fixedEregistration publication.
 
-## C analysis complete, viewer repair verified, unpublished
+## C completed and verified; this checkpoint is part of its publication milestone
 
 examples/support/diagnose023_activity.py and docs/development/
 continuous-activity-valuation-{diagnosis.md,observations.json}; expected read-only
@@ -87,8 +87,9 @@ correct via Nextdecision even before indexfix). Newbrowser actualAccept22opensex
 history.final_state.base.base.base.base.base.events[17]; transfer11/meal12alsoverified.
 Tab7markedHandoff thisturn; markagain whencontinuing. Don’t close unrelated tabs.
 
-AfterBpublished, publish C diagnosis/observations/helper/browser/validation/minimal
-viewerrepair separately, updating map/index. C no valuation treatment implemented.
+C includes diagnosis/observations/helper/browser/validation/minimal viewerrepair,
+map/index and READMEversion update. No valuation treatment implemented. Resolve
+this separate publication with actualGit after push; E drafts remain uncommitted.
 
 ## D/E prospective drafts ready, UNPUBLISHED, no treatment code/outcomes
 
