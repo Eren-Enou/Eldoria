@@ -1,3 +1,18 @@
+# Final publication receipt
+
+Complete-request025 milestone1ed9970e5d06d7b3ee063f37af66381e2c71d997 was
+fast-forward pushed and independently verified at origin/main; working tree clean.
+This final documentation-only receipt follows that validated milestone. All30
+acceptance criteria have evidence in finite-material-delivery-audit.md and complete
+PartsA–H in finite-material-final-report.md. No unresolved program blocker.
+Scientific coverage remains qualified as listed: no voluntary-neglect witness,
+no co-eligible Prepare/Consume case, no renewal/sustainable-community claim.
+Next exact action after delivery: await separately authorized review/integrity or
+new research; do not implement026 or extend protection/adoption automatically.
+
+The pre-publication checklist below records checks completed before1ed9970 and is
+retained for chronology; its staging/push instructions have now been fulfilled.
+
 # Complete-request025 delivery checkpoint
 
 Branch main. At final pre-publication audit local HEAD and verified origin/main

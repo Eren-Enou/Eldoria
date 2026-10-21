@@ -207,9 +207,10 @@ and authorization. No next experiment was begun.
 Milestones on origin/main:4dfc71c independent024review;68b4c70 protection;
 b2487dc prospective025registration;f7b207e implementation/original evidence/review/
 viewer/readiness; e299983 checkpoint. Implementation and registration chronology
-remain visible. The continuation reconciliation is a separate additive milestone;
-its publication and final clean state are recorded in the final delivery message
-and continuation checkpoint. No force push or original replacement.
+remain visible. The continuation reconciliation is additive milestone
+1ed9970e5d06d7b3ee063f37af66381e2c71d997, fast-forward pushed and independently
+verified at origin/main with a clean worktree. A final documentation-only receipt
+follows it; the final delivery message records the resulting remote revision. No force push or original replacement.
 
 Reproduction:
 
