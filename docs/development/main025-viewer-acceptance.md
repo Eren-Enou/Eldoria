@@ -2,8 +2,8 @@
 
 The explicit read-only025 adapter is complete for the received scope. It does not
 execute policies, extend the foundation beyond024 or adopt preparation as a default.
-The attachment ends duringI3; unseen J–L details/completion requirements cannot be
-certified. The available outline is addressed without inventing its missing text.
+The continuation supplies detailed I3–M and final acceptance. Supplemental coverage
+below addresses it without new simulation outcomes.
 
 ## Verification
 
@@ -77,3 +77,41 @@ links support chronology without inventing a unique motive or fungible food iden
 Later input can be same-tick after a different phase; strict later-tick records
 remain separately labeled. Actor perspectives never use the observer ledger to
 recover a replaced slot. No archived original was edited for UI acceptance.
+
+
+## J8: completed continuation acceptance
+
+The refreshed server preserves963entries. New comparison rows separately identify
+fixed policy, initial received knowledge apart from access flag, first conversion,
+first actual meal and first interpersonal event. All24primary contrasts test
+matched policy/starting knowledge; raw access flags remain a disclosed intervention.
+
+| Required actual browser check | Original checked outcome |
+|---|---|
+| 1 successful extraction/preparation |1:extract2/convert6/food1, exact original refs. |
+| 2 finite depletion |1:raw8→0 after four actual extractions; no refill. |
+| 3 failed paid extraction |1:choice7/failure9/release13, no output, new local receipt. |
+| 4 competing attempts |5:two work0–6, extract2 one Preparing/one Failed; common mass3. |
+| 5 report crossing |31:checkpoint4 has escrow2each, food0; converts6. Checkpoint Actor view reports no owned decision. |
+| 6 occupied recipient |5:actual2→0 proposal unavailable2, while owner0Prepare0–6 and actors2/3Send. No guaranteed beneficial counterfactual. |
+| 7 actual later consumption |1:Consume choice6, executed meal7. |
+| 8 actual later transfer |17:event13@20, actual balances[1,2]→[0,3], independent Accept35. |
+| 9 actual non-use |27at36:food1/waste1/consumed0/escrow0, mass3; no later ordinary opportunity. No voluntary-neglect claim. |
+| 10 genuine null |2/3:complete physical/cognitive equality, no execution/ledger/hunger/trust differences. |
+| 11 material reconvergence |Enabled5/7order siblings: full mass reconverges7, trust different; correctly not a matched access pair. |
+| 12 long exhausted history |43loaded through807,7139moments; raw0/escrow0/ownedfood0/waste8/consumed12, ready1, mass21. The remaining cache is not raw renewal. |
+
+The old tab retained a connection-error page after restarting the verified owned
+server to load the comparison change. A new tab9 in the same selected browser
+loaded correctly; no security setting was bypassed. All actions remain read-only.
+An additional actual narrow-screen capture shows original contention resolution:
+
+![Real one-batch contention references](../../tools/history-explorer/validation/preparation-integration/contention.jpg)
+
+Final continuation revision: all72main viewer tests PASS in410.981seconds after
+new comparison rows and matching assertions; targeted7previously PASS60.060s.
+Thirteen supplemental M3 corruptions and their exact expected report reconstruction
+PASS. [Current source-bound validation](main025-completion-validation.json) records
+this revision separately from earlier acceptance. Final tab9 is original1/actor0
+at7, own stale upper6, no console errors. Original12-case browser evidence remains
+qualified exactly as above. No simulated data/policy was changed.

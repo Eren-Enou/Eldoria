@@ -170,6 +170,7 @@ and [storage summary](../../docs/development/finite-material-storage-summary.jso
 The [scientific review](../../docs/experiment-025-review.md),
 [main viewer acceptance](../../docs/development/main025-viewer-acceptance.md) and
 [community-readiness assessment](../../docs/development/post-025-community-readiness.md)
-cover the received scope. The attachment ends duringI3, so unseen completion
-requirements cannot be certified. These results do not automatically protect025,
+cover the complete request after its continuation was supplied.
+[Final delivery](../../docs/development/finite-material-final-report.md) retains missing
+voluntary-neglect and co-eligible Prepare/Consume coverage. These results do not automatically protect025,
 adopt preparation globally, alter Eldoria canon or authorize026.

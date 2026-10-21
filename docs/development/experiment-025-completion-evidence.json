@@ -1,0 +1,219 @@
+{
+  "scope": "Post-evaluation I3\u2013M read-only checks; no new worlds or changed frozen readers",
+  "archive_sha256": "7dd09f8b1ef2deed2232cda11da541a1075d57017a5364542e01fe628047d569",
+  "primary_48": {
+    "attempts": 117,
+    "completed": 77,
+    "failed": 40,
+    "food_created": 77,
+    "waste_created": 77
+  },
+  "material_corruptions": [
+    {
+      "category": "negative_stock",
+      "rejected": true
+    },
+    {
+      "category": "duplicate_raw_debit",
+      "rejected": true
+    },
+    {
+      "category": "duplicate_escrow_credit",
+      "rejected": true
+    },
+    {
+      "category": "missing_escrow_debit",
+      "rejected": true
+    },
+    {
+      "category": "premature_finished_food",
+      "rejected": true
+    },
+    {
+      "category": "missing_waste",
+      "rejected": true
+    },
+    {
+      "category": "duplicate_final_output",
+      "rejected": true
+    },
+    {
+      "category": "inventory_overflow",
+      "rejected": true
+    },
+    {
+      "category": "impossible_consumption",
+      "rejected": true
+    },
+    {
+      "category": "unaccounted_cancellation",
+      "rejected": true
+    },
+    {
+      "category": "unaccounted_termination",
+      "rejected": true
+    },
+    {
+      "category": "transfer_without_ownership",
+      "rejected": true
+    },
+    {
+      "category": "incorrect_final_total",
+      "rejected": true
+    }
+  ],
+  "contention": [
+    {
+      "ordinal": 5,
+      "order": "Ascending",
+      "source_initial": 2,
+      "extraction": [
+        {
+          "owner": 0,
+          "tick": 2,
+          "outcome": "Extracted",
+          "raw_after": 0
+        },
+        {
+          "owner": 1,
+          "tick": 2,
+          "outcome": "Insufficient",
+          "raw_after": 0
+        }
+      ]
+    },
+    {
+      "ordinal": 7,
+      "order": "Descending",
+      "source_initial": 2,
+      "extraction": [
+        {
+          "owner": 1,
+          "tick": 2,
+          "outcome": "Extracted",
+          "raw_after": 0
+        },
+        {
+          "owner": 0,
+          "tick": 2,
+          "outcome": "Insufficient",
+          "raw_after": 0
+        }
+      ]
+    },
+    {
+      "ordinal": 9,
+      "order": "Rotating",
+      "source_initial": 2,
+      "extraction": [
+        {
+          "owner": 0,
+          "tick": 2,
+          "outcome": "Extracted",
+          "raw_after": 0
+        },
+        {
+          "owner": 1,
+          "tick": 2,
+          "outcome": "Insufficient",
+          "raw_after": 0
+        }
+      ]
+    }
+  ],
+  "failure": {
+    "process": {
+      "commitment": 8,
+      "owner": 0,
+      "source": 0,
+      "start": 7,
+      "extract_at": 9,
+      "finish_at": 13
+    },
+    "operations": [
+      {
+        "ref": "material.operations[8]",
+        "id": 8,
+        "tick": 9,
+        "commitment": 8,
+        "owner": 0,
+        "source": 0,
+        "outcome": "Insufficient",
+        "raw_before": 0,
+        "raw_after": 0,
+        "escrow_before": 0,
+        "escrow_after": 0,
+        "food_before": 0,
+        "food_after": 0,
+        "waste_before": 4,
+        "waste_after": 4
+      },
+      {
+        "ref": "material.operations[12]",
+        "id": 12,
+        "tick": 13,
+        "commitment": 8,
+        "owner": 0,
+        "source": 0,
+        "outcome": "Failed",
+        "raw_before": 0,
+        "raw_after": 0,
+        "escrow_before": 0,
+        "escrow_after": 0,
+        "food_before": 0,
+        "food_after": 0,
+        "waste_before": 4,
+        "waste_after": 4
+      }
+    ]
+  },
+  "unused": [
+    {
+      "ordinal": 27,
+      "owner": 0,
+      "commitment": 0,
+      "finish_at": 6,
+      "first_later_opportunity": null,
+      "unused_with_meal_option": false
+    },
+    {
+      "ordinal": 29,
+      "owner": 0,
+      "commitment": 0,
+      "finish_at": 6,
+      "first_later_opportunity": null,
+      "unused_with_meal_option": false
+    },
+    {
+      "ordinal": 29,
+      "owner": 1,
+      "commitment": 1,
+      "finish_at": 6,
+      "first_later_opportunity": null,
+      "unused_with_meal_option": false
+    },
+    {
+      "ordinal": 29,
+      "owner": 2,
+      "commitment": 2,
+      "finish_at": 6,
+      "first_later_opportunity": null,
+      "unused_with_meal_option": false
+    },
+    {
+      "ordinal": 29,
+      "owner": 3,
+      "commitment": 3,
+      "finish_at": 6,
+      "first_later_opportunity": null,
+      "unused_with_meal_option": false
+    }
+  ],
+  "long_world": {
+    "ordinal": 43,
+    "end": 807,
+    "attempts": 10,
+    "final_raw": 0,
+    "final_waste": 8
+  }
+}

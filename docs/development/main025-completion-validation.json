@@ -1,0 +1,77 @@
+{
+  "scope": "Complete I3\u2013M continuation reconciliation; post-evaluation read-only additions, no new outcomes",
+  "received_continuation": {
+    "attachment_id": "a3b97e37-955f-4b07-8a66-fa35788860cf",
+    "raw_sha256": "71e054e58199349d7520e2410d91108d4f571085e2b4205f65b2519afaf356bd"
+  },
+  "source_sha256_lf": {
+    "tools/history-explorer/preparation_history.py": "a456c915c1bb72267341f3f45c8e925b098f32fc3a650a29d248a5756f9f02c6",
+    "tools/history-explorer/native-concurrent.js": "a8a98f6967719b9a505590a7d0b37e4b4cb9904b862024e7917d61f22a1fdcb0",
+    "tools/history-explorer/tests/test_preparation_main.py": "aadf8b61daf8799aeda13f67bc0fec16c53254896ae5d6dad7189f41b1329daa",
+    "examples/support/review025_completion.py": "78808e65739c84d3d0f975d7b5c7f0bbabdcdd0ba874f6134d6a1998aefaffc7"
+  },
+  "checks": {
+    "targeted_viewer": {
+      "tests": 7,
+      "seconds": 60.06,
+      "status": "PASS"
+    },
+    "final_full_viewer": {
+      "tests": 72,
+      "seconds": 410.981,
+      "status": "PASS"
+    },
+    "supplemental_material_corruptions": {
+      "categories": 13,
+      "all_rejected": true,
+      "expected_report_reconstruction": "PASS"
+    },
+    "historical_identity": {
+      "portable_artifacts": 408,
+      "raw_originals": 425,
+      "status": "PASS"
+    },
+    "source_binding_rechecks": {
+      "original_runtime": 114,
+      "original_helpers": 24,
+      "observer2": 158,
+      "json_bridge": 4,
+      "validated_foundation_transitive": 107,
+      "status": "PASS"
+    },
+    "javascript_syntax": "PASS"
+  },
+  "logs_sha256": {
+    "N-targeted025.log": "e431b4143d07334156a1badd7a50252b2ce713ee6d018bd9bf9bf2d84b043482",
+    "N-full-viewer.log": "23d6dfa9b9b6230d86fe918f18bc9156610f7d6235fa2b0ed54172807911bbdc"
+  },
+  "browser": {
+    "tab": 9,
+    "catalog": 963,
+    "console_errors": 0,
+    "current_original": 1,
+    "current_actor": 0,
+    "current_tick": 7,
+    "j8_cases_documented": 12,
+    "source_identities": [
+      1,
+      5,
+      17,
+      27,
+      31,
+      43
+    ],
+    "long_moments": 7139,
+    "long_final_tick": 807
+  },
+  "original025_archive_sha256": "7dd09f8b1ef2deed2232cda11da541a1075d57017a5364542e01fe628047d569",
+  "no_behavior_change": true,
+  "remaining_scientific_coverage_limits": [
+    "No voluntary persistent neglect with later ordinary meal option",
+    "No co-eligible Prepare versus Consume: frozen eligibility makes this impossible",
+    "Rotating and absolute phase controls inert in realized start0",
+    "No sustainable community or renewal claim"
+  ],
+  "supplemental_report_sha256_lf": "1af8688ec091d4b3ddf3eea922129a6a05630b73ce801a69ce6aa537309e7b57",
+  "contention_screenshot_sha256": "60397511b5966443beeb3b002a95808274228b971695426a35a6c611a8a2880e"
+}

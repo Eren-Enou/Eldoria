@@ -1,3 +1,53 @@
+# Complete-request025 delivery checkpoint
+
+Branch main. At final pre-publication audit local HEAD and verified origin/main
+were e29998316ada4e96af9c83bcdfdce8ef26f17135. Original implementation/evidence
+is f7b207e; prospective registration b2487dc; protection68b4c70; review4dfc71c.
+The additive completion milestone is the next commit, identifiable in git log;
+its actual remote SHA and clean working state must be verified after push.
+
+Continuation a3b97e37 supplies I3 through final acceptance; missing-text blocker
+is resolved. Complete PartsA–H report: finite-material-final-report.md.
+Thirty criteria: finite-material-delivery-audit.md. Current validation/source
+bindings: main025-completion-validation.json. Foundation endpoint001–024;025
+ACCEPT WITH QUALIFICATION research, no automatic protection/adoption or026.
+
+Registered50worlds/24access pairs/2report placebos; Baseline; finite2raw→1food
++1inert waste; extraction/preparation positive2+4 (registered4+8/8+24variants),
+owned escrow, total mass raw+escrow+ready+food+waste+consumed. Caps unchanged.
+Original freeze114/helper24, successor158, strictJSONbridge4 unchanged.
+Archive sha2567dd09f8b1ef2deed2232cda11da541a1075d57017a5364542e01fe628047d569.
+Rootfmt/Clippy/217tests, normal001–024/standalone024foundation,025full/evidence
+gate50byte replays/22controls PASS at unchanged source107. Fresh current full
+main viewer72PASS410.981s; targeted7PASS60.060s. New post-evaluation13M3material
+corruptions all reject and expected report reconstructs. Original408portable/
+425raw and all source/archive bindings rechecked unchanged. See verification.md.
+
+Negative/nulls:40primary failed attempts, costly17actor2+2040hunger area, unknown/
+empty nulls2/3,12/13,44/45. Real unused outputs27/29 are afterordinarycutoff;
+voluntary persistent neglect remains unobserved. Eligible Prepare vsConsume
+is structurally absent under frozenfood0 rule. Rotating/Absolute at0 inert.
+Long43ends807withraw0/waste8/ownedfood0/consumed12 but unseenreadycache1.
+No sustainable/renewable community claim. Observer audit168.3MB/4.47MBgz; warm
+50-world replaymedian2.64s includesI/O/validation, sampledRust58.9–61.3MB notpeak.
+
+Main025viewer extractor9,50originals, all12browserchecks documented/qualified,
+new conversion/meal/social comparison fields; no actor backfill. Current owned
+server13704/8765, IAB2 tab9 left original1/actor0/tick7staleupper6, no console
+errors. Old tab8cachedconnectionerror after restart; newtabresolved normally.
+
+Reproduce: cargo run --release --locked -j1 --example validate025_evidence;
+python -B examples/support/review025_completion.py --expected
+docs/development/experiment-025-completion-evidence.json; full viewer unittest
+discovery under tools/history-explorer/tests. Full commands in finalreportH.
+Next exact action: review additive diff, stage/verify source bindings, fast-forward
+commit/push, verify remote/clean state, then mark the full goal achieved with
+explicit coverage qualifications. No scientific/runtime gate remains unresolved.
+After delivery, only separately authorized acceptance/integrity or new research.
+
+Earlier checkpoints below are historical and superseded by this completed-request
+audit; their missing-tail/uncommitted notes describe prior states only.
+
 # Current delivery checkpoint —025 executed, reviewed, main viewer accepted
 
 Objective: complete the received finite-material program; no026/adoption/025freeze.

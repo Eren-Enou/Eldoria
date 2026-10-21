@@ -318,6 +318,27 @@ def comparison(left, right):
                   full_state_trace_null=left['trial'] == right['trial'] and left['preparation']['material'] == right['preparation']['material'],
                   left_physical=a, right_physical=b,
                   note='Observer-only025access comparison. Waste makes full-material persistence partly structural; food, hunger and trust are separate. More output or sharing is not universal benefit. Cognitive accessibility flags may differ even in execution-null controls.')
+    def first_different_tick(rows_a, rows_b):
+        for tick in sorted({row['tick'] for row in rows_a + rows_b}):
+            if [row for row in rows_a if row['tick'] == tick] != [row for row in rows_b if row['tick'] == tick]:
+                return tick
+        return None
+    core_a, _ = native.core(left['trial']); core_b, _ = native.core(right['trial'])
+    result['same_valuation_policy'] = ca['valuation'] == cb['valuation']
+    result['first_conversion_difference'] = first_different_tick(
+        [op for op in left['preparation']['material']['operations'] if op['outcome'] == 'Prepared'],
+        [op for op in right['preparation']['material']['operations'] if op['outcome'] == 'Prepared'])
+    result['first_meal_difference'] = first_different_tick(core_a['cognition']['consumption'], core_b['cognition']['consumption'])
+    result['first_social_event_difference'] = first_different_tick(
+        core_a['events'][left['trial']['bootstrap_events']:], core_b['events'][right['trial']['bootstrap_events']:])
+    def starting_knowledge(data):
+        raw = copy.deepcopy([m for m in data['preparation']['material']['memories'] if m['tick'] == data['trial']['start']])
+        for memory in raw:
+            for field in ('before', 'after'):
+                if memory[field] is not None:
+                    memory[field]['observation'].pop('accessible')
+        return raw, [m for m in data['trial']['memories'] if m['tick'] == data['trial']['start']]
+    result['same_initial_knowledge_except_access'] = starting_knowledge(left) == starting_knowledge(right)
     for side, data in [('left', left), ('right', right)]:
         mat = data['preparation']['material']; result[side + '_metrics'].update(preparations=len(mat['processes']), successful_preparations=sum(op['outcome'] == 'Prepared' for op in mat['operations']), failed_preparations=sum(op['outcome'] == 'Insufficient' for op in mat['operations']), queries=sum(moment['kind'] == 'inquiry' for moment in data['timeline']))
     op_a, op_b = left['preparation']['material']['operations'], right['preparation']['material']['operations']

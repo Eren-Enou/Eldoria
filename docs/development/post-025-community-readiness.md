@@ -1,9 +1,9 @@
 # After025: requirements for persistent community life
 
-This assesses the named StageL objective using the completed025evidence. The supplied
-program text ends in StageI3; unseen detailed StageJ–L instructions and final delivery
-requirements have been requested and cannot be certified by this document. It does
-not authorize026, protect025, adopt a policy or change Eldoria canon.
+This assesses StagesK–L using the completed025 originals and the subsequently
+supplied continuation (I3 through final acceptance). It does not authorize026,
+protect025, adopt a policy or change Eldoria canon. Historical preregistration
+mentions the then-missing tail; its original text is intentionally unchanged.
 
 ## What the project now demonstrates
 
@@ -67,3 +67,107 @@ Its usefulness and limits remain visible, including the negative and missing cas
 
 No026was begun. The protected foundation remains001–024. This scientific phase does
 not establish fictional Eldoria history or modify canon.
+
+
+## K1: capability classification from executed evidence
+
+| Required capability | Classification | Original evidence / qualification |
+|---|---|---|
+| 1 finite physical source | Demonstrated | Initial raw≤16; actual debits; final exhaustion, including43. |
+| 2 actor-local awareness | Demonstrated | Record1 raw receipt0; unknown2/3 never infer positive raw from truth. |
+| 3 voluntary productive selection | Demonstrated | Record1 Prepare74>Invite58; recorded alternatives/ties; no directed work schedule. |
+| 4 elapsed extraction | Demonstrated | Record1 start0/extract2; no debit at admission. |
+| 5 physical input contention | Demonstrated | Records5/7 reverse winner under fixed raw2 and policy;9 rotating is inert at start0. |
+| 6 owned in-process material | Demonstrated | At2 record1 escrow2 each;27 only owner0 gets2. |
+| 7 elapsed conversion | Demonstrated | Conversion6, four ticks after extraction2; no unfinished edible credit. |
+| 8 persistent waste | Demonstrated | One waste per output, record43 final8; inert, no renewal. |
+| 9 compartment conservation | Demonstrated | Full independent transitions; original22 and supplemental13 material corruptions rejected. |
+| 10 legal availability | Demonstrated | Exclusive Prepare0–6 in5; actual incoming proposal unavailable at2. |
+| 11 independent concurrency | Demonstrated | Record5 actors2/3 Send while0/1 Prepare; later Resource work; disjoint reservations. |
+| 12 edible output | Demonstrated |77 primary conversions create77 edible units and77 waste. |
+| 13 optional later use | Demonstrated with qualification |72 primary first later debits:59 meals/13 outgoing transfers;69 isolated donor-unit debits. Recipient meals can be fungible. |
+| 14 negative/null outcomes | Demonstrated with qualification |40 primary failures; unknown/empty nulls;5 unused late outputs, no genuine voluntary-neglect witness. |
+| 15 distinct persistent histories | Demonstrated with qualification |21 terminal full-material/19 trust contrasts; waste partly structural; no universal benefit. |
+
+Optimality, renewable supply, stable population, biological survival, institutions
+and sustainable community production are **unsupported**. Voluntary persistent
+non-use despite a later eligible meal opportunity is **not demonstrated**. Scalable
+population transfer and renewal dynamics are **untested**.
+
+## K2–K5: work, valuation, exhaustion and continued history
+
+Consume spends an already owned edible unit on an actual later meal. Acquire
+attempts to take an already edible cache unit. Prepare reserves an actor through
+extraction and conversion before creating edible ownership and inert waste.
+Social contact requires separately selected invitations/responses and can transfer
+food without preparation. None is a proxy for another's successful resolution.
+
+The fixed Baseline control permits a clear funnel: local knowledge/eligibility,
+candidate score, actual selection, admission, extraction and completion, followed
+by independently selected use and its deadline. Unknown2/3 fails at knowledge;
+empty12/13 at remembered supply; record1 commitment8 fails at objective extraction
+after legal choice/admission;27 produces after nominal cutoff3 and has no later
+ordinary choice. Record17's later Invite120>Consume30 is a valuation choice.
+The8 worlds with eligible unselected Prepare do not indicate a defective converter.
+All primary pairs fix Baseline; MealRelief is compatibility-only, not a025 behavioral
+policy comparison. No score was retuned after observing this funnel.
+
+Record43 runs from6 to807 with16raw and10attempts. Last successful raw extraction
+is42, last material operation54, final waste8/raw0/ownedfood[0,0,0,0], hunger100each.
+It has12 executed meals and11 transferred units,734 actual resource events of
+which723 transfer0;718 events occur after the last material operation. These are
+continued finite-history interactions, not718 productive cycles. Some zero-transfer
+contacts can still matter socially; their material emptiness does not prove every
+contact useless. Social/physical histories are separate, as5/7 reconvergence7 shows.
+No long world demonstrates eventual voluntary prepared-food neglect. The50-world
+archive remains168.3MB decoded; large browser loads work but heap scalability was
+not measured. Fixed horizons/charged drains and inert Absolute/rotating sensitivity
+fixtures limit claims about indefinitely continuous daily life.
+
+## L1: ranked next bottlenecks
+
+This is an evidence-weighted research priority, not a measured universal utility
+ranking or authorization for another experiment.
+
+1. **A, voluntary valuation of delayed work/use.** Record17 and024 show costly
+   relative-score choices; existing Prepare H−duration does not evaluate later use
+   or sharing. Study the bounded local valuation question before assuming more
+   material alone fixes behavior.
+2. **B, finite exhausted inputs.**43 exhausts all16raw and owned edible holdings while
+   opportunity continues to807. A separately declared material/energy/environmental
+   ontology is needed for renewal; no free timer is an answer.
+3. **D, incomplete environmental information.** Rival depletion creates legitimate
+   stale upper bounds and full-cost failures; uncertainty must remain possible.
+4. **E, scheduling/availability.** Busy exclusions, atomic inquiry and cutoff/drain
+   can remove later use opportunities. Assess timing without forcing action.
+5. **C, materially empty social interaction.**723/734 zero transfers in43 motivate
+   examination, but zero transfer is not proof of social uselessness.
+6. **G, architecture/audit growth.**168.3MB observer output, temporary final copy,
+   generated-host layers and the namespace/JSON corrections are measured maintenance
+   risks. They are not current evidence against the physical mechanism.
+7. **F, physical/cognitive interaction.** A real chain is demonstrated; calibrated
+   value learning across work/use remains untested, not a proven missing coupling.
+8. **H, other limitations.** Fixed four-person fixtures, capped hunger without
+   health/death, one stationary source and inert sensitivity branches restrict
+   transfer. No additional bottleneck is more strongly isolated by this study.
+
+Minimum next-stage requirements: a separately authorized and prospectively defined
+question, unchanged historical evidence, actor-local replaceable evaluation, honest
+negative controls, finite or explicitly externally supported material accounting,
+real time/consent and exact independent reconstruction. This is a handoff, not026.
+
+
+## Coverage limits exposed by the completed request
+
+The requested case in which eligible Prepare loses to Consume is structurally
+unavailable under the prospectively frozen rule: Prepare requires own food0,
+Consume requires owned food. Existing records can show selection of consumption
+after preparation, or Prepare losing to Invite/Wait; they cannot show co-eligible
+Prepare/Consume. This planned breadth is **not achieved**, not a negative preference
+result. No eligibility is changed retrospectively to manufacture it.
+
+Record43 still has1ready-cache unit at the end. RawOnly controlled visibility does
+not reveal it to actors. Thus exhausted raw/owned food is not exhaustion of every
+objective edible compartment. Renewal is not automatically the remedy for missed
+existing opportunities. The visibility intervention and valuation question deserve
+separate treatment.

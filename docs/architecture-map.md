@@ -29,9 +29,10 @@ Snapshot remain unchanged. [Verification](../experiments/025/verification.md) re
 `validate025_evidence`, including the separate strict JSON comparison bridge.
 [Performance](development/finite-material-replay-performance.json) is outside trials.
 [Main025viewer acceptance](development/main025-viewer-acceptance.md) and
-[community-readiness assessment](development/post-025-community-readiness.md) are complete
-for the received scope. The attachment truncates duringI3; unseen completion details
-remain unverified. Foundation ends024;
+[community-readiness assessment](development/post-025-community-readiness.md) cover the complete request, including its subsequently supplied continuation.
+See the [final report](development/finite-material-final-report.md) and
+[30-criterion audit](development/finite-material-delivery-audit.md); missing
+voluntary-neglect/co-eligible-consumption coverage is explicit. Foundation ends024;
 no automatic025protection, global adoption,026or canon change.
 
 ## Start here

@@ -74,3 +74,16 @@ pass the completed archive. Use the explicit current evidence gate above.
 No viewer cache is used by scientific validation. No historical evidence was
 rewritten. Missing witnesses remain missing; passing replay is not statistical
 replication, optimality or evidence of sustainable community production.
+
+
+## Complete-request continuation verification
+
+After the I3–M continuation arrived, the additive read-only
+`examples/support/review025_completion.py` rejected all13specifically named material
+corruptions using scratch copies and the unchanged independent reader. Its expected
+report reconstructs exactly; three fixed-order contention originals and five
+qualified non-use cases remain intact. No original report/source freeze was amended.
+Current viewer changes pass72tests and all12browser acceptance cases are documented
+or explicitly qualified. See [final report](../../docs/development/finite-material-final-report.md),
+[30-criterion audit](../../docs/development/finite-material-delivery-audit.md) and
+[current validation record](../../docs/development/main025-completion-validation.json).

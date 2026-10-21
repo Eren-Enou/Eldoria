@@ -340,4 +340,5 @@ reconstructions,22scratch rejections,50exact Rust replays; all408protectedartifa
 [Performance/storage](../development/finite-material-storage-summary.json) separates
 wall time and observer overhead from cognition. [Main viewer acceptance](../development/main025-viewer-acceptance.md) and
 [readiness assessment](../development/post-025-community-readiness.md) document the
-received scope; the attachment tail afterI3 remains unavailable. No025foundation extension, default adoption,026or canon change.
+complete request and its continuation; [final report](../development/finite-material-final-report.md)
+retains missing voluntary-neglect/co-eligible-consumption coverage. No025foundation extension, default adoption,026or canon change.
