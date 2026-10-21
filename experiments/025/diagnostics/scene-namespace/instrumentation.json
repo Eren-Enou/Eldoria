@@ -1,0 +1,7 @@
+{
+  "kind": "scratch observer-only capture before unchanged failure assertion",
+  "original_sha256": "cb104c144e5a988070bfe0b6df56e2eb4a73015802f2c44726119942dd03abed",
+  "instrumented_sha256": "ea329bf3bc428ac907cf25b3da054e015d38e4fd8cec3608442531bdc577e58d",
+  "inserted_text": "            if let Err(error) = final_state.validate() {\n                let capture = std::env::var(\"DIAGNOSTIC025_CAPTURE\").unwrap();\n                let mut file = std::fs::OpenOptions::new().create_new(true).write(true).open(capture).unwrap();\n                serde_json::to_writer(&mut file, &final_state).unwrap();\n                eprintln!(\"DIAGNOSTIC ONLY: immutable failed snapshot captured; original assertion follows: {error}\");\n            }\n",
+  "original_assertion_retained": true
+}

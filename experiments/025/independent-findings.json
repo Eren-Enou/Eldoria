@@ -1,0 +1,3607 @@
+{
+  "summary": {
+    "worlds": 50,
+    "primary_pairs": 24,
+    "report_placebos": 2,
+    "changed_selected_activity_or_contact": 21,
+    "changed_work_starts": 21,
+    "changed_completed_effects": 21,
+    "terminal_full_material_differences": 21,
+    "terminal_hunger_differences": 2,
+    "terminal_trust_differences": 19,
+    "pairs_with_any_higher_area": 1,
+    "pairs_with_any_lower_area": 19
+  },
+  "pairs": [
+    {
+      "ordinals": [
+        0,
+        1
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 0,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 0,
+      "first_completed_effect": 2,
+      "full_material": {
+        "first": 2,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 6,
+        "reconvergence": 7,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        -1080,
+        -1080,
+        -1080,
+        -1080
+      ],
+      "pre_nominal_area_delta": [
+        -1080,
+        -1080,
+        -1080,
+        -1080
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        2,
+        3
+      ],
+      "primary_access_contrast": true,
+      "first_selected": null,
+      "first_work_start": null,
+      "first_completed_effect": null,
+      "full_material": {
+        "first": null,
+        "reconvergence": null,
+        "terminal": false
+      },
+      "edible_holdings": {
+        "first": null,
+        "reconvergence": null,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pre_nominal_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": false
+    },
+    {
+      "ordinals": [
+        4,
+        5
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 0,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 0,
+      "first_completed_effect": 2,
+      "full_material": {
+        "first": 2,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 6,
+        "reconvergence": 7,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        -1080,
+        0,
+        0,
+        0
+      ],
+      "pre_nominal_area_delta": [
+        -1080,
+        0,
+        0,
+        0
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        6,
+        7
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 0,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 0,
+      "first_completed_effect": 2,
+      "full_material": {
+        "first": 2,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 6,
+        "reconvergence": 7,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        0,
+        -1080,
+        0,
+        0
+      ],
+      "pre_nominal_area_delta": [
+        0,
+        -1080,
+        0,
+        0
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        8,
+        9
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 0,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 0,
+      "first_completed_effect": 2,
+      "full_material": {
+        "first": 2,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 6,
+        "reconvergence": 7,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        -1080,
+        0,
+        0,
+        0
+      ],
+      "pre_nominal_area_delta": [
+        -1080,
+        0,
+        0,
+        0
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        10,
+        11
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 0,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 0,
+      "first_completed_effect": 2,
+      "full_material": {
+        "first": 2,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 6,
+        "reconvergence": 7,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        -1080,
+        0,
+        0,
+        0
+      ],
+      "pre_nominal_area_delta": [
+        -1080,
+        0,
+        0,
+        0
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        12,
+        13
+      ],
+      "primary_access_contrast": true,
+      "first_selected": null,
+      "first_work_start": null,
+      "first_completed_effect": null,
+      "full_material": {
+        "first": null,
+        "reconvergence": null,
+        "terminal": false
+      },
+      "edible_holdings": {
+        "first": null,
+        "reconvergence": null,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pre_nominal_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": false
+    },
+    {
+      "ordinals": [
+        14,
+        15
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 22,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 2,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 22,
+      "first_completed_effect": 24,
+      "full_material": {
+        "first": 24,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 24,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "hunger_area_delta": [
+        -4045,
+        -2305,
+        -4940,
+        -320
+      ],
+      "pre_nominal_area_delta": [
+        -3745,
+        -1540,
+        -4380,
+        -155
+      ],
+      "terminal_hunger_difference": true,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        16,
+        17
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 10,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 10,
+      "first_completed_effect": 12,
+      "full_material": {
+        "first": 12,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 12,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "hunger_area_delta": [
+        -2380,
+        -1750,
+        2040,
+        -1140
+      ],
+      "pre_nominal_area_delta": [
+        -2380,
+        -1750,
+        2040,
+        -1140
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        18,
+        19
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 22,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 22,
+      "first_completed_effect": 24,
+      "full_material": {
+        "first": 24,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 24,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "hunger_area_delta": [
+        -1960,
+        -2320,
+        -2165,
+        -1480
+      ],
+      "pre_nominal_area_delta": [
+        -1960,
+        -2120,
+        -1675,
+        -1360
+      ],
+      "terminal_hunger_difference": true,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        20,
+        21
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 25,
+        "owner": 1,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 0,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 25,
+      "first_completed_effect": 27,
+      "full_material": {
+        "first": 27,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 31,
+        "reconvergence": 35,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        0,
+        -2010,
+        -2380,
+        0
+      ],
+      "pre_nominal_area_delta": [
+        0,
+        -1890,
+        -2260,
+        0
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        22,
+        23
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 1,
+        "owner": 2,
+        "left": [
+          "Wait",
+          null
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 1,
+      "first_completed_effect": 5,
+      "full_material": {
+        "first": 9,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 33,
+        "reconvergence": 34,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        -680,
+        -640,
+        -640,
+        -640
+      ],
+      "pre_nominal_area_delta": [
+        -680,
+        -640,
+        -640,
+        -640
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        24,
+        25
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 0,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 0,
+      "first_completed_effect": 3,
+      "full_material": {
+        "first": 4,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 12,
+        "reconvergence": 13,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        -840,
+        -840,
+        -840,
+        -840
+      ],
+      "pre_nominal_area_delta": [
+        -840,
+        -840,
+        -840,
+        -840
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": false
+    },
+    {
+      "ordinals": [
+        26,
+        27
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 0,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 0,
+      "first_completed_effect": 2,
+      "full_material": {
+        "first": 2,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 6,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pre_nominal_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        28,
+        29
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 0,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 0,
+      "first_completed_effect": 2,
+      "full_material": {
+        "first": 2,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 6,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pre_nominal_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        30,
+        31
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 0,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 0,
+      "first_completed_effect": 2,
+      "full_material": {
+        "first": 2,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 6,
+        "reconvergence": 7,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        -1080,
+        -1080,
+        -1080,
+        -1080
+      ],
+      "pre_nominal_area_delta": [
+        -1080,
+        -1080,
+        -1080,
+        -1080
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        32,
+        33
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 0,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 0,
+      "first_completed_effect": 2,
+      "full_material": {
+        "first": 2,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 6,
+        "reconvergence": 7,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        -1080,
+        -1080,
+        -1080,
+        -1080
+      ],
+      "pre_nominal_area_delta": [
+        -1080,
+        -1080,
+        -1080,
+        -1080
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        34,
+        35
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 0,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 0,
+      "first_completed_effect": 2,
+      "full_material": {
+        "first": 2,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 6,
+        "reconvergence": 7,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        -1080,
+        -1080,
+        -1080,
+        -1080
+      ],
+      "pre_nominal_area_delta": [
+        -1080,
+        -1080,
+        -1080,
+        -1080
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": false
+    },
+    {
+      "ordinals": [
+        36,
+        37
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 0,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 0,
+      "first_completed_effect": 2,
+      "full_material": {
+        "first": 2,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 6,
+        "reconvergence": 7,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        -1080,
+        -1080,
+        -1080,
+        -1080
+      ],
+      "pre_nominal_area_delta": [
+        -1080,
+        -1080,
+        -1080,
+        -1080
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        38,
+        39
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 22,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 2,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 22,
+      "first_completed_effect": 24,
+      "full_material": {
+        "first": 24,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 24,
+        "reconvergence": 81,
+        "terminal": true
+      },
+      "hunger_area_delta": [
+        -4045,
+        -2320,
+        -7860,
+        -1755
+      ],
+      "pre_nominal_area_delta": [
+        -4045,
+        -2320,
+        -7860,
+        -1755
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        40,
+        41
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 10,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 10,
+      "first_completed_effect": 12,
+      "full_material": {
+        "first": 12,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 12,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "hunger_area_delta": [
+        -4480,
+        -4390,
+        -3190,
+        -1530
+      ],
+      "pre_nominal_area_delta": [
+        -4480,
+        -4390,
+        -3190,
+        -1530
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        42,
+        43
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 10,
+        "owner": 0,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 10,
+      "first_completed_effect": 12,
+      "full_material": {
+        "first": 12,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 12,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "hunger_area_delta": [
+        -3860,
+        -3550,
+        -4155,
+        -3840
+      ],
+      "pre_nominal_area_delta": [
+        -3860,
+        -3550,
+        -4155,
+        -3840
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        44,
+        45
+      ],
+      "primary_access_contrast": true,
+      "first_selected": null,
+      "first_work_start": null,
+      "first_completed_effect": null,
+      "full_material": {
+        "first": null,
+        "reconvergence": null,
+        "terminal": false
+      },
+      "edible_holdings": {
+        "first": null,
+        "reconvergence": null,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pre_nominal_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": false
+    },
+    {
+      "ordinals": [
+        46,
+        47
+      ],
+      "primary_access_contrast": true,
+      "first_selected": {
+        "tick": 14,
+        "owner": 1,
+        "left": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 0,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ],
+        "right": [
+          "Prepare",
+          null
+        ]
+      },
+      "first_work_start": 14,
+      "first_completed_effect": 16,
+      "full_material": {
+        "first": 16,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "edible_holdings": {
+        "first": 16,
+        "reconvergence": null,
+        "terminal": true
+      },
+      "hunger_area_delta": [
+        -3180,
+        0,
+        -1140,
+        0
+      ],
+      "pre_nominal_area_delta": [
+        -3160,
+        0,
+        -1120,
+        0
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    }
+  ],
+  "sibling_sensitivities": [
+    {
+      "ordinals": [
+        5,
+        7
+      ],
+      "primary_access_contrast": false,
+      "first_selected": {
+        "tick": 6,
+        "owner": 0,
+        "left": [
+          "Consume",
+          null
+        ],
+        "right": [
+          "Invite",
+          [
+            {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            null
+          ]
+        ]
+      },
+      "first_work_start": 4,
+      "first_completed_effect": 2,
+      "full_material": {
+        "first": 2,
+        "reconvergence": 7,
+        "terminal": false
+      },
+      "edible_holdings": {
+        "first": 6,
+        "reconvergence": 7,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        1080,
+        -1080,
+        0,
+        0
+      ],
+      "pre_nominal_area_delta": [
+        1080,
+        -1080,
+        0,
+        0
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    },
+    {
+      "ordinals": [
+        5,
+        9
+      ],
+      "primary_access_contrast": false,
+      "first_selected": null,
+      "first_work_start": null,
+      "first_completed_effect": null,
+      "full_material": {
+        "first": null,
+        "reconvergence": null,
+        "terminal": false
+      },
+      "edible_holdings": {
+        "first": null,
+        "reconvergence": null,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pre_nominal_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": false
+    },
+    {
+      "ordinals": [
+        1,
+        25
+      ],
+      "primary_access_contrast": false,
+      "first_selected": {
+        "tick": 6,
+        "owner": 0,
+        "left": [
+          "Consume",
+          null
+        ],
+        "right": null
+      },
+      "first_work_start": 0,
+      "first_completed_effect": 2,
+      "full_material": {
+        "first": 2,
+        "reconvergence": 4,
+        "terminal": false
+      },
+      "edible_holdings": {
+        "first": 6,
+        "reconvergence": 7,
+        "terminal": false
+      },
+      "hunger_area_delta": [
+        240,
+        240,
+        240,
+        240
+      ],
+      "pre_nominal_area_delta": [
+        240,
+        240,
+        240,
+        240
+      ],
+      "terminal_hunger_difference": false,
+      "terminal_trust_difference": true
+    }
+  ],
+  "worlds": [
+    {
+      "ordinal": 0,
+      "family": "known",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 1,
+      "family": "known",
+      "preparations": 8,
+      "successful": 4,
+      "failed": 4,
+      "meals": 4,
+      "transfers": 0,
+      "area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "pre_nominal_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        4,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 2,
+      "family": "unknown",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 1,
+      "transfers": 0,
+      "area": [
+        11540,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        8240,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        1
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 3,
+      "family": "unknown",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 1,
+      "transfers": 0,
+      "area": [
+        11540,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        8240,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        1
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 4,
+      "family": "final_batch",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        2,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 5,
+      "family": "final_batch",
+      "preparations": 2,
+      "successful": 1,
+      "failed": 1,
+      "meals": 1,
+      "transfers": 0,
+      "area": [
+        11620,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        8320,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        1
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 6,
+      "family": "final_batch_descending",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        2,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 7,
+      "family": "final_batch_descending",
+      "preparations": 2,
+      "successful": 1,
+      "failed": 1,
+      "meals": 1,
+      "transfers": 0,
+      "area": [
+        12700,
+        11620,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        8320,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        1
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 8,
+      "family": "final_batch_rotating",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        2,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 9,
+      "family": "final_batch_rotating",
+      "preparations": 2,
+      "successful": 1,
+      "failed": 1,
+      "meals": 1,
+      "transfers": 0,
+      "area": [
+        11620,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        8320,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        1
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 10,
+      "family": "odd_remainder",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        3,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 11,
+      "family": "odd_remainder",
+      "preparations": 2,
+      "successful": 1,
+      "failed": 1,
+      "meals": 1,
+      "transfers": 0,
+      "area": [
+        11620,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        8320,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        1
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 12,
+      "family": "observed_empty",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 13,
+      "family": "observed_empty",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 14,
+      "family": "social_competition",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 10,
+      "transfers": 27,
+      "area": [
+        10180,
+        6340,
+        10180,
+        4315
+      ],
+      "pre_nominal_area": [
+        6880,
+        3160,
+        6880,
+        1735
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        0,
+        10
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 15,
+      "family": "social_competition",
+      "preparations": 4,
+      "successful": 4,
+      "failed": 0,
+      "meals": 16,
+      "transfers": 11,
+      "area": [
+        6135,
+        4035,
+        5240,
+        3995
+      ],
+      "pre_nominal_area": [
+        3135,
+        1620,
+        2500,
+        1580
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        4,
+        16
+      ],
+      "final_hunger": [
+        100,
+        95,
+        100,
+        95
+      ]
+    },
+    {
+      "ordinal": 16,
+      "family": "persistent_use_or_neglect",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 2,
+      "transfers": 86,
+      "area": [
+        38980,
+        38980,
+        36940,
+        37230
+      ],
+      "pre_nominal_area": [
+        35680,
+        35680,
+        33640,
+        33930
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        0,
+        2
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 17,
+      "family": "persistent_use_or_neglect",
+      "preparations": 4,
+      "successful": 4,
+      "failed": 0,
+      "meals": 4,
+      "transfers": 97,
+      "area": [
+        36600,
+        37230,
+        38980,
+        36090
+      ],
+      "pre_nominal_area": [
+        33300,
+        33930,
+        35680,
+        32790
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          1,
+          0,
+          1,
+          2
+        ],
+        4,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 18,
+      "family": "meal_and_work",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 8,
+      "transfers": 21,
+      "area": [
+        10180,
+        8140,
+        6495,
+        7600
+      ],
+      "pre_nominal_area": [
+        6880,
+        4840,
+        3755,
+        4300
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          2,
+          2,
+          0,
+          0
+        ],
+        0,
+        8
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 19,
+      "family": "meal_and_work",
+      "preparations": 4,
+      "successful": 4,
+      "failed": 0,
+      "meals": 15,
+      "transfers": 13,
+      "area": [
+        8220,
+        5820,
+        4330,
+        6120
+      ],
+      "pre_nominal_area": [
+        4920,
+        2720,
+        2080,
+        2940
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        4,
+        15
+      ],
+      "final_hunger": [
+        100,
+        100,
+        90,
+        100
+      ]
+    },
+    {
+      "ordinal": 20,
+      "family": "atomic_inquiry",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 4,
+      "transfers": 0,
+      "area": [
+        8700,
+        8350,
+        8700,
+        8350
+      ],
+      "pre_nominal_area": [
+        5400,
+        5050,
+        5400,
+        5050
+      ],
+      "final_full_material": [
+        4,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 21,
+      "family": "atomic_inquiry",
+      "preparations": 5,
+      "successful": 2,
+      "failed": 3,
+      "meals": 6,
+      "transfers": 0,
+      "area": [
+        8700,
+        6340,
+        6320,
+        8350
+      ],
+      "pre_nominal_area": [
+        5400,
+        3160,
+        3140,
+        5050
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        2,
+        6
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 22,
+      "family": "high_effort",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 23,
+      "family": "high_effort",
+      "preparations": 8,
+      "successful": 4,
+      "failed": 4,
+      "meals": 4,
+      "transfers": 0,
+      "area": [
+        12020,
+        12060,
+        12060,
+        12060
+      ],
+      "pre_nominal_area": [
+        8720,
+        8760,
+        8760,
+        8760
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        4,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 24,
+      "family": "medium_effort",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 25,
+      "family": "medium_effort",
+      "preparations": 8,
+      "successful": 4,
+      "failed": 4,
+      "meals": 4,
+      "transfers": 0,
+      "area": [
+        11860,
+        11860,
+        11860,
+        11860
+      ],
+      "pre_nominal_area": [
+        8560,
+        8560,
+        8560,
+        8560
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        4,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 26,
+      "family": "nominal_escrow",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        3400,
+        3400,
+        3400,
+        3400
+      ],
+      "pre_nominal_area": [
+        240,
+        240,
+        240,
+        240
+      ],
+      "final_full_material": [
+        2,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 27,
+      "family": "nominal_escrow",
+      "preparations": 4,
+      "successful": 1,
+      "failed": 3,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        3400,
+        3400,
+        3400,
+        3400
+      ],
+      "pre_nominal_area": [
+        240,
+        240,
+        240,
+        240
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        1,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 28,
+      "family": "nominal_extraction",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        3200,
+        3200,
+        3200,
+        3200
+      ],
+      "pre_nominal_area": [
+        80,
+        80,
+        80,
+        80
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 29,
+      "family": "nominal_extraction",
+      "preparations": 4,
+      "successful": 4,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        3200,
+        3200,
+        3200,
+        3200
+      ],
+      "pre_nominal_area": [
+        80,
+        80,
+        80,
+        80
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        4,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 30,
+      "family": "checkpoint_crossing",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 31,
+      "family": "checkpoint_crossing",
+      "preparations": 8,
+      "successful": 4,
+      "failed": 4,
+      "meals": 4,
+      "transfers": 0,
+      "area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "pre_nominal_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        4,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 32,
+      "family": "absolute_phase",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 33,
+      "family": "absolute_phase",
+      "preparations": 8,
+      "successful": 4,
+      "failed": 4,
+      "meals": 4,
+      "transfers": 0,
+      "area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "pre_nominal_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        4,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 34,
+      "family": "seed7",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 35,
+      "family": "seed7",
+      "preparations": 8,
+      "successful": 4,
+      "failed": 4,
+      "meals": 4,
+      "transfers": 0,
+      "area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "pre_nominal_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        4,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 36,
+      "family": "seed17",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 37,
+      "family": "seed17",
+      "preparations": 8,
+      "successful": 4,
+      "failed": 4,
+      "meals": 4,
+      "transfers": 0,
+      "area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "pre_nominal_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        4,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 38,
+      "family": "long_social",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 10,
+      "transfers": 48,
+      "area": [
+        19780,
+        15940,
+        19780,
+        13915
+      ],
+      "pre_nominal_area": [
+        16480,
+        12640,
+        16480,
+        10615
+      ],
+      "final_full_material": [
+        16,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        0,
+        10
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 39,
+      "family": "long_social",
+      "preparations": 8,
+      "successful": 8,
+      "failed": 0,
+      "meals": 19,
+      "transfers": 20,
+      "area": [
+        15735,
+        13620,
+        11920,
+        12160
+      ],
+      "pre_nominal_area": [
+        12435,
+        10320,
+        8620,
+        8860
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        8,
+        19
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 40,
+      "family": "long_effort",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 3,
+      "transfers": 86,
+      "area": [
+        38980,
+        38980,
+        36940,
+        36470
+      ],
+      "pre_nominal_area": [
+        35680,
+        35680,
+        33640,
+        33170
+      ],
+      "final_full_material": [
+        16,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        0,
+        3
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 41,
+      "family": "long_effort",
+      "preparations": 6,
+      "successful": 6,
+      "failed": 0,
+      "meals": 11,
+      "transfers": 4,
+      "area": [
+        34500,
+        34590,
+        33750,
+        34940
+      ],
+      "pre_nominal_area": [
+        31200,
+        31290,
+        30450,
+        31640
+      ],
+      "final_full_material": [
+        4,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        6,
+        11
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 42,
+      "family": "long_finite",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 2,
+      "transfers": 172,
+      "area": [
+        77380,
+        77380,
+        75340,
+        75630
+      ],
+      "pre_nominal_area": [
+        74080,
+        74080,
+        72040,
+        72330
+      ],
+      "final_full_material": [
+        16,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        0,
+        2
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 43,
+      "family": "long_finite",
+      "preparations": 10,
+      "successful": 8,
+      "failed": 2,
+      "meals": 12,
+      "transfers": 11,
+      "area": [
+        73520,
+        73830,
+        71185,
+        71790
+      ],
+      "pre_nominal_area": [
+        70220,
+        70530,
+        67885,
+        68490
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        8,
+        12
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 44,
+      "family": "null_unknown",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        8700,
+        8700,
+        8700,
+        8700
+      ],
+      "pre_nominal_area": [
+        5400,
+        5400,
+        5400,
+        5400
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 45,
+      "family": "null_unknown",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        8700,
+        8700,
+        8700,
+        8700
+      ],
+      "pre_nominal_area": [
+        5400,
+        5400,
+        5400,
+        5400
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 46,
+      "family": "social_order",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 1,
+      "transfers": 42,
+      "area": [
+        10180,
+        10180,
+        8140,
+        10180
+      ],
+      "pre_nominal_area": [
+        6880,
+        6880,
+        4840,
+        6880
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        4,
+        [
+          2,
+          2,
+          1,
+          2
+        ],
+        0,
+        1
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 47,
+      "family": "social_order",
+      "preparations": 4,
+      "successful": 4,
+      "failed": 0,
+      "meals": 4,
+      "transfers": 40,
+      "area": [
+        7000,
+        10180,
+        7000,
+        10180
+      ],
+      "pre_nominal_area": [
+        3720,
+        6880,
+        3720,
+        6880
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        4,
+        [
+          5,
+          1,
+          1,
+          1
+        ],
+        4,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 48,
+      "family": "reporting_placebo",
+      "preparations": 0,
+      "successful": 0,
+      "failed": 0,
+      "meals": 0,
+      "transfers": 0,
+      "area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "pre_nominal_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "final_full_material": [
+        8,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        0,
+        0
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "ordinal": 49,
+      "family": "reporting_placebo",
+      "preparations": 8,
+      "successful": 4,
+      "failed": 4,
+      "meals": 4,
+      "transfers": 0,
+      "area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "pre_nominal_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "final_full_material": [
+        0,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        4,
+        4
+      ],
+      "final_hunger": [
+        100,
+        100,
+        100,
+        100
+      ]
+    }
+  ]
+}

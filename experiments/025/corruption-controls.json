@@ -1,0 +1,134 @@
+[
+  {
+    "category": "wrong_final_raw",
+    "exercised": true,
+    "ordinal": 0,
+    "rejected": true
+  },
+  {
+    "category": "wrong_need",
+    "exercised": true,
+    "ordinal": 0,
+    "rejected": true
+  },
+  {
+    "category": "clock",
+    "exercised": true,
+    "ordinal": 0,
+    "rejected": true
+  },
+  {
+    "category": "wrong_hunger",
+    "exercised": true,
+    "ordinal": 0,
+    "rejected": true
+  },
+  {
+    "category": "private_partner",
+    "exercised": true,
+    "ordinal": 0,
+    "rejected": true
+  },
+  {
+    "category": "future_input",
+    "exercised": true,
+    "ordinal": 0,
+    "rejected": true
+  },
+  {
+    "category": "observer_stock",
+    "exercised": true,
+    "ordinal": 0,
+    "rejected": true
+  },
+  {
+    "category": "missing_waste",
+    "exercised": true,
+    "ordinal": 1,
+    "rejected": true
+  },
+  {
+    "category": "early_food",
+    "exercised": true,
+    "ordinal": 1,
+    "rejected": true
+  },
+  {
+    "category": "lost_escrow",
+    "exercised": true,
+    "ordinal": 1,
+    "rejected": true
+  },
+  {
+    "category": "duplicate_grant",
+    "exercised": true,
+    "ordinal": 1,
+    "rejected": true
+  },
+  {
+    "category": "wrong_source",
+    "exercised": true,
+    "ordinal": 1,
+    "rejected": true
+  },
+  {
+    "category": "early_completion",
+    "exercised": true,
+    "ordinal": 1,
+    "rejected": true
+  },
+  {
+    "category": "failure_refund",
+    "exercised": true,
+    "ordinal": 1,
+    "rejected": true
+  },
+  {
+    "category": "double_booking",
+    "exercised": true,
+    "ordinal": 1,
+    "rejected": true
+  },
+  {
+    "category": "wrong_prepare_score",
+    "exercised": true,
+    "ordinal": 1,
+    "rejected": true
+  },
+  {
+    "category": "changed_legacy_meal_score",
+    "exercised": true,
+    "ordinal": 1,
+    "rejected": true
+  },
+  {
+    "category": "stable_tie",
+    "exercised": true,
+    "ordinal": 19,
+    "rejected": true
+  },
+  {
+    "category": "observer_recovery",
+    "exercised": true,
+    "ordinal": 14,
+    "rejected": true
+  },
+  {
+    "category": "redelivery_receipt",
+    "exercised": true,
+    "ordinal": 14,
+    "rejected": true
+  },
+  {
+    "category": "false_consent",
+    "exercised": true,
+    "ordinal": 0,
+    "rejected": true
+  },
+  {
+    "category": "phantom_transfer",
+    "exercised": true,
+    "ordinal": 0,
+    "rejected": true
+  }
+]

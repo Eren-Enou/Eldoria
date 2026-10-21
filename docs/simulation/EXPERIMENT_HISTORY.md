@@ -316,12 +316,28 @@ passes with408original artifacts (386inherited+22original024). MealRelief remain
 unadopted. New025research requires
 published001–024protection and its own prospective gate; no026/canon change.
 
-## Experiment025: prospectively registered finite preparation
+## Experiment025 — voluntary finite material preparation (executed, unprotected)
 
-[Specification](../../experiments/025/specification.md), [gate](../../experiments/025/design-gate.md),
-[architecture](../development/finite-material-preparation-architecture.md):50fixed
-worlds,24access-only pairs+2report placebos, Baseline fixed. No runtime/outcomes
-yet; require separate remote-verified registration before implementation.2raw→
-1edible+1waste is a finite separation law, not renewable production. One retained
-source slot, positive two-phase effort, conserved escrow, full failure cost and
-independent later use; ignored work, harm and nulls remain valid. No026or adoption.
+[Specification](../../experiments/025/specification.md) publishedb2487dc before
+implementation; [results](../../experiments/025/results.md) and
+[review](../experiment-025-review.md) support ACCEPT WITH QUALIFICATION for a narrow
+existence result.50fixed worlds:24access-only pairs+2reportplacebos, Baseline fixed.
+21pairs change choices/work/effects and terminal material,19terminaltrust,2terminalH.
+Actual preparation→later chosen meal/sharing is demonstrated; primary77successes
+and40failures remain distinct. Pair16/17worsens actor2hungerarea despite real sharing.
+Three nullpairs persist;5unusedoutputs have no later ordinary meal opportunity, so
+voluntary persistent neglect is not established. Finite material is not sustainable
+or renewable supply; no optimality or universal-benefit conclusion.
+
+The first matrix failed inherited local/global scene comparison; original19world
+prefix/config/logs are preserved. The observer-only successor keeps physical/policy
+source unchanged, reproduces19original trials and the failed-worldSnapshot exactly,
+and completes all50. A later tuple/JSON-array comparison defect is corrected only
+in a separately bound read-only verifier; entire canonical JSON values must match.
+[Verification](../../experiments/025/verification.md):50full+complementary independent
+reconstructions,22scratch rejections,50exact Rust replays; all408protectedartifacts/
+425raw originals unchanged. Current gate: `validate025_evidence`.
+[Performance/storage](../development/finite-material-storage-summary.json) separates
+wall time and observer overhead from cognition. [Main viewer acceptance](../development/main025-viewer-acceptance.md) and
+[readiness assessment](../development/post-025-community-readiness.md) document the
+received scope; the attachment tail afterI3 remains unavailable. No025foundation extension, default adoption,026or canon change.

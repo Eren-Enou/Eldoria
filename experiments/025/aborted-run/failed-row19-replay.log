@@ -1,0 +1,33 @@
+001�024:408artifacts,386inherited+22original024;425raw originals;review and standalone parity PASS
+
+thread 'main' (14744) panicked at C:\Users\Aaron\Eldoria\target\material-preparation\release\build\world-of-individuals-786219bf520922fa\out\preparation_coordinator.rs:223:36:
+called `Result::unwrap()` on an `Err` value: "concern event ownership mismatch"
+stack backtrace:
+   0: std::panicking::panic_handler
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:679
+   1: core::panicking::panic_fmt
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\core\src\panicking.rs:80
+   2: core::result::unwrap_failed
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\core\src\result.rs:1871
+   3: <world_of_individuals::simulation::Simulation>::preparation_trial25
+   4: material_preparation::main
+   5: core::ptr::drop_glue::<serde_core::private::content::Content>
+   6: std::rt::lang_start::<()>::{closure#0}
+   7: std::rt::lang_start_internal::closure$0
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\rt.rs:175
+   8: std::panicking::catch_unwind::do_call
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:576
+   9: std::panicking::catch_unwind
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:544
+  10: std::panic::catch_unwind
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panic.rs:359
+  11: std::rt::lang_start_internal
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\rt.rs:171
+  12: main
+  13: invoke_main
+             at D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:78
+  14: __scrt_common_main_seh
+             at D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288
+  15: BaseThreadInitThunk
+  16: RtlUserThreadStart
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.

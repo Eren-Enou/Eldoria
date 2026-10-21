@@ -1,0 +1,6 @@
+{
+  "examples/support/verify025_evidence.py": "0329426dfaf01853929d45c114f5ffab98cbc4322a23cb699dfb29e01186a3df",
+  "examples/validate025_evidence.rs": "c6b014ca705e934e31d6f134deb5213add00468757a4070cb9cb4cc0234d6608",
+  "experiments/025/diagnostics/json-findings-comparison.json": "b3bdefb96e3aba9c546133dc18554d7fd8b818109e17c38e226257dcc632ec3a",
+  "experiments/025/diagnostics/combined-gate-tuple-failure.log": "973efe1ff6f3bb95a35476e348ea24332a1fb9df7163ca572539c641da72c9d9"
+}

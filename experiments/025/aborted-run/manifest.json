@@ -1,0 +1,25 @@
+{
+  "kind": "original aborted025attempt; never substitute for50world trials archive",
+  "decoded_sha256": "0f2583e8ae9adb5767264a0f37a715b61bc0eacb91599313770c9711509f9c7b",
+  "decoded_bytes": 57851417,
+  "completed_worlds": 19,
+  "failed_ordinal": 19,
+  "files_sha256": {
+    "failed-config.json": "7e34fc557da95866bc657940f4457d732b16ec18f0d1f76c58ee45b67515a800",
+    "failed-row19-replay.log": "c5699a9a959e1ab5c0deae396a4392ec73fff4f028ccf5c30c096441f3542028",
+    "first-matrix.log": "b9d3d857ba74eb98e044cc255489fae5a4eb93355c6fab1d18a73ec933bd13f0",
+    "partial-checks.json": "d91ae355664ea907e58d46222010ea539845af4b31b496b05cffd9f8fbe44375",
+    "partial-reader.log": "b0c29df3ec35bb1a254e9694ba9e5c0b1766db5afc048815adee3a5ef1e35cbd",
+    "partial-replay.log": "f92d37f0924f41c8020d50c08e3441fa6abe6fca4ed6f5848ee9bf69f74e96ec",
+    "partial-trials.jsonl.gz": "e086e745030acfd598e915d495a6e9aa4eb085946b5e04f413f1a0834f6903d1"
+  },
+  "source_manifests_sha256": {
+    "source-freeze.json": "37238a66978a8f42bb993e8b0adf2a134fcf5c5b7a3ed1141e3d579678928ad0",
+    "validation-source-locks.json": "b41c02bb7690cf11001a56ae65eba3c4a023734a246ca2e8ace1cbe4fc8e665d",
+    "registered-matrix.json": "8587bc8bd539e6017d95d383046f829c127df39d4eac290be7eca582845cda2c",
+    "runtime-gate.json": "1ce15bc4e32460ef073cb18cf31d3c1cdce82c5c977b3c16c0b3013455f64d40"
+  },
+  "unchanged_foundation_sources": 107,
+  "unchanged_portable_artifacts": 408,
+  "unchanged_raw_originals": 425
+}

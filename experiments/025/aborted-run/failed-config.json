@@ -1,0 +1,41 @@
+{
+  "family": "meal_and_work",
+  "pair": 9,
+  "world": {
+    "case": "consumption",
+    "seed": 42,
+    "duration": 4,
+    "cadence": 8,
+    "horizon": 96,
+    "order": "Ascending",
+    "capacity": 2,
+    "period": 11,
+    "phase": "Epoch",
+    "mode": "Continuous",
+    "role": "controlled"
+  },
+  "valuation": "Baseline",
+  "preparation": {
+    "feature_enabled": true,
+    "access_enabled": true,
+    "source_id": 0,
+    "raw_initial": 8,
+    "extraction_ticks": 2,
+    "preparation_ticks": 4,
+    "observation": {
+      "period": 16,
+      "raw_offsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "ready_offsets": [
+        8,
+        8,
+        8,
+        8
+      ]
+    }
+  }
+}

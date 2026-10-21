@@ -359,12 +359,12 @@ class Source:
         raise ValueError('Missing native022 original ordinal')
 
 
-def export(entry, trial):
+def export(entry, trial, *, physical=None):
     moments = timeline(trial)
     return dict(schema=SCHEMA, extractor_version=EXTRACTOR, native_concurrency=True,
                 source=copy.deepcopy(entry), trial=trial, timeline=moments,
                 intervals=intervals(trial), causal=causal(trial, moments),
-                observer_physical=observer_points(trial)[0])
+                observer_physical=observer_points(trial)[0] if physical is None else physical)
 
 
 def observer_points(trial):

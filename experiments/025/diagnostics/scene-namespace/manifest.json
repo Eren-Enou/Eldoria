@@ -1,0 +1,27 @@
+{
+  "kind": "observer-only diagnosis; no completed or replacement025trial",
+  "original_capture_exit": 101,
+  "concern_only_translation_exit": 101,
+  "both_verified_scene_coordinates_translation_exit": 0,
+  "live_state_modified": false,
+  "original_failed_archive_modified": false,
+  "independent_corruptions_rejected": 6,
+  "files_sha256": {
+    "build.rs": "1f852a965ea87ca70292853d024452c5c087454266948d43fe4cbf178ca7a6df",
+    "Cargo.lock": "bc3d47aff578ab02920aa60062e540bb32ffeddddcde803c48da7774d870f1f0",
+    "Cargo.toml": "cc958380ff02af81ee0e849fe1ad76b7aa6d0bc61db585391b28b3ac172b4ad3",
+    "diagnostic-main.rs": "ec55b5a41817371cea6f5907629e5912abf5e1c955e737f8b620a47d22f9df2b",
+    "failed-snapshot.json": "0e72a2639564e1808106595220f3eb252c89a38fd3b8321d178bc3b7bd9d3269",
+    "independent-diagnosis-v2.json": "4e81bb80c423886608cf8c34f082a3d4a8c7afd6f6afd43d5b6dab85bb1ea0ea",
+    "independent-diagnosis.json": "2cafda289acba37c83bfa346f4b3d232fb89b065c4b08c7a7a157a25b6db824d",
+    "independently-translated-snapshot.json": "962f954116233ee1392a4a87a570f49fd25ef9f389b5b862849a50a7e12016bc",
+    "instrumentation.json": "aa476a2ea8bf5f84891a4ed9758ecef5199b143363fec72f67433a2e87fcf659",
+    "J-diagnostic-capture.log": "3b8aa0b3ba509cfc8031275b6a9fd9e5e7dc86e02a870c79ef4e1ff89e9d671c",
+    "J-independent-both-scenes.log": "4e81bb80c423886608cf8c34f082a3d4a8c7afd6f6afd43d5b6dab85bb1ea0ea",
+    "J-independent-translated-validation.log": "549bf4e807eabe8f017212341fa37f634d6467e1adf3a66cebb8d7ed90b51bba",
+    "J-translated-snapshot-validation.log": "64017141949d42a7811bd00320afc0b2bcf5eaf86cadae3ba3c7ecac9bb885f7",
+    "observe.py": "ab1311c444cbfdf4cc4ae515bc84102bc8e34900264d020035115bb3d480b9a9",
+    "translation.json": "fa87b0a508ca28b06f6bfe7a93f818dec5ad60e52ad6d17656c7ac595a62b170"
+  },
+  "reader_sha256": "996a048283ecb1d506ed769db967b55c3107c7c7feaade38208dd836c9669487"
+}

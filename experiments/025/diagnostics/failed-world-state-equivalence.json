@@ -1,0 +1,9 @@
+{
+  "scope": "Entire original failed-world cognitive/resource Snapshot, not the unexported material operation log",
+  "original_failed_ordinal": 19,
+  "original_capture_sha256": "0e72a2639564e1808106595220f3eb252c89a38fd3b8321d178bc3b7bd9d3269",
+  "corrected_trial_member_sha256": "ffcba74497e5048cabe9f86357e51d35e84e6e93abfe102cdb4d4d1b8e9ad7e2",
+  "whole_snapshot_equal": true,
+  "canonical_snapshot_sha256": "85bca18011a1f35f311889a79cc28d8749022402801a87fa89c17108f4ed5b4a",
+  "observer_correction_changed_original_snapshot": false
+}

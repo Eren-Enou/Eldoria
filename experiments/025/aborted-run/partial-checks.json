@@ -1,0 +1,131 @@
+{
+  "status": "ABORTED; not a completed025matrix",
+  "completed_worlds": 19,
+  "completed_ordinals": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "failed_ordinal": 19,
+  "registered_worlds": 50,
+  "matrix_exit": 101,
+  "failed_exact_config_replay_exit": 101,
+  "failure": "concern event ownership mismatch",
+  "failure_at": "final_state.validate() in preparation_trial25 before row19 export",
+  "full_independent_reader_worlds": 19,
+  "exact_byte_replay_worlds": 19,
+  "complementary_checks": [
+    {
+      "ordinal": 0,
+      "family": "known",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 1,
+      "family": "known",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 2,
+      "family": "unknown",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 3,
+      "family": "unknown",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 4,
+      "family": "final_batch",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 5,
+      "family": "final_batch",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 6,
+      "family": "final_batch_descending",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 7,
+      "family": "final_batch_descending",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 8,
+      "family": "final_batch_rotating",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 9,
+      "family": "final_batch_rotating",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 10,
+      "family": "odd_remainder",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 11,
+      "family": "odd_remainder",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 12,
+      "family": "observed_empty",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 13,
+      "family": "observed_empty",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 14,
+      "family": "social_competition",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 15,
+      "family": "social_competition",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 16,
+      "family": "persistent_use_or_neglect",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 17,
+      "family": "persistent_use_or_neglect",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    },
+    {
+      "ordinal": 18,
+      "family": "meal_and_work",
+      "independent_physical_and_local_scalar_checks": "PASS"
+    }
+  ],
+  "scope": "Prefix validation only; no full-matrix scientific conclusion; no failed-row state exported; no treatment retuning or replacement outcomes"
+}

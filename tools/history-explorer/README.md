@@ -232,3 +232,36 @@ Imported presentation fields are rebuilt from verified originals; altered origin
 terms or checkpoints are quarantined. Scientific validation remains separate.
 
 [Actual browser, privacy, comparison and cost acceptance](../../docs/development/main024-viewer-acceptance.md).
+
+
+## Optional finite material preparation histories (025)
+
+```powershell
+python -B tools/history-explorer/explorer.py --continuous experiments/023 --valuation experiments/024 --preparation experiments/025
+```
+
+The explicit extractor9 adapter (`preparation_history.py`) reads all50 original
+025 envelopes without changing default discovery or older schema versions. It
+checks the158 frozen source bindings and compressed/decoded/member hashes.
+Exports preserve the complete original `experiment-025-trial/v1` envelope; imported
+presentation fields are rebuilt from verified originals. No simulation executes.
+
+Seven025 presets include later meals, stale failed work, competition for the final
+batch, costly sharing, unknown-source nulls, escrow at the nominal cutoff and work
+across reports. Actor Perspective uses only captured own input and five score
+terms. An old raw upper bound is not replaced with current observer stock; an
+evicted or replaced slot is not recovered from its before-record. Non-decision
+material/checkpoint records do not invent an actor input.
+
+Observer Perspective separates raw, owned escrow, ready cache, owned food, inert
+waste and consumed units. Waste makes full-material persistence partly structural;
+edible holdings, hunger and trust have separate comparison fields. Same-tick
+material operations follow original numeric vector order and explicit receipt
+links. `material.*`, `valuations[*]` and `checkpoints[*]` refer to the025 envelope;
+`history.*` refers to its physical history. Links connect captured receipt, choice,
+start, extraction, conversion, release and actual later debit. Fungible food does
+not always identify a unique prepared unit, and sharing is not universal benefit.
+
+[Executed tests and browser acceptance](../../docs/development/main025-viewer-acceptance.md).
+The scientific gate remains separate: `validate025_evidence`. No025 protection,
+policy adoption or026 follows from this read-only integration.

@@ -1,0 +1,28 @@
+{
+  "status": "PASS before corrected registered treatment",
+  "runtime": "material-preparation-observer2",
+  "correction": "Observer-only checked local/global scene namespace bridge; no live input, behavior, physics or fixed registration changes",
+  "original_failed_attempt_preserved": "experiments/025/aborted-run/manifest.json",
+  "independent_diagnosis": "experiments/025/diagnostics/scene-namespace/manifest.json",
+  "registered_commit": "b2487dc873cc7ad4190356ab990e6cebf61510b3",
+  "root_tests": 217,
+  "successor_tests": 18,
+  "observer_negative_controls": 7,
+  "independent_diagnostic_negative_controls": 6,
+  "original024_exact_byte_replays": 56,
+  "feature_off_exact_projections": 56,
+  "original025_prefix_exact_byte_replays": 19,
+  "first_corrected_matrix_run": false,
+  "source_gap": "Original helper lock omitted complementary findings reader; new freeze binds it explicitly without modifying original manifest",
+  "checks": {
+    "root_fmt": 0,
+    "root_clippy": 0,
+    "root_tests": 0,
+    "successor_fmt": 0,
+    "successor_explicit_rustfmt": 0,
+    "successor_clippy": 0,
+    "successor_tests": 0,
+    "compatibility": 0,
+    "original_prefix_replay": 0
+  }
+}

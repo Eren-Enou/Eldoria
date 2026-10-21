@@ -1,0 +1,22 @@
+# Preserve exact bytes of newly captured025evidence and provenance.
+# Existing prospectively published registration retains its prior text handling.
+experiments/025/aborted-run/** -text
+experiments/025/diagnostics/** -text
+experiments/025/archive-manifest.json -text
+experiments/025/causal-analysis.json -text
+experiments/025/corruption-controls.json -text
+experiments/025/execution-revision.json -text
+experiments/025/independent-findings.json -text
+experiments/025/independent-metrics.json -text
+experiments/025/runtime-gate-observer2.json -text
+experiments/025/runtime-gate.json -text
+experiments/025/source-freeze-observer2.json -text
+experiments/025/source-freeze.json -text
+experiments/025/validation-json-bridge-sha256.json -text
+experiments/025/validation-source-locks.json -text
+# This diagnostic manifest also records the reader's original raw LF bytes.
+examples/support/diagnose025_scene.py text eol=lf
+# Preserved raw CRLF is evidence, not trailing spaces. Never normalize it.
+experiments/025/** whitespace=cr-at-eol
+# This pre-treatment frozen reader includes one original blank final line.
+examples/support/review025_findings.py whitespace=-blank-at-eof

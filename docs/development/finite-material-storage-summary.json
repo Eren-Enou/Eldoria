@@ -1,0 +1,21 @@
+{
+  "worlds": 50,
+  "logical_elapsed_ticks": 8762,
+  "decision_boundaries": 8724,
+  "ordinary_choices": 7874,
+  "material_points": 425,
+  "resource_events_including_bootstrap": 6664,
+  "decoded_archive_bytes": 168306077,
+  "compressed_archive_bytes": 4472809,
+  "maximum_captured_own_episodes": 16,
+  "peak_live_commitments": 4,
+  "peak_pending_tokens": 4,
+  "temporary_observer_clone_serialized_bytes": {
+    "min": 2525,
+    "median": 261021.0,
+    "max": 1515081,
+    "limitation": "Serialization-size proxy; not resident memory or bounded cognition"
+  },
+  "warm_exact_replay_seconds_median": 2.6378511,
+  "runtime_timing_scope": "Three warm50world exact replays; includes preflight/source/archive I/O/JSON parsing and byte comparison; separate from deterministic evidence"
+}

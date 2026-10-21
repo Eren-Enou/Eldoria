@@ -105,8 +105,10 @@ def rebuild(data):
     header=data['continuous']
     return dict(schema=data['valuation']['schema'],config=data['valuation']['config'],history=data['trial'],checkpoints=header['checkpoints'],valuations=data['valuation']['valuations'])
 
-def export(entry,original):
-    validate(original);data=native.export(entry,original['history']);data['extractor_version']=EXTRACTOR
+def export(entry,original,*,validator=None,physical_points=None,extractor=EXTRACTOR,experiment='024'):
+    (validator or validate)(original)
+    physical=physical_points(original) if physical_points else None
+    data=native.export(entry,original['history'],physical=physical);data['extractor_version']=extractor
     data['continuous']=dict(schema=original['schema'],config=copy.deepcopy(original['config']['world']),checkpoints=copy.deepcopy(original['checkpoints']))
     data['valuation']=dict(schema=original['schema'],config=copy.deepcopy(original['config']),valuations=copy.deepcopy(original['valuations']))
     moments=data['timeline'];nodes=data['causal']['nodes']
@@ -150,7 +152,7 @@ def export(entry,original):
         bi,di=audit['boundary'],audit['choice'];boundary=history['boundaries'][bi]
         owner=boundary['choices'][di]['input']['legacy']['own']['id']
         ref=f'valuations[{index}]';anchor=f'boundaries[{bi}]'
-        nodes[ref]=dict(ref=ref,anchor=anchor,tick=boundary['tick'],owners=[owner],kind='local_valuation',label=f'Captured024 {audit["policy"]} score terms for individual {owner}')
+        nodes[ref]=dict(ref=ref,anchor=anchor,tick=boundary['tick'],owners=[owner],kind='local_valuation',label=f'Captured{experiment} {audit["policy"]} score terms for individual {owner}')
         data['causal']['edges'].append(dict(source=f'{anchor}.choices[{di}]',target=ref,kind='exact_boundary_choice_valuation'))
     deferrals=[]
     for bi,boundary in enumerate(history['boundaries']):

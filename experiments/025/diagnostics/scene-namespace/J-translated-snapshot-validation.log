@@ -1,0 +1,8 @@
+   Compiling world-of-individuals v0.1.0 (C:\Users\Aaron\Eldoria\target\diagnostic025)
+    Finished `release` profile [optimized] target(s) in 2m 28s
+     Running `target/diagnostic025-build\release\diagnostic025.exe validate-snapshot target/diagnostic025/observer-global-namespace-copy.json`
+
+thread 'main' (145112) panicked at src\main.rs:6:142:
+Full translated snapshot validation: learning decision mismatch
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: process didn't exit successfully: `target/diagnostic025-build\release\diagnostic025.exe validate-snapshot target/diagnostic025/observer-global-namespace-copy.json` (exit code: 101)

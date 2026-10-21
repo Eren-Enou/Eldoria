@@ -1,0 +1,12 @@
+{
+  "finding": "Tuple versus JSON-array comparison in original frozen read-only validator",
+  "native_python_equal": false,
+  "complete_canonical_json_bytes_equal": true,
+  "canonical_sha256": "fa74924e01242e4838aad9394aa054a8ec5d0cf555fd8fd69053c5bfd523b7ff",
+  "first_type_difference": {
+    "path": ".pairs[0].first_selected.left",
+    "fresh_type": "tuple",
+    "saved_type": "list"
+  },
+  "simulation_or_original_evidence_modified": false
+}

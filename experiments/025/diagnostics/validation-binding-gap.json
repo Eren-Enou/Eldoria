@@ -1,0 +1,10 @@
+{
+  "finding": "Original025helper-lock glob omitted the separately named complementary findings reader",
+  "original_manifest": "experiments/025/validation-source-locks.json",
+  "original_manifest_sha256": "b41c02bb7690cf11001a56ae65eba3c4a023734a246ca2e8ace1cbe4fc8e665d",
+  "omitted_file": "examples/support/review025_findings.py",
+  "current_normalized_sha256": "3f46d0eb43bddb32b652d039ae19df0552f3acd5b9777649115cb31a5ac3ac83",
+  "scope": "Original full reader/material checker and7other025helpers were bound; complementary reader was not. Do not claim complete pre-treatment helper closure for first attempt.",
+  "correction": "Preserve original manifest; explicitly include this unchanged helper in observer2source freeze before any corrected matrix outcomes",
+  "behavior_changed": false
+}

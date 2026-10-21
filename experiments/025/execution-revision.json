@@ -1,0 +1,8 @@
+{
+  "runtime": "material-preparation-observer2",
+  "source_freeze_sha256": "2121e6206dd550f04f28242342b9df1d12d20132d3209b457a2c703f402b7452",
+  "original_aborted_manifest_sha256": "f0adb8d36efa1d92a56f11e2cba05ced0d6991d7fdbee66ca0391983f721caf6",
+  "original_failed_runtime": "material-preparation",
+  "behavioral_registration": "unchanged published02550worlds",
+  "scope": "Corrected observer validation only; actual histories preserve local scene counters; original failed attempt retained"
+}

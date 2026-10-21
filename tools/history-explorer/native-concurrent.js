@@ -1,7 +1,7 @@
 'use strict';
 // Native022 presentation. Policy inputs stay distinct from observer joins.
 const NativeConcurrent = (() => {
- const is = data => ['022','023','024'].includes(data?.source?.experiment) && data.native_concurrency === true;
+ const is = data => ['022','023','024','025'].includes(data?.source?.experiment) && data.native_concurrency === true;
  function resolve(root, path) {
   const parts = path.match(/[A-Za-z_][A-Za-z_0-9]*|\[\d+\]/g) || [];
   const rebuilt = parts.map((part,index) => part.startsWith('[') ? part : (index ? '.' : '') + part).join('');
@@ -10,8 +10,8 @@ const NativeConcurrent = (() => {
   for(const part of parts){const key=part.startsWith('[')?Number(part.slice(1,-1)):part;if(value===null||typeof value!=='object'||!Object.prototype.hasOwnProperty.call(value,key))throw new Error('Missing native original reference');value=value[key];}
   return value;
  }
- function resolveData(data,ref){if(ref.startsWith('valuations[')&&data.valuation)return resolve(data.valuation,ref);return ref.startsWith('checkpoints[')&&data.continuous?resolve(data.continuous,ref):resolve(data.trial,ref);}
- function sourceRef(data,ref){return data.continuous&&!ref.startsWith('checkpoints[')&&!ref.startsWith('valuations[')?'history.'+ref:ref;}
+ function resolveData(data,ref){if(ref.startsWith('material.')&&data.preparation)return resolve(data.preparation,ref);if(ref.startsWith('valuations[')&&data.valuation)return resolve(data.valuation,ref);return ref.startsWith('checkpoints[')&&data.continuous?resolve(data.continuous,ref):resolve(data.trial,ref);}
+ function sourceRef(data,ref){return data.continuous&&!ref.startsWith('material.')&&!ref.startsWith('checkpoints[')&&!ref.startsWith('valuations[')?'history.'+ref:ref;}
  function project(data,moment,owner) {
   if(!Number.isInteger(owner)||owner<0||owner>3)return null;
   const trial=data.trial, ref=moment.ref;
@@ -26,9 +26,11 @@ const NativeConcurrent = (() => {
    const d=resolve(trial,ref).decision;if(d.actor===owner)return {...d,phase:'resource',ref:ref+'.decision'};
   }else if(moment.kind==='inquiry'){
    const d=resolve(trial,ref).decision;if(d.input.owner===owner)return {...d,phase:'inquiry selection',ref:ref+'.decision',input_tick:moment.input_tick};
+  }else if(data.preparation&&moment.kind==='raw_memory'){
+   const receipt=resolve(data.preparation,ref);if(receipt.owner===owner)return {phase:'owned raw receipt',ref,owner,raw_retained:receipt.after,receipt_kind:receipt.kind};
   }else if(moment.kind==='snapshot'){
    const own=resolve(trial,ref)[owner], view={phase:'owned snapshot',ref:`${ref}[${owner}]`,own};
-   if(ref==='final_agents')view.retained=trial.final_memory[owner];return view;
+   if(ref==='final_agents'){view.retained=trial.final_memory[owner];if(data.preparation)view.raw_retained=data.preparation.material.final_slots[owner];}return view;
   }
   return null;
  }
@@ -49,7 +51,7 @@ const NativeConcurrent = (() => {
   const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 1000 235');svg.setAttribute('role','img');svg.setAttribute('aria-label','Four concurrent individual lanes on one shared world-time axis');
   const scale=870/Math.max(1,t.end-t.start),x=tick=>110+(tick-t.start)*scale;
   function node(tag,attrs,text){const e=document.createElementNS(ns,tag);for(const [key,value]of Object.entries(attrs))e.setAttribute(key,value);if(text!==undefined)e.textContent=text;svg.append(e);return e;}
-  const colors={Resource:'#8fd2af',Claim:'#d5b57b',Meal:'#9bb9e5',Query:'#bea5e5',Send:'#426d73',Reply:'#789a9b'};
+  const colors={Resource:'#8fd2af',Claim:'#d5b57b',Meal:'#9bb9e5',Query:'#bea5e5',Send:'#426d73',Reply:'#789a9b',Prepare:'#e5a976'};
   for(let owner=0;owner<4;owner++){
    node('text',{x:4,y:40+owner*43,fill:'#dce9e2','font-size':14},`Individual ${owner}`);
    node('line',{x1:110,x2:980,y1:35+owner*43,y2:35+owner*43,stroke:'#344c50','stroke-width':24});
@@ -68,7 +70,11 @@ const NativeConcurrent = (() => {
    const title=document.createElementNS(ns,'title');title.textContent=`${checkpoint.labels.join(' / ')} @ ${checkpoint.tick} · checkpoints[${index}]`;mark.append(title);mark.onclick=()=>original(env,`checkpoints[${index}]`);mark.onkeydown=e=>{if(e.key==='Enter')mark.onclick();};
   }
   node('line',{x1:x(moment.tick),x2:x(moment.tick),y1:8,y2:205,stroke:'#f3d98f','stroke-width':2});const axis=el('div',undefined,'concurrent-axis');axis.append(svg);host.append(axis);
+  if(data.preparation)for(const [index,receipt]of data.preparation.material.memories.entries())if(['Sense','Insufficient'].includes(receipt.kind)){
+   const dot=node('circle',{cx:x(receipt.tick),cy:52+receipt.owner*43,r:3,fill:'#e5a976',tabindex:0,role:'button','aria-label':`Individual ${receipt.owner}, actual raw observation at ${receipt.tick}`});dot.onclick=()=>original(env,`material.memories[${index}]`);dot.onkeydown=e=>{if(e.key==='Enter')dot.onclick();};
+  }
   note(host,'Green: resource · sand: claim · blue: meal · purple: inquiry · teal: send/reply. Dots mark observations. Click an interval for its original; scroll the timeline horizontally when needed.');
+  if(data.preparation)note(host,'Orange: finite preparation, including paid failed attempts. Extraction and conversion are distinct actual phases; no automatic meal or sharing follows completion.');
   if(data.continuous)note(host,`Dashed lines: observer reporting checkpoints; red: nominal cutoff ${t.start+data.continuous.config.horizon}. Existing work drains with real time/needs to ${t.end}; no new ordinary choices after cutoff. Checkpoint markers open exact original references.`);
   const active=data.intervals.filter(c=>c.start<=moment.tick&&moment.tick<c.end);
   note(host,`After starts at tick ${moment.tick}: ${active.filter(c=>c.kind==='Resource').length} social scenes; ${active.length} physical commitments. Local input cards retain their original pre-reservation availability.`);
@@ -77,18 +83,29 @@ const NativeConcurrent = (() => {
   const {heading,note,table,details,human}=env;
   if(!view){note(host,'No owned decision input is captured for this individual at this record. Busy time, another person’s choice, or an atomic interior is not filled from observer history.');return;}
   heading(host,`${view.phase} · original ${view.ref}`);
+  function raw(cell){
+   if(!cell){note(host,'Raw source cognition unavailable / unknown, not zero. No previous receipt is restored from observer history.');return;}
+   const o=cell.observation;note(host,`Own raw receipt ${cell.receipt}: source ${o.id}, observed at ${o.observed_at}; remembered stock ${o.stock}; own removals ${cell.own_takes}; retained raw upper bound ${Math.max(0,o.stock-cell.own_takes)}. Current shared stock is excluded.`);
+   table(host,['Own observed preparation affordance','Captured value'],[['Accessible',o.accessible?'Yes':'No'],['Extraction / preparation ticks',`${o.extraction_ticks} / ${o.preparation_ticks}`],['Known conversion',`${o.input_units} raw → ${o.edible_units} food + ${o.waste_units} waste`]]);
+   details(host,'Own retained raw source cell',cell);
+  }
+  if(Object.prototype.hasOwnProperty.call(view,'raw_retained'))raw(view.raw_retained);
+  if(view.phase==='owned raw receipt'){note(host,`Actual owned slot transition: ${view.receipt_kind}. Only the after-state is shown; evicted before-state is not recovered.`);return;}
   if(view.own){
    table(host,['Owned state','Captured value'],[['Individual',view.own.id],['Food',view.own.food],['Hunger',view.own.hunger],['Generosity / caution / expectation',`${view.own.generosity} / ${view.own.caution} / ${view.own.expectation}`]]);
    details(host,'Own directed trust',view.own.trust);details(host,'Own retained episodes',view.own.memories);
   }
   if(view.phase==='activity'){
    const cell=view.input.retained,legacy=view.input.legacy;
-   note(host,cell?`Own receipt ${cell.receipt}: stock ${cell.observation.stock} observed at ${cell.observation.observed_at}; own takes ${cell.own_takes}; retained upper bound ${Math.max(0,cell.observation.stock-cell.own_takes)}. Current observer stock is excluded.`:'Environmental observation unavailable / unknown, not zero.');
+   if(Object.prototype.hasOwnProperty.call(view.input,'raw_retained'))raw(view.input.raw_retained);
+   const tagged=Object.prototype.hasOwnProperty.call(view.input,'raw_retained');
+   note(host,cell?`${tagged?'Own ready-cache':'Own'} receipt ${cell.receipt}: stock ${cell.observation.stock} observed at ${cell.observation.observed_at}; own takes ${cell.own_takes}; retained upper bound ${Math.max(0,cell.observation.stock-cell.own_takes)}. Current observer stock is excluded.`:tagged?'Ready-cache observation unavailable / unknown, not zero.':'Environmental observation unavailable / unknown, not zero.');
    table(host,['Public individual','Captured availability'],legacy.people.map(p=>[p.id,p.available?'Available':'Busy']));
-   table(host,['Activity','Score','Eligible'],view.candidates.map(c=>[c.action,c.score,c.eligible?'Yes':'No']));
+   table(host,['Activity','Score','Eligible'],view.candidates.map(c=>[c.action,c.score??c.final_score,c.eligible?'Yes':'No']));
    if(view.valuation){
-    note(host,`Captured ${view.valuation.policy} rule: eligible Consume = H${view.valuation.policy==='MealRelief'?' + min(H,40)':''}; other scores unchanged. Own H=${view.own.hunger}. Stable first maximum: Wait, Consume, Invite, Acquire. Source ${view.valuation_ref}.`);
-    table(host,['Activity','Base','Meal relief','Final','Eligible'],view.valuation.selection.terms.map(t=>[t.action,t.base_score,t.meal_relief,t.final_score,t.eligible?'Yes':'No']));
+    const prepare=view.valuation.selection.terms.some(t=>t.action==='Prepare');
+    note(host,prepare?`Captured local Prepare = own H minus known total work ticks. Old four activity terms and stable old-first ties are preserved. Own H=${view.own.hunger}. Source ${view.valuation_ref}.`:`Captured ${view.valuation.policy} rule: eligible Consume = H${view.valuation.policy==='MealRelief'?' + min(H,40)':''}; other scores unchanged. Own H=${view.own.hunger}. Stable first maximum: Wait, Consume, Invite, Acquire. Source ${view.valuation_ref}.`);
+    table(host,prepare?['Activity','Base','Meal relief','Work cost','Final','Eligible']:['Activity','Base','Meal relief','Final','Eligible'],view.valuation.selection.terms.map(t=>prepare?[t.action,t.base_score,t.meal_relief,t.work_effort,t.final_score,t.eligible?'Yes':'No']:[t.action,t.base_score,t.meal_relief,t.final_score,t.eligible?'Yes':'No']));
     details(host,'Own captured valuation terms',view.valuation);
    }
    table(host,['Contact candidate','Score','Eligible'],view.contact_candidates.map(c=>[human(c.intent),c.score,c.eligible?'Yes':'No']));
@@ -139,7 +156,7 @@ const NativeConcurrent = (() => {
  }
  function render(env){
   const {S,$,el,note,heading,table,details,human}=env,d=S.data,t=d.trial,m=d.timeline[S.index],observer=S.lens==='observer';
-  $('title').textContent=t.config.case.replaceAll('_',' ');$('mode').textContent=d.valuation?`${d.valuation.config.valuation} valuation · Continuous opportunities · reporting period ${d.continuous.config.period}`:d.continuous?`${d.continuous.config.mode} opportunities · reporting period ${d.continuous.config.period}`:`Social capacity ${t.config.capacity}`;
+  $('title').textContent=t.config.case.replaceAll('_',' ');$('mode').textContent=d.preparation?`${d.source.mode} · finite preparation · reporting period ${d.continuous.config.period}`:d.valuation?`${d.valuation.config.valuation} valuation · Continuous opportunities · reporting period ${d.continuous.config.period}`:d.continuous?`${d.continuous.config.mode} opportunities · reporting period ${d.continuous.config.period}`:`Social capacity ${t.config.capacity}`;
   $('identity').textContent=`Experiment ${d.source.experiment} · original zero-based trial ${d.source.record} · seed ${d.source.seed} · ticks ${t.start}–${t.end}`;
   $('configuration').textContent=d.continuous?`Observer metadata: ${d.continuous.config.phase} physical phase; nominal stop ${t.start+d.continuous.config.horizon}, charged drain to ${t.end}. Reporting checkpoints do not refresh cognition or reset the world. Original references use history.*; checkpoints[*] belong to the original ${d.source.experiment} envelope.${d.valuation?' Score terms use original valuations[*] references.':''} ${d.source.scientific_status}`:`Observer metadata: ${t.config.order} order; claim ${t.config.duration}; passive cadence ${t.config.cadence}; need +5 per 4 ticks from comparison start. This original finite-window research does not establish continuous opportunities or absolute-phase invariance.`;
   $('source').textContent=JSON.stringify(d.source,null,2);$('scrub').max=d.timeline.length-1;$('scrub').value=S.index;$('tick').value=m.tick;$('previous').disabled=S.index===0;$('next').disabled=S.index===d.timeline.length-1;
@@ -153,6 +170,18 @@ const NativeConcurrent = (() => {
   if(observer){
    const point=d.observer_physical.find(p=>p.tick===m.tick);note($('outcome'),'Observer balances after all recorded physical operations at this world tick. The selected record retains its own exact before/after context.');
    if(point){for(let owner=0;owner<4;owner++){const card=el('article');card.append(el('h3',`Individual ${owner}`));note(card,`Food ${point.food[owner]} · hunger ${point.hunger[owner]}`);$('cards').append(card);}note($('outcome'),`Actual cache stock ${point.stock}; consumed ${point.consumed}.`);}
+   if(d.preparation&&point){
+    table($('outcome'),['Common-unit compartment','Actual after this tick'],[['Raw source0',point.raw],['Owned raw escrow',point.escrow.join(' / ')],['Ready cache0',point.stock],['Owned food total',point.food.reduce((a,b)=>a+b,0)],['Inert waste',point.waste],['Consumed',point.consumed],['Conserved total',point.raw+point.escrow.reduce((a,b)=>a+b,0)+point.stock+point.food.reduce((a,b)=>a+b,0)+point.waste+point.consumed]]);
+    note($('outcome'),'Finite2raw → 1food + 1waste. Actual shared balances are observer-only; the actor may still retain an older upper bound.');
+    const pointIndex=d.preparation.material.points.findLastIndex(p=>p.tick<=m.tick),materialPoint=d.preparation.material.points[pointIndex];
+    if(materialPoint){
+     table($('outcome'),['Active preparation','Owner','Actual phase','Extraction','Finish','Raw escrow'],materialPoint.active.map(p=>[p.process.commitment,p.process.owner,p.phase,p.process.extract_at,p.process.finish_at,p.escrow]));
+     details($('outcome'),`Original material.points[${pointIndex}] · tick ${materialPoint.tick}`,materialPoint);
+    }
+
+    for(const span of d.intervals.filter(c=>c.kind==='Prepare'&&c.end>=m.tick).slice(0,6))graphButton(env,$('links'),`Prepare #${span.id} · individual ${span.owners[0]} · paid ${span.start}–${span.end}`,span.start_ref);
+    for(const {index,op}of d.preparation.material.operations.map((op,index)=>({op,index})).filter(x=>x.op.tick>=m.tick).slice(0,6))graphButton(env,$('links'),`${op.outcome} · tick ${op.tick} · individual ${op.owner}`,`material.operations[${index}]`);
+   }
    const active=d.intervals.filter(c=>c.start<=m.tick&&m.tick<c.end);table($('outcome'),['Actual commitment','Participants','Start','Release','Bound'],active.map(c=>[`${c.kind} #${c.id}`,c.owners.join(' / '),c.start,c.end,c.deadline]));
    if(d.valuation){
     heading($('links'),'Recorded activity evidence');
@@ -173,7 +202,8 @@ const NativeConcurrent = (() => {
  }
  function renderPair(env){
   const {S,$,el,note,table,details}=env,c=S.comparison,host=$('compare-summary'),pair=$('pair');host.replaceChildren();pair.replaceChildren();host.hidden=S.lens==='actor';$('inspect-right').disabled=false;
-  table(host,['Comparison scope','Result'],[['Same physical start/profiles',c.initial_state_and_profiles_match?'Yes':'NO'],[c.valuation_treatment?'Matched activity-valuation treatment':c.opportunity_treatment?'Matched public-opportunity treatment':'Only capacity differs in configuration',c.valuation_treatment?(c.matched_except_valuation&&c.valuation_contrast?`${c.left_mode} / ${c.right_mode}`:'NO — not a matched valuation pair'):c.opportunity_treatment?(c.matched_except_mode&&c.mode_contrast?`${c.left_mode} / ${c.right_mode}`:'NO — not a matched opportunity pair'):(c.matched_except_capacity&&c.capacity_contrast?'Yes':'NO — not a matched capacity treatment')],['Same evaluation endpoints',c.equal_horizon?'Yes':'NO'],['First admission difference',c.first_admission?.tick??'None'],['First executed difference',c.first_executed?.tick??'None'],['First missing ordinary decision opportunity',c.first_opportunity?.tick??'None'],['First different selected choice at a shared actor/tick',c.first_common_selected_choice?.tick??'None'],['First food-ledger difference',c.first_material??'None'],['Later food-ledger reconvergence',c.material_reconvergence??'None'],['Terminal food ledger',c.terminal_food_equal?'Equal':'Different'],['Terminal hunger',c.terminal_hunger_equal?'Equal':'Different'],['Terminal directed trust (missing = 0)',c.semantic_trust_equal?'Equal':'Different'],[c.valuation_treatment?'Complete physical/history body equality':c.opportunity_treatment?'Full state/choice trace equal apart from projected Input.end':'Complete trial equality except capacity',((c.opportunity_treatment||c.valuation_treatment)?c.full_state_trace_null:c.complete_null_except_capacity)?'Yes':'No'],['Hunger-area right minus left',c.hunger_area_right_minus_left.join(' / ')]]);
+  table(host,['Comparison scope','Result'],[['Same physical start/profiles',c.initial_state_and_profiles_match?'Yes':'NO'],[c.preparation_treatment?'Matched finite-preparation access treatment':c.valuation_treatment?'Matched activity-valuation treatment':c.opportunity_treatment?'Matched public-opportunity treatment':'Only capacity differs in configuration',c.preparation_treatment?(c.matched_except_access&&c.access_contrast?`${c.left_mode} / ${c.right_mode}`:'NO — not a matched access pair'):c.valuation_treatment?(c.matched_except_valuation&&c.valuation_contrast?`${c.left_mode} / ${c.right_mode}`:'NO — not a matched valuation pair'):c.opportunity_treatment?(c.matched_except_mode&&c.mode_contrast?`${c.left_mode} / ${c.right_mode}`:'NO — not a matched opportunity pair'):(c.matched_except_capacity&&c.capacity_contrast?'Yes':'NO — not a matched capacity treatment')],['Same evaluation endpoints',c.equal_horizon?'Yes':'NO'],['First admission difference',c.first_admission?.tick??'None'],['First executed difference',c.first_executed?.tick??'None'],['First missing ordinary decision opportunity',c.first_opportunity?.tick??'None'],['First different selected choice at a shared actor/tick',c.first_common_selected_choice?.tick??'None'],[c.preparation_treatment?'First edible-holdings difference (owned + ready)':'First food-ledger difference',c.first_material??'None'],[c.preparation_treatment?'Later edible-holdings reconvergence':'Later food-ledger reconvergence',c.material_reconvergence??'None'],[c.preparation_treatment?'Terminal edible holdings':'Terminal food ledger',c.terminal_food_equal?'Equal':'Different'],['Terminal hunger',c.terminal_hunger_equal?'Equal':'Different'],['Terminal directed trust (missing = 0)',c.semantic_trust_equal?'Equal':'Different'],[c.preparation_treatment?'Captured physical/cognitive history equality (includes received access flags)':c.valuation_treatment?'Complete physical/history body equality':c.opportunity_treatment?'Full state/choice trace equal apart from projected Input.end':'Complete trial equality except capacity',((c.opportunity_treatment||c.valuation_treatment||c.preparation_treatment)?c.full_state_trace_null:c.complete_null_except_capacity)?'Yes':'No'],['Hunger-area right minus left',c.hunger_area_right_minus_left.join(' / ')]]);
+  if(c.preparation_treatment)table(host,['Finite material comparison','Result'],[['First raw/escrow/food/waste/consumed difference',c.first_full_material??'None'],['Later full-material reconvergence',c.full_material_reconvergence??'None'],['Terminal full material',c.terminal_full_material_equal?'Equal':'Different']]);
   note(host,c.note);details(host,'Actual material/contact counts',{left:c.left_metrics,right:c.right_metrics});
   if(c.valuation_treatment&&c.first_score_difference){
    const f=c.first_score_difference;note(host,`First different score: tick ${f.tick}, individual ${f.owner}; exact local inputs ${f.same_local_input?'match':'do not match'}. A score difference may leave the selected activity unchanged.`);
@@ -193,8 +223,8 @@ const NativeConcurrent = (() => {
   details(host,'Final recorded directed trust',{left:S.data.trial.final_agents.map(a=>({owner:a.id,trust:a.trust})),right:S.right.trial.final_agents.map(a=>({owner:a.id,trust:a.trust})),raw_map_shape_equal:c.raw_trust_equal});
   const tick=S.data.timeline[S.index].tick;
   for(const [data,points]of [[S.data,c.left_physical],[S.right,c.right_physical]]){
-   const col=el('section');col.append(el('h3',data.valuation?`Original ${data.source.record} · ${data.valuation.config.valuation}`:data.continuous?`Original ${data.source.record} · ${data.continuous.config.mode}`:`Original ${data.source.record} · capacity ${data.trial.config.capacity}`));note(col,`Shared world tick ${tick}; source ${data.source.id}`);
-   if(S.lens==='observer'){const p=points.find(p=>p.tick===tick);if(p){table(col,['Individual','Food','Hunger'],p.food.map((food,owner)=>[owner,food,p.hunger[owner]]));note(col,`Cache ${p.stock}; consumed ${p.consumed}. Physical reconstruction only; no cognitive interpolation.`);}else note(col,'This tick is outside this recorded world.');}
+   const col=el('section');col.append(el('h3',data.preparation?`Original ${data.source.record} · ${data.source.mode} · ${data.valuation.config.valuation}`:data.valuation?`Original ${data.source.record} · ${data.valuation.config.valuation}`:data.continuous?`Original ${data.source.record} · ${data.continuous.config.mode}`:`Original ${data.source.record} · capacity ${data.trial.config.capacity}`));note(col,`Shared world tick ${tick}; source ${data.source.id}`);
+   if(S.lens==='observer'){const p=points.find(p=>p.tick===tick);if(p){table(col,['Individual','Food','Hunger'],p.food.map((food,owner)=>[owner,food,p.hunger[owner]]));note(col,`Cache ${p.stock}; consumed ${p.consumed}. Physical reconstruction only; no cognitive interpolation.`);if(data.preparation)note(col,`Raw ${p.raw}; escrow ${p.escrow.join(' / ')}; waste ${p.waste}. These shared compartments are observer-only.`);}else note(col,'This tick is outside this recorded world.');}
    else {const moment=data.timeline.find(m=>m.kind==='decision'&&m.tick===tick),view=moment?project(data,moment,S.actor):null;ownInput(env,col,view);}
    pair.append(col);
   }

@@ -1,0 +1,24 @@
+{
+  "Scope": "Three warm50world exact replays; includes preflight/source/archive I/O/JSON parsing and byte comparison; separate from deterministic evidence",
+  "Memory": "25ms sampled mainRust working set; excludes Python children, not a bound or cognitive memory measure",
+  "Samples": [
+    {
+      "Sample": 0,
+      "Seconds": 2.6957994,
+      "SampledRustWorkingSetBytes": 59006976,
+      "Exit": 0
+    },
+    {
+      "Sample": 1,
+      "Seconds": 2.6378511,
+      "SampledRustWorkingSetBytes": 61292544,
+      "Exit": 0
+    },
+    {
+      "Sample": 2,
+      "Seconds": 2.6274496,
+      "SampledRustWorkingSetBytes": 58871808,
+      "Exit": 0
+    }
+  ]
+}

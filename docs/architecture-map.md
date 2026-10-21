@@ -12,14 +12,27 @@ Qualified [001–024protection](integrity-audit-001-024.md) passes:408original a
 386inherited+22original024. Prospective025 design is separately gated; no025
 runtime or default adoption follows from review/protection. See the [checkpoint](development/continuation-checkpoint.md).
 
-## Prospective025boundary
+## Experiment025: executed research, unprotected
 
-[Architecture](development/finite-material-preparation-architecture.md),
-[registration](../experiments/025/specification.md) and [gate](../experiments/025/design-gate.md)
-fix50worlds before code/outcomes:24access-only pairs,2report placebos, fixedBaseline,
-one tagged source slot and conserved2raw→1edible+1waste. GateB is published68b4c70.
-No025runtime or result exists; its own registration must be published before code.
-No default adoption/automatic025protection/026/canon change.
+[Registration](../experiments/025/specification.md) was publishedb2487dc before
+implementation. [Results](../experiments/025/results.md) and
+[scientific review](experiment-025-review.md) support a qualified narrow positive:
+voluntary finite2raw→1food+1waste preparation can lead to later chosen meals/sharing,
+with failed work, costs and nulls.21/24pairs change execution;19change terminaltrust.
+No sustainable-production, universal-benefit or default-adoption claim.
+
+The original runtime's failed19world prefix remains preserved. A separately frozen
+[observer2successor](../prototypes/material-preparation-observer2/README.md) changes
+only final observer namespace validation. All19original trials and the failed-world
+Snapshot remain unchanged. [Verification](../experiments/025/verification.md) records
+50independent reconstructions,22corruption rejections and50exact byte replays via
+`validate025_evidence`, including the separate strict JSON comparison bridge.
+[Performance](development/finite-material-replay-performance.json) is outside trials.
+[Main025viewer acceptance](development/main025-viewer-acceptance.md) and
+[community-readiness assessment](development/post-025-community-readiness.md) are complete
+for the received scope. The attachment truncates duringI3; unseen completion details
+remain unverified. Foundation ends024;
+no automatic025protection, global adoption,026or canon change.
 
 ## Start here
 
@@ -66,6 +79,7 @@ No default adoption/automatic025protection/026/canon change.
 | Finite environmental acquisition (020 protected with qualification) | [cache/policy](../src/acquisition.rs),[isolated lifecycle](../src/simulation/acquisition.rs),[fixture](../src/experiment020.rs);no default path changes | `tests/acquisition.rs`,frozen standalone `validate020`,shared `contract020.rs`/`validate020_foundation`,`review020.py`/`review020_scope.py`,`measure020`;[specification](../experiments/020/specification.md),[results](../experiments/020/results.md),[verification](../experiments/020/verification.md);[review](experiment-020-review.md),[contract](experiment-contract-001-020.md);164 original histories,20 corruptions,321 protected artifacts;no adoption |
 | Read-only History Explorer application | [app/tooling](../tools/history-explorer/README.md), `tools/history-explorer/explorer.py`, `causal.py`/`causal.js`, `finite.py`/`knowledge.py`, `perspective.js`, `app.js`; [technical guide](development/history-explorer-architecture.md) | Python real-archive and typed-link tests, JS owned-point/filter/order tests, explicit020/021 actor/claim/material/knowledge comparison,all164/214 original references,[020 acceptance](../tools/history-explorer/validation/finite-integration/acceptance.md),[021 acceptance](../tools/history-explorer/validation/knowledge-integration/acceptance.md),real-browser node navigation, [original acceptance](../tools/history-explorer/validation/acceptance.md), [causal acceptance](../tools/history-explorer/validation/causal-navigation-acceptance.md); one-way consumer, no foundation dependency |
 | Opt-in 024 decision inspection | `tools/history-explorer/valuation_history.py`, explicit `--valuation`; main `native-concurrent.js` / `app.js` | Version8 lossless024 envelope, 56 original references / 27 scientific comparisons, owned score terms, timed meal deferrals, privacy and read-only routes; [actual acceptance](development/main024-viewer-acceptance.md); old023adapter remains7 |
+| Opt-in025 finite preparation inspection | `tools/history-explorer/preparation_history.py`, explicit `--preparation`; main `native-concurrent.js` / `app.js` | Extractor9 lossless50 originals /24 matched access comparisons, source guard158, owned raw slot and five score terms, exact material phases/receipts and separately labeled edible/full balances; [acceptance](development/main025-viewer-acceptance.md); no scientific dependency |
 | CLI and reproducible experiment fixtures | [main.rs](../src/main.rs), `src/experiment.rs`, `src/experiment002.rs` … `src/experiment021.rs` | Corresponding experiment tests/evaluators |
 | Read-only frozen archive/replay gate | [validate_contract.rs](../examples/validate_contract.rs), shared `contract009.rs` through `contract024.rs`, standalone original/foundation gates and independent readers | Source-bound cache-free001–024 integrity, immutable original archives, accepted review anchors and exact replay; [latest audit](integrity-audit-001-024.md). Frozen `validate024` remains unchanged; `validate024_foundation` adds accepted independent review checks; no viewer dependency |
 | Throughput workload / history measurements | [throughput.rs](../benches/throughput.rs), `examples/measure_history.rs` | Separate wall-clock output; historical reports unchanged |

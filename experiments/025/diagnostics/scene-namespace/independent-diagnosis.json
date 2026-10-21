@@ -1,0 +1,34 @@
+{
+  "valid_inquiries": 1,
+  "references": [
+    {
+      "inquiry": 0,
+      "owner": 3,
+      "tick": 52,
+      "observed": 40,
+      "concern": 0,
+      "event": 9,
+      "event_tick": 10,
+      "event_global_scene": 3,
+      "input_local_scene": 1,
+      "independent_local_scene": 1,
+      "checks": {
+        "owner": true,
+        "target": true,
+        "time": true,
+        "participant": true,
+        "local_scene": true
+      },
+      "legacy_global_comparison": false
+    }
+  ],
+  "scope": "Actor-local scene diagnosis only; no trial outcome or physical claim",
+  "snapshot_sha256": "0e72a2639564e1808106595220f3eb252c89a38fd3b8321d178bc3b7bd9d3269",
+  "corruptions_rejected": [
+    "owner",
+    "target",
+    "time",
+    "local_scene",
+    "participation"
+  ]
+}

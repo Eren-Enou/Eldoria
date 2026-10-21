@@ -1,0 +1,76 @@
+{
+  "stage": "H pre-treatment runtime gate",
+  "status": "PASS before first registered treatment",
+  "preregistration_commit": "b2487dc873cc7ad4190356ab990e6cebf61510b3",
+  "protected_commit": "68b4c70d3a1d2c3d6df9269d25c9b8efa9a7443b",
+  "compiled_original024_byte_replays": 56,
+  "compiled_feature_off_exact_projections": 56,
+  "root_tests": 217,
+  "prototype_tests": 15,
+  "python_component_tests": 4,
+  "python_component_corruptions_rejected": 6,
+  "independent_full_disabled_worlds": 56,
+  "independent_complementary_disabled_worlds": 56,
+  "disabled_scratch_rejections": 11,
+  "disabled_scratch_missing_active_witnesses": 11,
+  "foundation_source_bindings_reverified": 107,
+  "unchanged_portable_artifacts": 408,
+  "unchanged_raw_originals": 425,
+  "full_foundation_validation": "Fresh normal001-024 PASS at B, all107relevant sources still exact; record docs/development/finite-material-foundation-validation.json",
+  "resolved_development_failure": "New025serde flatten codec rejected integer-keyed trust maps in first compatibility attempt; explicit WireInput fixed before treatment, targeted regression and all56body parity pass. No legacy behavior or treatment outcome changed.",
+  "scope": "Only old/feature-off worlds and clearly labeled synthetic resolver/local controls ran. No m::trial(feature_enabled=true) registered world/outcome has run. No source/policy/matrix retuning.",
+  "logs": [
+    {
+      "check": "rootfmt",
+      "exit": 0,
+      "path": "%TEMP%/finite-material-preparation/H-root-fmt.log"
+    },
+    {
+      "check": "rootclippy",
+      "exit": 0,
+      "path": "%TEMP%/finite-material-preparation/H-root-clippy.log"
+    },
+    {
+      "check": "root217tests",
+      "exit": 0,
+      "path": "%TEMP%/finite-material-preparation/H-root-tests.log"
+    },
+    {
+      "check": "prototypefmt",
+      "exit": 0,
+      "path": "%TEMP%/finite-material-preparation/H-fmt-final-controls.log"
+    },
+    {
+      "check": "prototypeclippy",
+      "exit": 0,
+      "path": "%TEMP%/finite-material-preparation/H-clippy-final-controls.log"
+    },
+    {
+      "check": "prototype15tests",
+      "exit": 0,
+      "path": "%TEMP%/finite-material-preparation/H-tests-final-controls.log"
+    },
+    {
+      "check": "compiled56old+56disabled",
+      "exit": 0,
+      "path": "%TEMP%/finite-material-preparation/H-compatibility-export.log"
+    },
+    {
+      "check": "fullreader56disabled",
+      "exit": 0,
+      "path": "%TEMP%/finite-material-preparation/H-independent-disabled-reader.log"
+    },
+    {
+      "check": "complement56disabled",
+      "exit": 0,
+      "path": "%TEMP%/finite-material-preparation/H-complementary-disabled.log"
+    },
+    {
+      "check": "scratch11disabled",
+      "exit": 0,
+      "path": "%TEMP%/finite-material-preparation/H-corrupt-disabled.log"
+    }
+  ],
+  "source_freeze_entries": 114,
+  "validation_helper_bindings": 24
+}

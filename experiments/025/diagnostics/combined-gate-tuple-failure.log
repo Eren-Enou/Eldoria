@@ -1,0 +1,20 @@
+   Compiling world-of-individuals v0.1.0 (C:\Users\Aaron\Eldoria)
+    Finished `release` profile [optimized] target(s) in 0.62s
+     Running `target\release\examples\validate025_observer2.exe`
+Traceback (most recent call last):
+001�024:408artifacts,386inherited+22original024;425raw originals;review and standalone parity PASS
+  File "C:\Users\Aaron\Eldoria\examples\support\validate025_observer2.py", line 52, in <module>
+    main()
+  File "C:\Users\Aaron\Eldoria\examples\support\validate025_observer2.py", line 47, in main
+    validate025.main()
+  File "C:\Users\Aaron\Eldoria\examples\support\validate025.py", line 54, in main
+    assert findings==json.loads((directory/'independent-findings.json').read_bytes())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+thread 'main' (146424) panicked at examples\validate025_observer2.rs:8:5:
+assertion failed: Command::new("python").args(["-B",
+                        "examples/support/validate025_observer2.py",
+                        &directory]).status().unwrap().success()
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: process didn't exit successfully: `target\release\examples\validate025_observer2.exe` (exit code: 101)

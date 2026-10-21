@@ -274,3 +274,21 @@ records41Python tests,4realJavaScript testfiles,all214 source references,browser
 cases and measured costs. One selected export reaches28.83MB;Python process peak
 about302MiB in the engineering sample. Browser heap is unmeasured. No shared
 simulation-audit refactor or new cognitive input is introduced by this UI work.
+
+
+## Current025 adapter boundary
+
+`preparation_history.py` explicitly owns extractor9/experiment-025-trial/v1. It
+reuses presentation primitives through optional default-preserving hooks, retaining
+the actual025 physical schema. Existing023/024 adapters remain7/8. Source and
+export LRUs each retain at most two members. Material reconstruction is observer
+only; actor projection reads captured own Raw/Ready input or explicit RawAfter,
+never RawBefore or checkpoint/physical state. Native same-tick ordering preserves
+original material operation sequence and linked slot replacement.
+
+Whole envelopes round-trip losslessly; material/valuation/checkpoint references
+resolve against their original envelope fields. Typed chains preserve work IDs,
+source receipts and actual conversion/debit; later availability is context, not
+a unique motive.24 matched comparisons distinguish edible holdings from the
+full conserved mass including waste/consumption. The independent scientific
+gate never imports this adapter. [Executed acceptance](main025-viewer-acceptance.md).

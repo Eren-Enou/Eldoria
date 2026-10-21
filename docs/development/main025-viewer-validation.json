@@ -1,0 +1,66 @@
+{
+  "scope": "Post-evaluation read-only025 viewer acceptance; not prospective behavioral registration",
+  "scientific_gate": "validate025_evidence PASS at unchanged source158/JSON4 revision",
+  "main_suite": {
+    "tests": 72,
+    "seconds": 344.603,
+    "status": "PASS"
+  },
+  "final_targeted": {
+    "tests": 7,
+    "seconds": 58.758,
+    "status": "PASS"
+  },
+  "source_sha256_lf": {
+    "tools/history-explorer/preparation_history.py": "b53e74430095bb15b7f5e83b0372f5a2b459637715d7024074c00f051210c6d7",
+    "tools/history-explorer/explorer.py": "c6dcc897187b84ba92b9b6a679cd79354bea565b1bbdcd82393f7cd3ce452dc5",
+    "tools/history-explorer/valuation_history.py": "29de96eebcbe3a504d49525d7bbee379df49d5c694be41cb68c0d98b3f61f261",
+    "tools/history-explorer/concurrent_history.py": "a877837bbd3854e679e918fb5a5325777d878ae7735476fd7a48cd9bc2cc453c",
+    "tools/history-explorer/app.js": "73f81babdf73d5c11fd68f063d28d9100022ae628bd0f04e851d7509adfbc651",
+    "tools/history-explorer/native-concurrent.js": "24ef9b3e70ce398673967f4d1de8ab45eb8801e25d8ad5249e9285aaef075634",
+    "tools/history-explorer/tests/test_preparation_main.py": "ebd48aac9183f2d674d77099d5eef4f4dc52cbb2367d04af78edf710e9905333",
+    "tools/history-explorer/tests/preparation-native.test.cjs": "701720505eecda3219cd8eb74182e98485cdcf2efb2d1fdddfccbe06b2c0c05f"
+  },
+  "external_log_sha256": {
+    "K-all-main-tests.log": {
+      "sha256": "9e79bb657e014748cc8f8478e3a946c9471607cd51b0c1a20ff1342cfdcfc895",
+      "bytes": 11350
+    },
+    "K-preparation-chain-final-tests.log": {
+      "sha256": "04505e677fea2239108bf807eb0d0573ea50fca04a2c11fb6b7e061c860ef213",
+      "bytes": 1400
+    },
+    "K-root-clippy.log": {
+      "sha256": "a164208acbd617a33fd1f1cd1839c3fed89fae3795f56038c9aa7cd0f4a7bc0e",
+      "bytes": 140
+    },
+    "K-root-fmt.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "J-evidence-complete-gate.log": {
+      "sha256": "4747183e7015c9ee88309d1aa0f6ac9d49066ee773c3e45b83690ca6ea36e07d",
+      "bytes": 1113
+    }
+  },
+  "browser": {
+    "catalog": 963,
+    "tab": 8,
+    "errors": 0,
+    "confirmed": [
+      "0/1 preparation, meal, same-tick stale choice and paid failure",
+      "16/17 costly sharing and actual event13 transfer",
+      "2/3 exact unknown-source null",
+      "26/27 nominal cutoff escrow and failed work"
+    ]
+  },
+  "screenshots_sha256": {
+    "tools/history-explorer/validation/preparation-integration/actor-stale.jpg": "0fb364ab34a2250a9e6cff40a81f584d2fe1606a421b477ea17b34b666baffb1",
+    "tools/history-explorer/validation/preparation-integration/failed-paid-phase.jpg": "7980e4ee936cf734ab3a92f16c1eb43fbf741e19d5f7233d4f9c4666968a6e6c"
+  },
+  "limitations": [
+    "No browser heap/frame-rate benchmark",
+    "Full attachment ends duringI3; unseen completion requirements unverified",
+    "025 research unprotected and unadopted; no026"
+  ]
+}

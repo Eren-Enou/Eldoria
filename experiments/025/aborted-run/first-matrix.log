@@ -1,0 +1,28 @@
+    Finished `release` profile [optimized] target(s) in 0.21s
+     Running `target/material-preparation\release\material-preparation.exe matrix target/preparation025-original.jsonl`
+001�024:408artifacts,386inherited+22original024;425raw originals;review and standalone parity PASS
+025row0:known accessfalse
+025row1:known accesstrue
+025row2:unknown accessfalse
+025row3:unknown accesstrue
+025row4:final_batch accessfalse
+025row5:final_batch accesstrue
+025row6:final_batch_descending accessfalse
+025row7:final_batch_descending accesstrue
+025row8:final_batch_rotating accessfalse
+025row9:final_batch_rotating accesstrue
+025row10:odd_remainder accessfalse
+025row11:odd_remainder accesstrue
+025row12:observed_empty accessfalse
+025row13:observed_empty accesstrue
+025row14:social_competition accessfalse
+025row15:social_competition accesstrue
+025row16:persistent_use_or_neglect accessfalse
+025row17:persistent_use_or_neglect accesstrue
+025row18:meal_and_work accessfalse
+025row19:meal_and_work accesstrue
+
+thread 'main' (162660) panicked at C:\Users\Aaron\Eldoria\target\material-preparation\release\build\world-of-individuals-786219bf520922fa\out\preparation_coordinator.rs:223:36:
+called `Result::unwrap()` on an `Err` value: "concern event ownership mismatch"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: process didn't exit successfully: `target/material-preparation\release\material-preparation.exe matrix target/preparation025-original.jsonl` (exit code: 101)
