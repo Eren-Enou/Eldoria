@@ -1,8 +1,9 @@
 # Current delivery checkpoint —025 executed, reviewed, main viewer accepted
 
 Objective: complete the received finite-material program; no026/adoption/025freeze.
-HEAD/last verified origin/main b2487dc, preregistration published before runtime.
-All task implementation/evidence/docs below still uncommitted at this checkpoint.
+Implementation/evidence/viewer milestone committed f7b207e after all checks.
+Prospective registration b2487dc preceded runtime; origin/main was still b2487dc
+before this fast-forward publication. No unrelated files were included.
 Main viewer now has explicit preparation_history.py/extractor9 and seven presets.
 Full72 tests PASS344.603s; final025 targeted7 PASS58.758s after browser-caught edible
 comparison and numeric operation-order fixes. Current server PID166228/8765,
@@ -18,10 +19,11 @@ Scientific review ACCEPT WITH QUALIFICATION; readiness assessment complete for
 received outline, missing full attachment tail afterI3 still unanswered. Do not
 claim entire goal complete until unseen completion requirements are obtained.
 
-Next: review/stage all task files, check Git byte custody (scoped.gitattributes
-protects new raw CRLF evidence; no renormalization), verify index/archive hashes,
-recheck origin/main, commit/push validated milestone per AGENTS. Record published
-SHA then report precise scientific result/limits and outstanding missingtail.
+Completed: all104 task files reviewed/staged; staged source manifests and raw
+evidence match, preregistration4 documents unchanged, scoped whitespace/custody
+checks PASS. Publish f7b207e and this delivery note by fast-forward push only.
+Remaining: receive the missing attachment tail and compare its unseen requirements
+against finite-material-delivery-audit.md; do not mark the full goal complete.
 Do not edit any158bound source, old114/24 or JSON4; prereg4files unchanged.
 
 The following older checkpoints are historical and superseded where noted.
