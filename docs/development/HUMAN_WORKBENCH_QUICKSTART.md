@@ -43,8 +43,9 @@ build. A missing dependency is an execution error, not a completed world.
    recorded outcome, category and notes. Saved JSON files live in this run's
    `observations/`. These are human interpretations, never the individual's thoughts.
 
-Closing the workbench while a run is executing does not promise cancellation or
-completion. Reopen Results and inspect its saved metadata and logs. Only a final
+Normal closing waits for an active operation. Forced termination or CLI interruption
+does not promise cancellation or completion. Reopen Results and inspect its saved
+metadata and logs. Only a final
 Completed record plus matching supported output counts as completed. An incomplete
 run can be reproduced into a fresh directory; original partial output stays intact.
 
