@@ -42,6 +42,16 @@ The stdlib-only `examples/support/review025_food_fate.py` and six unit controls
 add no simulation input or foundation dependency. Five cutoff-censored non-use
 outputs remain; virtual observer tags do not identify particular recipient meals.
 
+[Standalone025acceptance candidate](development/experiment-025-integrity-candidate.md)
+is available through `validate025_acceptance`. Its214post-evaluation custody
+bindings cover47original025files, frozen readers/hosts and accepted review anchors.
+It runs existing reconstruction/replay plus completion/food-fate/custody controls,
+checks membership/hashes before and after, and explicitly leaves normal protection
+at001–024. It is not an activated025foundation contract.
+[Executed verification](development/experiment-025-integrity-candidate-validation.json)
+records the full passing standalone run,217root tests, formatting/Clippy and Git
+byte-custody checks.
+
 ## Start here
 
 - Rules: [AGENTS.md](../AGENTS.md); protected [001–024 contract](experiment-contract-001-024.md),

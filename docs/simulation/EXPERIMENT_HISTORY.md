@@ -351,3 +351,11 @@ Across primary48records,72of77outputs must eventually be consumed or transferred
 is63–67and transfer13–14under compatible assignments; these overlap and are not
 welfare measures. Record17's transferred unit still has uncertain recipient meal
 identity. No original report, behavior,025protection or026was changed.
+
+
+An optional [025integrity candidate](../development/experiment-025-integrity-candidate.md)
+provides one standalone `validate025_acceptance` command for original reconstruction/
+replay and post-delivery attribution/completion controls under214custody bindings.
+All47original025files and candidate source/review anchors are checked before and
+after execution. This is an unactivated review package; normal foundation remains
+001–024and no policy/behavior/default or026changes follow.

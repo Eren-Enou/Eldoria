@@ -1,3 +1,40 @@
+# Standalone025 integrity candidate — verified review package
+
+User requested continued work. Scope: make accepted025research/corrections and
+post-delivery food-attribution evidence reproducible through a single custody-
+checked standalone command. No active foundation extension, policy/default change,
+026or canon work. Branchmain; clean starting revisiona7550196310570418cceb14d07e2388be519d1bd.
+
+New example validate025_acceptance.rs delegates to Python custody/orchestration
+helper and five negative-control tests. Candidate manifest214bindings includes
+all47original025files, frozen source/helper unions and accepted review anchors;
+41bindings require raw bytes, remainder declared LF. Before/after verification
+rejects added/changed/missing evidence and any candidate endpoint/status promotion.
+Original standalone evidence gate is called unchanged, together with13completion
+corruptions,6food-fate controls and exact saved food-fate reconstruction.
+
+Candidate proposal/inventory: docs/development/experiment-025-integrity-candidate.*.
+Normalvalidate_contract and001–024contract/inventory unchanged.025remains reviewed,
+opt-in/unprotected research. Candidate custody is post-evaluation, not prospective
+registration or a new claim of behavioral/clinical/social benefit.
+
+Completed:5custodytests/6food-fate controls/13completion corruptions/22original
+corruptions/50independent originals+50exact Rustreplays PASS through the full new
+standalone command. Rootfmt/lockedClippy/217tests PASS. All214bindings unchanged
+before/after; stagedGitbytecheckPASS, including41raw/173LF. Original408portable/
+425raw and107transitive foundation bindings reverified inside unchanged old gate.
+Logs %TEMP%/025-integrity-candidate; durable execution record:
+docs/development/experiment-025-integrity-candidate-validation.json.
+
+Publication milestone: foundation: add standalone025 acceptance candidate gate.
+Its commit follows the auditeda755019baseline; final delivery records verified
+originmain SHA/cleanstate. Next session may review candidate obligations and
+decide separately whether to authorize foundation integration. No active001–025
+contract or normal-gate change was made. Viewer unchanged; prior72tests/browser
+acceptance reused. No runtime benchmark is warranted for a verifier entry point.
+
+Older checkpoints below are historical, not current pending work.
+
 # Post025 acceptance challenge — verified result
 
 User authorized continued work with engineering judgment. Scope selected: independent

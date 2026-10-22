@@ -1,0 +1,58 @@
+{
+  "scope": "Standalone025integrity candidate only; no activated protection/default/behavior change",
+  "base_revision": "a7550196310570418cceb14d07e2388be519d1bd",
+  "status": "PASS; candidate remains unadopted",
+  "protected_endpoint": "001-024",
+  "candidate_manifest_sha256_lf": "0ef885f4dd2360c5120320b6b60db19b23e7935e4bceeed266c86ce88ec4226d",
+  "bindings": {
+    "total": 214,
+    "experiment025_members": 47,
+    "raw_mode": 41,
+    "lf_mode": 173,
+    "before_and_after_execution": "PASS",
+    "staged_Git_bytes": "PASS"
+  },
+  "checks": [
+    {
+      "command": "cargo fmt --check",
+      "exit": 0
+    },
+    {
+      "command": "cargo clippy --locked --all-targets -j 1 -- -D warnings",
+      "exit": 0
+    },
+    {
+      "command": "cargo test --locked -j 1",
+      "exit": 0,
+      "tests_passed": 217
+    },
+    {
+      "command": "cargo run --release --locked -j 1 --example validate025_acceptance",
+      "exit": 0,
+      "custody_tests": 5,
+      "food_fate_tests": 6,
+      "completion_corruptions_rejected": 13,
+      "original_corruptions_rejected": 22,
+      "originals_reconstructed": 50,
+      "exact_Rust_replays": 50,
+      "exact_food_fate_reconstruction": "PASS"
+    }
+  ],
+  "external_log_sha256": {
+    "fmt.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "clippy.log": "971dd1f252cc0d296a92a1e9afa96b8edabacd5fd0f89beb3d99a77bbef99e6d",
+    "root-tests.log": "0dc9246314d129ad68da56166972fc435f222929d98f6b9a9297da955305aca0",
+    "candidate.log": "031fb9cb95bf057e31af61d192ff9f667864a30ffedf6ac1e08359a4d538e723"
+  },
+  "historical_identity": {
+    "portable_artifacts": 408,
+    "raw_originals": 425,
+    "status": "PASS inside unchanged original025 gate"
+  },
+  "reused_checks": {
+    "normal_foundation_gate": "Prior001\u2013024PASS reused at identical107transitive sources, freshly verified inside original025sources gate. Normal entry point unchanged.",
+    "viewer": "Unchanged source; prior72test/browser evidence reused.",
+    "benchmark": "Not relevant to standalone validation entry point; no simulation runtime change."
+  },
+  "activation": "This package does not create001\u2013025contract/inventory or modify validate_contract. Any future protection decision is separate."
+}
