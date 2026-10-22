@@ -1,0 +1,2617 @@
+{
+  "scope": "Independent all-compatible prepared-unit attribution; observer tags only, not cognitive identities",
+  "archive_sha256": "7dd09f8b1ef2deed2232cda11da541a1075d57017a5364542e01fe628047d569",
+  "primary_48": {
+    "created": 77,
+    "consumed": [
+      63,
+      67
+    ],
+    "ever_transferred": [
+      13,
+      14
+    ],
+    "ever_used": [
+      72,
+      72
+    ],
+    "guaranteed_used": 72,
+    "guaranteed_unused": 5,
+    "ambiguous": 0
+  },
+  "all_50_including_placebos": {
+    "created": 81,
+    "consumed": [
+      67,
+      71
+    ],
+    "ever_transferred": [
+      13,
+      14
+    ],
+    "ever_used": [
+      76,
+      76
+    ],
+    "guaranteed_used": 76,
+    "guaranteed_unused": 5,
+    "ambiguous": 0
+  },
+  "worlds": [
+    {
+      "ordinal": 0,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 1,
+      "created": 4,
+      "consumed": [
+        4,
+        4
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        4,
+        4
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[4]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[5]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[6]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 3,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 102,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 4,
+      "consumed_total": 4
+    },
+    {
+      "ordinal": 2,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 95,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 0,
+      "waste": 0,
+      "consumed_total": 1
+    },
+    {
+      "ordinal": 3,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 95,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 0,
+      "waste": 0,
+      "consumed_total": 1
+    },
+    {
+      "ordinal": 4,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 2,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 5,
+      "created": 1,
+      "consumed": [
+        1,
+        1
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        1,
+        1
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[2]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 1,
+      "consumed_total": 1
+    },
+    {
+      "ordinal": 6,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 2,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 7,
+      "created": 1,
+      "consumed": [
+        1,
+        1
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        1,
+        1
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 1,
+          "ref": "material.operations[2]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 97,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 1,
+      "consumed_total": 1
+    },
+    {
+      "ordinal": 8,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 2,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 9,
+      "created": 1,
+      "consumed": [
+        1,
+        1
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        1,
+        1
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[2]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 1,
+      "consumed_total": 1
+    },
+    {
+      "ordinal": 10,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 3,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 11,
+      "created": 1,
+      "consumed": [
+        1,
+        1
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        1,
+        1
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[2]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 1,
+      "final_cache": 1,
+      "waste": 1,
+      "consumed_total": 1
+    },
+    {
+      "ordinal": 12,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 13,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 14,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 104,
+      "final_food": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 0,
+      "waste": 0,
+      "consumed_total": 10
+    },
+    {
+      "ordinal": 15,
+      "created": 4,
+      "consumed": [
+        4,
+        4
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        4,
+        4
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[1]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 0,
+          "ref": "material.operations[4]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[5]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 94,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 0,
+      "waste": 4,
+      "consumed_total": 16
+    },
+    {
+      "ordinal": 16,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 386,
+      "final_food": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 2
+    },
+    {
+      "ordinal": 17,
+      "created": 4,
+      "consumed": [
+        1,
+        2
+      ],
+      "ever_transferred": [
+        3,
+        3
+      ],
+      "ever_used": [
+        4,
+        4
+      ],
+      "terminal_assignments": 14,
+      "peak_assignments": 14,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[2]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[3]",
+          "status": "guaranteed_used",
+          "consumed": [
+            0,
+            1
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[6]",
+          "status": "guaranteed_used",
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_used",
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ]
+        }
+      ],
+      "physical_transitions": 406,
+      "final_food": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 4,
+      "consumed_total": 4
+    },
+    {
+      "ordinal": 18,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 92,
+      "final_food": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 0,
+      "waste": 0,
+      "consumed_total": 8
+    },
+    {
+      "ordinal": 19,
+      "created": 4,
+      "consumed": [
+        3,
+        4
+      ],
+      "ever_transferred": [
+        1,
+        1
+      ],
+      "ever_used": [
+        4,
+        4
+      ],
+      "terminal_assignments": 2,
+      "peak_assignments": 2,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[3]",
+          "status": "guaranteed_used",
+          "consumed": [
+            0,
+            1
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[4]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 3,
+          "ref": "material.operations[5]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 0,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 81,
+      "final_food": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 0,
+      "waste": 4,
+      "consumed_total": 15
+    },
+    {
+      "ordinal": 20,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 64,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 4,
+      "final_cache": 0,
+      "waste": 0,
+      "consumed_total": 4
+    },
+    {
+      "ordinal": 21,
+      "created": 2,
+      "consumed": [
+        2,
+        2
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        2,
+        2
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 1,
+          "ref": "material.operations[4]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[5]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 70,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 0,
+      "waste": 2,
+      "consumed_total": 6
+    },
+    {
+      "ordinal": 22,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 23,
+      "created": 4,
+      "consumed": [
+        4,
+        4
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        4,
+        4
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 2,
+          "ref": "material.operations[4]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 3,
+          "ref": "material.operations[5]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 0,
+          "ref": "material.operations[8]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[9]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 50,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 4,
+      "consumed_total": 4
+    },
+    {
+      "ordinal": 24,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 25,
+      "created": 4,
+      "consumed": [
+        4,
+        4
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        4,
+        4
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[4]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[5]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[6]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 3,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 92,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 4,
+      "consumed_total": 4
+    },
+    {
+      "ordinal": 26,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 4,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 2,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 27,
+      "created": 1,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[4]",
+          "status": "guaranteed_unused",
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 8,
+      "final_food": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 1,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 28,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 2,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 29,
+      "created": 4,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[4]",
+          "status": "guaranteed_unused",
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[5]",
+          "status": "guaranteed_unused",
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[6]",
+          "status": "guaranteed_unused",
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 3,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_unused",
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 8,
+      "final_food": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 4,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 30,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 31,
+      "created": 4,
+      "consumed": [
+        4,
+        4
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        4,
+        4
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[4]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[5]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[6]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 3,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 102,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 4,
+      "consumed_total": 4
+    },
+    {
+      "ordinal": 32,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 33,
+      "created": 4,
+      "consumed": [
+        4,
+        4
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        4,
+        4
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[4]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[5]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[6]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 3,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 102,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 4,
+      "consumed_total": 4
+    },
+    {
+      "ordinal": 34,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 35,
+      "created": 4,
+      "consumed": [
+        4,
+        4
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        4,
+        4
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[4]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[5]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[6]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 3,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 102,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 4,
+      "consumed_total": 4
+    },
+    {
+      "ordinal": 36,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 37,
+      "created": 4,
+      "consumed": [
+        4,
+        4
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        4,
+        4
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[4]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[5]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[6]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 3,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 102,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 4,
+      "consumed_total": 4
+    },
+    {
+      "ordinal": 38,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 200,
+      "final_food": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "final_raw": 16,
+      "final_cache": 0,
+      "waste": 0,
+      "consumed_total": 10
+    },
+    {
+      "ordinal": 39,
+      "created": 8,
+      "consumed": [
+        7,
+        7
+      ],
+      "ever_transferred": [
+        1,
+        1
+      ],
+      "ever_used": [
+        8,
+        8
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[1]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 0,
+          "ref": "material.operations[4]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[5]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[9]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[12]",
+          "status": "guaranteed_used",
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ]
+        },
+        {
+          "owner": 3,
+          "ref": "material.operations[14]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[15]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 187,
+      "final_food": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 0,
+      "waste": 8,
+      "consumed_total": 19
+    },
+    {
+      "ordinal": 40,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 389,
+      "final_food": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "final_raw": 16,
+      "final_cache": 0,
+      "waste": 0,
+      "consumed_total": 3
+    },
+    {
+      "ordinal": 41,
+      "created": 6,
+      "consumed": [
+        6,
+        6
+      ],
+      "ever_transferred": [
+        1,
+        1
+      ],
+      "ever_used": [
+        6,
+        6
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 2,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[2]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[3]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 0,
+          "ref": "material.operations[6]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[10]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 0,
+          "ref": "material.operations[11]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 365,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 4,
+      "final_cache": 0,
+      "waste": 6,
+      "consumed_total": 11
+    },
+    {
+      "ordinal": 42,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 771,
+      "final_food": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "final_raw": 16,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 2
+    },
+    {
+      "ordinal": 43,
+      "created": 8,
+      "consumed": [
+        8,
+        8
+      ],
+      "ever_transferred": [
+        3,
+        4
+      ],
+      "ever_used": [
+        8,
+        8
+      ],
+      "terminal_assignments": 2,
+      "peak_assignments": 9,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[2]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[3]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[6]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            1
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 0,
+          "ref": "material.operations[10]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[11]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[15]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[16]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 766,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 8,
+      "consumed_total": 12
+    },
+    {
+      "ordinal": 44,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 74,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 0,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 45,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 74,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 0,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 46,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 107,
+      "final_food": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "final_raw": 8,
+      "final_cache": 4,
+      "waste": 0,
+      "consumed_total": 1
+    },
+    {
+      "ordinal": 47,
+      "created": 4,
+      "consumed": [
+        0,
+        2
+      ],
+      "ever_transferred": [
+        4,
+        4
+      ],
+      "ever_used": [
+        4,
+        4
+      ],
+      "terminal_assignments": 34,
+      "peak_assignments": 46,
+      "units": [
+        {
+          "owner": 3,
+          "ref": "material.operations[2]",
+          "status": "guaranteed_used",
+          "consumed": [
+            0,
+            1
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[3]",
+          "status": "guaranteed_used",
+          "consumed": [
+            0,
+            1
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ]
+        },
+        {
+          "owner": 3,
+          "ref": "material.operations[6]",
+          "status": "guaranteed_used",
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_used",
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ]
+        }
+      ],
+      "physical_transitions": 108,
+      "final_food": [
+        5,
+        1,
+        1,
+        1
+      ],
+      "final_raw": 0,
+      "final_cache": 4,
+      "waste": 4,
+      "consumed_total": 4
+    },
+    {
+      "ordinal": 48,
+      "created": 0,
+      "consumed": [
+        0,
+        0
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        0,
+        0
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [],
+      "physical_transitions": 96,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 8,
+      "final_cache": 1,
+      "waste": 0,
+      "consumed_total": 0
+    },
+    {
+      "ordinal": 49,
+      "created": 4,
+      "consumed": [
+        4,
+        4
+      ],
+      "ever_transferred": [
+        0,
+        0
+      ],
+      "ever_used": [
+        4,
+        4
+      ],
+      "terminal_assignments": 1,
+      "peak_assignments": 1,
+      "units": [
+        {
+          "owner": 0,
+          "ref": "material.operations[4]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 1,
+          "ref": "material.operations[5]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 2,
+          "ref": "material.operations[6]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        },
+        {
+          "owner": 3,
+          "ref": "material.operations[7]",
+          "status": "guaranteed_used",
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ]
+        }
+      ],
+      "physical_transitions": 102,
+      "final_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_raw": 0,
+      "final_cache": 1,
+      "waste": 4,
+      "consumed_total": 4
+    }
+  ]
+}

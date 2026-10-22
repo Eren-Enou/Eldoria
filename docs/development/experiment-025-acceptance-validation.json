@@ -1,0 +1,71 @@
+{
+  "scope": "Post-delivery025acceptance at24d0cdc; no new simulation outcomes or protected extension",
+  "reviewed_revision": "24d0cdc9aaf638514aca6f327ed1990bba9e474f",
+  "checks": [
+    {
+      "command": "cargo fmt --check",
+      "exit": 0
+    },
+    {
+      "command": "cargo clippy --locked --all-targets -j 1 -- -D warnings",
+      "exit": 0
+    },
+    {
+      "command": "cargo test --locked -j 1",
+      "exit": 0,
+      "tests_passed": 217
+    },
+    {
+      "command": "cargo run --release --locked -j 1 --example validate025_evidence",
+      "exit": 0,
+      "original_reconstructions": 50,
+      "exact_replays": 50
+    },
+    {
+      "command": "python -B -m unittest discover -s examples/support -p test_review025_food_fate.py -v",
+      "exit": 0,
+      "tests_passed": 6
+    },
+    {
+      "command": "python -B examples/support/review025_food_fate.py --expected docs/development/experiment-025-food-fate.json",
+      "exit": 0,
+      "originals": 50
+    }
+  ],
+  "source_sha256_lf": {
+    "examples/support/review025_food_fate.py": "fd886dc041d767087ed6c67c96b5759ae3936c6b8b2b7cd0c488bb38b03f47ac",
+    "examples/support/test_review025_food_fate.py": "e82dcaf9037696cd27a4ad05cbe359cccebe8b0c865a2c2f0bc5484a781f1293",
+    "docs/development/experiment-025-acceptance-plan.md": "aaf02fa0e28cc519b1529b592698951960e49e65eb6970ff47dab504ed0d2be5"
+  },
+  "result_sha256_lf": "31517785cf864f7bda67b32536cf0bf667d986c5f407a50e2725ce4b427a4b21",
+  "external_log_sha256": {
+    "fmt.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "clippy.log": "cebd5a8673dc9e08507f7972c417ec09dee32b85183328b8bfa2f30067452858",
+    "root-tests.log": "9108d85d43ff0dd8c010064bb5acf2775b9fc5c52985eefcff81f6e5e87e753a",
+    "validate025.log": "b5ad0a2c0f93776da4bacca458ec26186efc4e84022fa14c42ecb37e16ef23f5",
+    "food-fate-tests.log": "9a9d3695a7ba047d760f601084d6eb5268c070bfd973e3ffec0a2600c9b9ccd0",
+    "exact-food-fate.log": "5e8b9ff86e7523630983f898a751ba21fba0906c94049ec25050bec225892600"
+  },
+  "integrity": {
+    "portable_artifacts": 408,
+    "raw_originals": 425,
+    "original_runtime_bindings": 114,
+    "original_helpers": 24,
+    "observer2": 158,
+    "json_bridge": 4,
+    "normal_foundation_transitive": 107,
+    "all_unchanged": true
+  },
+  "reused_checks": {
+    "normal001_024_gate": "Prior PASS at identical107transitive source hashes reverified by current source and identity checks; no foundation change",
+    "main_viewer": "Prior72tests/browseracceptance at unchanged viewer source; no rerun",
+    "benchmark": "No simulation/runtime change; no general benchmark rerun"
+  },
+  "offline_enumeration": {
+    "physical_rows": 7033,
+    "maximum_assignment_set": 46,
+    "hard_fail_cap": 100000,
+    "result_bytes": 49520
+  },
+  "qualification": "Exact physical compatibility ranges, not probabilities, welfare or statistical replication; virtual observer tags never become simulated identities."
+}

@@ -1,3 +1,34 @@
+# Post025 acceptance challenge — verified result
+
+User authorized continued work with engineering judgment. Scope selected: independent
+acceptance challenge of025, no026/protection/defaults/canon or behavior change.
+Branchmain; audited HEAD24d0cdc9aaf638514aca6f327ed1990bba9e474f. Initial tree clean.
+New stdlib-only review025_food_fate.py/tests enumerate all compatible hypothetical
+prepared-unit assignments under actual physical ledger. Original archive50/member
+hashes and7,033material rows independently agree. Primary77outputs:72guaranteed
+ever-used,5guaranteed-unused; consumed63–67, transferred13–14 (overlapping ranges,
+not probabilities/utility). All50inclplacebos81/76/5; max46jointassignments.
+Record17owner2operation3guaranteedtransfer but eventualmeal0–1.
+
+Acceptance CONFIRM WITH QUALIFICATION: docs/experiment-025-acceptance.md.
+Pre-analysis plan/result/validation under docs/development/experiment-025-*.
+Rootfmt/lockedClippy/217tests PASS; freshvalidate025_evidence50reconstructions
+and50byte replays PASS;6newcontrols and exact saved report reconstruction PASS.
+Original408portable/425raw and114/24/158/4/107sourcebindings unchanged. Previous
+longnormal001–024 gate reused only at same107transitive sources; viewer unchanged,
+previous72tests/browseracceptance reused; no runtime benchmark warranted.
+No previous frozen report or evidence file modified. New result49,520bytes.
+
+Publication milestone: experiment-025: independently verify prepared-food use.
+The commit follows the audited24d0cdc baseline; final delivery records verified
+remote SHA and clean state. Next session awaits separately authorized research.
+The evidence supports the narrower future question:
+local valuation of consuming/retaining/sharing under varying opportunities, not
+assuming more output or food circulation establishes benefit. No next experiment
+specified or begun;025 remains reviewed unprotected research, foundation001–024.
+
+Earlier completed-program checkpoints below retain their historical context.
+
 # Final publication receipt
 
 Complete-request025 milestone1ed9970e5d06d7b3ee063f37af66381e2c71d997 was

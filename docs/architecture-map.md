@@ -35,6 +35,13 @@ See the [final report](development/finite-material-final-report.md) and
 voluntary-neglect/co-eligible-consumption coverage is explicit. Foundation ends024;
 no automatic025protection, global adoption,026or canon change.
 
+[Post-delivery acceptance challenge](experiment-025-acceptance.md) independently
+confirms72of77primary outputs have guaranteed later consumption or transfer under
+all compatible fungible-food assignments; eventual consumption is63–67units.
+The stdlib-only `examples/support/review025_food_fate.py` and six unit controls
+add no simulation input or foundation dependency. Five cutoff-censored non-use
+outputs remain; virtual observer tags do not identify particular recipient meals.
+
 ## Start here
 
 - Rules: [AGENTS.md](../AGENTS.md); protected [001–024 contract](experiment-contract-001-024.md),

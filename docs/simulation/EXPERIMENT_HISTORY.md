@@ -342,3 +342,12 @@ wall time and observer overhead from cognition. [Main viewer acceptance](../deve
 [readiness assessment](../development/post-025-community-readiness.md) document the
 complete request and its continuation; [final report](../development/finite-material-final-report.md)
 retains missing voluntary-neglect/co-eligible-consumption coverage. No025foundation extension, default adoption,026or canon change.
+
+
+Post-delivery [025acceptance](../experiment-025-acceptance.md) confirms the narrow
+use finding with an additional independent stdlib-only physical/fungibility audit.
+Across primary48records,72of77outputs must eventually be consumed or transferred;
+5remain unused,0have ambiguous ever-use status. Eventual prepared-unit consumption
+is63–67and transfer13–14under compatible assignments; these overlap and are not
+welfare measures. Record17's transferred unit still has uncertain recipient meal
+identity. No original report, behavior,025protection or026was changed.
