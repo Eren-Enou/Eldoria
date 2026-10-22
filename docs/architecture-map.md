@@ -4,6 +4,19 @@ Navigation summary, protected through024. Source and mode-specific
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
+## Human Rust workbench V1
+
+[Quickstart](development/HUMAN_WORKBENCH_QUICKSTART.md) and
+[architecture / verified runner table](development/rust-first-workbench-architecture.md).
+The isolated `tools/workbench/` Cargo workspace owns typed configuration, safe
+execution/reproduction, bounded native history reading, local human observations
+and an egui desktop. It invokes the unchanged023 continuous-world CLI; all output
+goes to unique ignored exploratory directories. The existing read-only Explorer
+remains a separate optional Python/JavaScript process.024/025 launch controls are
+unavailable in V1. For025 research use the corrected observer2 source row below;
+the original failed host remains historical evidence. No scientific protection,
+policy adoption, cognition, canon or026 follows from this engineering milestone.
+
 ## Current gated program
 
 The [independent024review](experiment-024-review.md) accepts with qualification at873b524.

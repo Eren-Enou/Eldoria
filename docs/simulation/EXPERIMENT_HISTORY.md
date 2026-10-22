@@ -1,5 +1,11 @@
 # World of Individuals experiment index
 
+Human operation: [Rust Workbench V1 quickstart](../development/HUMAN_WORKBENCH_QUICKSTART.md).
+This separate engineering application invokes the unchanged023 runner for new
+exploratory worlds; it is not Experiment026 or a policy/protection extension.
+For025 source navigation use the corrected observer2 successor, preserving the
+original failed host and its evidence.
+
 Protected through024; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
 reports or protected contracts. Historical next-experiment recommendations reflect
 their publication date. Update the affected row when an experiment concludes.

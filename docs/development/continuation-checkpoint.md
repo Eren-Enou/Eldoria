@@ -1,4 +1,58 @@
-# Standalone025 integrity candidate — verified review package
+# Rust Workbench V1 — delivery checkpoint
+
+Objective: independent human operation of real four-person worlds through the
+isolated `tools/workbench/` Rust desktop and CLI. No026,025 adoption/protection,
+new simulation behavior or canon change.
+
+Branch `main`; implementation HEAD `5c22b2dcae32d5e579556188e314902bd5c03d14`,
+published and verified against actual `origin/main`. Recorded before the guide and
+acceptance documentation commits; those do not change validated executable source.
+Consult Git for the final documentation HEAD.
+
+Implemented: typed023 configuration, fixed argument-vector Cargo execution,
+frozen-source preflight, unique safe directories, honest completion metadata,
+hash-checked bounded observer inspection, fresh-path reproduction, external human
+observations, egui/eframe desktop and safe optional read-only Explorer bridge.
+
+Verified runner: unchanged `prototypes/continuous-world`, Continuous/Epoch/Ascending,
+claim4/cadence8/capacity2. All12 cases and duration/period/seed boundaries execute.
+024/025 unavailable in V1;025's current research source is the corrected observer2
+successor, preserving its original19-world failure and all later evidence.
+
+Native GUI exercised with Windows Computer Use: invalid ticks disable Run; real
+Run/Results/Inspect; exact fresh-path reproduction; captured decision → human note;
+separate saved annotation; local Explorer reads the custom generated023 history.
+Debug and optimized release tested on Windows11 Pro10.0.26100, Rust/Cargo1.99,
+Python3.12.6. Other OS acceptance is not claimed.
+
+Release GUI run `target/workbench-runs/run-1792702734346-86716-0/`, source5c22b2d,
+SHA256 `24e6046ec2af86d6bee7a3c2e3cb6a1b95459522f783f39192167f75e946b5be`.
+480 completed activities,10meals,4grants; final food1/1/0/0 and hunger100each.
+Earlier native exact reproduction: `run-1792701315150-97944-0` →
+`run-1792701702337-96584-0`. Logs/notes remain with their actual runs. Engineering
+fixtures and failures are preserved in `target/workbench-runs/acceptance-tests/`.
+
+Checks PASS: root fmt/Clippy/217tests; full read-only foundation through024,
+408 artifacts/425 raw originals; standalone025 candidate214bindings/50exact replays
+and old controls, without activation. Workbench fmt/Clippy pass for desktop and CLI;
+5 routine tests plus2 explicitly executed real-run tests pass (7total). Desktop
+suite separately passes with the2expensive tests ignored there and executed through
+the CLI acceptance target. Logs: `target/workbench-interface-audit/`.
+
+Python remains for existing Rust host generation, optional Explorer and unchanged
+independent scientific readers. No new Python. Limits: one runner/schema, bounded
+native samples, no cancellation/resume/installer/portable standalone binary, cold
+build/catalog delay, Windows-only acceptance. First viewer attempt hit45s; shared
+cache/180s readiness correction passed. No unresolved validation failure.
+
+Read [quickstart](HUMAN_WORKBENCH_QUICKSTART.md),
+[architecture](rust-first-workbench-architecture.md) and
+[acceptance](rust-workbench-v1-acceptance.md). The separately verified
+[025 candidate](experiment-025-integrity-candidate.md) remains unadopted, outside
+protected001–024. Next exact action: creator hands-on Run → Inspect → Reproduce →
+Human observation. Use actual feedback to choose the smallest usability improvement.
+
+## Previous checkpoint: standalone025 integrity candidate — verified review package
 
 User requested continued work. Scope: make accepted025research/corrections and
 post-delivery food-attribution evidence reproducible through a single custody-
