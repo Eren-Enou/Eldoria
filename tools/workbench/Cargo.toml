@@ -1,0 +1,23 @@
+[package]
+name = "woi-workbench"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+default-run = "woi-workbench"
+
+[workspace]
+
+[features]
+default = []
+desktop = ["dep:eframe", "dep:chrono"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+eframe = { version = "=0.33.3", optional = true, default-features = false, features = ["default_fonts", "glow", "x11", "wayland", "accesskit"] }
+chrono = { version = "0.4", optional = true, default-features = false, features = ["std"] }
+
+[[bin]]
+name = "woi-workbench"
+path = "src/main.rs"
