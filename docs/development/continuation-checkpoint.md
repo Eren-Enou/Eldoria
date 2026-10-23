@@ -39,3 +39,10 @@ includes actual desktop dependencies/fonts; no first-party license was invented.
 Next development: hands-on independent observation and usability feedback. A new
 behavioral experiment requires separate evidence and preregistration; no automatic
 026 or policy adoption follows from this delivery. Preserve all archived mistakes.
+
+Post-publication follow-up:actual browser acceptance found the sole-option
+listbox was not selected before auto-opening. The unpackaged workbench bridge
+now selects that verified option explicitly; real024 browser opening and the
+selected-source regression pass. Original Explorer assets are unchanged. The
+portable ZIP remains unchanged/pinned to4f38a85; main includes this later bridge
+fix. The publication receipt distinguishes current main from binary build source.

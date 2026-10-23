@@ -21,6 +21,8 @@ function openSelectedRun() {
  const status = document.getElementById('status');
  if (!opened && select.options.length === 1 && status.textContent.startsWith('Catalog ready.')) {
   opened = true;
+  // A size>1 listbox does not automatically select its sole option.
+  select.selectedIndex = 0;
   document.getElementById('load').click();
  }
 }

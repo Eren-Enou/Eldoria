@@ -235,3 +235,26 @@ that remain questionable after local-input/execution inspection and exact replay
 could justify a separately preregistered behavioral investigation. A more
 accessible interface alone establishes no new cognition, broad emergence,
 optimal policy, psychological realism or scientific adoption.
+
+## Post-publication developer Explorer check
+
+An actual browser check after the portable release found a developer-only startup
+bug missed by the HTTP/server tests: the original Explorer's size>1 trial list
+has no automatic selection, even with one option. The bridge clicked Open with
+an empty ID, producing HTTP400/Unknown registered trial. The failure is retained
+in `developer-explorer-before-fix.log`; it did not affect the portable ZIP.
+
+The workbench-owned bridge now explicitly selects its sole verified option before
+clicking Open. The original Explorer assets and APIs remain unchanged. Actual
+browser reload then automatically displayed the intended024 Baseline/paired/
+seed42 history, four individuals, exact owned boundaries[0].choices[0], retained
+receipt0 and recorded valuation terms. Status:Loaded verified original
+history.jsonl · record0. No simulation was run. The real selected-source server
+regression also passes; see `developer-explorer-regression.log` and the successful
+HTTP200/nonempty-ID request in `developer-explorer.log`.
+
+This follow-up changes only an unpackaged developer bridge and documentation.
+The published portable binaries, ZIP/checksum and their clean source revision
+4f38a85b69405740aebbb5bcfeab7bcac73ab5bf are preserved. Main contains the subsequent
+bridge fix; the binary release tag remains pinned to its actual build source.
+The final publication receipt distinguishes repository HEAD from binary source.
