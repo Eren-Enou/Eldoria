@@ -105,6 +105,7 @@ impl Workbench {
                 .period
                 .parse()
                 .map_err(|_| "Reporting period must be an integer")?,
+            ..Default::default()
         };
         c.validate()?;
         Ok(c)
