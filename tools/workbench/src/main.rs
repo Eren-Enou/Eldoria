@@ -6,10 +6,27 @@ fn main() {
     }
 }
 fn start() -> woi_workbench::Result<()> {
-    let args: Vec<String> = std::env::args().skip(1).collect();
-    let store = Store::open(&woi_workbench::repository())?;
+    let mut args: Vec<String> = std::env::args().skip(1).collect();
+    if args.first().is_some_and(|s| s == "identity") && args.len() == 1 {
+        println!(
+            "{}",
+            serde_json::to_string_pretty(&woi_workbench::portable::build_identity()).unwrap()
+        );
+        return Ok(());
+    }
+    let workspace = if args.first().is_some_and(|s| s == "--workspace") {
+        if args.len() < 2 {
+            return Err("Supply an absolute user-data workspace".into());
+        }
+        let value = std::path::PathBuf::from(args.remove(1));
+        args.remove(0);
+        Some(value)
+    } else {
+        None
+    };
+    let store = Store::detect(workspace.as_deref())?;
     match args.first().map(String::as_str) {
-        Some("help" | "--help" | "-h") => println!("World of Individuals Rust Workbench V1\nDesktop: launch without arguments (build with --features desktop)\nCLI: run [configuration.json] | list | inspect RUN-ID | reproduce RUN-ID | viewer RUN-ID | observe RUN-ID observation.json\nGuide: docs/development/HUMAN_WORKBENCH_QUICKSTART.md"),
+        Some("help" | "--help" | "-h") => println!("World of Individuals Rust Workbench V2\nDesktop: launch without arguments (build with --features desktop)\nCLI: run [configuration.json] | list | inspect RUN-ID | reproduce RUN-ID | viewer RUN-ID | compare LEFT-ID RIGHT-ID | observe RUN-ID observation.json\nGuide: docs/development/HUMAN_WORKBENCH_QUICKSTART.md"),
         Some("run") => {
             let mut c = Configuration::default();
             if let Some(path) = args.get(1) { c = woi_workbench::storage::read(std::path::Path::new(path))?; }
@@ -19,6 +36,8 @@ fn start() -> woi_workbench::Result<()> {
         }
         Some("list") => for id in store.list()? { match execution::metadata(&store, &id) { Ok(m) => println!("{} | {} | {} | seed{}", id, m.status, m.configuration.scenario, m.configuration.seed), Err(e) => println!("{id} | Missing/corrupt metadata: {e}") } },
         Some("inspect") => println!("{}", serde_json::to_string_pretty(&execution::inspect(&store, args.get(1).ok_or("Supply a run ID")?)?).unwrap()),
+        Some("notes") => println!("{}",serde_json::to_string_pretty(&woi_workbench::observations::load(&store,args.get(1).ok_or("Supply a run ID")?)?).unwrap()),
+        Some("compare") => println!("{}",serde_json::to_string_pretty(&woi_workbench::comparison::compare(&store,args.get(1).ok_or("Supply left run ID")?,args.get(2).ok_or("Supply right run ID")?)?).unwrap()),
         Some("reproduce") => {
             let m=execution::reproduce(&store, args.get(1).ok_or("Supply a run ID")?)?;
             println!("{}",serde_json::to_string_pretty(&m).unwrap());

@@ -1,6 +1,6 @@
 use crate::{
     Result,
-    config::Configuration,
+    config::{Configuration, Mode},
     history::{self, Summary},
     storage::{self, Store},
 };
@@ -40,6 +40,8 @@ pub struct Metadata {
     pub reproduced_from: Option<String>,
     pub exact_match: Option<bool>,
     pub warnings: Vec<String>,
+    #[serde(default)]
+    pub installed_release: Option<crate::portable::ReleaseManifest>,
 }
 pub fn hash(path: &Path) -> Result<String> {
     storage::no_links(path)?;
@@ -67,11 +69,35 @@ fn git(repo: &Path, args: &[&str]) -> Result<String> {
     Ok(String::from_utf8_lossy(&output.stdout).trim().to_owned())
 }
 pub fn source(store: &Store) -> Result<Source> {
+    source_for(store, Mode::ContinuousWorld)
+}
+pub fn source_for(store: &Store, mode: Mode) -> Result<Source> {
+    if let Some(installed) = &store.installed {
+        installed.supports(mode)?;
+        installed.verify()?;
+        let identity = &installed.manifest.runner.build;
+        return Ok(Source {
+            revision: identity.revision.clone(),
+            dirty: identity.dirty,
+            runner_fingerprint: identity.engine_fingerprint.clone(),
+        });
+    }
     let mut inputs = BTreeMap::new();
-    for name in [
+    let mut names = vec![
         "experiments/023/source-freeze.json",
         "experiments/023/inherited-source-bindings.json",
-    ] {
+    ];
+    if mode != Mode::ContinuousWorld {
+        names.push("experiments/024/source-freeze.json");
+    }
+    if mode == Mode::MaterialPreparation {
+        names.extend([
+            "experiments/025/source-freeze.json",
+            "experiments/025/validation-source-locks.json",
+            "experiments/025/source-freeze-observer2.json",
+        ]);
+    }
+    for name in names {
         let locks: BTreeMap<String, String> = storage::read(&store.repo.join(name))?;
         for (path, expected) in locks {
             let p = store.repo.join(&path);
@@ -83,7 +109,7 @@ pub fn source(store: &Store) -> Result<Source> {
             let actual = format!("{:x}", Sha256::digest(normalized.as_bytes()));
             if actual != expected {
                 return Err(format!(
-                    "023 frozen runner source differs: {path}. Restore the required revision; workbench will not adapt it."
+                    "Frozen runner source differs: {path}. Restore the required revision; workbench will not adapt it."
                 ));
             }
             inputs.insert(path, actual);
@@ -99,7 +125,18 @@ pub fn source(store: &Store) -> Result<Source> {
     })
 }
 pub fn arguments(store: &Store, configuration: &Configuration, history: &Path) -> Vec<String> {
-    [
+    if store.installed.is_some() {
+        return vec![
+            "run".into(),
+            history
+                .with_file_name("configuration.json")
+                .display()
+                .to_string(),
+            history.display().to_string(),
+        ];
+    }
+    let runner = configuration.mode.runner();
+    let mut args: Vec<String> = vec![
         "run".into(),
         "--release".into(),
         "--locked".into(),
@@ -108,19 +145,31 @@ pub fn arguments(store: &Store, configuration: &Configuration, history: &Path) -
         "--manifest-path".into(),
         store
             .repo
-            .join("prototypes/continuous-world/Cargo.toml")
+            .join(format!("prototypes/{runner}/Cargo.toml"))
             .to_string_lossy()
             .into_owned(),
         "--target-dir".into(),
         store
             .repo
-            .join("target/continuous-world")
+            .join(format!("target/{runner}"))
             .to_string_lossy()
             .into_owned(),
         "--bin".into(),
-        "continuous-world".into(),
+        runner.into(),
         "--".into(),
         "run".into(),
+    ];
+    if configuration.mode == Mode::MaterialPreparation {
+        args.push(
+            history
+                .with_file_name("runner-config.json")
+                .display()
+                .to_string(),
+        );
+        args.push(history.display().to_string());
+        return args;
+    }
+    args.extend([
         history.to_string_lossy().into_owned(),
         "--case".into(),
         configuration.scenario.clone(),
@@ -130,23 +179,35 @@ pub fn arguments(store: &Store, configuration: &Configuration, history: &Path) -
         configuration.period.to_string(),
         "--seed".into(),
         configuration.seed.to_string(),
-        "--mode".into(),
-        "Continuous".into(),
         "--phase".into(),
         "Epoch".into(),
         "--order".into(),
         "Ascending".into(),
         "--claim".into(),
         "4".into(),
-    ]
-    .into()
+    ]);
+    if configuration.mode == Mode::ContinuousWorld {
+        args.extend(["--mode".into(), "Continuous".into()]);
+    } else {
+        args.extend([
+            "--valuation".into(),
+            format!("{:?}", configuration.valuation.unwrap()),
+        ]);
+    }
+    args
 }
 pub fn metadata(store: &Store, id: &str) -> Result<Metadata> {
     let m: Metadata = storage::read(&store.run(id)?.join("metadata.json"))?;
-    if m.schema != "woi-workbench-run/v1" || m.id != id {
+    if !["woi-workbench-run/v1", "woi-workbench-run/v2"].contains(&m.schema.as_str())
+        || m.id != id
+        || (m.schema == "woi-workbench-run/v2" && m.installed_release.is_none())
+    {
         return Err("Unsupported or mismatched run metadata".into());
     }
     m.configuration.validate()?;
+    if let Some(release) = &m.installed_release {
+        release.validate()?;
+    }
     Ok(m)
 }
 pub fn inspect(store: &Store, id: &str) -> Result<Summary> {
@@ -173,18 +234,30 @@ fn execute(
     command: Option<Command>,
 ) -> Result<Metadata> {
     config.validate()?;
-    let source = source(store)?;
-    storage::no_links(&store.repo.join("target/continuous-world"))?;
+    store.supports(config.mode)?;
+    let source = source_for(store, config.mode)?;
+    if store.installed.is_none() {
+        storage::no_links(&store.repo.join(format!("target/{}", config.mode.runner())))?;
+    }
     let previous = original.map(|id| metadata(store, id)).transpose()?;
     let (id, path) = store.create()?;
     let args = arguments(store, &config, &path.join("history.jsonl"));
     let mut cmd = command.unwrap_or_else(|| {
-        let mut c = Command::new("cargo");
+        let mut c = if let Some(installed) = &store.installed {
+            Command::new(installed.root.join(crate::portable::RUNNER_FILE))
+        } else {
+            Command::new("cargo")
+        };
         c.args(&args);
         c
     });
     let mut m = Metadata {
-        schema: "woi-workbench-run/v1".into(),
+        schema: if store.installed.is_some() {
+            "woi-workbench-run/v2"
+        } else {
+            "woi-workbench-run/v1"
+        }
+        .into(),
         id,
         configuration: config,
         source,
@@ -207,9 +280,26 @@ fn execute(
         warnings: vec![
             "Exploratory execution only; not registered evidence or scientific acceptance".into(),
         ],
+        installed_release: store.installed.as_ref().map(|i| i.manifest.clone()),
     };
     if m.source.dirty {
-        m.warnings.push("Working tree has uncommitted changes; frozen023 runner inputs were verified separately".into());
+        m.warnings.push(
+            "Working tree has uncommitted changes; frozen runner inputs were verified separately"
+                .into(),
+        );
+    }
+    if let Some(installed) = &m.installed_release {
+        m.warnings.push(format!("Installed portable release {}; checksum identity is not a signature or proof of distribution authenticity",installed.version));
+        if previous
+            .as_ref()
+            .and_then(|p| p.installed_release.as_ref())
+            .is_some_and(|old| old.runner.sha256 != installed.runner.sha256)
+        {
+            m.warnings.push(
+                "Installed runner binary changed; exact historical equivalence is not guaranteed"
+                    .into(),
+            );
+        }
     }
     if let Some(old) = &previous
         && old.source.revision != m.source.revision
@@ -225,6 +315,12 @@ fn execute(
         );
     }
     storage::write_new(&path.join("configuration.json"), &m.configuration)?;
+    if m.configuration.mode == Mode::MaterialPreparation {
+        storage::write_new(
+            &path.join("runner-config.json"),
+            &m.configuration.runner_config(),
+        )?;
+    }
     storage::write_new(&path.join("metadata.json"), &m)?;
     let stdout = File::create(path.join("stdout.log")).map_err(|e| e.to_string())?;
     let stderr = File::create(path.join("stderr.log")).map_err(|e| e.to_string())?;
@@ -244,9 +340,15 @@ fn execute(
     m.finished_unix_ms = Some(storage::now());
     match result {
         Err(e) => {
-            m.diagnostic = Some(format!(
-                "Could not launch Cargo/runner: {e}. Check Rust, Cargo and build-time Python on PATH."
-            ))
+            m.diagnostic = Some(if store.installed.is_some() {
+                format!(
+                    "Could not launch the packaged runner: {e}. Check release completeness and executable permissions; no developer-tool fallback was attempted."
+                )
+            } else {
+                format!(
+                    "Could not launch Cargo/runner: {e}. Check Rust, Cargo and build-time Python on PATH."
+                )
+            })
         }
         Ok(status) => {
             m.exit_code = status.code();
@@ -354,6 +456,30 @@ mod tests {
         };
         let saved = crate::observations::save(&store, &m.id, &note).unwrap();
         assert!(saved.starts_with(store.run(&m.id).unwrap().join("observations")));
+        let reopened = Store {
+            repo: store.repo.clone(),
+            root: store.root.clone(),
+            installed: None,
+        };
+        let notes = crate::observations::load(&reopened, &m.id).unwrap();
+        assert_eq!(notes.len(), 1);
+        assert_eq!(notes[0].observation.notes, note.notes);
+        // V1 annotations omitted this later optional field.
+        let mut legacy: serde_json::Value = storage::read(&saved).unwrap();
+        legacy["observation"]
+            .as_object_mut()
+            .unwrap()
+            .remove("suggested_improvement");
+        fs::write(&saved, serde_json::to_vec(&legacy).unwrap()).unwrap();
+        assert!(
+            crate::observations::load(&reopened, &m.id).unwrap()[0]
+                .observation
+                .suggested_improvement
+                .is_empty()
+        );
+        legacy["history_sha256"] = "wrong-history".into();
+        fs::write(&saved, serde_json::to_vec(&legacy).unwrap()).unwrap();
+        assert!(crate::observations::load(&reopened, &m.id).is_err());
         assert_eq!(
             before,
             hash(&store.run(&m.id).unwrap().join("history.jsonl")).unwrap()

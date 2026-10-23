@@ -39,13 +39,17 @@ fn probe(program: &str) -> Result<()> {
     Ok(())
 }
 pub fn arguments(store: &Store, id: &str, port: u16) -> Result<Vec<String>> {
+    if store.installed.is_some() {
+        return Err("Detailed Python Explorer is a developer/advanced tool and is not included in this portable release. Native inspection remains available.".into());
+    }
     execution::inspect(store, id)?;
+    let m = execution::metadata(store, id)?;
     let path = store.run(id)?;
     Ok(vec![
         "-B".into(),
         store
             .repo
-            .join("tools/history-explorer/explorer.py")
+            .join("tools/workbench/viewer_bridge.py")
             .display()
             .to_string(),
         "--no-browser".into(),
@@ -53,8 +57,15 @@ pub fn arguments(store: &Store, id: &str, port: u16) -> Result<Vec<String>> {
         port.to_string(),
         "--cache".into(),
         store.root.join("viewer-cache").display().to_string(),
-        "--continuous".into(),
+        match m.configuration.mode {
+            crate::config::Mode::ContinuousWorld => "--continuous",
+            crate::config::Mode::ActivityValuation => "--valuation",
+            crate::config::Mode::MaterialPreparation => "--preparation",
+        }
+        .into(),
         path.join("history.jsonl").display().to_string(),
+        "--expected-sha256".into(),
+        m.history_sha256.ok_or("Missing completed history hash")?,
     ])
 }
 pub fn command_text(store: &Store, id: &str, port: u16) -> Result<String> {
@@ -79,6 +90,9 @@ impl Drop for Viewer {
     }
 }
 pub fn launch(store: &Store, id: &str) -> Result<Viewer> {
+    if store.installed.is_some() {
+        return Err("Python Explorer is available only in developer mode; use native inspection in this portable release".into());
+    }
     available()?;
     let listener = TcpListener::bind(("127.0.0.1", 0)).map_err(|e| e.to_string())?;
     let port = listener.local_addr().map_err(|e| e.to_string())?.port();

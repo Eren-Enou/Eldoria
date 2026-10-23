@@ -1,0 +1,9 @@
+{
+  "schema_version": 2,
+  "mode": "ActivityValuation",
+  "scenario": "paired",
+  "seed": 42,
+  "ticks": 192,
+  "period": 11,
+  "valuation": "Baseline"
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 2,
+  "mode": "MaterialPreparation",
+  "scenario": "paired",
+  "seed": 42,
+  "ticks": 192,
+  "period": 11,
+  "valuation": "MealRelief",
+  "preparation": {
+    "preset": "KnownRaw",
+    "raw_initial": 6,
+    "effort": "Short"
+  }
+}

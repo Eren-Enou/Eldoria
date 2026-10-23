@@ -40,6 +40,7 @@ pub fn no_links(path: &Path) -> Result<()> {
 pub struct Store {
     pub repo: PathBuf,
     pub root: PathBuf,
+    pub installed: Option<crate::portable::InstalledRelease>,
 }
 impl Store {
     pub fn open(repo: &Path) -> Result<Self> {
@@ -66,7 +67,60 @@ impl Store {
         {
             return Err("Output root escapes repository".into());
         }
-        Ok(Self { repo, root })
+        Ok(Self {
+            repo,
+            root,
+            installed: None,
+        })
+    }
+    pub fn detect(workspace: Option<&Path>) -> Result<Self> {
+        let executable = std::env::current_exe().map_err(|e| e.to_string())?;
+        let installation = executable
+            .parent()
+            .ok_or("No executable installation directory")?;
+        if installation.join("release.json").exists() || cfg!(feature = "portable") {
+            return Self::portable(installation, workspace);
+        }
+        if workspace.is_some() {
+            return Err("--workspace is for installed portable mode; development storage stays inside its approved root".into());
+        }
+        #[cfg(not(feature = "portable"))]
+        {
+            Self::open(&crate::repository())
+        }
+        #[cfg(feature = "portable")]
+        {
+            Err("Portable release manifest is missing; no source-build fallback is allowed".into())
+        }
+    }
+    pub fn portable(installation: &Path, workspace: Option<&Path>) -> Result<Self> {
+        let installed = crate::portable::InstalledRelease::load(installation)?;
+        #[cfg(feature = "portable")]
+        if installed.manifest.application.build != crate::portable::build_identity() {
+            return Err(
+                "Manifest application identity differs from this executable's embedded identity"
+                    .into(),
+            );
+        }
+        let workspace = match workspace {
+            Some(path) => path.to_path_buf(),
+            None => crate::portable::default_workspace()?,
+        };
+        let data = crate::portable::safe_workspace(&workspace, &installed.root)?;
+        let root = data.join("runs");
+        no_links(&root)?;
+        fs::create_dir_all(&root).map_err(|e| e.to_string())?;
+        no_links(&root)?;
+        Ok(Self {
+            repo: installed.root.clone(),
+            root,
+            installed: Some(installed),
+        })
+    }
+    pub fn supports(&self, mode: crate::config::Mode) -> Result<()> {
+        self.installed
+            .as_ref()
+            .map_or(Ok(()), |installed| installed.supports(mode))
     }
     pub fn run(&self, id: &str) -> Result<PathBuf> {
         if id.is_empty()

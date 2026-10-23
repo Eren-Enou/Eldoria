@@ -1,3 +1,4 @@
+pub mod comparison;
 pub mod config;
 #[cfg(feature = "desktop")]
 pub mod desktop;

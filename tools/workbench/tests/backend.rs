@@ -39,7 +39,7 @@ fn typed_configuration_rejects_invalid_or_executable_inputs() {
     c.scenario = "unknown".into();
     assert!(c.validate().is_err());
     let mut v = serde_json::to_value(Configuration::default()).unwrap();
-    v["mode"] = "MaterialPreparation".into();
+    v["mode"] = "FutureMode".into();
     assert!(serde_json::from_value::<Configuration>(v.clone()).is_err());
     v["mode"] = "ContinuousWorld".into();
     v["program"] = "cmd.exe".into();
