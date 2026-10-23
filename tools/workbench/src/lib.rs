@@ -6,6 +6,7 @@ pub mod execution;
 pub mod history;
 pub mod observations;
 pub mod portable;
+pub mod recorded;
 pub mod storage;
 pub mod viewer;
 pub type Result<T> = std::result::Result<T, String>;

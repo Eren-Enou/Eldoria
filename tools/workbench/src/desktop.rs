@@ -1,7 +1,7 @@
 //! The desktop is a consumer of the same typed backend as the CLI.
 use crate::{
     Result,
-    config::{Configuration, Mode, SCENARIOS},
+    config::{Configuration, Effort, Mode, Preparation, PreparationPreset, SCENARIOS, Valuation},
     execution::{self, Metadata},
     history::Summary,
     observations::{self, Category, Observation},
@@ -10,6 +10,8 @@ use crate::{
 };
 use eframe::egui::{self, Color32, RichText};
 use std::sync::mpsc::{self, Receiver, TryRecvError};
+#[path = "desktop_history.rs"]
+mod history_ui;
 
 #[derive(Clone, Copy, PartialEq)]
 enum Page {
@@ -17,10 +19,12 @@ enum Page {
     Results,
     History,
     About,
+    Compare,
 }
 enum Event {
     Execution(Result<Box<Metadata>>),
-    Viewer(Result<Viewer>),
+    Viewer(String, Result<Viewer>),
+    Detail(String, usize, u32, Result<Box<crate::recorded::Detail>>),
 }
 fn completion_time(ms: Option<u128>) -> String {
     ms.and_then(|n| i64::try_from(n).ok())
@@ -35,6 +39,12 @@ pub struct Workbench {
     seed: String,
     ticks: String,
     period: String,
+    mode: Mode,
+    valuation: Valuation,
+    preparation: Preparation,
+    actor: u32,
+    compare_id: String,
+    comparison: Option<crate::comparison::Comparison>,
     ids: Vec<String>,
     selected: Option<Metadata>,
     summary: Option<Summary>,
@@ -44,6 +54,11 @@ pub struct Workbench {
     error: bool,
     note: Observation,
     source_text: String,
+    moments: Vec<crate::recorded::Moment>,
+    moment: usize,
+    detail: Option<crate::recorded::Detail>,
+    detail_attempt: Option<(usize, u32)>,
+    saved_notes: Vec<observations::Saved>,
 }
 impl Workbench {
     pub fn new(store: Store, cc: &eframe::CreationContext<'_>) -> Self {
@@ -54,7 +69,7 @@ impl Workbench {
         });
         let source_text = match execution::source(&store) {
             Ok(s) => format!(
-                "Revision {}\nFrozen023 runner fingerprint {}\nWorking tree dirty: {}",
+                "Revision {}\nVerified engine fingerprint {}\nWorking tree dirty: {}",
                 s.revision, s.runner_fingerprint, s.dirty
             ),
             Err(e) => format!("Source identity unavailable: {e}"),
@@ -66,6 +81,12 @@ impl Workbench {
             seed: "42".into(),
             ticks: "192".into(),
             period: "11".into(),
+            mode: Mode::ContinuousWorld,
+            valuation: Valuation::Baseline,
+            preparation: Preparation::default(),
+            actor: 0,
+            compare_id: String::new(),
+            comparison: None,
             ids: Vec::new(),
             selected: None,
             summary: None,
@@ -75,6 +96,11 @@ impl Workbench {
             error: false,
             note: Observation::default(),
             source_text,
+            moments: Vec::new(),
+            moment: 0,
+            detail: None,
+            detail_attempt: None,
+            saved_notes: Vec::new(),
         };
         app.refresh();
         app
@@ -91,7 +117,15 @@ impl Workbench {
     }
     fn config(&self) -> Result<Configuration> {
         let c = Configuration {
-            mode: Mode::ContinuousWorld,
+            schema_version: if self.mode == Mode::ContinuousWorld {
+                1
+            } else {
+                2
+            },
+            mode: self.mode,
+            valuation: (self.mode != Mode::ContinuousWorld).then_some(self.valuation),
+            preparation: (self.mode == Mode::MaterialPreparation)
+                .then_some(self.preparation.clone()),
             scenario: self.scenario.clone(),
             seed: self
                 .seed
@@ -105,9 +139,9 @@ impl Workbench {
                 .period
                 .parse()
                 .map_err(|_| "Reporting period must be an integer")?,
-            ..Default::default()
         };
         c.validate()?;
+        self.store.supports(c.mode)?;
         Ok(c)
     }
     fn execute(&mut self, config: Configuration, original: Option<String>, ctx: &egui::Context) {
@@ -115,7 +149,7 @@ impl Workbench {
         let store = self.store.clone();
         let repaint = ctx.clone();
         self.worker = Some(rx);
-        self.report("Running existing Rust simulator. A first host build can take several minutes; results and logs are saved locally.",false);
+        self.report(if self.store.installed.is_some(){"Running the packaged Rust simulator. Results and logs are saved in your user-data workspace."}else{"Running existing Rust simulator. A first host build can take several minutes; results and logs are saved locally."},false);
         std::thread::spawn(move || {
             let result = if let Some(id) = original {
                 execution::reproduce(&store, &id)
@@ -126,13 +160,26 @@ impl Workbench {
             repaint.request_repaint();
         });
     }
-    fn poll(&mut self) {
+    fn poll(&mut self, ctx: &egui::Context) {
         let result = self.worker.as_ref().map(|rx| rx.try_recv());
         match result {
             Some(Ok(event)) => {
                 self.worker = None;
                 match event {
+                    Event::Detail(id, index, actor, result) => {
+                        if self.selected.as_ref().is_some_and(|m| m.id == id)
+                            && self.moment == index
+                            && self.actor == actor
+                        {
+                            match result {
+                                Ok(d) => self.detail = Some(*d),
+                                Err(e) => self.report(e, true),
+                            }
+                        }
+                    }
                     Event::Execution(Ok(m)) => {
+                        self.viewer = None;
+                        self.comparison = None;
                         self.report(
                             format!(
                                 "{}: {}. Reproduction hash match: {:?}. {}",
@@ -150,10 +197,20 @@ impl Workbench {
                         self.page = Page::Results;
                         self.refresh();
                     }
-                    Event::Execution(Err(e)) | Event::Viewer(Err(e)) => self.report(e, true),
-                    Event::Viewer(Ok(v)) => {
-                        self.report(format!("Read-only Explorer ready at {}. Select the custom023 run in its catalog.",v.url),false);
-                        self.viewer = Some(v);
+                    Event::Execution(Err(e)) => self.report(e, true),
+                    Event::Viewer(id, result) => {
+                        if self.selected.as_ref().is_some_and(|m| m.id == id) {
+                            match result {
+                                Ok(v) => {
+                                    ctx.open_url(egui::OpenUrl::new_tab(&v.url));
+                                    self.report(format!("Opening the verified selected history at {}. Use the link below if your browser did not open.",v.url),false);
+                                    self.viewer = Some(v);
+                                }
+                                Err(e) => self.report(e, true),
+                            }
+                        } else {
+                            self.report("Selection changed during viewer startup; the earlier viewer was closed. Inspect the current run to open its history.",false);
+                        }
                     }
                 }
             }
@@ -166,11 +223,30 @@ impl Workbench {
         }
     }
     fn inspect(&mut self, id: &str) {
+        self.viewer = None;
+        self.comparison = None;
         match execution::metadata(&self.store, id) {
             Ok(m) => {
                 self.selected = Some(m);
                 match execution::inspect(&self.store, id) {
                     Ok(s) => {
+                        self.moments.clear();
+                        self.detail = None;
+                        self.detail_attempt = None;
+                        self.moment = 0;
+                        self.saved_notes.clear();
+                        match self
+                            .store
+                            .run(id)
+                            .and_then(|p| crate::recorded::moments(&p.join("history.jsonl")))
+                        {
+                            Ok(rows) => self.moments = rows,
+                            Err(e) => self.report(e, true),
+                        }
+                        match observations::load(&self.store, id) {
+                            Ok(notes) => self.saved_notes = notes,
+                            Err(e) => self.report(e, true),
+                        }
                         self.note = Observation {
                             tick: s.start,
                             ..Default::default()
@@ -189,19 +265,81 @@ impl Workbench {
     }
     fn run_page(&mut self, ui: &mut egui::Ui, ctx: &egui::Context) {
         ui.heading("Configure a four-person world");
-        ui.label("Real023 Continuous scheduling. Exploratory configuration only.");
+        ui.label("Existing four-person Rust runners. Exploratory configuration only.");
         egui::Grid::new("configuration")
             .spacing([20.0, 16.0])
             .show(ui, |ui| {
                 ui.label("Simulation mode");
                 egui::ComboBox::from_id_salt("mode")
-                    .selected_text("Continuous World023")
+                    .selected_text(self.mode.label())
                     .show_ui(ui, |ui| {
-                        ui.label("Continuous World023 — supported");
-                        ui.label("024 Activity valuation — unavailable in V1");
-                        ui.label("025 Preparation — research-only, unavailable in V1");
+                        for (mode, label) in [
+                            (Mode::ContinuousWorld, "023 Continuous World"),
+                            (Mode::ActivityValuation, "024 Activity valuation"),
+                            (
+                                Mode::MaterialPreparation,
+                                "025 Corrected preparation — research",
+                            ),
+                        ] {
+                            if self.store.supports(mode).is_ok() {
+                                ui.selectable_value(&mut self.mode, mode, label);
+                            } else {
+                                ui.add_enabled(
+                                    false,
+                                    egui::Label::new(format!(
+                                        "{label} — unavailable in portable release"
+                                    )),
+                                );
+                            }
+                        }
                     });
                 ui.end_row();
+                if self.mode != Mode::ContinuousWorld {
+                    ui.label("Activity valuation");
+                    egui::ComboBox::from_id_salt("valuation")
+                        .selected_text(format!("{:?}", self.valuation))
+                        .show_ui(ui, |ui| {
+                            for v in [Valuation::Baseline, Valuation::MealRelief] {
+                                ui.selectable_value(&mut self.valuation, v, format!("{v:?}"));
+                            }
+                        });
+                    ui.end_row();
+                }
+                if self.mode == Mode::MaterialPreparation {
+                    ui.label("Material observation preset");
+                    egui::ComboBox::from_id_salt("preparation")
+                        .selected_text(format!("{:?}", self.preparation.preset))
+                        .show_ui(ui, |ui| {
+                            for p in [
+                                PreparationPreset::KnownRaw,
+                                PreparationPreset::UnobservedRaw,
+                                PreparationPreset::NoAccess,
+                            ] {
+                                ui.selectable_value(
+                                    &mut self.preparation.preset,
+                                    p,
+                                    format!("{p:?}"),
+                                );
+                            }
+                        });
+                    ui.end_row();
+                    ui.label("Initial raw units (0–16)");
+                    ui.add(egui::DragValue::new(&mut self.preparation.raw_initial).range(0..=16));
+                    ui.end_row();
+                    ui.label("Extraction + preparation ticks");
+                    egui::ComboBox::from_id_salt("effort")
+                        .selected_text(format!("{:?}", self.preparation.effort))
+                        .show_ui(ui, |ui| {
+                            for (e, label) in [
+                                (Effort::Short, "Short:2+4"),
+                                (Effort::Medium, "Medium:4+8"),
+                                (Effort::Long, "Long:8+24"),
+                            ] {
+                                ui.selectable_value(&mut self.preparation.effort, e, label);
+                            }
+                        });
+                    ui.end_row();
+                }
                 ui.label("Scenario");
                 egui::ComboBox::from_id_salt("scenario")
                     .selected_text(&self.scenario)
@@ -225,6 +363,12 @@ impl Workbench {
                 ui.end_row();
             });
         ui.add_space(12.0);
+        if self.mode != Mode::ContinuousWorld {
+            ui.label("Baseline and MealRelief are research policies, not globally adopted. MealRelief adds min(H,40) to eligible Consume's H score.");
+        }
+        if self.mode == Mode::MaterialPreparation {
+            ui.label("025 is unadopted/unprotected research. Two raw → one edible food + one waste; failed attempts consume full effort. KnownRaw senses raw at phase0 and ready at1 of8. UnobservedRaw senses only ready. NoAccess permits observation but forbids preparation. Later meals and transfers cannot identify a manufactured unit.");
+        }
         let config = self.config();
         if let Err(e) = &config {
             ui.colored_label(Color32::LIGHT_RED, e);
@@ -247,7 +391,7 @@ impl Workbench {
                 "Four individuals · claim4 · cadence8 · capacity2 · Epoch phase · Ascending order",
             );
             ui.label(
-                "No source edits, policy tuning, production, new experiment or canon changes.",
+                "No policy tuning, new experiment or canon changes. Only existing025 research enables preparation.",
             );
         });
     }
@@ -262,8 +406,12 @@ impl Workbench {
             ui.group(|ui| {
                 ui.strong(&m.id);
                 ui.label(format!(
-                    "{} · ContinuousWorld · {} · seed{}",
-                    m.status, m.configuration.scenario, m.configuration.seed
+                    "{} · {} / {} · {} · seed{}",
+                    m.status,
+                    m.configuration.mode.label(),
+                    m.configuration.policy_label(),
+                    m.configuration.scenario,
+                    m.configuration.seed
                 ));
                 ui.label(format!("Source {}", m.source.revision));
                 ui.label(format!(
@@ -293,6 +441,10 @@ impl Workbench {
                     {
                         self.inspect(&m.id);
                     }
+                    if ui.button("Compare with another run").clicked() {
+                        self.page = Page::Compare;
+                        self.comparison = None;
+                    }
                     if ui
                         .add_enabled(
                             self.worker.is_none(),
@@ -312,8 +464,13 @@ impl Workbench {
         for id in self.ids.clone() {
             let label = match execution::metadata(&self.store, &id) {
                 Ok(m) => format!(
-                    "{} | {} | {} | seed{}",
-                    id, m.status, m.configuration.scenario, m.configuration.seed
+                    "{} | {} | {} / {} | {} | seed{}",
+                    id,
+                    m.status,
+                    m.configuration.mode.experiment(),
+                    m.configuration.policy_label(),
+                    m.configuration.scenario,
+                    m.configuration.seed
                 ),
                 Err(_) => format!("{id} | Incomplete — missing/corrupt metadata"),
             };
@@ -323,6 +480,8 @@ impl Workbench {
             {
                 match execution::metadata(&self.store, &id) {
                     Ok(m) => {
+                        self.viewer = None;
+                        self.comparison = None;
                         self.selected = Some(m);
                         self.summary = None;
                     }
@@ -331,89 +490,28 @@ impl Workbench {
             }
         }
     }
-    fn history_page(&mut self, ui: &mut egui::Ui, ctx: &egui::Context) {
-        let Some(m) = self.selected.clone() else {
-            ui.heading("Select a completed run in Results, then Inspect");
-            return;
-        };
-        let Some(summary) = self.summary.clone() else {
-            ui.heading("No inspected history");
-            if ui.button("Inspect selected run").clicked() {
-                self.inspect(&m.id);
-            }
-            return;
-        };
-        ui.heading("Observer Perspective");
-        ui.label(&m.id);
-        ui.label("Recorded outcomes are not the individual's knowledge or motives. Counts include recorded bootstrap actions.");
-        ui.group(|ui|{
-            ui.label(format!("4 individuals · ticks{}–{} · ordinary cutoff{} · final active/pending:0",summary.start,summary.end,summary.nominal_stop));
-            ui.label(format!("{} completed activities · {} meals · {} resource events · {} transferred food units",summary.completed_activities,summary.meals,summary.resource_events,summary.transferred_units));
-            ui.label(format!("{} successful environmental grants · final cache food{} · food ledger matches:{}",summary.environmental_grants,summary.final_stock,summary.food_accounting_matches));
-            ui.horizontal(|ui|{for a in &summary.final_agents {ui.label(format!("Person{}: food{} / hunger{}",a.id,a.food,a.hunger));}});
-        });
-        ui.horizontal(|ui|{
-            if ui.add_enabled(self.worker.is_none(), egui::Button::new("Start local History Explorer")).clicked() {
-                let store = self.store.clone();
-                let id = m.id.clone();
-                let repaint = ctx.clone();
-                let (tx, rx) = mpsc::channel();
-                self.worker = Some(rx);
-                self.report("Starting optional Python viewer on loopback. Its first catalog can take up to3 minutes; source remains read-only.", false);
-                std::thread::spawn(move || {
-                    let _ = tx.send(Event::Viewer(viewer::launch(&store, &id)));
-                    repaint.request_repaint();
-                });
-            }
-            if ui.button("Copy viewer command").clicked(){match viewer::command_text(&self.store,&m.id,8766){Ok(s)=>{ctx.copy_text(s);self.report("PowerShell viewer command copied. Python3.10+ required; opens no browser automatically.",false);},Err(e)=>self.report(e,true)}}
-        });
-        if let Some(viewer) = &self.viewer {
-            ui.hyperlink_to("Open local read-only Explorer", &viewer.url);
-            ui.small("Choose the custom023 run in its catalog; this server stops when the workbench closes.");
-        }
-        egui::CollapsingHeader::new("Captured individual decision progression — bounded sample").default_open(true).show(ui,|ui|{
-            ui.small("Up to32 choices from the first32 physical boundaries. Actor-local food/hunger and actual candidate scores only; no inferred thoughts. Full history is available in Explorer.");
-            for (index,c) in summary.decisions.iter().enumerate(){
-                ui.push_id(index,|ui|{ui.horizontal(|ui|{ui.monospace(format!("tick{:3} | person{} | food{} hunger{} | {}",c.input.legacy.now,c.input.legacy.own.id,c.input.legacy.own.food,c.input.legacy.own.hunger,c.selected));if ui.small_button("Use for observation").clicked(){self.note.individual=c.input.legacy.own.id;self.note.tick=c.input.legacy.now;self.note.local_context=format!("Captured own food{}, hunger{}; decision sample{}",c.input.legacy.own.food,c.input.legacy.own.hunger,index);self.note.selected_activity=c.selected.clone();self.report("Actual sampled decision linked to the observation form below",false);}});ui.small(c.candidates.iter().map(|a|format!("{}: score{}, eligible{}",a.action,a.score,a.eligible)).collect::<Vec<_>>().join(" · "));});
-            }
-        });
-        egui::CollapsingHeader::new("Executed activity records — first32 transitions").show(
-            ui,
-            |ui| {
-                for t in &summary.transitions {
-                    ui.monospace(format!(
-                        "tick{} | commitment{} | {} | {:?} | {}",
-                        t.tick,
-                        t.commitment.id,
-                        t.commitment.work,
-                        t.commitment.participants,
-                        if t.completed { "Completed" } else { "Started" }
-                    ));
-                }
-            },
-        );
-        egui::CollapsingHeader::new("Human observation").default_open(true).show(ui,|ui|{
-            ui.small("External human interpretation. Saved separately; never feeds actor cognition or behavior.");
-            ui.horizontal(|ui|{ui.label("Individual");ui.add(egui::DragValue::new(&mut self.note.individual).range(0..=3));ui.label("World tick");ui.add(egui::DragValue::new(&mut self.note.tick).range(summary.start..=summary.end));egui::ComboBox::from_id_salt("category").selected_text(format!("{:?}",self.note.category)).show_ui(ui,|ui|{for c in [Category::Plausible,Category::Questionable,Category::Unclear,Category::PossibleBug]{ui.selectable_value(&mut self.note.category,c,format!("{c:?}"));}});});
-            for (label,text) in [("Observed local context",&mut self.note.local_context),("Selected activity",&mut self.note.selected_activity),("Recorded outcome",&mut self.note.recorded_outcome)] {ui.label(label);ui.text_edit_singleline(text);}
-            ui.label("Human notes");ui.add(egui::TextEdit::multiline(&mut self.note.notes).desired_rows(3).desired_width(f32::INFINITY));
-            if ui.button("Save human observation").clicked(){match observations::save(&self.store,&m.id,&self.note){Ok(p)=>self.report(format!("Human observation saved: {}",p.display()),false),Err(e)=>self.report(e,true)}}
-        });
-    }
 }
 impl eframe::App for Workbench {
     fn update(&mut self, ctx: &egui::Context, _: &mut eframe::Frame) {
-        self.poll();
+        self.poll(ctx);
         egui::TopBottomPanel::top("top").show(ctx, |ui| {
             ui.horizontal(|ui| {
                 ui.heading("World of Individuals");
-                ui.label(RichText::new("RUST WORKBENCH V1").color(Color32::LIGHT_BLUE));
+                ui.label(
+                    RichText::new(if self.store.installed.is_some() {
+                        "PORTABLE WORKBENCH 0.2"
+                    } else {
+                        "RUST WORKBENCH · DEVELOPMENT"
+                    })
+                    .color(Color32::LIGHT_BLUE),
+                );
             });
             ui.horizontal(|ui| {
                 for (page, label) in [
                     (Page::Run, "Run"),
                     (Page::Results, "Results"),
                     (Page::History, "History"),
+                    (Page::Compare, "Compare"),
                     (Page::About, "About"),
                 ] {
                     ui.selectable_value(&mut self.page, page, label);
@@ -435,12 +533,17 @@ impl eframe::App for Workbench {
             );
         });
         egui::CentralPanel::default().show(ctx,|ui|{egui::ScrollArea::vertical().show(ui,|ui|{match self.page{
-            Page::Run=>self.run_page(ui,ctx),Page::Results=>self.results_page(ui,ctx),Page::History=>self.history_page(ui,ctx),Page::About=>{
+            Page::Run=>self.run_page(ui,ctx),Page::Results=>self.results_page(ui,ctx),Page::History=>self.history_page(ui,ctx),Page::Compare=>self.compare_page(ui),Page::About=>{
                 ui.heading("A human research workbench");ui.label("The independent Rust simulator produces the history. This application configures, executes, reproduces and reads it.");ui.monospace(&self.source_text);
                 ui.label("Protected foundation:001–024. Experiment025: reviewed research, unadopted/unprotected; integrity candidate remains separate. No026.");
-                ui.label("Rust/Cargo1.95+ and Git. Existing host generation and optional read-only Explorer require Python3.10+. Native summaries need no viewing server.");
-                ui.label("024 Activity valuation: unavailable in V1.025 Preparation: unavailable research mode. No simulation policy, capacity or resource controls were added.");
-                ui.label("Support: read docs/development/HUMAN_WORKBENCH_QUICKSTART.md. Keep the checkout in its build location; rebuild after moving it.");
+                if let Some(installed)=&self.store.installed{
+                    ui.label(format!("Installed release {}. Normal operation needs no Cargo, Rust, Git, Python, checkout or network.025 and Python Explorer are developer-only.",installed.manifest.version));
+                    ui.monospace(format!("User-data runs: {}",self.store.root.display()));
+                    ui.label("Release checksums identify packaged bytes; they are not publisher signatures. See QUICKSTART.md beside the application.");
+                }else{ui.label("Development mode needs Rust/Cargo1.95+ and Git. Existing host generation and optional read-only Explorer require Python3.10+. Native inspection needs no viewing server.");}
+                ui.label("023 Continuous World;024 Baseline/MealRelief;025 corrected observer2 preparation.025 remains research, unadopted/unprotected. Strict versioned configuration. No policy, physics or cognitive capacity changes.");
+                ui.label("The existing optional Python Explorer is opened through a narrow single-source bridge. Configuration, process execution, native reading, comparison and observations remain Rust.");
+                if self.store.installed.is_none(){ui.label("Support: read docs/development/HUMAN_WORKBENCH_QUICKSTART.md. Keep the developer checkout in its build location; rebuild after moving it.");}
                 ui.label("Closing during execution can leave an Incomplete record. Cancellation/resume and scientific acceptance are not provided.");
             }
         }});});
@@ -459,7 +562,7 @@ pub fn launch(store: Store) -> Result<()> {
         ..Default::default()
     };
     eframe::run_native(
-        "World of Individuals — Rust Workbench V1",
+        "World of Individuals — Research Workbench",
         options,
         Box::new(move |cc| Ok(Box::new(Workbench::new(store, cc)))),
     )
