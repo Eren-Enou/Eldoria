@@ -4,18 +4,30 @@ Navigation summary, protected through024. Source and mode-specific
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
-## Human Rust workbench V1
+## Human Rust workbench and portable delivery
 
-[Quickstart](development/HUMAN_WORKBENCH_QUICKSTART.md) and
-[architecture / verified runner table](development/rust-first-workbench-architecture.md).
-The isolated `tools/workbench/` Cargo workspace owns typed configuration, safe
-execution/reproduction, bounded native history reading, local human observations
-and an egui desktop. It invokes the unchanged023 continuous-world CLI; all output
-goes to unique ignored exploratory directories. The existing read-only Explorer
-remains a separate optional Python/JavaScript process.024/025 launch controls are
-unavailable in V1. For025 research use the corrected observer2 source row below;
-the original failed host remains historical evidence. No scientific protection,
-policy adoption, cognition, canon or026 follows from this engineering milestone.
+[Portable quickstart](development/PORTABLE_WORKBENCH_QUICKSTART.md) and
+[portable engineering gates](development/portable-workbench-engineering.md).
+The additive `tools/portable-runner/` host links the unchanged source-verified
+023/024 library. Installed workbench mode verifies packaged identities and writes
+outside its installation; it never falls back to Cargo.025 and Python Explorer
+remain developer-only. `recorded.rs` streams compact four-person moment lanes and
+on-demand detail; human notes can be reopened. See the engineering report for
+actual packaging/relocation/GUI acceptance status, rather than inferring it from code.
+
+[Quickstart](development/HUMAN_WORKBENCH_QUICKSTART.md),
+[V2 engineering / acceptance](development/rust-workbench-v2.md), and
+[V1 design baseline](development/rust-first-workbench-architecture.md).
+The isolated `tools/workbench/` Rust workspace owns strict versioned configuration,
+fixed runner execution/reproduction, bounded native observer readers, comparisons,
+external human observations and egui desktop pages. It invokes unchanged023/024
+and corrected025 observer2 runners into unique ignored exploratory directories.
+The existing Python/JavaScript Explorer is read-only; a narrow workbench-owned
+bridge supplies exactly one hash-verified source and automatic opening.
+025 remains unadopted/unprotected research; its original failed host and evidence
+remain intact. This engineering interface adds no scientific protection, policy,
+cognitive capacity, canon or026. See the acceptance document for current checks
+and prior desktop/browser limitations; the portable report records current delivery.
 
 ## Current gated program
 

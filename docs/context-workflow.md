@@ -1,5 +1,11 @@
 # Selective context and experiment workflow
 
+For portable delivery, start with
+`development/portable-workbench-engineering.md` and
+`development/PORTABLE_WORKBENCH_QUICKSTART.md`. Keep installed execution,
+developer execution and scientific archive validation distinct. Native moment
+lanes and human notes are observer projections, never policy inputs.
+
 ## Authority and conflicts
 
 Architecture maps, experiment indexes and summaries are navigation aids, not
@@ -326,3 +332,17 @@ with feature-off parity before treatment. Access-closed primary controls may
 receive raw observations that overwrite ready knowledge; do not claim those are
 old-world parity controls or secretly keep two usable environmental slots. No026,
 automatic025protection/default adoption or canon change. See the current checkpoint.
+
+
+## Workbench V2 engineering navigation
+
+For attachmentfc56f774, start with `docs/development/rust-workbench-v2.md` and the
+human quickstart. Reuse the accepted V1 workflow evidence; inspect only affected
+`tools/workbench/` modules and versioned023/024/corrected025 runner interfaces.
+New modes require explicit configuration version2; old V1 JSON remains023.
+The current025 candidate and001–024 protected endpoint are unchanged. Exact
+selected-source Explorer navigation uses a small workbench-owned compatibility
+bridge; existing scientific readers and viewer assets remain independent and
+unchanged. Native samples are bounded observer projections, not actor cognition
+or scientific acceptance. Desktop/browser acceptance status is recorded explicitly
+in the checkpoint; do not infer completion from a compiling UI.

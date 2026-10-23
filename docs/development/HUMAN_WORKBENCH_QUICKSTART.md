@@ -1,87 +1,101 @@
-# World of Individuals — human workbench
+# World of Individuals — Workbench V2 quickstart
 
-The workbench launches real exploratory four-person worlds. It does not change
-simulation rules, adopt research policies or turn a run into protected evidence.
+For the compiler-free Windows ZIP, use the
+[portable quickstart](PORTABLE_WORKBENCH_QUICKSTART.md). This page describes the
+developer checkout workflow, including025 and the optional Python Explorer.
 
-## Launch
+Run and inspect real four-person exploratory worlds. The workbench does not
+change simulation rules or turn an exploratory run into protected evidence.
+Foundation protection ends at024; corrected025 remains unadopted research.
 
-Requirements: a full Eldoria checkout, Git, Rust/Cargo1.95+ with a native C++ linker,
-Python3.10+ on PATH for the existing prototype build host, and a desktop OpenGL
-driver. The tested environment is Windows11, MSVC, Rust/Cargo1.99 and Python3.12.6.
-Other desktops have not been accepted. Initial dependency download/build needs
-Internet access and can take several minutes. Keep the checkout in its build location.
+## Start
 
-From the Eldoria directory, run in PowerShell:
+Close an earlier workbench before rebuilding so Windows can replace its executable.
+From the Eldoria directory in PowerShell:
 
 ```powershell
 cargo run --release --locked -j 1 --manifest-path tools/workbench/Cargo.toml --features desktop
 ```
 
-After building, double-click `tools/workbench/target/release/woi-workbench.exe`.
-Keep Cargo, Git and Python on PATH; running the simulator may still need its host
-build. A missing dependency is an execution error, not a completed world.
+Requirements: full checkout, Git, Rust/Cargo1.95+ with a native linker, Python3.10+
+on PATH for existing prototype build hosts and detailed Explorer, and OpenGL.
+Tested environment: Windows11/MSVC, Rust/Cargo1.99, Python3.12.6. Other desktops
+are not accepted. Initial builds need Internet access and may take minutes.
+After building, double-click `tools/workbench/target/release/woi-workbench.exe`;
+keep the checkout in its build location and dependencies on PATH.
 
-## First world
+## Run, inspect and reproduce
 
-1. In **Run**, keep Continuous World023, `paired`, seed42, duration192 and period11.
-2. Click **Run world**. Wait for completion; builds may take minutes on first use.
-3. In **Results**, select the new run and click **Inspect**. Its directory is under
-   `target/workbench-runs/<run-id>/`; **Copy run path** gives its exact location.
-4. **History** shows an Observer Perspective summary and sampled actual decision
-   inputs, activities and final states. The ordinary cutoff and33-tick drain differ.
-5. Click **Reproduce in new directory**. A fresh result records whether the history
-   hash matches. A source-revision warning qualifies exact historical equivalence.
-6. For deeper inspection, **Start local History Explorer**, then open its loopback
-   link. Expand **Choose a history and browse its timeline**, select the
-   **023 · custom prototype** history (search for `023`), then click
-   **Open selected history**.
-   First catalog preparation may take up to3 minutes; later launches share a cache.
-   The existing Python/JavaScript
-   viewer is read-only; **Copy viewer command** provides a fallback. If port8766 in
-   the copied command is busy, choose a free port. The automatic action chooses one.
-7. Add a **Human observation**: person0–3, an actual run tick, context, activity,
-   recorded outcome, category and notes. Saved JSON files live in this run's
-   `observations/`. These are human interpretations, never the individual's thoughts.
+1. In **Run**, choose **024 Activity valuation**, `Baseline` or `MealRelief`,
+   `paired`, seed42, duration192, reporting period11. Click **Run world**.
+2. Wait for **Completed** in **Results**. Builds and diagnostics are saved in
+   a unique `target/workbench-runs/<run-id>/` directory; **Copy run path** locates it.
+3. Click **Inspect**. **History** shows recorded outcomes, final inventories and
+   hunger, bounded individual decisions, valuation terms and execution records.
+   Select a person, expand **Explain boundary…**, or inspect resource/meal records.
+4. Click **Inspect detailed history**. After verification, the exact selected
+   custom run opens automatically in your browser; no catalog search is required.
+   If the browser does not open, use **Open local read-only Explorer**. Actor/Observer lenses, person
+   selection and recorded tick navigation inspect existing history, never rerun it.
+   **Copy viewer command** provides a PowerShell fallback; choose a free port if8766
+   is occupied. Automatic startup chooses an available loopback port.
+5. Return to **Results**, click **Reproduce in new directory**. A fresh run records
+   the exact history-hash comparison. Source-revision warnings qualify equivalence.
+6. To compare, select the left run in **Results**, open **Compare**, choose a second
+   completed run and **Compare verified histories**. Read actual configurations,
+   their differences and observer quantities side by side. Matching is conservative:
+   only valuation may differ; other configuration, runner identity and recorded
+   initial state must match. Other pairs are labeled **Recorded difference**.
+7. **Human observation** saves person/tick, context, activity, outcome, category,
+   notes and optional suggested improvement in the run's separate `observations/`.
+   **Use for observation** links a captured decision. Notes never feed cognition.
 
-Normal closing waits for an active operation. Forced termination or CLI interruption
-does not promise cancellation or completion. Reopen Results and inspect its saved
-metadata and logs. Only a final
-Completed record plus matching supported output counts as completed. An incomplete
-run can be reproduced into a fresh directory; original partial output stays intact.
+## Available modes and bounds
 
-## Settings and limits
+| Mode | Actual controls | Status |
+|---|---|---|
+|023 Continuous World|The12 original cases, u64 seed,1–1024 ordinary ticks, period1–128|Preserved V1 default|
+|024 Activity valuation|Same world controls; Baseline or MealRelief|Existing research policies; no adoption|
+|025 Corrected preparation|Same world/valuation controls; KnownRaw, UnobservedRaw or NoAccess; raw0–16; effort2+4,4+8 or8+24|Corrected observer2 research; unadopted/unprotected|
 
-Available: the12 existing023 scenario names, any unsigned64-bit seed,1–1024 ordinary
-ticks and reporting period1–128. Four people, Continuous scheduling, Epoch phase,
-Ascending order, claim4, cadence8 and capacity2 stay fixed. No invented personality,
-population, memory, resource or material-production sliders.
+All modes keep four people, Continuous scheduling, Epoch phase, Ascending order,
+claim4, cadence8, social capacity2 and a33-tick final drain. Reporting is observer
+annotation. No population, cognitive-capacity, personality or scoring sliders.
+MealRelief adds `min(H,40)` to eligible Consume's existing `H` score; it is unchanged.
 
-024 and025 are unavailable in V1 pending separate typed runner/reader acceptance.
-For025 research source navigation, use the corrected
-[observer2 successor](../../prototypes/material-preparation-observer2/README.md).
-The original failed19-world host and its failure report remain historical evidence.
-025 remains unadopted/unprotected; foundation protection ends at024.
+025 presets use an8-tick observation cycle: KnownRaw senses raw at0 and ready at1;
+UnobservedRaw senses only ready at1; NoAccess has the same observations as KnownRaw
+but forbids preparation. These use the existing single-slot semantics, including
+raw/ready overwrite. NoAccess is not an old-world parity control. Preparation uses
+2raw →1food +1waste. Failures retain full effort; escrow is owned and unavailable
+for meals/transfers. Food is fungible: a later meal cannot identify its prepared unit.
 
-Native inspection accepts one actual023 JSONL trial up to64MiB. It streams long
-sequences and keeps bounded samples, not the entire historical state. The detailed
-Explorer supplies full captured actor/observer navigation. Neither view may restore
-forgotten cognition or infer motives from objective outcomes.
+Native readers accept one authentic023/024/025 trial up to64MiB and cap historical
+sequences at65,536 records. They retain first32 samples plus aggregate counts and
+final state. Missing sampled links are **Unknown**, not proof of nonexecution.
+Use detailed Explorer for full records. Selection, consent, admission and execution
+are distinct. More meals or transfers does not establish universal benefit.
 
-## Problems and CLI fallback
+## Files, errors and CLI
 
-Report the run ID, source revision, chosen settings, exact observed tick/person,
-expected versus recorded outcome and the relevant `stderr.log`. Preserve partial
-history. Do not replace experiment archives with a workbench run. Human notes can
-record plausible/questionable/unclear/possible-bug observations without changing policy.
-
-The same executable provides `run [configuration.json]`, `list`, `inspect RUN-ID`,
-`reproduce RUN-ID`, `viewer RUN-ID` (prints a command), and
-`observe RUN-ID observation.json`. Without desktop dependencies:
+Each run saves configuration, source revision/fingerprint, fixed command arguments,
+stdout/stderr, history hash and completion metadata.025 additionally saves its
+actual typed `runner-config.json`. Old unversioned V1 JSON keeps its023 meaning;
+new modes require `schema_version:2` and explicit mode-specific options. Unknown
+fields and irrelevant mode options are rejected. Example configurations live in
+`tools/workbench/configurations/`.
 
 ```powershell
-cargo run --locked --manifest-path tools/workbench/Cargo.toml -- run
+cargo run --release --locked -j 1 --manifest-path tools/workbench/Cargo.toml -- run tools/workbench/configurations/024-meal-relief.json
 ```
 
-An exploratory run cannot establish universal superiority, psychological realism,
-consciousness or broad social emergence. Meals, contact and transfers are recorded
-actions, not a global utility ranking. Notes and observer history never feed policies.
+The executable also provides `list`, `inspect RUN-ID`, `reproduce RUN-ID`,
+`viewer RUN-ID` (prints the selected-source command), `compare LEFT-ID RIGHT-ID`,
+and `observe RUN-ID observation.json`. Native inspection needs no viewing server.
+
+An interrupted/failed run remains **Incomplete**; inspect its logs and reproduce
+into a fresh directory. Normal closing waits for active work. Forced termination
+has no cancellation/resume guarantee. Preserve partial files and report the run
+ID, source revision, person/tick, expected versus recorded outcome and stderr.
+Never replace scientific archives with exploratory output. Run folders, notes and
+derived viewer cache grow with use; no automatic cleanup is provided.

@@ -1,10 +1,15 @@
 # World of Individuals experiment index
 
-Human operation: [Rust Workbench V1 quickstart](../development/HUMAN_WORKBENCH_QUICKSTART.md).
-This separate engineering application invokes the unchanged023 runner for new
-exploratory worlds; it is not Experiment026 or a policy/protection extension.
-For025 source navigation use the corrected observer2 successor, preserving the
-original failed host and its evidence.
+Portable human operation: [Windows guide](../development/PORTABLE_WORKBENCH_QUICKSTART.md)
+and [engineering/acceptance](../development/portable-workbench-engineering.md).
+Installed023/024 execution is an additive transport, not a new experiment or
+scientific acceptance.025 and the existing Python Explorer remain developer-only.
+
+Human operation: [Rust Workbench V2 quickstart](../development/HUMAN_WORKBENCH_QUICKSTART.md).
+This separate engineering application invokes unchanged023/024 and corrected025
+observer2 runners for exploratory worlds. It is not Experiment026, scientific
+adoption or a protection extension.025's original failed host/evidence remain
+historical; see [V2 acceptance](../development/rust-workbench-v2.md).
 
 Protected through024; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
 reports or protected contracts. Historical next-experiment recommendations reflect

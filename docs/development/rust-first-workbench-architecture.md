@@ -1,5 +1,15 @@
 # Rust workbench V1 architecture
 
+V1 design baseline, preserved as prior engineering evidence. Current023–025
+interfaces and the narrowly required Python viewer bridge are documented in
+[Workbench V2](rust-workbench-v2.md). V1-only availability statements below
+describe that earlier milestone.
+
+Current compiler-free Windows operation is documented in the
+[portable guide](PORTABLE_WORKBENCH_QUICKSTART.md) and
+[engineering report](portable-workbench-engineering.md).
+
+
 This engineering milestone starts from `969b52b`. It introduces no simulation
 policy. The foundation ends at024;025's qualified research and separate integrity
 candidate remain unadopted and unprotected.
