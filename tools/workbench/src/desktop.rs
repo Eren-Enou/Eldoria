@@ -12,9 +12,12 @@ use eframe::egui::{self, Color32, RichText};
 use std::sync::mpsc::{self, Receiver, TryRecvError};
 #[path = "desktop_history.rs"]
 mod history_ui;
+#[path = "desktop_worlds.rs"]
+mod worlds_ui;
 
 #[derive(Clone, Copy, PartialEq)]
 enum Page {
+    Worlds,
     Run,
     Results,
     History,
@@ -33,6 +36,7 @@ fn completion_time(ms: Option<u128>) -> String {
         .unwrap_or_else(|| "Not finished".into())
 }
 pub struct Workbench {
+    worlds: worlds_ui::Worlds,
     store: Store,
     page: Page,
     scenario: String,
@@ -75,6 +79,7 @@ impl Workbench {
             Err(e) => format!("Source identity unavailable: {e}"),
         };
         let mut app = Self {
+            worlds: worlds_ui::Worlds::default(),
             store,
             page: Page::Run,
             scenario: "paired".into(),
@@ -494,12 +499,13 @@ impl Workbench {
 impl eframe::App for Workbench {
     fn update(&mut self, ctx: &egui::Context, _: &mut eframe::Frame) {
         self.poll(ctx);
+        self.worlds.poll(ctx);
         egui::TopBottomPanel::top("top").show(ctx, |ui| {
             ui.horizontal(|ui| {
                 ui.heading("World of Individuals");
                 ui.label(
                     RichText::new(if self.store.installed.is_some() {
-                        "PORTABLE WORKBENCH 0.2"
+                        "PORTABLE WORKBENCH · WORLD SESSIONS"
                     } else {
                         "RUST WORKBENCH · DEVELOPMENT"
                     })
@@ -508,6 +514,7 @@ impl eframe::App for Workbench {
             });
             ui.horizontal(|ui| {
                 for (page, label) in [
+                    (Page::Worlds, "World Sessions"),
                     (Page::Run, "Run"),
                     (Page::Results, "Results"),
                     (Page::History, "History"),
@@ -533,7 +540,7 @@ impl eframe::App for Workbench {
             );
         });
         egui::CentralPanel::default().show(ctx,|ui|{egui::ScrollArea::vertical().show(ui,|ui|{match self.page{
-            Page::Run=>self.run_page(ui,ctx),Page::Results=>self.results_page(ui,ctx),Page::History=>self.history_page(ui,ctx),Page::Compare=>self.compare_page(ui),Page::About=>{
+            Page::Worlds=>self.worlds.show(ui,ctx,&self.store),Page::Run=>self.run_page(ui,ctx),Page::Results=>self.results_page(ui,ctx),Page::History=>self.history_page(ui,ctx),Page::Compare=>self.compare_page(ui),Page::About=>{
                 ui.heading("A human research workbench");ui.label("The independent Rust simulator produces the history. This application configures, executes, reproduces and reads it.");ui.monospace(&self.source_text);
                 ui.label("Protected foundation:001–024. Experiment025: reviewed research, unadopted/unprotected; integrity candidate remains separate. No026.");
                 if let Some(installed)=&self.store.installed{
@@ -550,6 +557,9 @@ impl eframe::App for Workbench {
         if self.worker.is_some() && ctx.input(|i| i.viewport().close_requested()) {
             ctx.send_viewport_cmd(egui::ViewportCommand::CancelClose);
             self.report("An operation is still running. Wait for its completion before closing; see run logs for build progress.",true);
+        }
+        if ctx.input(|i| i.viewport().close_requested()) && !self.worlds.before_close(ctx) {
+            self.page = Page::Worlds;
         }
     }
 }

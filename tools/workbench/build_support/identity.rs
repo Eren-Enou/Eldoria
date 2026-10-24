@@ -50,6 +50,7 @@ pub fn generate(root: &Path) {
             "--",
             "tools/workbench",
             "tools/portable-runner",
+            "prototypes/persistent-world",
         ],
     )
     .lines()

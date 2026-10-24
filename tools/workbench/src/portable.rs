@@ -11,15 +11,23 @@ pub const RELEASE_SCHEMA: &str = "woi-portable-release/v1";
 pub const RUNNER_FILE: &str = "woi-portable-runner.exe";
 pub const APP_FILE: &str = "woi-workbench.exe";
 pub fn build_identity() -> BuildIdentity {
-    serde_json::from_str(include_str!(concat!(
+    let identity: BuildIdentity = serde_json::from_str(include_str!(concat!(
         env!("OUT_DIR"),
         "/build-identity.json"
     )))
-    .expect("verified developer build identity")
+    .expect("verified developer build identity");
+    #[cfg(feature = "world-sessions")]
+    let identity = BuildIdentity {
+        continuation_runtime: Some(persistent_world::persistent::IDENTITY.into()),
+        ..identity
+    };
+    identity
 }
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(deny_unknown_fields)]
 pub struct BuildIdentity {
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub continuation_runtime: Option<String>,
     pub schema: String,
     pub revision: String,
     pub dirty: bool,
@@ -78,6 +86,10 @@ impl ReleaseManifest {
                 || !b.build.revision.bytes().all(|c| c.is_ascii_hexdigit())
                 || !sha(&b.build.engine_fingerprint)
                 || !sha(&b.build.application_fingerprint)
+                || b.build
+                    .continuation_runtime
+                    .as_ref()
+                    .is_some_and(|value| !sha(value))
                 || b.build.target != "x86_64-pc-windows-msvc"
                 || b.build.profile != "release"
                 || !b.build.compiler.starts_with("rustc ")

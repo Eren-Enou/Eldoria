@@ -61,21 +61,29 @@ fn run() -> Result<()> {
         .canonicalize()
         .map_err(|e| e.to_string())?;
     let output = PathBuf::from(&args[2]);
+    let app_identity = identity(&app)?;
+    let runner_identity = identity(&runner)?;
+    if app_identity.package_version != env!("CARGO_PKG_VERSION")
+        || runner_identity.package_version != env!("CARGO_PKG_VERSION")
+        || app_identity.continuation_runtime.is_none()
+    {
+        return Err("this package requires matching0.3 application/runner versions and an embedded continuation runtime".into());
+    }
     storage::no_links(&output)?;
     fs::create_dir(&output).map_err(|e| format!("Release directory must be NEW: {e}"))?;
     let manifest = ReleaseManifest {
         schema: portable::RELEASE_SCHEMA.into(),
-        version: "0.2.0-rc.1".into(),
+        version: "0.3.0-rc.1".into(),
         platform: "windows-x86_64".into(),
         application: Binary {
             file: portable::APP_FILE.into(),
             sha256: execution::hash(&app)?,
-            build: identity(&app)?,
+            build: app_identity,
         },
         runner: Binary {
             file: portable::RUNNER_FILE.into(),
             sha256: execution::hash(&runner)?,
-            build: identity(&runner)?,
+            build: runner_identity,
         },
         modes: vec![Mode::ContinuousWorld, Mode::ActivityValuation],
         history_schemas: vec![
@@ -103,7 +111,7 @@ fn run() -> Result<()> {
     storage::write_new(&output.join("release.json"), &manifest)?;
     let root = woi_workbench::repository();
     fs::copy(
-        root.join("docs/development/PORTABLE_WORKBENCH_QUICKSTART.md"),
+        root.join("docs/development/PERSISTENT_WORLD_QUICKSTART.md"),
         output.join("QUICKSTART.md"),
     )
     .map_err(|e| e.to_string())?;

@@ -9,6 +9,8 @@ pub mod portable;
 pub mod recorded;
 pub mod storage;
 pub mod viewer;
+#[cfg(feature = "world-sessions")]
+pub mod world_sessions;
 pub type Result<T> = std::result::Result<T, String>;
 
 pub fn repository() -> std::path::PathBuf {

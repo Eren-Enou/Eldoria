@@ -992,7 +992,7 @@ dependencies = [
 
 [[package]]
 name = "woi-portable-runner"
-version = "0.2.0"
+version = "0.3.0"
 dependencies = [
  "serde_json",
  "sha2",
@@ -1002,7 +1002,7 @@ dependencies = [
 
 [[package]]
 name = "woi-workbench"
-version = "0.2.0"
+version = "0.3.0"
 dependencies = [
  "serde",
  "serde_json",

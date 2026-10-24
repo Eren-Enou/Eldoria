@@ -1,6 +1,6 @@
 [package]
 name = "woi-workbench"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2024"
 rust-version = "1.95"
 default-run = "woi-workbench"
@@ -9,13 +9,15 @@ default-run = "woi-workbench"
 
 [features]
 default = []
-desktop = ["dep:eframe", "dep:chrono"]
+desktop = ["dep:eframe", "dep:chrono", "world-sessions"]
+world-sessions = ["dep:persistent_world"]
 portable = []
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 sha2 = "0.10"
+persistent_world = { package = "woi-persistent-world", path = "../../prototypes/persistent-world", optional = true, features = ["workbench-host"] }
 eframe = { version = "=0.33.3", optional = true, default-features = false, features = ["default_fonts", "glow", "x11", "wayland", "accesskit"] }
 chrono = { version = "0.4", optional = true, default-features = false, features = ["std"] }
 

@@ -25,6 +25,10 @@ fn start() -> woi_workbench::Result<()> {
         None
     };
     let store = Store::detect(workspace.as_deref())?;
+    #[cfg(feature = "world-sessions")]
+    if args.first().is_some_and(|s| s.starts_with("world-")) {
+        return world_command(&store, &args);
+    }
     match args.first().map(String::as_str) {
         Some("help" | "--help" | "-h") => println!("World of Individuals Rust Workbench V2\nDesktop: launch without arguments (build with --features desktop)\nCLI: run [configuration.json] | list | inspect RUN-ID | reproduce RUN-ID | viewer RUN-ID | compare LEFT-ID RIGHT-ID | observe RUN-ID observation.json\nGuide: docs/development/HUMAN_WORKBENCH_QUICKSTART.md"),
         Some("run") => {
@@ -56,6 +60,31 @@ fn start() -> woi_workbench::Result<()> {
         }
         _ => return Err("Unknown command. Use run [configuration.json], list, inspect RUN-ID or reproduce RUN-ID".into()),
     }
+    Ok(())
+}
+#[cfg(feature = "world-sessions")]
+fn world_command(store: &Store, args: &[String]) -> woi_workbench::Result<()> {
+    use woi_workbench::world_sessions::{Sessions, status};
+    let sessions = Sessions::new(store)?;
+    let result=match args.first().map(String::as_str) {
+        Some("world-list")=> {println!("{}",serde_json::to_string_pretty(&sessions.list()?).unwrap());return Ok(());}
+        Some("world-create")=> {
+            let config=if let Some(path)=args.get(1) {woi_workbench::storage::read(std::path::Path::new(path))?}else{Configuration::default()};
+            sessions.create(&config)?
+        }
+        Some("world-inspect")=>sessions.open(args.get(1).ok_or("supply world ID")?)?,
+        Some("world-advance")=> {
+            let mut session=sessions.open(args.get(1).ok_or("supply world ID")?)?;
+            let steps=args.get(2).ok_or("supply bounded step count")?.parse().map_err(|_|"invalid step count")?;
+            session.advance(steps)?;session.save()?;session
+        }
+        Some("world-finalize")=> {let mut session=sessions.open(args.get(1).ok_or("supply world ID")?)?;session.finalize()?;session}
+        _=>return Err("world commands: world-list | world-create [configuration.json] | world-inspect ID | world-advance ID STEPS | world-finalize ID".into()),
+    };
+    println!(
+        "{}",
+        serde_json::to_string_pretty(&status(&result)).unwrap()
+    );
     Ok(())
 }
 #[cfg(feature = "desktop")]
