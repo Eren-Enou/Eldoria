@@ -39,6 +39,15 @@ Machine-local evidence/logs: `target/persistent-world-validation/`,
 H128/H1024 wall-clock and serialized growth measured; see acceptance report.
 No single-world native memory/precise UI latency or clean-VM/power-loss claim.
 
+Clean-source candidate: built from b074123 (both binaries `dirty:false`), pushed
+with the implementation commits to origin/main. Candidate ZIP SHA256
+`55d29709bd4da9e2780980f6fc58a7f2aee7dcac5bbe365789da5113ce5c0a03` at
+`target/releases/woi-workbench-0.3.0-rc.1-windows-x64-clean-candidate.zip`.
+Its installed-package test passed, PE inspection found no VC redistributable
+imports, and a fresh extraction/System32-only PATH reopened the preserved GUI
+world with byte-identical tick281 status. Original0.2ZIP unchanged. No new binary
+release published; native acceptance remains pending. No builds remain live.
+
 Workbench all-target release suite with `--features desktop,portable` completed
 successfully:21tests, no failures/ignored tests, including legacy execution,
 replay/notes/relocation, original transport parity and separate025developer cases.

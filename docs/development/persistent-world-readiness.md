@@ -5,6 +5,7 @@ Starting revision `77707def0e13936c192a3bc987b8971acb3898d1`. Validated implemen
 commits:81b5ce1(state audit),7351464(typed continuation/journal/tests),
 e969eb5(native sessions/portable integration). This is an intermediate acceptance
 report; source commits do not establish the remaining GUI/release gates.
+These commits and the initial acceptance documentation are pushed to `origin/main`.
 
 The [engineering audit](persistent-world-engineering.md) defines ownership, the
 safe iteration boundary, exact state/journal formats and limitations. The
@@ -94,11 +95,26 @@ measurements remain outstanding.
 
 ## Remaining acceptance work
 
-Run final current-source tests and original executable comparisons; measure actual
-checkpoint/journal/storage/working-set costs; operate the real native GUI through
-create/advance/pause/save/close/reopen/resume/inspect; test the actual relocated
-portable package and legacy workflows; review the final diff, commit and publish
-with exact source/binary/archive verification. Do not infer these gates from code.
+Finish native mid-batch Pause, terminal Finalize and024GUI acceptance, and measure
+native memory/responsiveness. Then review the final acceptance diff and publish a
+verified binary release. Current-source tests, original executable comparisons,
+checkpoint/journal/CLI working-set measurements, relocated-package checks and
+legacy workflows have passed. Do not infer the remaining GUI gates from code.
+
+The clean candidate was built from `b0741230603cca655a791e1a0971bb67970c6369`
+with both identities reporting `dirty:false`. Application and runner share source
+fingerprint `8ba7f97421314186991d38969ebe38feec3b31778f51373e5173c74ac564b003`;
+continuation runtime remains
+`1fca6d6846d75cf40af3743d6be790cd5934c56501020da9cb7b1799a77798d7`.
+Its machine-local ZIP is
+`target/releases/woi-workbench-0.3.0-rc.1-windows-x64-clean-candidate.zip`, SHA256
+`55d29709bd4da9e2780980f6fc58a7f2aee7dcac5bbe365789da5113ce5c0a03`.
+The installed-package acceptance test passed again against these exact binaries.
+Extraction into another path containing spaces and a System32-only PATH reopened
+the original GUI world's tick281 status byte-identically. Static PE inspection
+found no Visual C++ redistributable imports. This remains a candidate, with no new
+GitHub binary release published. The earlier0.2 ZIP retains SHA256
+`5d18525a1a76ee61f0e3eaca3a4593f85f26a2f33b2f5b5fc9dba4a8a4044fc4`.
 
 ## Completion audit against the requested milestone
 
@@ -153,3 +169,11 @@ declared Continuous horizons; the public budget is now+33. A completed shorter
 world has nevertheless already executed its cutoff/drain history. Extending a
 terminal world cannot erase those consequences. Horizon extension needs a separate
 prospective contract and broader prefix checks; it is not implemented here.
+
+The strongest immediate engineering follow-up is failure recovery and storage
+budgeting for durable multi-session operation: an unsaved journal tail is preserved
+but currently prevents reopening, and repeated immutable generations duplicate
+growing audit state. Those observed limits justify work before widening horizons
+or adding environmental renewal. Neither food use nor saved history establishes
+that delayed work valuation, broader social opportunities or a new physical
+ontology should change. Such behavioral work needs its own prospective experiment.
