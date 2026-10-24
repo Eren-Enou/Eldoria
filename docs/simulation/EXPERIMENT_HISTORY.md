@@ -1,5 +1,9 @@
 # World of Individuals experiment index
 
+Active engineering, not026: [first persistent-world audit](../development/persistent-world-engineering.md).
+An isolated023 continuation successor is under validation; no foundation extension,
+policy adoption or new behavioral experiment follows from this work.
+
 Portable human operation: [Windows guide](../development/PORTABLE_WORKBENCH_QUICKSTART.md)
 and [engineering/acceptance](../development/portable-workbench-engineering.md).
 Installed023/024 execution is an additive transport, not a new experiment or

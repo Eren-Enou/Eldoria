@@ -1,4 +1,59 @@
-# Portable workbench — continuation checkpoint
+# First persistent world — active continuation checkpoint
+
+Objective: attachment2ac9c96d. Starting HEAD
+`77707def0e13936c192a3bc987b8971acb3898d1`; implementation HEAD
+`e969eb5` (81b5ce1 audit,7351464 continuation,e969eb5 workbench). Changes are related
+isolated continuation, workbench integration and documentation; protected sources
+and frozen archives remain unchanged. No026 or025 adoption.
+
+Architecture: [engineering audit](persistent-world-engineering.md). Complete typed
+023/024 state, original unchanged coordinator/policies, stable IDs rebuilding ECS
+mapping, fixed horizon and charged drain. Native CBOR checkpoint plus immutable
+commit generations bind state and append-only actual journal prefix hashes.
+One exclusive OS writer lock; no replay or archive recovery. Incomplete files are
+preserved; a journal tail beyond the committed checkpoint is rejected explicitly.
+
+Current evidence and limitations: [acceptance report](persistent-world-readiness.md).
+Root fmt/Clippy/217tests and full read-only001–024 gate passed (408 artifacts,
+425 raw originals). Separate025 gate passed214bindings/50replays. Current release
+suite10 passed18tests: exact original histories,228long splits, real process
+restarts,024cases, sensitivity, semantic corruption, observer nonrecovery,
+writer exclusion and metadata/journal binding. Final component formatting and
+desktop/portable all-target Clippy pass. No code changed since these checks.
+
+Actual static candidate native acceptance: seed43 paired023 H1024/P11, saved/reopened
+pending invitations tick7 and active resource commitments tick9, relocated into a
+second application path with spaces, advanced to281, inspected actual local input
+and executed transfers. Computer Use was stopped by human Escape before Pause and
+terminal Finalize acceptance; do not resume UI automation without human direction.
+Application subsequently absent; checkpoint reopened successfully at281. A separate
+copy continued/finalized through packaged backend exactly matched independent
+original023 executable; separate024 MealRelief backend process continuation also
+matched original024 executable. Original GUI world remains untouched at281.
+
+Candidate (dirty build, NOT a release):
+`target/releases/woi-workbench-0.3.0-rc.1-windows-x64-preflight.zip`.
+Machine-local evidence/logs: `target/persistent-world-validation/`,
+`target/persistent-world-*.log`. Actual external app/data locations are in
+`target/persistent-world-validation/gui-launch.json`.
+H128/H1024 wall-clock and serialized growth measured; see acceptance report.
+No single-world native memory/precise UI latency or clean-VM/power-loss claim.
+
+Workbench all-target release suite with `--features desktop,portable` completed
+successfully:21tests, no failures/ignored tests, including legacy execution,
+replay/notes/relocation, original transport parity and separate025developer cases.
+Log:`target/persistent-world-workbench-all-tests.log`. Session38686 is complete.
+The prior command failed before compilation because `portable-app` was an incorrect
+feature name. Clippy session11204 completed successfully. No builds remain live.
+
+Remaining: native Pause/terminal and024GUI acceptance
+when user permits UI work; memory/responsiveness evidence; final requirement audit,
+diff review, validated commits/push, clean-source static rebuild, final package
+verification and publication. Do not publish the dirty preflight ZIP or mark the
+goal complete while these gates remain unproven. The pending human question asks
+whether desktop automation may resume after Escape; no response is assumed.
+
+## Preceding delivered portable milestone
 
 Objective: attachmenta5b07201. Deliver portable Rust Windows023/024 human
 operation; preserve developer025, all original producers/evidence and V2 work.

@@ -6,6 +6,13 @@ rows when ownership, entry points or mode boundaries change.
 
 ## Human Rust workbench and portable delivery
 
+Active persistence engineering: `prototypes/persistent-world/` is an isolated023
+successor with typed complete-state continuation and session journal prototypes.
+It does not modify the protected producer. See the
+[feasibility audit](development/persistent-world-engineering.md) and
+[current checkpoint](development/continuation-checkpoint.md) for gates still pending;
+its presence is not a claim of completed GUI or portable continuation acceptance.
+
 [Portable quickstart](development/PORTABLE_WORKBENCH_QUICKSTART.md) and
 [portable engineering gates](development/portable-workbench-engineering.md).
 The additive `tools/portable-runner/` host links the unchanged source-verified
