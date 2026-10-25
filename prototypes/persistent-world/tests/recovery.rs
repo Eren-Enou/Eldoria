@@ -113,7 +113,7 @@ fn explicit_recovery_preserves_tail_parent_and_complete_state() {
     assert_eq!(snapshot(&parent), before);
     assert_eq!(fs::read(branch.join("journal.jsonl")).unwrap(), prefix);
     assert_eq!(
-        fs::read(branch.join("uncommitted-tail.bin")).unwrap(),
+        fs::read(branch.join("unverified-tail.bin")).unwrap(),
         before["journal.jsonl"][prefix.len()..]
     );
     let mut restored = Session::open(&branch).unwrap();
@@ -210,4 +210,93 @@ fn original_v1_bytes_remain_readable_with_guarded_compatibility() {
         resumed.world().export().unwrap(),
         reference.export().unwrap()
     );
+}
+
+#[test]
+fn older_selection_separates_later_committed_history_from_unverified_suffix() {
+    let root = root("older-valid");
+    let parent = root.join("world");
+    let mut s = Session::create(&parent, config()).unwrap();
+    let selected = fs::read(parent.join("journal.jsonl")).unwrap();
+    s.advance(3).unwrap();
+    s.save().unwrap();
+    let committed = fs::read(parent.join("journal.jsonl")).unwrap();
+    s.advance(4).unwrap();
+    drop(s);
+    let before = snapshot(&parent);
+    let full = &before["journal.jsonl"];
+    let branch_root = root.join("fork");
+    fs::create_dir(&branch_root).unwrap();
+    let branch = branch_root.join("world");
+    let receipt = reliability::recover(&parent, &branch, 1).unwrap();
+    assert_eq!(receipt.verified_through_generation, 2);
+    assert_eq!(
+        receipt.later_committed_bytes,
+        (committed.len() - selected.len()) as u64
+    );
+    assert_eq!(receipt.tail_bytes, (full.len() - committed.len()) as u64);
+    assert_eq!(
+        fs::read(branch.join("later-committed.bin")).unwrap(),
+        committed[selected.len()..]
+    );
+    assert_eq!(
+        fs::read(branch.join("unverified-tail.bin")).unwrap(),
+        full[committed.len()..]
+    );
+    let mut reconstructed = fs::read(branch.join("journal.jsonl")).unwrap();
+    reconstructed.extend(fs::read(branch.join("later-committed.bin")).unwrap());
+    reconstructed.extend(fs::read(branch.join("unverified-tail.bin")).unwrap());
+    assert_eq!(&reconstructed, full);
+    assert_eq!(snapshot(&parent), before);
+    reliability::verify_independent(&branch, 1).unwrap();
+    let mut restored = Session::open(&branch).unwrap();
+    restored.advance(2048).unwrap();
+    restored.finalize().unwrap();
+    assert_eq!(restored.world().trial().unwrap(), c::trial(config()));
+}
+
+#[test]
+fn damaged_lineage_or_evidence_refuses_resume_and_recovery() {
+    let root = root("lineage");
+    let parent = root.join("world");
+    let mut s = Session::create(&parent, config()).unwrap();
+    s.advance(2).unwrap();
+    drop(s);
+    let base = root.join("fork");
+    fs::create_dir(&base).unwrap();
+    let branch = base.join("world");
+    reliability::recover(&parent, &branch, 1).unwrap();
+    let tail = branch.join("unverified-tail.bin");
+    let original_tail = fs::read(&tail).unwrap();
+    let mut damaged = original_tail.clone();
+    damaged[3] ^= 1;
+    fs::write(&tail, damaged).unwrap();
+    assert!(
+        Session::open(&branch)
+            .err()
+            .unwrap()
+            .contains("evidence checksum")
+    );
+    fs::write(&tail, &original_tail).unwrap();
+    drop(Session::open(&branch).unwrap());
+    let receipt = branch.join("recovery.json");
+    let original_receipt = fs::read(&receipt).unwrap();
+    fs::write(&receipt, b"damaged").unwrap();
+    assert!(
+        Session::open(&branch)
+            .err()
+            .unwrap()
+            .contains("lineage checksum")
+    );
+    let nested = root.join("another");
+    fs::create_dir(&nested).unwrap();
+    assert!(reliability::recover(&branch, &nested.join("world"), 1).is_err());
+    assert!(!nested.join("world").exists());
+    fs::write(&receipt, &original_receipt).unwrap();
+    drop(Session::open(&branch).unwrap());
+    let marker = fs::read(branch.join("recovery.sha256")).unwrap();
+    fs::remove_file(branch.join("recovery.sha256")).unwrap();
+    assert!(Session::open(&branch).is_err());
+    fs::write(branch.join("recovery.sha256"), marker).unwrap();
+    drop(Session::open(&branch).unwrap());
 }

@@ -12,7 +12,7 @@ pub struct Budget {
     pub generations: Option<usize>,
     pub projected_saves: u64,
 }
-#[derive(Serialize)]
+#[derive(Debug, Serialize)]
 pub struct Generation {
     pub file: String,
     pub generation: Option<u64>,
@@ -89,6 +89,7 @@ pub(super) fn load(
     allow_tail: bool,
 ) -> Result<(Commit, Vec<u8>, World), String> {
     check_path(path)?;
+    validate_lineage(path)?;
     let number = match selected {
         Some(n) => n,
         None => {
@@ -212,6 +213,14 @@ pub fn inspect(path: &Path, budget: &Budget) -> Result<Inspection, String> {
         |e| e.clone(),
         |_| "available; exclusive inspection guard held".into(),
     );
+    inspect_snapshot(path, budget, stable, lock_status)
+}
+fn inspect_snapshot(
+    path: &Path,
+    budget: &Budget,
+    stable: bool,
+    lock_status: String,
+) -> Result<Inspection, String> {
     let mut paths = fs::read_dir(path)
         .map_err(|e| e.to_string())?
         .map(|e| e.map(|e| e.path()).map_err(|e| e.to_string()))
@@ -340,6 +349,7 @@ pub fn verify_independent(
 ) -> Result<crate::verification::Verified, String> {
     check_path(path)?;
     let _lock = existing_lock(path)?;
+    validate_lineage(path)?;
     let checkpoint = bounded_read(
         &path.join(format!("checkpoint-{selected:08}.cbor")),
         COMMIT_LIMIT,
@@ -378,8 +388,16 @@ pub struct Recovery {
     pub state_sha256: String,
     pub prefix_bytes: u64,
     pub prefix_sha256: String,
+    pub verified_through_generation: u64,
+    pub verified_through_bytes: u64,
+    pub verified_through_sha256: String,
+    pub later_committed_bytes: u64,
+    pub later_committed_sha256: String,
     pub tail_bytes: u64,
     pub tail_sha256: String,
+    pub tail_status: &'static str,
+    pub source_generations: Vec<Generation>,
+    pub parent_lineage_sha256: Option<String>,
     pub original_journal_sha256: String,
     pub divergence: &'static str,
 }
@@ -410,6 +428,25 @@ pub fn recover(source: &Path, destination: &Path, selected: u64) -> Result<Recov
     }
     let _source_lock = existing_lock(source)?;
     let (commit, prefix, world) = load(source, Some(selected), true)?;
+    let expected = world.checkpoint()?;
+    let tick = world.tick();
+    drop(world);
+    let inventory = inspect_snapshot(
+        source,
+        &Budget::default(),
+        true,
+        "recovery owns source guard".into(),
+    )?;
+    let furthest = inventory
+        .generations
+        .iter()
+        .filter(|g| g.valid)
+        .max_by_key(|g| (g.committed_journal_bytes, g.generation))
+        .ok_or("no verified recovery prefix")?;
+    let through_generation = furthest.generation.ok_or("missing verified generation")?;
+    let through_bytes = furthest
+        .committed_journal_bytes
+        .ok_or("missing verified prefix length")?;
     let checkpoint = bounded_read(
         &source.join(format!("checkpoint-{selected:08}.cbor")),
         COMMIT_LIMIT,
@@ -418,39 +455,150 @@ pub fn recover(source: &Path, destination: &Path, selected: u64) -> Result<Recov
     if !journal.starts_with(&prefix) {
         return Err("source journal changed during recovery; no branch published".into());
     }
-    let tail = &journal[prefix.len()..];
+    if through_bytes < prefix.len() as u64 || through_bytes > journal.len() as u64 {
+        return Err("inconsistent verified prefix range".into());
+    }
+    let later = &journal[prefix.len()..through_bytes as usize];
+    let tail = &journal[through_bytes as usize..];
+    let coverage: Commit = decode(&bounded_read(
+        &source.join(format!("checkpoint-{through_generation:08}.cbor")),
+        COMMIT_LIMIT,
+    )?)?;
+    if coverage.journal_bytes != through_bytes
+        || coverage.journal_sha256 != hash(&journal[..through_bytes as usize])
+    {
+        return Err("verified source coverage changed during recovery".into());
+    }
     let result = Recovery {
-        schema: "woi-world-recovery/v1",
+        schema: "woi-world-recovery/v2",
         branch: destination.into(),
         parent: source.into(),
         world: commit.world.clone(),
         generation: selected,
-        tick: world.tick(),
+        tick,
         parent_checkpoint_sha256: hash(&checkpoint),
         state_sha256: commit.state_sha256,
         prefix_bytes: prefix.len() as u64,
         prefix_sha256: hash(&prefix),
+        verified_through_generation: through_generation,
+        verified_through_bytes: through_bytes,
+        verified_through_sha256: hash(&journal[..through_bytes as usize]),
+        later_committed_bytes: later.len() as u64,
+        later_committed_sha256: hash(later),
         tail_bytes: tail.len() as u64,
         tail_sha256: hash(tail),
+        tail_status: "not covered by any currently verified checkpoint; corrupt committed files can make original commit status uncertain",
+        source_generations: inventory.generations,
+        parent_lineage_sha256: if source.join("recovery.json").exists() {
+            Some(hash(&bounded_read(
+                &source.join("recovery.json"),
+                1024 * 1024,
+            )?))
+        } else {
+            None
+        },
         original_journal_sha256: hash(&journal),
-        divergence: "new execution branch starts at the selected committed tick; tail events occurred but their private end state is unavailable",
+        divergence: "new branch starts at the selected committed tick; later verified history and the unverified suffix are evidence only, never live-state reconstruction",
     };
+    let receipt = serde_json::to_vec_pretty(&result).map_err(|e| e.to_string())?;
+    if receipt.len() > 1024 * 1024 {
+        return Err("recovery inventory exceeds lineage size limit; no destination created".into());
+    }
     fs::create_dir(destination).map_err(|e| e.to_string())?;
     let _destination_lock = Session::writer_lock(destination)?;
     // Publish checkpoint last. A partial branch stays diagnosable and never replaces parent.
     write_new(&destination.join("journal.jsonl"), &prefix)?;
-    write_new(&destination.join("uncommitted-tail.bin"), tail)?;
+    write_new(&destination.join("later-committed.bin"), later)?;
+    write_new(&destination.join("unverified-tail.bin"), tail)?;
+    write_new(&destination.join("recovery.json"), &receipt)?;
     write_new(
-        &destination.join("recovery.json"),
-        &serde_json::to_vec_pretty(&result).map_err(|e| e.to_string())?,
+        &destination.join("recovery.sha256"),
+        hash(&receipt).as_bytes(),
     )?;
     write_new(
         &destination.join(format!("checkpoint-{selected:08}.cbor")),
         &checkpoint,
     )?;
     let (_, _, restored) = load(destination, Some(selected), false)?;
-    if restored.checkpoint()? != world.checkpoint()? {
+    if restored.checkpoint()? != expected {
         return Err("recovered state differs from selected checkpoint".into());
     }
     Ok(result)
+}
+
+fn validate_lineage(path: &Path) -> Result<(), String> {
+    let receipt_path = path.join("recovery.json");
+    let marker = path.join("recovery.sha256");
+    if !receipt_path.exists() && !marker.exists() {
+        return Ok(());
+    }
+    let bytes = bounded_read(&receipt_path, 1024 * 1024)?;
+    let marker_bytes = bounded_read(&marker, 128)?;
+    if marker_bytes != hash(&bytes).as_bytes() {
+        return Err("recovery lineage checksum mismatch".into());
+    }
+    let r: serde_json::Value = serde_json::from_slice(&bytes).map_err(|e| e.to_string())?;
+    let count = |key: &str| {
+        r[key]
+            .as_u64()
+            .ok_or_else(|| format!("invalid lineage field{key}"))
+    };
+    if r["schema"] != "woi-world-recovery/v2"
+        || path.file_name().and_then(|n| n.to_str()) != r["world"].as_str()
+    {
+        return Err("unsupported/ambiguous recovery lineage".into());
+    }
+    let prefix_count = count("prefix_bytes")?;
+    let later_count = count("later_committed_bytes")?;
+    let tail_count = count("tail_bytes")?;
+    if prefix_count
+        .checked_add(later_count)
+        .and_then(|n| n.checked_add(tail_count))
+        .is_none_or(|n| n > JOURNAL_LIMIT)
+        || prefix_count.checked_add(later_count) != Some(count("verified_through_bytes")?)
+    {
+        return Err("lineage length overflow/mismatch".into());
+    }
+    let parent_checkpoint = bounded_read(
+        &path.join(format!("checkpoint-{:08}.cbor", count("generation")?)),
+        COMMIT_LIMIT,
+    )?;
+    let selected: Commit = decode(&parent_checkpoint)?;
+    if r["parent_checkpoint_sha256"] != hash(&parent_checkpoint)
+        || r["state_sha256"] != selected.state_sha256
+        || selected.journal_bytes != prefix_count
+        || r["prefix_sha256"] != selected.journal_sha256
+        || selected.generation != count("generation")?
+        || selected.tick != count("tick")?
+        || r["world"] != selected.world
+    {
+        return Err("lineage parent checkpoint mismatch".into());
+    }
+    check_path(&path.join("journal.jsonl"))?;
+    let mut prefix = vec![0; prefix_count as usize];
+    File::open(path.join("journal.jsonl"))
+        .map_err(|e| e.to_string())?
+        .read_exact(&mut prefix)
+        .map_err(|e| e.to_string())?;
+    let later = bounded_read(&path.join("later-committed.bin"), later_count)?;
+    let tail = bounded_read(&path.join("unverified-tail.bin"), tail_count)?;
+    if later.len() as u64 != later_count
+        || tail.len() as u64 != tail_count
+        || r["prefix_sha256"] != hash(&prefix)
+        || r["later_committed_sha256"] != hash(&later)
+        || r["tail_sha256"] != hash(&tail)
+    {
+        return Err("recovery evidence checksum mismatch".into());
+    }
+    let mut digest = Sha256::new();
+    digest.update(&prefix);
+    digest.update(&later);
+    if r["verified_through_sha256"] != format!("{:x}", digest.clone().finalize()) {
+        return Err("lineage verified prefix mismatch".into());
+    }
+    digest.update(&tail);
+    if r["original_journal_sha256"] != format!("{:x}", digest.finalize()) {
+        return Err("lineage original journal mismatch".into());
+    }
+    Ok(())
 }

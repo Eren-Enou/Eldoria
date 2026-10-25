@@ -63,7 +63,7 @@ successors stored under arbitrary other roots. Logical file sizes are not alloca
 filesystem blocks or live heap. Projections assume unchanged state and format.
 
 `recover(source, fresh_destination, explicit_generation)` preserves the original
-directory, saves `uncommitted-tail.bin`, publishes `recovery.json` lineage and copies
+directory, saves excluded evidence, publishes `recovery.json` lineage and copies
 the selected checkpoint unchanged with its exact committed journal prefix. It
 validates restored state equality before returning success. A corrupt newest file
 does not authorize rollback: the generation argument remains mandatory. Nested
@@ -113,6 +113,39 @@ a sum type inference error and Windows refusing reads of its exclusively locked
 placeholder; the test now excludes that empty lock from byte snapshots and still
 checks actual inventory bytes. Clippy's constant-chunk suggestion was corrected.
 These failures are retained in task-specific ignored logs.
+
+## Recovery lineage v2: committed exclusion is not uncommitted history
+
+Review identified an important distinction in the first v1 recovery prototype:
+selecting an older generation can exclude history already covered by a later valid
+checkpoint. Calling that whole suffix "uncommitted" was too broad, even though the
+restored actor state and future execution were correct. No published GUI artifact
+or historical experiment was changed to conceal this correction.
+
+New branches use `woi-world-recovery/v2`. Under the source writer guard, recovery
+verifies all candidate generations and records their validity/errors. It stores
+`later-committed.bin` for bytes after the selected prefix through the furthest
+verified prefix, and `unverified-tail.bin` for the remaining bytes. These plus the
+branch's initial journal prefix exactly reconstruct the original journal. The
+unverified suffix is not asserted to have *never* been committed: a damaged or
+unsupported newer checkpoint can make that historical status uncertain. The
+receipt records that qualification and the explicit chosen generation.
+
+`recovery.sha256` binds the receipt. Reopening/verification checks the selected
+parent checkpoint, original prefix and both evidence segments against their saved
+hashes and lengths. Corrupt or missing lineage/evidence refuses both reopening and
+further recovery. These are unkeyed consistency checks, not authentication against
+an adversary who rewrites all files and hashes. Parent URIs are audit references;
+JSON paths are never followed to execute filesystem operations. The external branch
+creation path qualifies reused event IDs; moving the directory does not change
+actor-owned identity or require the original path to remain accessible.
+
+Eight targeted tests passed with v2, including54independent checkpoints, older
+selection with a valid later generation, exact evidence reconstruction, and damaged
+receipt/marker/tail refusal. All-target Clippy and formatting pass. v1 *checkpoint*
+reading remains supported under its explicit guards; unpublished v1 recovery
+sidecars from development are not silently migrated. Recover again from their
+preserved original parent if needed. No GUI release or automatic cleanup follows.
 
 ## Independent raw verification
 

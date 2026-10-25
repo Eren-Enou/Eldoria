@@ -449,6 +449,16 @@ impl Session {
     }
     pub fn open(path: &Path) -> Result<Self, String> {
         check_path(path)?;
+        let id = path
+            .file_name()
+            .and_then(|n| n.to_str())
+            .ok_or("invalid world directory ID")?;
+        if id.is_empty()
+            || id.len() > 96
+            || !id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-')
+        {
+            return Err("world ID requires bounded ASCII letters/digits/hyphens".into());
+        }
         let writer_lock = Self::writer_lock(path)?;
         let (commit, journal_bytes, world) = reliability::load(path, None, false)?;
         Ok(Self {
