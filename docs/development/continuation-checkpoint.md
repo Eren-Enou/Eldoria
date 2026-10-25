@@ -1,7 +1,8 @@
 # Headless persistent-world reliability — active checkpoint
 
-Objective: attachmenta2e74599. Starting HEAD9742295; implementation HEADa85e0f6
-(0aabf9f audit;86d682f recovery;f8e5564 independent reader;a85e0f6 lineage correction).
+Objective: attachmenta2e74599. Starting HEAD9742295; implementation HEAD1bed42c
+(0aabf9f audit;86d682f recovery;f8e5564 independent reader;a85e0f6 lineage correction;
+1bed42c measured opt-in compression).
 All GUI control, GUI-session writes, manual-user acceptance and publication
 of a GUI-dependent release are prohibited/deferred by the new request. Do not
 resume the earlier native task. Source ownership remains isolated persistent-world
@@ -63,17 +64,39 @@ checking pending; source/terminal JSON files in its run directory prove the adde
 calls. Initial independent test used invalid underscore directory IDs; corrected
 only the fixture spelling. No builds remain live.
 
-Remaining: record exact furthest-verified checkpoint hash in v2 lineage (generation,
-prefix and source validity already recorded); fault/generation edge cases;
-structured workbench CLI integration; compression measurement and opt-in transport if
-justified; real killed-process/publish interruption matrix and many-process023/024
+Compression investigation passed on genuine old own engineering checkpoints:
+8,848→2,191bytes;1,776,083→54,454;13,720,146→343,331. Encode0.318/9.76/62.84ms,
+decode0.09/1.80/10.0ms under local load; independent verification3.8/233/1595ms
+separate. Receipt:`target/recovery-validation/codec-investigation.json`.
+Implemented optional `woi-world-storage/v2` zlib6 container around exact rawv1
+commit; default raw unchanged. `storage_codec.rs`; `Session::save_with_codec`;
+CLI `advance DIR STEPS --codec zlib`. Bounded160MiB decode/hash/trailing/nested/
+unknown-codec/version checks; raw/compressed coexist, no rewriting/pruning.
+Independent primitive reader shares transport decoding only, not simulator
+validation; do not claim independent codec implementation.
+
+Latest10 targeted tests pass: codec2,independent1,independent_corruption1,recovery6;
+formatting and all-target Clippy pass. Logs:`target/recovery-codec-tests.log`,
+`target/recovery-codec-clippy.log`; session67707 completed. No live builds. Full
+post-codec suite (now28test functions) remains for the final component gate.
+Resolver attempted unrelated libc/tokio version and Windows/getrandom edge changes;
+restored exact baseline graph (only codec additions remain). Named v1 guard now
+pins complete dependency graphs, filtering only declared extra transport dependency.
+Preserved diagnostics:`target/recovery-codec-*-resolve.log`/pin logs. Workbench lock
+diff is exactly one newflate2dependency edge; standalone adds five codec packages.
+
+Remaining: fault/generation edge cases; structured workbench CLI integration;
+real killed-process/publish interruption matrix and many-process023/024
 stress; one headless regression entry point; final required checks/performance,
 documentation, diff review and source publication. No release or GUI controls.
-Next executable step: add a measured codec example (pin cached flate2 1.1.10 with
-rust_backend without upgrading baseline packages), benchmark genuine small/H128/
-H1024 own engineering checkpoints before adopting opt-in versioned compression.
-Then bounded opt-in killed-process/pre-publication probes and many-process023/024
-exact tests. Add one documented Rust headless suite entry point. No existing
+Next executable step: add bounded opt-in killed-process/pre-publication probes and
+many-process023/024 exact tests (many distinct real process sessions; compare full
+private checkpoint bytes as well as canonical histories at splits/terminal).
+Keep probes under an explicit test feature; child readiness+30second bound then
+parent Child.kill (no abort/WER/UI); include before/after publication, lock release,
+incomplete pending, MAX generation/refusal/retry, missing/corrupt/config/runtime/
+schema cases. Preserve all source artifacts and use scratch corruption copies.
+Add one documented Rust headless suite entry point. No existing
 `.github/workflows` was found; do not redesign CI.
 
 ## Previous persistent-world milestone (GUI gates remain deferred)
