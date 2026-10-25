@@ -1,4 +1,82 @@
-# First persistent world — active continuation checkpoint
+# Headless persistent-world reliability — active checkpoint
+
+Objective: attachmenta2e74599. Starting HEAD9742295; implementation HEADa85e0f6
+(0aabf9f audit;86d682f recovery;f8e5564 independent reader;a85e0f6 lineage correction).
+All GUI control, GUI-session writes, manual-user acceptance and publication
+of a GUI-dependent release are prohibited/deferred by the new request. Do not
+resume the earlier native task. Source ownership remains isolated persistent-world
+plus workbench CLI; protected001–024 and separate025 remain unchanged.
+
+Read [persistent-world-recovery.md](persistent-world-recovery.md) first for the
+prospective failure matrix and branch boundary. Committed implementation:
+`src/session.rs`, `src/reliability.rs`, `src/main.rs`, guarded identity generation,
+`compatibility-v1.json`, four recovery tests and a small genuine pre-change v1
+fixture (8,848-byte checkpoint plus7,934-byte journal header, generated engineering
+data, no user GUI files). Numeric generation ordering now replaces lexical order;
+ambiguous filenames fail unless a recovery generation is explicitly selected.
+
+Inspection does not create files, reports busy snapshots as unstable, validates
+each committed prefix/state, inventories bytes and produces optional external
+budget warnings. Explicit recovery copies only the selected checkpoint/prefix into
+a fresh branch root/WORLD-ID and separately preserves exact tail bytes plus JSON
+lineage. World ID stays unchanged; branch path identifies the external successor.
+Parent bytes remain unchanged, and no tail replay or cognitive repair occurs.
+Destination containment protection was added after initial successful tests.
+Current descriptor: `woi-world-recovery/v2`. Later verified committed history
+excluded by an older explicit selection is `later-committed.bin`; the remaining
+`unverified-tail.bin` is not asserted never historically committed when newer files
+are corrupt/unsupported. `recovery.sha256` binds receipt/evidence/selected parent.
+Missing/damaged lineage refuses reopen/recovery. Checkpoint/commit/journal stayv1.
+
+New checkpoints retain strict new source identities. Original v1 reader aliases
+are compiler/target-specific and enabled only with the unchanged original kernel
+(the one compatibility predicate is normalized for the guard), frozen inherited
+file digests, direct kernel dependency declarations and exact package sets for
+baseline names. No arbitrary identity acceptance.
+Actual v1 fixture CLI inspection verified both old and new generation identities.
+
+Passed at86d682f: complete22-test persistent-world release suite, including four
+existing process/session tests and four new recovery tests (exact parent/tail/state,
+corrupt latest explicit selection, truncated tail, read-only/busy/missing lock,
+actual original v1 bytes and containment refusal); all-target Clippy/formatting.
+Separate CLI processes passed create→save tick9→uncommitted exit→check→recover2→
+resume→finalize→exact original reference, preserving49,051tail bytes and unchanged
+parent. Evidence:`target/recovery-cli-evidence.json`, full-suite log
+`target/recovery-stage1-all-tests.log`. Preserved failures: a test's ambiguous sum type, Windows refusing
+to read its locked placeholder, and Clippy's as_chunks suggestion; corrected.
+No live builds remain: sessions39375 and47984 completed successfully. Stage-specific
+logs:`target/recovery-stage1-clippy3.log`,`target/recovery-stage1-final-tests.log`.
+Code commits are local; defer final push until the required full milestone gates.
+
+Latest additional passes: eight targeted tests (`recovery`6, `independent`1 with54
+checkpoints in18configs, `independent_corruption`1 with rehashed primitive faults),
+formatting and all-target Clippy. Logs:`target/recovery-lineage-tests.log` and
+`target/recovery-lineage-clippy.log`; session24999 completed. Independent reader
+`src/verification.rs` calls no World/Session/simulation validation. Its filesystem
+wrapper only locks, supplies a prefix and checks identity/lineage. Scope: hashes,
+configuration/boundaries, event order, commitments and aggregate food, not cognition
+validation or behavioral equivalence by totals. The v2 CLI workflow also passed
+source and terminal independent checks and the same307c947f...original history,
+preserving49,051unverified bytes. Current machine receipt
+`target/recovery-cli-evidence.json` has an older scope string saying independent
+checking pending; source/terminal JSON files in its run directory prove the added
+calls. Initial independent test used invalid underscore directory IDs; corrected
+only the fixture spelling. No builds remain live.
+
+Remaining: record exact furthest-verified checkpoint hash in v2 lineage (generation,
+prefix and source validity already recorded); fault/generation edge cases;
+structured workbench CLI integration; compression measurement and opt-in transport if
+justified; real killed-process/publish interruption matrix and many-process023/024
+stress; one headless regression entry point; final required checks/performance,
+documentation, diff review and source publication. No release or GUI controls.
+Next executable step: add a measured codec example (pin cached flate2 1.1.10 with
+rust_backend without upgrading baseline packages), benchmark genuine small/H128/
+H1024 own engineering checkpoints before adopting opt-in versioned compression.
+Then bounded opt-in killed-process/pre-publication probes and many-process023/024
+exact tests. Add one documented Rust headless suite entry point. No existing
+`.github/workflows` was found; do not redesign CI.
+
+## Previous persistent-world milestone (GUI gates remain deferred)
 
 Objective: attachment2ac9c96d. Starting HEAD
 `77707def0e13936c192a3bc987b8971acb3898d1`; implementation HEAD
