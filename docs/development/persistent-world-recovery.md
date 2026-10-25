@@ -114,8 +114,29 @@ placeholder; the test now excludes that empty lock from byte snapshots and still
 checks actual inventory bytes. Clippy's constant-chunk suggestion was corrected.
 These failures are retained in task-specific ignored logs.
 
-Independent raw verification, killed-process/publish failure probes, many-process
-023/024 stress, workbench CLI integration and compression decisions remain pending.
+## Independent raw verification
+
+`verification.rs` parses raw CBOR/JSON with its own protocol declarations, SHA256
+binding calculation and primitive checks. It does not call World restoration,
+Session loading or simulation validation. The filesystem wrapper only supplies a
+locked prefix and checks directory/generation/runtime eligibility. The reader
+checks configuration/boundary correspondence, event IDs/order, commitment starts,
+completions and occupancy, execution phase and the aggregate food ledger. It is
+explicitly not a private-cognition validator or a substitute for exact full-state
+and original-history comparisons.
+
+`verify WORLD --generation N` exposes this separate check. It passed54 checkpoints
+in18controlled scenario/mode configurations (six scenarios ×023/Baseline/MealRelief,
+three checkpoint positions; seeds0/42/u64MAX). Rehashed food/configuration/duplicate-
+completion corruptions and byte/prefix damage were rejected independently. Six
+targeted tests including recovery passed, as did all-target Clippy/formatting.
+An initial test used underscores in an external directory ID; the established ID
+validator correctly refused it, and only the test's directory spelling changed.
+The v1 compatibility guard now also pins inherited file digests, direct kernel
+dependencies and exact package sets for the baseline package names.
+
+Killed-process/publish failure probes, many-process023/024 stress, workbench CLI
+integration and compression decisions remain pending.
 The complete persistent-world release suite passed22 tests after the reader change,
 including the original seven short cases, twelve long worlds/228splits, all024
 registered cases, existing process sessions and the four new recovery tests.

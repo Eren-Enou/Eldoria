@@ -38,6 +38,10 @@ fn budget(options: &[&str]) -> Result<Budget, String> {
 fn run() -> Result<(), String> {
     let args = env::args().skip(1).collect::<Vec<_>>();
     match args.iter().map(String::as_str).collect::<Vec<_>>().as_slice() {
+        ["verify", directory, "--generation", generation] => {
+            let selected=generation.parse().map_err(|_|"explicit numeric generation required")?;
+            println!("{}",serde_json::to_string_pretty(&reliability::verify_independent(Path::new(directory),selected)?).map_err(|e|e.to_string())?);
+        }
         ["check", directory] => {
             let report=reliability::inspect(Path::new(directory),&Budget::default())?;
             let checked=report.stable_snapshot && report.latest_committed.is_some() && report.latest_committed==report.latest_valid && report.generations.iter().all(|g|g.valid);

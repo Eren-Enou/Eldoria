@@ -333,6 +333,39 @@ pub fn inspect(path: &Path, budget: &Budget) -> Result<Inspection, String> {
     })
 }
 
+/// Separate raw reader: no World restoration, simulator validation or policy calls.
+pub fn verify_independent(
+    path: &Path,
+    selected: u64,
+) -> Result<crate::verification::Verified, String> {
+    check_path(path)?;
+    let _lock = existing_lock(path)?;
+    let checkpoint = bounded_read(
+        &path.join(format!("checkpoint-{selected:08}.cbor")),
+        COMMIT_LIMIT,
+    )?;
+    let metadata: Commit = decode(&checkpoint)?;
+    if metadata.journal_bytes > JOURNAL_LIMIT {
+        return Err("independent prefix exceeds load limit".into());
+    }
+    let journal_path = path.join("journal.jsonl");
+    check_path(&journal_path)?;
+    let mut prefix = vec![0; metadata.journal_bytes as usize];
+    File::open(journal_path)
+        .map_err(|e| e.to_string())?
+        .read_exact(&mut prefix)
+        .map_err(|e| e.to_string())?;
+    let verified = crate::verification::verify(&checkpoint, &prefix)?;
+    if verified.generation != selected
+        || path.file_name().and_then(|n| n.to_str()) != Some(&verified.world)
+        || !accepts_runtime(&verified.runtime)
+        || !accepts_runtime(&verified.journal_runtime)
+    {
+        return Err("independent directory/generation/runtime identity mismatch".into());
+    }
+    Ok(verified)
+}
+
 #[derive(Debug, Serialize)]
 pub struct Recovery {
     pub schema: &'static str,

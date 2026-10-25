@@ -57,13 +57,21 @@ for file in sorted(files):
 # package identities. New transport source still receives its own current identity.
 import tomllib
 compat=json.loads((HERE/'compatibility-v1.json').read_bytes())
-kernel=(HERE/'src/runtime.rs').read_text(encoding='utf-8').replace('!session::accepts_runtime(&envelope.runtime)', 'envelope.runtime != IDENTITY')
+kernel=(HERE/'src/runtime.rs').read_text(encoding='utf-8')
+assert kernel.count('!session::accepts_runtime(&envelope.runtime)')==1
+kernel=kernel.replace('!session::accepts_runtime(&envelope.runtime)', 'envelope.runtime != IDENTITY')
 compatible=(hashlib.sha256(kernel.encode()).hexdigest()==compat['runtime_source_sha256']
     and subprocess.check_output(['rustc','--version']).decode().strip()==compat['compiler']
     and os.environ['TARGET']==compat['target'])
 for lock, expected in compat['packages'].items():
     actual=tomllib.loads((ROOT/lock).read_text())['package']
     actual=[{k:v for k,v in p.items() if k in ['name','version','source','checksum']} for p in actual]
-    compatible &= all(p in actual for p in expected)
+    names={p['name'] for p in expected}
+    canonical=lambda values:sorted(json.dumps(p,sort_keys=True) for p in values)
+    compatible &= canonical(p for p in actual if p['name'] in names)==canonical(expected)
+for file,expected in compat['inherited_sources'].items():
+    compatible &= hashlib.sha256((ROOT/file).read_bytes().replace(b'\r\n',b'\n')).hexdigest()==expected
+dependencies=tomllib.loads((HERE/'Cargo.toml').read_text())['dependencies']
+compatible &= all(dependencies.get(name)==expected for name,expected in compat['kernel_dependencies'].items())
 legacy=compat['workbench' if os.environ.get('CARGO_FEATURE_WORKBENCH_HOST') else 'standalone']
 (OUT/'compatible_v1.txt').write_text(legacy if compatible else '',encoding='ascii')
