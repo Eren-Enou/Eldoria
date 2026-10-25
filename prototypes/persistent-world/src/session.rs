@@ -6,6 +6,17 @@ use std::{
     path::{Component, Path, PathBuf},
 };
 
+#[path = "reliability.rs"]
+pub mod reliability;
+
+/// Explicit, build-guarded v1 read compatibility; never accepts arbitrary identities.
+pub fn accepts_runtime(identity: &str) -> bool {
+    identity == IDENTITY
+        || include_str!(concat!(env!("OUT_DIR"), "/compatible_v1.txt"))
+            .lines()
+            .any(|old| old == identity)
+}
+
 pub fn check_path(path: &Path) -> Result<(), String> {
     if !path.is_absolute()
         || path.components().any(|c| match c {
@@ -439,96 +450,12 @@ impl Session {
     pub fn open(path: &Path) -> Result<Self, String> {
         check_path(path)?;
         let writer_lock = Self::writer_lock(path)?;
-        let mut checkpoints = fs::read_dir(path)
-            .map_err(|e| e.to_string())?
-            .map(|e| e.map(|e| e.path()).map_err(|e| e.to_string()))
-            .collect::<Result<Vec<_>, _>>()?;
-        checkpoints.retain(|p| {
-            p.file_name()
-                .and_then(|n| n.to_str())
-                .is_some_and(|n| n.starts_with("checkpoint-") && n.ends_with(".cbor"))
-        });
-        checkpoints.sort();
-        let checkpoint = checkpoints
-            .last()
-            .ok_or("no committed checkpoint; pending files are not saves")?;
-        check_path(checkpoint)?;
-        if fs::metadata(checkpoint).map_err(|e| e.to_string())?.len() > 160 * 1024 * 1024 {
-            return Err("commit too large".into());
-        }
-        let commit: Commit = decode(&fs::read(checkpoint).map_err(|e| e.to_string())?)?;
-        if commit.binding_sha256 != commit.binding()? {
-            return Err("checkpoint/journal binding checksum mismatch".into());
-        }
-        let id = path
-            .file_name()
-            .and_then(|s| s.to_str())
-            .ok_or("invalid world ID")?;
-        if commit.schema != "woi-world-commit/v1"
-            || commit.runtime != IDENTITY
-            || commit.world != id
-            || checkpoint.file_name().and_then(|n| n.to_str())
-                != Some(&format!("checkpoint-{:08}.cbor", commit.generation))
-            || commit.state_sha256 != hash(&commit.state)
-        {
-            return Err("commit identity/state mismatch".into());
-        }
-        let journal_path = path.join("journal.jsonl");
-        check_path(&journal_path)?;
-        if commit.journal_bytes > 256 * 1024 * 1024 {
-            return Err("journal exceeds256MiB load limit".into());
-        }
-        if fs::metadata(&journal_path)
-            .map_err(|e| e.to_string())?
-            .len()
-            != commit.journal_bytes
-        {
-            return Err(
-                "journal missing/truncated or contains unsaved tail; preserve evidence".into(),
-            );
-        }
-        let journal_bytes = fs::read(journal_path).map_err(|e| e.to_string())?;
-        if hash(&journal_bytes) != commit.journal_sha256 {
-            return Err("journal/checkpoint mismatch".into());
-        }
-        let world = World::restore(&commit.state)?;
-        if world.tick() != commit.tick {
-            return Err("commit clock mismatch".into());
-        }
-        let records = journal_bytes
-            .split(|b| *b == b'\n')
-            .filter(|line| !line.is_empty())
-            .map(serde_json::from_slice::<serde_json::Value>)
-            .collect::<Result<Vec<_>, _>>()
-            .map_err(|e| e.to_string())?;
-        if records.len() != world.boundaries.len() + 1
-            || records.first().is_none_or(|h| {
-                h["world"] != id
-                    || h["runtime"] != IDENTITY
-                    || h["schema"] != "woi-world-journal/v1"
-            })
-            || (world.boundaries.is_empty()
-                && records
-                    .first()
-                    .is_none_or(|r| r["state_sha256"] != commit.state_sha256))
-        {
-            return Err("journal sequence/state binding mismatch".into());
-        }
-        for (index, record) in records.iter().skip(1).enumerate() {
-            if record["schema"] != "woi-world-step/v1"
-                || record["world"] != id
-                || record["sequence"] != index
-                || record["boundary"]
-                    != serde_json::to_value(&world.boundaries[index]).map_err(|e| e.to_string())?
-            {
-                return Err("journal boundary identity mismatch".into());
-            }
-        }
+        let (commit, journal_bytes, world) = reliability::load(path, None, false)?;
         Ok(Self {
             _writer_lock: writer_lock,
             world,
             path: path.to_owned(),
-            id: id.into(),
+            id: commit.world,
             generation: commit.generation,
             journal_bytes,
             dirty: false,

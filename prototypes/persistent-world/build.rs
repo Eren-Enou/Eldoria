@@ -6,6 +6,8 @@ fn main() {
     println!("cargo:rerun-if-changed=generate_host.py");
     println!("cargo:rerun-if-changed=src");
     println!("cargo:rerun-if-changed=Cargo.lock");
+    println!("cargo:rerun-if-changed=compatibility-v1.json");
+    println!("cargo:rerun-if-changed=../../tools/workbench/Cargo.lock");
     if env::var_os("CARGO_FEATURE_WORKBENCH_HOST").is_some() {
         println!("cargo:rerun-if-changed=../../tools/workbench/Cargo.lock");
     }

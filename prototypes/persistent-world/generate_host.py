@@ -42,7 +42,7 @@ p.write_text(p.read_text(encoding='utf-8')+'\npub use simulation::adaptive::conc
 # Identity binds all inherited source plus successor source/config, normalized like freezes.
 files=set(json.loads((ROOT/'experiments/023/inherited-source-bindings.json').read_bytes()))|set(json.loads((ROOT/'experiments/023/source-freeze.json').read_bytes()))
 files|=set(json.loads((ROOT/'experiments/024/source-freeze.json').read_bytes()))
-files|={(HERE/name).relative_to(ROOT).as_posix() for name in ['Cargo.toml','Cargo.lock','build.rs','generate_host.py']}
+files|={(HERE/name).relative_to(ROOT).as_posix() for name in ['Cargo.toml','Cargo.lock','build.rs','generate_host.py','compatibility-v1.json']}
 files|={p.relative_to(ROOT).as_posix() for p in (HERE/'src').glob('*.rs')}
 digest=hashlib.sha256()
 digest.update(subprocess.check_output(['rustc','--version']).strip())
@@ -53,3 +53,17 @@ if os.environ.get('CARGO_FEATURE_WORKBENCH_HOST'):
 for file in sorted(files):
     digest.update(file.encode()+b'\0'+(ROOT/file).read_bytes().replace(b'\r\n',b'\n'))
 (OUT/'runtime_identity.txt').write_text(digest.hexdigest(),encoding='ascii')
+# Named legacy readers are allowed only with the same kernel and exact inherited
+# package identities. New transport source still receives its own current identity.
+import tomllib
+compat=json.loads((HERE/'compatibility-v1.json').read_bytes())
+kernel=(HERE/'src/runtime.rs').read_text(encoding='utf-8').replace('!session::accepts_runtime(&envelope.runtime)', 'envelope.runtime != IDENTITY')
+compatible=(hashlib.sha256(kernel.encode()).hexdigest()==compat['runtime_source_sha256']
+    and subprocess.check_output(['rustc','--version']).decode().strip()==compat['compiler']
+    and os.environ['TARGET']==compat['target'])
+for lock, expected in compat['packages'].items():
+    actual=tomllib.loads((ROOT/lock).read_text())['package']
+    actual=[{k:v for k,v in p.items() if k in ['name','version','source','checksum']} for p in actual]
+    compatible &= all(p in actual for p in expected)
+legacy=compat['workbench' if os.environ.get('CARGO_FEATURE_WORKBENCH_HOST') else 'standalone']
+(OUT/'compatible_v1.txt').write_text(legacy if compatible else '',encoding='ascii')

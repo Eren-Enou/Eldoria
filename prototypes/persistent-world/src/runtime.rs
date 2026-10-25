@@ -249,7 +249,7 @@ impl World {
         }
         let envelope: Envelope = decode(bytes)?;
         if envelope.schema != SCHEMA
-            || envelope.runtime != IDENTITY
+            || !session::accepts_runtime(&envelope.runtime)
             || envelope.checksum != format!("{:x}", Sha256::digest(&envelope.payload))
         {
             return Err("checkpoint schema/runtime/checksum mismatch".into());

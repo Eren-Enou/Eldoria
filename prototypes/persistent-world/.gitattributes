@@ -1,0 +1,2 @@
+tests/fixtures/**/*.cbor -text
+tests/fixtures/**/journal.jsonl -text
