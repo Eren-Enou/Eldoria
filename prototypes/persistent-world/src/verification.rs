@@ -99,7 +99,8 @@ pub fn verify(checkpoint: &[u8], prefix: &[u8]) -> Result<Verified, String> {
     if checkpoint.len() > 160 * 1024 * 1024 || prefix.len() > 256 * 1024 * 1024 {
         return Err("independent input size limit".into());
     }
-    let commit: Commit = decode(checkpoint)?;
+    let uncompressed = crate::storage_codec::decode(checkpoint)?;
+    let commit: Commit = decode(uncompressed.as_ref())?;
     let binding = serde_json::to_vec(&(
         &commit.schema,
         &commit.world,

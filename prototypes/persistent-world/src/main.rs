@@ -38,6 +38,12 @@ fn budget(options: &[&str]) -> Result<Budget, String> {
 fn run() -> Result<(), String> {
     let args = env::args().skip(1).collect::<Vec<_>>();
     match args.iter().map(String::as_str).collect::<Vec<_>>().as_slice() {
+        ["advance",directory,steps,"--codec","zlib"]=> {
+            let mut session=Session::open(Path::new(directory))?;
+            session.advance(steps.parse().map_err(|_|"invalid step count")?)?;
+            session.save_with_codec(woi_persistent_world::storage_codec::Codec::Zlib)?;
+            println!("{}",serde_json::json!({"schema":"woi-world-status/v1","path":session.path(),"tick":session.world().tick(),"complete":session.world().complete(),"saved":true,"codec":"zlib"}));
+        }
         ["verify", directory, "--generation", generation] => {
             let selected=generation.parse().map_err(|_|"explicit numeric generation required")?;
             println!("{}",serde_json::to_string_pretty(&reliability::verify_independent(Path::new(directory),selected)?).map_err(|e|e.to_string())?);

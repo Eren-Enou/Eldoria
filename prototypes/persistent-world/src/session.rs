@@ -16,6 +16,9 @@ pub fn accepts_runtime(identity: &str) -> bool {
             .lines()
             .any(|old| old == identity)
 }
+fn decode_commit(bytes: &[u8]) -> Result<Commit, String> {
+    decode(crate::storage_codec::decode(bytes)?.as_ref())
+}
 
 pub fn check_path(path: &Path) -> Result<(), String> {
     if !path.is_absolute()
@@ -387,6 +390,9 @@ impl Session {
         Ok(())
     }
     pub fn save(&mut self) -> Result<(), String> {
+        self.save_with_codec(crate::storage_codec::Codec::Raw)
+    }
+    pub fn save_with_codec(&mut self, codec: crate::storage_codec::Codec) -> Result<(), String> {
         check_path(&self.path)?;
         if self.failed {
             return Err("cannot save after journal failure".into());
@@ -425,7 +431,7 @@ impl Session {
             state,
         };
         commit.binding_sha256 = commit.binding()?;
-        let bytes = encode(&commit)?;
+        let bytes = crate::storage_codec::encode(&encode(&commit)?, codec)?;
         let temp = self
             .path
             .join(format!("checkpoint-{generation:08}.pending"));
@@ -437,7 +443,7 @@ impl Session {
         }
         write_new(&temp, &bytes)?;
         let persisted = fs::read(&temp).map_err(|e| e.to_string())?;
-        let verified: Commit = decode(&persisted)?;
+        let verified: Commit = decode_commit(&persisted)?;
         World::restore(&verified.state)?;
         if bytes != persisted {
             return Err("checkpoint readback mismatch".into());

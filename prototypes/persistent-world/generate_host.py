@@ -65,7 +65,10 @@ compatible=(hashlib.sha256(kernel.encode()).hexdigest()==compat['runtime_source_
     and os.environ['TARGET']==compat['target'])
 for lock, expected in compat['packages'].items():
     actual=tomllib.loads((ROOT/lock).read_text())['package']
-    actual=[{k:v for k,v in p.items() if k in ['name','version','source','checksum']} for p in actual]
+    actual=[{k:v for k,v in p.items() if k in ['name','version','source','checksum','dependencies']} for p in actual]
+    for package in actual:
+        if package['name']=='woi-persistent-world':
+            package['dependencies']=[d for d in package.get('dependencies',[]) if d not in compat['allowed_transport_dependencies']]
     names={p['name'] for p in expected}
     canonical=lambda values:sorted(json.dumps(p,sort_keys=True) for p in values)
     compatible &= canonical(p for p in actual if p['name'] in names)==canonical(expected)

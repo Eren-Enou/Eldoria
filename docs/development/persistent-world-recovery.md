@@ -175,7 +175,42 @@ including the original seven short cases, twelve long worlds/228splits, all024
 registered cases, existing process sessions and the four new recovery tests.
 All-target Clippy and formatting pass at this stage. This component gate does not
 substitute for the final protected-foundation/workbench gates after implementation.
-No compression or cleanup is adopted yet. Compression investigation will compare
-small, medium and1024-tick real checkpoints; material size reduction and bounded
-encoding/decoding cost must be demonstrated before enabling an opt-in transport.
-This is an active engineering checkpoint, not a completed reliability claim.
+## Opt-in storage compression
+
+Genuine old engineering checkpoints were independently verified before the Rust
+codec investigation. Each decoded exactly to its original bytes. These local
+wall-clock observations include host/cache effects and exclude future container
+header overhead; they are not simulation evidence or statistical estimates.
+
+|Checkpoint|Raw bytes|Zlib bytes|Encode ms|Decode ms|Independent verification ms|
+|---|---:|---:|---:|---:|---:|
+|Initial paired|8,848|2,191|0.318|0.090|3.81|
+|Paired128 terminal|1,776,083|54,454|9.76|1.80|233.0|
+|Paired1024 terminal|13,720,146|343,331|62.84|10.00|1594.8|
+
+The large reduction justifies an opt-in `woi-world-storage/v2` container using
+zlib level6. It encloses the exact uncompressed v1 commit, with declared raw length
+and SHA256. It preserves the inner complete checkpoint, source/configuration and
+all actor state. Raw v1 remains the default; neither older generations nor journals
+are rewritten. `Session::save_with_codec(Codec::Zlib)` and
+`advance WORLD STEPS --codec zlib` select it explicitly. Raw and compressed files
+can coexist. Decompression is bounded at160MiB, checks exact lengths/hash/trailing
+data, and refuses unsupported codecs, versions and nested containers.
+
+Ten targeted tests pass, including compressed recovery, exact restored state,
+raw-default continuation, original v1 bytes,54independent checkpoints and compressed
+corruption/size/truncation/trailing/nesting controls. All-target Clippy/formatting
+pass. The primitive reader shares this transport decoder, while its v1 metadata,
+binding and physical checks remain separate from simulator validation. No claim
+of independent codec implementation is made. Actual container/save/recovery costs
+and many-process tests remain to be measured; no bounded disk-use claim follows.
+
+Dependency resolution initially attempted unrelated libc/tokio downgrades and
+Windows/getrandom edge changes. These were reverted: existing dependency versions
+and graph edges remain intact, except the new codec dependency on the persistence
+crate. The named v1 guard now compares complete baseline dependency graphs, allowing
+only the declared additional transport dependency. Diagnostics remain in task logs.
+
+No cleanup is implemented: cross-directory lineage dependencies make silent pruning
+inappropriate. All previous valid generations and recovery evidence remain. This
+is an active engineering checkpoint, not a completed reliability claim.

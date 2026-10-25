@@ -3898,6 +3898,7 @@ version = "0.1.0"
 dependencies = [
  "bevy_ecs",
  "ciborium",
+ "flate2",
  "serde",
  "serde_bytes",
  "serde_json",

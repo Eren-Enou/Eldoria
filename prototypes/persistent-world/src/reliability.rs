@@ -116,7 +116,7 @@ pub(super) fn load(
         }
     };
     let checkpoint = path.join(format!("checkpoint-{number:08}.cbor"));
-    let commit: Commit = decode(&bounded_read(&checkpoint, COMMIT_LIMIT)?)?;
+    let commit: Commit = decode_commit(&bounded_read(&checkpoint, COMMIT_LIMIT)?)?;
     if commit.binding_sha256 != commit.binding()? {
         return Err("checkpoint/journal binding checksum mismatch".into());
     }
@@ -354,7 +354,7 @@ pub fn verify_independent(
         &path.join(format!("checkpoint-{selected:08}.cbor")),
         COMMIT_LIMIT,
     )?;
-    let metadata: Commit = decode(&checkpoint)?;
+    let metadata: Commit = decode_commit(&checkpoint)?;
     if metadata.journal_bytes > JOURNAL_LIMIT {
         return Err("independent prefix exceeds load limit".into());
     }
@@ -389,6 +389,7 @@ pub struct Recovery {
     pub prefix_bytes: u64,
     pub prefix_sha256: String,
     pub verified_through_generation: u64,
+    pub verified_through_checkpoint_sha256: String,
     pub verified_through_bytes: u64,
     pub verified_through_sha256: String,
     pub later_committed_bytes: u64,
@@ -460,10 +461,11 @@ pub fn recover(source: &Path, destination: &Path, selected: u64) -> Result<Recov
     }
     let later = &journal[prefix.len()..through_bytes as usize];
     let tail = &journal[through_bytes as usize..];
-    let coverage: Commit = decode(&bounded_read(
+    let coverage_bytes = bounded_read(
         &source.join(format!("checkpoint-{through_generation:08}.cbor")),
         COMMIT_LIMIT,
-    )?)?;
+    )?;
+    let coverage: Commit = decode_commit(&coverage_bytes)?;
     if coverage.journal_bytes != through_bytes
         || coverage.journal_sha256 != hash(&journal[..through_bytes as usize])
     {
@@ -481,6 +483,7 @@ pub fn recover(source: &Path, destination: &Path, selected: u64) -> Result<Recov
         prefix_bytes: prefix.len() as u64,
         prefix_sha256: hash(&prefix),
         verified_through_generation: through_generation,
+        verified_through_checkpoint_sha256: hash(&coverage_bytes),
         verified_through_bytes: through_bytes,
         verified_through_sha256: hash(&journal[..through_bytes as usize]),
         later_committed_bytes: later.len() as u64,
@@ -563,7 +566,7 @@ fn validate_lineage(path: &Path) -> Result<(), String> {
         &path.join(format!("checkpoint-{:08}.cbor", count("generation")?)),
         COMMIT_LIMIT,
     )?;
-    let selected: Commit = decode(&parent_checkpoint)?;
+    let selected: Commit = decode_commit(&parent_checkpoint)?;
     if r["parent_checkpoint_sha256"] != hash(&parent_checkpoint)
         || r["state_sha256"] != selected.state_sha256
         || selected.journal_bytes != prefix_count
