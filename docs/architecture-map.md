@@ -347,3 +347,11 @@ checks6509 old025/4858 prefix response records and preserves the original failed
 producer. No C1 implementation or new outcome yet; formula and100-world matrix
 stay frozen. New runtime publication requires exact old defined responses and
 50 Baseline/56feature-off/43prefix body compatibility. No global adoption.
+
+
+C1 implementation now lives in `prototypes/delayed-work-valuation-c1/`.
+Its source/readers freeze and pre-treatment gate pass:50 original Baseline,
+43 whole v1-prefix and56 feature-off bodies;6509+4858 exact typed responses;
+16 prototype/217 root tests and17 corruption categories. Separate C1 readers
+add independent pending/current-candidate reconstruction. Unknown corrected
+outcomes remain0 until runtime and activation publication. No old source edited.

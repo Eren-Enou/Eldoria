@@ -1,0 +1,18 @@
+{
+  "prototypes/delayed-work-valuation-c1/Cargo.lock": "bc3d47aff578ab02920aa60062e540bb32ffeddddcde803c48da7774d870f1f0",
+  "prototypes/delayed-work-valuation-c1/Cargo.toml": "fd533e9b79b33d775e1ae3d37a71a09450a3f5f204620a7c3f1dee0e08f6a005",
+  "prototypes/delayed-work-valuation-c1/README.md": "e5983a2e2596bb199a828b26dbce922e217a42897fc5eae04159e931f3906202",
+  "prototypes/delayed-work-valuation-c1/build.rs": "7db97fdde60cc3de206750e195abad104f7f8bdf2347b1cbb5f057b9cd6193b5",
+  "prototypes/delayed-work-valuation-c1/generate_host.py": "19a7dbd02e04a7206a573c48e190b8f40079593b2ca77f1f3d8d1817169df6b6",
+  "prototypes/delayed-work-valuation-c1/src/lib.rs": "df228143b2c9a3dba0330243cf587b5970ca623bb6b68c8dc57396a2cfc37a22",
+  "prototypes/delayed-work-valuation-c1/src/main.rs": "933d29b26cbe5d250f027bce4132cf16afbc8722d477de491f069f6e31b7bf80",
+  "prototypes/delayed-work-valuation-c1/src/model.rs": "f63856085d35c61c9c2d56faa6d76f70d56f05f205997c26814e2ef347314800",
+  "prototypes/delayed-work-valuation-c1/tests/continuation.rs": "b0856fe6890dfb92aa2ab025318408a9881e15c359190312d1216b6ba67753a4",
+  "prototypes/delayed-work-valuation-c1/tests/response-fixture.json": "e887867637e8d440b42466bbc8d693f945174b20c48bc5b13bcc1940d15021d5",
+  "examples/validate026_c1.rs": "6c5b3c4d9d9c0df7dddefa81e90145a6bdc6174a9433b52b1c9687ee53233739",
+  "examples/support/analyze026_c1.py": "facfa282fa69f99eb8ef55ebad99858c73cbc66b3a951f23fbd9d6e02ae7a994",
+  "examples/support/corrupt026_c1.py": "18190d576415b99a881142fd8ce5f4673f981a717548f61d76ac65a20d2b098d",
+  "examples/support/identity026_c1.py": "9b7ddcdc57a0d1193fcf884763be9db94dc5a52a474aa0b2b100f42e3770d02f",
+  "examples/support/review026_c1.py": "9ccbec20c25b8587ae735c6c968df056131439df90d268ec4a249a5c711400fc",
+  "examples/support/verify026_c1.py": "f7aac0f7df18670aa7c5e07b58f49ba3e6d86a5177e00cde3897e97e627d0b52"
+}

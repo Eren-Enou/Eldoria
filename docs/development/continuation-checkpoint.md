@@ -58,28 +58,44 @@ actor1+1meal/area−420 but other actors worse.17 meals/hunger unchanged, owners
 trust differ. See exact comparisons; no global policy ranking. First-run2.052s,
 13.11MiB own peak covers aborted prefix only. Raw prefix125747592B/gzip3365147B.
 
-## Continuation audit: prospective C1, no implementation yet
+## C1 continued program — implementation awaiting runtime publication
 
-The active goal requests continued full development. Source inspection proves
-an existing rule can be totalized without changing any previously defined public
-response: contact_learning::respond always clamps Continue0 and reselects; its
-intermediate outgoing-score lookup is discarded. Read-only proof passes6509
-original025 and4858 v1-prefix records; no new trajectory or scores were tuned.
-See experiment-026-response-equivalence.json and
-../../experiments/026/continuation-c1/amendment.md. The original source/16-file v1
-runtime must remain immutable. C1 will be a separate source/schema applying the
-same0 rule to the missing-member domain, equally in both modes. This is a declared
-engineering domain extension, not a claim v1 passed or a retrospective policy fix.
+Failed-v1 evidence, stop-time reports, read-only equivalence proof and prospective
+C1 amendment were published at6f44686c1d3b7a85656a1ce9244c9a37bc6799ab, matched to
+origin/main before implementation. Current Goal explicitly continues full026.
+C1 is a separate opt-in source/schema, not an edit to the16 frozen-v1 files.
+Mathematical defined-domain equivalence and6509 old025/4858 prefix response records
+support constructing the already-established Continue0 without its discarded lookup.
+The original failed producer and data remain immutable; no formula/matrix tuning.
 
-Stop-time reports were copied into failure/v1-*.md and bound in the manifest;
-all prior trial/log/findings bytes remain unchanged. Current C1 phase is DESIGN
-ONLY, source-bound and awaiting publication before implementation. Current
-milestone checks must validate failure evidence, response equivalence and design
-identities; no full-study pass is asserted. Publish this coherent failure/design
-milestone only after those applicable gates pass. Then implement counted seams,
-prove50 original Baseline/56feature-off/43prefix compatibility, publish C1 runtime
-and gate before any unknown corrected trajectory, run the full unchanged100 and
-all independent checks. If substantive response semantics change, stop.
+New uncommitted workspace prototypes/delayed-work-valuation-c1/, generated one
+response-call/one dead-lookup seam; direct handler copies the old public response
+function. Original ordinary ranking remains frozen. New readers identity026_c1,
+review026_c1/analyze026_c1/corrupt026_c1/verify026_c1 and root validate026_c1 are
+separate. Response reader additionally reconstructs current outgoing candidates
+and owned pending tokens from earlier actual proposals/admissions. No new actor
+state. C1 outer source identity plus post-run extension references avoid new input.
+
+Pre-freeze checks pass50 original Baseline bytes,43 whole v1-prefix bytes (including
+sources15/17/19 costs),56feature-off,6509+4858 Rust response equalities, independent
+50+43 reads,17 corruption categories and initial all-target Clippy. C1 final16-file source/readers freeze is UNPUBLISHED and all13 final-source checks
+pass:16 prototype tests,50 original Baseline/43prefix bytes,56feature-off,
+6509+4858 typed response equalities, independent50+43 and17 corruptions. Root217
+and both fmt/Clippy scopes pass; explicit private/generated formatting covered.
+Current source7039076f147e173359e4c3099e35de9ccd4e9a590fd54ad2960c2b64f76f21c5.
+Unknown corrected outcomes0. The cache-free full validator explicitly builds
+original-v1 before its expected failure, then builds/replays C1. Unpublished matrix
+refusal/no default execution pass. See runtime-baseline-validation.json and
+experiment-026-c1-pre-treatment-checks.json. Original v1 source/data untouched.
+
+Next: publish this passing runtime/readers/compatibility milestone, verify remote,
+then separately publish activation gate.
+Only afterward execute all100 original registered rows anew into C1 namespace.
+Run full C1 readers/comparisons/17 corruptions/exact100 replay plus original-v1
+failure reproduction and unchanged001–025 custody. Preserve all adverse/null/
+reconvergent outcomes and existing failed candidate. Analyze actual new missing-
+membership refs, costs, strongest favorable/adverse causal chains, held-out data.
+Complete final A–I report and push coherent validated result; no027/adoption/GUI.
 
 ## Previous completed engineering milestone
 

@@ -1,0 +1,23 @@
+[package]
+name = "world-of-individuals"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+
+[dependencies]
+bevy_ecs = { version = "=0.19.1", default-features = false, features = ["std"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[workspace]
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "delayed-work-valuation-c1"
+path = "src/main.rs"
+
+[[test]]
+name = "frozen-local"
+path = "../delayed-work-valuation/tests/local.rs"
