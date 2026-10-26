@@ -31,10 +31,11 @@ is `75f23c5b566d05fd9684bbc95724a2671d729127d5982b9bebbb288b60673c06`. Treatment
 publication/committed activation gate. No registered
 ProjectedNeed world has run. [Costs/checks](experiment-026-pre-treatment-checks.json).
 
-Next: publish this runtime/readers freeze and passing disabled gate; verify remote.
-Then add/publish runtime-gate.json referencing that runtime commit, verify remote,
-and only then run the100 frozen rows. Independent review026/analyze026/corrupt026
-and cache-free validate026 are frozen before outcomes. Original001–025 and the
+Runtime/readers were published at `42d3ad359b7a002926ed3f57e65e99e96ad8545a`, verified against origin/main.
+The separately committed activation gate names that revision. Next: verify this
+gate commit on origin/main, then run100 frozen rows. Frozen review026/analyze026/
+corrupt026 and validate026 must remain unchanged; no treatment run has occurred.
+Original001–025 and the
 persistent025 host remain unchanged. Keep negative/null/harmful/reconvergent cases,
 replay all100 exactly, measure wall time/peak/storage separately, explain actual
 causal slices and publish final A–I findings without tuning. No GUI/next experiment.

@@ -1,0 +1,18 @@
+{
+  "schema": "experiment-026-runtime-gate/v1",
+  "status": "PASS before registered treatment",
+  "registration_revision": "759385d3e6a4dc3e40e816ef0585e335c2640d56",
+  "foundation_revision": "0a33e385942e9bfea8205621c83d60e9271d85fb",
+  "runtime_publication_revision": "42d3ad359b7a002926ed3f57e65e99e96ad8545a",
+  "runtime_remote_verified": "42d3ad359b7a002926ed3f57e65e99e96ad8545a",
+  "source_freeze_sha256": "75f23c5b566d05fd9684bbc95724a2671d729127d5982b9bebbb288b60673c06",
+  "baseline_worlds_exact": 50,
+  "feature_off_bodies_exact": 56,
+  "independent_baseline_worlds": 50,
+  "corruptions_rejected": 14,
+  "prototype_tests": 13,
+  "root_tests": 217,
+  "disabled_gate_sha256": "24988a3141118984853b09ab473f15fb8fe22a5217957191a9a17e25905d1b51",
+  "registered_treatment_worlds_run_before_publication": 0,
+  "activation": "This separate gate must be committed and published before matrix execution. Source/readers already published; no further source or policy changes allowed."
+}
