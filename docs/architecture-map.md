@@ -1,6 +1,6 @@
 # Architecture map
 
-Navigation summary, protected through024. Source and mode-specific
+Navigation summary, protected through025. Source and mode-specific
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
@@ -45,20 +45,23 @@ external human observations and egui desktop pages. It invokes unchanged023/024
 and corrected025 observer2 runners into unique ignored exploratory directories.
 The existing Python/JavaScript Explorer is read-only; a narrow workbench-owned
 bridge supplies exactly one hash-verified source and automatic opening.
-025 remains unadopted/unprotected research; its original failed host and evidence
-remain intact. This engineering interface adds no scientific protection, policy,
+025 remains unadopted research. Its qualified protection is separate from this
+interface; the original failed host and evidence remain intact. This engineering interface adds no scientific protection, policy,
 cognitive capacity, canon or026. See the acceptance document for current checks
 and prior desktop/browser limitations; the portable report records current delivery.
 
 ## Current gated program
 
-The [independent024review](experiment-024-review.md) accepts with qualification at873b524.
-[Review checks](development/finite-material-review-validation.json) preserve all originals.
-Qualified [001–024protection](integrity-audit-001-024.md) passes:408original artifacts,
-386inherited+22original024. Prospective025 design is separately gated; no025
-runtime or default adoption follows from review/protection. See the [checkpoint](development/continuation-checkpoint.md).
+[Qualified001–025 protection](integrity-audit-001-025.md) inherits001–024 unchanged:
+455 original artifacts/472 raw originals and214 candidate custody bindings.
+[Fresh review](experiment-025-foundation-review.md) preserves publication and
+attribution qualifications, failed19, stale failures, harm and nulls. Run the full
+`validate025_foundation`; its first stage is the unmodified historical
+`validate_contract`001–024. Source locks forbid editing that historical entry.
+No mechanism is adopted.026 design is prospective, pending separate publication;
+see the [checkpoint](development/continuation-checkpoint.md).
 
-## Experiment025: executed research, unprotected
+## Experiment025: protected qualified research, unadopted
 
 [Registration](../experiments/025/specification.md) was publishedb2487dc before
 implementation. [Results](../experiments/025/results.md) and
@@ -78,8 +81,9 @@ Snapshot remain unchanged. [Verification](../experiments/025/verification.md) re
 [community-readiness assessment](development/post-025-community-readiness.md) cover the complete request, including its subsequently supplied continuation.
 See the [final report](development/finite-material-final-report.md) and
 [30-criterion audit](development/finite-material-delivery-audit.md); missing
-voluntary-neglect/co-eligible-consumption coverage is explicit. Foundation ends024;
-no automatic025protection, global adoption,026or canon change.
+voluntary-neglect coverage is explicit; Prepare/Consume co-eligibility is prohibited
+by the preserved contract. Those delivery-era boundaries preceded the separate
+025 protection; no global adoption or canon change follows.
 
 [Post-delivery acceptance challenge](experiment-025-acceptance.md) independently
 confirms72of77primary outputs have guaranteed later consumption or transfer under
@@ -92,15 +96,15 @@ outputs remain; virtual observer tags do not identify particular recipient meals
 is available through `validate025_acceptance`. Its214post-evaluation custody
 bindings cover47original025files, frozen readers/hosts and accepted review anchors.
 It runs existing reconstruction/replay plus completion/food-fate/custody controls,
-checks membership/hashes before and after, and explicitly leaves normal protection
-at001–024. It is not an activated025foundation contract.
+checks membership/hashes before and after. This historical candidate stays
+unmodified; the new001–025 contract activates protection through the full superset.
 [Executed verification](development/experiment-025-integrity-candidate-validation.json)
 records the full passing standalone run,217root tests, formatting/Clippy and Git
 byte-custody checks.
 
 ## Start here
 
-- Rules: [AGENTS.md](../AGENTS.md); protected [001–024 contract](experiment-contract-001-024.md),
+- Rules: [AGENTS.md](../AGENTS.md); protected [001–025 contract](experiment-contract-001-025.md),
   which links historical contracts. Read the affected mode's clauses and coverage.
 - Findings: [experiment index](simulation/EXPERIMENT_HISTORY.md).
 - Working procedure: [context workflow](context-workflow.md).

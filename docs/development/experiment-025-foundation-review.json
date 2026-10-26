@@ -1,0 +1,593 @@
+{
+  "schema": "woi-025-foundation-review/v1",
+  "worlds": [
+    {
+      "index": 0,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "52d306da0334dc8ecc086da85f320af5dba03eeac04cbb1423766030df847c05"
+    },
+    {
+      "index": 1,
+      "eligible": 8,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "b20719b37f892f51df145f99c1dc99b48a2028bbaf4325a70af42e3a7ecbd77c"
+    },
+    {
+      "index": 2,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "fce8ac9cf8f95f0fd9ab9f6522a62496431199547c53b06249a6dbf0931803af"
+    },
+    {
+      "index": 3,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "2fbed4817ec68083d59706736c142137bfa97017cead8d90ee12c090d7bd3763"
+    },
+    {
+      "index": 4,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "4a4c1bd122a717850d6109657e44b09c7b80581e6ec3318c765bb7093cf1eed0"
+    },
+    {
+      "index": 5,
+      "eligible": 2,
+      "outcomes": {
+        "Extracted": 1,
+        "Insufficient": 1,
+        "Prepared": 1,
+        "Failed": 1
+      },
+      "history_sha256": "fa86ff1c5c84bb069015ef1879ebd40219fa311362ca66f8646012abfb9c8546"
+    },
+    {
+      "index": 6,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "8f153526904e13dd54ddd190cfd8c704550df76dae6d2bf336739bd9140e85ab"
+    },
+    {
+      "index": 7,
+      "eligible": 2,
+      "outcomes": {
+        "Extracted": 1,
+        "Insufficient": 1,
+        "Prepared": 1,
+        "Failed": 1
+      },
+      "history_sha256": "f5e28060339f97b8f4c45857bcfe9692a499575d4322d326055ba277e3668056"
+    },
+    {
+      "index": 8,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "ab923d4bb945ec93e577fe3ee8f0793e2c18eb8b0ef06277d94c287558bfd79b"
+    },
+    {
+      "index": 9,
+      "eligible": 2,
+      "outcomes": {
+        "Extracted": 1,
+        "Insufficient": 1,
+        "Prepared": 1,
+        "Failed": 1
+      },
+      "history_sha256": "25da27f6c1375d8c1ef7ad39ccbf558f8e4ad28f924427cde1161349ca70e5a4"
+    },
+    {
+      "index": 10,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "e53ad139a1ecf97cd01c9323cf5edfa842131eea4da4d66df310049c2df955fe"
+    },
+    {
+      "index": 11,
+      "eligible": 2,
+      "outcomes": {
+        "Extracted": 1,
+        "Insufficient": 1,
+        "Prepared": 1,
+        "Failed": 1
+      },
+      "history_sha256": "d3f602fe2d0afb22cc551c58c429d60506c010c5bdee0416363ff59947b2de9a"
+    },
+    {
+      "index": 12,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "daf00463ce2565fe23098ba353ee6ef2299f6235b224f65105d6e2587e723412"
+    },
+    {
+      "index": 13,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "b24982f71d28b6c189ef84b8b083ff20a07d1391fb697d1026da75487edc124b"
+    },
+    {
+      "index": 14,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "b513c1bbdc8ddf9516c8afcb2a192c74163a73f678dd1c11e843b51ec9e84a3f"
+    },
+    {
+      "index": 15,
+      "eligible": 7,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 0,
+        "Prepared": 4,
+        "Failed": 0
+      },
+      "history_sha256": "f14b7df62a8f180a6ffe34b10aaaf055dfb4c471ad51242106dea3ca8f9d9b0b"
+    },
+    {
+      "index": 16,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "77677b1ed6d2c0462331c87b029e7c2e303024560a3610b16e84f7b3364f80f3"
+    },
+    {
+      "index": 17,
+      "eligible": 7,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 0,
+        "Prepared": 4,
+        "Failed": 0
+      },
+      "history_sha256": "bdb59b10001ce2d07ef93aefd144baf20ef891b8bfeb50496e21c23935f188a9"
+    },
+    {
+      "index": 18,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "6444cd186f076fb09acf3edf089c3935e88b99c876be2cdb86688fcad3df6082"
+    },
+    {
+      "index": 19,
+      "eligible": 16,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 0,
+        "Prepared": 4,
+        "Failed": 0
+      },
+      "history_sha256": "ffcba74497e5048cabe9f86357e51d35e84e6e93abfe102cdb4d4d1b8e9ad7e2"
+    },
+    {
+      "index": 20,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "8e00ba543d6fcff0b28d4719141e4d0103f4b6708cb622ab2d09a441113e09e7"
+    },
+    {
+      "index": 21,
+      "eligible": 14,
+      "outcomes": {
+        "Extracted": 2,
+        "Insufficient": 3,
+        "Prepared": 2,
+        "Failed": 3
+      },
+      "history_sha256": "943f69c76cdaaec4907dd1815e66d4c708eabf7638cf9922b64833534df80d44"
+    },
+    {
+      "index": 22,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "e809b2c4e793cd31ac83b30dd7af18a8abe8fd8e943b878080a35cb0e61324ed"
+    },
+    {
+      "index": 23,
+      "eligible": 25,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "b2004751edd4374514715aa861f4d280b023a48a7b6fce9d9ffce6512fe60df2"
+    },
+    {
+      "index": 24,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "63da02620ab5e842fdcdf68eee737ef0e607901bb82cc16f8c1a8ee08605bbff"
+    },
+    {
+      "index": 25,
+      "eligible": 8,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "5c242d06d0b5bff9c68de0f2b13b0b4fb033859d8bc2b8aeb9d09665459b131c"
+    },
+    {
+      "index": 26,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "22fe5dfda92fbd113d0cc5f92aa7b6abf588a6057ea3a6f5eab789afe6b02ac7"
+    },
+    {
+      "index": 27,
+      "eligible": 4,
+      "outcomes": {
+        "Extracted": 1,
+        "Insufficient": 3,
+        "Prepared": 1,
+        "Failed": 3
+      },
+      "history_sha256": "e42faff328e934eb941e76da2d837eb998df4a0de5196c55441334733b237ebe"
+    },
+    {
+      "index": 28,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "ae4d71274fca213bfb389d5f0c39fa44ebb83ff0e13c7c9704194d1209ad22a1"
+    },
+    {
+      "index": 29,
+      "eligible": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 0,
+        "Prepared": 4,
+        "Failed": 0
+      },
+      "history_sha256": "b0a4328c882b58239859d626603cdd02ed138f25d018fae99d00ff76bbd8ca8a"
+    },
+    {
+      "index": 30,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "17db9d1818d7cae15c34a6f7536ad9c3411c3d5e9da5a9ff143a1f117ea4fe03"
+    },
+    {
+      "index": 31,
+      "eligible": 8,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "3a196f001cd971bd9e82099bc245c7e73aed7f6ef2ba9d70aecdd78c3b9e9300"
+    },
+    {
+      "index": 32,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "8cd261192ac17125d15437ad7c34251af1512589ab8443ef2972d60fade3a6c7"
+    },
+    {
+      "index": 33,
+      "eligible": 8,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "18f1c3d7f50e4d764f9f4a1123decbea417248686bf5dd72928e03d5851db9eb"
+    },
+    {
+      "index": 34,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "91a541158c50031c5e1aca834e138f7068d0f86c4248e041b532578f1580092a"
+    },
+    {
+      "index": 35,
+      "eligible": 8,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "fe05d381045d760729222b2d2823da5c09ca84fde42dca70928e70c7639f219e"
+    },
+    {
+      "index": 36,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "66e318a4c4cf83155aa8f4f2a980fa14f9fccf9898ae1a85702a642583a0c566"
+    },
+    {
+      "index": 37,
+      "eligible": 8,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "bd9f8281ea47209a4b46dccc8bfa717ada8ec56ad0962c50b31ddba57f5dd0c9"
+    },
+    {
+      "index": 38,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "e15e2d8efedc14b0ce5e5f6549f1cfe1314cc02744cb48e43aee6cebfdc4f744"
+    },
+    {
+      "index": 39,
+      "eligible": 18,
+      "outcomes": {
+        "Extracted": 8,
+        "Insufficient": 0,
+        "Prepared": 8,
+        "Failed": 0
+      },
+      "history_sha256": "8d7e731373aee3287967c55e7caf166f64390a3845df8550cede371f97114c91"
+    },
+    {
+      "index": 40,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "cff1dad245edee0d47daf91b717e11a3512c0ae5134d7dd658bcabde714d1a5f"
+    },
+    {
+      "index": 41,
+      "eligible": 28,
+      "outcomes": {
+        "Extracted": 6,
+        "Insufficient": 0,
+        "Prepared": 6,
+        "Failed": 0
+      },
+      "history_sha256": "c2143357a129ed17a9779bb1c5cf278508c6163e6fd0ac8efd3b1c36cec805f8"
+    },
+    {
+      "index": 42,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "73a8be9070a7e14dc23875ac270062515b4a541b8bf400defa79f1972b9fbd58"
+    },
+    {
+      "index": 43,
+      "eligible": 21,
+      "outcomes": {
+        "Extracted": 8,
+        "Insufficient": 2,
+        "Prepared": 8,
+        "Failed": 2
+      },
+      "history_sha256": "40798e234a163c3f01a723c9eee907eb8f02c1d69ae9f3396feb33464638b793"
+    },
+    {
+      "index": 44,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "ddbd138485b7f2f2aa4816015997486fbf28626a953708d6441eb7b3d20e9000"
+    },
+    {
+      "index": 45,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "e134681751ddd4fcdd60f4eaacbcf88e196fa759eaeba9c98ebe6940b158caab"
+    },
+    {
+      "index": 46,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "2533edb105862355f7838020c99097df57cd1d40da415f3be1099619dabf1cd3"
+    },
+    {
+      "index": 47,
+      "eligible": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 0,
+        "Prepared": 4,
+        "Failed": 0
+      },
+      "history_sha256": "654ef354dbb256c3f2af011c456cdc1954ca8adc0013ffa5b3997a320c826e26"
+    },
+    {
+      "index": 48,
+      "eligible": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "040e132ed79932c35f2a43859bfe434c4372775aa0baa1050ed32c9978309e40"
+    },
+    {
+      "index": 49,
+      "eligible": 8,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "efc9f65cce7a501fc42a872912535c46d822f44734cdb2b22396d3cc60ac7f3c"
+    }
+  ],
+  "primary": {
+    "Extracted": 77,
+    "Insufficient": 40,
+    "Prepared": 77,
+    "Failed": 40
+  },
+  "all": {
+    "Extracted": 81,
+    "Insufficient": 44,
+    "Prepared": 81,
+    "Failed": 44
+  },
+  "controls": [
+    "hunger",
+    "extra_score",
+    "waste",
+    "deadline"
+  ],
+  "publication_ancestry": [
+    [
+      "68b4c70d3a1d2c3d6df9269d25c9b8efa9a7443b",
+      "b2487dc873cc7ad4190356ab990e6cebf61510b3"
+    ],
+    [
+      "b2487dc873cc7ad4190356ab990e6cebf61510b3",
+      "f7b207eb90b3b26b9ec9e7c4d833b453eeb7d62d"
+    ],
+    [
+      "f7b207eb90b3b26b9ec9e7c4d833b453eeb7d62d",
+      "a7550196310570418cceb14d07e2388be519d1bd"
+    ],
+    [
+      "a7550196310570418cceb14d07e2388be519d1bd",
+      "a3a715090987681582e67a8e2ff613ce9cfb3e5e"
+    ]
+  ],
+  "chronology_qualification": "Behavioral registration published before runtime; corrected source freeze, gate and outcomes co-published atf7b207e. Pre-corrected-run freeze is recorded by the runtime gate, not independently established by a separate publication timestamp.",
+  "decision": "ACCEPT WITH QUALIFICATION; scientific protection only; no adoption"
+}

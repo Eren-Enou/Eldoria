@@ -20,7 +20,7 @@ observer2 runners for exploratory worlds. It is not Experiment026, scientific
 adoption or a protection extension.025's original failed host/evidence remain
 historical; see [V2 acceptance](../development/rust-workbench-v2.md).
 
-Protected through024; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
+Protected through025; scientific protection does not adopt research mechanisms. This is a navigation summary, not a replacement for full
 reports or protected contracts. Historical next-experiment recommendations reflect
 their publication date. Update the affected row when an experiment concludes.
 
@@ -58,7 +58,9 @@ evaluators are for explicitly authorized experiment evidence generation, not aud
 Full report links contain causal traces, seed controls, counters, limitations and
 reproduction details; consult those sections before making stronger claims.
 
-Latest protection: [001–024 integrity audit](../integrity-audit-001-024.md).
+Latest protection: [001–025 integrity audit](../integrity-audit-001-025.md).
+Run `cargo run --release --locked -j 1 --example validate025_foundation` for the
+full endpoint; historical `validate_contract` remains source-bound001–024.
 [Research handoff](../research-handoff-001-013.md) recommends a narrow scarce-activity
 question; it does not start014.
 
@@ -336,7 +338,7 @@ passes with408original artifacts (386inherited+22original024). MealRelief remain
 unadopted. New025research requires
 published001–024protection and its own prospective gate; no026/canon change.
 
-## Experiment025 — voluntary finite material preparation (executed, unprotected)
+## Experiment025 — voluntary finite material preparation (protected, unadopted)
 
 [Specification](../../experiments/025/specification.md) publishedb2487dc before
 implementation; [results](../../experiments/025/results.md) and
@@ -379,3 +381,14 @@ replay and post-delivery attribution/completion controls under214custody binding
 All47original025files and candidate source/review anchors are checked before and
 after execution. This is an unactivated review package; normal foundation remains
 001–024and no policy/behavior/default or026changes follow.
+
+
+## Qualified025 foundation consolidation
+
+[Fresh independent review](../experiment-025-foundation-review.md) accepts with
+qualification for protection only. [001–025 contract](../experiment-contract-001-025.md)
+and [audit](../integrity-audit-001-025.md) preserve455 portable/472 raw originals,
+214 custody bindings, all50 worlds, failed19 and original publication limitations.
+The separate full gate runs unchanged001–024 first; old delivery/candidate status
+statements above remain historical. No default preparation/MealRelief adoption.
+026 prospective design is a separate gate, not a result of this integrity pass.

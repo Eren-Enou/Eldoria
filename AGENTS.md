@@ -33,22 +33,30 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
-Current program: attachmentf602f11c independently reviewed024at873b524 and
-conditionally protected001–024. See docs/experiment-024-review.md (published
-4dfc71c), docs/experiment-contract-001-024.md and the actual integrity audit.
-The inventory contains408artifacts:386inherited unchanged+22original024files;
-425raw originals remain guarded. Protect exact MealRelief law/ties/eligibility,
-independent consent, old physics/cognition, harm0/1, benefit6/7, exhaustion,
-nulls/reconvergence and work-start versus completed-effect timing. No adoption.
+Current program: attachment4adb272a independently reviews and conditionally
+protects qualified025, then prospectively studies026 delayed-work valuation.
+See docs/experiment-025-foundation-review.md, docs/experiment-contract-001-025.md
+and docs/integrity-audit-001-025.md. The455-entry inventory inherits408 unchanged
+001–024 artifacts plus47 original025 files;472 raw originals and214 candidate
+custody bindings remain guarded. Preserve failed19, observer2 correction scope,
+77 primary successes/40 failures,72 eventual consumed-or-transferred outputs,
+five late unused outputs, fungible attribution, costs, nulls and reconvergence.
+Protection is not default adoption. Publication chronology remains qualified.
 
-025is separately authorized only after published GateB and its own published
-prospective physical/locality/time design gate. Use a versioned successor, retain
-old source freezes and prove feature-off parity before treatment. Raw access-closed
-controls and feature-off compatibility are distinct; preserve one logical source
-slot, true conservation, full failure effort and independent later use. No026,
-automatic025protection, preparation default, general planner or canon change.
-Older no025/024-protection statements below describe historical program boundaries;
-they do not override this newly authorized gated program.
+The active full command is
+`cargo run --release --locked -j 1 --example validate025_foundation`.
+It runs unmodified historical `validate_contract`001–024 before unchanged025
+acceptance and new identity/reconstruction checks. Never edit source-bound
+historical gates to include the new endpoint; retain both commands and their
+distinct scopes. Never regenerate frozen evidence in place.
+
+026 requires separately published exact policy/matrix/source registration, then
+source-preserving opt-in Rust implementation, all50 original disabled histories,
+and published runtime/readers before treatment. Only Prepare valuation may change;
+retain eligibility, physics, cognition, consent, capacities, timing and old ties.
+No MealRelief interaction, GUI/manual testing, persistent026 integration, default
+adoption, canon, renewal, population or next experiment. Older statements below
+record historical program boundaries and do not override this authorization.
 
 The activity-valuation program (attachment 963863ea) independently reviewed and
 conditionally protected 023, then preregistered and evaluated 024. Qualified

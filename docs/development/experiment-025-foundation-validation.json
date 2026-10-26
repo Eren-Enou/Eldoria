@@ -1,0 +1,92 @@
+{
+  "schema": "woi-025-foundation-validation/v1",
+  "starting_revision": "a3a715090987681582e67a8e2ff613ce9cfb3e5e",
+  "status": "PASS; qualified scientific protection only; no behavior adoption",
+  "checks": [
+    {
+      "check": "fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.9319954998791218
+    },
+    {
+      "check": "clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "-j",
+        "1",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit": 0,
+      "seconds": 3.4245430000592023
+    },
+    {
+      "check": "tests",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-j",
+        "1"
+      ],
+      "exit": 0,
+      "seconds": 122.29724200000055
+    },
+    {
+      "check": "foundation001025",
+      "command": [
+        "cargo",
+        "run",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--example",
+        "validate025_foundation"
+      ],
+      "exit": 0,
+      "seconds": 1692.7034334999043
+    }
+  ],
+  "root_tests": 217,
+  "portable_artifacts": 455,
+  "raw_originals": 472,
+  "candidate_bindings": 214,
+  "new_world_reconstructions": 50,
+  "scalar_material_corruptions_rejected": 4,
+  "layout_corruptions_rejected": [
+    "changed_inherited",
+    "missing025",
+    "changed025"
+  ],
+  "source_sha256": {
+    "examples/support/contract025.rs": "88ffce674d6bd00f686e873dd828844ad489f9bcea4922094897f699adc7bddd",
+    "examples/validate025_foundation.rs": "959babc588a2d48f97b8c2928fbba870ae635dda16ecc98057fbc46785f4aa03",
+    "examples/support/foundation025.py": "6dc3e9d7d0c50261d75cd348ca22351a5f50e4f3e6c938895dda45d736f35631",
+    "examples/support/review025_foundation.py": "b289597713a17b8e3364c439af47f2580eb2739555ee027f0c7b07606db884cb",
+    "docs/experiment-contract-001-025.md": "4e1b04a41014e24b23ec342e1f4de97711b4339508370c5a6e5918b144dba8d5",
+    "docs/foundation-001-025-sha256.json": "83443c5e82a5ff870494c674cb73458846c3671c27dc88e2a674a24a7ed994b9",
+    "docs/development/experiment-025-original-working-sha256.json": "04d0d0e3daa4843feb2ab0491c55d162070ed4b34dc692b9fbca8fd4a69f451f",
+    "docs/experiment-025-foundation-review.md": "93331a202db82c12206f4a469d71029ef83042faef31cf4ff6e50a84bb255a2e",
+    "docs/development/experiment-025-foundation-review.json": "2f9cf5f284a3891fb7fd9dfab78b90320ce302507ba80018853aeb4579f31983"
+  },
+  "log_sha256": {
+    "target\\026-stage-a-025-acceptance.log": "8569e6623a6f5b11c108d2575e7a15b4b1bfb58510827abdbba1d5a935532a36",
+    "target\\026-stage-a-clippy.log": "fb5b14fc24f8ab3ad93ec09f61fc7990008973b6e83793171e1b3c8f43087ca9",
+    "target\\026-stage-a-fmt.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "target\\026-stage-a-foundation-identity.log": "152289253240a757aefd0030b5464c08fafceef0e79af10e30803a73f3b9907a",
+    "target\\026-stage-a-foundation001025.log": "4a88b0e355be626a256348d2f4d30c4f65a810d33ce5f537025271583f5c4d8b",
+    "target\\026-stage-a-fresh-review.log": "b261fefecab152ffc287d943d6953340f97898e1488594f885a7d9f55ffb986e",
+    "target\\026-stage-a-tests.log": "a3ae0230c42ed0baf6dc2db11a4a57d90da1d2e0f2dd82fec67448f80213ec30"
+  },
+  "publication": "Resolve the commit adding this receipt; verify ancestry before026 implementation. No earlier public protection identity is claimed."
+}

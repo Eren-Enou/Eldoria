@@ -1,3 +1,34 @@
+# Experiment026 — foundation and prospective-design checkpoint
+
+Objective: attachment4adb272a. Starting public revision
+`a3a715090987681582e67a8e2ff613ce9cfb3e5e`, initially clean. Headless only.
+No GUI/manual acceptance, canon, renewal, population, default adoption or next
+experiment. No subagents. Original001–025 sources and evidence remain untouched.
+
+Stage A fresh025 review passes50 independent scalar/material reconstructions,
+four corruptions, chronology and unchanged214 candidate bindings. Qualified
+protection passes the complete gate and awaits this milestone publication; see
+[review](../experiment-025-foundation-review.md) and
+[audit](../integrity-audit-001-025.md). New explicit full command is
+`cargo run --release --locked -j 1 --example validate025_foundation`:
+source-bound historical `validate_contract` stays byte-identical and runs first,
+then original025 acceptance and additive455-artifact/472-raw foundation checks.
+Root fmt, locked Clippy,217 tests and the full gate pass, with structured
+exits in ignored `target/026-stage-a-checks.json`; detailed logs share that prefix.
+All original001–025 evidence remains unchanged; see the durable foundation receipt.
+
+Prospective026 design only: [specification](../../experiments/026/specification.md),
+exact100-row matrix, one ProjectedNeed policy and source bindings. Each original
+025 config is paired verbatim with Baseline and ProjectedNeed. Eligible Prepare
+changes H to min(100,H+5*floor(D/4)); old effort, eligibility, ties and physics stay.
+No026 implementation, treatment, outcome inspection, or runtime freeze yet.
+Next: publish qualified Stage A protection; separately publish
+complete design before implementation. Then prove disabled50-world exact parity,
+publish runtime/readers before treatment, run frozen100 worlds, independently
+validate/replay/corrupt, analyze all nulls/harms and publish final A–I report.
+
+## Previous completed engineering milestone
+
 # Persistent material world — final headless checkpoint
 
 Current objective: attachment653a5839, persistent corrected025 material work.
