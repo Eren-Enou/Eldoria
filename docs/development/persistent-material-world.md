@@ -203,6 +203,16 @@ The most justified next engineering step is separately authorized workbench
 inspection/acceptance of these verified mid-process worlds, preserving the same
 local-knowledge boundary. No ecological, population or cognition expansion follows.
 
+## Publication and handoff
+
+Implementation, deterministic evidence and separate measurements are published as
+`c9b650ad7efd02257f2535796517f2b52e8dba71` on `origin main`; remote identity was
+checked after push. The [continuation checkpoint](continuation-checkpoint.md)
+records the source/runtime boundary and exact next headless commands. A later
+documentation-only handoff adds this publication record; use `git rev-parse HEAD`
+and `git ls-remote origin refs/heads/main` to verify its current public SHA.
+No binary release or GUI acceptance is implied by source publication.
+
 ## Explicit headless interface
 
 Build in the repository root (a normal developer Cargo toolchain is required):

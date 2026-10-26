@@ -2,6 +2,10 @@
 
 Current objective: attachment653a5839, persistent corrected025 material work.
 Starting revision `804811474794770ec4d98287877695671a9c366d`, initially clean.
+Validated implementation commit:
+`c9b650ad7efd02257f2535796517f2b52e8dba71`, pushed to `origin main` and verified
+against `git ls-remote`. This later handoff is documentation only; resolve
+`git rev-parse HEAD` for its own publication SHA and compare remote main.
 See [contract, acceptance and commands](persistent-material-world.md) and
 [deterministic receipt](persistent-material-validation.json). New isolated host:
 `prototypes/persistent-material-world/`; original025 and canonical023/024 persistence
@@ -32,9 +36,11 @@ Changed ownership: new prototype adapter/CLI/independent material audit/tests;
 new contract, validation and measurement receipts; this handoff. Canonical
 persistence and all original025/protected sources remain unchanged.
 Full logs/artifacts: ignored `target/material-*.log` and
-`target/material-process-1792996500690/`. Current remaining step is source review
-and publication; record the implementation commit after it is created. Future GUI
-integration/acceptance needs a separate authorized milestone. No026 or new science.
+`target/material-process-1792996500690/`. Source review/publication is complete;
+there is no remaining engineering failure in this milestone. Future GUI integration/
+acceptance needs a separate authorized milestone. No026 or new science. The next
+executable step for an authorized headless continuation is the new CLI `config 1`,
+`create`, `advance3`, then `status`/`verify` workflow in the linked contract.
 
 ## Previous completed milestone: headless persistent-world reliability
 
