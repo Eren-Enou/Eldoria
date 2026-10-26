@@ -392,3 +392,14 @@ and [audit](../integrity-audit-001-025.md) preserve455 portable/472 raw original
 The separate full gate runs unchanged001–024 first; old delivery/candidate status
 statements above remain historical. No default preparation/MealRelief adoption.
 026 prospective design is a separate gate, not a result of this integrity pass.
+
+
+## Experiment026 — delayed-work valuation (prospective)
+
+[Registration](../../experiments/026/specification.md) defines ProjectedNeed against
+Baseline across all50 original025 configurations/100 worlds. Qualified025 foundation
+publication precedes implementation. Only eligible Prepare's H term changes to a
+bounded own-need projection from own hunger and retained duration. No outcomes,
+performance advantage, scientific acceptance or default adoption are claimed.
+The [design gate](../../experiments/026/design-gate.md) requires exact original
+compatibility and a separately published runtime/reader freeze before treatment.

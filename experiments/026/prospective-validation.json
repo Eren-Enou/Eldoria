@@ -1,0 +1,21 @@
+{
+  "schema": "experiment-026-prospective/v1",
+  "status": "DESIGN ONLY; no implementation or treatment",
+  "starting_revision": "a3a715090987681582e67a8e2ff613ce9cfb3e5e",
+  "worlds": 100,
+  "policy_pairs": 50,
+  "controlled_rows": 64,
+  "held_out_rows": 32,
+  "report_placebo_rows": 4,
+  "matrix_check": "complete original025 configs repeated verbatim under two policies; no outcome-based selection",
+  "registered_documents_sha256": {
+    "experiments/026/specification.md": "1b818fb28f084be73ed2f9499d3b15b5d28b9800f6e55125abfe0a4a82fb1cb4",
+    "experiments/026/design-gate.md": "f36bacb70ac69135b3aed5f178ac919e724f4d1f2c9dfa3932680acb7eba6eff",
+    "experiments/026/registered-matrix.json": "b876a21083424621effe1bbc00e9f01124553057a621b406cd12c4a5f63953b3",
+    "experiments/026/policy.json": "2cf02ead927f9bfc272d209b066e41aa854c8180ab158fda1a4274480294f03d",
+    "experiments/026/inherited-source-bindings.json": "a94fdf990fefa497f7c64d6230769866c4124ddebb2169cf7ae495b1cfe68786",
+    "experiments/026/independent-validation-plan.md": "042b0626c1d415b2e6fa6af6f907b079ea5252697be547c514b7db2760b2792e"
+  },
+  "foundation_revision": "0a33e385942e9bfea8205621c83d60e9271d85fb",
+  "foundation_publication_verified": true
+}

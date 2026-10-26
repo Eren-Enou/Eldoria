@@ -7,7 +7,7 @@ experiment. No subagents. Original001–025 sources and evidence remain untouche
 
 Stage A fresh025 review passes50 independent scalar/material reconstructions,
 four corruptions, chronology and unchanged214 candidate bindings. Qualified
-protection passes the complete gate and awaits this milestone publication; see
+protection passes and was published at `0a33e385942e9bfea8205621c83d60e9271d85fb`; see
 [review](../experiment-025-foundation-review.md) and
 [audit](../integrity-audit-001-025.md). New explicit full command is
 `cargo run --release --locked -j 1 --example validate025_foundation`:
@@ -22,8 +22,8 @@ exact100-row matrix, one ProjectedNeed policy and source bindings. Each original
 025 config is paired verbatim with Baseline and ProjectedNeed. Eligible Prepare
 changes H to min(100,H+5*floor(D/4)); old effort, eligibility, ties and physics stay.
 No026 implementation, treatment, outcome inspection, or runtime freeze yet.
-Next: publish qualified Stage A protection; separately publish
-complete design before implementation. Then prove disabled50-world exact parity,
+Next: verify publication of this complete design before implementation.
+Then implement the isolated opt-in Rust host and prove disabled50-world exact parity,
 publish runtime/readers before treatment, run frozen100 worlds, independently
 validate/replay/corrupt, analyze all nulls/harms and publish final A–I report.
 

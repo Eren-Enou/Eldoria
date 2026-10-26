@@ -58,7 +58,7 @@ and prior desktop/browser limitations; the portable report records current deliv
 attribution qualifications, failed19, stale failures, harm and nulls. Run the full
 `validate025_foundation`; its first stage is the unmodified historical
 `validate_contract`001–024. Source locks forbid editing that historical entry.
-No mechanism is adopted.026 design is prospective, pending separate publication;
+No mechanism is adopted.026 design is prospective;
 see the [checkpoint](development/continuation-checkpoint.md).
 
 ## Experiment025: protected qualified research, unadopted
@@ -319,3 +319,15 @@ No root default or frozen parent changes; protected endpoint remains 001–023.
 [post024 readiness](development/post-024-community-readiness.md),
 [future finite material-work handoff](development/post-024-material-preparation-handoff.md).
 Neither 024 protection nor material preparation/025 follows automatically.
+
+
+## Experiment026: prospective delayed-work valuation
+
+[Specification](../experiments/026/specification.md), exact100-world matrix,
+[design gate](../experiments/026/design-gate.md) and independent validation plan
+register one opt-in ProjectedNeed Prepare score. Each original025 world is paired
+with Baseline; only eligible Prepare's need term changes. The phase-agnostic
+projection estimates conditional own need, not success, food use or welfare.
+No runtime, treatment outcomes or default adoption yet. Implementation requires
+this design's publication, exact disabled compatibility and a published runtime/
+reader freeze before registered treatment. Existing persistent025 stays unchanged.

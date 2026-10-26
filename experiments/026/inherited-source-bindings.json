@@ -1,0 +1,16 @@
+{
+  "experiments/025/registered-matrix.json": "efd166ec24ac60938f5a8429138f59c2b385be80eb299b5cd0bedd572995dc3e",
+  "experiments/025/source-freeze.json": "4a1e113d61e64adde7d12aa0976168df822c99250b3b94d045befde0ed7d84a7",
+  "experiments/025/source-freeze-observer2.json": "4a8b731c07577998d1fa96caf84d788e68f1f297d459233bc64119ee5ae75a71",
+  "experiments/025/validation-source-locks.json": "88c8e6cfe34b2025f54d11cd0e7e0ad9ca46c35a34d339106b673c6d31481948",
+  "experiments/025/runtime-gate-observer2.json": "b6979063c4d501d9c26af5a35d9dbce5a6e7db7bef5bbd9f37e3f2fabb15aa08",
+  "prototypes/material-preparation/src/model.rs": "2b62ca86bb028540693d87267ef3bd0333c0606f3f97e5ffb4ea0fb312296a23",
+  "prototypes/material-preparation/src/coordinator.rs": "5f42ff0f8534636e5c1c3137fa3da7d97ff4d544ab373583c79d925821525979",
+  "prototypes/material-preparation/generate_host.py": "f8b623deca6b927269126adabe6a6ea0330dac05e9268bfef8f0efeace654f2c",
+  "prototypes/material-preparation-observer2/generate_host.py": "e469471685af5f513cab9654e737c53b956bbc2ab5eb77726c7aaea1822ccb98",
+  "prototypes/material-preparation-observer2/src/observer_validation.rs": "3f25dd5147a61615de35bbf4d332ca3634641a2c645eb435cec1b6aebab0923a",
+  "prototypes/activity-valuation/src/model.rs": "16b7026234777e24f3a7ede7f5ebc4bfacf63c9e2ee9520714677e1210f51782",
+  "src/acquisition.rs": "7b0bc16a8a60e9b5a47463bb071eaf15ce94365291ca5d69bb7b8dcdbdc42733",
+  "docs/experiment-contract-001-025.md": "4e1b04a41014e24b23ec342e1f4de97711b4339508370c5a6e5918b144dba8d5",
+  "docs/foundation-001-025-sha256.json": "83443c5e82a5ff870494c674cb73458846c3671c27dc88e2a674a24a7ed994b9"
+}

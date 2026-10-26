@@ -1,0 +1,23 @@
+{
+  "schema": "experiment-026-policy/v1",
+  "name": "ProjectedNeed",
+  "eligible_prepare_only": true,
+  "duration": "retained.extraction_ticks + retained.preparation_ticks",
+  "pulse_ticks": 4,
+  "pulse_need": 5,
+  "need_cap": 100,
+  "projected_need": "min(100, own_hunger + 5 * floor(duration / 4))",
+  "prepare_score": "projected_need - duration",
+  "baseline_prepare_score": "own_hunger - duration",
+  "ineligible_score": -1,
+  "tie_order": [
+    "Wait",
+    "Consume",
+    "Invite",
+    "Acquire",
+    "Prepare"
+  ],
+  "comparison": "strict greater; first maximum",
+  "inherited_valuation": "Baseline",
+  "new_actor_state": false
+}
