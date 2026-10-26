@@ -6,6 +6,13 @@ rows when ownership, entry points or mode boundaries change.
 
 ## Human Rust workbench and portable delivery
 
+Active material continuation engineering: `prototypes/persistent-material-world/`
+reuses the corrected025 observer2 producer and generated canonical Session/recovery
+source. [Prospective contract and evidence](development/persistent-material-world.md).
+Explicit headless opt-in only; existing023/024 readers, GUI and defaults stay intact.
+Headless gates pass:50 original worlds,809 in-process and616 real-process full-state
+splits; [receipt](development/persistent-material-validation.json). GUI remains deferred.
+
 Headless recovery/storage: [contract and evidence](development/persistent-world-recovery.md),
 [CLI guide](development/PERSISTENT_WORLD_QUICKSTART.md). `session::reliability`
 owns read-only inventory and explicit fresh branches; `storage_codec` owns optional

@@ -1,0 +1,370 @@
+{
+  "schema": "woi-material-performance/v1",
+  "runtime": "546911507566a3bb754774fe31bd1c35f9951de388900a6093491224720a1cde",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "recorded_utc": "2026-10-26T06:45:11.210333+00:00",
+  "cases": [
+    {
+      "index": 1,
+      "internal_samples": [
+        {
+          "boundaries": 129,
+          "checkpoint_seconds": 0.0073595,
+          "original_seconds": 0.0035993,
+          "restore_seconds": 0.0164185,
+          "run_seconds": 0.0039552,
+          "state_bytes": 1778640
+        },
+        {
+          "boundaries": 129,
+          "checkpoint_seconds": 0.0071794,
+          "original_seconds": 0.0040586,
+          "restore_seconds": 0.0160361,
+          "run_seconds": 0.0032352,
+          "state_bytes": 1778640
+        },
+        {
+          "boundaries": 129,
+          "checkpoint_seconds": 0.0068455,
+          "original_seconds": 0.0034107,
+          "restore_seconds": 0.0167521,
+          "run_seconds": 0.003446,
+          "state_bytes": 1778640
+        }
+      ],
+      "storage": [
+        {
+          "codec": "raw",
+          "samples": [
+            {
+              "tick": 4,
+              "generation": 2,
+              "advance_save_process_seconds": 0.041892100125551224,
+              "checkpoint_bytes": 22864,
+              "journal_bytes": 29793
+            },
+            {
+              "tick": 12,
+              "generation": 3,
+              "advance_save_process_seconds": 0.05041770008392632,
+              "checkpoint_bytes": 53822,
+              "journal_bytes": 76264
+            },
+            {
+              "tick": 28,
+              "generation": 4,
+              "advance_save_process_seconds": 0.06684130011126399,
+              "checkpoint_bytes": 212459,
+              "journal_bytes": 293353
+            },
+            {
+              "tick": 60,
+              "generation": 5,
+              "advance_save_process_seconds": 0.12511320016346872,
+              "checkpoint_bytes": 808595,
+              "journal_bytes": 1085706
+            },
+            {
+              "tick": 129,
+              "generation": 6,
+              "advance_save_process_seconds": 0.2295610001310706,
+              "checkpoint_bytes": 1779046,
+              "journal_bytes": 2385887
+            }
+          ],
+          "retained_bytes": 7605213,
+          "state_sha256": "c35444e15576e3a97bf94a399112ec350e0651fda08d7c88fab403e82829c7db",
+          "history_sha256": "739cd259f6fe7c27893b236ec6b784d8797bd0e1ae94fd0dd8f8e153d227988f"
+        },
+        {
+          "codec": "zlib",
+          "samples": [
+            {
+              "tick": 4,
+              "generation": 2,
+              "advance_save_process_seconds": 0.03867730009369552,
+              "checkpoint_bytes": 3112,
+              "journal_bytes": 29793
+            },
+            {
+              "tick": 12,
+              "generation": 3,
+              "advance_save_process_seconds": 0.04965570010244846,
+              "checkpoint_bytes": 4378,
+              "journal_bytes": 76264
+            },
+            {
+              "tick": 28,
+              "generation": 4,
+              "advance_save_process_seconds": 0.07003109995275736,
+              "checkpoint_bytes": 10886,
+              "journal_bytes": 293353
+            },
+            {
+              "tick": 60,
+              "generation": 5,
+              "advance_save_process_seconds": 0.12756039993837476,
+              "checkpoint_bytes": 30489,
+              "journal_bytes": 1085706
+            },
+            {
+              "tick": 129,
+              "generation": 6,
+              "advance_save_process_seconds": 0.23911049985326827,
+              "checkpoint_bytes": 57047,
+              "journal_bytes": 2385887
+            }
+          ],
+          "retained_bytes": 4834339,
+          "state_sha256": "c35444e15576e3a97bf94a399112ec350e0651fda08d7c88fab403e82829c7db",
+          "history_sha256": "739cd259f6fe7c27893b236ec6b784d8797bd0e1ae94fd0dd8f8e153d227988f"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "internal_samples": [
+        {
+          "boundaries": 417,
+          "checkpoint_seconds": 0.0255596,
+          "original_seconds": 0.0190313,
+          "restore_seconds": 0.0487907,
+          "run_seconds": 0.018184,
+          "state_bytes": 5341401
+        },
+        {
+          "boundaries": 417,
+          "checkpoint_seconds": 0.0242141,
+          "original_seconds": 0.0197716,
+          "restore_seconds": 0.048483,
+          "run_seconds": 0.0176614,
+          "state_bytes": 5341401
+        },
+        {
+          "boundaries": 417,
+          "checkpoint_seconds": 0.0226174,
+          "original_seconds": 0.0181828,
+          "restore_seconds": 0.0500755,
+          "run_seconds": 0.0178161,
+          "state_bytes": 5341401
+        }
+      ],
+      "storage": [
+        {
+          "codec": "raw",
+          "samples": [
+            {
+              "tick": 10,
+              "generation": 2,
+              "advance_save_process_seconds": 0.039705000119283795,
+              "checkpoint_bytes": 43063,
+              "journal_bytes": 54123
+            },
+            {
+              "tick": 18,
+              "generation": 3,
+              "advance_save_process_seconds": 0.051033500116318464,
+              "checkpoint_bytes": 116509,
+              "journal_bytes": 155746
+            },
+            {
+              "tick": 34,
+              "generation": 4,
+              "advance_save_process_seconds": 0.07876780000515282,
+              "checkpoint_bytes": 287188,
+              "journal_bytes": 389111
+            },
+            {
+              "tick": 66,
+              "generation": 5,
+              "advance_save_process_seconds": 0.12331259995698929,
+              "checkpoint_bytes": 701221,
+              "journal_bytes": 944594
+            },
+            {
+              "tick": 423,
+              "generation": 6,
+              "advance_save_process_seconds": 0.7675529001280665,
+              "checkpoint_bytes": 5341809,
+              "journal_bytes": 7176474
+            }
+          ],
+          "retained_bytes": 20646892,
+          "state_sha256": "81c306d2c5f30b505e5d72e2e8f3d7caaeda57ed1fe0937dee31d925061dfde0",
+          "history_sha256": "9bbeb88d3f89f57c267ef88797b0b09746d25f573ee56b7bc522fd05990317a3"
+        },
+        {
+          "codec": "zlib",
+          "samples": [
+            {
+              "tick": 10,
+              "generation": 2,
+              "advance_save_process_seconds": 0.04004319990053773,
+              "checkpoint_bytes": 4681,
+              "journal_bytes": 54123
+            },
+            {
+              "tick": 18,
+              "generation": 3,
+              "advance_save_process_seconds": 0.051766900112852454,
+              "checkpoint_bytes": 7322,
+              "journal_bytes": 155746
+            },
+            {
+              "tick": 34,
+              "generation": 4,
+              "advance_save_process_seconds": 0.07490190002135932,
+              "checkpoint_bytes": 12857,
+              "journal_bytes": 389111
+            },
+            {
+              "tick": 66,
+              "generation": 5,
+              "advance_save_process_seconds": 0.12166539998725057,
+              "checkpoint_bytes": 27175,
+              "journal_bytes": 944594
+            },
+            {
+              "tick": 423,
+              "generation": 6,
+              "advance_save_process_seconds": 0.8238832000643015,
+              "checkpoint_bytes": 156089,
+              "journal_bytes": 7176474
+            }
+          ],
+          "retained_bytes": 14365226,
+          "state_sha256": "81c306d2c5f30b505e5d72e2e8f3d7caaeda57ed1fe0937dee31d925061dfde0",
+          "history_sha256": "9bbeb88d3f89f57c267ef88797b0b09746d25f573ee56b7bc522fd05990317a3"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "internal_samples": [
+        {
+          "boundaries": 801,
+          "checkpoint_seconds": 0.0545049,
+          "original_seconds": 0.0522079,
+          "restore_seconds": 0.1073951,
+          "run_seconds": 0.0495929,
+          "state_bytes": 12667727
+        },
+        {
+          "boundaries": 801,
+          "checkpoint_seconds": 0.0524354,
+          "original_seconds": 0.051016,
+          "restore_seconds": 0.11056,
+          "run_seconds": 0.0481635,
+          "state_bytes": 12667727
+        },
+        {
+          "boundaries": 801,
+          "checkpoint_seconds": 0.0520093,
+          "original_seconds": 0.0509504,
+          "restore_seconds": 0.1077414,
+          "run_seconds": 0.0477593,
+          "state_bytes": 12667727
+        }
+      ],
+      "storage": [
+        {
+          "codec": "raw",
+          "samples": [
+            {
+              "tick": 10,
+              "generation": 2,
+              "advance_save_process_seconds": 0.03934359992854297,
+              "checkpoint_bytes": 43090,
+              "journal_bytes": 54162
+            },
+            {
+              "tick": 18,
+              "generation": 3,
+              "advance_save_process_seconds": 0.05245299986563623,
+              "checkpoint_bytes": 116536,
+              "journal_bytes": 155816
+            },
+            {
+              "tick": 34,
+              "generation": 4,
+              "advance_save_process_seconds": 0.0757903999183327,
+              "checkpoint_bytes": 269752,
+              "journal_bytes": 366589
+            },
+            {
+              "tick": 66,
+              "generation": 5,
+              "advance_save_process_seconds": 0.116082499967888,
+              "checkpoint_bytes": 659801,
+              "journal_bytes": 897410
+            },
+            {
+              "tick": 807,
+              "generation": 6,
+              "advance_save_process_seconds": 1.604958200128749,
+              "checkpoint_bytes": 12668135,
+              "journal_bytes": 16902350
+            }
+          ],
+          "retained_bytes": 47188967,
+          "state_sha256": "96655d9b59c4745167f00816b1549931444b38f67696910cec1232b8784e6b5c",
+          "history_sha256": "2ad8124b23c12792b3b0ced46c7d2b3a70af3ea767c7e0bd2f0697329575d033"
+        },
+        {
+          "codec": "zlib",
+          "samples": [
+            {
+              "tick": 10,
+              "generation": 2,
+              "advance_save_process_seconds": 0.04314109985716641,
+              "checkpoint_bytes": 4694,
+              "journal_bytes": 54162
+            },
+            {
+              "tick": 18,
+              "generation": 3,
+              "advance_save_process_seconds": 0.051341700134798884,
+              "checkpoint_bytes": 7329,
+              "journal_bytes": 155816
+            },
+            {
+              "tick": 34,
+              "generation": 4,
+              "advance_save_process_seconds": 0.07204940007068217,
+              "checkpoint_bytes": 12379,
+              "journal_bytes": 366589
+            },
+            {
+              "tick": 66,
+              "generation": 5,
+              "advance_save_process_seconds": 0.12100669997744262,
+              "checkpoint_bytes": 23395,
+              "journal_bytes": 897410
+            },
+            {
+              "tick": 807,
+              "generation": 6,
+              "advance_save_process_seconds": 1.7357793999835849,
+              "checkpoint_bytes": 331264,
+              "journal_bytes": 16902350
+            }
+          ],
+          "retained_bytes": 33810714,
+          "state_sha256": "96655d9b59c4745167f00816b1549931444b38f67696910cec1232b8784e6b5c",
+          "history_sha256": "2ad8124b23c12792b3b0ced46c7d2b3a70af3ea767c7e0bd2f0697329575d033"
+        }
+      ]
+    }
+  ],
+  "largest_own_cli_peak_working_set_bytes": 499654656,
+  "process_calls": 2028,
+  "recovery_process_samples": [
+    {
+      "command": "recover",
+      "seconds": 0.06581220007501543,
+      "peak_working_set_bytes": 9281536,
+      "exit": 0
+    }
+  ],
+  "scope": "Wall-clock and own CLI child process measurements, separate from deterministic evidence. Three internal samples per case, one storage pair; not statistical evidence or a universal performance ranking. Original runtime includes full Trial/validation; new run time is bootstrap+advance before Trial export."
+}

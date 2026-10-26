@@ -1,0 +1,2666 @@
+{
+  "schema": "woi-material-process-validation/v1",
+  "runtime": "546911507566a3bb754774fe31bd1c35f9951de388900a6093491224720a1cde",
+  "worlds": [
+    {
+      "index": 0,
+      "family": "known",
+      "pair": 0,
+      "splits": 7,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "52d306da0334dc8ecc086da85f320af5dba03eeac04cbb1423766030df847c05",
+      "checkpoint_bytes": [
+        3933,
+        2708,
+        1625418,
+        47509,
+        1705074,
+        48309,
+        1821084
+      ],
+      "journal_bytes": 2430479,
+      "retained_bytes": 10068572
+    },
+    {
+      "index": 1,
+      "family": "known",
+      "pair": 0,
+      "splits": 15,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 0,
+      "waste_final": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "b20719b37f892f51df145f99c1dc99b48a2028bbaf4325a70af42e3a7ecbd77c",
+      "checkpoint_bytes": [
+        3933,
+        2780,
+        21522,
+        3124,
+        25206,
+        3628,
+        47474,
+        4306,
+        53822,
+        4441,
+        1571587,
+        54736,
+        1662783,
+        56077,
+        1779046
+      ],
+      "journal_bytes": 2385887,
+      "retained_bytes": 10018959
+    },
+    {
+      "index": 2,
+      "family": "unknown",
+      "pair": 1,
+      "splits": 7,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "fce8ac9cf8f95f0fd9ab9f6522a62496431199547c53b06249a6dbf0931803af",
+      "checkpoint_bytes": [
+        3935,
+        2641,
+        1556375,
+        48316,
+        1636870,
+        49111,
+        1752903
+      ],
+      "journal_bytes": 2345927,
+      "retained_bytes": 9694841
+    },
+    {
+      "index": 3,
+      "family": "unknown",
+      "pair": 1,
+      "splits": 7,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "2fbed4817ec68083d59706736c142137bfa97017cead8d90ee12c090d7bd3763",
+      "checkpoint_bytes": [
+        3935,
+        2640,
+        1556375,
+        48311,
+        1636870,
+        49109,
+        1752903
+      ],
+      "journal_bytes": 2345925,
+      "retained_bytes": 9694830
+    },
+    {
+      "index": 4,
+      "family": "final_batch",
+      "pair": 2,
+      "splits": 7,
+      "conserved_material": 3,
+      "raw_initial": 2,
+      "raw_final": 2,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "4a4c1bd122a717850d6109657e44b09c7b80581e6ec3318c765bb7093cf1eed0",
+      "checkpoint_bytes": [
+        3939,
+        2679,
+        1616718,
+        48701,
+        1696374,
+        49502,
+        1812384
+      ],
+      "journal_bytes": 2419849,
+      "retained_bytes": 10023188
+    },
+    {
+      "index": 5,
+      "family": "final_batch",
+      "pair": 2,
+      "splits": 10,
+      "conserved_material": 3,
+      "raw_initial": 2,
+      "raw_final": 0,
+      "waste_final": 1,
+      "outcomes": {
+        "Extracted": 1,
+        "Insufficient": 1,
+        "Prepared": 1,
+        "Failed": 1
+      },
+      "history_sha256": "fa86ff1c5c84bb069015ef1879ebd40219fa311362ca66f8646012abfb9c8546",
+      "checkpoint_bytes": [
+        3939,
+        2775,
+        21547,
+        3882,
+        35931,
+        81575,
+        2258148,
+        82651,
+        2318578,
+        83750
+      ],
+      "journal_bytes": 3242886,
+      "retained_bytes": 11331794
+    },
+    {
+      "index": 6,
+      "family": "final_batch_descending",
+      "pair": 3,
+      "splits": 7,
+      "conserved_material": 3,
+      "raw_initial": 2,
+      "raw_final": 2,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "8f153526904e13dd54ddd190cfd8c704550df76dae6d2bf336739bd9140e85ab",
+      "checkpoint_bytes": [
+        3953,
+        2682,
+        1617882,
+        48514,
+        1697627,
+        49307,
+        1813821
+      ],
+      "journal_bytes": 2419886,
+      "retained_bytes": 10026751
+    },
+    {
+      "index": 7,
+      "family": "final_batch_descending",
+      "pair": 3,
+      "splits": 10,
+      "conserved_material": 3,
+      "raw_initial": 2,
+      "raw_final": 0,
+      "waste_final": 1,
+      "outcomes": {
+        "Extracted": 1,
+        "Insufficient": 1,
+        "Prepared": 1,
+        "Failed": 1
+      },
+      "history_sha256": "f5e28060339f97b8f4c45857bcfe9692a499575d4322d326055ba277e3668056",
+      "checkpoint_bytes": [
+        3953,
+        2777,
+        21561,
+        3895,
+        35945,
+        46760,
+        1590286,
+        48068,
+        1651350,
+        49112
+      ],
+      "journal_bytes": 2355471,
+      "retained_bytes": 8117603
+    },
+    {
+      "index": 8,
+      "family": "final_batch_rotating",
+      "pair": 4,
+      "splits": 7,
+      "conserved_material": 3,
+      "raw_initial": 2,
+      "raw_final": 2,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "ab923d4bb945ec93e577fe3ee8f0793e2c18eb8b0ef06277d94c287558bfd79b",
+      "checkpoint_bytes": [
+        3945,
+        2687,
+        1616724,
+        48722,
+        1696380,
+        49523,
+        1812390
+      ],
+      "journal_bytes": 2419856,
+      "retained_bytes": 10023276
+    },
+    {
+      "index": 9,
+      "family": "final_batch_rotating",
+      "pair": 4,
+      "splits": 10,
+      "conserved_material": 3,
+      "raw_initial": 2,
+      "raw_final": 0,
+      "waste_final": 1,
+      "outcomes": {
+        "Extracted": 1,
+        "Insufficient": 1,
+        "Prepared": 1,
+        "Failed": 1
+      },
+      "history_sha256": "25da27f6c1375d8c1ef7ad39ccbf558f8e4ad28f924427cde1161349ca70e5a4",
+      "checkpoint_bytes": [
+        3945,
+        2788,
+        21553,
+        3890,
+        35937,
+        81590,
+        2258154,
+        82667,
+        2318584,
+        83764
+      ],
+      "journal_bytes": 3242893,
+      "retained_bytes": 11331904
+    },
+    {
+      "index": 10,
+      "family": "odd_remainder",
+      "pair": 5,
+      "splits": 7,
+      "conserved_material": 4,
+      "raw_initial": 3,
+      "raw_final": 3,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "e53ad139a1ecf97cd01c9323cf5edfa842131eea4da4d66df310049c2df955fe",
+      "checkpoint_bytes": [
+        3942,
+        2684,
+        1616721,
+        48723,
+        1696377,
+        49520,
+        1812387
+      ],
+      "journal_bytes": 2419981,
+      "retained_bytes": 10023379
+    },
+    {
+      "index": 11,
+      "family": "odd_remainder",
+      "pair": 5,
+      "splits": 10,
+      "conserved_material": 4,
+      "raw_initial": 3,
+      "raw_final": 1,
+      "waste_final": 1,
+      "outcomes": {
+        "Extracted": 1,
+        "Insufficient": 1,
+        "Prepared": 1,
+        "Failed": 1
+      },
+      "history_sha256": "d3f602fe2d0afb22cc551c58c429d60506c010c5bdee0416363ff59947b2de9a",
+      "checkpoint_bytes": [
+        3942,
+        2779,
+        21550,
+        3889,
+        35934,
+        81561,
+        2258151,
+        82643,
+        2318581,
+        83729
+      ],
+      "journal_bytes": 3243018,
+      "retained_bytes": 11331911
+    },
+    {
+      "index": 12,
+      "family": "observed_empty",
+      "pair": 6,
+      "splits": 7,
+      "conserved_material": 1,
+      "raw_initial": 0,
+      "raw_final": 0,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "daf00463ce2565fe23098ba353ee6ef2299f6235b224f65105d6e2587e723412",
+      "checkpoint_bytes": [
+        3943,
+        2711,
+        1625428,
+        47523,
+        1705084,
+        48322,
+        1821094
+      ],
+      "journal_bytes": 2430618,
+      "retained_bytes": 10068790
+    },
+    {
+      "index": 13,
+      "family": "observed_empty",
+      "pair": 6,
+      "splits": 7,
+      "conserved_material": 1,
+      "raw_initial": 0,
+      "raw_final": 0,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "b24982f71d28b6c189ef84b8b083ff20a07d1391fb697d1026da75487edc124b",
+      "checkpoint_bytes": [
+        3943,
+        2712,
+        1625428,
+        47509,
+        1705084,
+        48323,
+        1821094
+      ],
+      "journal_bytes": 2430468,
+      "retained_bytes": 10068475
+    },
+    {
+      "index": 14,
+      "family": "social_competition",
+      "pair": 7,
+      "splits": 7,
+      "conserved_material": 20,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "b513c1bbdc8ddf9516c8afcb2a192c74163a73f678dd1c11e843b51ec9e84a3f",
+      "checkpoint_bytes": [
+        9455,
+        3548,
+        1233125,
+        42675,
+        1307349,
+        43742,
+        1420231
+      ],
+      "journal_bytes": 1914048,
+      "retained_bytes": 7832221
+    },
+    {
+      "index": 15,
+      "family": "social_competition",
+      "pair": 7,
+      "splits": 25,
+      "conserved_material": 20,
+      "raw_initial": 8,
+      "raw_final": 0,
+      "waste_final": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 0,
+        "Prepared": 4,
+        "Failed": 0
+      },
+      "history_sha256": "f14b7df62a8f180a6ffe34b10aaaf055dfb4c471ad51242106dea3ca8f9d9b0b",
+      "checkpoint_bytes": [
+        9455,
+        3545,
+        160387,
+        9392,
+        179069,
+        10897,
+        220189,
+        14747,
+        357783,
+        16007,
+        390790,
+        16934,
+        419068,
+        18426,
+        471012,
+        19658,
+        519967,
+        20409,
+        574646,
+        21827,
+        1257090,
+        41420,
+        1312486,
+        41986,
+        1425323
+      ],
+      "journal_bytes": 1929664,
+      "retained_bytes": 11335054
+    },
+    {
+      "index": 16,
+      "family": "persistent_use_or_neglect",
+      "pair": 8,
+      "splits": 7,
+      "conserved_material": 13,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "77677b1ed6d2c0462331c87b029e7c2e303024560a3610b16e84f7b3364f80f3",
+      "checkpoint_bytes": [
+        9480,
+        3552,
+        7153015,
+        223594,
+        7230893,
+        224305,
+        7346886
+      ],
+      "journal_bytes": 9807629,
+      "retained_bytes": 41610994
+    },
+    {
+      "index": 17,
+      "family": "persistent_use_or_neglect",
+      "pair": 8,
+      "splits": 21,
+      "conserved_material": 13,
+      "raw_initial": 8,
+      "raw_final": 0,
+      "waste_final": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 0,
+        "Prepared": 4,
+        "Failed": 0
+      },
+      "history_sha256": "bdb59b10001ce2d07ef93aefd144baf20ef891b8bfeb50496e21c23935f188a9",
+      "checkpoint_bytes": [
+        9480,
+        3552,
+        43063,
+        5152,
+        65880,
+        6234,
+        87718,
+        7323,
+        125084,
+        7974,
+        142534,
+        8602,
+        160123,
+        9106,
+        179537,
+        9699,
+        5160887,
+        154358,
+        5227449,
+        155062,
+        5341809
+      ],
+      "journal_bytes": 7176474,
+      "retained_bytes": 31058248
+    },
+    {
+      "index": 18,
+      "family": "meal_and_work",
+      "pair": 9,
+      "splits": 7,
+      "conserved_material": 20,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "6444cd186f076fb09acf3edf089c3935e88b99c876be2cdb86688fcad3df6082",
+      "checkpoint_bytes": [
+        9467,
+        3620,
+        1375951,
+        48901,
+        1458339,
+        49687,
+        1570968
+      ],
+      "journal_bytes": 2114763,
+      "retained_bytes": 8692185
+    },
+    {
+      "index": 19,
+      "family": "meal_and_work",
+      "pair": 9,
+      "splits": 19,
+      "conserved_material": 20,
+      "raw_initial": 8,
+      "raw_final": 0,
+      "waste_final": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 0,
+        "Prepared": 4,
+        "Failed": 0
+      },
+      "history_sha256": "ffcba74497e5048cabe9f86357e51d35e84e6e93abfe102cdb4d4d1b8e9ad7e2",
+      "checkpoint_bytes": [
+        9467,
+        3614,
+        165715,
+        10305,
+        195473,
+        11186,
+        231332,
+        11817,
+        260803,
+        12978,
+        281198,
+        13865,
+        330100,
+        14956,
+        1087088,
+        41794,
+        1159019,
+        42510,
+        1270268
+      ],
+      "journal_bytes": 1722150,
+      "retained_bytes": 8548028
+    },
+    {
+      "index": 20,
+      "family": "atomic_inquiry",
+      "pair": 10,
+      "splits": 7,
+      "conserved_material": 8,
+      "raw_initial": 4,
+      "raw_final": 4,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "8e00ba543d6fcff0b28d4719141e4d0103f4b6708cb622ab2d09a441113e09e7",
+      "checkpoint_bytes": [
+        7429,
+        3834,
+        1292233,
+        44946,
+        1382548,
+        46339,
+        1498742
+      ],
+      "journal_bytes": 2021305,
+      "retained_bytes": 8276817
+    },
+    {
+      "index": 21,
+      "family": "atomic_inquiry",
+      "pair": 10,
+      "splits": 19,
+      "conserved_material": 8,
+      "raw_initial": 4,
+      "raw_final": 0,
+      "waste_final": 2,
+      "outcomes": {
+        "Extracted": 2,
+        "Insufficient": 3,
+        "Prepared": 2,
+        "Failed": 3
+      },
+      "history_sha256": "943f69c76cdaaec4907dd1815e66d4c708eabf7638cf9922b64833534df80d44",
+      "checkpoint_bytes": [
+        7429,
+        3842,
+        110635,
+        7807,
+        137399,
+        8304,
+        141215,
+        8479,
+        151680,
+        11824,
+        263257,
+        12519,
+        297285,
+        13824,
+        1141652,
+        41527,
+        1234030,
+        42913,
+        1350431
+      ],
+      "journal_bytes": 1829787,
+      "retained_bytes": 8602808
+    },
+    {
+      "index": 22,
+      "family": "high_effort",
+      "pair": 11,
+      "splits": 7,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "e809b2c4e793cd31ac83b30dd7af18a8abe8fd8e943b878080a35cb0e61324ed",
+      "checkpoint_bytes": [
+        3942,
+        2714,
+        1625579,
+        47530,
+        1705235,
+        48344,
+        1821245
+      ],
+      "journal_bytes": 2430766,
+      "retained_bytes": 10069573
+    },
+    {
+      "index": 23,
+      "family": "high_effort",
+      "pair": 11,
+      "splits": 39,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 0,
+      "waste_final": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "b2004751edd4374514715aa861f4d280b023a48a7b6fce9d9ffce6512fe60df2",
+      "checkpoint_bytes": [
+        3942,
+        2719,
+        27424,
+        4853,
+        57625,
+        7482,
+        132751,
+        7803,
+        148834,
+        8301,
+        154908,
+        8528,
+        163981,
+        9617,
+        198966,
+        10001,
+        216291,
+        10587,
+        222937,
+        10806,
+        235287,
+        11411,
+        252341,
+        12085,
+        269162,
+        12698,
+        284416,
+        12852,
+        302083,
+        13113,
+        309995,
+        16536,
+        416274,
+        17139,
+        601058,
+        23626,
+        695115,
+        25057,
+        803627
+      ],
+      "journal_bytes": 1115489,
+      "retained_bytes": 7897611
+    },
+    {
+      "index": 24,
+      "family": "medium_effort",
+      "pair": 12,
+      "splits": 7,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "63da02620ab5e842fdcdf68eee737ef0e607901bb82cc16f8c1a8ee08605bbff",
+      "checkpoint_bytes": [
+        3942,
+        2714,
+        1625427,
+        47515,
+        1705083,
+        48321,
+        1821093
+      ],
+      "journal_bytes": 2430618,
+      "retained_bytes": 10068780
+    },
+    {
+      "index": 25,
+      "family": "medium_effort",
+      "pair": 12,
+      "splits": 17,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 0,
+      "waste_final": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "5c242d06d0b5bff9c68de0f2b13b0b4fb033859d8bc2b8aeb9d09665459b131c",
+      "checkpoint_bytes": [
+        3942,
+        2784,
+        18481,
+        3116,
+        27475,
+        3361,
+        39722,
+        4172,
+        52839,
+        4485,
+        61884,
+        4679,
+        1191594,
+        37057,
+        1281561,
+        38331,
+        1397594
+      ],
+      "journal_bytes": 1883871,
+      "retained_bytes": 7891355
+    },
+    {
+      "index": 26,
+      "family": "nominal_escrow",
+      "pair": 13,
+      "splits": 7,
+      "conserved_material": 3,
+      "raw_initial": 2,
+      "raw_final": 2,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "22fe5dfda92fbd113d0cc5f92aa7b6abf588a6057ea3a6f5eab789afe6b02ac7",
+      "checkpoint_bytes": [
+        3941,
+        2717,
+        26428,
+        3620,
+        50324,
+        4734,
+        73478
+      ],
+      "journal_bytes": 115317,
+      "retained_bytes": 379409
+    },
+    {
+      "index": 27,
+      "family": "nominal_escrow",
+      "pair": 13,
+      "splits": 9,
+      "conserved_material": 3,
+      "raw_initial": 2,
+      "raw_final": 0,
+      "waste_final": 1,
+      "outcomes": {
+        "Extracted": 1,
+        "Insufficient": 3,
+        "Prepared": 1,
+        "Failed": 3
+      },
+      "history_sha256": "e42faff328e934eb941e76da2d837eb998df4a0de5196c55441334733b237ebe",
+      "checkpoint_bytes": [
+        3941,
+        2790,
+        21533,
+        3088,
+        23527,
+        3254,
+        28218,
+        3362,
+        38122
+      ],
+      "journal_bytes": 70740,
+      "retained_bytes": 250462
+    },
+    {
+      "index": 28,
+      "family": "nominal_extraction",
+      "pair": 14,
+      "splits": 5,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "ae4d71274fca213bfb389d5f0c39fa44ebb83ff0e13c7c9704194d1209ad22a1",
+      "checkpoint_bytes": [
+        3945,
+        2720,
+        30387,
+        3864,
+        46889
+      ],
+      "journal_bytes": 79938,
+      "retained_bytes": 231275
+    },
+    {
+      "index": 29,
+      "family": "nominal_extraction",
+      "pair": 14,
+      "splits": 8,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 0,
+      "waste_final": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 0,
+        "Prepared": 4,
+        "Failed": 0
+      },
+      "history_sha256": "b0a4328c882b58239859d626603cdd02ed138f25d018fae99d00ff76bbd8ca8a",
+      "checkpoint_bytes": [
+        3945,
+        2793,
+        21534,
+        3135,
+        25218,
+        3339,
+        27814,
+        3557
+      ],
+      "journal_bytes": 68334,
+      "retained_bytes": 210337
+    },
+    {
+      "index": 30,
+      "family": "checkpoint_crossing",
+      "pair": 15,
+      "splits": 7,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "17db9d1818d7cae15c34a6f7536ad9c3411c3d5e9da5a9ff143a1f117ea4fe03",
+      "checkpoint_bytes": [
+        3948,
+        2719,
+        1625433,
+        47516,
+        1655104,
+        47845,
+        1821099
+      ],
+      "journal_bytes": 2430622,
+      "retained_bytes": 10025661
+    },
+    {
+      "index": 31,
+      "family": "checkpoint_crossing",
+      "pair": 15,
+      "splits": 15,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 0,
+      "waste_final": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "3a196f001cd971bd9e82099bc245c7e73aed7f6ef2ba9d70aecdd78c3b9e9300",
+      "checkpoint_bytes": [
+        3948,
+        2787,
+        21537,
+        3135,
+        25221,
+        3626,
+        47489,
+        4313,
+        53837,
+        4451,
+        1571602,
+        54735,
+        1611849,
+        55472,
+        1779061
+      ],
+      "journal_bytes": 2386030,
+      "retained_bytes": 9974797
+    },
+    {
+      "index": 32,
+      "family": "absolute_phase",
+      "pair": 16,
+      "splits": 7,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "8cd261192ac17125d15437ad7c34251af1512589ab8443ef2972d60fade3a6c7",
+      "checkpoint_bytes": [
+        3991,
+        2723,
+        1625476,
+        47560,
+        1705132,
+        48372,
+        1821142
+      ],
+      "journal_bytes": 2430665,
+      "retained_bytes": 10069152
+    },
+    {
+      "index": 33,
+      "family": "absolute_phase",
+      "pair": 16,
+      "splits": 15,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 0,
+      "waste_final": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "18f1c3d7f50e4d764f9f4a1123decbea417248686bf5dd72928e03d5851db9eb",
+      "checkpoint_bytes": [
+        3991,
+        2796,
+        21580,
+        3150,
+        25264,
+        3653,
+        47532,
+        4324,
+        53880,
+        4464,
+        1571645,
+        54765,
+        1662841,
+        56105,
+        1779104
+      ],
+      "journal_bytes": 2386073,
+      "retained_bytes": 10019807
+    },
+    {
+      "index": 34,
+      "family": "seed7",
+      "pair": 17,
+      "splits": 7,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "91a541158c50031c5e1aca834e138f7068d0f86c4248e041b532578f1580092a",
+      "checkpoint_bytes": [
+        3974,
+        2720,
+        1626799,
+        47485,
+        1706556,
+        48288,
+        1822773
+      ],
+      "journal_bytes": 2430897,
+      "retained_bytes": 10073820
+    },
+    {
+      "index": 35,
+      "family": "seed7",
+      "pair": 17,
+      "splits": 15,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 0,
+      "waste_final": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "fe05d381045d760729222b2d2823da5c09ca84fde42dca70928e70c7639f219e",
+      "checkpoint_bytes": [
+        3974,
+        2785,
+        21566,
+        3142,
+        25254,
+        3638,
+        47526,
+        4324,
+        53878,
+        4458,
+        1407872,
+        43013,
+        1497975,
+        44321,
+        1614215
+      ],
+      "journal_bytes": 2164871,
+      "retained_bytes": 9059510
+    },
+    {
+      "index": 36,
+      "family": "seed17",
+      "pair": 18,
+      "splits": 7,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "66e318a4c4cf83155aa8f4f2a980fa14f9fccf9898ae1a85702a642583a0c566",
+      "checkpoint_bytes": [
+        3971,
+        2725,
+        1625266,
+        47538,
+        1704908,
+        48335,
+        1820895
+      ],
+      "journal_bytes": 2430431,
+      "retained_bytes": 10067927
+    },
+    {
+      "index": 37,
+      "family": "seed17",
+      "pair": 18,
+      "splits": 15,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 0,
+      "waste_final": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "bd9f8281ea47209a4b46dccc8bfa717ada8ec56ad0962c50b31ddba57f5dd0c9",
+      "checkpoint_bytes": [
+        3971,
+        2788,
+        21557,
+        3139,
+        25237,
+        3631,
+        47501,
+        4320,
+        53845,
+        4457,
+        1516191,
+        50857,
+        1607004,
+        52221,
+        1723244
+      ],
+      "journal_bytes": 2312357,
+      "retained_bytes": 9696989
+    },
+    {
+      "index": 38,
+      "family": "long_social",
+      "pair": 19,
+      "splits": 7,
+      "conserved_material": 28,
+      "raw_initial": 16,
+      "raw_final": 16,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "e15e2d8efedc14b0ce5e5f6549f1cfe1314cc02744cb48e43aee6cebfdc4f744",
+      "checkpoint_bytes": [
+        9490,
+        3565,
+        2955797,
+        96566,
+        3017612,
+        97363,
+        3132358
+      ],
+      "journal_bytes": 4209674,
+      "retained_bytes": 17630417
+    },
+    {
+      "index": 39,
+      "family": "long_social",
+      "pair": 19,
+      "splits": 42,
+      "conserved_material": 28,
+      "raw_initial": 16,
+      "raw_final": 0,
+      "waste_final": 8,
+      "outcomes": {
+        "Extracted": 8,
+        "Insufficient": 0,
+        "Prepared": 8,
+        "Failed": 0
+      },
+      "history_sha256": "8d7e731373aee3287967c55e7caf166f64390a3845df8550cede371f97114c91",
+      "checkpoint_bytes": [
+        9490,
+        3567,
+        160422,
+        9412,
+        179104,
+        10917,
+        220224,
+        14762,
+        357818,
+        16020,
+        390825,
+        16942,
+        419103,
+        18461,
+        471047,
+        19702,
+        520002,
+        20457,
+        574681,
+        21868,
+        652989,
+        24117,
+        687113,
+        25245,
+        746836,
+        25928,
+        787037,
+        26780,
+        810797,
+        27702,
+        840348,
+        28117,
+        867358,
+        29004,
+        891191,
+        30209,
+        942527,
+        74838,
+        2614514,
+        75861,
+        2670045,
+        77021
+      ],
+      "journal_bytes": 3753622,
+      "retained_bytes": 23810614
+    },
+    {
+      "index": 40,
+      "family": "long_effort",
+      "pair": 20,
+      "splits": 7,
+      "conserved_material": 21,
+      "raw_initial": 16,
+      "raw_final": 16,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "cff1dad245edee0d47daf91b717e11a3512c0ae5134d7dd658bcabde714d1a5f",
+      "checkpoint_bytes": [
+        9507,
+        3549,
+        7065493,
+        223083,
+        7143371,
+        223791,
+        7259364
+      ],
+      "journal_bytes": 9694469,
+      "retained_bytes": 41120539
+    },
+    {
+      "index": 41,
+      "family": "long_effort",
+      "pair": 20,
+      "splits": 33,
+      "conserved_material": 21,
+      "raw_initial": 16,
+      "raw_final": 4,
+      "waste_final": 6,
+      "outcomes": {
+        "Extracted": 6,
+        "Insufficient": 0,
+        "Prepared": 6,
+        "Failed": 0
+      },
+      "history_sha256": "c2143357a129ed17a9779bb1c5cf278508c6163e6fd0ac8efd3b1c36cec805f8",
+      "checkpoint_bytes": [
+        9507,
+        3556,
+        43090,
+        5159,
+        71900,
+        6048,
+        123599,
+        7717,
+        178244,
+        9732,
+        200081,
+        10437,
+        217801,
+        11133,
+        234070,
+        11992,
+        273095,
+        12714,
+        298333,
+        13988,
+        341788,
+        14778,
+        363163,
+        15278,
+        384007,
+        16757,
+        446367,
+        17453,
+        9075129,
+        306224,
+        9216188,
+        308377,
+        9333998
+      ],
+      "journal_bytes": 12460740,
+      "retained_bytes": 56317442
+    },
+    {
+      "index": 42,
+      "family": "long_finite",
+      "pair": 21,
+      "splits": 7,
+      "conserved_material": 21,
+      "raw_initial": 16,
+      "raw_final": 16,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "73a8be9070a7e14dc23875ac270062515b4a541b8bf400defa79f1972b9fbd58",
+      "checkpoint_bytes": [
+        9507,
+        3562,
+        15046679,
+        458256,
+        15126302,
+        459258,
+        15242295
+      ],
+      "journal_bytes": 20295801,
+      "retained_bytes": 86550409
+    },
+    {
+      "index": 43,
+      "family": "long_finite",
+      "pair": 21,
+      "splits": 43,
+      "conserved_material": 21,
+      "raw_initial": 16,
+      "raw_final": 0,
+      "waste_final": 8,
+      "outcomes": {
+        "Extracted": 8,
+        "Insufficient": 2,
+        "Prepared": 8,
+        "Failed": 2
+      },
+      "history_sha256": "40798e234a163c3f01a723c9eee907eb8f02c1d69ae9f3396feb33464638b793",
+      "checkpoint_bytes": [
+        9507,
+        3555,
+        43090,
+        5164,
+        65907,
+        6240,
+        87745,
+        7330,
+        125111,
+        7984,
+        142561,
+        8603,
+        160150,
+        9123,
+        179564,
+        9703,
+        200680,
+        10429,
+        232502,
+        11430,
+        244367,
+        12563,
+        294083,
+        13621,
+        335755,
+        14320,
+        355425,
+        15040,
+        375433,
+        15496,
+        393118,
+        16127,
+        412663,
+        16655,
+        435959,
+        17567,
+        487570,
+        18578,
+        12465578,
+        329620,
+        12552120,
+        330514,
+        12668136
+      ],
+      "journal_bytes": 16902350,
+      "retained_bytes": 76568832
+    },
+    {
+      "index": 44,
+      "family": "null_unknown",
+      "pair": 22,
+      "splits": 7,
+      "conserved_material": 8,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "ddbd138485b7f2f2aa4816015997486fbf28626a953708d6441eb7b3d20e9000",
+      "checkpoint_bytes": [
+        3963,
+        2528,
+        1406776,
+        46090,
+        1504170,
+        47491,
+        1620249
+      ],
+      "journal_bytes": 2188080,
+      "retained_bytes": 8958801
+    },
+    {
+      "index": 45,
+      "family": "null_unknown",
+      "pair": 22,
+      "splits": 7,
+      "conserved_material": 8,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "e134681751ddd4fcdd60f4eaacbcf88e196fa759eaeba9c98ebe6940b158caab",
+      "checkpoint_bytes": [
+        3963,
+        2529,
+        1406776,
+        46082,
+        1504170,
+        47495,
+        1620249
+      ],
+      "journal_bytes": 2188078,
+      "retained_bytes": 8958795
+    },
+    {
+      "index": 46,
+      "family": "social_order",
+      "pair": 23,
+      "splits": 7,
+      "conserved_material": 20,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "2533edb105862355f7838020c99097df57cd1d40da415f3be1099619dabf1cd3",
+      "checkpoint_bytes": [
+        9494,
+        3548,
+        1193675,
+        38727,
+        1250646,
+        39382,
+        1363344
+      ],
+      "journal_bytes": 1832028,
+      "retained_bytes": 7507306
+    },
+    {
+      "index": 47,
+      "family": "social_order",
+      "pair": 23,
+      "splits": 17,
+      "conserved_material": 20,
+      "raw_initial": 8,
+      "raw_final": 0,
+      "waste_final": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 0,
+        "Prepared": 4,
+        "Failed": 0
+      },
+      "history_sha256": "654ef354dbb256c3f2af011c456cdc1954ca8adc0013ffa5b3997a320c826e26",
+      "checkpoint_bytes": [
+        9494,
+        3547,
+        79051,
+        6518,
+        105279,
+        7733,
+        130148,
+        9448,
+        188359,
+        10185,
+        224907,
+        11309,
+        1169234,
+        41265,
+        1224676,
+        41778,
+        1337489
+      ],
+      "journal_bytes": 1802046,
+      "retained_bytes": 8148474
+    },
+    {
+      "index": 48,
+      "family": "reporting_placebo",
+      "pair": null,
+      "splits": 7,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 8,
+      "waste_final": 0,
+      "outcomes": {
+        "Extracted": 0,
+        "Insufficient": 0,
+        "Prepared": 0,
+        "Failed": 0
+      },
+      "history_sha256": "040e132ed79932c35f2a43859bfe434c4372775aa0baa1050ed32c9978309e40",
+      "checkpoint_bytes": [
+        3946,
+        2717,
+        1625431,
+        47517,
+        1735369,
+        48625,
+        1821097
+      ],
+      "journal_bytes": 2430624,
+      "retained_bytes": 10098838
+    },
+    {
+      "index": 49,
+      "family": "reporting_placebo",
+      "pair": null,
+      "splits": 15,
+      "conserved_material": 9,
+      "raw_initial": 8,
+      "raw_final": 0,
+      "waste_final": 4,
+      "outcomes": {
+        "Extracted": 4,
+        "Insufficient": 4,
+        "Prepared": 4,
+        "Failed": 4
+      },
+      "history_sha256": "efc9f65cce7a501fc42a872912535c46d822f44734cdb2b22396d3cc60ac7f3c",
+      "checkpoint_bytes": [
+        3946,
+        2787,
+        21535,
+        3136,
+        25219,
+        3628,
+        47487,
+        4310,
+        53835,
+        4454,
+        1571600,
+        54736,
+        1693144,
+        56336,
+        1779059
+      ],
+      "journal_bytes": 2386032,
+      "retained_bytes": 10049293
+    }
+  ],
+  "flags": [
+    "Extracting",
+    "Failed",
+    "Preparing",
+    "concurrent_work",
+    "cutoff",
+    "drain",
+    "reporting"
+  ],
+  "scope": "Full saved-state bytes at selected phase/cutoff/concurrency splits and original corrected025 terminal-history hash; real new process for every operation.",
+  "status": "PASS within finite headless limits",
+  "split_comparisons": 616,
+  "original_source": "corrected Experiment025 observer2; original generator/coordinator/model unchanged",
+  "observer2_source_manifest_sha256": "4a8b731c07577998d1fa96caf84d788e68f1f297d459233bc64119ee5ae75a71",
+  "source_seams": [
+    {
+      "sha256": "7d99ce060210af4dede685ce64f6a69659baa536b96b0e4ea0bd555d1af66e17",
+      "source": "simulation_host.rs",
+      "substitutions": 2
+    },
+    {
+      "sha256": "6ace175508b684a3e3934b18a10afd039ab0cbd61eb350826d7a2ce286de1f75",
+      "source": "adaptive_host.rs",
+      "substitutions": 1
+    },
+    {
+      "sha256": "257f77147f7f46a7224a363631a4148740c0b2b23ffdde731b890efc2aa28edc",
+      "source": "concurrent_host.rs",
+      "substitutions": 2
+    },
+    {
+      "sha256": "2d5354cee341a603fc90f6adc7151f17daf6e1ce40e2e3264132746070ec61b7",
+      "source": "valuation_coordinator.rs",
+      "substitutions": 1
+    },
+    {
+      "sha256": "591969036656e92b8fc414cdc6e33c7323ffe36de48f2d1929db05ece784bf81",
+      "source": "preparation_coordinator.rs",
+      "substitutions": 1
+    },
+    {
+      "sha256": "2b62ca86bb028540693d87267ef3bd0333c0606f3f97e5ffb4ea0fb312296a23",
+      "source": "025 model",
+      "substitutions": 2
+    },
+    {
+      "sha256": "cab23c9d1def6cc09a137074e1e7350c5a3bf216cd1da80d155b8fb534306cd8",
+      "source": "lib_host.rs",
+      "substitutions": 1
+    },
+    {
+      "sha256": "1182a7a732eb8a6a89ebce9132692abe0217bb02e5a172261dcfdd76101baa0f",
+      "source": "lib_host.rs",
+      "substitutions": 1
+    },
+    {
+      "sha256": "475075157cafb6ed9f06467259f4343f2e730797b4505e1424cc3837618c524e",
+      "source": "lib_host.rs",
+      "substitutions": 1
+    },
+    {
+      "source": "persistent Saved/World field types",
+      "substitutions": 6
+    },
+    {
+      "sha256": "8e471ab95344f4a8e0219db3fc4c8c17e6ec155b81272990cb331055772b05cd",
+      "source": "persistent runtime envelope",
+      "substitutions": 3
+    },
+    {
+      "sha256": "d3a6d48e28d3e4109395b509894fb71e4214ea5dcaab4ef8dd06be85bc220619",
+      "source": "persistent constructor",
+      "substitutions": 1
+    },
+    {
+      "sha256": "ccb988bc9c1b8cc192d06c9c65d95b02ee0d4aaa43f245eba0da1eb65bdccba1",
+      "source": "persistent step",
+      "substitutions": 1
+    },
+    {
+      "sha256": "6f590b47c7cca1a180e12ad36d05071f8d2804e7ff49303ccaa024e2cc214c1b",
+      "source": "persistent material fields",
+      "substitutions": 7
+    },
+    {
+      "sha256": "b083cb58b3728b0621c77d25d8464ed6eaa2072a78adc972f55bc9d2c897138d",
+      "source": "Session historical-only test module",
+      "substitutions": 1
+    },
+    {
+      "sha256": "28b4402667111acbb508541307faf700ceb98ace0d2d410eee7857fe96cbee7e",
+      "source": "Session typed projection",
+      "substitutions": 11
+    },
+    {
+      "sha256": "310f8e75efa85c3614e19ac18e1c51d6f331cf3ba332159f79d2d62224bcd9bc",
+      "source": "recovery typed material audit",
+      "substitutions": 1
+    },
+    {
+      "sha256": "0a4748bf0fad963058c9b7c0d7e4f3e8fc759f6c7e985836d9ac9586500cd45f",
+      "source": "independent primitive reader material extension",
+      "substitutions": 7
+    }
+  ],
+  "in_process_full_state_splits": 809,
+  "new_rust_tests": 14,
+  "independent_semantic_corruptions": 13,
+  "storage_faults": {
+    "checks": [
+      {
+        "fault": "checkpoint_bytes",
+        "exit": 1,
+        "error": "commit identity/state mismatch"
+      },
+      {
+        "fault": "runtime_bytes",
+        "exit": 1,
+        "error": "checkpoint/journal binding checksum mismatch"
+      },
+      {
+        "fault": "schema_bytes",
+        "exit": 1,
+        "error": "unsupported storage schema"
+      },
+      {
+        "fault": "journal_prefix",
+        "exit": 1,
+        "error": "journal/checkpoint mismatch"
+      }
+    ],
+    "parent_byte_identical": true,
+    "scope": "Outer storage/binding corruptions; the separate Rust controls rehash inner state and binding to test material semantics."
+  },
+  "protected_foundation": {
+    "endpoint": "001-024",
+    "artifacts": 408,
+    "raw_originals": 425,
+    "unchanged": true
+  },
+  "separate025": {
+    "custody_bindings": 214,
+    "exact_replays": 50,
+    "unchanged": true,
+    "adoption": false
+  },
+  "recovery": {
+    "schema": "woi-world-recovery/v2",
+    "generation": 2,
+    "tick": 3,
+    "prefix_bytes": 28282,
+    "prefix_sha256": "1c5ece12184bd62c7defaf8560fbc3716eb16c42a647ad6b520d28b43eaf51fd",
+    "later_committed_bytes": 21466,
+    "later_committed_sha256": "fd0133da1d9f95fee0ae2857a3b38eadbb67c5d8263c9ec4505cd5fdbc1381d1",
+    "tail_bytes": 22048,
+    "tail_sha256": "73c38d7c2d4b53ca38ae26ef9bba0c063b9394e52bebfb3b23dc4feb4054b3e0",
+    "verified_through_generation": 3
+  },
+  "recovery_parent_byte_identical": true,
+  "recovery_selected_state_exact": true,
+  "recovery_original_terminal_exact": true,
+  "witnesses": [
+    {
+      "index": 1,
+      "initial_total": 9,
+      "terminal_compartments": {
+        "raw": 0,
+        "escrow": 0,
+        "ready": 1,
+        "owned_food": 0,
+        "waste": 4,
+        "consumed": 4
+      },
+      "first_processes": [
+        {
+          "commitment": 0,
+          "owner": 0,
+          "source": 0,
+          "start": 0,
+          "extract_at": 2,
+          "finish_at": 6
+        },
+        {
+          "commitment": 1,
+          "owner": 1,
+          "source": 0,
+          "start": 0,
+          "extract_at": 2,
+          "finish_at": 6
+        }
+      ],
+      "first_operations": [
+        {
+          "id": 0,
+          "tick": 2,
+          "commitment": 0,
+          "owner": 0,
+          "source": 0,
+          "outcome": "Extracted",
+          "raw_before": 8,
+          "raw_after": 6,
+          "escrow_before": 0,
+          "escrow_after": 2,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        },
+        {
+          "id": 1,
+          "tick": 2,
+          "commitment": 1,
+          "owner": 1,
+          "source": 0,
+          "outcome": "Extracted",
+          "raw_before": 6,
+          "raw_after": 4,
+          "escrow_before": 0,
+          "escrow_after": 2,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        },
+        {
+          "id": 2,
+          "tick": 2,
+          "commitment": 2,
+          "owner": 2,
+          "source": 0,
+          "outcome": "Extracted",
+          "raw_before": 4,
+          "raw_after": 2,
+          "escrow_before": 0,
+          "escrow_after": 2,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        },
+        {
+          "id": 3,
+          "tick": 2,
+          "commitment": 3,
+          "owner": 3,
+          "source": 0,
+          "outcome": "Extracted",
+          "raw_before": 2,
+          "raw_after": 0,
+          "escrow_before": 0,
+          "escrow_after": 2,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        }
+      ],
+      "first_meals": [
+        {
+          "tick": 7,
+          "actor": 0,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 85,
+          "hunger_after": 45,
+          "consumed": 1
+        },
+        {
+          "tick": 7,
+          "actor": 1,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 85,
+          "hunger_after": 45,
+          "consumed": 1
+        }
+      ],
+      "material_history_json_bytes": 18657
+    },
+    {
+      "index": 5,
+      "initial_total": 3,
+      "terminal_compartments": {
+        "raw": 0,
+        "escrow": 0,
+        "ready": 1,
+        "owned_food": 0,
+        "waste": 1,
+        "consumed": 1
+      },
+      "first_processes": [
+        {
+          "commitment": 0,
+          "owner": 0,
+          "source": 0,
+          "start": 0,
+          "extract_at": 2,
+          "finish_at": 6
+        },
+        {
+          "commitment": 1,
+          "owner": 1,
+          "source": 0,
+          "start": 0,
+          "extract_at": 2,
+          "finish_at": 6
+        }
+      ],
+      "first_operations": [
+        {
+          "id": 0,
+          "tick": 2,
+          "commitment": 0,
+          "owner": 0,
+          "source": 0,
+          "outcome": "Extracted",
+          "raw_before": 2,
+          "raw_after": 0,
+          "escrow_before": 0,
+          "escrow_after": 2,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        },
+        {
+          "id": 1,
+          "tick": 2,
+          "commitment": 1,
+          "owner": 1,
+          "source": 0,
+          "outcome": "Insufficient",
+          "raw_before": 0,
+          "raw_after": 0,
+          "escrow_before": 0,
+          "escrow_after": 0,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        },
+        {
+          "id": 2,
+          "tick": 6,
+          "commitment": 0,
+          "owner": 0,
+          "source": 0,
+          "outcome": "Prepared",
+          "raw_before": 0,
+          "raw_after": 0,
+          "escrow_before": 2,
+          "escrow_after": 0,
+          "food_before": 0,
+          "food_after": 1,
+          "waste_before": 0,
+          "waste_after": 1
+        },
+        {
+          "id": 3,
+          "tick": 6,
+          "commitment": 1,
+          "owner": 1,
+          "source": 0,
+          "outcome": "Failed",
+          "raw_before": 0,
+          "raw_after": 0,
+          "escrow_before": 0,
+          "escrow_after": 0,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 1,
+          "waste_after": 1
+        }
+      ],
+      "first_meals": [
+        {
+          "tick": 7,
+          "actor": 0,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 85,
+          "hunger_after": 45,
+          "consumed": 1
+        }
+      ],
+      "material_history_json_bytes": 15190
+    },
+    {
+      "index": 7,
+      "initial_total": 3,
+      "terminal_compartments": {
+        "raw": 0,
+        "escrow": 0,
+        "ready": 1,
+        "owned_food": 0,
+        "waste": 1,
+        "consumed": 1
+      },
+      "first_processes": [
+        {
+          "commitment": 0,
+          "owner": 0,
+          "source": 0,
+          "start": 0,
+          "extract_at": 2,
+          "finish_at": 6
+        },
+        {
+          "commitment": 1,
+          "owner": 1,
+          "source": 0,
+          "start": 0,
+          "extract_at": 2,
+          "finish_at": 6
+        }
+      ],
+      "first_operations": [
+        {
+          "id": 0,
+          "tick": 2,
+          "commitment": 1,
+          "owner": 1,
+          "source": 0,
+          "outcome": "Extracted",
+          "raw_before": 2,
+          "raw_after": 0,
+          "escrow_before": 0,
+          "escrow_after": 2,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        },
+        {
+          "id": 1,
+          "tick": 2,
+          "commitment": 0,
+          "owner": 0,
+          "source": 0,
+          "outcome": "Insufficient",
+          "raw_before": 0,
+          "raw_after": 0,
+          "escrow_before": 0,
+          "escrow_after": 0,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        },
+        {
+          "id": 2,
+          "tick": 6,
+          "commitment": 1,
+          "owner": 1,
+          "source": 0,
+          "outcome": "Prepared",
+          "raw_before": 0,
+          "raw_after": 0,
+          "escrow_before": 2,
+          "escrow_after": 0,
+          "food_before": 0,
+          "food_after": 1,
+          "waste_before": 0,
+          "waste_after": 1
+        },
+        {
+          "id": 3,
+          "tick": 6,
+          "commitment": 0,
+          "owner": 0,
+          "source": 0,
+          "outcome": "Failed",
+          "raw_before": 0,
+          "raw_after": 0,
+          "escrow_before": 0,
+          "escrow_after": 0,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 1,
+          "waste_after": 1
+        }
+      ],
+      "first_meals": [
+        {
+          "tick": 7,
+          "actor": 1,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 85,
+          "hunger_after": 45,
+          "consumed": 1
+        }
+      ],
+      "material_history_json_bytes": 15189
+    },
+    {
+      "index": 17,
+      "initial_total": 13,
+      "terminal_compartments": {
+        "raw": 0,
+        "escrow": 0,
+        "ready": 1,
+        "owned_food": 4,
+        "waste": 4,
+        "consumed": 4
+      },
+      "first_processes": [
+        {
+          "commitment": 10,
+          "owner": 0,
+          "source": 0,
+          "start": 10,
+          "extract_at": 12,
+          "finish_at": 16
+        },
+        {
+          "commitment": 12,
+          "owner": 2,
+          "source": 0,
+          "start": 10,
+          "extract_at": 12,
+          "finish_at": 16
+        }
+      ],
+      "first_operations": [
+        {
+          "id": 0,
+          "tick": 12,
+          "commitment": 10,
+          "owner": 0,
+          "source": 0,
+          "outcome": "Extracted",
+          "raw_before": 8,
+          "raw_after": 6,
+          "escrow_before": 0,
+          "escrow_after": 2,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        },
+        {
+          "id": 1,
+          "tick": 12,
+          "commitment": 12,
+          "owner": 2,
+          "source": 0,
+          "outcome": "Extracted",
+          "raw_before": 6,
+          "raw_after": 4,
+          "escrow_before": 0,
+          "escrow_after": 2,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        },
+        {
+          "id": 2,
+          "tick": 16,
+          "commitment": 10,
+          "owner": 0,
+          "source": 0,
+          "outcome": "Prepared",
+          "raw_before": 4,
+          "raw_after": 4,
+          "escrow_before": 2,
+          "escrow_after": 0,
+          "food_before": 0,
+          "food_after": 1,
+          "waste_before": 0,
+          "waste_after": 1
+        },
+        {
+          "id": 3,
+          "tick": 16,
+          "commitment": 12,
+          "owner": 2,
+          "source": 0,
+          "outcome": "Prepared",
+          "raw_before": 4,
+          "raw_after": 4,
+          "escrow_before": 2,
+          "escrow_after": 0,
+          "food_before": 0,
+          "food_after": 1,
+          "waste_before": 1,
+          "waste_after": 2
+        }
+      ],
+      "first_meals": [
+        {
+          "tick": 12,
+          "actor": 1,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 25,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 12,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 25,
+          "hunger_after": 0,
+          "consumed": 1
+        }
+      ],
+      "material_history_json_bytes": 58233
+    },
+    {
+      "index": 23,
+      "initial_total": 9,
+      "terminal_compartments": {
+        "raw": 0,
+        "escrow": 0,
+        "ready": 1,
+        "owned_food": 0,
+        "waste": 4,
+        "consumed": 4
+      },
+      "first_processes": [
+        {
+          "commitment": 6,
+          "owner": 2,
+          "source": 0,
+          "start": 1,
+          "extract_at": 9,
+          "finish_at": 33
+        },
+        {
+          "commitment": 7,
+          "owner": 3,
+          "source": 0,
+          "start": 1,
+          "extract_at": 9,
+          "finish_at": 33
+        }
+      ],
+      "first_operations": [
+        {
+          "id": 0,
+          "tick": 9,
+          "commitment": 6,
+          "owner": 2,
+          "source": 0,
+          "outcome": "Extracted",
+          "raw_before": 8,
+          "raw_after": 6,
+          "escrow_before": 0,
+          "escrow_after": 2,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        },
+        {
+          "id": 1,
+          "tick": 9,
+          "commitment": 7,
+          "owner": 3,
+          "source": 0,
+          "outcome": "Extracted",
+          "raw_before": 6,
+          "raw_after": 4,
+          "escrow_before": 0,
+          "escrow_after": 2,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        },
+        {
+          "id": 2,
+          "tick": 28,
+          "commitment": 29,
+          "owner": 0,
+          "source": 0,
+          "outcome": "Extracted",
+          "raw_before": 4,
+          "raw_after": 2,
+          "escrow_before": 0,
+          "escrow_after": 2,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        },
+        {
+          "id": 3,
+          "tick": 29,
+          "commitment": 31,
+          "owner": 1,
+          "source": 0,
+          "outcome": "Extracted",
+          "raw_before": 2,
+          "raw_after": 0,
+          "escrow_before": 0,
+          "escrow_after": 2,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        }
+      ],
+      "first_meals": [
+        {
+          "tick": 34,
+          "actor": 2,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 100,
+          "hunger_after": 60,
+          "consumed": 1
+        },
+        {
+          "tick": 34,
+          "actor": 3,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 100,
+          "hunger_after": 60,
+          "consumed": 1
+        }
+      ],
+      "material_history_json_bytes": 22338
+    },
+    {
+      "index": 43,
+      "initial_total": 21,
+      "terminal_compartments": {
+        "raw": 0,
+        "escrow": 0,
+        "ready": 1,
+        "owned_food": 0,
+        "waste": 8,
+        "consumed": 12
+      },
+      "first_processes": [
+        {
+          "commitment": 10,
+          "owner": 0,
+          "source": 0,
+          "start": 10,
+          "extract_at": 12,
+          "finish_at": 16
+        },
+        {
+          "commitment": 12,
+          "owner": 2,
+          "source": 0,
+          "start": 10,
+          "extract_at": 12,
+          "finish_at": 16
+        }
+      ],
+      "first_operations": [
+        {
+          "id": 0,
+          "tick": 12,
+          "commitment": 10,
+          "owner": 0,
+          "source": 0,
+          "outcome": "Extracted",
+          "raw_before": 16,
+          "raw_after": 14,
+          "escrow_before": 0,
+          "escrow_after": 2,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        },
+        {
+          "id": 1,
+          "tick": 12,
+          "commitment": 12,
+          "owner": 2,
+          "source": 0,
+          "outcome": "Extracted",
+          "raw_before": 14,
+          "raw_after": 12,
+          "escrow_before": 0,
+          "escrow_after": 2,
+          "food_before": 0,
+          "food_after": 0,
+          "waste_before": 0,
+          "waste_after": 0
+        },
+        {
+          "id": 2,
+          "tick": 16,
+          "commitment": 10,
+          "owner": 0,
+          "source": 0,
+          "outcome": "Prepared",
+          "raw_before": 12,
+          "raw_after": 12,
+          "escrow_before": 2,
+          "escrow_after": 0,
+          "food_before": 0,
+          "food_after": 1,
+          "waste_before": 0,
+          "waste_after": 1
+        },
+        {
+          "id": 3,
+          "tick": 16,
+          "commitment": 12,
+          "owner": 2,
+          "source": 0,
+          "outcome": "Prepared",
+          "raw_before": 12,
+          "raw_after": 12,
+          "escrow_before": 2,
+          "escrow_after": 0,
+          "food_before": 0,
+          "food_after": 1,
+          "waste_before": 1,
+          "waste_after": 2
+        }
+      ],
+      "first_meals": [
+        {
+          "tick": 12,
+          "actor": 1,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 25,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 12,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 25,
+          "hunger_after": 0,
+          "consumed": 1
+        }
+      ],
+      "material_history_json_bytes": 23544
+    }
+  ],
+  "validation_exits": [
+    {
+      "check": "fmt",
+      "exit": 0
+    },
+    {
+      "check": "clippy",
+      "exit": 0
+    },
+    {
+      "check": "test",
+      "exit": 0
+    },
+    {
+      "check": "foundation",
+      "exit": 0
+    },
+    {
+      "check": "025",
+      "exit": 0
+    },
+    {
+      "check": "fmt",
+      "exit": 0
+    },
+    {
+      "check": "clippy",
+      "exit": 0
+    },
+    {
+      "check": "build",
+      "exit": 0
+    },
+    {
+      "check": "test",
+      "exit": 0
+    },
+    {
+      "check": "private-fmt",
+      "exit": 0
+    },
+    {
+      "check": "final-clippy",
+      "exit": 0
+    },
+    {
+      "check": "binary",
+      "exit": 0
+    },
+    {
+      "check": "old-compatibility",
+      "exit": 0
+    }
+  ],
+  "limits": [
+    "Four actors; existing finite registered horizons and33 charged drain",
+    "No GUI or release acceptance",
+    "025 remains separate unadopted research",
+    "No Experiment026",
+    "Independent primitive verification is not a complete cognition/policy proof",
+    "No power-loss durability claim"
+  ],
+  "current_source_identity_independently_recomputed": true,
+  "registered_world_processes": 1949,
+  "campaign_cli_processes": 2028,
+  "additional_storage_fault_rejections": 4,
+  "supplemental_reporting": {
+    "index": 23,
+    "report_tick": 11,
+    "comparisons": [
+      {
+        "tick": 10,
+        "step": 10,
+        "state_sha256": "100f6e750ba5a7971abc1c7a98f299e5405a3fcb7271df16c54fd9ac1868b598",
+        "material_work": [
+          {
+            "escrow": 2,
+            "phase": "Preparing",
+            "process": {
+              "commitment": 6,
+              "extract_at": 9,
+              "finish_at": 33,
+              "owner": 2,
+              "source": 0,
+              "start": 1
+            }
+          },
+          {
+            "escrow": 2,
+            "phase": "Preparing",
+            "process": {
+              "commitment": 7,
+              "extract_at": 9,
+              "finish_at": 33,
+              "owner": 3,
+              "source": 0,
+              "start": 1
+            }
+          }
+        ]
+      },
+      {
+        "tick": 11,
+        "step": 11,
+        "state_sha256": "cbf9906b5cb8eb9c2856e6aed6220e0ebf746bc8baceab3e5c51612c1dae9092",
+        "material_work": [
+          {
+            "escrow": 2,
+            "phase": "Preparing",
+            "process": {
+              "commitment": 6,
+              "extract_at": 9,
+              "finish_at": 33,
+              "owner": 2,
+              "source": 0,
+              "start": 1
+            }
+          },
+          {
+            "escrow": 2,
+            "phase": "Preparing",
+            "process": {
+              "commitment": 7,
+              "extract_at": 9,
+              "finish_at": 33,
+              "owner": 3,
+              "source": 0,
+              "start": 1
+            }
+          }
+        ]
+      }
+    ],
+    "original_terminal_exact": true,
+    "cli_processes": 9
+  },
+  "root_rust_tests": 217,
+  "existing_reader_compatibility_tests": 10,
+  "inherited_process_reliability": {
+    "tests": 2,
+    "separate_process_cycles": 243,
+    "worlds": 9,
+    "forced_kill_stages": 3,
+    "passed": true,
+    "scope": "Unchanged canonical023/024 transport framework; distinct from the new025 process campaign."
+  },
+  "canonical_default_cli_rebuilt_after_feature_probes": true
+}

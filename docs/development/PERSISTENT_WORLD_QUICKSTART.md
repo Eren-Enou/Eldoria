@@ -1,5 +1,10 @@
 # Persistent worlds: current headless workflow
 
+Explicit025 material continuation is validated headlessly in a separate host; see
+[persistent material contract and acceptance status](persistent-material-world.md).
+The existing workbench commands below continue to use the023/024 reader. The new
+host does not enable025 in the GUI or an installed release.
+
 The recovery/storage backend can be built and tested without desktop access.
 GUI Pause/Finalize/024 acceptance and a new Windows release remain **DEFERRED**.
 Do not infer GUI acceptance from the commands below. The earlier GUI guide follows
