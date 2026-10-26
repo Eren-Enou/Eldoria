@@ -38,6 +38,18 @@ fn budget(options: &[&str]) -> Result<Budget, String> {
 fn run() -> Result<(), String> {
     let args = env::args().skip(1).collect::<Vec<_>>();
     match args.iter().map(String::as_str).collect::<Vec<_>>().as_slice() {
+        #[cfg(feature="failure-probes")]
+        ["probe",stage,directory,steps,ready]=>{
+            let mut session=Session::open(Path::new(directory))?;
+            let steps=steps.parse().map_err(|_|"invalid step count")?;
+            if !["journal","before-publish","after-publish"].contains(stage){return Err("unknown failure probe stage".into());}
+            session.advance(steps)?;
+            match *stage {
+                "before-publish"=>session.save_before_publish_probe(||probe_wait(Path::new(ready)))?,
+                "after-publish"=>{session.save()?;probe_wait(Path::new(ready))?;},
+                _=>probe_wait(Path::new(ready))?,
+            }
+        }
         ["advance",directory,steps,"--codec","zlib"]=> {
             let mut session=Session::open(Path::new(directory))?;
             session.advance(steps.parse().map_err(|_|"invalid step count")?)?;
@@ -94,9 +106,24 @@ fn run() -> Result<(), String> {
             serde_json::to_writer(&mut file,&trial).map_err(|e|e.to_string())?;
             file.write_all(b"\n").and_then(|_|file.sync_all()).map_err(|e|e.to_string())?;
         }
-        _=>return Err("usage: create NEW-DIR CONFIG | advance DIR STEPS | status DIR | finalize DIR | check DIR | storage DIR [--budget-bytes N --max-generations N --project-saves N] | recover SOURCE NEW-BRANCH-ROOT/WORLD-ID --generation N | interrupt DIR STEPS | reference CONFIG NEW-OUTPUT".into()),
+        _=>return Err("usage: create NEW-DIR CONFIG | advance DIR STEPS [--codec zlib] | status DIR | finalize DIR | check DIR | verify DIR --generation N | storage DIR [--budget-bytes N --max-generations N --project-saves N] | recover SOURCE NEW-BRANCH-ROOT/WORLD-ID --generation N | interrupt DIR STEPS | reference CONFIG NEW-OUTPUT".into()),
     }
     Ok(())
+}
+#[cfg(feature = "failure-probes")]
+fn probe_wait(ready: &Path) -> Result<(), String> {
+    use std::io::Write;
+    woi_persistent_world::persistent::session::check_path(ready)?;
+    let mut f = fs::OpenOptions::new()
+        .write(true)
+        .create_new(true)
+        .open(ready)
+        .map_err(|e| e.to_string())?;
+    f.write_all(b"ready")
+        .and_then(|_| f.sync_all())
+        .map_err(|e| e.to_string())?;
+    std::thread::sleep(std::time::Duration::from_secs(30));
+    Err("bounded failure probe expired without termination; no further execution".into())
 }
 fn main() {
     if let Err(error) = run() {

@@ -207,6 +207,13 @@ fn retained_size(path: &Path, depth: usize) -> Result<u64, String> {
 /// Read-only. A busy/absent lock makes the observed snapshot explicitly unstable.
 pub fn inspect(path: &Path, budget: &Budget) -> Result<Inspection, String> {
     check_path(path)?;
+    let id = path
+        .file_name()
+        .and_then(|n| n.to_str())
+        .ok_or("select a world directory, not a filesystem root")?;
+    if id.is_empty() || !id.bytes().all(|b| b.is_ascii_alphanumeric() || b == b'-') {
+        return Err("invalid world directory identity".into());
+    }
     let lock = existing_lock(path);
     let stable = lock.is_ok();
     let lock_status = lock.as_ref().map_or_else(

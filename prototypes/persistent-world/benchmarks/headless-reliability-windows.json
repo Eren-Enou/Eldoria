@@ -1,0 +1,366 @@
+{
+  "kind": "engineering observations; not frozen scientific simulation evidence",
+  "configuration": {
+    "case": "paired",
+    "seed": 42,
+    "period": 11,
+    "saved_quarter_batches": 3,
+    "unsaved_steps": 7
+  },
+  "compiler": "rustc 1.99.0 (b940084d7 2026-09-28)",
+  "target": "x86_64-pc-windows-msvc",
+  "measurement": {
+    "limitations": "Local host/cache wall-clock observations; retained file bytes are not heap, allocated blocks, population scaling or power-loss durability. Reference worlds run outside measured save/open/recovery intervals.",
+    "pid": 117556,
+    "rows": [
+      {
+        "busy_inspection_ms": 9.0351,
+        "checkpoint_bytes": [
+          8832,
+          312332,
+          762657,
+          1183071
+        ],
+        "codec": "Raw",
+        "deep_inspection_ms": 201.40179999999998,
+        "exact_state_and_history": true,
+        "horizon": 128,
+        "independent_ms": 166.3984,
+        "independent_tick": 102,
+        "journal_and_save_ms": 276.3473,
+        "journal_bytes": 1708481,
+        "mode": "None",
+        "open_ms": 86.248,
+        "preserved_tail_bytes": 120913,
+        "recovery_ms": 401.6111,
+        "save_ms": [
+          17.0995,
+          30.8676,
+          38.8357
+        ],
+        "saved_generations": 4,
+        "total_retained_bytes": 3975373
+      },
+      {
+        "busy_inspection_ms": 11.3754,
+        "checkpoint_bytes": [
+          8832,
+          13486,
+          27036,
+          40387
+        ],
+        "codec": "Zlib",
+        "deep_inspection_ms": 184.6971,
+        "exact_state_and_history": true,
+        "horizon": 128,
+        "independent_ms": 167.7643,
+        "independent_tick": 102,
+        "journal_and_save_ms": 296.06519999999995,
+        "journal_bytes": 1708481,
+        "mode": "None",
+        "open_ms": 79.9686,
+        "preserved_tail_bytes": 120913,
+        "recovery_ms": 381.93359999999996,
+        "save_ms": [
+          19.9841,
+          32.284,
+          43.599
+        ],
+        "saved_generations": 4,
+        "total_retained_bytes": 1798222
+      },
+      {
+        "busy_inspection_ms": 10.3293,
+        "checkpoint_bytes": [
+          9026,
+          328361,
+          792926,
+          1224354
+        ],
+        "codec": "Raw",
+        "deep_inspection_ms": 207.0233,
+        "exact_state_and_history": true,
+        "horizon": 128,
+        "independent_ms": 203.52190000000002,
+        "independent_tick": 102,
+        "journal_and_save_ms": 321.2821,
+        "journal_bytes": 1766865,
+        "mode": "Some(Baseline)",
+        "open_ms": 93.28649999999999,
+        "preserved_tail_bytes": 124373,
+        "recovery_ms": 458.9889,
+        "save_ms": [
+          19.3907,
+          30.9635,
+          42.2392
+        ],
+        "saved_generations": 4,
+        "total_retained_bytes": 4121532
+      },
+      {
+        "busy_inspection_ms": 10.5642,
+        "checkpoint_bytes": [
+          9026,
+          14116,
+          28051,
+          41842
+        ],
+        "codec": "Zlib",
+        "deep_inspection_ms": 212.3878,
+        "exact_state_and_history": true,
+        "horizon": 128,
+        "independent_ms": 198.9384,
+        "independent_tick": 102,
+        "journal_and_save_ms": 319.8358,
+        "journal_bytes": 1766865,
+        "mode": "Some(Baseline)",
+        "open_ms": 104.98689999999999,
+        "preserved_tail_bytes": 124373,
+        "recovery_ms": 444.189,
+        "save_ms": [
+          23.009600000000002,
+          36.9467,
+          49.3834
+        ],
+        "saved_generations": 4,
+        "total_retained_bytes": 1859900
+      },
+      {
+        "busy_inspection_ms": 10.5891,
+        "checkpoint_bytes": [
+          9028,
+          335200,
+          768119,
+          1186714
+        ],
+        "codec": "Raw",
+        "deep_inspection_ms": 181.8249,
+        "exact_state_and_history": true,
+        "horizon": 128,
+        "independent_ms": 181.568,
+        "independent_tick": 102,
+        "journal_and_save_ms": 275.54260000000005,
+        "journal_bytes": 1715568,
+        "mode": "Some(MealRelief)",
+        "open_ms": 81.984,
+        "preserved_tail_bytes": 124335,
+        "recovery_ms": 403.1149,
+        "save_ms": [
+          16.9795,
+          28.8488,
+          39.276199999999996
+        ],
+        "saved_generations": 4,
+        "total_retained_bytes": 4014629
+      },
+      {
+        "busy_inspection_ms": 9.598799999999999,
+        "checkpoint_bytes": [
+          9028,
+          14179,
+          27795,
+          41197
+        ],
+        "codec": "Zlib",
+        "deep_inspection_ms": 171.89350000000002,
+        "exact_state_and_history": true,
+        "horizon": 128,
+        "independent_ms": 165.8762,
+        "independent_tick": 102,
+        "journal_and_save_ms": 290.4759,
+        "journal_bytes": 1715568,
+        "mode": "Some(MealRelief)",
+        "open_ms": 88.4097,
+        "preserved_tail_bytes": 124335,
+        "recovery_ms": 396.599,
+        "save_ms": [
+          19.8885,
+          33.7017,
+          44.498200000000004
+        ],
+        "saved_generations": 4,
+        "total_retained_bytes": 1807767
+      },
+      {
+        "busy_inspection_ms": 11.508700000000001,
+        "checkpoint_bytes": [
+          8837,
+          3286629,
+          6706328,
+          10130624
+        ],
+        "codec": "Raw",
+        "deep_inspection_ms": 1331.5438,
+        "exact_state_and_history": true,
+        "horizon": 1024,
+        "independent_ms": 1425.4379999999999,
+        "independent_tick": 774,
+        "journal_and_save_ms": 2209.2196,
+        "journal_bytes": 13635184,
+        "mode": "None",
+        "open_ms": 755.1256,
+        "preserved_tail_bytes": 122030,
+        "recovery_ms": 2868.5090999999998,
+        "save_ms": [
+          80.7167,
+          158.35389999999998,
+          239.0167
+        ],
+        "saved_generations": 4,
+        "total_retained_bytes": 33767602
+      },
+      {
+        "busy_inspection_ms": 9.4743,
+        "checkpoint_bytes": [
+          8837,
+          94458,
+          175511,
+          256805
+        ],
+        "codec": "Zlib",
+        "deep_inspection_ms": 1294.4636,
+        "exact_state_and_history": true,
+        "horizon": 1024,
+        "independent_ms": 1413.9593,
+        "independent_tick": 774,
+        "journal_and_save_ms": 2253.1588,
+        "journal_bytes": 13635184,
+        "mode": "None",
+        "open_ms": 660.3846,
+        "preserved_tail_bytes": 122030,
+        "recovery_ms": 2854.3619,
+        "save_ms": [
+          90.089,
+          172.4932,
+          272.6704
+        ],
+        "saved_generations": 4,
+        "total_retained_bytes": 14170795
+      },
+      {
+        "busy_inspection_ms": 10.255500000000001,
+        "checkpoint_bytes": [
+          9032,
+          3379264,
+          6882419,
+          10390171
+        ],
+        "codec": "Raw",
+        "deep_inspection_ms": 1300.6369,
+        "exact_state_and_history": true,
+        "horizon": 1024,
+        "independent_ms": 1437.6491,
+        "independent_tick": 774,
+        "journal_and_save_ms": 2182.7431,
+        "journal_bytes": 13984331,
+        "mode": "Some(Baseline)",
+        "open_ms": 628.9982,
+        "preserved_tail_bytes": 125502,
+        "recovery_ms": 2800.1283,
+        "save_ms": [
+          78.3083,
+          138.1447,
+          197.6163
+        ],
+        "saved_generations": 4,
+        "total_retained_bytes": 34645217
+      },
+      {
+        "busy_inspection_ms": 10.254,
+        "checkpoint_bytes": [
+          9032,
+          97060,
+          179463,
+          261333
+        ],
+        "codec": "Zlib",
+        "deep_inspection_ms": 1266.6298,
+        "exact_state_and_history": true,
+        "horizon": 1024,
+        "independent_ms": 1435.6815000000001,
+        "independent_tick": 774,
+        "journal_and_save_ms": 2262.5142,
+        "journal_bytes": 13984331,
+        "mode": "Some(Baseline)",
+        "open_ms": 647.3371,
+        "preserved_tail_bytes": 125502,
+        "recovery_ms": 2854.1847000000002,
+        "save_ms": [
+          90.85419999999999,
+          173.2769,
+          273.279
+        ],
+        "saved_generations": 4,
+        "total_retained_bytes": 14531219
+      },
+      {
+        "busy_inspection_ms": 10.1519,
+        "checkpoint_bytes": [
+          9034,
+          3386026,
+          6951864,
+          10521642
+        ],
+        "codec": "Raw",
+        "deep_inspection_ms": 1288.7614,
+        "exact_state_and_history": true,
+        "horizon": 1024,
+        "independent_ms": 1493.7849,
+        "independent_tick": 774,
+        "journal_and_save_ms": 2141.9782,
+        "journal_bytes": 14158171,
+        "mode": "Some(MealRelief)",
+        "open_ms": 617.6800999999999,
+        "preserved_tail_bytes": 115595,
+        "recovery_ms": 3015.1266,
+        "save_ms": [
+          74.867,
+          138.0338,
+          202.59
+        ],
+        "saved_generations": 4,
+        "total_retained_bytes": 35026737
+      },
+      {
+        "busy_inspection_ms": 9.3537,
+        "checkpoint_bytes": [
+          9034,
+          100554,
+          191326,
+          283278
+        ],
+        "codec": "Zlib",
+        "deep_inspection_ms": 1233.4205,
+        "exact_state_and_history": true,
+        "horizon": 1024,
+        "independent_ms": 1484.7867999999999,
+        "independent_tick": 774,
+        "journal_and_save_ms": 2513.3869,
+        "journal_bytes": 14158171,
+        "mode": "Some(MealRelief)",
+        "open_ms": 645.4427000000001,
+        "preserved_tail_bytes": 115595,
+        "recovery_ms": 2908.5271000000002,
+        "save_ms": [
+          102.1421,
+          191.4426,
+          283.4154
+        ],
+        "saved_generations": 4,
+        "total_retained_bytes": 14742363
+      }
+    ],
+    "runtime": "3a02e70599c930096e8b5077e01062e96ed4bfb45037f98162dd1ad4541cd2d4",
+    "schema": "woi-reliability-performance/v1"
+  },
+  "memory": {
+    "schema": "woi-headless-memory/v1",
+    "pid": 117556,
+    "process": "measure_reliability",
+    "sampled_peak_working_set_bytes": 372862976,
+    "os_peak_working_set_bytes": 372862976,
+    "samples": 832,
+    "interval_ms": 50,
+    "scope": "Own CLI process across all twelve rows, including reference execution and verification. Working set is not Rust heap or actor cognition. Local Windows host observation."
+  }
+}

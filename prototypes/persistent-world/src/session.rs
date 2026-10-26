@@ -20,16 +20,17 @@ fn decode_commit(bytes: &[u8]) -> Result<Commit, String> {
     decode(crate::storage_codec::decode(bytes)?.as_ref())
 }
 
+fn protected_component(component: Component<'_>) -> bool {
+    match component {
+        Component::ParentDir => true,
+        Component::Normal(n) => ["experiments", "reinforcement", ".git"]
+            .iter()
+            .any(|s| n.to_string_lossy().eq_ignore_ascii_case(s)),
+        _ => false,
+    }
+}
 pub fn check_path(path: &Path) -> Result<(), String> {
-    if !path.is_absolute()
-        || path.components().any(|c| match c {
-            Component::ParentDir => true,
-            Component::Normal(n) => ["experiments", "reinforcement", ".git"]
-                .iter()
-                .any(|s| n.to_string_lossy().eq_ignore_ascii_case(s)),
-            _ => false,
-        })
-    {
+    if !path.is_absolute() || path.components().any(protected_component) {
         return Err("session paths must be absolute and outside scientific archives".into());
     }
     for parent in path.ancestors() {
@@ -45,6 +46,16 @@ pub fn check_path(path: &Path) -> Result<(), String> {
                 }
             }
         }
+    }
+    // Windows can normalize trailing dots or short directory names. Validate
+    // the real existing ancestor as well as the supplied spelling, before writes.
+    let existing = path
+        .ancestors()
+        .find(|p| p.exists())
+        .ok_or("no existing session ancestor")?;
+    let resolved = existing.canonicalize().map_err(|e| e.to_string())?;
+    if resolved.components().any(protected_component) {
+        return Err("resolved session path is inside scientific archives".into());
     }
     Ok(())
 }
@@ -393,6 +404,20 @@ impl Session {
         self.save_with_codec(crate::storage_codec::Codec::Raw)
     }
     pub fn save_with_codec(&mut self, codec: crate::storage_codec::Codec) -> Result<(), String> {
+        self.save_internal(codec, || Ok(()))
+    }
+    #[cfg(feature = "failure-probes")]
+    pub fn save_before_publish_probe(
+        &mut self,
+        probe: impl FnOnce() -> Result<(), String>,
+    ) -> Result<(), String> {
+        self.save_internal(crate::storage_codec::Codec::Zlib, probe)
+    }
+    fn save_internal(
+        &mut self,
+        codec: crate::storage_codec::Codec,
+        before_publish: impl FnOnce() -> Result<(), String>,
+    ) -> Result<(), String> {
         check_path(&self.path)?;
         if self.failed {
             return Err("cannot save after journal failure".into());
@@ -448,6 +473,7 @@ impl Session {
         if bytes != persisted {
             return Err("checkpoint readback mismatch".into());
         }
+        before_publish()?;
         fs::rename(&temp, &destination).map_err(|e| e.to_string())?;
         self.generation = generation;
         self.dirty = false;

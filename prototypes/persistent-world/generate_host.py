@@ -47,6 +47,8 @@ files|={p.relative_to(ROOT).as_posix() for p in (HERE/'src').glob('*.rs')}
 digest=hashlib.sha256()
 digest.update(subprocess.check_output(['rustc','--version']).strip())
 digest.update(os.environ['TARGET'].encode())
+if os.environ.get('CARGO_FEATURE_FAILURE_PROBES'):
+    digest.update(b'failure-probes')
 if os.environ.get('CARGO_FEATURE_WORKBENCH_HOST'):
     files.add('tools/workbench/Cargo.lock')
     digest.update(b'workbench-host')

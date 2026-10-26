@@ -44,6 +44,9 @@ pub struct Store {
 }
 impl Store {
     pub fn open(repo: &Path) -> Result<Self> {
+        Self::open_mode(repo, true)
+    }
+    fn open_mode(repo: &Path, create: bool) -> Result<Self> {
         let repo = repo
             .canonicalize()
             .map_err(|e| format!("Repository unavailable: {e}"))?;
@@ -58,12 +61,15 @@ impl Store {
         }
         let root = repo.join("target/workbench-runs");
         no_links(&root)?;
-        fs::create_dir_all(&root).map_err(|e| e.to_string())?;
+        if create {
+            fs::create_dir_all(&root).map_err(|e| e.to_string())?;
+        }
         no_links(&root)?;
-        if !root
-            .canonicalize()
-            .map_err(|e| e.to_string())?
-            .starts_with(&repo)
+        if root.exists()
+            && !root
+                .canonicalize()
+                .map_err(|e| e.to_string())?
+                .starts_with(&repo)
         {
             return Err("Output root escapes repository".into());
         }
@@ -74,19 +80,25 @@ impl Store {
         })
     }
     pub fn detect(workspace: Option<&Path>) -> Result<Self> {
+        Self::detect_mode(workspace, true)
+    }
+    pub fn detect_readonly(workspace: Option<&Path>) -> Result<Self> {
+        Self::detect_mode(workspace, false)
+    }
+    fn detect_mode(workspace: Option<&Path>, create: bool) -> Result<Self> {
         let executable = std::env::current_exe().map_err(|e| e.to_string())?;
         let installation = executable
             .parent()
             .ok_or("No executable installation directory")?;
         if installation.join("release.json").exists() || cfg!(feature = "portable") {
-            return Self::portable(installation, workspace);
+            return Self::portable_mode(installation, workspace, create);
         }
         if workspace.is_some() {
             return Err("--workspace is for installed portable mode; development storage stays inside its approved root".into());
         }
         #[cfg(not(feature = "portable"))]
         {
-            Self::open(&crate::repository())
+            Self::open_mode(&crate::repository(), create)
         }
         #[cfg(feature = "portable")]
         {
@@ -94,6 +106,9 @@ impl Store {
         }
     }
     pub fn portable(installation: &Path, workspace: Option<&Path>) -> Result<Self> {
+        Self::portable_mode(installation, workspace, true)
+    }
+    fn portable_mode(installation: &Path, workspace: Option<&Path>, create: bool) -> Result<Self> {
         let installed = crate::portable::InstalledRelease::load(installation)?;
         #[cfg(feature = "portable")]
         if installed.manifest.application.build != crate::portable::build_identity() {
@@ -106,10 +121,16 @@ impl Store {
             Some(path) => path.to_path_buf(),
             None => crate::portable::default_workspace()?,
         };
-        let data = crate::portable::safe_workspace(&workspace, &installed.root)?;
+        let data = if create {
+            crate::portable::safe_workspace(&workspace, &installed.root)?
+        } else {
+            crate::portable::inspect_workspace(&workspace, &installed.root)?
+        };
         let root = data.join("runs");
         no_links(&root)?;
-        fs::create_dir_all(&root).map_err(|e| e.to_string())?;
+        if create {
+            fs::create_dir_all(&root).map_err(|e| e.to_string())?;
+        }
         no_links(&root)?;
         Ok(Self {
             repo: installed.root.clone(),

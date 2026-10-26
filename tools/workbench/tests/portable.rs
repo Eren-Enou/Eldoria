@@ -176,3 +176,14 @@ fn every_recorded_moment_and_late_decision_matches_original() {
     assert_eq!(detail.transitions.len(), expected);
     assert!(recorded::detail(&path, usize::MAX, actor).is_err());
 }
+
+#[test]
+fn inspection_of_absent_workspace_creates_nothing() {
+    let root = scratch();
+    let install = root.join("installation");
+    fs::create_dir(&install).unwrap();
+    let missing = root.join("absent").join("data");
+    assert_eq!(inspect_workspace(&missing, &install).unwrap(), missing);
+    assert!(!root.join("absent").exists());
+    assert!(inspect_workspace(&install.join("data"), &install).is_err());
+}

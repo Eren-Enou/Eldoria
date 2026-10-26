@@ -4,14 +4,25 @@ use crate::{
     config::{Configuration, Mode},
     storage::{self, Store},
 };
+pub use persistent_world::persistent::session::reliability::{Budget, Inspection, Recovery};
 pub use persistent_world::persistent::{self, session::Session};
-use std::{fs, path::PathBuf};
+pub use persistent_world::storage_codec::Codec;
+use std::{
+    fs,
+    path::{Path, PathBuf},
+};
 
 pub struct Sessions {
     root: PathBuf,
 }
 impl Sessions {
     pub fn new(store: &Store) -> Result<Self> {
+        Self::open_root(store, true)
+    }
+    pub fn existing(store: &Store) -> Result<Self> {
+        Self::open_root(store, false)
+    }
+    fn open_root(store: &Store, create: bool) -> Result<Self> {
         if let Some(installed) = &store.installed {
             installed.verify()?;
             if installed
@@ -27,7 +38,9 @@ impl Sessions {
         }
         let root = store.root.join("world-sessions");
         storage::no_links(&root)?;
-        fs::create_dir_all(&root).map_err(|e| e.to_string())?;
+        if create {
+            fs::create_dir_all(&root).map_err(|e| e.to_string())?;
+        }
         storage::no_links(&root)?;
         Ok(Self { root })
     }
@@ -83,6 +96,40 @@ impl Sessions {
     }
     pub fn open(&self, id: &str) -> Result<Session> {
         Session::open(&self.path(id)?)
+    }
+    /// CLI-only explicit branch path; existing GUI IDs retain their strict path rule.
+    pub fn selected_path(&self, selector: &str) -> Result<PathBuf> {
+        let path = Path::new(selector);
+        if path.is_absolute() {
+            persistent::session::check_path(path)?;
+            storage::no_links(path)?;
+            Ok(path.into())
+        } else {
+            self.path(selector)
+        }
+    }
+    pub fn open_selected(&self, selector: &str) -> Result<Session> {
+        Session::open(&self.selected_path(selector)?)
+    }
+    pub fn inspect(&self, selector: &str, budget: &Budget) -> Result<Inspection> {
+        persistent::session::reliability::inspect(&self.selected_path(selector)?, budget)
+    }
+    pub fn verify(
+        &self,
+        selector: &str,
+        generation: u64,
+    ) -> Result<persistent_world::verification::Verified> {
+        persistent::session::reliability::verify_independent(
+            &self.selected_path(selector)?,
+            generation,
+        )
+    }
+    pub fn recover(&self, selector: &str, destination: &Path, generation: u64) -> Result<Recovery> {
+        persistent::session::reliability::recover(
+            &self.selected_path(selector)?,
+            destination,
+            generation,
+        )
     }
 }
 

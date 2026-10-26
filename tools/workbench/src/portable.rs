@@ -152,6 +152,12 @@ impl InstalledRelease {
 /// Stronger portable transport rule: no archive-like paths anywhere, no links,
 /// and no writes in the binary installation. Original producer guards stay intact.
 pub fn safe_workspace(root: &Path, installation: &Path) -> Result<PathBuf> {
+    safe_workspace_mode(root, installation, true)
+}
+pub fn inspect_workspace(root: &Path, installation: &Path) -> Result<PathBuf> {
+    safe_workspace_mode(root, installation, false)
+}
+fn safe_workspace_mode(root: &Path, installation: &Path, create: bool) -> Result<PathBuf> {
     if !root.is_absolute() {
         return Err("User-data workspace must be absolute".into());
     }
@@ -201,7 +207,11 @@ pub fn safe_workspace(root: &Path, installation: &Path) -> Result<PathBuf> {
     if within(&existing, &installation) {
         return Err("Installation directory is not a user-data workspace".into());
     }
-    fs::create_dir_all(root).map_err(|e| e.to_string())?;
+    if create {
+        fs::create_dir_all(root).map_err(|e| e.to_string())?;
+    } else if !root.exists() {
+        return Ok(root.to_path_buf());
+    }
     storage::no_links(root)?;
     let canonical = root.canonicalize().map_err(|e| e.to_string())?;
     if within(&canonical, &installation) {

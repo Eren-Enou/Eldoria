@@ -8,6 +8,7 @@ rust-version = "1.95"
 
 [features]
 workbench-host = []
+failure-probes = []
 
 [dependencies]
 bevy_ecs = { version = "=0.19.1", default-features = false, features = ["std"] }
