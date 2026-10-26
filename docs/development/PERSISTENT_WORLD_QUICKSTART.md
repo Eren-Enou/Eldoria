@@ -1,3 +1,56 @@
+# Persistent worlds: current headless workflow
+
+The recovery/storage backend can be built and tested without desktop access.
+GUI Pause/Finalize/024 acceptance and a new Windows release remain **DEFERRED**.
+Do not infer GUI acceptance from the commands below. The earlier GUI guide follows
+for future authorized use; no desktop interaction is required for this milestone.
+
+Build the Rust command-line workbench in a developer checkout:
+
+```powershell
+cargo build --release --locked --manifest-path tools/workbench/Cargo.toml --features world-sessions -j 1
+$wb = '.\tools\workbench\target\release\woi-workbench.exe'
+& $wb world-create # default bounded023 world; JSON returns its actual id
+# Or explicitly: & $wb world-create .\tools\workbench\configurations\024-baseline.json
+& $wb world-advance WORLD-ID 3 --codec zlib
+& $wb world-storage WORLD-ID --budget-bytes 100000000 --max-generations 20 --project-saves 10
+& $wb world-check WORLD-ID
+& $wb world-verify WORLD-ID --generation 2
+```
+
+Use the JSON `id`/`path` returned by creation, and the actual generation shown by
+inspection. `world-advance` executes actual steps and saves; atomic inquiry can
+span multiple physical ticks. Omit `--codec zlib` for the unchanged raw default.
+`world-check` verifies complete committed state; `world-verify` independently
+checks raw metadata, hashes, order and primitive physical consistency. Both report
+JSON. A tail can leave a valid checkpoint but prevents ordinary continuation.
+
+For an interrupted world, keep its original directory. Inspect its per-generation
+errors, then select a verified generation explicitly:
+
+```powershell
+& $wb world-recover WORLD-ID 'C:\NEW-BRANCH-ROOT\WORLD-ID' --generation 2
+& $wb world-advance 'C:\NEW-BRANCH-ROOT\WORLD-ID' 2048 --codec zlib
+& $wb world-finalize 'C:\NEW-BRANCH-ROOT\WORLD-ID'
+& $wb world-verify 'C:\NEW-BRANCH-ROOT\WORLD-ID' --generation 3
+```
+
+Replace the example paths with fresh absolute destinations and the exact existing
+world basename. Never reuse a destination. Recovery is a new execution branch
+from saved state, not restoration of the unsaved endpoint. Excluded history remains
+separate evidence; event IDs must be interpreted within their branch. If the
+world is not terminal, continue actual execution before finalizing. Finalize
+never advances it. `world-interrupt WORLD STEPS` deliberately exits without saving
+for disposable failure demonstrations only; it leaves genuine unsaved events.
+
+No generations are automatically deleted. Warnings are external and do not alter
+actor behavior. Storage sizes are logical file bytes, not heap usage. See the
+[recovery contract](persistent-world-recovery.md) for lineage, limits, supported
+v1 compatibility and refusal conditions. This source build is not a new portable
+release; existing installed binaries do not acquire the new commands automatically.
+
+---
+
 # World of Individuals — persistent world sessions
 
 Version 0.3 engineering candidate. Final native/portable acceptance and publication

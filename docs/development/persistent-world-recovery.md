@@ -1,6 +1,7 @@
 # Headless persistent-world reliability
 
-Prospective engineering contract, starting at9742295. This supersedes the previous
+Headless engineering milestone validated, starting at9742295. Final validation,
+measurements and limitations follow the implementation record below. This supersedes the previous
 desktop acceptance task for current work only. Native Pause/Finalize/024 acceptance
 and a GUI-dependent Windows release are DEFERRED. No desktop control is authorized.
 Protected001–024, all025 research and behavioral rules remain unchanged.
@@ -214,3 +215,197 @@ only the declared additional transport dependency. Diagnostics remain in task lo
 No cleanup is implemented: cross-directory lineage dependencies make silent pruning
 inappropriate. All previous valid generations and recovery evidence remain. This
 is an active engineering checkpoint, not a completed reliability claim.
+
+## Final interface and headless regression gate
+
+The workbench `world-sessions` feature exposes the same inspection/recovery/codec
+Rust APIs; no GUI controls were added. `world-storage`, `world-check`, `world-verify`
+and `world-list` use existing-only storage. Inspection of an absent portable
+workspace creates nothing. See the [actual CLI workflow](PERSISTENT_WORLD_QUICKSTART.md).
+An interrupted exit emits `checkpoint_saved:false` and a recovery warning.
+`world-check` verifies committed state; a reported tail does not authorize normal
+reopen. `world-verify WORLD --generation N` checks raw primitives independently.
+Only `world-recover WORLD FRESH-ABSOLUTE-ROOT/WORLD-ID --generation N` creates a branch.
+
+One bounded Rust entry point from the repository root:
+
+```powershell
+cargo run --release --locked --manifest-path prototypes/persistent-world/Cargo.toml -j 1 --example validate_reliability -- --foundation
+```
+
+It runs prototype formatting/private rustfmt, locked all-target Clippy, all library,
+binary and integration tests with explicit failure probes, headless workbench
+checks, and existing genuine-runner/HTTP-reader/recorded-history regressions. The
+HTTP test opens no browser. `--foundation` additionally runs root formatting,
+Clippy/tests, read-only `validate_contract` and separate `validate025_acceptance`.
+Without that flag it runs the component suite only. Full per-step diagnostics and
+JSON summaries go to fresh `target/reliability-suite/run-*` directories; a failure
+returns nonzero and the exact log. No scientific archive is an output location.
+No repository CI workflow existed to extend; actual platform coverage is Windows
+x86_64 MSVC. Installed-package/runner asset acceptance is separate from this gate.
+
+`failure-probes` is test-only, opt-in and has a distinct runtime identity. It holds
+a real child after journal advancement, after pending sync/readback before rename,
+or immediately after publication. The parent kills only its own ready child via
+`Child.kill`, then checks files and OS lock release. Readiness is bounded at15s;
+the child stops itself at30s if not killed. Ordinary builds expose no probe command
+or environment trigger. No desktop, crash dialog or user operation is involved.
+
+Final review also reproduced a Windows path-guard defect in a disposable fixture:
+`experiments.` resolves to `experiments`, bypassing literal-only name checks.
+`check_path` now checks the canonical nearest existing ancestor after rejecting
+links/reparse ancestors. A Windows regression covers normalized aliases of
+experiments, reinforcement and .git, refusal before Session creation and empty
+scratch destinations. The actual default CLI now refuses the original probe.
+No scientific archive or user session was touched. Filesystem roots are also
+rejected before inspection traversal. This is transport validation, not an actor law.
+
+## Final measured storage and costs
+
+The [engineering receipt](../../prototypes/persistent-world/benchmarks/headless-reliability-windows.json)
+contains12 actual rows and a separate process-memory observation. It is not frozen
+scientific evidence; wall times are not exact-replay expectations. Reproduce with:
+
+```powershell
+cargo run --release --locked --manifest-path prototypes/persistent-world/Cargo.toml -j 1 --example measure_reliability -- C:\FRESH-MEASUREMENT-ROOT
+```
+
+Use a fresh approved absolute directory. Paired/seed42/period11 are fixed, with
+H128/H1024,023/024Baseline/024MealRelief and Raw/Zlib. All12 recoveries restored the
+exact selected state and continued to exact terminal state/history equality.
+The inventory below follows three quarter-horizon saves (four generations including
+the initial raw generation), then seven unsaved steps, before branching. Journals
+are byte-count equivalent between codecs. Logical file sizes are not heap or
+allocated filesystem blocks; branch evidence adds further storage later.
+
+|Horizon / mode|Latest raw checkpoint bytes|Latest zlib checkpoint bytes|Journal bytes|All source bytes raw to zlib|
+|---|---:|---:|---:|---:|
+|128 / 023|1,183,071|40,387|1,708,481|3,975,373 to 1,798,222|
+|128 / 024 Baseline|1,224,354|41,842|1,766,865|4,121,532 to 1,859,900|
+|128 / 024 MealRelief|1,186,714|41,197|1,715,568|4,014,629 to 1,807,767|
+|1024 / 023|10,130,624|256,805|13,635,184|33,767,602 to 14,170,795|
+|1024 / 024 Baseline|10,390,171|261,333|13,984,331|34,645,217 to 14,531,219|
+|1024 / 024 MealRelief|10,521,642|283,278|14,158,171|35,026,737 to 14,742,363|
+
+At1024, latest checkpoints are97.31-97.48% smaller and four-generation source
+folders57.91-58.06% smaller. The unchanged journal dominates compressed storage.
+The receipt's full size arrays show actual initial/quarter/half/three-quarter
+growth; every earlier generation remains. No cleanup is implemented, because
+cross-directory recovery dependencies make pruning inappropriate. Warnings do not
+terminate or change simulation; projections assume unchanged checkpoint size and
+do not query free space. Neither warning thresholds nor compression bound disk use.
+
+Local timing ranges below are milliseconds across three modes. Save ranges contain
+nine saves each; other ranges contain three observations. They are not confidence
+intervals or isolated causal policy comparisons. No own test/compiler load ran
+during the measurement. Open includes verification and restore; inspection checks
+all four generations; recovery verifies, preserves evidence and publishes a branch.
+
+|Horizon / codec|Save|Open/restore|Inspect4 generations|Independent selected check|Recovery branch|
+|---|---:|---:|---:|---:|---:|
+|128 / Raw|17.0-42.2|82.0-93.3|181.8-207.0|166.4-203.5|401.6-459.0|
+|128 / Zlib|19.9-49.4|80.0-105.0|171.9-212.4|165.9-198.9|381.9-444.2|
+|1024 / Raw|74.9-239.0|617.7-755.1|1288.8-1331.5|1425.4-1493.8|2800.1-3015.1|
+|1024 / Zlib|90.1-283.4|645.4-660.4|1233.4-1294.5|1414.0-1484.8|2854.2-2908.5|
+
+Compression adds save work; no universal speed benefit is shown. Full validation
+and recovery remain costly because retained histories and multiple generations
+are decoded/checked. Three-quarter execution+journal+save totals were275.5-321.3ms
+at128 and2142.0-2513.4ms at1024 across both codecs, not pure kernel throughput.
+The own measurement CLI peaked at372,862,976bytes (355.59MiB) working set over832
+samples at50ms; observed OS high-water and sampled maximum matched. This includes
+references, retained buffers and verification across all12 rows. It is not Rust
+heap, single-world production memory, actor cognition, codec-specific memory or
+GUI responsiveness. No GUI process was measured.
+
+## Final validation and preservation
+
+- Final corrected-source component gate:35 prototype tests, including243 real
+  process save/reopen cycles (27perworld) across nine1024 worlds. All nine include
+  pending/active, hunger/trust, memory occupancy16, cutoff and charged-drain splits.
+  Full checkpoint bytes match each split; terminal bytes and complete original
+  023/024 histories match. All three forced-kill stages pass, including writer
+  exclusion, lock release, pending-file preservation and real terminal continuation.
+- Independent observer audit confirms15 successful acquisitions,14depleted
+  attempts and three actual inquiries. Each world loses1,916-1,976 distinct
+  owner/episode IDs from retained boundary memories. Recipient responses and
+  reporting crossings occur at period11. This distinguishes actual eviction from
+  merely reaching buffer capacity. Other legacy persistent effects are not erased.
+- Headless workbench:13 ordinary tests, seven explicitly enabled integration
+  regressions and one separately enabled genuine-run library regression pass (21).
+  Actual CLI create/advance/compressed-save/unsaved-exit/inspect/recover/continue/
+  finalize/independent-verify runs for023 and both024 modes. Originals stay intact.
+  Two asset-dependent installed-package/portable-runner tests were not rerun as
+  acceptance of a new release. No new package or GUI release was produced.
+- Root formatting, locked all-target Clippy and217 tests pass. Read-only foundation
+  validation confirms408 artifacts and425 raw originals unchanged, original replay
+  and independent readers. Separate025 acceptance passes214 custody bindings and
+  50exact byte replays.025 remains separate research, not adopted/protected.
+- Default and failure-probe prototype Clippy, private rustfmt, headless workbench
+  Clippy/formatting, and desktop+portable all-target compilation-only Clippy pass.
+  The original v1 fixture ran with its guarded alias enabled. Exact raw/compressed
+  decode, corruption, lineage and independent primitive controls pass.
+
+The failure matrix includes missing/corrupt commit, committed-prefix corruption,
+truncated suffix, pending files, failed publication and successful retry without
+reexecution, wrong source/runtime/world/configuration/schema, semantic cognitive/
+physical/pending-reply faults, ambiguous names, numeric u64MAX/exhaustion, existing
+or protected destination, busy writer, and damaged lineage. Corruption uses own
+scratch data; nothing regenerates historical archives in place.
+
+Final component logs: `target/reliability-suite/run-112084-1792985572621056100`.
+Root/protected-source logs: `target/reliability-suite/run-155220-1792966112695745300`.
+Final process/audit receipt: `target/recovery-validation/many-sessions-113956-1792985912840651600`.
+Measurements: `target/recovery-validation/measured-1792986461383` and the versioned
+engineering receipt. Other logs: `target/recovery-default-clippy-final.log`,
+`target/recovery-desktop-compile-only.log`, `target/recovery-workbench-ignored-lib.log`,
+`target/recovery-normalized-path-refusal.log`. These are engineering outputs.
+
+Preserved development failures: a root-path diagnostic ran against a library built
+before its guard was added; Windows LNK1104 occurred when tests tried to overwrite
+the running example runner. Explicit --lib/--bins/--tests fixed the self-build.
+An overlapping replacement runner also hit the OS lock; waiting for the first to
+exit fixed that launch. Neither linker failure was a simulation assertion. The
+normalized-path bypass was a real transport defect, fixed and covered by a full
+component rerun. No actor law, threshold, capacity or outcome was tuned for passes.
+
+## Limitations, identities and handoff
+
+These actual stress histories use frozen LastSeen knowledge: Sense/Taken/Depleted,
+with no Expired transition. Expire12 is not a023/024 configuration option; adding
+an expiry law solely to manufacture coverage would violate scope. Real expired-
+observation process continuation is therefore **not demonstrated**. Existing
+semantic controls reject missing/inconsistent environmental cells without audit
+recovery. Four actors, H1-1024 plus33 charged drain, episode16/evidence32/learning32/
+concerns8/environment1 remain unchanged. Observer histories and immutable generations
+still grow.160MiB commit/256MiB journal limits,4096 inventory entries/eight levels
+are explicit bounds, not indefinitely sustainable worlds. Process-kill tests do
+not prove sudden-power-loss/directory-fsync durability. Hashes are unkeyed consistency
+checks, not adversarial authentication. Arbitrary version migration is unsupported.
+
+Validated runtime identities, rustc1.99.0, Windows x86_64 MSVC:
+
+- Standalone/default: `3a02e70599c930096e8b5077e01062e96ed4bfb45037f98162dd1ad4541cd2d4`.
+- Failure-probe: `8b16f2a3113272391069652fcf7de77525a6b9126238bbe8ba2cf75e39115639`.
+- Workbench host: `a88a861a2e8c273a9e3d55b5fe44af7f7946ec6a50ebcfaf92560bdb4b1e54ec`.
+
+Validation binaries were built from the reviewed working tree above d18eb3b;
+workbench metadata correctly reports that pre-commit dirty state. Source publication
+does not make those binaries an accepted release. Named original v1 aliases remain
+kernel/compiler/target/dependency guarded; unpublished intermediate headless-build
+identities are not silently migrated.
+
+Changed ownership: prototype recovery/verification/codec, guarded generation, CLI,
+failure/continuation tests and measured receipt; workbench CLI/session APIs and
+read-only workspace validation; engineering/readiness/quickstart/maps. No protected
+contract, archive, actor source/default or025 producer changed. Runtime.rs differs
+only by its guarded identity predicate. This is no foundation extension or026.
+
+Future GUI work requires separate authorization and native mid-batch Pause, terminal
+Finalize,024 interaction and GUI responsiveness/memory acceptance. These remain
+**DEFERRED**. No desktop control or new Windows release occurred. Start a later
+headless session with the committed checkpoint and CLI guide; do not resume GUI
+control merely because backend checks passed.
+
+Accepted implementation commit: `185962dd9782ab09ad3ba6e28284a309e3f6d79b`.
+The subsequent documentation commit contains this final report and checkpoint.

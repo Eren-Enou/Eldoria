@@ -1,5 +1,17 @@
 # First persistent world — acceptance report
 
+The headless recovery/storage milestone is validated:35 prototype tests,
+243 real saved process cycles,21 headless workbench regressions,217 root tests,
+unchanged408 foundation artifacts/425 raw originals and the separate025 gate.
+All12 measured raw/zlib recovery workloads match exact state and history.
+See [final evidence and limits](persistent-world-recovery.md) and the
+[headless CLI guide](PERSISTENT_WORLD_QUICKSTART.md).
+
+Native mid-batch Pause, terminal Finalize,024 interaction and GUI responsiveness/
+memory acceptance remain **DEFERRED**. No desktop control, GUI-session modification
+or new Windows release occurred in this milestone. The earlier native acceptance
+record below remains historical evidence, separate from the headless result.
+
 Status: native/portable acceptance and final publication are still pending.
 Starting revision `77707def0e13936c192a3bc987b8971acb3898d1`. Validated implementation
 commits:81b5ce1(state audit),7351464(typed continuation/journal/tests),

@@ -1,5 +1,12 @@
 # First persistent world — feasibility and prospective contract
 
+Current headless successor: [recovery, storage and validation](persistent-world-recovery.md).
+It adds explicit branches, read-only inspection, guarded original v1 compatibility,
+opt-in zlib transport and an independent primitive reader. Actor rules and the
+complete-state boundary below remain unchanged. The headless gate passes within
+its documented finite limits; GUI acceptance and GUI-dependent release publication
+remain **DEFERRED**. This is no new experiment or foundation protection extension.
+
 Starting revision: `77707def0e13936c192a3bc987b8971acb3898d1` (clean).
 This is opt-in continuation engineering, not Experiment026 or policy adoption.
 Protected001–024 and separate025 remain untouched.

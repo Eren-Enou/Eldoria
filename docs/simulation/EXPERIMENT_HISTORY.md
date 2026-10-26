@@ -1,7 +1,12 @@
 # World of Individuals experiment index
 
+Headless engineering, not026: [persistent recovery/storage](../development/persistent-world-recovery.md).
+Explicit branches preserve committed state and excluded observer evidence without
+changing actor laws; GUI acceptance remains deferred. This is no protection extension.
+
 Active engineering, not026: [first persistent-world audit](../development/persistent-world-engineering.md).
-An isolated023 continuation successor is under validation; no foundation extension,
+The isolated023 continuation successor passed headless reliability validation;
+GUI acceptance remains deferred. No foundation extension,
 policy adoption or new behavioral experiment follows from this work.
 
 Portable human operation: [Windows guide](../development/PORTABLE_WORKBENCH_QUICKSTART.md)

@@ -6,11 +6,18 @@ rows when ownership, entry points or mode boundaries change.
 
 ## Human Rust workbench and portable delivery
 
+Headless recovery/storage: [contract and evidence](development/persistent-world-recovery.md),
+[CLI guide](development/PERSISTENT_WORLD_QUICKSTART.md). `session::reliability`
+owns read-only inventory and explicit fresh branches; `storage_codec` owns optional
+zlib transport; `verification` independently checks raw primitive records.
+`validate_reliability -- --foundation` runs the bounded headless gate. GUI release
+acceptance remains deferred; no protected scientific producer is changed.
+
 Active persistence engineering: `prototypes/persistent-world/` is an isolated023
 successor with typed complete-state continuation and session journal prototypes.
 It does not modify the protected producer. See the
 [feasibility audit](development/persistent-world-engineering.md) and
-[current checkpoint](development/continuation-checkpoint.md) for gates still pending;
+[current checkpoint](development/continuation-checkpoint.md) for deferred GUI gates;
 its presence is not a claim of completed GUI or portable continuation acceptance.
 
 [Portable quickstart](development/PORTABLE_WORKBENCH_QUICKSTART.md) and
