@@ -88,8 +88,9 @@ original-v1 before its expected failure, then builds/replays C1. Unpublished mat
 refusal/no default execution pass. See runtime-baseline-validation.json and
 experiment-026-c1-pre-treatment-checks.json. Original v1 source/data untouched.
 
-Next: publish this passing runtime/readers/compatibility milestone, verify remote,
-then separately publish activation gate.
+Runtime/readers/compatibility were published at `22b51485326eeb297d8740074c0ea57d1387247c`, verified
+on origin/main. The C1 activation gate names this source. Next: publish/verify
+the separate activation gate, then run all100. Unknown corrected outcomes0.
 Only afterward execute all100 original registered rows anew into C1 namespace.
 Run full C1 readers/comparisons/17 corruptions/exact100 replay plus original-v1
 failure reproduction and unchanged001–025 custody. Preserve all adverse/null/
