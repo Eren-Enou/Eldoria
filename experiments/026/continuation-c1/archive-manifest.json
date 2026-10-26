@@ -1,0 +1,28 @@
+{
+  "schema": "experiment-026-c1-archive/v1",
+  "records": 100,
+  "declaration_revision": "6f44686c1d3b7a85656a1ce9244c9a37bc6799ab",
+  "runtime_revision": "22b51485326eeb297d8740074c0ea57d1387247c",
+  "activation_revision": "2a5bec1a17646a951de612e01362230c01f6d36d",
+  "source_freeze_sha256": "7039076f147e173359e4c3099e35de9ccd4e9a590fd54ad2960c2b64f76f21c5",
+  "raw_bytes": 332411125,
+  "raw_sha256": "c6ad0bac7aad0b1f57c128fdc174b7d02a773637b7a888cb2ca3d80004b0d367",
+  "members": {
+    "trials.jsonl.gz": {
+      "mode": "raw",
+      "sha256": "af58dbeaff7748c7eb365ded8d0fe9b77faf665ed54371d1e84cdddd8710de1c"
+    },
+    "findings.json": {
+      "mode": "lf",
+      "sha256": "c34809ecff2df24d9afefbe0171469c579954daaf062ca857b0470073890bcc2"
+    },
+    "comparisons.json": {
+      "mode": "lf",
+      "sha256": "3c4245126078b1ae71f1060fe63358ea29ee1ab4e7ed1070c2e5fc204bc8ab42"
+    },
+    "corruptions.json": {
+      "mode": "lf",
+      "sha256": "5c1728b10ecb6ed5e3090b75739843029a60b7b2e9a089fa2c4b140124e63bc8"
+    }
+  }
+}

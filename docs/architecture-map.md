@@ -321,37 +321,20 @@ No root default or frozen parent changes; protected endpoint remains 001–023.
 Neither 024 protection nor material preparation/025 follows automatically.
 
 
-## Experiment026: execution gate failed; partial causal findings
+## Experiment026: completed C1; qualified causal existence
 
-[Results](../experiments/026/results.md), [verification](../experiments/026/verification.md)
-and [A–I report](development/experiment-026-final-report.md). Frozen opt-in host:
-`prototypes/delayed-work-valuation/`; registration/runtime/activation are published.
-First100-world attempt aborts at43/source21/ProjectedNeed in protected outgoing
-contact-candidate lookup.43 complete rows/21 pairs survive; sources15/17/19 change
-work and later state with mixed costs/benefits. Held-out study is unexecuted.
-No protected source or frozen026 code changed to repair it; no adoption/protection.
+[Final A–I report](development/experiment-026-final-report.md),
+[results](../experiments/026/continuation-c1/results.md) and
+[30-point completion audit](development/experiment-026-completion-audit.md).
+Frozen opt-in hosts: `prototypes/delayed-work-valuation/` (v1 failed43),
+`prototypes/delayed-work-valuation-c1/` (all100 complete). All old defined responses,
+formula, matrix, original sources and archives remain exact. Eight of48 primary
+pairs change execution;40 null. Mixed/harmful outcomes prohibit default adoption.
+C1 is not protected into001–025 and no027 follows.
 
-`review026.py`/`analyze026.py` remain frozen; normal `validate026` still requires100
-worlds. Post-failure `verify026_failure.py` reconstructs the43-world evidence and
-requires the exact same prefix/panic. It cannot certify full study completion.
-Failure artifacts/reports remain failed-v1 evidence. The separately passing C1
-prospective milestone below retains them without claiming v1 execution passed.
-Existing persistent025/GUI/canon remain unchanged. See checkpoint.
-
-
-###026-C1 prospective continuation
-
-[Amendment](../experiments/026/continuation-c1/amendment.md) declares only direct
-Continue0 construction in a separate successor. [Equivalence review](development/experiment-026-response-equivalence.json)
-checks6509 old025/4858 prefix response records and preserves the original failed
-producer. No C1 implementation or new outcome yet; formula and100-world matrix
-stay frozen. New runtime publication requires exact old defined responses and
-50 Baseline/56feature-off/43prefix body compatibility. No global adoption.
-
-
-C1 implementation now lives in `prototypes/delayed-work-valuation-c1/`.
-Its source/readers freeze and pre-treatment gate pass:50 original Baseline,
-43 whole v1-prefix and56 feature-off bodies;6509+4858 exact typed responses;
-16 prototype/217 root tests and17 corruption categories. Separate C1 readers
-add independent pending/current-candidate reconstruction. Unknown corrected
-outcomes remain0 until runtime and activation publication. No old source edited.
+Current gate is `cargo run --release --locked -j 1 --example validate026_c1_isolated`.
+Post-run I1 uses disjoint targets026-v1-isolated/026-c1-isolated, preserving frozen
+algorithms/assertions through reversible path substitutions. It passes100 independent
+worlds/50 comparisons/17 corruptions/exact100 replay/exact43 v1 failure. Cold and warm
+native builds pass. See [build isolation](development/experiment-026-build-isolation.md).
+Shared-target instructions are historical. No persistent026/GUI/canon changes.

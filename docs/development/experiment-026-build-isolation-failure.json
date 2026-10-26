@@ -1,0 +1,18 @@
+{
+  "kind": "post-run build artifact contamination;not simulation evidence",
+  "failed_gate": "cargo run --release --locked -j 1 --example validate026_c1",
+  "cause": "same package name and shared Cargo target allowed v1 to reuse C1 generated host output;source inputs were unchanged",
+  "unexpected_outputs": [
+    {
+      "path": "target\\026-failure-verify-9a14b2bec455414486a53e9011cd5157\\prefix.jsonl",
+      "rows": 100,
+      "raw_sha256": "89ab083612cdcdc6a7731b1d572a498b1843ad17850fd87569d54421eeff7697"
+    }
+  ],
+  "source_inputs_unchanged": true,
+  "original_v1_source_identity": "75f23c5b566d05fd9684bbc95724a2671d729127d5982b9bebbb288b60673c06",
+  "c1_source_identity": "7039076f147e173359e4c3099e35de9ccd4e9a590fd54ad2960c2b64f76f21c5",
+  "decision": "retain original gate/log/data;isolate build directories using a counted path-only verifier projection;require frozen v1 exact43 failure and C1 exact100 replay from disjoint builds",
+  "delayed-work-valuation_artifact_sha256": "807577d53545d0fcab69a99cadbbad529f5b5abf455ae4c22018ffc900b53775",
+  "delayed-work-valuation-c1_artifact_sha256": "0e72180d5fa4415691a781ce0bc3edde58126753292921d67207948737fe00de"
+}

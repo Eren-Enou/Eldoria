@@ -394,26 +394,19 @@ statements above remain historical. No default preparation/MealRelief adoption.
 026 prospective design is a separate gate, not a result of this integrity pass.
 
 
-## Experiment026 — delayed-work valuation (inconclusive execution failure)
+## Experiment026 — delayed-work valuation (completed C1, qualified)
 
-[Registration](../../experiments/026/specification.md) and unchanged16-file runtime
-were published before treatment. The100-world attempt aborts at43/source21/
-ProjectedNeed in `src/encounters.rs:210`. [Results](../../experiments/026/results.md):
-43 complete worlds,21 complete policy pairs, one orphan. Sources15/17/19 show real
-work/material/social differences and mixed costs/benefits; no held-out result or
-full-matrix conclusion. No fix, retuning, adoption,026 protection or027.
-[Failure evidence gate](../../examples/support/verify026_failure.py) checks the
-independently reconstructed exact prefix and repeated panic; normal validate026
-remains unpassed. Failure evidence/report remain explicitly failed-v1 evidence; see the separate
-prospective C1 milestone below.
+[Final report](../development/experiment-026-final-report.md),
+[registered specification](../../experiments/026/specification.md) and
+[C1 results](../../experiments/026/continuation-c1/results.md).
+Original v1 failed at43/source21/ProjectedNeed; its immutable prefix/logs/report
+remain in failure/. C1 was separately declared and published before treatment,
+preserving all previously defined response semantics and unchanged formula/matrix.
+All100 C1 rows execute;8/48 primary pairs change execution,40 null, both report
+pairs match. Outputs77→79 but meals161→155; mixed/harmful individual outcomes
+remain. Qualified causal existence, no superiority/default adoption/protection.
 
-
-###026-C1 declaration (prospective only)
-
-[Amendment](../../experiments/026/continuation-c1/amendment.md) removes an unused
-lookup before the already-established Continue0/reselection rule. Read-only
-comparison checks6509 old025 and4858 prefix response records. The new successor
-must preserve all old defined responses, all50 Baseline/56feature-off/43prefix
-bodies, the unchanged formula/matrix and original failed producer. No C1 code or
-unknown outcome exists at declaration; source/readers must be published before
-new treatment. This is an engineering domain extension, not retuned valuation.
+Independent100-world reconstruction,50 comparisons,17 corruptions and exact replay
+pass through `validate026_c1_isolated`; exact43-row original panic is also required.
+Post-run I1 isolates same-name Cargo hosts without changing frozen scientific logic.
+See [verification](../../experiments/026/verification.md). No027 or canon change.

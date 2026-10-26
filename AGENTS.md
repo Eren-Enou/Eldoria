@@ -58,28 +58,22 @@ No MealRelief interaction, GUI/manual testing, persistent026 integration, defaul
 adoption, canon, renewal, population or next experiment. Older statements below
 record historical program boundaries and do not override this authorization.
 
-026 execution is INCONCLUSIVE: frozen row43/source21/ProjectedNeed panics in
-src/encounters.rs:210 after43 complete rows. Preserve the frozen16-file runtime,
-failed prefix/logs,21 partial policy pairs and orphan Baseline; no behavior fix or
-retuning occurred. See experiments/026/results.md and verification.md. The separate
-`python -B examples/support/verify026_failure.py` checks failure evidence only;
-normal validate026 remains unpassed and must not be weakened to accept43 worlds.
-The initial stop left failure evidence uncommitted; the continued program now
-publishes it as expected-failure evidence in a separate passing prospective-C1
-design milestone. This does not claim the failed v1 scientific gate passed.
-No026 foundation protection/default adoption or027 follows. A response-interface
-repair needs a separately declared source/gate while retaining this failure.
+026 is now completed as separately declared C1 research, ACCEPT WITH QUALIFICATION.
+Eight of48 primary pairs change execution;40 are null. More output does not imply
+better individual hunger. Preserve adverse43, mixed41, avoided failures23 and
+nutritional null17. No default adoption or026 protection. Original v1 remains an
+inconclusive43-row failure; normal validate026 must never accept that prefix.
+C1 preserves old defined responses, extending only an unused missing-member lookup
+with established Continue0. All16 v1/C1 frozen files and original evidence stay exact.
 
-Continuation audit found a semantics-preserving route under the active026 goal:
-prospective experiments/026/continuation-c1/amendment.md totalizes only the unused
-Continue lookup using the already-established Continue0 rule. Preserve all16
-frozen-v1 files and failed evidence; never resume or relabel that producer. C1
-must be a separate source/schema with unchanged formula/matrix, all50 Baseline and
-43 v1-prefix byte compatibility, and published sources/readers before unknown
-outcomes. All previously defined responses must remain exact. The old v1 full
-study stays failed; only expected-failure evidence and prospective design gates
-can pass before C1. This is not permission to weaken either validator or change
-consent priorities, resources, cognitive capacities or protected historical code.
+Current complete read-only gate:
+`cargo run --release --locked -j 1 --example validate026_c1_isolated`.
+The post-run I1 transport projection changes paths only, with counted reverse
+checks. Always use disjoint Cargo target directories for these same-name generated
+hosts: target/026-v1-isolated and target/026-c1-isolated. Shared-target verifier
+instructions are historical and can reuse the wrong host. Preserve failure logs;
+do not edit frozen source/readers to repair paths. See experiments/026/results.md,
+verification.md and docs/development/experiment-026-final-report.md. No027.
 
 The activity-valuation program (attachment 963863ea) independently reviewed and
 conditionally protected 023, then preregistered and evaluated 024. Qualified

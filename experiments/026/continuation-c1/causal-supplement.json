@@ -1,0 +1,1884 @@
+{
+  "kind": "post-execution descriptive supplement;not an added policy signal or tuned criterion",
+  "responses": 12996,
+  "compact_projection_audit_bytes": 2446943,
+  "compact_extension_reference_bytes": 405,
+  "need_relief_changed": {
+    "15": {
+      "baseline": [
+        65,
+        85,
+        75,
+        85
+      ],
+      "treatment": [
+        70,
+        60,
+        40,
+        75
+      ]
+    },
+    "17": {
+      "baseline": [
+        35,
+        25,
+        0,
+        40
+      ],
+      "treatment": [
+        35,
+        25,
+        0,
+        40
+      ]
+    },
+    "19": {
+      "baseline": [
+        40,
+        60,
+        150,
+        55
+      ],
+      "treatment": [
+        40,
+        65,
+        135,
+        50
+      ]
+    },
+    "21": {
+      "baseline": [
+        0,
+        55,
+        35,
+        25
+      ],
+      "treatment": [
+        20,
+        25,
+        10,
+        25
+      ]
+    },
+    "23": {
+      "baseline": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "treatment": [
+        40,
+        40,
+        40,
+        40
+      ]
+    },
+    "39": {
+      "baseline": [
+        65,
+        85,
+        115,
+        105
+      ],
+      "treatment": [
+        85,
+        85,
+        110,
+        120
+      ]
+    },
+    "41": {
+      "baseline": [
+        80,
+        65,
+        80,
+        55
+      ],
+      "treatment": [
+        60,
+        75,
+        80,
+        60
+      ]
+    },
+    "43": {
+      "baseline": [
+        55,
+        50,
+        95,
+        75
+      ],
+      "treatment": [
+        35,
+        60,
+        40,
+        65
+      ]
+    }
+  },
+  "witnesses": {
+    "21Baseline": {
+      "meals": [
+        {
+          "tick": 6,
+          "actor": 1,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 20,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 6,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 20,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 10,
+          "actor": 1,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 5,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 10,
+          "actor": 3,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 5,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 32,
+          "actor": 2,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 35,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 35,
+          "actor": 1,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 30,
+          "hunger_after": 0,
+          "consumed": 1
+        }
+      ],
+      "first_cause_owner_processes": [
+        {
+          "process": {
+            "commitment": 24,
+            "owner": 2,
+            "source": 0,
+            "start": 25,
+            "extract_at": 27,
+            "finish_at": 31
+          },
+          "operations": [
+            {
+              "index": 1,
+              "id": 1,
+              "tick": 27,
+              "commitment": 24,
+              "owner": 2,
+              "source": 0,
+              "outcome": "Extracted",
+              "raw_before": 2,
+              "raw_after": 0,
+              "escrow_before": 0,
+              "escrow_after": 2,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 0,
+              "waste_after": 0
+            },
+            {
+              "index": 5,
+              "id": 5,
+              "tick": 31,
+              "commitment": 24,
+              "owner": 2,
+              "source": 0,
+              "outcome": "Prepared",
+              "raw_before": 0,
+              "raw_after": 0,
+              "escrow_before": 2,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 1,
+              "waste_before": 1,
+              "waste_after": 2
+            }
+          ]
+        },
+        {
+          "process": {
+            "commitment": 49,
+            "owner": 2,
+            "source": 0,
+            "start": 40,
+            "extract_at": 42,
+            "finish_at": 46
+          },
+          "operations": [
+            {
+              "index": 8,
+              "id": 8,
+              "tick": 42,
+              "commitment": 49,
+              "owner": 2,
+              "source": 0,
+              "outcome": "Insufficient",
+              "raw_before": 0,
+              "raw_after": 0,
+              "escrow_before": 0,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 2,
+              "waste_after": 2
+            },
+            {
+              "index": 9,
+              "id": 9,
+              "tick": 46,
+              "commitment": 49,
+              "owner": 2,
+              "source": 0,
+              "outcome": "Failed",
+              "raw_before": 0,
+              "raw_after": 0,
+              "escrow_before": 0,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 2,
+              "waste_after": 2
+            }
+          ]
+        }
+      ]
+    },
+    "21ProjectedNeed": {
+      "meals": [
+        {
+          "tick": 6,
+          "actor": 1,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 20,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 6,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 20,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 10,
+          "actor": 1,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 5,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 10,
+          "actor": 3,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 5,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 15,
+          "actor": 2,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 10,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 20,
+          "actor": 0,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 20,
+          "hunger_after": 0,
+          "consumed": 1
+        }
+      ],
+      "first_cause_owner_processes": [
+        {
+          "process": {
+            "commitment": 14,
+            "owner": 2,
+            "source": 0,
+            "start": 8,
+            "extract_at": 10,
+            "finish_at": 14
+          },
+          "operations": [
+            {
+              "index": 0,
+              "id": 0,
+              "tick": 10,
+              "commitment": 14,
+              "owner": 2,
+              "source": 0,
+              "outcome": "Extracted",
+              "raw_before": 4,
+              "raw_after": 2,
+              "escrow_before": 0,
+              "escrow_after": 2,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 0,
+              "waste_after": 0
+            },
+            {
+              "index": 2,
+              "id": 2,
+              "tick": 14,
+              "commitment": 14,
+              "owner": 2,
+              "source": 0,
+              "outcome": "Prepared",
+              "raw_before": 0,
+              "raw_after": 0,
+              "escrow_before": 2,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 1,
+              "waste_before": 0,
+              "waste_after": 1
+            }
+          ]
+        },
+        {
+          "process": {
+            "commitment": 23,
+            "owner": 2,
+            "source": 0,
+            "start": 16,
+            "extract_at": 18,
+            "finish_at": 22
+          },
+          "operations": [
+            {
+              "index": 4,
+              "id": 4,
+              "tick": 18,
+              "commitment": 23,
+              "owner": 2,
+              "source": 0,
+              "outcome": "Insufficient",
+              "raw_before": 0,
+              "raw_after": 0,
+              "escrow_before": 0,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 2,
+              "waste_after": 2
+            },
+            {
+              "index": 5,
+              "id": 5,
+              "tick": 22,
+              "commitment": 23,
+              "owner": 2,
+              "source": 0,
+              "outcome": "Failed",
+              "raw_before": 0,
+              "raw_after": 0,
+              "escrow_before": 0,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 2,
+              "waste_after": 2
+            }
+          ]
+        }
+      ]
+    },
+    "v1_failure_reconstruction": [
+      {
+        "reference": {
+          "boundary": 5,
+          "response": 0,
+          "owner": 0,
+          "tick": 9,
+          "outgoing": {
+            "Invite": {
+              "recipient": 2,
+              "kind": "Inquiry"
+            }
+          }
+        },
+        "current_query": {
+          "Ask": {
+            "concern": 0,
+            "source": 3,
+            "strategy": "Direct"
+          }
+        },
+        "current_contacts": [
+          {
+            "intent": "Wait",
+            "reservation": 0,
+            "eligible": true,
+            "score": 0
+          },
+          {
+            "intent": {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            "reservation": 8,
+            "eligible": true,
+            "score": 0
+          },
+          {
+            "intent": {
+              "Invite": {
+                "recipient": 2,
+                "kind": "Resource"
+              }
+            },
+            "reservation": 8,
+            "eligible": false,
+            "score": -1
+          },
+          {
+            "intent": {
+              "Invite": {
+                "recipient": 3,
+                "kind": "Resource"
+              }
+            },
+            "reservation": 8,
+            "eligible": true,
+            "score": 0
+          },
+          {
+            "intent": {
+              "Invite": {
+                "recipient": 3,
+                "kind": "Inquiry"
+              }
+            },
+            "reservation": 15,
+            "eligible": true,
+            "score": 43
+          }
+        ],
+        "reply_candidates": [
+          {
+            "reply": "Wait",
+            "score": 0
+          },
+          {
+            "reply": {
+              "Accept": 1
+            },
+            "score": 0
+          },
+          {
+            "reply": {
+              "Accept": 3
+            },
+            "score": 0
+          },
+          {
+            "reply": "Continue",
+            "score": 0
+          }
+        ],
+        "reply": "Wait"
+      },
+      {
+        "reference": {
+          "boundary": 13,
+          "response": 0,
+          "owner": 0,
+          "tick": 17,
+          "outgoing": {
+            "Invite": {
+              "recipient": 2,
+              "kind": "Inquiry"
+            }
+          }
+        },
+        "current_query": {
+          "Ask": {
+            "concern": 0,
+            "source": 3,
+            "strategy": "Direct"
+          }
+        },
+        "current_contacts": [
+          {
+            "intent": "Wait",
+            "reservation": 0,
+            "eligible": true,
+            "score": 0
+          },
+          {
+            "intent": {
+              "Invite": {
+                "recipient": 1,
+                "kind": "Resource"
+              }
+            },
+            "reservation": 8,
+            "eligible": true,
+            "score": 5
+          },
+          {
+            "intent": {
+              "Invite": {
+                "recipient": 2,
+                "kind": "Resource"
+              }
+            },
+            "reservation": 8,
+            "eligible": false,
+            "score": -1
+          },
+          {
+            "intent": {
+              "Invite": {
+                "recipient": 3,
+                "kind": "Resource"
+              }
+            },
+            "reservation": 8,
+            "eligible": true,
+            "score": 5
+          },
+          {
+            "intent": {
+              "Invite": {
+                "recipient": 3,
+                "kind": "Inquiry"
+              }
+            },
+            "reservation": 15,
+            "eligible": true,
+            "score": 42
+          }
+        ],
+        "reply_candidates": [
+          {
+            "reply": "Wait",
+            "score": 0
+          },
+          {
+            "reply": {
+              "Accept": 1
+            },
+            "score": 5
+          },
+          {
+            "reply": {
+              "Accept": 3
+            },
+            "score": 5
+          },
+          {
+            "reply": "Continue",
+            "score": 0
+          }
+        ],
+        "reply": {
+          "Accept": 1
+        }
+      }
+    ],
+    "23Baseline": {
+      "meals": [
+        {
+          "tick": 34,
+          "actor": 2,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 100,
+          "hunger_after": 60,
+          "consumed": 1
+        },
+        {
+          "tick": 34,
+          "actor": 3,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 100,
+          "hunger_after": 60,
+          "consumed": 1
+        },
+        {
+          "tick": 53,
+          "actor": 0,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 100,
+          "hunger_after": 60,
+          "consumed": 1
+        },
+        {
+          "tick": 54,
+          "actor": 1,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 100,
+          "hunger_after": 60,
+          "consumed": 1
+        }
+      ],
+      "first_cause_owner_processes": [
+        {
+          "process": {
+            "commitment": 29,
+            "owner": 0,
+            "source": 0,
+            "start": 20,
+            "extract_at": 28,
+            "finish_at": 52
+          },
+          "operations": [
+            {
+              "index": 2,
+              "id": 2,
+              "tick": 28,
+              "commitment": 29,
+              "owner": 0,
+              "source": 0,
+              "outcome": "Extracted",
+              "raw_before": 4,
+              "raw_after": 2,
+              "escrow_before": 0,
+              "escrow_after": 2,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 0,
+              "waste_after": 0
+            },
+            {
+              "index": 8,
+              "id": 8,
+              "tick": 52,
+              "commitment": 29,
+              "owner": 0,
+              "source": 0,
+              "outcome": "Prepared",
+              "raw_before": 0,
+              "raw_after": 0,
+              "escrow_before": 2,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 1,
+              "waste_before": 2,
+              "waste_after": 3
+            }
+          ]
+        },
+        {
+          "process": {
+            "commitment": 46,
+            "owner": 0,
+            "source": 0,
+            "start": 54,
+            "extract_at": 62,
+            "finish_at": 86
+          },
+          "operations": [
+            {
+              "index": 10,
+              "id": 10,
+              "tick": 62,
+              "commitment": 46,
+              "owner": 0,
+              "source": 0,
+              "outcome": "Insufficient",
+              "raw_before": 0,
+              "raw_after": 0,
+              "escrow_before": 0,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 4,
+              "waste_after": 4
+            },
+            {
+              "index": 14,
+              "id": 14,
+              "tick": 86,
+              "commitment": 46,
+              "owner": 0,
+              "source": 0,
+              "outcome": "Failed",
+              "raw_before": 0,
+              "raw_after": 0,
+              "escrow_before": 0,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 4,
+              "waste_after": 4
+            }
+          ]
+        }
+      ],
+      "raw_memories_owner0": [
+        {
+          "id": 0,
+          "owner": 0,
+          "tick": 0,
+          "kind": "Sense",
+          "before": null,
+          "after": {
+            "owner": 0,
+            "receipt": 0,
+            "observation": {
+              "id": 0,
+              "observed_at": 0,
+              "stock": 8,
+              "accessible": true,
+              "extraction_ticks": 8,
+              "preparation_ticks": 24,
+              "input_units": 2,
+              "edible_units": 1,
+              "waste_units": 1
+            },
+            "own_takes": 0
+          },
+          "physical": null,
+          "cache_record": null
+        },
+        {
+          "id": 4,
+          "owner": 0,
+          "tick": 8,
+          "kind": "Sense",
+          "before": {
+            "owner": 0,
+            "receipt": 0,
+            "observation": {
+              "id": 0,
+              "observed_at": 0,
+              "stock": 8,
+              "accessible": true,
+              "extraction_ticks": 8,
+              "preparation_ticks": 24,
+              "input_units": 2,
+              "edible_units": 1,
+              "waste_units": 1
+            },
+            "own_takes": 0
+          },
+          "after": {
+            "owner": 0,
+            "receipt": 1,
+            "observation": {
+              "id": 0,
+              "observed_at": 8,
+              "stock": 8,
+              "accessible": true,
+              "extraction_ticks": 8,
+              "preparation_ticks": 24,
+              "input_units": 2,
+              "edible_units": 1,
+              "waste_units": 1
+            },
+            "own_takes": 0
+          },
+          "physical": null,
+          "cache_record": null
+        },
+        {
+          "id": 8,
+          "owner": 0,
+          "tick": 16,
+          "kind": "Sense",
+          "before": {
+            "owner": 0,
+            "receipt": 1,
+            "observation": {
+              "id": 0,
+              "observed_at": 8,
+              "stock": 8,
+              "accessible": true,
+              "extraction_ticks": 8,
+              "preparation_ticks": 24,
+              "input_units": 2,
+              "edible_units": 1,
+              "waste_units": 1
+            },
+            "own_takes": 0
+          },
+          "after": {
+            "owner": 0,
+            "receipt": 2,
+            "observation": {
+              "id": 0,
+              "observed_at": 16,
+              "stock": 4,
+              "accessible": true,
+              "extraction_ticks": 8,
+              "preparation_ticks": 24,
+              "input_units": 2,
+              "edible_units": 1,
+              "waste_units": 1
+            },
+            "own_takes": 0
+          },
+          "physical": null,
+          "cache_record": null
+        },
+        {
+          "id": 10,
+          "owner": 0,
+          "tick": 28,
+          "kind": "Taken",
+          "before": {
+            "owner": 0,
+            "receipt": 2,
+            "observation": {
+              "id": 0,
+              "observed_at": 16,
+              "stock": 4,
+              "accessible": true,
+              "extraction_ticks": 8,
+              "preparation_ticks": 24,
+              "input_units": 2,
+              "edible_units": 1,
+              "waste_units": 1
+            },
+            "own_takes": 0
+          },
+          "after": {
+            "owner": 0,
+            "receipt": 2,
+            "observation": {
+              "id": 0,
+              "observed_at": 16,
+              "stock": 4,
+              "accessible": true,
+              "extraction_ticks": 8,
+              "preparation_ticks": 24,
+              "input_units": 2,
+              "edible_units": 1,
+              "waste_units": 1
+            },
+            "own_takes": 2
+          },
+          "physical": 2,
+          "cache_record": null
+        },
+        {
+          "id": 14,
+          "owner": 0,
+          "tick": 62,
+          "kind": "Insufficient",
+          "before": {
+            "owner": 0,
+            "receipt": 2,
+            "observation": {
+              "id": 0,
+              "observed_at": 16,
+              "stock": 4,
+              "accessible": true,
+              "extraction_ticks": 8,
+              "preparation_ticks": 24,
+              "input_units": 2,
+              "edible_units": 1,
+              "waste_units": 1
+            },
+            "own_takes": 2
+          },
+          "after": {
+            "owner": 0,
+            "receipt": 3,
+            "observation": {
+              "id": 0,
+              "observed_at": 62,
+              "stock": 0,
+              "accessible": true,
+              "extraction_ticks": 8,
+              "preparation_ticks": 24,
+              "input_units": 2,
+              "edible_units": 1,
+              "waste_units": 1
+            },
+            "own_takes": 0
+          },
+          "physical": 10,
+          "cache_record": null
+        }
+      ]
+    },
+    "23ProjectedNeed": {
+      "meals": [
+        {
+          "tick": 33,
+          "actor": 0,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 100,
+          "hunger_after": 60,
+          "consumed": 1
+        },
+        {
+          "tick": 33,
+          "actor": 1,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 100,
+          "hunger_after": 60,
+          "consumed": 1
+        },
+        {
+          "tick": 33,
+          "actor": 2,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 100,
+          "hunger_after": 60,
+          "consumed": 1
+        },
+        {
+          "tick": 33,
+          "actor": 3,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 100,
+          "hunger_after": 60,
+          "consumed": 1
+        }
+      ],
+      "first_cause_owner_processes": [
+        {
+          "process": {
+            "commitment": 0,
+            "owner": 0,
+            "source": 0,
+            "start": 0,
+            "extract_at": 8,
+            "finish_at": 32
+          },
+          "operations": [
+            {
+              "index": 0,
+              "id": 0,
+              "tick": 8,
+              "commitment": 0,
+              "owner": 0,
+              "source": 0,
+              "outcome": "Extracted",
+              "raw_before": 8,
+              "raw_after": 6,
+              "escrow_before": 0,
+              "escrow_after": 2,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 0,
+              "waste_after": 0
+            },
+            {
+              "index": 4,
+              "id": 4,
+              "tick": 32,
+              "commitment": 0,
+              "owner": 0,
+              "source": 0,
+              "outcome": "Prepared",
+              "raw_before": 0,
+              "raw_after": 0,
+              "escrow_before": 2,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 1,
+              "waste_before": 0,
+              "waste_after": 1
+            }
+          ]
+        }
+      ],
+      "raw_memories_owner0": [
+        {
+          "id": 0,
+          "owner": 0,
+          "tick": 0,
+          "kind": "Sense",
+          "before": null,
+          "after": {
+            "owner": 0,
+            "receipt": 0,
+            "observation": {
+              "id": 0,
+              "observed_at": 0,
+              "stock": 8,
+              "accessible": true,
+              "extraction_ticks": 8,
+              "preparation_ticks": 24,
+              "input_units": 2,
+              "edible_units": 1,
+              "waste_units": 1
+            },
+            "own_takes": 0
+          },
+          "physical": null,
+          "cache_record": null
+        },
+        {
+          "id": 4,
+          "owner": 0,
+          "tick": 8,
+          "kind": "Taken",
+          "before": {
+            "owner": 0,
+            "receipt": 0,
+            "observation": {
+              "id": 0,
+              "observed_at": 0,
+              "stock": 8,
+              "accessible": true,
+              "extraction_ticks": 8,
+              "preparation_ticks": 24,
+              "input_units": 2,
+              "edible_units": 1,
+              "waste_units": 1
+            },
+            "own_takes": 0
+          },
+          "after": {
+            "owner": 0,
+            "receipt": 0,
+            "observation": {
+              "id": 0,
+              "observed_at": 0,
+              "stock": 8,
+              "accessible": true,
+              "extraction_ticks": 8,
+              "preparation_ticks": 24,
+              "input_units": 2,
+              "edible_units": 1,
+              "waste_units": 1
+            },
+            "own_takes": 2
+          },
+          "physical": 0,
+          "cache_record": null
+        },
+        {
+          "id": 8,
+          "owner": 0,
+          "tick": 32,
+          "kind": "Sense",
+          "before": {
+            "owner": 0,
+            "receipt": 0,
+            "observation": {
+              "id": 0,
+              "observed_at": 0,
+              "stock": 8,
+              "accessible": true,
+              "extraction_ticks": 8,
+              "preparation_ticks": 24,
+              "input_units": 2,
+              "edible_units": 1,
+              "waste_units": 1
+            },
+            "own_takes": 2
+          },
+          "after": {
+            "owner": 0,
+            "receipt": 1,
+            "observation": {
+              "id": 0,
+              "observed_at": 32,
+              "stock": 0,
+              "accessible": true,
+              "extraction_ticks": 8,
+              "preparation_ticks": 24,
+              "input_units": 2,
+              "edible_units": 1,
+              "waste_units": 1
+            },
+            "own_takes": 0
+          },
+          "physical": null,
+          "cache_record": null
+        }
+      ]
+    },
+    "41Baseline": {
+      "meals": [
+        {
+          "tick": 12,
+          "actor": 1,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 25,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 12,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 25,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 18,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 10,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 28,
+          "actor": 2,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 45,
+          "hunger_after": 5,
+          "consumed": 1
+        },
+        {
+          "tick": 29,
+          "actor": 3,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 10,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 32,
+          "actor": 2,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 10,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 36,
+          "actor": 3,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 10,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 39,
+          "actor": 0,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 60,
+          "hunger_after": 20,
+          "consumed": 1
+        },
+        {
+          "tick": 42,
+          "actor": 1,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 40,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 55,
+          "actor": 2,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 30,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 57,
+          "actor": 0,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 40,
+          "hunger_after": 0,
+          "consumed": 1
+        }
+      ],
+      "first_cause_owner_processes": [
+        {
+          "process": {
+            "commitment": 50,
+            "owner": 1,
+            "source": 0,
+            "start": 28,
+            "extract_at": 32,
+            "finish_at": 40
+          },
+          "operations": [
+            {
+              "index": 5,
+              "id": 5,
+              "tick": 32,
+              "commitment": 50,
+              "owner": 1,
+              "source": 0,
+              "outcome": "Extracted",
+              "raw_before": 10,
+              "raw_after": 8,
+              "escrow_before": 0,
+              "escrow_after": 2,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 2,
+              "waste_after": 2
+            },
+            {
+              "index": 7,
+              "id": 7,
+              "tick": 40,
+              "commitment": 50,
+              "owner": 1,
+              "source": 0,
+              "outcome": "Prepared",
+              "raw_before": 8,
+              "raw_after": 8,
+              "escrow_before": 2,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 1,
+              "waste_before": 3,
+              "waste_after": 4
+            }
+          ]
+        }
+      ]
+    },
+    "41ProjectedNeed": {
+      "meals": [
+        {
+          "tick": 12,
+          "actor": 1,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 25,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 12,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 25,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 18,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 10,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 24,
+          "actor": 0,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 40,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 28,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 10,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 34,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 10,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 39,
+          "actor": 2,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 60,
+          "hunger_after": 20,
+          "consumed": 1
+        },
+        {
+          "tick": 40,
+          "actor": 0,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 20,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 40,
+          "actor": 3,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 5,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 45,
+          "actor": 1,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 40,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 51,
+          "actor": 1,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 10,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 55,
+          "actor": 2,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 40,
+          "hunger_after": 0,
+          "consumed": 1
+        }
+      ],
+      "first_cause_owner_processes": [
+        {
+          "process": {
+            "commitment": 21,
+            "owner": 1,
+            "source": 0,
+            "start": 16,
+            "extract_at": 20,
+            "finish_at": 28
+          },
+          "operations": [
+            {
+              "index": 2,
+              "id": 2,
+              "tick": 20,
+              "commitment": 21,
+              "owner": 1,
+              "source": 0,
+              "outcome": "Extracted",
+              "raw_before": 12,
+              "raw_after": 10,
+              "escrow_before": 0,
+              "escrow_after": 2,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 0,
+              "waste_after": 0
+            },
+            {
+              "index": 5,
+              "id": 5,
+              "tick": 28,
+              "commitment": 21,
+              "owner": 1,
+              "source": 0,
+              "outcome": "Prepared",
+              "raw_before": 10,
+              "raw_after": 10,
+              "escrow_before": 2,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 1,
+              "waste_before": 2,
+              "waste_after": 3
+            }
+          ]
+        },
+        {
+          "process": {
+            "commitment": 40,
+            "owner": 1,
+            "source": 0,
+            "start": 32,
+            "extract_at": 36,
+            "finish_at": 44
+          },
+          "operations": [
+            {
+              "index": 8,
+              "id": 8,
+              "tick": 36,
+              "commitment": 40,
+              "owner": 1,
+              "source": 0,
+              "outcome": "Extracted",
+              "raw_before": 6,
+              "raw_after": 4,
+              "escrow_before": 0,
+              "escrow_after": 2,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 3,
+              "waste_after": 3
+            },
+            {
+              "index": 11,
+              "id": 11,
+              "tick": 44,
+              "commitment": 40,
+              "owner": 1,
+              "source": 0,
+              "outcome": "Prepared",
+              "raw_before": 4,
+              "raw_after": 4,
+              "escrow_before": 2,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 1,
+              "waste_before": 5,
+              "waste_after": 6
+            }
+          ]
+        }
+      ]
+    },
+    "43Baseline": {
+      "meals": [
+        {
+          "tick": 12,
+          "actor": 1,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 25,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 12,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 25,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 18,
+          "actor": 0,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 35,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 22,
+          "actor": 3,
+          "food_before": 3,
+          "food_after": 2,
+          "hunger_before": 15,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 28,
+          "actor": 2,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 45,
+          "hunger_after": 5,
+          "consumed": 1
+        },
+        {
+          "tick": 30,
+          "actor": 1,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 25,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 34,
+          "actor": 0,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 20,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 34,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 15,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 42,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 10,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 47,
+          "actor": 2,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 30,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 50,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 10,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 69,
+          "actor": 2,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 25,
+          "hunger_after": 0,
+          "consumed": 1
+        }
+      ],
+      "first_cause_owner_processes": [
+        {
+          "process": {
+            "commitment": 29,
+            "owner": 1,
+            "source": 0,
+            "start": 18,
+            "extract_at": 20,
+            "finish_at": 24
+          },
+          "operations": [
+            {
+              "index": 4,
+              "id": 4,
+              "tick": 20,
+              "commitment": 29,
+              "owner": 1,
+              "source": 0,
+              "outcome": "Extracted",
+              "raw_before": 12,
+              "raw_after": 10,
+              "escrow_before": 0,
+              "escrow_after": 2,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 2,
+              "waste_after": 2
+            },
+            {
+              "index": 6,
+              "id": 6,
+              "tick": 24,
+              "commitment": 29,
+              "owner": 1,
+              "source": 0,
+              "outcome": "Prepared",
+              "raw_before": 8,
+              "raw_after": 8,
+              "escrow_before": 2,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 1,
+              "waste_before": 2,
+              "waste_after": 3
+            }
+          ]
+        },
+        {
+          "process": {
+            "commitment": 62,
+            "owner": 1,
+            "source": 0,
+            "start": 38,
+            "extract_at": 40,
+            "finish_at": 44
+          },
+          "operations": [
+            {
+              "index": 12,
+              "id": 12,
+              "tick": 40,
+              "commitment": 62,
+              "owner": 1,
+              "source": 0,
+              "outcome": "Extracted",
+              "raw_before": 4,
+              "raw_after": 2,
+              "escrow_before": 0,
+              "escrow_after": 2,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 6,
+              "waste_after": 6
+            },
+            {
+              "index": 15,
+              "id": 15,
+              "tick": 44,
+              "commitment": 62,
+              "owner": 1,
+              "source": 0,
+              "outcome": "Prepared",
+              "raw_before": 0,
+              "raw_after": 0,
+              "escrow_before": 2,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 1,
+              "waste_before": 6,
+              "waste_after": 7
+            }
+          ]
+        },
+        {
+          "process": {
+            "commitment": 75,
+            "owner": 1,
+            "source": 0,
+            "start": 48,
+            "extract_at": 50,
+            "finish_at": 54
+          },
+          "operations": [
+            {
+              "index": 18,
+              "id": 18,
+              "tick": 50,
+              "commitment": 75,
+              "owner": 1,
+              "source": 0,
+              "outcome": "Insufficient",
+              "raw_before": 0,
+              "raw_after": 0,
+              "escrow_before": 0,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 8,
+              "waste_after": 8
+            },
+            {
+              "index": 19,
+              "id": 19,
+              "tick": 54,
+              "commitment": 75,
+              "owner": 1,
+              "source": 0,
+              "outcome": "Failed",
+              "raw_before": 0,
+              "raw_after": 0,
+              "escrow_before": 0,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 8,
+              "waste_after": 8
+            }
+          ]
+        }
+      ],
+      "actor2_food_held_contact_choices": [],
+      "actor2_food_held_contact_choice_count": 0
+    },
+    "43ProjectedNeed": {
+      "meals": [
+        {
+          "tick": 12,
+          "actor": 1,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 25,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 12,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 25,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 18,
+          "actor": 0,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 35,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 22,
+          "actor": 3,
+          "food_before": 3,
+          "food_after": 2,
+          "hunger_before": 15,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 28,
+          "actor": 1,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 20,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 32,
+          "actor": 3,
+          "food_before": 2,
+          "food_after": 1,
+          "hunger_before": 10,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 38,
+          "actor": 1,
+          "food_before": 3,
+          "food_after": 2,
+          "hunger_before": 15,
+          "hunger_after": 0,
+          "consumed": 1
+        },
+        {
+          "tick": 38,
+          "actor": 2,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 60,
+          "hunger_after": 20,
+          "consumed": 1
+        },
+        {
+          "tick": 44,
+          "actor": 3,
+          "food_before": 1,
+          "food_after": 0,
+          "hunger_before": 15,
+          "hunger_after": 0,
+          "consumed": 1
+        }
+      ],
+      "first_cause_owner_processes": [
+        {
+          "process": {
+            "commitment": 22,
+            "owner": 1,
+            "source": 0,
+            "start": 16,
+            "extract_at": 18,
+            "finish_at": 22
+          },
+          "operations": [
+            {
+              "index": 4,
+              "id": 4,
+              "tick": 18,
+              "commitment": 22,
+              "owner": 1,
+              "source": 0,
+              "outcome": "Extracted",
+              "raw_before": 12,
+              "raw_after": 10,
+              "escrow_before": 0,
+              "escrow_after": 2,
+              "food_before": 0,
+              "food_after": 0,
+              "waste_before": 2,
+              "waste_after": 2
+            },
+            {
+              "index": 6,
+              "id": 6,
+              "tick": 22,
+              "commitment": 22,
+              "owner": 1,
+              "source": 0,
+              "outcome": "Prepared",
+              "raw_before": 8,
+              "raw_after": 8,
+              "escrow_before": 2,
+              "escrow_after": 0,
+              "food_before": 0,
+              "food_after": 1,
+              "waste_before": 2,
+              "waste_after": 3
+            }
+          ]
+        }
+      ],
+      "actor2_food_held_contact_choices": [],
+      "actor2_food_held_contact_choice_count": 0
+    }
+  }
+}

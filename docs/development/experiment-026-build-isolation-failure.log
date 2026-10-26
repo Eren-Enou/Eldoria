@@ -1,0 +1,36 @@
+   Compiling world-of-individuals v0.1.0 (C:\Users\Aaron\Eldoria)
+    Finished `release` profile [optimized] target(s) in 0.70s
+     Running `target\release\examples\validate026_c1.exe`
+   Compiling world-of-individuals v0.1.0 (C:\Users\Aaron\Eldoria\prototypes\delayed-work-valuation)
+    Finished `release` profile [optimized] target(s) in 54.24s
+Traceback (most recent call last):
+  File "C:\Users\Aaron\Eldoria\examples\support\verify026_failure.py", line 53, in <module>
+001�024:408artifacts,386inherited+22original024;425raw originals;review and standalone parity PASS
+001�025:455 portable artifacts/472 raw originals;214 candidate custody bindings; inheritance/source/review PASS
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Aaron\Eldoria\examples\support\verify026_failure.py", line 46, in main
+    assert process.returncode==101,'Frozen failure changed;do not reinterpret as completed science'
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Frozen failure changed;do not reinterpret as completed science
+Traceback (most recent call last):
+001�024:408artifacts,386inherited+22original024;425raw originals;review and standalone parity PASS
+001�025:455 portable artifacts/472 raw originals;214 candidate custody bindings; inheritance/source/review PASS
+001�024:408artifacts,386inherited+22original024;425raw originals;review and standalone parity PASS
+001�025:455 portable artifacts/472 raw originals;214 candidate custody bindings; inheritance/source/review PASS
+001�024:408artifacts,386inherited+22original024;425raw originals;review and standalone parity PASS
+001�025:455 portable artifacts/472 raw originals;214 candidate custody bindings; inheritance/source/review PASS
+  File "C:\Users\Aaron\Eldoria\examples\support\verify026_c1.py", line 34, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Aaron\Eldoria\examples\support\verify026_c1.py", line 30, in main
+    subprocess.run(['python','-B','examples/support/verify026_failure.py'],cwd=ROOT,check=True)
+  File "C:\Users\Aaron\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', '-B', 'examples/support/verify026_failure.py']' returned non-zero exit status 1.
+
+thread 'main' (168328) panicked at examples\validate026_c1.rs:3:5:
+assertion failed: std::process::Command::new("python").args(["-B",
+                        "examples/support/verify026_c1.py"]).status().unwrap().success()
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: process didn't exit successfully: `target\release\examples\validate026_c1.exe` (exit code: 101)

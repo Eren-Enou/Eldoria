@@ -1,0 +1,25 @@
+{
+  "anchors": {
+    "inherited14": "source0251/Baseline",
+    "c1_rule": "source0250/Baseline"
+  },
+  "rejected": [
+    "future_stock_input",
+    "modified_hunger",
+    "extra_score",
+    "duration",
+    "stable_selection",
+    "eligibility",
+    "duplicate_output",
+    "missing_waste",
+    "forged_meal",
+    "social_admission",
+    "wrong_source",
+    "registered_parameter",
+    "audit_claim",
+    "fabricated_later_use_report",
+    "continue_nonzero",
+    "extension_reference",
+    "incoming_tie"
+  ]
+}
