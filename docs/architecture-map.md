@@ -321,17 +321,29 @@ No root default or frozen parent changes; protected endpoint remains 001–023.
 Neither 024 protection nor material preparation/025 follows automatically.
 
 
-## Experiment026: prospective delayed-work valuation
+## Experiment026: execution gate failed; partial causal findings
 
-[Specification](../experiments/026/specification.md), exact100-world matrix,
-[design gate](../experiments/026/design-gate.md) and independent validation plan
-register one opt-in ProjectedNeed Prepare score. Each original025 world is paired
-with Baseline; only eligible Prepare's need term changes. The phase-agnostic
-projection estimates conditional own need, not success, food use or welfare.
-The isolated Rust host is `prototypes/delayed-work-valuation/`; its16-file source/
-reader freeze and disabled gate pass50 original025 plus56 feature-off bodies.
-`examples/support/review026.py` owns independent scoring/full legacy reconstruction;
-`analyze026.py` owns matched-prefix/actor-specific descriptive comparisons;
-`verify026.py` and `validate026` own the separate cache-free research gate.
-No registered treatment has run. Runtime publication and committed activation
-remain required. Existing persistent025 stays unchanged.
+[Results](../experiments/026/results.md), [verification](../experiments/026/verification.md)
+and [A–I report](development/experiment-026-final-report.md). Frozen opt-in host:
+`prototypes/delayed-work-valuation/`; registration/runtime/activation are published.
+First100-world attempt aborts at43/source21/ProjectedNeed in protected outgoing
+contact-candidate lookup.43 complete rows/21 pairs survive; sources15/17/19 change
+work and later state with mixed costs/benefits. Held-out study is unexecuted.
+No protected source or frozen026 code changed to repair it; no adoption/protection.
+
+`review026.py`/`analyze026.py` remain frozen; normal `validate026` still requires100
+worlds. Post-failure `verify026_failure.py` reconstructs the43-world evidence and
+requires the exact same prefix/panic. It cannot certify full study completion.
+Failure artifacts/reports remain failed-v1 evidence. The separately passing C1
+prospective milestone below retains them without claiming v1 execution passed.
+Existing persistent025/GUI/canon remain unchanged. See checkpoint.
+
+
+###026-C1 prospective continuation
+
+[Amendment](../experiments/026/continuation-c1/amendment.md) declares only direct
+Continue0 construction in a separate successor. [Equivalence review](development/experiment-026-response-equivalence.json)
+checks6509 old025/4858 prefix response records and preserves the original failed
+producer. No C1 implementation or new outcome yet; formula and100-world matrix
+stay frozen. New runtime publication requires exact old defined responses and
+50 Baseline/56feature-off/43prefix body compatibility. No global adoption.

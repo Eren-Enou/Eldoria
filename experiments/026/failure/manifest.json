@@ -1,0 +1,115 @@
+{
+  "schema": "experiment-026-failure/v1",
+  "status": "INCONCLUSIVE_EXECUTION_FAILURE",
+  "intended_worlds": 100,
+  "completed_worlds": 43,
+  "complete_policy_pairs": 21,
+  "orphan_baseline_ordinals": [
+    42
+  ],
+  "failed_ordinal": 43,
+  "failed_source025": 21,
+  "failed_mode": "ProjectedNeed",
+  "failed_config": {
+    "source025": 21,
+    "mode": "ProjectedNeed",
+    "world": {
+      "family": "atomic_inquiry",
+      "pair": 10,
+      "world": {
+        "case": "inquiry_conflict",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 4,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  "source_freeze_sha256": "75f23c5b566d05fd9684bbc95724a2671d729127d5982b9bebbb288b60673c06",
+  "raw_prefix_sha256": "12420d7833de693678bf46ebef222d7baeb96d7220bf7633d1fb04010f1ed33d",
+  "raw_prefix_bytes": 125747592,
+  "source_publication": "42d3ad359b7a002926ed3f57e65e99e96ad8545a",
+  "activation_publication": "d2321f1b5d8f15fb62f584a95e27b77abaeee240",
+  "post_failure_reader_sha256": "2595d4b28bc57c77ac0c5682cf291c580d5c71d6557349da9fb9188c8e93c643",
+  "limits": "Post-failure diagnostic only. No failed-world snapshot,full100 archive,held-out outcomes,or full-study acceptance. Backtrace/log thread/address fields are diagnostic,not deterministic simulation evidence. Original frozen sources/readers remain unchanged.",
+  "members": {
+    "attempt-001.jsonl.gz": {
+      "mode": "raw",
+      "sha256": "2187b06977028926b105defd995db0297b46f35b7b778e72e0d2e3c184b7f7db"
+    },
+    "attempt-001.stderr.log": {
+      "mode": "lf",
+      "sha256": "4377ff8533c8f8a1925b191e27a787d614f5cb47423f0fb6382a3a1c3c298747"
+    },
+    "attempt-001.stdout.log": {
+      "mode": "lf",
+      "sha256": "d43a90c82b1446ac94e549df1b0b072f4d95bdf41ba973f7438888d3cedac85a"
+    },
+    "comparisons.json": {
+      "mode": "lf",
+      "sha256": "507cd4bc3991002db647d164d1b027c0e83d5548f267ef0c8143b9943d837623"
+    },
+    "corruptions.json": {
+      "mode": "lf",
+      "sha256": "8256fd98ef4fd9211b76cbf8636de114d30969a6256461ae6118ebe7dbd4e196"
+    },
+    "findings.json": {
+      "mode": "lf",
+      "sha256": "e63c0f18a3a7e0decf3eaf2aab3056a2121613108ba5a714ac76030cb7c4522d"
+    },
+    "replay.stderr.log": {
+      "mode": "lf",
+      "sha256": "cd827619d081bce451efbfa4df77720a8745ca9ec547f5e16213f08b2988a6f9"
+    },
+    "replay.stdout.log": {
+      "mode": "lf",
+      "sha256": "d43a90c82b1446ac94e549df1b0b072f4d95bdf41ba973f7438888d3cedac85a"
+    },
+    "reproduction.json": {
+      "mode": "lf",
+      "sha256": "3fde8609f09d0f74f55173cb36a7116e5795c2d29c1439188924ecc1f4b3863d"
+    },
+    "v1-results.md": {
+      "mode": "lf",
+      "sha256": "efd903012e683ff74e60c0aca328e7a670b1cec1fd5056d3ce03d1246323b0c0"
+    },
+    "v1-verification.md": {
+      "mode": "lf",
+      "sha256": "26df80a0078947a851274826160c063be78ec018b43ece0e7f940cf54b490862"
+    },
+    "v1-A-I-report.md": {
+      "mode": "lf",
+      "sha256": "1700b2166aafe1ae67270778ad3b1a7d6cc4dd81c8bfae689b852a46845f2770"
+    }
+  }
+}

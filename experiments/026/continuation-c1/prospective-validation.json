@@ -1,0 +1,14 @@
+{
+  "schema": "experiment-026-c1-prospective/v1",
+  "status": "DESIGN ONLY;no C1 implementation or unknown treatment outcome",
+  "v1_activation_revision": "d2321f1b5d8f15fb62f584a95e27b77abaeee240",
+  "unchanged_matrix_rows": 100,
+  "old_response_records_verified": 6509,
+  "v1_prefix_response_records_verified": 4858,
+  "historical_failure_expected": true,
+  "source_bound_design": {
+    "experiments/026/continuation-c1/amendment.md": "dd5c7213e25728987450b4b1aa9ec2eeeeff801dab5bdd4725d27a9cbca9a451",
+    "experiments/026/continuation-c1/source-bindings.json": "b199a3034fbacbefac53f6e834d7977bb8dbb9a449771541e66bcbf272f0a9b4"
+  },
+  "milestone_validation_scope": "Prospective C1 design and immutable v1 failure evidence. v1 full-study gate remains failed and is not waived;unknown C1 treatment waits for its published runtime/compatibility gate."
+}

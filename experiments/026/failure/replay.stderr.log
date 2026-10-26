@@ -1,0 +1,105 @@
+026 row0 source0 Baseline
+026 row1 source0 ProjectedNeed
+026 row2 source1 Baseline
+026 row3 source1 ProjectedNeed
+026 row4 source2 Baseline
+026 row5 source2 ProjectedNeed
+026 row6 source3 Baseline
+026 row7 source3 ProjectedNeed
+026 row8 source4 Baseline
+026 row9 source4 ProjectedNeed
+026 row10 source5 Baseline
+026 row11 source5 ProjectedNeed
+026 row12 source6 Baseline
+026 row13 source6 ProjectedNeed
+026 row14 source7 Baseline
+026 row15 source7 ProjectedNeed
+026 row16 source8 Baseline
+026 row17 source8 ProjectedNeed
+026 row18 source9 Baseline
+026 row19 source9 ProjectedNeed
+026 row20 source10 Baseline
+026 row21 source10 ProjectedNeed
+026 row22 source11 Baseline
+026 row23 source11 ProjectedNeed
+026 row24 source12 Baseline
+026 row25 source12 ProjectedNeed
+026 row26 source13 Baseline
+026 row27 source13 ProjectedNeed
+026 row28 source14 Baseline
+026 row29 source14 ProjectedNeed
+026 row30 source15 Baseline
+026 row31 source15 ProjectedNeed
+026 row32 source16 Baseline
+026 row33 source16 ProjectedNeed
+026 row34 source17 Baseline
+026 row35 source17 ProjectedNeed
+026 row36 source18 Baseline
+026 row37 source18 ProjectedNeed
+026 row38 source19 Baseline
+026 row39 source19 ProjectedNeed
+026 row40 source20 Baseline
+026 row41 source20 ProjectedNeed
+026 row42 source21 Baseline
+026 row43 source21 ProjectedNeed
+
+thread 'main' (102136) panicked at C:\Users\Aaron\Eldoria\src\encounters.rs:210:14:
+called `Option::unwrap()` on a `None` value
+stack backtrace:
+   0:     0x7ff64f41d7f9 - std::backtrace_rs::backtrace::win64::trace
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\..\..\backtrace\src\backtrace\win64.rs:85
+   1:     0x7ff64f41d7f9 - std::backtrace_rs::backtrace::trace_unsynchronized
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\..\..\backtrace\src\backtrace\mod.rs:66
+   2:     0x7ff64f41d7f9 - std::sys::backtrace::_print_fmt
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\sys\backtrace.rs:74
+   3:     0x7ff64f41d7f9 - std::sys::backtrace::impl$0::print::impl$0::fmt
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\sys\backtrace.rs:44
+   4:     0x7ff64f42ba2e - core::fmt::write
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\core\src\fmt\mod.rs:0
+   5:     0x7ff64f4213a4 - core::io::write::default_write_fmt
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\core\src\io\write.rs:402
+   6:     0x7ff64f4213a4 - core::io::write::Write::write_fmt<std::sys::stdio::windows::Stderr>
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\core\src\io\write.rs:335
+   7:     0x7ff64f4091f5 - std::sys::backtrace::BacktraceLock::print
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\sys\backtrace.rs:47
+   8:     0x7ff64f4091f5 - std::panicking::default_hook::closure$0
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:292
+   9:     0x7ff64f41794a - std::panicking::default_hook
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:319
+  10:     0x7ff64f417d23 - std::panicking::panic_with_hook
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:815
+  11:     0x7ff64f409304 - std::panicking::panic_handler::closure$0
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:681
+  12:     0x7ff64f4075cf - std::sys::backtrace::__rust_end_short_backtrace<std::panicking::panic_handler::closure_env$0,never$>
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\sys\backtrace.rs:182
+  13:     0x7ff64f40993e - std::panicking::panic_handler
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:679
+  14:     0x7ff64f442a3d - core::panicking::panic_fmt
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\core\src\panicking.rs:80
+  15:     0x7ff64f442a07 - core::panicking::panic
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\core\src\panicking.rs:150
+  16:     0x7ff64f4427ae - core::option::unwrap_failed
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\core\src\option.rs:2248
+  17:     0x7ff64f1765f6 - world_of_individuals[ba5aa61d4d176bbf]::encounters::respond
+  18:     0x7ff64f35fd12 - <world_of_individuals[ba5aa61d4d176bbf]::simulation::Simulation>::delayed_trial26
+  19:     0x7ff64f1e4232 - world_of_individuals[ba5aa61d4d176bbf]::delayed::trial
+  20:     0x7ff64f0ffd8c - delayed_work_valuation[7ded84b745f18ae6]::main
+  21:     0x7ff64f113716 - std[f8439e2c5135d149]::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22:     0x7ff64f1102cc - std[f8439e2c5135d149]::rt::lang_start::<()>::{closure#0}
+  23:     0x7ff64f416750 - std::rt::lang_start_internal::closure$0
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\rt.rs:175
+  24:     0x7ff64f416750 - std::panicking::catch_unwind::do_call
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:576
+  25:     0x7ff64f416750 - std::panicking::catch_unwind
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panicking.rs:544
+  26:     0x7ff64f416750 - std::panic::catch_unwind
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\panic.rs:359
+  27:     0x7ff64f416750 - std::rt::lang_start_internal
+                               at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library\std\src\rt.rs:171
+  28:     0x7ff64f10adbc - main
+  29:     0x7ff64f4325c0 - invoke_main
+                               at D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:78
+  30:     0x7ff64f4325c0 - __scrt_common_main_seh
+                               at D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288
+  31:     0x7ff89eebe957 - BaseThreadInitThunk
+  32:     0x7ff8a01e427c - RtlUserThreadStart

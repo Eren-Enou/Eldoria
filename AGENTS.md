@@ -58,6 +58,29 @@ No MealRelief interaction, GUI/manual testing, persistent026 integration, defaul
 adoption, canon, renewal, population or next experiment. Older statements below
 record historical program boundaries and do not override this authorization.
 
+026 execution is INCONCLUSIVE: frozen row43/source21/ProjectedNeed panics in
+src/encounters.rs:210 after43 complete rows. Preserve the frozen16-file runtime,
+failed prefix/logs,21 partial policy pairs and orphan Baseline; no behavior fix or
+retuning occurred. See experiments/026/results.md and verification.md. The separate
+`python -B examples/support/verify026_failure.py` checks failure evidence only;
+normal validate026 remains unpassed and must not be weakened to accept43 worlds.
+The initial stop left failure evidence uncommitted; the continued program now
+publishes it as expected-failure evidence in a separate passing prospective-C1
+design milestone. This does not claim the failed v1 scientific gate passed.
+No026 foundation protection/default adoption or027 follows. A response-interface
+repair needs a separately declared source/gate while retaining this failure.
+
+Continuation audit found a semantics-preserving route under the active026 goal:
+prospective experiments/026/continuation-c1/amendment.md totalizes only the unused
+Continue lookup using the already-established Continue0 rule. Preserve all16
+frozen-v1 files and failed evidence; never resume or relabel that producer. C1
+must be a separate source/schema with unchanged formula/matrix, all50 Baseline and
+43 v1-prefix byte compatibility, and published sources/readers before unknown
+outcomes. All previously defined responses must remain exact. The old v1 full
+study stays failed; only expected-failure evidence and prospective design gates
+can pass before C1. This is not permission to weaken either validator or change
+consent priorities, resources, cognitive capacities or protected historical code.
+
 The activity-valuation program (attachment 963863ea) independently reviewed and
 conditionally protected 023, then preregistered and evaluated 024. Qualified
 001–023 protection contains 386 original artifacts: 361 inherited entries and 25

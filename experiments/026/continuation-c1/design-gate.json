@@ -1,0 +1,22 @@
+{
+  "schema": "experiment-026-c1-design-gate/v1",
+  "status": "PASS prospective C1 declaration only;no implementation or unknown outcomes",
+  "matrix_rows": 100,
+  "policy_and_matrix_unchanged": true,
+  "original_defined_response_records": 6509,
+  "prefix_defined_response_records": 4858,
+  "equivalence": "identical recorded Response inputs,candidates,selected replies and stable ties;mathematical defined-domain proof in amendment",
+  "v1_failure_evidence_gate": "PASS expected43-prefix/row43 panic;v1 full scientific gate remains FAILED",
+  "root_fmt": "PASS",
+  "root_locked_all_target_clippy": "PASS",
+  "root_tests_reused": 217,
+  "reuse_reason": "no root Rust source/test changed since passing run;current change is documentation/read-only proof",
+  "source_sha256": {
+    "experiments/026/continuation-c1/amendment.md": "dd5c7213e25728987450b4b1aa9ec2eeeeff801dab5bdd4725d27a9cbca9a451",
+    "experiments/026/continuation-c1/source-bindings.json": "b199a3034fbacbefac53f6e834d7977bb8dbb9a449771541e66bcbf272f0a9b4",
+    "experiments/026/continuation-c1/prospective-validation.json": "13a2609182e4fcd11502461cfe3f3fd1c3b341bad34c75286bd7f953b27669e2",
+    "examples/support/review026_continuation_equivalence.py": "8dc136df4b8df2f5f728b043a640c647ac6bc1fb18ff6ca070226c6f341b5778",
+    "docs/development/experiment-026-response-equivalence.json": "cb042cb6b5a2d8da86eb99c86102411d99677b3623ee462fc2a24d9454190ba1"
+  },
+  "publication_scope": "Failed v1 evidence plus prospective correction design,not completed C1 study. No required C1 pre-treatment execution gate is claimed before implementation."
+}

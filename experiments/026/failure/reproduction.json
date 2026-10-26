@@ -1,0 +1,9 @@
+{
+  "status": "same failure reproduced;not scientific completion",
+  "exit": 101,
+  "seconds": 2.3269948000088334,
+  "completed_rows": 43,
+  "exact_prefix_reproduced": true,
+  "raw_sha256": "12420d7833de693678bf46ebef222d7baeb96d7220bf7633d1fb04010f1ed33d",
+  "backtrace_log": "target/026-failure-replay-stderr.log"
+}

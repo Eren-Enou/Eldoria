@@ -1,0 +1,17 @@
+{
+  "experiments/026/specification.md": "1b818fb28f084be73ed2f9499d3b15b5d28b9800f6e55125abfe0a4a82fb1cb4",
+  "experiments/026/policy.json": "2cf02ead927f9bfc272d209b066e41aa854c8180ab158fda1a4274480294f03d",
+  "experiments/026/registered-matrix.json": "b876a21083424621effe1bbc00e9f01124553057a621b406cd12c4a5f63953b3",
+  "experiments/026/source-freeze.json": "75f23c5b566d05fd9684bbc95724a2671d729127d5982b9bebbb288b60673c06",
+  "experiments/026/runtime-gate.json": "9aa7b9c27ff4b9ac1c0509e225b18a312ce790df61d786bac6fd0f8f4822aacb",
+  "experiments/026/failure/manifest.json": "e6ab6e263596483f4826bf6e027efce46731c5fb62845a44d2ccbec3ee70bc24",
+  "src/encounters.rs": "48848f27a0435ab2bad04702c24b60c791019c892e5ce55844daea4d1f12d77d",
+  "src/contact_learning.rs": "b275b67968edb642233facd244c5de3757750689522a82dd454375dc4d482f10",
+  "prototypes/delayed-work-valuation/generate_host.py": "42ecec7b11b5c8923431ba7970c7f8aea9c4eace313917059f840953b3735992",
+  "examples/support/review026.py": "b46dc57ce63074ca60e4b4b3df262d8265632da4eec772190856c8b6684b2eee",
+  "examples/support/review025.py": "0301ddbc4171ab58e18329bcbaeb564f7acbe48cc191584c290a1cbb36620b00",
+  "examples/support/review015.py": "0a38b099d3a77ad22b41402c54d52f5f940059fb8c2161dc892171fc4e535738",
+  "examples/support/verify026_failure.py": "2595d4b28bc57c77ac0c5682cf291c580d5c71d6557349da9fb9188c8e93c643",
+  "examples/support/review026_continuation_equivalence.py": "8dc136df4b8df2f5f728b043a640c647ac6bc1fb18ff6ca070226c6f341b5778",
+  "docs/development/experiment-026-response-equivalence.json": "cb042cb6b5a2d8da86eb99c86102411d99677b3623ee462fc2a24d9454190ba1"
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "wall-clock/process measurement;excluded from deterministic simulation evidence",
+  "command": [
+    "target/delayed-work-valuation/release/delayed-work-valuation.exe",
+    "matrix",
+    "target\\026-registered.jsonl"
+  ],
+  "exit": 101,
+  "wall_seconds": 2.05187559989281,
+  "peak_working_set_bytes": 13746176,
+  "peak_poll_samples": 830,
+  "memory_scope": "own Rust process through43 completed worlds and failing row43;preflight child excluded;reuses measure022 peak counter",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "activation_revision_verified_on_origin": "d2321f1b5d8f15fb62f584a95e27b77abaeee240",
+  "source_freeze_sha256": "75f23c5b566d05fd9684bbc95724a2671d729127d5982b9bebbb288b60673c06",
+  "intended_worlds": 100,
+  "completed_worlds": 43,
+  "scope": "aborted registered invocation;not full100-world throughput or a matched performance comparison",
+  "prefix_storage": {
+    "raw_bytes": 125747592,
+    "gzip_bytes": 3365147,
+    "compact_projection_audit_payload_bytes": 916785
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "experiment-026-failure-validation/v1",
+  "status": "FAILURE EVIDENCE VERIFIED;REGISTERED EXPERIMENT INCOMPLETE",
+  "checks": [
+    {
+      "check": "root-fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.8418958000838757
+    },
+    {
+      "check": "root-clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "-j",
+        "1",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit": 0,
+      "seconds": 0.5471300000790507
+    },
+    {
+      "check": "failure-evidence",
+      "command": [
+        "python",
+        "-B",
+        "examples/support/verify026_failure.py"
+      ],
+      "exit": 0,
+      "seconds": 54.451990499859676
+    }
+  ],
+  "root_tests": {
+    "passed": 217,
+    "log": "target/026-root-final-tests.log",
+    "reuse": "no root Rust source or test changed afterward"
+  },
+  "prototype_tests": 13,
+  "exact_original025_worlds": 50,
+  "feature_off_compatibility_bodies": 56,
+  "independently_verified_prefix_worlds": 43,
+  "matched_complete_policy_pairs": 21,
+  "scientific_completion_gate": "FAILED at ordinal43/source21/ProjectedNeed;normal100-world validate026 not passed",
+  "frozen_source_identity": "75f23c5b566d05fd9684bbc95724a2671d729127d5982b9bebbb288b60673c06",
+  "protected_originals": {
+    "portable": 455,
+    "raw": 472,
+    "custody_bindings": 214,
+    "unchanged": true
+  },
+  "publication": "Last published main d2321f1b5d8f15fb62f584a95e27b77abaeee240. Failure data/report left uncommitted under AGENTS.md failing-validation policy.",
+  "no_fix_or_retuning": true
+}

@@ -394,12 +394,26 @@ statements above remain historical. No default preparation/MealRelief adoption.
 026 prospective design is a separate gate, not a result of this integrity pass.
 
 
-## Experiment026 — delayed-work valuation (prospective)
+## Experiment026 — delayed-work valuation (inconclusive execution failure)
 
-[Registration](../../experiments/026/specification.md) defines ProjectedNeed against
-Baseline across all50 original025 configurations/100 worlds. Qualified025 foundation
-publication precedes implementation. Only eligible Prepare's H term changes to a
-bounded own-need projection from own hunger and retained duration. No outcomes,
-performance advantage, scientific acceptance or default adoption are claimed.
-The [design gate](../../experiments/026/design-gate.md) requires exact original
-compatibility and a separately published runtime/reader freeze before treatment.
+[Registration](../../experiments/026/specification.md) and unchanged16-file runtime
+were published before treatment. The100-world attempt aborts at43/source21/
+ProjectedNeed in `src/encounters.rs:210`. [Results](../../experiments/026/results.md):
+43 complete worlds,21 complete policy pairs, one orphan. Sources15/17/19 show real
+work/material/social differences and mixed costs/benefits; no held-out result or
+full-matrix conclusion. No fix, retuning, adoption,026 protection or027.
+[Failure evidence gate](../../examples/support/verify026_failure.py) checks the
+independently reconstructed exact prefix and repeated panic; normal validate026
+remains unpassed. Failure evidence/report remain explicitly failed-v1 evidence; see the separate
+prospective C1 milestone below.
+
+
+###026-C1 declaration (prospective only)
+
+[Amendment](../../experiments/026/continuation-c1/amendment.md) removes an unused
+lookup before the already-established Continue0/reselection rule. Read-only
+comparison checks6509 old025 and4858 prefix response records. The new successor
+must preserve all old defined responses, all50 Baseline/56feature-off/43prefix
+bodies, the unchanged formula/matrix and original failed producer. No C1 code or
+unknown outcome exists at declaration; source/readers must be published before
+new treatment. This is an engineering domain extension, not retuned valuation.

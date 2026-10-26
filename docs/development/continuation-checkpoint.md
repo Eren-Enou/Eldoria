@@ -17,28 +17,69 @@ Root fmt, locked Clippy,217 tests and the full gate pass, with structured
 exits in ignored `target/026-stage-a-checks.json`; detailed logs share that prefix.
 All original001–025 evidence remains unchanged; see the durable foundation receipt.
 
-026 registration was published at
-`759385d3e6a4dc3e40e816ef0585e335c2640d56`, matched to origin/main.
-Its100-row matrix/policy/source bindings remain unchanged. Implementation is now
-in `prototypes/delayed-work-valuation/`: one reversible rank seam plus explicit
-mode; original025 methods remain. No new physical/cognitive state or observations.
-The [disabled gate](../../experiments/026/runtime-baseline-validation.json) passes:
-50 exact original025 histories,56 old feature-off bodies,50 independent baseline
-reads,14 scratch rejections,13 prototype tests (four new), root217 tests and both
-format/Clippy scopes. The16-file runtime/readers freeze is complete; all nine final-source checks pass,
-including explicit formatting of the generated-path model. Exact source identity
-is `75f23c5b566d05fd9684bbc95724a2671d729127d5982b9bebbb288b60673c06`. Treatment refuses execution before
-publication/committed activation gate. No registered
-ProjectedNeed world has run. [Costs/checks](experiment-026-pre-treatment-checks.json).
+026 registration published759385d3e6a4dc3e40e816ef0585e335c2640d56; runtime/readers
+42d3ad359b7a002926ed3f57e65e99e96ad8545a; activation
+`d2321f1b5d8f15fb62f584a95e27b77abaeee240` (last published main;remote verified).
+Frozen source identity75f23c5b566d05fd9684bbc95724a2671d729127d5982b9bebbb288b60673c06.
+All16 runtime/reader files and policy/matrix remain unchanged after first treatment.
 
-Runtime/readers were published at `42d3ad359b7a002926ed3f57e65e99e96ad8545a`, verified against origin/main.
-The separately committed activation gate names that revision. Next: verify this
-gate commit on origin/main, then run100 frozen rows. Frozen review026/analyze026/
-corrupt026 and validate026 must remain unchanged; no treatment run has occurred.
-Original001–025 and the
-persistent025 host remain unchanged. Keep negative/null/harmful/reconvergent cases,
-replay all100 exactly, measure wall time/peak/storage separately, explain actual
-causal slices and publish final A–I findings without tuning. No GUI/next experiment.
+CRITICAL GATE FAILURE: registered100-world run panics at row43/source21/ProjectedNeed
+in protected src/encounters.rs:210, outgoing intent missing from fresh candidates.
+43 complete rows/21 complete policy pairs plus orphan Baseline42. Exact43-row
+prefix and same panic reproduced repeatedly. No failing-world snapshot/local input.
+No held-out/report-placebo study rows execute. Do not alter protected behavior,
+retune, resume past this failure, weaken validate026 or start027.
+
+[Results](../../experiments/026/results.md), [verification](../../experiments/026/verification.md),
+[full A–I report](experiment-026-final-report.md). New local artifacts:
+experiments/026/failure/ (prefix gzip,logs,43 independent findings,21 partial
+comparisons,corruptions,reproduction and manifest); results/verification; standalone
+post-failure examples/support/verify026_failure.py; performance receipt and maps.
+At the initial stop these were uncommitted. The continued program publishes them
+as expected-failure evidence with a separately passing prospective C1 design
+milestone; this does not claim the failed v1 scientific gate passed.
+Original001–025 remain exact455portable/472raw/214custody; frozen026 remains exact.
+
+Completed checks: root fmt/locked all-target Clippy/217 tests; full unchanged001–025
+replay gate; prototype fmt/explicit model rustfmt/locked release all-target Clippy/
+13 tests;50 original exact bodies/56feature-off;50 baseline independent reads;
+14 scratch controls.43 partial independent reads/21 matched prefixes and byte-exact
+failure reproduction pass. Final failure-evidence gate command:
+`python -B examples/support/verify026_failure.py`; logs target/026-failure-evidence-gate.log.
+Final failure evidence gate passes again (54.45s), along with final root fmt and
+locked all-target Clippy. Durable receipt: experiment-026-failure-validation.json;
+last log target/026-final-failure-evidence.log. Remote main remains d2321f1, verified.
+Full100-world evaluator/replay/normal validate026 are NOT passed. No behavioral fix.
+
+Partial findings: sources15/17/19 actual Wait→Prepare at H5,D6, old−1/new4 against
+Wait0; others18 pairs no selection change.15 adds two failed jobs/same4outputs,
+three actors' hunger worse (actor2+2380), actor0−375.19 adds three failures,
+actor1+1meal/area−420 but other actors worse.17 meals/hunger unchanged, ownership/
+trust differ. See exact comparisons; no global policy ranking. First-run2.052s,
+13.11MiB own peak covers aborted prefix only. Raw prefix125747592B/gzip3365147B.
+
+## Continuation audit: prospective C1, no implementation yet
+
+The active goal requests continued full development. Source inspection proves
+an existing rule can be totalized without changing any previously defined public
+response: contact_learning::respond always clamps Continue0 and reselects; its
+intermediate outgoing-score lookup is discarded. Read-only proof passes6509
+original025 and4858 v1-prefix records; no new trajectory or scores were tuned.
+See experiment-026-response-equivalence.json and
+../../experiments/026/continuation-c1/amendment.md. The original source/16-file v1
+runtime must remain immutable. C1 will be a separate source/schema applying the
+same0 rule to the missing-member domain, equally in both modes. This is a declared
+engineering domain extension, not a claim v1 passed or a retrospective policy fix.
+
+Stop-time reports were copied into failure/v1-*.md and bound in the manifest;
+all prior trial/log/findings bytes remain unchanged. Current C1 phase is DESIGN
+ONLY, source-bound and awaiting publication before implementation. Current
+milestone checks must validate failure evidence, response equivalence and design
+identities; no full-study pass is asserted. Publish this coherent failure/design
+milestone only after those applicable gates pass. Then implement counted seams,
+prove50 original Baseline/56feature-off/43prefix compatibility, publish C1 runtime
+and gate before any unknown corrected trajectory, run the full unchanged100 and
+all independent checks. If substantive response semantics change, stop.
 
 ## Previous completed engineering milestone
 

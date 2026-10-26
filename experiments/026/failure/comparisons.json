@@ -1,0 +1,6120 @@
+{
+  "status": "PARTIAL DIAGNOSTIC ONLY;43 completed rows,21 complete pairs,one orphan;not the registered100-world result",
+  "pairs": [
+    {
+      "source025": 0,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 8,
+        "waste": 0,
+        "consumed": 0,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 48,
+        "trust": [
+          {
+            "1": -100
+          },
+          {},
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "6929774f4d12a70f7ee9223a3d6703087b7efc974c88679f05a98f5e6dbed62d",
+          "656a559b6752e285d83186815be2dc0ad383f92c0ae65318744d6a578a7c0106",
+          "fc4a1e7759a36032bb89c88af83d72f4a15835d1d7daecf977b7682c9b7eede3",
+          "f1f276e9a3559868be0cf8a6b503a8373517d67c1ecf01bf6a9d1f3d1c15cae1"
+        ],
+        "final_state_sha256": "c41a61cec8b32548b24eb9fb1414f684afe7902bc5ef8757668bfcf1bfa66b5d",
+        "execution_sha256": "6f8e723c4dcfc28ed4629c3d73e73442f6fbe62bbdabb9f65d1cffcf5731dfde",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 8,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 0
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 8,
+        "waste": 0,
+        "consumed": 0,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 48,
+        "trust": [
+          {
+            "1": -100
+          },
+          {},
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "6929774f4d12a70f7ee9223a3d6703087b7efc974c88679f05a98f5e6dbed62d",
+          "656a559b6752e285d83186815be2dc0ad383f92c0ae65318744d6a578a7c0106",
+          "fc4a1e7759a36032bb89c88af83d72f4a15835d1d7daecf977b7682c9b7eede3",
+          "f1f276e9a3559868be0cf8a6b503a8373517d67c1ecf01bf6a9d1f3d1c15cae1"
+        ],
+        "final_state_sha256": "c41a61cec8b32548b24eb9fb1414f684afe7902bc5ef8757668bfcf1bfa66b5d",
+        "execution_sha256": "6f8e723c4dcfc28ed4629c3d73e73442f6fbe62bbdabb9f65d1cffcf5731dfde",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 8,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 0
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 1,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          11620,
+          11620,
+          11620,
+          11620
+        ],
+        "ordinary_hunger_area": [
+          8320,
+          8320,
+          8320,
+          8320
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 0,
+        "waste": 4,
+        "consumed": 4,
+        "attempts": 8,
+        "success": 4,
+        "failures": 4,
+        "occupied": [
+          {
+            "Prepare": 12,
+            "Meal": 1,
+            "Send": 21,
+            "Reply": 21,
+            "Resource": 42
+          },
+          {
+            "Prepare": 12,
+            "Meal": 1,
+            "Send": 22,
+            "Reply": 21,
+            "Resource": 42
+          },
+          {
+            "Prepare": 12,
+            "Meal": 1,
+            "Send": 22,
+            "Reply": 21,
+            "Resource": 40
+          },
+          {
+            "Prepare": 12,
+            "Meal": 1,
+            "Send": 23,
+            "Reply": 21,
+            "Resource": 40
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 42,
+        "trust": [
+          {
+            "1": -74,
+            "2": -100
+          },
+          {
+            "3": -100
+          },
+          {
+            "3": -92
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "34297d7a3c3b4e64a4ee124a75c54d49af0f16cc74ef2e049bb68e009eeb63fe",
+          "8a46d35471c339b30517b9d7e6705e66a1f5be1b420385a0150c06a812302f3a",
+          "32a0da6c15d80e69a4086b53e07fa1be9cdb6069706672b5c3db5ceeebe3ca85",
+          "70a7d5f5a6a9a704be6907334a8d706f7b7d3ef10d0b2a8e0f3ce3957d612a8a"
+        ],
+        "final_state_sha256": "17f3103b99cfffcf1930a81bc219767cce9b999d92ad5e2fdce698332140099c",
+        "execution_sha256": "7ee766f3029d24df89d08bfe0b913f900e83d29e00fa6b772a05bf11713b180b",
+        "food_fate": {
+          "created": 4,
+          "consumed": [
+            4,
+            4
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            4,
+            4
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [
+            {
+              "owner": 0,
+              "ref": "material.operations[4]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 1,
+              "ref": "material.operations[5]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 2,
+              "ref": "material.operations[6]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 3,
+              "ref": "material.operations[7]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_transitions": 102,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 1,
+          "waste": 4,
+          "consumed_total": 4
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          11620,
+          11620,
+          11620,
+          11620
+        ],
+        "ordinary_hunger_area": [
+          8320,
+          8320,
+          8320,
+          8320
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 0,
+        "waste": 4,
+        "consumed": 4,
+        "attempts": 8,
+        "success": 4,
+        "failures": 4,
+        "occupied": [
+          {
+            "Prepare": 12,
+            "Meal": 1,
+            "Send": 21,
+            "Reply": 21,
+            "Resource": 42
+          },
+          {
+            "Prepare": 12,
+            "Meal": 1,
+            "Send": 22,
+            "Reply": 21,
+            "Resource": 42
+          },
+          {
+            "Prepare": 12,
+            "Meal": 1,
+            "Send": 22,
+            "Reply": 21,
+            "Resource": 40
+          },
+          {
+            "Prepare": 12,
+            "Meal": 1,
+            "Send": 23,
+            "Reply": 21,
+            "Resource": 40
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 42,
+        "trust": [
+          {
+            "1": -74,
+            "2": -100
+          },
+          {
+            "3": -100
+          },
+          {
+            "3": -92
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "34297d7a3c3b4e64a4ee124a75c54d49af0f16cc74ef2e049bb68e009eeb63fe",
+          "8a46d35471c339b30517b9d7e6705e66a1f5be1b420385a0150c06a812302f3a",
+          "32a0da6c15d80e69a4086b53e07fa1be9cdb6069706672b5c3db5ceeebe3ca85",
+          "70a7d5f5a6a9a704be6907334a8d706f7b7d3ef10d0b2a8e0f3ce3957d612a8a"
+        ],
+        "final_state_sha256": "17f3103b99cfffcf1930a81bc219767cce9b999d92ad5e2fdce698332140099c",
+        "execution_sha256": "7ee766f3029d24df89d08bfe0b913f900e83d29e00fa6b772a05bf11713b180b",
+        "food_fate": {
+          "created": 4,
+          "consumed": [
+            4,
+            4
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            4,
+            4
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [
+            {
+              "owner": 0,
+              "ref": "material.operations[4]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 1,
+              "ref": "material.operations[5]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 2,
+              "ref": "material.operations[6]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 3,
+              "ref": "material.operations[7]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_transitions": 102,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 1,
+          "waste": 4,
+          "consumed_total": 4
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 2,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          11540,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          8240,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 0,
+        "raw": 8,
+        "waste": 0,
+        "consumed": 1,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Claim": 4,
+            "Meal": 1,
+            "Reply": 24,
+            "Resource": 46,
+            "Send": 23
+          },
+          {
+            "Claim": 4,
+            "Send": 24,
+            "Resource": 46,
+            "Reply": 23
+          },
+          {
+            "Claim": 4,
+            "Send": 24,
+            "Reply": 23,
+            "Resource": 44
+          },
+          {
+            "Claim": 4,
+            "Send": 24,
+            "Reply": 22,
+            "Resource": 44
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 46,
+        "trust": [
+          {
+            "1": -100
+          },
+          {
+            "0": -32
+          },
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "805484e0b9f136c02e86bd1f780227a56d20d2b004f8882d5c8ce9349d042f19",
+          "27def9080a2a614307ad8d115ddb91ab7b4b92cc8de530d8b1ad2d274a8ba47f",
+          "bc18e131799bbdf628692995daeb1ed846e17df4d36ad803e422733a20bc6336",
+          "2f50863b1c0211bc225f721dfced77d4f7146983cd018938f84df8bf4097518c"
+        ],
+        "final_state_sha256": "76613b35a4937c20908a4754265c5922d3dd7d23d88b0cd3a77ec49101c4575c",
+        "execution_sha256": "787d23659c8d807431465566db49c4211cf12500c91369c46268734832f36bfa",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 95,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 8,
+          "final_cache": 0,
+          "waste": 0,
+          "consumed_total": 1
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          11540,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          8240,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 0,
+        "raw": 8,
+        "waste": 0,
+        "consumed": 1,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Claim": 4,
+            "Meal": 1,
+            "Reply": 24,
+            "Resource": 46,
+            "Send": 23
+          },
+          {
+            "Claim": 4,
+            "Send": 24,
+            "Resource": 46,
+            "Reply": 23
+          },
+          {
+            "Claim": 4,
+            "Send": 24,
+            "Reply": 23,
+            "Resource": 44
+          },
+          {
+            "Claim": 4,
+            "Send": 24,
+            "Reply": 22,
+            "Resource": 44
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 46,
+        "trust": [
+          {
+            "1": -100
+          },
+          {
+            "0": -32
+          },
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "805484e0b9f136c02e86bd1f780227a56d20d2b004f8882d5c8ce9349d042f19",
+          "27def9080a2a614307ad8d115ddb91ab7b4b92cc8de530d8b1ad2d274a8ba47f",
+          "bc18e131799bbdf628692995daeb1ed846e17df4d36ad803e422733a20bc6336",
+          "2f50863b1c0211bc225f721dfced77d4f7146983cd018938f84df8bf4097518c"
+        ],
+        "final_state_sha256": "76613b35a4937c20908a4754265c5922d3dd7d23d88b0cd3a77ec49101c4575c",
+        "execution_sha256": "787d23659c8d807431465566db49c4211cf12500c91369c46268734832f36bfa",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 95,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 8,
+          "final_cache": 0,
+          "waste": 0,
+          "consumed_total": 1
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 3,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          11540,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          8240,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 0,
+        "raw": 8,
+        "waste": 0,
+        "consumed": 1,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Claim": 4,
+            "Meal": 1,
+            "Reply": 24,
+            "Resource": 46,
+            "Send": 23
+          },
+          {
+            "Claim": 4,
+            "Send": 24,
+            "Resource": 46,
+            "Reply": 23
+          },
+          {
+            "Claim": 4,
+            "Send": 24,
+            "Reply": 23,
+            "Resource": 44
+          },
+          {
+            "Claim": 4,
+            "Send": 24,
+            "Reply": 22,
+            "Resource": 44
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 46,
+        "trust": [
+          {
+            "1": -100
+          },
+          {
+            "0": -32
+          },
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "805484e0b9f136c02e86bd1f780227a56d20d2b004f8882d5c8ce9349d042f19",
+          "27def9080a2a614307ad8d115ddb91ab7b4b92cc8de530d8b1ad2d274a8ba47f",
+          "bc18e131799bbdf628692995daeb1ed846e17df4d36ad803e422733a20bc6336",
+          "2f50863b1c0211bc225f721dfced77d4f7146983cd018938f84df8bf4097518c"
+        ],
+        "final_state_sha256": "76613b35a4937c20908a4754265c5922d3dd7d23d88b0cd3a77ec49101c4575c",
+        "execution_sha256": "787d23659c8d807431465566db49c4211cf12500c91369c46268734832f36bfa",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 95,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 8,
+          "final_cache": 0,
+          "waste": 0,
+          "consumed_total": 1
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          11540,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          8240,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 0,
+        "raw": 8,
+        "waste": 0,
+        "consumed": 1,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Claim": 4,
+            "Meal": 1,
+            "Reply": 24,
+            "Resource": 46,
+            "Send": 23
+          },
+          {
+            "Claim": 4,
+            "Send": 24,
+            "Resource": 46,
+            "Reply": 23
+          },
+          {
+            "Claim": 4,
+            "Send": 24,
+            "Reply": 23,
+            "Resource": 44
+          },
+          {
+            "Claim": 4,
+            "Send": 24,
+            "Reply": 22,
+            "Resource": 44
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 46,
+        "trust": [
+          {
+            "1": -100
+          },
+          {
+            "0": -32
+          },
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "805484e0b9f136c02e86bd1f780227a56d20d2b004f8882d5c8ce9349d042f19",
+          "27def9080a2a614307ad8d115ddb91ab7b4b92cc8de530d8b1ad2d274a8ba47f",
+          "bc18e131799bbdf628692995daeb1ed846e17df4d36ad803e422733a20bc6336",
+          "2f50863b1c0211bc225f721dfced77d4f7146983cd018938f84df8bf4097518c"
+        ],
+        "final_state_sha256": "76613b35a4937c20908a4754265c5922d3dd7d23d88b0cd3a77ec49101c4575c",
+        "execution_sha256": "787d23659c8d807431465566db49c4211cf12500c91369c46268734832f36bfa",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 95,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 8,
+          "final_cache": 0,
+          "waste": 0,
+          "consumed_total": 1
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 4,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 2,
+        "waste": 0,
+        "consumed": 0,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 48,
+        "trust": [
+          {
+            "1": -100
+          },
+          {},
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "6929774f4d12a70f7ee9223a3d6703087b7efc974c88679f05a98f5e6dbed62d",
+          "656a559b6752e285d83186815be2dc0ad383f92c0ae65318744d6a578a7c0106",
+          "fc4a1e7759a36032bb89c88af83d72f4a15835d1d7daecf977b7682c9b7eede3",
+          "f1f276e9a3559868be0cf8a6b503a8373517d67c1ecf01bf6a9d1f3d1c15cae1"
+        ],
+        "final_state_sha256": "c41a61cec8b32548b24eb9fb1414f684afe7902bc5ef8757668bfcf1bfa66b5d",
+        "execution_sha256": "744dd160bb9de44364e1c4d2ff3e8f00ac708e2b49b824ac153c824dad671a60",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 2,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 0
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 2,
+        "waste": 0,
+        "consumed": 0,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 48,
+        "trust": [
+          {
+            "1": -100
+          },
+          {},
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "6929774f4d12a70f7ee9223a3d6703087b7efc974c88679f05a98f5e6dbed62d",
+          "656a559b6752e285d83186815be2dc0ad383f92c0ae65318744d6a578a7c0106",
+          "fc4a1e7759a36032bb89c88af83d72f4a15835d1d7daecf977b7682c9b7eede3",
+          "f1f276e9a3559868be0cf8a6b503a8373517d67c1ecf01bf6a9d1f3d1c15cae1"
+        ],
+        "final_state_sha256": "c41a61cec8b32548b24eb9fb1414f684afe7902bc5ef8757668bfcf1bfa66b5d",
+        "execution_sha256": "744dd160bb9de44364e1c4d2ff3e8f00ac708e2b49b824ac153c824dad671a60",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 2,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 0
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 5,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          11620,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          8320,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 0,
+        "waste": 1,
+        "consumed": 1,
+        "attempts": 2,
+        "success": 1,
+        "failures": 1,
+        "occupied": [
+          {
+            "Prepare": 6,
+            "Meal": 1,
+            "Reply": 23,
+            "Resource": 45,
+            "Send": 22
+          },
+          {
+            "Prepare": 6,
+            "Send": 23,
+            "Resource": 45,
+            "Reply": 22
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 46
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 46
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 46,
+        "trust": [
+          {
+            "1": -100
+          },
+          {
+            "0": -32
+          },
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "1ff748941e96996ef45b292f9f62b4fa2da53225ff092eca89a1e387e505aa51",
+          "87326aba75189fc4321cd78426defdf8ee13626fc82a735f0b0ba73ce9282266",
+          "95e6668b252ebab7a2e07f7bd6a5ba03b6333532f4fa39db8100cc2d02165d4a",
+          "397cfe21ab7bf8a541cfec987371fc1bcd2593761a59b82738d83ecfed89a424"
+        ],
+        "final_state_sha256": "e44cc90d41e136a99c00ee0ac2e2f2bfe2bc682f41af1f9d86ca224815daca13",
+        "execution_sha256": "f7643f30063787dbf575a1efbbe063e5c20c6b24135e5297ebf4870fc83ec2e5",
+        "food_fate": {
+          "created": 1,
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            1,
+            1
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [
+            {
+              "owner": 0,
+              "ref": "material.operations[2]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 1,
+          "waste": 1,
+          "consumed_total": 1
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          11620,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          8320,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 0,
+        "waste": 1,
+        "consumed": 1,
+        "attempts": 2,
+        "success": 1,
+        "failures": 1,
+        "occupied": [
+          {
+            "Prepare": 6,
+            "Meal": 1,
+            "Reply": 23,
+            "Resource": 45,
+            "Send": 22
+          },
+          {
+            "Prepare": 6,
+            "Send": 23,
+            "Resource": 45,
+            "Reply": 22
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 46
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 46
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 46,
+        "trust": [
+          {
+            "1": -100
+          },
+          {
+            "0": -32
+          },
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "1ff748941e96996ef45b292f9f62b4fa2da53225ff092eca89a1e387e505aa51",
+          "87326aba75189fc4321cd78426defdf8ee13626fc82a735f0b0ba73ce9282266",
+          "95e6668b252ebab7a2e07f7bd6a5ba03b6333532f4fa39db8100cc2d02165d4a",
+          "397cfe21ab7bf8a541cfec987371fc1bcd2593761a59b82738d83ecfed89a424"
+        ],
+        "final_state_sha256": "e44cc90d41e136a99c00ee0ac2e2f2bfe2bc682f41af1f9d86ca224815daca13",
+        "execution_sha256": "f7643f30063787dbf575a1efbbe063e5c20c6b24135e5297ebf4870fc83ec2e5",
+        "food_fate": {
+          "created": 1,
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            1,
+            1
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [
+            {
+              "owner": 0,
+              "ref": "material.operations[2]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 1,
+          "waste": 1,
+          "consumed_total": 1
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 6,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 2,
+        "waste": 0,
+        "consumed": 0,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 48,
+        "trust": [
+          {},
+          {
+            "0": -100
+          },
+          {},
+          {
+            "2": -100
+          }
+        ],
+        "memory_sha256": [
+          "cdcd248d6106535d0c6c67c8716a6617e06b60775a9a1b6ad712d6e484473fa9",
+          "3e44e533f0c8f462613edbd5531b1d0616359f1a5de83d19f86fb5003bd76cdc",
+          "98f0d36971b5504467b3f48c779fa550e5c2564789b401f6d60f6b6e2b960906",
+          "f6694847a1bc2a010b115f5c68a91d732e7160edd25dff7c6f6dd5855571b0ec"
+        ],
+        "final_state_sha256": "95d84a569594dff1ff4fa7b9d048f60652713200262e3fc43007986aeb89168a",
+        "execution_sha256": "739519d51de22061f7db4397191e224e91fa60c22b9fb1658dc0d0f7a86a5fec",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 2,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 0
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 2,
+        "waste": 0,
+        "consumed": 0,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 48,
+        "trust": [
+          {},
+          {
+            "0": -100
+          },
+          {},
+          {
+            "2": -100
+          }
+        ],
+        "memory_sha256": [
+          "cdcd248d6106535d0c6c67c8716a6617e06b60775a9a1b6ad712d6e484473fa9",
+          "3e44e533f0c8f462613edbd5531b1d0616359f1a5de83d19f86fb5003bd76cdc",
+          "98f0d36971b5504467b3f48c779fa550e5c2564789b401f6d60f6b6e2b960906",
+          "f6694847a1bc2a010b115f5c68a91d732e7160edd25dff7c6f6dd5855571b0ec"
+        ],
+        "final_state_sha256": "95d84a569594dff1ff4fa7b9d048f60652713200262e3fc43007986aeb89168a",
+        "execution_sha256": "739519d51de22061f7db4397191e224e91fa60c22b9fb1658dc0d0f7a86a5fec",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 2,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 0
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 7,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          12700,
+          11620,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          8320,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 0,
+        "waste": 1,
+        "consumed": 1,
+        "attempts": 2,
+        "success": 1,
+        "failures": 1,
+        "occupied": [
+          {
+            "Prepare": 6,
+            "Send": 23,
+            "Reply": 23,
+            "Resource": 46
+          },
+          {
+            "Prepare": 6,
+            "Meal": 1,
+            "Reply": 23,
+            "Send": 22,
+            "Resource": 44
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 46
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 46,
+        "trust": [
+          {},
+          {},
+          {
+            "0": -100
+          },
+          {
+            "1": -100,
+            "2": -33
+          }
+        ],
+        "memory_sha256": [
+          "e2e57c65c347a8002ebc53d0720b4411a806d69f1575ab5338cc9bfa94b5ba48",
+          "9db7663faf6905d58ce1cee05acf4be16b113633da6ead612f85756fa54a3cd8",
+          "1ca172a7df8ca851f4c1ea7ac831032575d3d8f47b3b344aecbfeaf18efedd8b",
+          "10b2f6881b000a4bda18d6e9d82f261a4358f6fd79c62d20e7d1c4f2e3c5558f"
+        ],
+        "final_state_sha256": "f07759936c2e78e3f74893c2b5e2ed4bab5d8e7242fae465eec869f203158ec4",
+        "execution_sha256": "5d21a9f90c31392da03f2a2edca4c0e2eeac43228cda8320f26c7b7b853bd8f8",
+        "food_fate": {
+          "created": 1,
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            1,
+            1
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [
+            {
+              "owner": 1,
+              "ref": "material.operations[2]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_transitions": 97,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 1,
+          "waste": 1,
+          "consumed_total": 1
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          12700,
+          11620,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          8320,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 0,
+        "waste": 1,
+        "consumed": 1,
+        "attempts": 2,
+        "success": 1,
+        "failures": 1,
+        "occupied": [
+          {
+            "Prepare": 6,
+            "Send": 23,
+            "Reply": 23,
+            "Resource": 46
+          },
+          {
+            "Prepare": 6,
+            "Meal": 1,
+            "Reply": 23,
+            "Send": 22,
+            "Resource": 44
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 46
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 46,
+        "trust": [
+          {},
+          {},
+          {
+            "0": -100
+          },
+          {
+            "1": -100,
+            "2": -33
+          }
+        ],
+        "memory_sha256": [
+          "e2e57c65c347a8002ebc53d0720b4411a806d69f1575ab5338cc9bfa94b5ba48",
+          "9db7663faf6905d58ce1cee05acf4be16b113633da6ead612f85756fa54a3cd8",
+          "1ca172a7df8ca851f4c1ea7ac831032575d3d8f47b3b344aecbfeaf18efedd8b",
+          "10b2f6881b000a4bda18d6e9d82f261a4358f6fd79c62d20e7d1c4f2e3c5558f"
+        ],
+        "final_state_sha256": "f07759936c2e78e3f74893c2b5e2ed4bab5d8e7242fae465eec869f203158ec4",
+        "execution_sha256": "5d21a9f90c31392da03f2a2edca4c0e2eeac43228cda8320f26c7b7b853bd8f8",
+        "food_fate": {
+          "created": 1,
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            1,
+            1
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [
+            {
+              "owner": 1,
+              "ref": "material.operations[2]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_transitions": 97,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 1,
+          "waste": 1,
+          "consumed_total": 1
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 8,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 2,
+        "waste": 0,
+        "consumed": 0,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 48,
+        "trust": [
+          {
+            "1": -100
+          },
+          {},
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "6929774f4d12a70f7ee9223a3d6703087b7efc974c88679f05a98f5e6dbed62d",
+          "656a559b6752e285d83186815be2dc0ad383f92c0ae65318744d6a578a7c0106",
+          "fc4a1e7759a36032bb89c88af83d72f4a15835d1d7daecf977b7682c9b7eede3",
+          "f1f276e9a3559868be0cf8a6b503a8373517d67c1ecf01bf6a9d1f3d1c15cae1"
+        ],
+        "final_state_sha256": "c41a61cec8b32548b24eb9fb1414f684afe7902bc5ef8757668bfcf1bfa66b5d",
+        "execution_sha256": "b69b0ddd1300d93e6bdcf79a726e9d74716f4d30610b1c406a37e2dac733f761",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 2,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 0
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 2,
+        "waste": 0,
+        "consumed": 0,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 48,
+        "trust": [
+          {
+            "1": -100
+          },
+          {},
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "6929774f4d12a70f7ee9223a3d6703087b7efc974c88679f05a98f5e6dbed62d",
+          "656a559b6752e285d83186815be2dc0ad383f92c0ae65318744d6a578a7c0106",
+          "fc4a1e7759a36032bb89c88af83d72f4a15835d1d7daecf977b7682c9b7eede3",
+          "f1f276e9a3559868be0cf8a6b503a8373517d67c1ecf01bf6a9d1f3d1c15cae1"
+        ],
+        "final_state_sha256": "c41a61cec8b32548b24eb9fb1414f684afe7902bc5ef8757668bfcf1bfa66b5d",
+        "execution_sha256": "b69b0ddd1300d93e6bdcf79a726e9d74716f4d30610b1c406a37e2dac733f761",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 2,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 0
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 9,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          11620,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          8320,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 0,
+        "waste": 1,
+        "consumed": 1,
+        "attempts": 2,
+        "success": 1,
+        "failures": 1,
+        "occupied": [
+          {
+            "Prepare": 6,
+            "Meal": 1,
+            "Reply": 23,
+            "Resource": 45,
+            "Send": 22
+          },
+          {
+            "Prepare": 6,
+            "Send": 23,
+            "Resource": 45,
+            "Reply": 22
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 46
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 46
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 46,
+        "trust": [
+          {
+            "1": -100
+          },
+          {
+            "0": -32
+          },
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "1ff748941e96996ef45b292f9f62b4fa2da53225ff092eca89a1e387e505aa51",
+          "87326aba75189fc4321cd78426defdf8ee13626fc82a735f0b0ba73ce9282266",
+          "95e6668b252ebab7a2e07f7bd6a5ba03b6333532f4fa39db8100cc2d02165d4a",
+          "397cfe21ab7bf8a541cfec987371fc1bcd2593761a59b82738d83ecfed89a424"
+        ],
+        "final_state_sha256": "e44cc90d41e136a99c00ee0ac2e2f2bfe2bc682f41af1f9d86ca224815daca13",
+        "execution_sha256": "d6c5024a00e7b6e4d6c90f2eb01020cba692f663cac54e59dfe3c8dff2fe487d",
+        "food_fate": {
+          "created": 1,
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            1,
+            1
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [
+            {
+              "owner": 0,
+              "ref": "material.operations[2]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 1,
+          "waste": 1,
+          "consumed_total": 1
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          11620,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          8320,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 0,
+        "waste": 1,
+        "consumed": 1,
+        "attempts": 2,
+        "success": 1,
+        "failures": 1,
+        "occupied": [
+          {
+            "Prepare": 6,
+            "Meal": 1,
+            "Reply": 23,
+            "Resource": 45,
+            "Send": 22
+          },
+          {
+            "Prepare": 6,
+            "Send": 23,
+            "Resource": 45,
+            "Reply": 22
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 46
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 46
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 46,
+        "trust": [
+          {
+            "1": -100
+          },
+          {
+            "0": -32
+          },
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "1ff748941e96996ef45b292f9f62b4fa2da53225ff092eca89a1e387e505aa51",
+          "87326aba75189fc4321cd78426defdf8ee13626fc82a735f0b0ba73ce9282266",
+          "95e6668b252ebab7a2e07f7bd6a5ba03b6333532f4fa39db8100cc2d02165d4a",
+          "397cfe21ab7bf8a541cfec987371fc1bcd2593761a59b82738d83ecfed89a424"
+        ],
+        "final_state_sha256": "e44cc90d41e136a99c00ee0ac2e2f2bfe2bc682f41af1f9d86ca224815daca13",
+        "execution_sha256": "d6c5024a00e7b6e4d6c90f2eb01020cba692f663cac54e59dfe3c8dff2fe487d",
+        "food_fate": {
+          "created": 1,
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            1,
+            1
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [
+            {
+              "owner": 0,
+              "ref": "material.operations[2]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 1,
+          "waste": 1,
+          "consumed_total": 1
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 10,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 3,
+        "waste": 0,
+        "consumed": 0,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 48,
+        "trust": [
+          {
+            "1": -100
+          },
+          {},
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "6929774f4d12a70f7ee9223a3d6703087b7efc974c88679f05a98f5e6dbed62d",
+          "656a559b6752e285d83186815be2dc0ad383f92c0ae65318744d6a578a7c0106",
+          "fc4a1e7759a36032bb89c88af83d72f4a15835d1d7daecf977b7682c9b7eede3",
+          "f1f276e9a3559868be0cf8a6b503a8373517d67c1ecf01bf6a9d1f3d1c15cae1"
+        ],
+        "final_state_sha256": "c41a61cec8b32548b24eb9fb1414f684afe7902bc5ef8757668bfcf1bfa66b5d",
+        "execution_sha256": "370b0be610d7e2c1da9e40bd33bcff8e1dd1619cbd47afdd49883d0dbd0ec38a",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 3,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 0
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 3,
+        "waste": 0,
+        "consumed": 0,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 48,
+        "trust": [
+          {
+            "1": -100
+          },
+          {},
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "6929774f4d12a70f7ee9223a3d6703087b7efc974c88679f05a98f5e6dbed62d",
+          "656a559b6752e285d83186815be2dc0ad383f92c0ae65318744d6a578a7c0106",
+          "fc4a1e7759a36032bb89c88af83d72f4a15835d1d7daecf977b7682c9b7eede3",
+          "f1f276e9a3559868be0cf8a6b503a8373517d67c1ecf01bf6a9d1f3d1c15cae1"
+        ],
+        "final_state_sha256": "c41a61cec8b32548b24eb9fb1414f684afe7902bc5ef8757668bfcf1bfa66b5d",
+        "execution_sha256": "370b0be610d7e2c1da9e40bd33bcff8e1dd1619cbd47afdd49883d0dbd0ec38a",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 3,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 0
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 11,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          11620,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          8320,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 1,
+        "waste": 1,
+        "consumed": 1,
+        "attempts": 2,
+        "success": 1,
+        "failures": 1,
+        "occupied": [
+          {
+            "Prepare": 6,
+            "Meal": 1,
+            "Reply": 23,
+            "Resource": 45,
+            "Send": 22
+          },
+          {
+            "Prepare": 6,
+            "Send": 23,
+            "Resource": 45,
+            "Reply": 22
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 46
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 46
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 46,
+        "trust": [
+          {
+            "1": -100
+          },
+          {
+            "0": -32
+          },
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "1ff748941e96996ef45b292f9f62b4fa2da53225ff092eca89a1e387e505aa51",
+          "87326aba75189fc4321cd78426defdf8ee13626fc82a735f0b0ba73ce9282266",
+          "95e6668b252ebab7a2e07f7bd6a5ba03b6333532f4fa39db8100cc2d02165d4a",
+          "397cfe21ab7bf8a541cfec987371fc1bcd2593761a59b82738d83ecfed89a424"
+        ],
+        "final_state_sha256": "e44cc90d41e136a99c00ee0ac2e2f2bfe2bc682f41af1f9d86ca224815daca13",
+        "execution_sha256": "2f9739f8edf35af68492fdbd86752ed722b2697ca183c5e8b778490c254048aa",
+        "food_fate": {
+          "created": 1,
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            1,
+            1
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [
+            {
+              "owner": 0,
+              "ref": "material.operations[2]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 1,
+          "final_cache": 1,
+          "waste": 1,
+          "consumed_total": 1
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          11620,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          8320,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 1,
+        "waste": 1,
+        "consumed": 1,
+        "attempts": 2,
+        "success": 1,
+        "failures": 1,
+        "occupied": [
+          {
+            "Prepare": 6,
+            "Meal": 1,
+            "Reply": 23,
+            "Resource": 45,
+            "Send": 22
+          },
+          {
+            "Prepare": 6,
+            "Send": 23,
+            "Resource": 45,
+            "Reply": 22
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 46
+          },
+          {
+            "Send": 25,
+            "Reply": 23,
+            "Resource": 46
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 46,
+        "trust": [
+          {
+            "1": -100
+          },
+          {
+            "0": -32
+          },
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "1ff748941e96996ef45b292f9f62b4fa2da53225ff092eca89a1e387e505aa51",
+          "87326aba75189fc4321cd78426defdf8ee13626fc82a735f0b0ba73ce9282266",
+          "95e6668b252ebab7a2e07f7bd6a5ba03b6333532f4fa39db8100cc2d02165d4a",
+          "397cfe21ab7bf8a541cfec987371fc1bcd2593761a59b82738d83ecfed89a424"
+        ],
+        "final_state_sha256": "e44cc90d41e136a99c00ee0ac2e2f2bfe2bc682f41af1f9d86ca224815daca13",
+        "execution_sha256": "2f9739f8edf35af68492fdbd86752ed722b2697ca183c5e8b778490c254048aa",
+        "food_fate": {
+          "created": 1,
+          "consumed": [
+            1,
+            1
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            1,
+            1
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [
+            {
+              "owner": 0,
+              "ref": "material.operations[2]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 1,
+          "final_cache": 1,
+          "waste": 1,
+          "consumed_total": 1
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 12,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 0,
+        "waste": 0,
+        "consumed": 0,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 48,
+        "trust": [
+          {
+            "1": -100
+          },
+          {},
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "6929774f4d12a70f7ee9223a3d6703087b7efc974c88679f05a98f5e6dbed62d",
+          "656a559b6752e285d83186815be2dc0ad383f92c0ae65318744d6a578a7c0106",
+          "fc4a1e7759a36032bb89c88af83d72f4a15835d1d7daecf977b7682c9b7eede3",
+          "f1f276e9a3559868be0cf8a6b503a8373517d67c1ecf01bf6a9d1f3d1c15cae1"
+        ],
+        "final_state_sha256": "c41a61cec8b32548b24eb9fb1414f684afe7902bc5ef8757668bfcf1bfa66b5d",
+        "execution_sha256": "225dfd7838919bdb8973d67eb05b9ebb618deca9eb0052a7bed1deff0f7ff2a0",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 0
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 0,
+        "waste": 0,
+        "consumed": 0,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 48,
+        "trust": [
+          {
+            "1": -100
+          },
+          {},
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "6929774f4d12a70f7ee9223a3d6703087b7efc974c88679f05a98f5e6dbed62d",
+          "656a559b6752e285d83186815be2dc0ad383f92c0ae65318744d6a578a7c0106",
+          "fc4a1e7759a36032bb89c88af83d72f4a15835d1d7daecf977b7682c9b7eede3",
+          "f1f276e9a3559868be0cf8a6b503a8373517d67c1ecf01bf6a9d1f3d1c15cae1"
+        ],
+        "final_state_sha256": "c41a61cec8b32548b24eb9fb1414f684afe7902bc5ef8757668bfcf1bfa66b5d",
+        "execution_sha256": "225dfd7838919bdb8973d67eb05b9ebb618deca9eb0052a7bed1deff0f7ff2a0",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 0
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 13,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 0,
+        "waste": 0,
+        "consumed": 0,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 48,
+        "trust": [
+          {
+            "1": -100
+          },
+          {},
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "6929774f4d12a70f7ee9223a3d6703087b7efc974c88679f05a98f5e6dbed62d",
+          "656a559b6752e285d83186815be2dc0ad383f92c0ae65318744d6a578a7c0106",
+          "fc4a1e7759a36032bb89c88af83d72f4a15835d1d7daecf977b7682c9b7eede3",
+          "f1f276e9a3559868be0cf8a6b503a8373517d67c1ecf01bf6a9d1f3d1c15cae1"
+        ],
+        "final_state_sha256": "c41a61cec8b32548b24eb9fb1414f684afe7902bc5ef8757668bfcf1bfa66b5d",
+        "execution_sha256": "41a71d082690a7ef26a80415cab5ec187868b0661cdf67a747bdb3e508bef7d3",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 0
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "ordinary_hunger_area": [
+          9400,
+          9400,
+          9400,
+          9400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 0,
+        "waste": 0,
+        "consumed": 0,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 24,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          },
+          {
+            "Send": 25,
+            "Reply": 24,
+            "Resource": 48
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 48,
+        "trust": [
+          {
+            "1": -100
+          },
+          {},
+          {
+            "3": -100
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "6929774f4d12a70f7ee9223a3d6703087b7efc974c88679f05a98f5e6dbed62d",
+          "656a559b6752e285d83186815be2dc0ad383f92c0ae65318744d6a578a7c0106",
+          "fc4a1e7759a36032bb89c88af83d72f4a15835d1d7daecf977b7682c9b7eede3",
+          "f1f276e9a3559868be0cf8a6b503a8373517d67c1ecf01bf6a9d1f3d1c15cae1"
+        ],
+        "final_state_sha256": "c41a61cec8b32548b24eb9fb1414f684afe7902bc5ef8757668bfcf1bfa66b5d",
+        "execution_sha256": "41a71d082690a7ef26a80415cab5ec187868b0661cdf67a747bdb3e508bef7d3",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 96,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 0
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 14,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          10180,
+          6340,
+          10180,
+          4315
+        ],
+        "ordinary_hunger_area": [
+          6880,
+          3160,
+          6880,
+          1735
+        ],
+        "meals": [
+          0,
+          2,
+          0,
+          8
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "stock": 0,
+        "raw": 8,
+        "waste": 0,
+        "consumed": 10,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 21,
+            "Reply": 21,
+            "Resource": 52,
+            "Claim": 4
+          },
+          {
+            "Send": 23,
+            "Reply": 20,
+            "Resource": 37,
+            "Meal": 2,
+            "Claim": 12
+          },
+          {
+            "Send": 21,
+            "Reply": 21,
+            "Resource": 52,
+            "Claim": 4
+          },
+          {
+            "Send": 26,
+            "Reply": 19,
+            "Resource": 37,
+            "Meal": 8
+          }
+        ],
+        "transferred_units": 27,
+        "net_transfers": [
+          -1,
+          -2,
+          -3,
+          6
+        ],
+        "social_admissions": 41,
+        "trust": [
+          {
+            "1": 35,
+            "2": 100
+          },
+          {
+            "0": 68,
+            "3": 29
+          },
+          {
+            "0": 98,
+            "3": 41
+          },
+          {
+            "1": 100,
+            "2": 68
+          }
+        ],
+        "memory_sha256": [
+          "4985c6f86d2129ce1b9836cb294b43412e1c5fa819a1966a9c9b7a2a385ebaf5",
+          "fcb64f3e5bb93c228104ac9bd387f536c760a939b82e90594b621fffdcbbe452",
+          "097dc6009acb9b695f2aa70640b025f490a31417afcb39d20ee016649e47469c",
+          "e6f4352192bb525764b10bf6e92dbad23bb088d9c77610baedec54522631bc8b"
+        ],
+        "final_state_sha256": "691a45e03df2b4cd44f4f85a5c37b6b1b3430efb043a1cb117d7a5685aa96205",
+        "execution_sha256": "6789f9072f864c303398ec5a626640a44ef7ef1257181743ac3bc7ff6be1a1e8",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 104,
+          "final_food": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 8,
+          "final_cache": 0,
+          "waste": 0,
+          "consumed_total": 10
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          10180,
+          6340,
+          10180,
+          4315
+        ],
+        "ordinary_hunger_area": [
+          6880,
+          3160,
+          6880,
+          1735
+        ],
+        "meals": [
+          0,
+          2,
+          0,
+          8
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "stock": 0,
+        "raw": 8,
+        "waste": 0,
+        "consumed": 10,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 21,
+            "Reply": 21,
+            "Resource": 52,
+            "Claim": 4
+          },
+          {
+            "Send": 23,
+            "Reply": 20,
+            "Resource": 37,
+            "Meal": 2,
+            "Claim": 12
+          },
+          {
+            "Send": 21,
+            "Reply": 21,
+            "Resource": 52,
+            "Claim": 4
+          },
+          {
+            "Send": 26,
+            "Reply": 19,
+            "Resource": 37,
+            "Meal": 8
+          }
+        ],
+        "transferred_units": 27,
+        "net_transfers": [
+          -1,
+          -2,
+          -3,
+          6
+        ],
+        "social_admissions": 41,
+        "trust": [
+          {
+            "1": 35,
+            "2": 100
+          },
+          {
+            "0": 68,
+            "3": 29
+          },
+          {
+            "0": 98,
+            "3": 41
+          },
+          {
+            "1": 100,
+            "2": 68
+          }
+        ],
+        "memory_sha256": [
+          "4985c6f86d2129ce1b9836cb294b43412e1c5fa819a1966a9c9b7a2a385ebaf5",
+          "fcb64f3e5bb93c228104ac9bd387f536c760a939b82e90594b621fffdcbbe452",
+          "097dc6009acb9b695f2aa70640b025f490a31417afcb39d20ee016649e47469c",
+          "e6f4352192bb525764b10bf6e92dbad23bb088d9c77610baedec54522631bc8b"
+        ],
+        "final_state_sha256": "691a45e03df2b4cd44f4f85a5c37b6b1b3430efb043a1cb117d7a5685aa96205",
+        "execution_sha256": "6789f9072f864c303398ec5a626640a44ef7ef1257181743ac3bc7ff6be1a1e8",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 104,
+          "final_food": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 8,
+          "final_cache": 0,
+          "waste": 0,
+          "consumed_total": 10
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 15,
+      "first_cause": {
+        "boundary": 22,
+        "choice": 2,
+        "tick": 28,
+        "owner": 2,
+        "input_sha256": "9d1e247b58e4708290e50ec8e00bca646e43b96397a0a0aa342904fbbdf70267",
+        "hunger": 5,
+        "retained_raw": {
+          "owner": 2,
+          "receipt": 2,
+          "observation": {
+            "id": 0,
+            "observed_at": 22,
+            "stock": 8,
+            "accessible": true,
+            "extraction_ticks": 2,
+            "preparation_ticks": 4,
+            "input_units": 2,
+            "edible_units": 1,
+            "waste_units": 1
+          },
+          "own_takes": 0
+        },
+        "baseline_scores": [
+          0,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "treatment_scores": [
+          0,
+          -1,
+          -1,
+          -1,
+          4
+        ],
+        "baseline_selected": "Wait",
+        "treatment_selected": "Prepare"
+      },
+      "baseline": {
+        "hunger_area": [
+          6135,
+          4035,
+          5240,
+          3995
+        ],
+        "ordinary_hunger_area": [
+          3135,
+          1620,
+          2500,
+          1580
+        ],
+        "meals": [
+          2,
+          5,
+          2,
+          7
+        ],
+        "terminal_hunger": [
+          100,
+          95,
+          100,
+          95
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 0,
+        "raw": 0,
+        "waste": 4,
+        "consumed": 16,
+        "attempts": 4,
+        "success": 4,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 19,
+            "Reply": 16,
+            "Resource": 30,
+            "Claim": 8,
+            "Prepare": 12,
+            "Meal": 2
+          },
+          {
+            "Send": 19,
+            "Reply": 19,
+            "Resource": 30,
+            "Meal": 5,
+            "Claim": 4,
+            "Prepare": 6
+          },
+          {
+            "Send": 19,
+            "Reply": 17,
+            "Resource": 34,
+            "Claim": 8,
+            "Meal": 2,
+            "Prepare": 6
+          },
+          {
+            "Send": 25,
+            "Reply": 18,
+            "Resource": 36,
+            "Meal": 7
+          }
+        ],
+        "transferred_units": 11,
+        "net_transfers": [
+          -4,
+          1,
+          -2,
+          5
+        ],
+        "social_admissions": 36,
+        "trust": [
+          {
+            "1": 41,
+            "2": 4
+          },
+          {
+            "0": 98,
+            "3": 15
+          },
+          {
+            "0": 30,
+            "3": 85
+          },
+          {
+            "1": 60,
+            "2": 100
+          }
+        ],
+        "memory_sha256": [
+          "2edb289b49c57975d5fc7c60aa4c47a9ca5c2c2bf545184359c1284d05b41f98",
+          "9e1d52bcc2e2d6226fac51af988e2071d9615ec0bfa90dda8fb847fea54a3555",
+          "c64ac2808997ba31f7bf32eaa0f943fe46e3074ffb0c1cc3fbe7c929ae1b92be",
+          "57485e685f68c167b1a8018e6ca8571ca75c70586d680d965f8586180161f63c"
+        ],
+        "final_state_sha256": "1dbbf990ffacef53196018d958c0cffc3468d8f0da15bea39d98e2b04e45f906",
+        "execution_sha256": "ece5632b4eb9a32fd7626a797a26f2d998ea35fde59cc372fa5d6b7ddeb8cefa",
+        "food_fate": {
+          "created": 4,
+          "consumed": [
+            4,
+            4
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            4,
+            4
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [
+            {
+              "owner": 0,
+              "ref": "material.operations[1]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 0,
+              "ref": "material.operations[4]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 2,
+              "ref": "material.operations[5]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 1,
+              "ref": "material.operations[7]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_transitions": 94,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 0,
+          "waste": 4,
+          "consumed_total": 16
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          5760,
+          5890,
+          7620,
+          4760
+        ],
+        "ordinary_hunger_area": [
+          2880,
+          2790,
+          4320,
+          2020
+        ],
+        "meals": [
+          2,
+          3,
+          1,
+          4
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          1,
+          1,
+          4
+        ],
+        "stock": 0,
+        "raw": 0,
+        "waste": 4,
+        "consumed": 10,
+        "attempts": 6,
+        "success": 4,
+        "failures": 2,
+        "occupied": [
+          {
+            "Send": 19,
+            "Reply": 18,
+            "Resource": 33,
+            "Claim": 8,
+            "Prepare": 12,
+            "Meal": 2
+          },
+          {
+            "Send": 23,
+            "Reply": 21,
+            "Resource": 39,
+            "Meal": 3,
+            "Claim": 4,
+            "Prepare": 6
+          },
+          {
+            "Send": 18,
+            "Reply": 17,
+            "Resource": 40,
+            "Claim": 4,
+            "Meal": 1,
+            "Prepare": 18
+          },
+          {
+            "Send": 25,
+            "Reply": 19,
+            "Resource": 46,
+            "Meal": 4
+          }
+        ],
+        "transferred_units": 32,
+        "net_transfers": [
+          -4,
+          1,
+          -3,
+          6
+        ],
+        "social_admissions": 37,
+        "trust": [
+          {
+            "1": 100,
+            "2": 4
+          },
+          {
+            "0": 100,
+            "3": 53
+          },
+          {
+            "0": 30,
+            "3": 98
+          },
+          {
+            "1": 98,
+            "2": 100
+          }
+        ],
+        "memory_sha256": [
+          "a3f554f6f783d717b182c4bce0385b0c7918a2c8957f71777326da4ba50df1ee",
+          "cfe66c17210f34e5a223ce86ad99235025de8638f9e82a14947013a9a094a400",
+          "b4aae60579bcc1c3f0de5ec0708c987487e3e45c42bcab6ad543f731e8c89824",
+          "d0ce7ac6996557cdafe88a715739eae9118b3a4fb3cfc092e65637e9aadb824c"
+        ],
+        "final_state_sha256": "1d80cb00a3af83f8431763075b6405192627e7426598dd510abecd605dd32ddf",
+        "execution_sha256": "3ec1b1275cf75ee94c4f036682c298c3f1097f89696d36ef3ae9166752f749d7",
+        "food_fate": {
+          "created": 4,
+          "consumed": [
+            2,
+            4
+          ],
+          "ever_transferred": [
+            2,
+            2
+          ],
+          "ever_used": [
+            4,
+            4
+          ],
+          "terminal_assignments": 14,
+          "peak_assignments": 15,
+          "units": [
+            {
+              "owner": 0,
+              "ref": "material.operations[1]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 2,
+              "ref": "material.operations[3]",
+              "status": "guaranteed_used",
+              "consumed": [
+                0,
+                1
+              ],
+              "ever_transferred": [
+                1,
+                1
+              ]
+            },
+            {
+              "owner": 0,
+              "ref": "material.operations[6]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 2,
+              "ref": "material.operations[7]",
+              "status": "guaranteed_used",
+              "consumed": [
+                0,
+                1
+              ],
+              "ever_transferred": [
+                1,
+                1
+              ]
+            }
+          ],
+          "physical_transitions": 105,
+          "final_food": [
+            0,
+            1,
+            1,
+            4
+          ],
+          "final_raw": 0,
+          "final_cache": 0,
+          "waste": 4,
+          "consumed_total": 10
+        }
+      },
+      "hunger_area_delta": [
+        -375,
+        1855,
+        2380,
+        765
+      ],
+      "meal_delta": [
+        0,
+        -2,
+        -1,
+        -3
+      ]
+    },
+    {
+      "source025": 16,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          38980,
+          38980,
+          36940,
+          37230
+        ],
+        "ordinary_hunger_area": [
+          35680,
+          35680,
+          33640,
+          33930
+        ],
+        "meals": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 8,
+        "waste": 0,
+        "consumed": 2,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 86,
+            "Reply": 86,
+            "Resource": 212
+          },
+          {
+            "Send": 86,
+            "Reply": 86,
+            "Resource": 212
+          },
+          {
+            "Send": 104,
+            "Reply": 89,
+            "Resource": 172,
+            "Meal": 1
+          },
+          {
+            "Send": 105,
+            "Reply": 85,
+            "Resource": 172,
+            "Meal": 1
+          }
+        ],
+        "transferred_units": 86,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 173,
+        "trust": [
+          {
+            "1": 98
+          },
+          {
+            "0": 100
+          },
+          {
+            "3": -100
+          },
+          {
+            "2": -24
+          }
+        ],
+        "memory_sha256": [
+          "3626604559a12e1955e9e6b5bc4c8f8bcc7e546ec7bdd5a60165dda35b2321b1",
+          "799638b5260d01cae06707be19199eff27e0ca5a571443252fca2ca8e62493d4",
+          "1f8fd24ce6492eaff3dc295b11ca9f311b003ba55e46b3dfc86be380794fd5c5",
+          "f7448eb863efbcd0910d77ffbe3c6031486bb9d0d02d854864fd768140c65e55"
+        ],
+        "final_state_sha256": "4a737a368d6a72656ac7b6af6745ccea10bfdf1a9840882d39cba9ee89f6d80c",
+        "execution_sha256": "b411468236ae810dc34de281683e559b6b190d09af87fc70aedea81c25552268",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 386,
+          "final_food": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "final_raw": 8,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 2
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          38980,
+          38980,
+          36940,
+          37230
+        ],
+        "ordinary_hunger_area": [
+          35680,
+          35680,
+          33640,
+          33930
+        ],
+        "meals": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "stock": 1,
+        "raw": 8,
+        "waste": 0,
+        "consumed": 2,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 86,
+            "Reply": 86,
+            "Resource": 212
+          },
+          {
+            "Send": 86,
+            "Reply": 86,
+            "Resource": 212
+          },
+          {
+            "Send": 104,
+            "Reply": 89,
+            "Resource": 172,
+            "Meal": 1
+          },
+          {
+            "Send": 105,
+            "Reply": 85,
+            "Resource": 172,
+            "Meal": 1
+          }
+        ],
+        "transferred_units": 86,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 173,
+        "trust": [
+          {
+            "1": 98
+          },
+          {
+            "0": 100
+          },
+          {
+            "3": -100
+          },
+          {
+            "2": -24
+          }
+        ],
+        "memory_sha256": [
+          "3626604559a12e1955e9e6b5bc4c8f8bcc7e546ec7bdd5a60165dda35b2321b1",
+          "799638b5260d01cae06707be19199eff27e0ca5a571443252fca2ca8e62493d4",
+          "1f8fd24ce6492eaff3dc295b11ca9f311b003ba55e46b3dfc86be380794fd5c5",
+          "f7448eb863efbcd0910d77ffbe3c6031486bb9d0d02d854864fd768140c65e55"
+        ],
+        "final_state_sha256": "4a737a368d6a72656ac7b6af6745ccea10bfdf1a9840882d39cba9ee89f6d80c",
+        "execution_sha256": "b411468236ae810dc34de281683e559b6b190d09af87fc70aedea81c25552268",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 386,
+          "final_food": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "final_raw": 8,
+          "final_cache": 1,
+          "waste": 0,
+          "consumed_total": 2
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 17,
+      "first_cause": {
+        "boundary": 10,
+        "choice": 1,
+        "tick": 16,
+        "owner": 1,
+        "input_sha256": "edeb3dc347b3010e133d4a9979e2fb587f49e8f133352916339313ec3f092838",
+        "hunger": 5,
+        "retained_raw": {
+          "owner": 1,
+          "receipt": 0,
+          "observation": {
+            "id": 0,
+            "observed_at": 6,
+            "stock": 8,
+            "accessible": true,
+            "extraction_ticks": 2,
+            "preparation_ticks": 4,
+            "input_units": 2,
+            "edible_units": 1,
+            "waste_units": 1
+          },
+          "own_takes": 0
+        },
+        "baseline_scores": [
+          0,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "treatment_scores": [
+          0,
+          -1,
+          -1,
+          -1,
+          4
+        ],
+        "baseline_selected": "Wait",
+        "treatment_selected": "Prepare"
+      },
+      "baseline": {
+        "hunger_area": [
+          36600,
+          37230,
+          38980,
+          36090
+        ],
+        "ordinary_hunger_area": [
+          33300,
+          33930,
+          35680,
+          32790
+        ],
+        "meals": [
+          1,
+          1,
+          0,
+          2
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "stock": 1,
+        "raw": 0,
+        "waste": 4,
+        "consumed": 4,
+        "attempts": 4,
+        "success": 4,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 93,
+            "Reply": 92,
+            "Resource": 184,
+            "Prepare": 6,
+            "Meal": 1
+          },
+          {
+            "Send": 94,
+            "Reply": 94,
+            "Resource": 188,
+            "Meal": 1,
+            "Prepare": 6
+          },
+          {
+            "Send": 84,
+            "Reply": 84,
+            "Resource": 206,
+            "Prepare": 12
+          },
+          {
+            "Send": 88,
+            "Reply": 84,
+            "Resource": 210,
+            "Meal": 2
+          }
+        ],
+        "transferred_units": 97,
+        "net_transfers": [
+          0,
+          -1,
+          -2,
+          3
+        ],
+        "social_admissions": 177,
+        "trust": [
+          {
+            "1": 100
+          },
+          {
+            "0": 98,
+            "3": 44
+          },
+          {
+            "3": 98
+          },
+          {
+            "1": 68,
+            "2": 100
+          }
+        ],
+        "memory_sha256": [
+          "7b046aede862e130a7937b9e92e44bacc7e19ed3fa201cb925ecd45b390e0d9b",
+          "e73e113f55af190e2136b4d894c4c4a3812c195c9b81ae4aad9dfa16d051bba2",
+          "610579cb230957ee908c13bb3975f8557732ab05aae767e5405196b6e8ca1f37",
+          "8a157b250e08aaac183d00297d66a5ba7218b3cc5eb44fc9ed7a56a392232c89"
+        ],
+        "final_state_sha256": "310e06bbddc02001de7fed01be26550671516f574919bfe307cf4d0c08dbbd2c",
+        "execution_sha256": "2cc8a20e46bc261b8fb8c2e0fdaa86f730e626b60b643969989f6bbfbbdf6016",
+        "food_fate": {
+          "created": 4,
+          "consumed": [
+            1,
+            2
+          ],
+          "ever_transferred": [
+            3,
+            3
+          ],
+          "ever_used": [
+            4,
+            4
+          ],
+          "terminal_assignments": 14,
+          "peak_assignments": 14,
+          "units": [
+            {
+              "owner": 0,
+              "ref": "material.operations[2]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 2,
+              "ref": "material.operations[3]",
+              "status": "guaranteed_used",
+              "consumed": [
+                0,
+                1
+              ],
+              "ever_transferred": [
+                1,
+                1
+              ]
+            },
+            {
+              "owner": 1,
+              "ref": "material.operations[6]",
+              "status": "guaranteed_used",
+              "consumed": [
+                0,
+                0
+              ],
+              "ever_transferred": [
+                1,
+                1
+              ]
+            },
+            {
+              "owner": 2,
+              "ref": "material.operations[7]",
+              "status": "guaranteed_used",
+              "consumed": [
+                0,
+                0
+              ],
+              "ever_transferred": [
+                1,
+                1
+              ]
+            }
+          ],
+          "physical_transitions": 406,
+          "final_food": [
+            1,
+            0,
+            1,
+            2
+          ],
+          "final_raw": 0,
+          "final_cache": 1,
+          "waste": 4,
+          "consumed_total": 4
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          36600,
+          37230,
+          38980,
+          36090
+        ],
+        "ordinary_hunger_area": [
+          33300,
+          33930,
+          35680,
+          32790
+        ],
+        "meals": [
+          1,
+          1,
+          0,
+          2
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          1,
+          1,
+          2,
+          0
+        ],
+        "stock": 1,
+        "raw": 0,
+        "waste": 4,
+        "consumed": 4,
+        "attempts": 4,
+        "success": 4,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 85,
+            "Reply": 83,
+            "Resource": 201,
+            "Prepare": 6,
+            "Meal": 1
+          },
+          {
+            "Send": 87,
+            "Reply": 86,
+            "Resource": 205,
+            "Meal": 1,
+            "Prepare": 6
+          },
+          {
+            "Send": 83,
+            "Reply": 83,
+            "Resource": 207,
+            "Prepare": 12
+          },
+          {
+            "Send": 87,
+            "Reply": 84,
+            "Resource": 211,
+            "Meal": 2
+          }
+        ],
+        "transferred_units": 163,
+        "net_transfers": [
+          0,
+          0,
+          -1,
+          1
+        ],
+        "social_admissions": 169,
+        "trust": [
+          {
+            "1": 98
+          },
+          {
+            "0": 100,
+            "3": 38
+          },
+          {
+            "3": 100
+          },
+          {
+            "1": 38,
+            "2": 98
+          }
+        ],
+        "memory_sha256": [
+          "20a76540da388a1fa26be7f4346419540f594613f37a4617feaed93d6068e357",
+          "7d807830d9a6b7d72281d7f2830fda1d3f868a6976f2dafa9c1888770b0097a3",
+          "f4f64c15c2b8d9232d5d9290492060bc5a27be3ab7afb01f1a17b823bc7e81b5",
+          "00440eb0d970b6a2bb21411ee76084357d86b5e05895af3dc9746ad9f6dfc099"
+        ],
+        "final_state_sha256": "d8d62715bd12b317e9a8b5624a496e555530a64c64499de6d7f7c31052d7db57",
+        "execution_sha256": "0106d72242a6682390fb4dced95468271a09f9260d1d96fa207cda8d69d0b80f",
+        "food_fate": {
+          "created": 4,
+          "consumed": [
+            1,
+            2
+          ],
+          "ever_transferred": [
+            3,
+            3
+          ],
+          "ever_used": [
+            4,
+            4
+          ],
+          "terminal_assignments": 6,
+          "peak_assignments": 18,
+          "units": [
+            {
+              "owner": 0,
+              "ref": "material.operations[2]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 2,
+              "ref": "material.operations[3]",
+              "status": "guaranteed_used",
+              "consumed": [
+                0,
+                1
+              ],
+              "ever_transferred": [
+                1,
+                1
+              ]
+            },
+            {
+              "owner": 1,
+              "ref": "material.operations[6]",
+              "status": "guaranteed_used",
+              "consumed": [
+                0,
+                0
+              ],
+              "ever_transferred": [
+                1,
+                1
+              ]
+            },
+            {
+              "owner": 2,
+              "ref": "material.operations[7]",
+              "status": "guaranteed_used",
+              "consumed": [
+                0,
+                0
+              ],
+              "ever_transferred": [
+                1,
+                1
+              ]
+            }
+          ],
+          "physical_transitions": 424,
+          "final_food": [
+            1,
+            1,
+            2,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 1,
+          "waste": 4,
+          "consumed_total": 4
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 18,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          10180,
+          8140,
+          6495,
+          7600
+        ],
+        "ordinary_hunger_area": [
+          6880,
+          4840,
+          3755,
+          4300
+        ],
+        "meals": [
+          0,
+          1,
+          4,
+          3
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          2,
+          2,
+          0,
+          0
+        ],
+        "stock": 0,
+        "raw": 8,
+        "waste": 0,
+        "consumed": 8,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 21,
+            "Reply": 21,
+            "Resource": 52,
+            "Claim": 4
+          },
+          {
+            "Send": 22,
+            "Reply": 21,
+            "Resource": 52,
+            "Meal": 1
+          },
+          {
+            "Meal": 4,
+            "Reply": 23,
+            "Resource": 27,
+            "Claim": 8,
+            "Send": 23
+          },
+          {
+            "Send": 29,
+            "Meal": 3,
+            "Resource": 27,
+            "Claim": 8,
+            "Reply": 20
+          }
+        ],
+        "transferred_units": 21,
+        "net_transfers": [
+          -1,
+          1,
+          0,
+          0
+        ],
+        "social_admissions": 43,
+        "trust": [
+          {
+            "1": 100
+          },
+          {
+            "0": 98
+          },
+          {
+            "3": -60
+          },
+          {
+            "2": -50
+          }
+        ],
+        "memory_sha256": [
+          "38a2d6c653bca3693961209968475fbb39bd875c2e475b98341039658272f32b",
+          "28f11f10c214cfa624cecf07b70c7ba800813570aff40cd1f7704c964d4b03d8",
+          "d97c27f961b6e332f541320e652c9134052abf7d002e62003aa6909b5cc97a9b",
+          "ab719b7b193ae69acafd05e62c8b80895d3564f189d0fee245bda6fe1ec2afde"
+        ],
+        "final_state_sha256": "df1aefaf24b0146ee831ce76b74d4bb9a41fecb676db6c5b85797b2b83eafdab",
+        "execution_sha256": "ac8ac439aa128d6cfdd6a372247697afdff4060644b854f6eddc569f80bfc717",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 92,
+          "final_food": [
+            2,
+            2,
+            0,
+            0
+          ],
+          "final_raw": 8,
+          "final_cache": 0,
+          "waste": 0,
+          "consumed_total": 8
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          10180,
+          8140,
+          6495,
+          7600
+        ],
+        "ordinary_hunger_area": [
+          6880,
+          4840,
+          3755,
+          4300
+        ],
+        "meals": [
+          0,
+          1,
+          4,
+          3
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          2,
+          2,
+          0,
+          0
+        ],
+        "stock": 0,
+        "raw": 8,
+        "waste": 0,
+        "consumed": 8,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 21,
+            "Reply": 21,
+            "Resource": 52,
+            "Claim": 4
+          },
+          {
+            "Send": 22,
+            "Reply": 21,
+            "Resource": 52,
+            "Meal": 1
+          },
+          {
+            "Meal": 4,
+            "Reply": 23,
+            "Resource": 27,
+            "Claim": 8,
+            "Send": 23
+          },
+          {
+            "Send": 29,
+            "Meal": 3,
+            "Resource": 27,
+            "Claim": 8,
+            "Reply": 20
+          }
+        ],
+        "transferred_units": 21,
+        "net_transfers": [
+          -1,
+          1,
+          0,
+          0
+        ],
+        "social_admissions": 43,
+        "trust": [
+          {
+            "1": 100
+          },
+          {
+            "0": 98
+          },
+          {
+            "3": -60
+          },
+          {
+            "2": -50
+          }
+        ],
+        "memory_sha256": [
+          "38a2d6c653bca3693961209968475fbb39bd875c2e475b98341039658272f32b",
+          "28f11f10c214cfa624cecf07b70c7ba800813570aff40cd1f7704c964d4b03d8",
+          "d97c27f961b6e332f541320e652c9134052abf7d002e62003aa6909b5cc97a9b",
+          "ab719b7b193ae69acafd05e62c8b80895d3564f189d0fee245bda6fe1ec2afde"
+        ],
+        "final_state_sha256": "df1aefaf24b0146ee831ce76b74d4bb9a41fecb676db6c5b85797b2b83eafdab",
+        "execution_sha256": "ac8ac439aa128d6cfdd6a372247697afdff4060644b854f6eddc569f80bfc717",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 92,
+          "final_food": [
+            2,
+            2,
+            0,
+            0
+          ],
+          "final_raw": 8,
+          "final_cache": 0,
+          "waste": 0,
+          "consumed_total": 8
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 19,
+      "first_cause": {
+        "boundary": 5,
+        "choice": 0,
+        "tick": 11,
+        "owner": 2,
+        "input_sha256": "f894df0ad71d1af99fd171f30fe091989b52490aac3fb1106d16f95643211399",
+        "hunger": 5,
+        "retained_raw": {
+          "owner": 2,
+          "receipt": 0,
+          "observation": {
+            "id": 0,
+            "observed_at": 6,
+            "stock": 8,
+            "accessible": true,
+            "extraction_ticks": 2,
+            "preparation_ticks": 4,
+            "input_units": 2,
+            "edible_units": 1,
+            "waste_units": 1
+          },
+          "own_takes": 0
+        },
+        "baseline_scores": [
+          0,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "treatment_scores": [
+          0,
+          -1,
+          -1,
+          -1,
+          4
+        ],
+        "baseline_selected": "Wait",
+        "treatment_selected": "Prepare"
+      },
+      "baseline": {
+        "hunger_area": [
+          8220,
+          5820,
+          4330,
+          6120
+        ],
+        "ordinary_hunger_area": [
+          4920,
+          2720,
+          2080,
+          2940
+        ],
+        "meals": [
+          1,
+          5,
+          5,
+          4
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          90,
+          100
+        ],
+        "food": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "stock": 0,
+        "raw": 0,
+        "waste": 4,
+        "consumed": 15,
+        "attempts": 4,
+        "success": 4,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 15,
+            "Reply": 16,
+            "Resource": 37,
+            "Claim": 4,
+            "Prepare": 12,
+            "Meal": 1,
+            "Query": 12
+          },
+          {
+            "Send": 23,
+            "Reply": 15,
+            "Resource": 37,
+            "Meal": 5
+          },
+          {
+            "Meal": 5,
+            "Reply": 18,
+            "Resource": 16,
+            "Claim": 8,
+            "Prepare": 6,
+            "Send": 15
+          },
+          {
+            "Send": 24,
+            "Meal": 4,
+            "Resource": 16,
+            "Claim": 8,
+            "Prepare": 6,
+            "Query": 12,
+            "Reply": 12
+          }
+        ],
+        "transferred_units": 13,
+        "net_transfers": [
+          -3,
+          3,
+          0,
+          0
+        ],
+        "social_admissions": 30,
+        "trust": [
+          {
+            "1": 100
+          },
+          {
+            "0": 100
+          },
+          {
+            "3": 30
+          },
+          {
+            "2": -46
+          }
+        ],
+        "memory_sha256": [
+          "da999c88de8cd8fb749ed28ef411eb4219df54a32454f080e40f4c7ba563be25",
+          "7f036775b1ef84e2c313c2885bc1d36c270ba5143904e85c01ef45302fc4055d",
+          "b3029720a8a87ed106d9e1019f51356c4cb189abb232b30c9dd6f35d3b66a46c",
+          "21bed7586872189546a6f6a426c738d7de42c56702e3003f973e59b87ee37bf7"
+        ],
+        "final_state_sha256": "85bca18011a1f35f311889a79cc28d8749022402801a87fa89c17108f4ed5b4a",
+        "execution_sha256": "c65dd7a04d00486d7dbb73a56bd3a43aa51afe08e12d501ec57e8d398c288c21",
+        "food_fate": {
+          "created": 4,
+          "consumed": [
+            3,
+            4
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ],
+          "ever_used": [
+            4,
+            4
+          ],
+          "terminal_assignments": 2,
+          "peak_assignments": 2,
+          "units": [
+            {
+              "owner": 0,
+              "ref": "material.operations[3]",
+              "status": "guaranteed_used",
+              "consumed": [
+                0,
+                1
+              ],
+              "ever_transferred": [
+                1,
+                1
+              ]
+            },
+            {
+              "owner": 2,
+              "ref": "material.operations[4]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 3,
+              "ref": "material.operations[5]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 0,
+              "ref": "material.operations[7]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_transitions": 81,
+          "final_food": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 0,
+          "waste": 4,
+          "consumed_total": 15
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          8420,
+          5400,
+          4980,
+          6465
+        ],
+        "ordinary_hunger_area": [
+          5120,
+          2400,
+          2240,
+          3225
+        ],
+        "meals": [
+          1,
+          6,
+          5,
+          4
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 0,
+        "raw": 0,
+        "waste": 4,
+        "consumed": 16,
+        "attempts": 7,
+        "success": 4,
+        "failures": 3,
+        "occupied": [
+          {
+            "Send": 20,
+            "Reply": 20,
+            "Resource": 37,
+            "Claim": 4,
+            "Prepare": 12,
+            "Meal": 1
+          },
+          {
+            "Send": 23,
+            "Reply": 19,
+            "Resource": 34,
+            "Meal": 6,
+            "Prepare": 6
+          },
+          {
+            "Meal": 5,
+            "Reply": 17,
+            "Resource": 17,
+            "Prepare": 18,
+            "Send": 20,
+            "Claim": 4
+          },
+          {
+            "Send": 27,
+            "Meal": 4,
+            "Resource": 20,
+            "Claim": 12,
+            "Prepare": 6,
+            "Reply": 13
+          }
+        ],
+        "transferred_units": 5,
+        "net_transfers": [
+          -3,
+          4,
+          0,
+          -1
+        ],
+        "social_admissions": 31,
+        "trust": [
+          {
+            "1": 42,
+            "3": 24
+          },
+          {
+            "0": 100,
+            "2": -23
+          },
+          {
+            "3": -29
+          },
+          {
+            "0": 7,
+            "2": -17
+          }
+        ],
+        "memory_sha256": [
+          "52873d8274b57e7c0d71a7947cea1e31c474b3349fae882045a5f6a69baf20ea",
+          "642c6fb9b43d9e79165add300221db8f266a54c2f12f64d622f888d3f743f09a",
+          "8b9ff6723f34f06ce179ddf179c279af58defbabbacb40b9dab79d1b2a838199",
+          "8fbe99cc7158f1b079b04409415e532cd2877c12c716fd6f13fe975c4bb03a83"
+        ],
+        "final_state_sha256": "59931c77e03db7e01f285132c161b861826b04ce47dbec441d9c957f204b418d",
+        "execution_sha256": "18c3c8a947edaf25e58686fa4aea9b8aa99da176ae862f805e0c3ba925af5b94",
+        "food_fate": {
+          "created": 4,
+          "consumed": [
+            4,
+            4
+          ],
+          "ever_transferred": [
+            1,
+            1
+          ],
+          "ever_used": [
+            4,
+            4
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 2,
+          "units": [
+            {
+              "owner": 2,
+              "ref": "material.operations[1]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 0,
+              "ref": "material.operations[5]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                1,
+                1
+              ]
+            },
+            {
+              "owner": 2,
+              "ref": "material.operations[6]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            },
+            {
+              "owner": 3,
+              "ref": "material.operations[7]",
+              "status": "guaranteed_used",
+              "consumed": [
+                1,
+                1
+              ],
+              "ever_transferred": [
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_transitions": 89,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 0,
+          "final_cache": 0,
+          "waste": 4,
+          "consumed_total": 16
+        }
+      },
+      "hunger_area_delta": [
+        200,
+        -420,
+        650,
+        345
+      ],
+      "meal_delta": [
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "source025": 20,
+      "first_cause": null,
+      "baseline": {
+        "hunger_area": [
+          8700,
+          8350,
+          8700,
+          8350
+        ],
+        "ordinary_hunger_area": [
+          5400,
+          5050,
+          5400,
+          5050
+        ],
+        "meals": [
+          0,
+          2,
+          0,
+          2
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 0,
+        "raw": 4,
+        "waste": 0,
+        "consumed": 4,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 27,
+            "Reply": 26,
+            "Query": 13,
+            "Resource": 30
+          },
+          {
+            "Send": 27,
+            "Meal": 2,
+            "Resource": 30,
+            "Reply": 19
+          },
+          {
+            "Reply": 23,
+            "Query": 13,
+            "Send": 23,
+            "Resource": 30
+          },
+          {
+            "Send": 27,
+            "Meal": 2,
+            "Reply": 23,
+            "Resource": 30
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 40,
+        "trust": [
+          {
+            "1": -17,
+            "2": -100
+          },
+          {
+            "3": -100
+          },
+          {
+            "3": -30
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "35aa9850dd201125c72bf4e183172672b9bcbb08efb3e40296778e6ca6eee479",
+          "41513010484f68815b7e39ed766d11cb1cb38b6e6c7cb39f7ea3ab91b6ddecb1",
+          "14b3b01124065314eaf99dc3c6c89d224759bab19fe78b8c15a48922dafd4fb4",
+          "2914704655db8845f6e3bed787f8254b7129e598b00f81bab939b4ac4ccd87b6"
+        ],
+        "final_state_sha256": "e50704be0650c7f0245309f5d66c22d5d31b4ea4805c7b67de99a47b21400592",
+        "execution_sha256": "875c0ad6acae3ee39c461400a804d0c01923ff51727c2581223ea822a2fd04e0",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 64,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 4,
+          "final_cache": 0,
+          "waste": 0,
+          "consumed_total": 4
+        }
+      },
+      "treatment": {
+        "hunger_area": [
+          8700,
+          8350,
+          8700,
+          8350
+        ],
+        "ordinary_hunger_area": [
+          5400,
+          5050,
+          5400,
+          5050
+        ],
+        "meals": [
+          0,
+          2,
+          0,
+          2
+        ],
+        "terminal_hunger": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "food": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "stock": 0,
+        "raw": 4,
+        "waste": 0,
+        "consumed": 4,
+        "attempts": 0,
+        "success": 0,
+        "failures": 0,
+        "occupied": [
+          {
+            "Send": 27,
+            "Reply": 26,
+            "Query": 13,
+            "Resource": 30
+          },
+          {
+            "Send": 27,
+            "Meal": 2,
+            "Resource": 30,
+            "Reply": 19
+          },
+          {
+            "Reply": 23,
+            "Query": 13,
+            "Send": 23,
+            "Resource": 30
+          },
+          {
+            "Send": 27,
+            "Meal": 2,
+            "Reply": 23,
+            "Resource": 30
+          }
+        ],
+        "transferred_units": 0,
+        "net_transfers": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "social_admissions": 40,
+        "trust": [
+          {
+            "1": -17,
+            "2": -100
+          },
+          {
+            "3": -100
+          },
+          {
+            "3": -30
+          },
+          {}
+        ],
+        "memory_sha256": [
+          "35aa9850dd201125c72bf4e183172672b9bcbb08efb3e40296778e6ca6eee479",
+          "41513010484f68815b7e39ed766d11cb1cb38b6e6c7cb39f7ea3ab91b6ddecb1",
+          "14b3b01124065314eaf99dc3c6c89d224759bab19fe78b8c15a48922dafd4fb4",
+          "2914704655db8845f6e3bed787f8254b7129e598b00f81bab939b4ac4ccd87b6"
+        ],
+        "final_state_sha256": "e50704be0650c7f0245309f5d66c22d5d31b4ea4805c7b67de99a47b21400592",
+        "execution_sha256": "875c0ad6acae3ee39c461400a804d0c01923ff51727c2581223ea822a2fd04e0",
+        "food_fate": {
+          "created": 0,
+          "consumed": [
+            0,
+            0
+          ],
+          "ever_transferred": [
+            0,
+            0
+          ],
+          "ever_used": [
+            0,
+            0
+          ],
+          "terminal_assignments": 1,
+          "peak_assignments": 1,
+          "units": [],
+          "physical_transitions": 64,
+          "final_food": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_raw": 4,
+          "final_cache": 0,
+          "waste": 0,
+          "consumed_total": 4
+        }
+      },
+      "hunger_area_delta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meal_delta": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

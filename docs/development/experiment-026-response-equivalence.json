@@ -1,0 +1,68 @@
+{
+  "schema": "experiment-026-response-equivalence-review/v1",
+  "status": "PASS read-only defined-response equivalence;not a successor execution gate",
+  "archives": [
+    {
+      "archive": "original025",
+      "worlds": 50,
+      "responses": 6509,
+      "pending_outgoing_responses": 6416
+    },
+    {
+      "archive": "frozen026prefix",
+      "worlds": 43,
+      "responses": 4858,
+      "pending_outgoing_responses": 4781
+    }
+  ],
+  "input_stream_sha256": "c8aacb6e0dda84ebf8843766b2734bf553b64ce4207f6e14ce536825f08bf4ec",
+  "missing_membership_control": [
+    {
+      "archive": "original025",
+      "ordinal": 0,
+      "boundary": 1,
+      "response": 0,
+      "selected": {
+        "Invite": {
+          "recipient": 1,
+          "kind": "Resource"
+        }
+      },
+      "kind": "synthetic membership-only local-input control;not an executed world",
+      "original_rule": "Continue clamped0;first maximum",
+      "direct_candidates": [
+        {
+          "reply": "Wait",
+          "score": 0
+        },
+        {
+          "reply": {
+            "Accept": 1
+          },
+          "score": 58
+        },
+        {
+          "reply": {
+            "Accept": 2
+          },
+          "score": 58
+        },
+        {
+          "reply": {
+            "Accept": 3
+          },
+          "score": 58
+        },
+        {
+          "reply": "Continue",
+          "score": 0
+        }
+      ],
+      "direct_selected": {
+        "Accept": 1
+      }
+    }
+  ],
+  "proof": "On the defined domain, c::respond returns the same input,Wait0,incoming Accept scores and optional Continue0,then reselects first maximum. The looked-up outgoing score and preliminary e::respond selection are discarded. Direct zero construction yields the identical public Response. Undefined missing-member inputs become defined under the already-established zero rule;this extension must be declared prospectively in a separate successor.",
+  "limits": "Recorded inputs overlap across archives;counts are records,not independent statistical evidence. No original/frozen source changed;no new trajectory or welfare conclusion."
+}
