@@ -1,0 +1,180 @@
+{
+  "input": {
+    "legacy": {
+      "own": {
+        "id": 0,
+        "food": 0,
+        "hunger": 80,
+        "generosity": 0,
+        "caution": 100,
+        "expectation": 3,
+        "trust": {},
+        "memories": []
+      },
+      "profile": {
+        "privacy": 0,
+        "relationship_goal": 100,
+        "honesty": 80,
+        "request_cost": 40
+      },
+      "now": 0,
+      "end": 33,
+      "people": [
+        {
+          "id": 0,
+          "available": true
+        },
+        {
+          "id": 1,
+          "available": true
+        },
+        {
+          "id": 2,
+          "available": true
+        },
+        {
+          "id": 3,
+          "available": true
+        }
+      ],
+      "query": {
+        "input": {
+          "base": {
+            "owner": 0,
+            "scene": 0,
+            "hunger": 80,
+            "relationship_goal": 100,
+            "concerns": [],
+            "sources": [
+              {
+                "id": 1,
+                "credibility": 0,
+                "offers": []
+              },
+              {
+                "id": 2,
+                "credibility": 0,
+                "offers": []
+              },
+              {
+                "id": 3,
+                "credibility": 0,
+                "offers": []
+              }
+            ],
+            "cells": [],
+            "seen": [],
+            "settings": {
+              "use_history": true,
+              "track_novelty": true
+            }
+          },
+          "knowledge": [],
+          "hints": [],
+          "settings": {
+            "provenance": true,
+            "speakers": true
+          }
+        },
+        "decision": {
+          "input": {
+            "owner": 0,
+            "scene": 0,
+            "hunger": 80,
+            "relationship_goal": 100,
+            "concerns": [],
+            "sources": [
+              {
+                "id": 1,
+                "credibility": 0,
+                "offers": []
+              },
+              {
+                "id": 2,
+                "credibility": 0,
+                "offers": []
+              },
+              {
+                "id": 3,
+                "credibility": 0,
+                "offers": []
+              }
+            ],
+            "cells": [],
+            "seen": [],
+            "settings": {
+              "use_history": true,
+              "track_novelty": true
+            }
+          },
+          "candidates": [
+            {
+              "action": "Pause",
+              "importance": 0,
+              "attempts": 0,
+              "prior_or_learned": 0,
+              "opportunity_value": 0,
+              "expected_gain": 0,
+              "benefit": 0,
+              "cost": 0,
+              "score": 0,
+              "history_record": null,
+              "notice": null
+            }
+          ],
+          "selected": "Pause"
+        },
+        "factors": []
+      }
+    },
+    "retained": null,
+    "duration": 4,
+    "inquiry_lane_free": true,
+    "raw_retained": {
+      "owner": 0,
+      "receipt": 0,
+      "observation": {
+        "id": 0,
+        "observed_at": 0,
+        "stock": 8,
+        "accessible": true,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "input_units": 2,
+        "edible_units": 1,
+        "waste_units": 1
+      },
+      "own_takes": 0
+    }
+  },
+  "terms": [
+    {
+      "action": "Wait",
+      "eligible": true,
+      "base_score": 0,
+      "meal_relief": 0,
+      "final_score": 0
+    },
+    {
+      "action": "Consume",
+      "eligible": false,
+      "base_score": -1,
+      "meal_relief": 0,
+      "final_score": -1
+    },
+    {
+      "action": "Invite",
+      "eligible": true,
+      "base_score": 58,
+      "meal_relief": 0,
+      "final_score": 58
+    },
+    {
+      "action": "Acquire",
+      "eligible": false,
+      "base_score": -1,
+      "meal_relief": 0,
+      "final_score": -1
+    }
+  ]
+}

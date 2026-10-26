@@ -1,0 +1,27 @@
+{
+  "schema": "experiment-026-disabled-validation/v1",
+  "status": "PASS before treatment;runtime source publication and committed activation gate still required",
+  "registration_revision": "759385d3e6a4dc3e40e816ef0585e335c2640d56",
+  "foundation_revision": "0a33e385942e9bfea8205621c83d60e9271d85fb",
+  "source_freeze_sha256": "75f23c5b566d05fd9684bbc95724a2671d729127d5982b9bebbb288b60673c06",
+  "source_files": 16,
+  "baseline_worlds_exact": 50,
+  "comparison": "complete original025 serialized bytes after only declared schema projection;all actor inputs,physics,cognition,consent and histories",
+  "feature_off_bodies_exact": 56,
+  "feature_off_comparison": "new disabled coordinator equals unchanged025 producer on all56 original024 configs;both inherited valuation modes",
+  "independent_baseline_worlds": 50,
+  "corruptions_rejected": 14,
+  "new_pure_tests": 4,
+  "prototype_total_tests": 13,
+  "root_tests": 217,
+  "publication_refusal": {
+    "status": "PASS",
+    "matrix_before_publication_exit": 101,
+    "no_output_created": true,
+    "default_help_exit": 0
+  },
+  "baseline_stream_raw_sha256": "d92fdab63fd7ae67fedf017e8f213dc772704d2ea6a57899cc960a732402c13b",
+  "independent_findings_sha256": "e5f27b99134ac0738f2e7712a27597ea87ace73df32c9194d828b1d19c956c78",
+  "registered_treatment_worlds_run": 0,
+  "private_generated_model_format": "explicit rustfmt --edition2024 --check PASS"
+}

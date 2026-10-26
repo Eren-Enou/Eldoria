@@ -17,15 +17,27 @@ Root fmt, locked Clippy,217 tests and the full gate pass, with structured
 exits in ignored `target/026-stage-a-checks.json`; detailed logs share that prefix.
 All original001–025 evidence remains unchanged; see the durable foundation receipt.
 
-Prospective026 design only: [specification](../../experiments/026/specification.md),
-exact100-row matrix, one ProjectedNeed policy and source bindings. Each original
-025 config is paired verbatim with Baseline and ProjectedNeed. Eligible Prepare
-changes H to min(100,H+5*floor(D/4)); old effort, eligibility, ties and physics stay.
-No026 implementation, treatment, outcome inspection, or runtime freeze yet.
-Next: verify publication of this complete design before implementation.
-Then implement the isolated opt-in Rust host and prove disabled50-world exact parity,
-publish runtime/readers before treatment, run frozen100 worlds, independently
-validate/replay/corrupt, analyze all nulls/harms and publish final A–I report.
+026 registration was published at
+`759385d3e6a4dc3e40e816ef0585e335c2640d56`, matched to origin/main.
+Its100-row matrix/policy/source bindings remain unchanged. Implementation is now
+in `prototypes/delayed-work-valuation/`: one reversible rank seam plus explicit
+mode; original025 methods remain. No new physical/cognitive state or observations.
+The [disabled gate](../../experiments/026/runtime-baseline-validation.json) passes:
+50 exact original025 histories,56 old feature-off bodies,50 independent baseline
+reads,14 scratch rejections,13 prototype tests (four new), root217 tests and both
+format/Clippy scopes. The16-file runtime/readers freeze is complete; all nine final-source checks pass,
+including explicit formatting of the generated-path model. Exact source identity
+is `75f23c5b566d05fd9684bbc95724a2671d729127d5982b9bebbb288b60673c06`. Treatment refuses execution before
+publication/committed activation gate. No registered
+ProjectedNeed world has run. [Costs/checks](experiment-026-pre-treatment-checks.json).
+
+Next: publish this runtime/readers freeze and passing disabled gate; verify remote.
+Then add/publish runtime-gate.json referencing that runtime commit, verify remote,
+and only then run the100 frozen rows. Independent review026/analyze026/corrupt026
+and cache-free validate026 are frozen before outcomes. Original001–025 and the
+persistent025 host remain unchanged. Keep negative/null/harmful/reconvergent cases,
+replay all100 exactly, measure wall time/peak/storage separately, explain actual
+causal slices and publish final A–I findings without tuning. No GUI/next experiment.
 
 ## Previous completed engineering milestone
 

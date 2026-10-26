@@ -1,0 +1,18 @@
+{
+  "prototypes/delayed-work-valuation/Cargo.lock": "bc3d47aff578ab02920aa60062e540bb32ffeddddcde803c48da7774d870f1f0",
+  "prototypes/delayed-work-valuation/Cargo.toml": "94c7d40d101fa19ba64f65b9c4354bff7173dd018acfb400a0caa536f448db4b",
+  "prototypes/delayed-work-valuation/README.md": "d38b2ea719d2d0c98688f6a499362718315320a9d46cc0708118d383445775c3",
+  "prototypes/delayed-work-valuation/build.rs": "e5e54897c906e24aabebdcc13638c9268cb26eec0703dfbb9e238995bb60165d",
+  "prototypes/delayed-work-valuation/generate_host.py": "42ecec7b11b5c8923431ba7970c7f8aea9c4eace313917059f840953b3735992",
+  "prototypes/delayed-work-valuation/src/lib.rs": "df228143b2c9a3dba0330243cf587b5970ca623bb6b68c8dc57396a2cfc37a22",
+  "prototypes/delayed-work-valuation/src/main.rs": "d2672a8dde2151c33875b3ed4bfbb19e58992587a55634f971f3dc1225dbb21b",
+  "prototypes/delayed-work-valuation/src/model.rs": "2fd7804855b3e2b25e17db7ba7ec8a3f9c26faff82b961292758e371b9e2d830",
+  "prototypes/delayed-work-valuation/tests/local-fixture.json": "b3f2496975545227a0a37de4bf86a7d4a137d433cd6ee411c1268a5d57319688",
+  "prototypes/delayed-work-valuation/tests/local.rs": "4d348dd00c1582db317d2ee433daf27a43085b534348afbd05c79d3b3b09a87e",
+  "examples/validate026.rs": "d3bf4e55efc3b9fdc6176bdaca5908c170eae3910b14cf2071c1bf956ecc42b9",
+  "examples/support/analyze026.py": "fe301de456982951fe1933fc206eb6da6c4578451e65704c1f9a993f97787f01",
+  "examples/support/corrupt026.py": "491f7640753285a79802db5b78fe96022e94f558b450fc693975f137178decfb",
+  "examples/support/identity026.py": "085d2e5a4b917564f3f96765c8eca74ec467fe21c066f052aae987a5e6f8618f",
+  "examples/support/review026.py": "b46dc57ce63074ca60e4b4b3df262d8265632da4eec772190856c8b6684b2eee",
+  "examples/support/verify026.py": "7652d1c9ea4956af03ed4dc152cb27a96baeab4b94ddb84407bb3d4006b8fd2f"
+}

@@ -328,6 +328,10 @@ Neither 024 protection nor material preparation/025 follows automatically.
 register one opt-in ProjectedNeed Prepare score. Each original025 world is paired
 with Baseline; only eligible Prepare's need term changes. The phase-agnostic
 projection estimates conditional own need, not success, food use or welfare.
-No runtime, treatment outcomes or default adoption yet. Implementation requires
-this design's publication, exact disabled compatibility and a published runtime/
-reader freeze before registered treatment. Existing persistent025 stays unchanged.
+The isolated Rust host is `prototypes/delayed-work-valuation/`; its16-file source/
+reader freeze and disabled gate pass50 original025 plus56 feature-off bodies.
+`examples/support/review026.py` owns independent scoring/full legacy reconstruction;
+`analyze026.py` owns matched-prefix/actor-specific descriptive comparisons;
+`verify026.py` and `validate026` own the separate cache-free research gate.
+No registered treatment has run. Runtime publication and committed activation
+remain required. Existing persistent025 stays unchanged.

@@ -1,0 +1,275 @@
+{
+  "schema": "experiment-026-pre-treatment-engineering/v1",
+  "kind": "wall-clock/validation receipt;not deterministic simulation evidence",
+  "source_freeze_sha256": "75f23c5b566d05fd9684bbc95724a2671d729127d5982b9bebbb288b60673c06",
+  "checks": [
+    {
+      "check": "private-fmt",
+      "command": [
+        "rustfmt",
+        "--edition",
+        "2024",
+        "--check",
+        "prototypes/delayed-work-valuation/src/model.rs"
+      ],
+      "exit": 0,
+      "seconds": 0.06658410001546144
+    },
+    {
+      "check": "fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--check",
+        "--manifest-path",
+        "prototypes/delayed-work-valuation/Cargo.toml"
+      ],
+      "exit": 0,
+      "seconds": 0.1929971999488771
+    },
+    {
+      "check": "clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--release",
+        "--locked",
+        "--all-targets",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/delayed-work-valuation/Cargo.toml",
+        "--target-dir",
+        "target/delayed-work-valuation",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit": 0,
+      "seconds": 22.071799000026658
+    },
+    {
+      "check": "tests",
+      "command": [
+        "cargo",
+        "test",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/delayed-work-valuation/Cargo.toml",
+        "--target-dir",
+        "target/delayed-work-valuation"
+      ],
+      "exit": 0,
+      "seconds": 249.92907790001482
+    },
+    {
+      "check": "build",
+      "command": [
+        "cargo",
+        "build",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/delayed-work-valuation/Cargo.toml",
+        "--target-dir",
+        "target/delayed-work-valuation"
+      ],
+      "exit": 0,
+      "seconds": 0.24706620001234114
+    },
+    {
+      "check": "baseline",
+      "command": [
+        "target/delayed-work-valuation/release/delayed-work-valuation.exe",
+        "baseline",
+        "experiments/025/trials.jsonl.gz",
+        "target/026-public-baseline.jsonl"
+      ],
+      "exit": 0,
+      "seconds": 3.4128139000386
+    },
+    {
+      "check": "featureoff",
+      "command": [
+        "target/delayed-work-valuation/release/delayed-work-valuation.exe",
+        "feature-off"
+      ],
+      "exit": 0,
+      "seconds": 10.804901499999687
+    },
+    {
+      "check": "independent",
+      "command": [
+        "python",
+        "-B",
+        "examples/support/review026.py",
+        "target/026-public-baseline.jsonl",
+        "--baseline",
+        "--expected",
+        "target/026-baseline-final-independent.json"
+      ],
+      "exit": 0,
+      "seconds": 68.64763029990718
+    },
+    {
+      "check": "corruptions",
+      "command": [
+        "python",
+        "-B",
+        "examples/support/corrupt026.py",
+        "target/026-public-baseline.jsonl",
+        "--output",
+        "target/026-public-corruptions.json"
+      ],
+      "exit": 0,
+      "seconds": 4.5303881000727415
+    }
+  ],
+  "root_checks": {
+    "fmt": "PASS target/026-root-final-fmt.log",
+    "clippy": "PASS target/026-root-final-clippy.log",
+    "tests": 217
+  },
+  "historical_gate": {
+    "command": "cargo run --release --locked -j 1 --example validate025_foundation",
+    "exit": 0,
+    "seconds": 1692.7034334999043,
+    "receipt": "docs/development/experiment-025-foundation-validation.json",
+    "reuse_scope": "historical source,validators and001\u2013025 evidence unchanged;new026 code is isolated and separately validated"
+  },
+  "initial_clippy_failure": "additional explicit mode exceeded argument lint;one scoped generated-function allowance preserves inherited arguments;final Clippy passes",
+  "logs_sha256": {
+    "target\\026-public-baseline.log": "64f8423a37a20dc5574443dd33301adf4ec0d4360041d6cde7c0c3ac3cf72ee6",
+    "target\\026-public-build.log": "a50f4a953f17e887d3844be51c0df233623b83d4462c96d5392c2671458d7fef",
+    "target\\026-public-clippy.log": "7ff879101844e1d1b226dcf40f310f14ccec0bd7f859d5d970e6d77e3a73a823",
+    "target\\026-public-corruptions.log": "a888f7eb968f630b4d020017e3643ffd089bb9b9e32be5bf0daa3dea926094f5",
+    "target\\026-public-featureoff.log": "08458b7a58d884e4b9e093cf7494c867ed4b6815ade6907fa68128d5c8911040",
+    "target\\026-public-fmt.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "target\\026-public-independent.log": "0c8e84034cce16635d7ecb1f639d6dedc8cb08013004143d422c243682a9c2cf",
+    "target\\026-public-private-fmt.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "target\\026-public-tests.log": "e854ac7481fe12cb3916319256407e931309bd98adac1c21d3dda4bf397a270e"
+  },
+  "previous_unpublished_source_freeze_sha256": "229832c8349d6bfebe93ff616a8994de8180097fc168ff39f245d2e2431136c1",
+  "previous_unpublished_checks": [
+    {
+      "check": "fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--check",
+        "--manifest-path",
+        "prototypes/delayed-work-valuation/Cargo.toml"
+      ],
+      "exit": 0,
+      "seconds": 0.2037961999885738
+    },
+    {
+      "check": "clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--release",
+        "--locked",
+        "--all-targets",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/delayed-work-valuation/Cargo.toml",
+        "--target-dir",
+        "target/delayed-work-valuation",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit": 0,
+      "seconds": 22.725540099898353
+    },
+    {
+      "check": "tests",
+      "command": [
+        "cargo",
+        "test",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/delayed-work-valuation/Cargo.toml",
+        "--target-dir",
+        "target/delayed-work-valuation"
+      ],
+      "exit": 0,
+      "seconds": 250.6320829000324
+    },
+    {
+      "check": "build",
+      "command": [
+        "cargo",
+        "build",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/delayed-work-valuation/Cargo.toml",
+        "--target-dir",
+        "target/delayed-work-valuation"
+      ],
+      "exit": 0,
+      "seconds": 0.24791209981776774
+    },
+    {
+      "check": "baseline",
+      "command": [
+        "target/delayed-work-valuation/release/delayed-work-valuation.exe",
+        "baseline",
+        "experiments/025/trials.jsonl.gz",
+        "target/026-frozen-baseline.jsonl"
+      ],
+      "exit": 0,
+      "seconds": 3.401031499961391
+    },
+    {
+      "check": "featureoff",
+      "command": [
+        "target/delayed-work-valuation/release/delayed-work-valuation.exe",
+        "feature-off"
+      ],
+      "exit": 0,
+      "seconds": 10.797236000187695
+    },
+    {
+      "check": "independent",
+      "command": [
+        "python",
+        "-B",
+        "examples/support/review026.py",
+        "target/026-frozen-baseline.jsonl",
+        "--baseline",
+        "--expected",
+        "target/026-baseline-final-independent.json"
+      ],
+      "exit": 0,
+      "seconds": 68.72406470007263
+    },
+    {
+      "check": "corruptions",
+      "command": [
+        "python",
+        "-B",
+        "examples/support/corrupt026.py",
+        "target/026-frozen-baseline.jsonl",
+        "--output",
+        "target/026-frozen-corruptions.json"
+      ],
+      "exit": 0,
+      "seconds": 4.504300999920815
+    }
+  ],
+  "prepublication_format_correction": "Cargo fmt skips generated-path model; explicit rustfmt now covers it. Formatting only; final frozen-source checks repeated before any registered treatment."
+}
