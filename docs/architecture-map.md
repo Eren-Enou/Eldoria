@@ -4,6 +4,15 @@ Navigation summary, protected through026 with qualification. Source and mode-spe
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
+## Experiment027 prospective research
+
+`prototypes/material-experience/` is the isolated headless successor for actor-local
+extraction-outcome learning, registered atf7eead060e7dd692ab02683335c96174345bcb02.
+[Design](../experiments/027/specification.md),[local evidence gate](../experiments/027/design-gate.md).
+New cells cap2/lifetime24; only eligible Prepare valuation may change. Protected
+endpoint remains026, no default adoption. Status is implementation/parity pending;
+see the [checkpoint](development/continuation-checkpoint.md). No treatment result yet.
+
 ## Human Rust workbench and portable delivery
 
 Headless persistent C1 successor: `prototypes/persistent-delayed-work-world/`.

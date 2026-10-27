@@ -427,3 +427,13 @@ invocations,independent reconstruction and explicit recovery/storage controls.
 [Final report](../development/persistent-delayed-work-final-report.md).
 No new scientific policy,027,default adoption,GUI or canon change. Costs and81
 actual reporting-crossing worlds remain explicit qualifications.
+
+
+## Experiment027 — prospective own material experience research
+
+Registered atf7eead060e7dd692ab02683335c96174345bcb02 before treatment. Existing
+Taken/Insufficient personal receipts project to a separate cap2/lifetime24 memory;
+frequency adjustment is bounded±10 on eligible C1 Prepare only. See
+[specification](../../experiments/027/specification.md) and
+[Gate A](../../experiments/027/design-gate.md). Source-preserving implementation
+and exact Fixed parity are pending. Not protected/adopted;001–026 unchanged.

@@ -35,7 +35,7 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 Current authorized program76e83237: Experiment027, prospectively gated actor-local
 material experience learning. This supersedes historical no027 boundaries only
-within this new headless research scope. Protected001–026 stays unchanged; no
+within this new headless research scope. Protected001â€“026 stays unchanged; no
 adoption,028, GUI/computer control, canon, renewal or population extension. See
 experiments/027/design-gate.md and specification.md. Registration must be published
 before treatment. Historical boundaries below remain delivery-era evidence.

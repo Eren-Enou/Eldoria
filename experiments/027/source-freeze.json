@@ -1,0 +1,15 @@
+{
+  "examples/support/analyze027.py": "7020e5c34a689304e228108085d083270754182f304779e6f9ae0a010c92ebc1",
+  "examples/support/corrupt027.py": "f07447beb37ed1584d1f8cd667184dd4d4d129312b8d380f0cb2212af5d15e41",
+  "examples/support/identity027.py": "e26eb79e82c93b5dc0e132da006aef86e4a0db85da56cbba275c09999a788722",
+  "examples/support/review027.py": "aab25a7aa455d46e3ebf32aae89897d76ded844234359e5f659025acf93c9e45",
+  "examples/support/validate027.py": "179e025b323bb15e9d5d86bfb820b919be2509301167db5790ff6fdc3bb293f0",
+  "prototypes/material-experience/Cargo.lock": "fdae010259efa66b5279bde577d4145ebd994afb1ff0949c9b48f4249d54b04d",
+  "prototypes/material-experience/Cargo.toml": "286df56a19ecea4e15376cc1073eb90572ca9b0d24ecce1f29ab75d5748d8600",
+  "prototypes/material-experience/build.rs": "6e0334da848b7615cdeb38cadb2c5e2d9420249316b146dc853e0178b512be45",
+  "prototypes/material-experience/generate_host.py": "2c88ed57f33eb088db21d297dac29cf9d9582bb42e08912cf2ac3c6ee6e96bfa",
+  "prototypes/material-experience/src/experience.rs": "49a898bad83cbb54575cca7231f3e2ace4e7a21d4b9a9d6de54d12129f86a9b4",
+  "prototypes/material-experience/src/lib.rs": "df228143b2c9a3dba0330243cf587b5970ca623bb6b68c8dc57396a2cfc37a22",
+  "prototypes/material-experience/src/main.rs": "56ca8f612f184e9e71824b59dcd77b7ba0a6904b4271a5d7d5af4bbb2757aa68",
+  "prototypes/material-experience/tests/local.rs": "7e2215cd7bc81b4fc232639e381ac8a6a3ec63220b64613b699007cf21165ce9"
+}

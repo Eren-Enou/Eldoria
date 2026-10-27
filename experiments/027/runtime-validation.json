@@ -1,0 +1,12 @@
+{
+  "stage": "pre-treatment source publication",
+  "registration_revision": "f7eead060e7dd692ab02683335c96174345bcb02",
+  "source": "39cb0afcbd4c3dadbbac3c655687f82f77426b43060e5eea852b3301cf5c9c66",
+  "host_tests": 14,
+  "debug_inherited_exact": 100,
+  "debug_fixed_exact": 50,
+  "release_parity": "pending; required before activation",
+  "root_tests": 217,
+  "root_foundation": "running; required for final acceptance",
+  "treatment_executed": false
+}
