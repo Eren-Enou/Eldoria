@@ -1,0 +1,33 @@
+{
+  "schema": "experiment026-independent-review-execution/v1",
+  "starting_revision": "6b05b388afc995bc9615db595e0c683dae04cf67",
+  "scientific_decision": "ACCEPT WITH QUALIFICATION",
+  "fresh_review": "100 independent scalar/material/need reconstructions,3333 scalar restriction cases,6 scratch faults",
+  "isolated_scientific_gate": {
+    "exit": 0,
+    "worlds": 100,
+    "pairs": 50,
+    "corruptions": 17,
+    "v1_expected_failure_rows": 43,
+    "c1_exact_replay_rows": 100,
+    "log_sha256": "f7475b4f2d21466d418c874e85c17415162a653d2587099c4d783342bb0ec943"
+  },
+  "root_checks": [
+    {
+      "check": "fmt",
+      "exit": 0,
+      "seconds": 1.3280000002123415
+    },
+    {
+      "check": "clippy",
+      "exit": 0,
+      "seconds": 0.9849999998696148
+    },
+    {
+      "check": "tests",
+      "exit": 0,
+      "seconds": 137.25
+    }
+  ],
+  "foundation_activation": "pending inherited full gate and additive activation; no runtime implemented"
+}

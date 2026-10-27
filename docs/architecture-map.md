@@ -52,6 +52,14 @@ and prior desktop/browser limitations; the portable report records current deliv
 
 ## Current gated program
 
+New headless continuation program6381b346: [independent026 review](experiment-026-review.md)
+accepts with qualification after fresh100-world scalar/material/need and isolated
+native verification. Conditional001–026 protection is pending the complete inherited
+gate. No persistent026 implementation yet. [Prospective source-preserving design](development/persistent-delayed-work-world.md)
+reuses material continuation/Session/recovery with exact C1 valuation/response logic.
+No new experiment, default adoption or GUI acceptance.
+
+
 [Qualified001–025 protection](integrity-audit-001-025.md) inherits001–024 unchanged:
 455 original artifacts/472 raw originals and214 candidate custody bindings.
 [Fresh review](experiment-025-foundation-review.md) preserves publication and

@@ -33,6 +33,16 @@ economy must not weaken locality, retention contracts, validation or negative re
 
 ## Protected project contracts
 
+Current authorized program attachment6381b346: independently consolidate026 C1,
+conditionally extend protection, then implement an isolated opt-in persistent026
+successor. This supersedes prior prohibitions on persistent026 integration only
+within the new gated program. No027, default adoption, GUI/computer control, canon,
+renewal, population or horizon extension. See the current checkpoint and
+`docs/development/persistent-delayed-work-world.md`. Stage A independently accepts
+qualified C1; protection/runtime gates remain pending. Preserve v1 failure/C1
+prospective correction/I1 post-run build isolation as distinct histories.
+
+
 Current program: attachment4adb272a independently reviews and conditionally
 protects qualified025, then prospectively studies026 delayed-work valuation.
 See docs/experiment-025-foundation-review.md, docs/experiment-contract-001-025.md

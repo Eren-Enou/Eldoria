@@ -1,0 +1,2882 @@
+{
+  "schema": "experiment-026-fresh-foundation-review/v1",
+  "chronology": [
+    {
+      "label": "registration",
+      "revision": "759385d3e6a4dc3e40e816ef0585e335c2640d56"
+    },
+    {
+      "label": "v1_runtime",
+      "revision": "42d3ad359b7a002926ed3f57e65e99e96ad8545a"
+    },
+    {
+      "label": "v1_activation",
+      "revision": "d2321f1b5d8f15fb62f584a95e27b77abaeee240"
+    },
+    {
+      "label": "failure_and_C1_declaration",
+      "revision": "6f44686c1d3b7a85656a1ce9244c9a37bc6799ab"
+    },
+    {
+      "label": "C1_runtime",
+      "revision": "22b51485326eeb297d8740074c0ea57d1387247c"
+    },
+    {
+      "label": "C1_activation",
+      "revision": "2a5bec1a17646a951de612e01362230c01f6d36d"
+    },
+    {
+      "label": "C1_results_and_I1",
+      "revision": "6b05b388afc995bc9615db595e0c683dae04cf67"
+    }
+  ],
+  "worlds": [
+    {
+      "row": 0,
+      "source025": 0,
+      "mode": "Baseline",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 1,
+      "source025": 0,
+      "mode": "ProjectedNeed",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 2,
+      "source025": 1,
+      "mode": "Baseline",
+      "choices": 104,
+      "eligible": 8,
+      "responses": 84,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          11620,
+          11620,
+          11620,
+          11620
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 3,
+      "source025": 1,
+      "mode": "ProjectedNeed",
+      "choices": 104,
+      "eligible": 8,
+      "responses": 84,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          11620,
+          11620,
+          11620,
+          11620
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 4,
+      "source025": 2,
+      "mode": "Baseline",
+      "choices": 104,
+      "eligible": 0,
+      "responses": 92,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          11540,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 5,
+      "source025": 2,
+      "mode": "ProjectedNeed",
+      "choices": 104,
+      "eligible": 0,
+      "responses": 92,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          11540,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 6,
+      "source025": 3,
+      "mode": "Baseline",
+      "choices": 104,
+      "eligible": 0,
+      "responses": 92,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          11540,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 7,
+      "source025": 3,
+      "mode": "ProjectedNeed",
+      "choices": 104,
+      "eligible": 0,
+      "responses": 92,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          11540,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 8,
+      "source025": 4,
+      "mode": "Baseline",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 9,
+      "source025": 4,
+      "mode": "ProjectedNeed",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 10,
+      "source025": 5,
+      "mode": "Baseline",
+      "choices": 103,
+      "eligible": 2,
+      "responses": 91,
+      "physical": {
+        "outcomes": {
+          "Extracted": 1,
+          "Insufficient": 1,
+          "Prepared": 1,
+          "Failed": 1
+        },
+        "hunger_area": [
+          11620,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 11,
+      "source025": 5,
+      "mode": "ProjectedNeed",
+      "choices": 103,
+      "eligible": 2,
+      "responses": 91,
+      "physical": {
+        "outcomes": {
+          "Extracted": 1,
+          "Insufficient": 1,
+          "Prepared": 1,
+          "Failed": 1
+        },
+        "hunger_area": [
+          11620,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 12,
+      "source025": 6,
+      "mode": "Baseline",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 13,
+      "source025": 6,
+      "mode": "ProjectedNeed",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 14,
+      "source025": 7,
+      "mode": "Baseline",
+      "choices": 102,
+      "eligible": 2,
+      "responses": 92,
+      "physical": {
+        "outcomes": {
+          "Extracted": 1,
+          "Insufficient": 1,
+          "Prepared": 1,
+          "Failed": 1
+        },
+        "hunger_area": [
+          12700,
+          11620,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 15,
+      "source025": 7,
+      "mode": "ProjectedNeed",
+      "choices": 102,
+      "eligible": 2,
+      "responses": 92,
+      "physical": {
+        "outcomes": {
+          "Extracted": 1,
+          "Insufficient": 1,
+          "Prepared": 1,
+          "Failed": 1
+        },
+        "hunger_area": [
+          12700,
+          11620,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 16,
+      "source025": 8,
+      "mode": "Baseline",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 17,
+      "source025": 8,
+      "mode": "ProjectedNeed",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 18,
+      "source025": 9,
+      "mode": "Baseline",
+      "choices": 103,
+      "eligible": 2,
+      "responses": 91,
+      "physical": {
+        "outcomes": {
+          "Extracted": 1,
+          "Insufficient": 1,
+          "Prepared": 1,
+          "Failed": 1
+        },
+        "hunger_area": [
+          11620,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 19,
+      "source025": 9,
+      "mode": "ProjectedNeed",
+      "choices": 103,
+      "eligible": 2,
+      "responses": 91,
+      "physical": {
+        "outcomes": {
+          "Extracted": 1,
+          "Insufficient": 1,
+          "Prepared": 1,
+          "Failed": 1
+        },
+        "hunger_area": [
+          11620,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 20,
+      "source025": 10,
+      "mode": "Baseline",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 21,
+      "source025": 10,
+      "mode": "ProjectedNeed",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 22,
+      "source025": 11,
+      "mode": "Baseline",
+      "choices": 103,
+      "eligible": 2,
+      "responses": 91,
+      "physical": {
+        "outcomes": {
+          "Extracted": 1,
+          "Insufficient": 1,
+          "Prepared": 1,
+          "Failed": 1
+        },
+        "hunger_area": [
+          11620,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 23,
+      "source025": 11,
+      "mode": "ProjectedNeed",
+      "choices": 103,
+      "eligible": 2,
+      "responses": 91,
+      "physical": {
+        "outcomes": {
+          "Extracted": 1,
+          "Insufficient": 1,
+          "Prepared": 1,
+          "Failed": 1
+        },
+        "hunger_area": [
+          11620,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 24,
+      "source025": 12,
+      "mode": "Baseline",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 25,
+      "source025": 12,
+      "mode": "ProjectedNeed",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 26,
+      "source025": 13,
+      "mode": "Baseline",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 27,
+      "source025": 13,
+      "mode": "ProjectedNeed",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 28,
+      "source025": 14,
+      "mode": "Baseline",
+      "choices": 120,
+      "eligible": 0,
+      "responses": 81,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          10180,
+          6340,
+          10180,
+          4315
+        ],
+        "meals": [
+          0,
+          2,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "row": 29,
+      "source025": 14,
+      "mode": "ProjectedNeed",
+      "choices": 120,
+      "eligible": 0,
+      "responses": 81,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          10180,
+          6340,
+          10180,
+          4315
+        ],
+        "meals": [
+          0,
+          2,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "row": 30,
+      "source025": 15,
+      "mode": "Baseline",
+      "choices": 149,
+      "eligible": 7,
+      "responses": 70,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 0,
+          "Prepared": 4,
+          "Failed": 0
+        },
+        "hunger_area": [
+          6135,
+          4035,
+          5240,
+          3995
+        ],
+        "meals": [
+          2,
+          5,
+          2,
+          7
+        ]
+      }
+    },
+    {
+      "row": 31,
+      "source025": 15,
+      "mode": "ProjectedNeed",
+      "choices": 119,
+      "eligible": 6,
+      "responses": 75,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 2,
+          "Prepared": 4,
+          "Failed": 2
+        },
+        "hunger_area": [
+          5760,
+          5890,
+          7620,
+          4760
+        ],
+        "meals": [
+          2,
+          3,
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "row": 32,
+      "source025": 16,
+      "mode": "Baseline",
+      "choices": 426,
+      "eligible": 0,
+      "responses": 346,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          38980,
+          38980,
+          36940,
+          37230
+        ],
+        "meals": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 33,
+      "source025": 16,
+      "mode": "ProjectedNeed",
+      "choices": 426,
+      "eligible": 0,
+      "responses": 346,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          38980,
+          38980,
+          36940,
+          37230
+        ],
+        "meals": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 34,
+      "source025": 17,
+      "mode": "Baseline",
+      "choices": 378,
+      "eligible": 7,
+      "responses": 354,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 0,
+          "Prepared": 4,
+          "Failed": 0
+        },
+        "hunger_area": [
+          36600,
+          37230,
+          38980,
+          36090
+        ],
+        "meals": [
+          1,
+          1,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "row": 35,
+      "source025": 17,
+      "mode": "ProjectedNeed",
+      "choices": 360,
+      "eligible": 4,
+      "responses": 336,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 0,
+          "Prepared": 4,
+          "Failed": 0
+        },
+        "hunger_area": [
+          36600,
+          37230,
+          38980,
+          36090
+        ],
+        "meals": [
+          1,
+          1,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "row": 36,
+      "source025": 18,
+      "mode": "Baseline",
+      "choices": 132,
+      "eligible": 0,
+      "responses": 85,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          10180,
+          8140,
+          6495,
+          7600
+        ],
+        "meals": [
+          0,
+          1,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "row": 37,
+      "source025": 18,
+      "mode": "ProjectedNeed",
+      "choices": 132,
+      "eligible": 0,
+      "responses": 85,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          10180,
+          8140,
+          6495,
+          7600
+        ],
+        "meals": [
+          0,
+          1,
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "row": 38,
+      "source025": 19,
+      "mode": "Baseline",
+      "choices": 138,
+      "eligible": 16,
+      "responses": 61,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 0,
+          "Prepared": 4,
+          "Failed": 0
+        },
+        "hunger_area": [
+          8220,
+          5820,
+          4330,
+          6120
+        ],
+        "meals": [
+          1,
+          5,
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "row": 39,
+      "source025": 19,
+      "mode": "ProjectedNeed",
+      "choices": 159,
+      "eligible": 8,
+      "responses": 69,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 3,
+          "Prepared": 4,
+          "Failed": 3
+        },
+        "hunger_area": [
+          8420,
+          5400,
+          4980,
+          6465
+        ],
+        "meals": [
+          1,
+          6,
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "row": 40,
+      "source025": 20,
+      "mode": "Baseline",
+      "choices": 129,
+      "eligible": 0,
+      "responses": 91,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          8700,
+          8350,
+          8700,
+          8350
+        ],
+        "meals": [
+          0,
+          2,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "row": 41,
+      "source025": 20,
+      "mode": "ProjectedNeed",
+      "choices": 129,
+      "eligible": 0,
+      "responses": 91,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          8700,
+          8350,
+          8700,
+          8350
+        ],
+        "meals": [
+          0,
+          2,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "row": 42,
+      "source025": 21,
+      "mode": "Baseline",
+      "choices": 130,
+      "eligible": 14,
+      "responses": 77,
+      "physical": {
+        "outcomes": {
+          "Extracted": 2,
+          "Insufficient": 3,
+          "Prepared": 2,
+          "Failed": 3
+        },
+        "hunger_area": [
+          8700,
+          6340,
+          6320,
+          8350
+        ],
+        "meals": [
+          0,
+          3,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "row": 43,
+      "source025": 21,
+      "mode": "ProjectedNeed",
+      "choices": 181,
+      "eligible": 7,
+      "responses": 83,
+      "physical": {
+        "outcomes": {
+          "Extracted": 2,
+          "Insufficient": 2,
+          "Prepared": 2,
+          "Failed": 2
+        },
+        "hunger_area": [
+          7220,
+          8350,
+          7950,
+          8350
+        ],
+        "meals": [
+          1,
+          2,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "row": 44,
+      "source025": 22,
+      "mode": "Baseline",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 45,
+      "source025": 22,
+      "mode": "ProjectedNeed",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 46,
+      "source025": 23,
+      "mode": "Baseline",
+      "choices": 53,
+      "eligible": 25,
+      "responses": 31,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          12020,
+          12060,
+          12060,
+          12060
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 47,
+      "source025": 23,
+      "mode": "ProjectedNeed",
+      "choices": 76,
+      "eligible": 4,
+      "responses": 64,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 0,
+          "Prepared": 4,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12020,
+          12020,
+          12020,
+          12020
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 48,
+      "source025": 24,
+      "mode": "Baseline",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 49,
+      "source025": 24,
+      "mode": "ProjectedNeed",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 50,
+      "source025": 25,
+      "mode": "Baseline",
+      "choices": 88,
+      "eligible": 8,
+      "responses": 72,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          11860,
+          11860,
+          11860,
+          11860
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 51,
+      "source025": 25,
+      "mode": "ProjectedNeed",
+      "choices": 88,
+      "eligible": 8,
+      "responses": 72,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          11860,
+          11860,
+          11860,
+          11860
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 52,
+      "source025": 26,
+      "mode": "Baseline",
+      "choices": 8,
+      "eligible": 0,
+      "responses": 4,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          3400,
+          3400,
+          3400,
+          3400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 53,
+      "source025": 26,
+      "mode": "ProjectedNeed",
+      "choices": 8,
+      "eligible": 0,
+      "responses": 4,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          3400,
+          3400,
+          3400,
+          3400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 54,
+      "source025": 27,
+      "mode": "Baseline",
+      "choices": 4,
+      "eligible": 4,
+      "responses": 0,
+      "physical": {
+        "outcomes": {
+          "Extracted": 1,
+          "Insufficient": 3,
+          "Prepared": 1,
+          "Failed": 3
+        },
+        "hunger_area": [
+          3400,
+          3400,
+          3400,
+          3400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 55,
+      "source025": 27,
+      "mode": "ProjectedNeed",
+      "choices": 4,
+      "eligible": 4,
+      "responses": 0,
+      "physical": {
+        "outcomes": {
+          "Extracted": 1,
+          "Insufficient": 3,
+          "Prepared": 1,
+          "Failed": 3
+        },
+        "hunger_area": [
+          3400,
+          3400,
+          3400,
+          3400
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 56,
+      "source025": 28,
+      "mode": "Baseline",
+      "choices": 4,
+      "eligible": 0,
+      "responses": 2,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          3200,
+          3200,
+          3200,
+          3200
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 57,
+      "source025": 28,
+      "mode": "ProjectedNeed",
+      "choices": 4,
+      "eligible": 0,
+      "responses": 2,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          3200,
+          3200,
+          3200,
+          3200
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 58,
+      "source025": 29,
+      "mode": "Baseline",
+      "choices": 4,
+      "eligible": 4,
+      "responses": 0,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 0,
+          "Prepared": 4,
+          "Failed": 0
+        },
+        "hunger_area": [
+          3200,
+          3200,
+          3200,
+          3200
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 59,
+      "source025": 29,
+      "mode": "ProjectedNeed",
+      "choices": 4,
+      "eligible": 4,
+      "responses": 0,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 0,
+          "Prepared": 4,
+          "Failed": 0
+        },
+        "hunger_area": [
+          3200,
+          3200,
+          3200,
+          3200
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 60,
+      "source025": 30,
+      "mode": "Baseline",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 61,
+      "source025": 30,
+      "mode": "ProjectedNeed",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 62,
+      "source025": 31,
+      "mode": "Baseline",
+      "choices": 104,
+      "eligible": 8,
+      "responses": 84,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          11620,
+          11620,
+          11620,
+          11620
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 63,
+      "source025": 31,
+      "mode": "ProjectedNeed",
+      "choices": 104,
+      "eligible": 8,
+      "responses": 84,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          11620,
+          11620,
+          11620,
+          11620
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 64,
+      "source025": 32,
+      "mode": "Baseline",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 65,
+      "source025": 32,
+      "mode": "ProjectedNeed",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 66,
+      "source025": 33,
+      "mode": "Baseline",
+      "choices": 104,
+      "eligible": 8,
+      "responses": 84,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          11620,
+          11620,
+          11620,
+          11620
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 67,
+      "source025": 33,
+      "mode": "ProjectedNeed",
+      "choices": 104,
+      "eligible": 8,
+      "responses": 84,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          11620,
+          11620,
+          11620,
+          11620
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 68,
+      "source025": 34,
+      "mode": "Baseline",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 69,
+      "source025": 34,
+      "mode": "ProjectedNeed",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 70,
+      "source025": 35,
+      "mode": "Baseline",
+      "choices": 102,
+      "eligible": 8,
+      "responses": 86,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          11620,
+          11620,
+          11620,
+          11620
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 71,
+      "source025": 35,
+      "mode": "ProjectedNeed",
+      "choices": 102,
+      "eligible": 8,
+      "responses": 86,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          11620,
+          11620,
+          11620,
+          11620
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 72,
+      "source025": 36,
+      "mode": "Baseline",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 73,
+      "source025": 36,
+      "mode": "ProjectedNeed",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 74,
+      "source025": 37,
+      "mode": "Baseline",
+      "choices": 104,
+      "eligible": 8,
+      "responses": 84,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          11620,
+          11620,
+          11620,
+          11620
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 75,
+      "source025": 37,
+      "mode": "ProjectedNeed",
+      "choices": 104,
+      "eligible": 8,
+      "responses": 84,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          11620,
+          11620,
+          11620,
+          11620
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 76,
+      "source025": 38,
+      "mode": "Baseline",
+      "choices": 220,
+      "eligible": 0,
+      "responses": 165,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          19780,
+          15940,
+          19780,
+          13915
+        ],
+        "meals": [
+          0,
+          2,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "row": 77,
+      "source025": 38,
+      "mode": "ProjectedNeed",
+      "choices": 220,
+      "eligible": 0,
+      "responses": 165,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          19780,
+          15940,
+          19780,
+          13915
+        ],
+        "meals": [
+          0,
+          2,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "row": 78,
+      "source025": 39,
+      "mode": "Baseline",
+      "choices": 263,
+      "eligible": 18,
+      "responses": 160,
+      "physical": {
+        "outcomes": {
+          "Extracted": 8,
+          "Insufficient": 0,
+          "Prepared": 8,
+          "Failed": 0
+        },
+        "hunger_area": [
+          15735,
+          13620,
+          11920,
+          12160
+        ],
+        "meals": [
+          2,
+          5,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "row": 79,
+      "source025": 39,
+      "mode": "ProjectedNeed",
+      "choices": 253,
+      "eligible": 10,
+      "responses": 159,
+      "physical": {
+        "outcomes": {
+          "Extracted": 8,
+          "Insufficient": 2,
+          "Prepared": 8,
+          "Failed": 2
+        },
+        "hunger_area": [
+          14265,
+          13660,
+          13020,
+          10935
+        ],
+        "meals": [
+          3,
+          5,
+          3,
+          9
+        ]
+      }
+    },
+    {
+      "row": 80,
+      "source025": 40,
+      "mode": "Baseline",
+      "choices": 421,
+      "eligible": 0,
+      "responses": 345,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          38980,
+          38980,
+          36940,
+          36470
+        ],
+        "meals": [
+          0,
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "row": 81,
+      "source025": 40,
+      "mode": "ProjectedNeed",
+      "choices": 421,
+      "eligible": 0,
+      "responses": 345,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          38980,
+          38980,
+          36940,
+          36470
+        ],
+        "meals": [
+          0,
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "row": 82,
+      "source025": 41,
+      "mode": "Baseline",
+      "choices": 428,
+      "eligible": 28,
+      "responses": 366,
+      "physical": {
+        "outcomes": {
+          "Extracted": 6,
+          "Insufficient": 0,
+          "Prepared": 6,
+          "Failed": 0
+        },
+        "hunger_area": [
+          34500,
+          34590,
+          33750,
+          34940
+        ],
+        "meals": [
+          2,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "row": 83,
+      "source025": 41,
+      "mode": "ProjectedNeed",
+      "choices": 404,
+      "eligible": 9,
+      "responses": 346,
+      "physical": {
+        "outcomes": {
+          "Extracted": 8,
+          "Insufficient": 1,
+          "Prepared": 8,
+          "Failed": 1
+        },
+        "hunger_area": [
+          34980,
+          33940,
+          34420,
+          34520
+        ],
+        "meals": [
+          2,
+          3,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "row": 84,
+      "source025": 42,
+      "mode": "Baseline",
+      "choices": 852,
+      "eligible": 0,
+      "responses": 688,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          77380,
+          77380,
+          75340,
+          75630
+        ],
+        "meals": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 85,
+      "source025": 42,
+      "mode": "ProjectedNeed",
+      "choices": 852,
+      "eligible": 0,
+      "responses": 688,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          77380,
+          77380,
+          75340,
+          75630
+        ],
+        "meals": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 86,
+      "source025": 43,
+      "mode": "Baseline",
+      "choices": 821,
+      "eligible": 21,
+      "responses": 741,
+      "physical": {
+        "outcomes": {
+          "Extracted": 8,
+          "Insufficient": 2,
+          "Prepared": 8,
+          "Failed": 2
+        },
+        "hunger_area": [
+          73520,
+          73830,
+          71185,
+          71790
+        ],
+        "meals": [
+          2,
+          2,
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "row": 87,
+      "source025": 43,
+      "mode": "ProjectedNeed",
+      "choices": 753,
+      "eligible": 9,
+      "responses": 706,
+      "physical": {
+        "outcomes": {
+          "Extracted": 8,
+          "Insufficient": 1,
+          "Prepared": 8,
+          "Failed": 1
+        },
+        "hunger_area": [
+          75000,
+          73050,
+          75380,
+          72620
+        ],
+        "meals": [
+          1,
+          3,
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "row": 88,
+      "source025": 44,
+      "mode": "Baseline",
+      "choices": 142,
+      "eligible": 0,
+      "responses": 102,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          8700,
+          8700,
+          8700,
+          8700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 89,
+      "source025": 44,
+      "mode": "ProjectedNeed",
+      "choices": 142,
+      "eligible": 0,
+      "responses": 102,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          8700,
+          8700,
+          8700,
+          8700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 90,
+      "source025": 45,
+      "mode": "Baseline",
+      "choices": 142,
+      "eligible": 0,
+      "responses": 102,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          8700,
+          8700,
+          8700,
+          8700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 91,
+      "source025": 45,
+      "mode": "ProjectedNeed",
+      "choices": 142,
+      "eligible": 0,
+      "responses": 102,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          8700,
+          8700,
+          8700,
+          8700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 92,
+      "source025": 46,
+      "mode": "Baseline",
+      "choices": 89,
+      "eligible": 0,
+      "responses": 87,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          10180,
+          10180,
+          8140,
+          10180
+        ],
+        "meals": [
+          0,
+          0,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "row": 93,
+      "source025": 46,
+      "mode": "ProjectedNeed",
+      "choices": 89,
+      "eligible": 0,
+      "responses": 87,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          10180,
+          10180,
+          8140,
+          10180
+        ],
+        "meals": [
+          0,
+          0,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "row": 94,
+      "source025": 47,
+      "mode": "Baseline",
+      "choices": 92,
+      "eligible": 4,
+      "responses": 80,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 0,
+          "Prepared": 4,
+          "Failed": 0
+        },
+        "hunger_area": [
+          7000,
+          10180,
+          7000,
+          10180
+        ],
+        "meals": [
+          2,
+          0,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "row": 95,
+      "source025": 47,
+      "mode": "ProjectedNeed",
+      "choices": 92,
+      "eligible": 4,
+      "responses": 80,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 0,
+          "Prepared": 4,
+          "Failed": 0
+        },
+        "hunger_area": [
+          7000,
+          10180,
+          7000,
+          10180
+        ],
+        "meals": [
+          2,
+          0,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "row": 96,
+      "source025": 48,
+      "mode": "Baseline",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 97,
+      "source025": 48,
+      "mode": "ProjectedNeed",
+      "choices": 100,
+      "eligible": 0,
+      "responses": 96,
+      "physical": {
+        "outcomes": {
+          "Extracted": 0,
+          "Insufficient": 0,
+          "Prepared": 0,
+          "Failed": 0
+        },
+        "hunger_area": [
+          12700,
+          12700,
+          12700,
+          12700
+        ],
+        "meals": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "row": 98,
+      "source025": 49,
+      "mode": "Baseline",
+      "choices": 104,
+      "eligible": 8,
+      "responses": 84,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          11620,
+          11620,
+          11620,
+          11620
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "row": 99,
+      "source025": 49,
+      "mode": "ProjectedNeed",
+      "choices": 104,
+      "eligible": 8,
+      "responses": 84,
+      "physical": {
+        "outcomes": {
+          "Extracted": 4,
+          "Insufficient": 4,
+          "Prepared": 4,
+          "Failed": 4
+        },
+        "hunger_area": [
+          11620,
+          11620,
+          11620,
+          11620
+        ],
+        "meals": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "total_worlds": 100,
+  "eligible_by_mode": {
+    "Baseline": 212,
+    "ProjectedNeed": 133
+  },
+  "response_extensions": [
+    {
+      "row": 43,
+      "references": [
+        {
+          "boundary": 5,
+          "response": 0,
+          "owner": 0,
+          "tick": 9,
+          "outgoing": {
+            "Invite": {
+              "recipient": 2,
+              "kind": "Inquiry"
+            }
+          }
+        },
+        {
+          "boundary": 13,
+          "response": 0,
+          "owner": 0,
+          "tick": 17,
+          "outgoing": {
+            "Invite": {
+              "recipient": 2,
+              "kind": "Inquiry"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "decision": "ACCEPT WITH QUALIFICATION",
+  "qualification": "Finite causal existence only; v1 failed43, C1 prospective undefined-domain extension, I1 post-run transport. Full physical/cognitive/consent reconstruction and native replay are separate mandatory gates; no utility/default adoption.",
+  "scalar_monotonicity_cases": 3333,
+  "scratch_corruptions_rejected": [
+    "hunger",
+    "score",
+    "duration",
+    "eligibility",
+    "candidate_order",
+    "selected"
+  ]
+}
