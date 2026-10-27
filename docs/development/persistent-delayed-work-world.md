@@ -1,5 +1,16 @@
 # Persistent delayed-work world — prospective engineering contract
 
+Current acceptance: **PASS WITH QUALIFICATION** for headless registered100
+continuity. The prospective text below is the original design record.
+[Final A–K report](persistent-delayed-work-final-report.md),
+[30-point audit](persistent-delayed-work-completion-audit.md),
+[exact100/1523 state audit](persistent-delayed-work-validation.json).
+All4905 campaign CLI invocations complete;independent resumed reconstruction,
+explicit recovery,raw/zlib,corruptions and measurements pass. No default adoption,
+new policy,027,GUI/canon/ecology/population/horizon change. Older pending statements
+below record their milestone time;the final report establishes current status.
+
+
 Starting revision: `6b05b388afc995bc9615db595e0c683dae04cf67`.
 User program attachment6381b346. Headless continuation engineering, not027.
 Implementation is conditional on independent026 acceptance and the complete additive

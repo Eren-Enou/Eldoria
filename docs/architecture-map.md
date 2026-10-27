@@ -11,7 +11,11 @@ Headless persistent C1 successor: `prototypes/persistent-delayed-work-world/`.
 [CLI](../prototypes/persistent-delayed-work-world/README.md). Exact100 original C1
 uninterrupted histories and16 source-stable tests pass; independent runtime
 identity recomputation passes. Existing Session/recovery/codec and025 physics are
-reused. Real CLI-process campaign and performance are pending, not GUI acceptance.
+reused. Headless acceptance passes100 resumed originals/1523 complete-state splits/
+4905 CLI invocations,independent reconstruction,recovery/corruption and costs.
+[Final report](development/persistent-delayed-work-final-report.md),
+[acceptance audit](development/persistent-delayed-work-completion-audit.md).
+Growing observer costs and finite boundary coverage remain;no GUI acceptance.
 
 
 Active material continuation engineering: `prototypes/persistent-material-world/`
@@ -65,7 +69,7 @@ accepts with qualification after fresh100-world scalar/material/need and isolate
 native verification. Qualified001–026 protection is activated after fresh full inherited/scientific
 constituent gates:495 portable/512 raw originals/93 custody bindings.
 [Contract](experiment-contract-001-026.md),[audit](integrity-audit-001-026.md);
-active command `validate026_foundation`. No persistent026 implementation yet. [Prospective source-preserving design](development/persistent-delayed-work-world.md)
+active command `validate026_foundation`. Persistent026 headless continuity now passes; see the final engineering report above. [Prospective source-preserving design](development/persistent-delayed-work-world.md)
 reuses material continuation/Session/recovery with exact C1 valuation/response logic.
 No new experiment, default adoption or GUI acceptance.
 
@@ -76,8 +80,9 @@ No new experiment, default adoption or GUI acceptance.
 attribution qualifications, failed19, stale failures, harm and nulls. Run the full
 `validate025_foundation`; its first stage is the unmodified historical
 `validate_contract`001–024. Source locks forbid editing that historical entry.
-No mechanism is adopted.026 design is prospective;
-see the [checkpoint](development/continuation-checkpoint.md).
+No mechanism is adopted.026 qualified protection and headless persistence are now
+completed;see the [final report](development/persistent-delayed-work-final-report.md)
+and [checkpoint](development/continuation-checkpoint.md).
 
 ## Experiment025: protected qualified research, unadopted
 

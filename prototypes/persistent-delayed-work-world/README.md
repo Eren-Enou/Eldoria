@@ -3,7 +3,10 @@
 Engineering successor for the exact accepted026 C1 mechanism. This is not027,
 policy adoption, a new simulator, a GUI release or a horizon extension. Current
 acceptance is recorded in docs/development/persistent-delayed-work-world.md and
-the continuation checkpoint; the presence of these commands alone is not a pass.
+the continuation checkpoint. Headless acceptance passes100 original/resumed
+histories,1523 complete-state comparisons,4905 CLI invocations,independent reading,
+explicit recovery/corruption and measured costs. Finite boundary/configuration
+coverage and growing observer storage remain qualifications.
 
 Build from repository root:
 

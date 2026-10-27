@@ -43,12 +43,21 @@ qualified C1 and Stage B activates qualified001–026 protection. The full activ
 entrypoint is `cargo run --release --locked -j 1 --example validate026_foundation`.
 See docs/experiment-contract-001-026.md and docs/integrity-audit-001-026.md;495 portable,
 512 raw originals and93 additional source/review/evidence bindings are guarded.
-Existing older commands/contracts remain unchanged. Persistent runtime gates remain
-pending. This supersedes historical no026-protection statements below. Preserve v1 failure/C1
+Existing older commands/contracts remain unchanged. Persistent C1 is now accepted
+for headless registered100 continuity:100 exact original/resumed histories,1523
+complete-state splits,4905 CLI invocations,independent reconstruction and explicit
+recovery/corruption gates pass. See docs/development/persistent-delayed-work-final-report.md.
+Runtime6c03911fec8142326d391fda7f088b69b782000a191bf78679ba4a4aa9bc1b64;
+prototypes/persistent-delayed-work-world uses a unique package/target/schema and
+explicit mode. Old hosts/defaults unchanged; no arbitrary migrations or GUI claim.
+Preserve growing observer-cost qualification and the81 actual report-crossing
+worlds; the pause selector's absolute buckets are not every start-relative report.
+Do not begin027 or extend policy, ecology, population or horizons.
+ This supersedes historical no026-protection statements below. Preserve v1 failure/C1
 prospective correction/I1 post-run build isolation as distinct histories.
 
 
-Current program: attachment4adb272a independently reviews and conditionally
+Earlier program (historical boundaries): attachment4adb272a independently reviews and conditionally
 protects qualified025, then prospectively studies026 delayed-work valuation.
 See docs/experiment-025-foundation-review.md, docs/experiment-contract-001-025.md
 and docs/integrity-audit-001-025.md. The455-entry inventory inherits408 unchanged

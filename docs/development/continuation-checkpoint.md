@@ -1,47 +1,50 @@
-# Persistent decision-making — verified runtime/parity milestone
+# Persistent decision-making — completed headless acceptance
 
-Objective attachment6381b346; initial6b05b388afc995bc9615db595e0c683dae04cf67.
-Pre-runtime-publication HEAD09e5965ef133103867d1b42be54f31317bec756f, remote verified.
-The commit adding this checkpoint is the runtime/parity publication (resolve via
-git log -1 --format=%H -- docs/development/continuation-checkpoint.md).
+Objective:user attachment6381b346;start6b05b388afc995bc9615db595e0c683dae04cf67.
+Exact pre-final-report HEADbcba23414bb60ffce6b9e2560750beac965bf345,origin/main verified.
+Resolve the commit adding this checkpoint for final handoff publication.
 
-Published review a74d045a46f0b466a2c71581afeedf89d3a37b8e ACCEPT WITH QUALIFICATION.
-Qualified protection ab96bd237ea1582a2fb5bd0922e3cb9a41820768:001–026,
-495 portable/512 raw originals/93 custody bindings. Architecture09e5965.
-V1 remains failed at43; C1 prospective extension and I1 post-run isolation are
-separate. All original science unchanged. Frozen C1 source7039076f147e173359e4c3099e35de9ccd4e9a590fd54ad2960c2b64f76f21c5.
+Protected endpoint001–026 with qualification. Independent review a74d045;
+qualified protection ab96bd237ea1582a2fb5bd0922e3cb9a41820768;
+architecture09e5965ef133103867d1b42be54f31317bec756f;
+runtime/paritybb4bd50da14080a2bea0a1a90d9532b01cb321ac;
+process/recovery evidencebcba23414bb60ffce6b9e2560750beac965bf345.
+All earlier milestones pushed and remote-verified. No force-push/unrelated work.
 
-Actual full single-command validate026_foundation passed session98735 exit0;
-receipt experiment-026-full-foundation-validation.json. Full inherited001–025,
-isolated original43 failure/exact100 C1 and independent100/50pairs/17corruptions,
-additive custody and fresh100 arithmetic/material/need review all executed.
-Root fmt/Clippy/217 tests pass; existing material14/canonical33 suites pass.
+V1 remains a failed43-row producer;C1 prospective extension and post-run I1
+transport remain separate. No scientific prose/output/source rewritten.
+Frozen C1 source7039076f147e173359e4c3099e35de9ccd4e9a590fd54ad2960c2b64f76f21c5.
+New persistent runtime6c03911fec8142326d391fda7f088b69b782000a191bf78679ba4a4aa9bc1b64,
+schema woi-delayed-work-world-checkpoint/v1,unique package/target,explicit mode.
+Original physics/rank/response/storage/recovery source reused with counted seams.
 
-New isolated package prototypes/persistent-delayed-work-world/:
-Runtime6c03911fec8142326d391fda7f088b69b782000a191bf78679ba4a4aa9bc1b64,
-checkpoint woi-delayed-work-world-checkpoint/v1. Exact original C1 rank/response,
-025 physics and generated canonical Session/recovery/codec; explicit saved mode/
-policy identity and independent local/need/episode/pending checks. Observer output
-wraps canonical C1 projection plus actual engineering runtime metadata.
+COMPLETED:root fmt/Clippy/217 tests;old material14/canonical33;new16 all-target
+release tests/fmt/private fmt/Clippy/build;fresh full validate026_foundation;
+native100 original histories;independent runtime regeneration;all100 real-process
+worlds/1523 complete-state comparisons/4905 CLI invocations;independent resumed100
+reconstruction;readonly original/state audit;21 dual rehashed semantic controls,
+4 outer faults,incomplete pending detection,corrupt-newest explicit recovery,
+raw/zlib equality,parent/excluded-tail preservation and actual CLI walkthrough.
+Sessions98735/28580/65454/58520/3461 all exit0. Development failures retained and
+corrected without behavior changes. No failed acceptance gate remains.
 
-Stable pipeline session28580 exit0: fmt/private fmt/locked all-target Clippy,
-release all-target16 tests, release native CLI build. Native100 original archive
-parity and independent source regeneration identity pass session65454 exit0.
-Receipt persistent-delayed-work-parity-validation.json. All100 in-process splits
-also pass. Original failed dev logs retained; raw-reader coverage and no-op-save
-fixture corrected with no behavioral change. Development-failures receipt/log.
+Detailed evidence: persistent-delayed-work-final-report.md (A–K),
+persistent-delayed-work-completion-audit.md (all30), validation.json,
+process-validation.json,parity-validation.json,cli-validation.json and performance.json
+(all persistent-delayed-work prefixes). Full framework output/logs ignored under
+C:/Users/Aaron/Eldoria/target/persistent-C1-process-1793063934049789100 and
+ target/persistent026-*.log. Framework SHA09edd60e2df28e0b3ca7bed915225082605fee81f27e1221edf06b6deb8449f4
+recorded before execution;unchanged throughout. Receipts/source published afterward.
 
-NEXT: verify runtime publication remote, then run
-python -B examples/support/validate_persistent_delayed_work.py --binary
-C:/Users/Aaron/Eldoria/target/persistent-delayed-work-world/release/woi-persistent-delayed-work-world.exe
---output NEW-ABSOLUTE-IGNORED-TARGET-DIR
-The harness starts with100 parity, then real processes for all100, full-state hashes,
-terminal equality, independent resumed C1 reconstruction, phase/pending/report/
-cutoff/drain, explicit recovery, storage faults, raw/zlib and costs. NOT run yet.
-No real-process readiness or performance claimed. Review every failure; never
-regenerate protected science or weaken assertions. Framework writes fresh dirs.
+Qualifications:registered100/finite legal boundaries,not arbitrary future worlds;
+81 independently observed actual report crossings (absolute-bucket selector does
+not align all start-relative reports);atomic inquiries indivisible;strict source/
+schema,no general migration;no new-mode power-loss/force-kill claim. Core100 world
+storage1,274,590,222 logical bytes;peak native verification894,115,840 bytes.
+Cognition keeps old bounds;observer histories/generations grow. No utility/adoption.
 
-After campaign: publish real-process/recovery evidence and costs, final30-point
-acceptance/A–K handoff, verify unchanged source/archive and remote/clean status,
-complete goal and stop. No027, default adoption, GUI/computer control, canon,
-renewal, population or horizon extension. No subagents. Headless only.
+NEXT:finish final documentation/diff/archive checks,commit/push final acceptance,
+verify remote and clean status,mark goal complete and stop. No027,GUI/computer
+control,canon,default adoption,new policy,renewal,population or horizon extension.
+Strong next scientific question:learning actual personal delayed-work use/need
+relief from legitimate local experience. Do not implement it automatically.

@@ -421,4 +421,9 @@ activates protection after complete inherited validation:495 portable,512 raw
 originals,93 custody bindings. Preserve v1 failure/C1 chronology/I1 post-run
 qualification, adverse/null cases and unadopted default. This supersedes original
 delivery-era unprotected status without editing any original scientific report.
-Persistent026 engineering is separate and not yet implemented; no027/GUI/canon.
+Persistent026 engineering is separate and now accepted for headless registered100
+continuity:100 original/resumed histories,1523 complete-state splits,4905 CLI
+invocations,independent reconstruction and explicit recovery/storage controls.
+[Final report](../development/persistent-delayed-work-final-report.md).
+No new scientific policy,027,default adoption,GUI or canon change. Costs and81
+actual reporting-crossing worlds remain explicit qualifications.
