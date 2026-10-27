@@ -1,0 +1,11 @@
+{
+  "registration_revision": "f7eead060e7dd692ab02683335c96174345bcb02",
+  "runtime_revision": "44baa38491b1e522b01f0490e3becc33fee3e3cf",
+  "pre_treatment_qualification_revision": "45fda9f",
+  "source": "39cb0afcbd4c3dadbbac3c655687f82f77426b43060e5eea852b3301cf5c9c66",
+  "baseline_exact": 50,
+  "inherited_exact": 100,
+  "host_tests": 14,
+  "release_lineage": "dedicated target/material-experience; native ID equals independent generator/current source",
+  "treatment_executed": false
+}
