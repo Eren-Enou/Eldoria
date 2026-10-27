@@ -410,3 +410,15 @@ Independent100-world reconstruction,50 comparisons,17 corruptions and exact repl
 pass through `validate026_c1_isolated`; exact43-row original panic is also required.
 Post-run I1 isolates same-name Cargo hosts without changing frozen scientific logic.
 See [verification](../../experiments/026/verification.md). No027 or canon change.
+
+
+###026 independent consolidation and qualified protection
+
+The [fresh review](../experiment-026-review.md) ACCEPTS WITH QUALIFICATION after
+independent100-world arithmetic/material/need reconstruction and fresh isolated
+native/cognitive/consent gate. The [additive001–026 audit](../integrity-audit-001-026.md)
+activates protection after complete inherited validation:495 portable,512 raw
+originals,93 custody bindings. Preserve v1 failure/C1 chronology/I1 post-run
+qualification, adverse/null cases and unadopted default. This supersedes original
+delivery-era unprotected status without editing any original scientific report.
+Persistent026 engineering is separate and not yet implemented; no027/GUI/canon.

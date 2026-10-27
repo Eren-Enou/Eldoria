@@ -1,6 +1,6 @@
 # Architecture map
 
-Navigation summary, protected through025. Source and mode-specific
+Navigation summary, protected through026 with qualification. Source and mode-specific
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
@@ -54,8 +54,10 @@ and prior desktop/browser limitations; the portable report records current deliv
 
 New headless continuation program6381b346: [independent026 review](experiment-026-review.md)
 accepts with qualification after fresh100-world scalar/material/need and isolated
-native verification. Conditional001–026 protection is pending the complete inherited
-gate. No persistent026 implementation yet. [Prospective source-preserving design](development/persistent-delayed-work-world.md)
+native verification. Qualified001–026 protection is activated after fresh full inherited/scientific
+constituent gates:495 portable/512 raw originals/93 custody bindings.
+[Contract](experiment-contract-001-026.md),[audit](integrity-audit-001-026.md);
+active command `validate026_foundation`. No persistent026 implementation yet. [Prospective source-preserving design](development/persistent-delayed-work-world.md)
 reuses material continuation/Session/recovery with exact C1 valuation/response logic.
 No new experiment, default adoption or GUI acceptance.
 

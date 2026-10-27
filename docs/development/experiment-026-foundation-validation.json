@@ -1,0 +1,87 @@
+{
+  "schema": "foundation026-activation/v1",
+  "review_revision": "a74d045a46f0b466a2c71581afeedf89d3a37b8e",
+  "decision": "ACTIVATE qualified001\u2013026;no default adoption",
+  "inventory": {
+    "portable": 495,
+    "inherited": 455,
+    "added_original026": 40,
+    "raw_originals": 512,
+    "source_review_evidence_bindings": 93
+  },
+  "executed_checks": {
+    "validate025_foundation": 0,
+    "validate026_c1_isolated": 0,
+    "foundation026_python": 0,
+    "new_driver_release_build": 0,
+    "new_driver_fmt": 0,
+    "new_driver_clippy": 0,
+    "root_tests": 217,
+    "root_tests_exit": 0,
+    "manifest_layout_faults": 3,
+    "protected_content_faults": 2
+  },
+  "root_checks": [
+    {
+      "check": "fmt",
+      "exit": 0,
+      "seconds": 1.3280000002123415
+    },
+    {
+      "check": "clippy",
+      "exit": 0,
+      "seconds": 0.9849999998696148
+    },
+    {
+      "check": "tests",
+      "exit": 0,
+      "seconds": 137.25
+    }
+  ],
+  "existing_persistence_checks": [
+    {
+      "check": "persistent-material",
+      "command": [
+        "cargo",
+        "test",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/persistent-material-world/Cargo.toml",
+        "--target-dir",
+        "prototypes/persistent-world/target",
+        "--all-targets"
+      ],
+      "exit": 0,
+      "seconds": 51.57799999997951
+    },
+    {
+      "check": "persistent-canonical",
+      "command": [
+        "cargo",
+        "test",
+        "--release",
+        "--locked",
+        "-j",
+        "1",
+        "--manifest-path",
+        "prototypes/persistent-world/Cargo.toml",
+        "--target-dir",
+        "prototypes/persistent-world/target",
+        "--all-targets"
+      ],
+      "exit": 0,
+      "seconds": 671.469000000041
+    }
+  ],
+  "log_sha256": {
+    "target/persistent026-foundation-inherited.log": "c4e491edea1a6ebbbe72b5d04294ee486388b123697fdffbc24a74668b360870",
+    "target/persistent026-review-isolated.log": "f7475b4f2d21466d418c874e85c17415162a653d2587099c4d783342bb0ec943",
+    "target/persistent026-additive-identity.log": "97e2b56d2480d635fee404eef289ea143bd9f2da782e38e9867e760d256077ed",
+    "target/persistent026-foundation-driver-build.log": "ac476d45ce8553d3a776d780d4f3230081f6db58626eac14c5e9b1bc2c99b25c",
+    "target/persistent026-foundation-driver-clippy.log": "fdb94b16cb33206206dc16c7c36aa95bd645bcdb86e5ec1f4ae22787ac759036"
+  },
+  "execution_scope": "Full inherited gate and all additive/scientific constituents executed freshly as separate read-only commands at unchanged protected source. The newly built single-command composite front door has not yet been invoked; it will also execute before final program completion. No cached gate substituted."
+}

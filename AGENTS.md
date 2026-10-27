@@ -39,7 +39,12 @@ successor. This supersedes prior prohibitions on persistent026 integration only
 within the new gated program. No027, default adoption, GUI/computer control, canon,
 renewal, population or horizon extension. See the current checkpoint and
 `docs/development/persistent-delayed-work-world.md`. Stage A independently accepts
-qualified C1; protection/runtime gates remain pending. Preserve v1 failure/C1
+qualified C1 and Stage B activates qualified001–026 protection. The full active
+entrypoint is `cargo run --release --locked -j 1 --example validate026_foundation`.
+See docs/experiment-contract-001-026.md and docs/integrity-audit-001-026.md;495 portable,
+512 raw originals and93 additional source/review/evidence bindings are guarded.
+Existing older commands/contracts remain unchanged. Persistent runtime gates remain
+pending. This supersedes historical no026-protection statements below. Preserve v1 failure/C1
 prospective correction/I1 post-run build isolation as distinct histories.
 
 
