@@ -6,6 +6,14 @@ rows when ownership, entry points or mode boundaries change.
 
 ## Human Rust workbench and portable delivery
 
+Headless persistent C1 successor: `prototypes/persistent-delayed-work-world/`.
+[Architecture/status](development/persistent-delayed-work-world.md),
+[CLI](../prototypes/persistent-delayed-work-world/README.md). Exact100 original C1
+uninterrupted histories and16 source-stable tests pass; independent runtime
+identity recomputation passes. Existing Session/recovery/codec and025 physics are
+reused. Real CLI-process campaign and performance are pending, not GUI acceptance.
+
+
 Active material continuation engineering: `prototypes/persistent-material-world/`
 reuses the corrected025 observer2 producer and generated canonical Session/recovery
 source. [Prospective contract and evidence](development/persistent-material-world.md).

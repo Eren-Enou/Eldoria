@@ -78,3 +78,38 @@ source identity in the checkpoint. Preserve v1 failure, prospective C1 domain
 extension and post-run I1 transport qualification independently. Review and protect
 research separately from engineering readiness. Publish verified milestones only.
 Stop after persistent exact026 continuity; no027 or automatic next policy.
+
+
+## Implemented C/D milestone (real-process acceptance still pending)
+
+The isolated Rust host now reuses the material generator and exact C1 coordinator,
+rank/response sources with counted reversible seams. Its checkpoint schema is
+woi-delayed-work-world-checkpoint/v1. It saves explicit026 registration and policy
+identity alongside original typed material/physical/cognitive state. No legacy
+host/schema, physical law, scoring, retention or consent changes.
+
+Actual runtime6c03911fec8142326d391fda7f088b69b782000a191bf78679ba4a4aa9bc1b64.
+Independent generation recomputes it exactly; native CLI parity matches all100
+original archived C1 histories. All16 host tests, fmt/private fmt/locked all-target
+Clippy/release build pass, including100-world split equality, raw/zlib recovery,
+rehashed material/local-state faults and observer-only evicted-episode rejection.
+[Receipt](persistent-delayed-work-parity-validation.json). Full assembled001–026
+foundation command also passes; scientific archives and old sources unchanged.
+
+Two development failures are preserved: insufficient raw-verifier corruption
+coverage, corrected with independent need/meal/episode checks, and a fixture
+assuming every Save increments generation, corrected to use the actual generation.
+Neither required simulation changes. See the development failure receipt/log.
+
+Canonical engineering history wraps the exact accepted C1 projection with actual
+runtime identity; it is not relabelled as original producer evidence. Native raw
+verification checks source/mode, journal-bound decisions, local masks/arithmetic/
+ties, pending state, need/meals, episode membership and original material checks.
+It is not a complete cognitive-content validator. Frozen independent C1 reading
+and exact complete state/history equality supply separate behavioral verification.
+
+The [CLI guide](../../prototypes/persistent-delayed-work-world/README.md) is headless.
+Next acceptance: execute examples/support/validate_persistent_delayed_work.py into
+a new absolute target directory, with independent CLI processes across all100
+worlds, actual phase/pending/report/cutoff/drain witnesses, explicit recovery,
+corruptions and separate storage/performance. No real-process readiness claimed yet.

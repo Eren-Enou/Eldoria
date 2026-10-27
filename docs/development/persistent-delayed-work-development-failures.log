@@ -1,0 +1,11 @@
+Log: target/persistent026-host-tests-attempt1.log
+thread 'simulation::adaptive::concurrent::continuous::persistent::semantic_tests::recomputed_hashes_do_not_hide_material_corruption' (125712) panicked at C:\Users\Aaron\Eldoria\prototypes\persistent-delayed-work-world\src\semantic_tests.rs:43:9:
+assertion failed: crate::verification::verify(&encode(&forged).unwrap(), prefix).is_err()
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+Log: target/persistent026-pending-diagnostic.log
+thread 'simulation::adaptive::concurrent::continuous::persistent::semantic_tests::pending_response_and_continue_corruptions_reject_without_repair' (35760) panicked at C:\Users\Aaron\Eldoria\prototypes\persistent-delayed-work-world\src\semantic_tests.rs:217:70:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "The system cannot find the file specified." }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test simulation::adaptive::concurrent::continuous::persistent::semantic_tests::pending_response_and_continue_corruptions_reject_without_repair ... FAILED

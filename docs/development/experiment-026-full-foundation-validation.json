@@ -1,0 +1,11 @@
+{
+  "schema": "foundation026-composite-execution/v1",
+  "revision": "09e5965ef133103867d1b42be54f31317bec756f",
+  "command": "cargo run --release --locked -j 1 --example validate026_foundation",
+  "exit": 0,
+  "scope": "Actual single-command full invocation;unchanged001\u2013025 full gate,isolated frozen C1 v1-failure/native100 replay/independent100/50 comparisons/17 corruption categories,additive495/512/93 custody and fresh100 scalar/material/need review",
+  "log_sha256": "a9dafbd7a930a9e9b16109b2a7699b677f04db95ce0b96af5fde86a5aba23e43",
+  "archive_regeneration": false,
+  "default_adoption": false,
+  "remote_revision_verified": "09e5965ef133103867d1b42be54f31317bec756f"
+}

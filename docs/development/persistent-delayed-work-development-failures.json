@@ -1,0 +1,29 @@
+{
+  "schema": "persistent-C1-development-failures/v1",
+  "scientific_archives_changed": false,
+  "behavior_retuned": false,
+  "attempts": [
+    {
+      "kind": "generator-writing Python quoting error",
+      "disposition": "corrected before generated runtime acceptance; original sources untouched"
+    },
+    {
+      "kind": "independent raw-reader corruption assertion failed",
+      "result": "first release all-target run14 passed/1 failed; source count and return code retained in task log",
+      "log": "target/persistent026-host-tests-attempt1.log",
+      "log_sha256": "24b6646fba1bb05119ed9c1bdacfdeee0d63cc78e3f15263ce72555f88a0d537",
+      "scope": "100 archived uninterrupted parity prerequisite and all100 complete-state splits passed in that run; independent verifier assertion prevents runtime acceptance",
+      "correction": "strengthen new raw reader with independent need/meal integration and episode membership, retain all original corruption assertions; no actor/physical/retention/scoring changes",
+      "status": "corrected;stable-source full16-test run passes"
+    },
+    {
+      "kind": "pending fixture assumed a new generation after no-op save",
+      "diagnostic": "checkpoint-00000003.cbor missing;existing save correctly publishes nothing when unchanged",
+      "log": "target/persistent026-pending-diagnostic.log",
+      "log_sha256": "3631ea02f53b9e7a0bab72363b8fee81f19dc647908382249856a5f8f8c47784",
+      "correction": "fixture reads Session.generation();no storage algorithm changed",
+      "status": "full16-test stable-source rerun passes"
+    }
+  ],
+  "current_status": "All16 host tests/fmt/private-fmt/Clippy/native100 archive parity/source identity recomputation PASS;real-process campaign pending"
+}

@@ -34,3 +34,11 @@ Further persistent026 integration is separately authorized engineering. It must
 prove exact100 original C1 histories and genuine process-restart continuation.
 Do not modify the existing material runtime/schema, adopt a default, begin027,
 control a GUI, change canon, add ecology/population or extend horizons.
+
+
+Subsequent actual composite invocation also PASSED exit0 at architecture revision
+09e5965, including the complete inherited gate, isolated C1 native/independent
+checks and additive review/custody. No cached result substituted. See
+[full-entrypoint receipt](development/experiment-026-full-foundation-validation.json).
+The earlier component-wise activation qualification above records its original
+publication moment; the pending front-door completion item is now satisfied.
