@@ -1,0 +1,753 @@
+{
+  "schema": "persistent-C1-performance-storage/v1",
+  "runtime": "6c03911fec8142326d391fda7f088b69b782000a191bf78679ba4a4aa9bc1b64",
+  "scope": "Wall-clock engineering measurements,not simulation evidence or statistical performance estimates. One Windows campaign;3 warm internal samples per case. Compilation/Python reconstruction excluded from summed CLI durations. Peak is own native child,not total task/world heap.",
+  "cases": [
+    {
+      "row": 3,
+      "source025": 1,
+      "mode": "ProjectedNeed",
+      "internal_samples": [
+        {
+          "boundaries": 129,
+          "checkpoint_seconds": 0.0418324,
+          "original_seconds": 0.0036558,
+          "restore_seconds": 0.0511334,
+          "run_seconds": 0.0048706,
+          "state_bytes": 1779123
+        },
+        {
+          "boundaries": 129,
+          "checkpoint_seconds": 0.0460378,
+          "original_seconds": 0.0046547,
+          "restore_seconds": 0.0596218,
+          "run_seconds": 0.0037827,
+          "state_bytes": 1779123
+        },
+        {
+          "boundaries": 129,
+          "checkpoint_seconds": 0.0440244,
+          "original_seconds": 0.0034737,
+          "restore_seconds": 0.0451948,
+          "run_seconds": 0.0038638,
+          "state_bytes": 1779123
+        }
+      ],
+      "medians": {
+        "run_seconds": 0.0038638,
+        "original_seconds": 0.0036558,
+        "checkpoint_seconds": 0.0440244,
+        "restore_seconds": 0.0511334
+      },
+      "storage_pairs": [
+        {
+          "codec": "raw",
+          "samples": [
+            {
+              "tick": 4,
+              "generation": 2,
+              "advance_save_process_seconds": 0.0400857999920845,
+              "checkpoint_bytes": 23347,
+              "journal_bytes": 30400
+            },
+            {
+              "tick": 12,
+              "generation": 3,
+              "advance_save_process_seconds": 0.050755699863657355,
+              "checkpoint_bytes": 54305,
+              "journal_bytes": 76871
+            },
+            {
+              "tick": 28,
+              "generation": 4,
+              "advance_save_process_seconds": 0.07877869997173548,
+              "checkpoint_bytes": 212942,
+              "journal_bytes": 293960
+            },
+            {
+              "tick": 60,
+              "generation": 5,
+              "advance_save_process_seconds": 0.16031159996055067,
+              "checkpoint_bytes": 809078,
+              "journal_bytes": 1086313
+            },
+            {
+              "tick": 129,
+              "generation": 6,
+              "advance_save_process_seconds": 0.3138578000944108,
+              "checkpoint_bytes": 1779529,
+              "journal_bytes": 2386494
+            }
+          ],
+          "total_retained_bytes": 7625819,
+          "terminal_checkpoint_bytes": 1779529,
+          "terminal_journal_bytes": 2386494,
+          "state_sha256": "8402193222aac8d9ad9d28c88b568967bc283671be1dea08c956b59273ba2aac",
+          "history_sha256": "0de50affdc408c4c481a0944caa61fef31f8ed3cf3fc5ca2444a124b99317359"
+        },
+        {
+          "codec": "zlib",
+          "samples": [
+            {
+              "tick": 4,
+              "generation": 2,
+              "advance_save_process_seconds": 0.04552519996650517,
+              "checkpoint_bytes": 3196,
+              "journal_bytes": 30400
+            },
+            {
+              "tick": 12,
+              "generation": 3,
+              "advance_save_process_seconds": 0.05479779979214072,
+              "checkpoint_bytes": 4471,
+              "journal_bytes": 76871
+            },
+            {
+              "tick": 28,
+              "generation": 4,
+              "advance_save_process_seconds": 0.08841939992271364,
+              "checkpoint_bytes": 10981,
+              "journal_bytes": 293960
+            },
+            {
+              "tick": 60,
+              "generation": 5,
+              "advance_save_process_seconds": 0.16358370007947087,
+              "checkpoint_bytes": 30597,
+              "journal_bytes": 1086313
+            },
+            {
+              "tick": 129,
+              "generation": 6,
+              "advance_save_process_seconds": 0.31852849991992116,
+              "checkpoint_bytes": 57154,
+              "journal_bytes": 2386494
+            }
+          ],
+          "total_retained_bytes": 4853017,
+          "terminal_checkpoint_bytes": 57154,
+          "terminal_journal_bytes": 2386494,
+          "state_sha256": "8402193222aac8d9ad9d28c88b568967bc283671be1dea08c956b59273ba2aac",
+          "history_sha256": "0de50affdc408c4c481a0944caa61fef31f8ed3cf3fc5ca2444a124b99317359"
+        }
+      ]
+    },
+    {
+      "row": 35,
+      "source025": 17,
+      "mode": "ProjectedNeed",
+      "internal_samples": [
+        {
+          "boundaries": 417,
+          "checkpoint_seconds": 0.1282421,
+          "original_seconds": 0.0188603,
+          "restore_seconds": 0.165159,
+          "run_seconds": 0.0189781,
+          "state_bytes": 5220232
+        },
+        {
+          "boundaries": 417,
+          "checkpoint_seconds": 0.1252753,
+          "original_seconds": 0.0180185,
+          "restore_seconds": 0.1480988,
+          "run_seconds": 0.01806,
+          "state_bytes": 5220232
+        },
+        {
+          "boundaries": 417,
+          "checkpoint_seconds": 0.1224153,
+          "original_seconds": 0.0188194,
+          "restore_seconds": 0.1431294,
+          "run_seconds": 0.017682,
+          "state_bytes": 5220232
+        }
+      ],
+      "medians": {
+        "run_seconds": 0.01806,
+        "original_seconds": 0.0188194,
+        "checkpoint_seconds": 0.1252753,
+        "restore_seconds": 0.1480988
+      },
+      "storage_pairs": [
+        {
+          "codec": "raw",
+          "samples": [
+            {
+              "tick": 10,
+              "generation": 2,
+              "advance_save_process_seconds": 0.04868260002695024,
+              "checkpoint_bytes": 43570,
+              "journal_bytes": 54754
+            },
+            {
+              "tick": 18,
+              "generation": 3,
+              "advance_save_process_seconds": 0.060170500073581934,
+              "checkpoint_bytes": 114512,
+              "journal_bytes": 152793
+            },
+            {
+              "tick": 34,
+              "generation": 4,
+              "advance_save_process_seconds": 0.0902957001235336,
+              "checkpoint_bytes": 280229,
+              "journal_bytes": 379231
+            },
+            {
+              "tick": 66,
+              "generation": 5,
+              "advance_save_process_seconds": 0.15923569980077446,
+              "checkpoint_bytes": 696125,
+              "journal_bytes": 936899
+            },
+            {
+              "tick": 423,
+              "generation": 6,
+              "advance_save_process_seconds": 1.0902251000516117,
+              "checkpoint_bytes": 5220640,
+              "journal_bytes": 7013653
+            }
+          ],
+          "total_retained_bytes": 20242690,
+          "terminal_checkpoint_bytes": 5220640,
+          "terminal_journal_bytes": 7013653,
+          "state_sha256": "b7882513f6028112e6e101fa628751d415e933ff29d5d02c601c49cea07bbf03",
+          "history_sha256": "1d58bb95dc1d37a4c770d4b25c121e9536b471906fb59e9748de6b717ba909b7"
+        },
+        {
+          "codec": "zlib",
+          "samples": [
+            {
+              "tick": 10,
+              "generation": 2,
+              "advance_save_process_seconds": 0.04425100004300475,
+              "checkpoint_bytes": 4781,
+              "journal_bytes": 54754
+            },
+            {
+              "tick": 18,
+              "generation": 3,
+              "advance_save_process_seconds": 0.059733100002631545,
+              "checkpoint_bytes": 7458,
+              "journal_bytes": 152793
+            },
+            {
+              "tick": 34,
+              "generation": 4,
+              "advance_save_process_seconds": 0.09943250007927418,
+              "checkpoint_bytes": 12995,
+              "journal_bytes": 379231
+            },
+            {
+              "tick": 66,
+              "generation": 5,
+              "advance_save_process_seconds": 0.1551053998991847,
+              "checkpoint_bytes": 26523,
+              "journal_bytes": 936899
+            },
+            {
+              "tick": 423,
+              "generation": 6,
+              "advance_save_process_seconds": 1.0954439002089202,
+              "checkpoint_bytes": 158232,
+              "journal_bytes": 7013653
+            }
+          ],
+          "total_retained_bytes": 14097603,
+          "terminal_checkpoint_bytes": 158232,
+          "terminal_journal_bytes": 7013653,
+          "state_sha256": "b7882513f6028112e6e101fa628751d415e933ff29d5d02c601c49cea07bbf03",
+          "history_sha256": "1d58bb95dc1d37a4c770d4b25c121e9536b471906fb59e9748de6b717ba909b7"
+        }
+      ]
+    },
+    {
+      "row": 47,
+      "source025": 23,
+      "mode": "ProjectedNeed",
+      "internal_samples": [
+        {
+          "boundaries": 129,
+          "checkpoint_seconds": 0.0383754,
+          "original_seconds": 0.0034401,
+          "restore_seconds": 0.0491796,
+          "run_seconds": 0.0035448,
+          "state_bytes": 1591555
+        },
+        {
+          "boundaries": 129,
+          "checkpoint_seconds": 0.0373543,
+          "original_seconds": 0.0028748,
+          "restore_seconds": 0.0454396,
+          "run_seconds": 0.0035497,
+          "state_bytes": 1591555
+        },
+        {
+          "boundaries": 129,
+          "checkpoint_seconds": 0.037372,
+          "original_seconds": 0.0028242,
+          "restore_seconds": 0.0421831,
+          "run_seconds": 0.0030304,
+          "state_bytes": 1591555
+        }
+      ],
+      "medians": {
+        "run_seconds": 0.0035448,
+        "original_seconds": 0.0028748,
+        "checkpoint_seconds": 0.037372,
+        "restore_seconds": 0.0454396
+      },
+      "storage_pairs": [
+        {
+          "codec": "raw",
+          "samples": [
+            {
+              "tick": 4,
+              "generation": 2,
+              "advance_save_process_seconds": 0.04495969996787608,
+              "checkpoint_bytes": 19719,
+              "journal_bytes": 25630
+            },
+            {
+              "tick": 12,
+              "generation": 3,
+              "advance_save_process_seconds": 0.05042569991201162,
+              "checkpoint_bytes": 28769,
+              "journal_bytes": 42533
+            },
+            {
+              "tick": 28,
+              "generation": 4,
+              "advance_save_process_seconds": 0.06311549991369247,
+              "checkpoint_bytes": 39429,
+              "journal_bytes": 66721
+            },
+            {
+              "tick": 60,
+              "generation": 5,
+              "advance_save_process_seconds": 0.13007409987039864,
+              "checkpoint_bytes": 420950,
+              "journal_bytes": 581809
+            },
+            {
+              "tick": 129,
+              "generation": 6,
+              "advance_save_process_seconds": 0.3079765001311898,
+              "checkpoint_bytes": 1591962,
+              "journal_bytes": 2148443
+            }
+          ],
+          "total_retained_bytes": 6363784,
+          "terminal_checkpoint_bytes": 1591962,
+          "terminal_journal_bytes": 2148443,
+          "state_sha256": "6ea261e22f9d4298372ab187ef113215b2d0c7e607705ec5597d99b7c26acba2",
+          "history_sha256": "bea0bdb023cf559b25e16ec783e9225e9acebb78cc89014aca9ff723e3aabfdb"
+        },
+        {
+          "codec": "zlib",
+          "samples": [
+            {
+              "tick": 4,
+              "generation": 2,
+              "advance_save_process_seconds": 0.04635250009596348,
+              "checkpoint_bytes": 2958,
+              "journal_bytes": 25630
+            },
+            {
+              "tick": 12,
+              "generation": 3,
+              "advance_save_process_seconds": 0.06025089998729527,
+              "checkpoint_bytes": 3342,
+              "journal_bytes": 42533
+            },
+            {
+              "tick": 28,
+              "generation": 4,
+              "advance_save_process_seconds": 0.06838280009105802,
+              "checkpoint_bytes": 3531,
+              "journal_bytes": 66721
+            },
+            {
+              "tick": 60,
+              "generation": 5,
+              "advance_save_process_seconds": 0.14562760014086962,
+              "checkpoint_bytes": 17825,
+              "journal_bytes": 581809
+            },
+            {
+              "tick": 129,
+              "generation": 6,
+              "advance_save_process_seconds": 0.3182921998668462,
+              "checkpoint_bytes": 54455,
+              "journal_bytes": 2148443
+            }
+          ],
+          "total_retained_bytes": 4345066,
+          "terminal_checkpoint_bytes": 54455,
+          "terminal_journal_bytes": 2148443,
+          "state_sha256": "6ea261e22f9d4298372ab187ef113215b2d0c7e607705ec5597d99b7c26acba2",
+          "history_sha256": "bea0bdb023cf559b25e16ec783e9225e9acebb78cc89014aca9ff723e3aabfdb"
+        }
+      ]
+    },
+    {
+      "row": 83,
+      "source025": 41,
+      "mode": "ProjectedNeed",
+      "internal_samples": [
+        {
+          "boundaries": 417,
+          "checkpoint_seconds": 0.1252089,
+          "original_seconds": 0.0173132,
+          "restore_seconds": 0.1444972,
+          "run_seconds": 0.0178694,
+          "state_bytes": 5273049
+        },
+        {
+          "boundaries": 417,
+          "checkpoint_seconds": 0.1511492,
+          "original_seconds": 0.017267,
+          "restore_seconds": 0.1456684,
+          "run_seconds": 0.0159818,
+          "state_bytes": 5273049
+        },
+        {
+          "boundaries": 417,
+          "checkpoint_seconds": 0.1370116,
+          "original_seconds": 0.0210702,
+          "restore_seconds": 0.1505069,
+          "run_seconds": 0.0167358,
+          "state_bytes": 5273049
+        }
+      ],
+      "medians": {
+        "run_seconds": 0.0167358,
+        "original_seconds": 0.0173132,
+        "checkpoint_seconds": 0.1370116,
+        "restore_seconds": 0.1456684
+      },
+      "storage_pairs": [
+        {
+          "codec": "raw",
+          "samples": [
+            {
+              "tick": 10,
+              "generation": 2,
+              "advance_save_process_seconds": 0.05324740009382367,
+              "checkpoint_bytes": 43604,
+              "journal_bytes": 54768
+            },
+            {
+              "tick": 18,
+              "generation": 3,
+              "advance_save_process_seconds": 0.05805810005404055,
+              "checkpoint_bytes": 101432,
+              "journal_bytes": 135081
+            },
+            {
+              "tick": 34,
+              "generation": 4,
+              "advance_save_process_seconds": 0.10025890008546412,
+              "checkpoint_bytes": 216514,
+              "journal_bytes": 295771
+            },
+            {
+              "tick": 66,
+              "generation": 5,
+              "advance_save_process_seconds": 0.15195080009289086,
+              "checkpoint_bytes": 513286,
+              "journal_bytes": 705377
+            },
+            {
+              "tick": 423,
+              "generation": 6,
+              "advance_save_process_seconds": 1.0902211000211537,
+              "checkpoint_bytes": 5273457,
+              "journal_bytes": 7107186
+            }
+          ],
+          "total_retained_bytes": 20230515,
+          "terminal_checkpoint_bytes": 5273457,
+          "terminal_journal_bytes": 7107186,
+          "state_sha256": "21d55d590fe09d367046c8f6d303f5dedaa2d9a3092d4f11f56406b84011b42d",
+          "history_sha256": "8fccc2e1a5bac32e00fdeffd0350cfceb095c729d21aa4bdc43dd3d15f03b3a3"
+        },
+        {
+          "codec": "zlib",
+          "samples": [
+            {
+              "tick": 10,
+              "generation": 2,
+              "advance_save_process_seconds": 0.05792780010960996,
+              "checkpoint_bytes": 4782,
+              "journal_bytes": 54768
+            },
+            {
+              "tick": 18,
+              "generation": 3,
+              "advance_save_process_seconds": 0.18079590005800128,
+              "checkpoint_bytes": 6886,
+              "journal_bytes": 135081
+            },
+            {
+              "tick": 34,
+              "generation": 4,
+              "advance_save_process_seconds": 0.08321229997090995,
+              "checkpoint_bytes": 10486,
+              "journal_bytes": 295771
+            },
+            {
+              "tick": 66,
+              "generation": 5,
+              "advance_save_process_seconds": 0.13890010002069175,
+              "checkpoint_bytes": 19196,
+              "journal_bytes": 705377
+            },
+            {
+              "tick": 423,
+              "generation": 6,
+              "advance_save_process_seconds": 1.0714853000827134,
+              "checkpoint_bytes": 160488,
+              "journal_bytes": 7107186
+            }
+          ],
+          "total_retained_bytes": 14284060,
+          "terminal_checkpoint_bytes": 160488,
+          "terminal_journal_bytes": 7107186,
+          "state_sha256": "21d55d590fe09d367046c8f6d303f5dedaa2d9a3092d4f11f56406b84011b42d",
+          "history_sha256": "8fccc2e1a5bac32e00fdeffd0350cfceb095c729d21aa4bdc43dd3d15f03b3a3"
+        }
+      ]
+    },
+    {
+      "row": 87,
+      "source025": 43,
+      "mode": "ProjectedNeed",
+      "internal_samples": [
+        {
+          "boundaries": 801,
+          "checkpoint_seconds": 0.2785497,
+          "original_seconds": 0.0554051,
+          "restore_seconds": 0.3116565,
+          "run_seconds": 0.0509717,
+          "state_bytes": 10619926
+        },
+        {
+          "boundaries": 801,
+          "checkpoint_seconds": 0.245628,
+          "original_seconds": 0.0550805,
+          "restore_seconds": 0.3044113,
+          "run_seconds": 0.0490373,
+          "state_bytes": 10619926
+        },
+        {
+          "boundaries": 801,
+          "checkpoint_seconds": 0.2425786,
+          "original_seconds": 0.0806578,
+          "restore_seconds": 0.4776699,
+          "run_seconds": 0.0526811,
+          "state_bytes": 10619926
+        }
+      ],
+      "medians": {
+        "run_seconds": 0.0509717,
+        "original_seconds": 0.0554051,
+        "checkpoint_seconds": 0.245628,
+        "restore_seconds": 0.3116565
+      },
+      "storage_pairs": [
+        {
+          "codec": "raw",
+          "samples": [
+            {
+              "tick": 10,
+              "generation": 2,
+              "advance_save_process_seconds": 0.06353959999978542,
+              "checkpoint_bytes": 43604,
+              "journal_bytes": 54801
+            },
+            {
+              "tick": 18,
+              "generation": 3,
+              "advance_save_process_seconds": 0.06946559995412827,
+              "checkpoint_bytes": 114546,
+              "journal_bytes": 152877
+            },
+            {
+              "tick": 34,
+              "generation": 4,
+              "advance_save_process_seconds": 0.09993149992078543,
+              "checkpoint_bytes": 263936,
+              "journal_bytes": 357598
+            },
+            {
+              "tick": 66,
+              "generation": 5,
+              "advance_save_process_seconds": 0.2069290999788791,
+              "checkpoint_bytes": 655377,
+              "journal_bytes": 885402
+            },
+            {
+              "tick": 807,
+              "generation": 6,
+              "advance_save_process_seconds": 2.2243452998809516,
+              "checkpoint_bytes": 10620334,
+              "journal_bytes": 14210483
+            }
+          ],
+          "total_retained_bytes": 39842587,
+          "terminal_checkpoint_bytes": 10620334,
+          "terminal_journal_bytes": 14210483,
+          "state_sha256": "6b7e0fe144109c7883b6cfb034324a373f379e95b2bd52f00a6724bed16eb6f4",
+          "history_sha256": "9a365fa6b34a9fce045791eb3c7866675961456f71fb7baae4512d09702bf7da"
+        },
+        {
+          "codec": "zlib",
+          "samples": [
+            {
+              "tick": 10,
+              "generation": 2,
+              "advance_save_process_seconds": 0.04882439994253218,
+              "checkpoint_bytes": 4788,
+              "journal_bytes": 54801
+            },
+            {
+              "tick": 18,
+              "generation": 3,
+              "advance_save_process_seconds": 0.06237139995209873,
+              "checkpoint_bytes": 7463,
+              "journal_bytes": 152877
+            },
+            {
+              "tick": 34,
+              "generation": 4,
+              "advance_save_process_seconds": 0.08653369988314807,
+              "checkpoint_bytes": 12745,
+              "journal_bytes": 357598
+            },
+            {
+              "tick": 66,
+              "generation": 5,
+              "advance_save_process_seconds": 0.15592320007272065,
+              "checkpoint_bytes": 25037,
+              "journal_bytes": 885402
+            },
+            {
+              "tick": 807,
+              "generation": 6,
+              "advance_save_process_seconds": 2.2597878999076784,
+              "checkpoint_bytes": 302263,
+              "journal_bytes": 14210483
+            }
+          ],
+          "total_retained_bytes": 28497086,
+          "terminal_checkpoint_bytes": 302263,
+          "terminal_journal_bytes": 14210483,
+          "state_sha256": "6b7e0fe144109c7883b6cfb034324a373f379e95b2bd52f00a6724bed16eb6f4",
+          "history_sha256": "9a365fa6b34a9fce045791eb3c7866675961456f71fb7baae4512d09702bf7da"
+        }
+      ]
+    }
+  ],
+  "cli_operations": {
+    "advance": {
+      "calls": 1478,
+      "seconds_sum": 255.59882519720122,
+      "seconds_median": 0.0619552000425756,
+      "peak_own_working_set_bytes": 320352256
+    },
+    "baseline": {
+      "calls": 100,
+      "seconds_sum": 990.3158599017188,
+      "seconds_median": 2.8315781999845058,
+      "peak_own_working_set_bytes": 317005824
+    },
+    "create": {
+      "calls": 117,
+      "seconds_sum": 4.204380900366232,
+      "seconds_median": 0.0356283001601696,
+      "peak_own_working_set_bytes": 8937472
+    },
+    "finalize": {
+      "calls": 113,
+      "seconds_sum": 40.930077200522646,
+      "seconds_median": 0.23787509999237955,
+      "peak_own_working_set_bytes": 312135680
+    },
+    "identity": {
+      "calls": 2,
+      "seconds_sum": 0.03663030010648072,
+      "seconds_median": 0.01831515005324036,
+      "peak_own_working_set_bytes": 5124096
+    },
+    "interrupt": {
+      "calls": 1,
+      "seconds_sum": 0.027648300165310502,
+      "seconds_median": 0.027648300165310502,
+      "peak_own_working_set_bytes": 8544256
+    },
+    "measure": {
+      "calls": 5,
+      "seconds_sum": 6.568834400037304,
+      "seconds_median": 1.3114232998341322,
+      "peak_own_working_set_bytes": 183746560
+    },
+    "parity": {
+      "calls": 1,
+      "seconds_sum": 6.646758900023997,
+      "seconds_median": 6.646758900023997,
+      "peak_own_working_set_bytes": 231534592
+    },
+    "recover": {
+      "calls": 2,
+      "seconds_sum": 0.14708370016887784,
+      "seconds_median": 0.07354185008443892,
+      "peak_own_working_set_bytes": 16175104
+    },
+    "reference": {
+      "calls": 1,
+      "seconds_sum": 0.07422760012559593,
+      "seconds_median": 0.07422760012559593,
+      "peak_own_working_set_bytes": 30654464
+    },
+    "state": {
+      "calls": 1535,
+      "seconds_sum": 171.98488810332492,
+      "seconds_median": 0.03786329994909465,
+      "peak_own_working_set_bytes": 288600064
+    },
+    "status": {
+      "calls": 6,
+      "seconds_sum": 0.17409620014950633,
+      "seconds_median": 0.028663349919952452,
+      "peak_own_working_set_bytes": 9691136
+    },
+    "storage": {
+      "calls": 11,
+      "seconds_sum": 5.223877399927005,
+      "seconds_median": 0.5408463000785559,
+      "peak_own_working_set_bytes": 203485184
+    },
+    "verify": {
+      "calls": 1533,
+      "seconds_sum": 287.7830621020403,
+      "seconds_median": 0.0432392000220716,
+      "peak_own_working_set_bytes": 894115840
+    }
+  },
+  "cli_calls": 4905,
+  "summed_cli_seconds": 1769.7162502058782,
+  "peak_own_native_working_set_bytes": 894115840,
+  "core100_worlds_storage": {
+    "immutable_checkpoint_bytes": 604846913,
+    "journal_bytes": 337307734,
+    "all_retained_bytes": 1274590222
+  },
+  "full_disposable_campaign_bytes": 2905688783,
+  "limitations": [
+    "Baseline capture hashes a complete checkpoint after every boundary and dominates campaign cost;it is verification instrumentation,not pure simulation.",
+    "Observer histories/journals/generations grow;local actor cognition retains original bounds.",
+    "Raw/zlib state and terminal bytes match;plain journals/history remain large.",
+    "No matched old-host cost experiment isolates incremental C1/guard overhead;no optimization or unbounded-world readiness claim."
+  ]
+}

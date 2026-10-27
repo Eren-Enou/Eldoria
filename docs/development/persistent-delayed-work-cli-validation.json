@@ -1,0 +1,110 @@
+{
+  "schema": "persistent-C1-headless-CLI-acceptance/v1",
+  "runtime": "6c03911fec8142326d391fda7f088b69b782000a191bf78679ba4a4aa9bc1b64",
+  "commands": [
+    {
+      "operation": "config",
+      "exit": 0
+    },
+    {
+      "operation": "config",
+      "exit": 0
+    },
+    {
+      "operation": "create",
+      "exit": 0
+    },
+    {
+      "operation": "advance",
+      "exit": 0
+    },
+    {
+      "operation": "save",
+      "exit": 0
+    },
+    {
+      "operation": "status",
+      "exit": 0
+    },
+    {
+      "operation": "events",
+      "exit": 0
+    },
+    {
+      "operation": "advance",
+      "exit": 0
+    },
+    {
+      "operation": "verify",
+      "exit": 0
+    },
+    {
+      "operation": "check",
+      "exit": 0
+    },
+    {
+      "operation": "storage",
+      "exit": 0
+    },
+    {
+      "operation": "state",
+      "exit": 0
+    },
+    {
+      "operation": "advance",
+      "exit": 0
+    },
+    {
+      "operation": "finalize",
+      "exit": 0
+    },
+    {
+      "operation": "reference",
+      "exit": 0
+    }
+  ],
+  "explicit_modes": [
+    "Baseline",
+    "ProjectedNeed"
+  ],
+  "actual_t0_choice": "Prepare",
+  "Prepare_score": 68,
+  "no_op_save_generation_unchanged": true,
+  "active_tick": 10,
+  "actual_raw": 0,
+  "actual_owned_escrow": 8,
+  "waste": 0,
+  "known_actor0_raw_state_at10": {
+    "observation": {
+      "accessible": true,
+      "edible_units": 1,
+      "extraction_ticks": 8,
+      "id": 0,
+      "input_units": 2,
+      "observed_at": 0,
+      "preparation_ticks": 24,
+      "stock": 8,
+      "waste_units": 1
+    },
+    "own_takes": 2,
+    "owner": 0,
+    "receipt": 0
+  },
+  "active_complete_state_matches_registered_reference": true,
+  "independent_proof": {
+    "schema": "woi-independent-persistence-check/v1",
+    "world": "world-23",
+    "generation": 3,
+    "runtime": "6c03911fec8142326d391fda7f088b69b782000a191bf78679ba4a4aa9bc1b64",
+    "journal_runtime": "6c03911fec8142326d391fda7f088b69b782000a191bf78679ba4a4aa9bc1b64",
+    "tick": 10,
+    "prefix_bytes": 39491,
+    "state_payload_sha256": "151b1a39a3f043c11c60924274ab19430fdc43d7a4a48960e0bcae2462cbd216",
+    "events": 0,
+    "started_commitments": 4,
+    "completed_commitments": 0,
+    "conserved_material": 9,
+    "scope": "Independent raw binding, explicit026 mode, local scores/ties, pending state, need/meals, episode membership, material/time/environment retention; not full cognitive content or behavioral equivalence"
+  },
+  "final_original_C1_exact": true
+}

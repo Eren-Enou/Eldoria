@@ -1,0 +1,335 @@
+{
+  "schema": "persistent-C1-process-campaign-completion/v1",
+  "runtime_publication": "bb4bd50da14080a2bea0a1a90d9532b01cb321ac",
+  "runtime": "6c03911fec8142326d391fda7f088b69b782000a191bf78679ba4a4aa9bc1b64",
+  "framework_sha256": "09edd60e2df28e0b3ca7bed915225082605fee81f27e1221edf06b6deb8449f4",
+  "framework_unchanged_during_execution": true,
+  "campaign_exit": 0,
+  "registered_worlds": 100,
+  "full_state_splits": 1523,
+  "native_cli_processes": 4905,
+  "independent_resumed_reconstructions": 100,
+  "observed_flags": [
+    "Extracting",
+    "Failed",
+    "Preparing",
+    "actual_exhaustion",
+    "concurrent_work",
+    "cutoff",
+    "drain",
+    "owned_escrow",
+    "pending_social",
+    "pending_social_response",
+    "reporting"
+  ],
+  "read_only_audit": {
+    "exit": 0,
+    "original100_canonical_equal": true,
+    "state_export_hashes": 1523,
+    "actual_reporting_crossings_in_worlds": 81
+  },
+  "semantic_corruption_scope": "21 rehashed states rejected by both restore and independent reader; source-stable16-test suite",
+  "storage_controls": {
+    "checks": [
+      {
+        "fault": "checkpoint_bytes",
+        "rejected": true
+      },
+      {
+        "fault": "runtime_bytes",
+        "rejected": true
+      },
+      {
+        "fault": "schema_bytes",
+        "rejected": true
+      },
+      {
+        "fault": "journal_prefix",
+        "rejected": true
+      },
+      {
+        "fault": "incomplete_pending_publication",
+        "detected_not_promoted": true
+      },
+      {
+        "fault": "corrupt_newest_explicit_older_branch",
+        "normal_open_rejected": true,
+        "parent_byte_identical": true,
+        "exact_original_terminal": true
+      }
+    ],
+    "parent_byte_identical": true,
+    "scope": "Four outer faults, incomplete publication detection and explicit corrupt-newest recovery. Separate Rust controls rehash semantic corruptions."
+  },
+  "recovery": {
+    "saved_status": {
+      "C1_source": "7039076f147e173359e4c3099e35de9ccd4e9a590fd54ad2960c2b64f76f21c5",
+      "active_people": [
+        {
+          "deadline": 6,
+          "id": 0,
+          "participants": [
+            0
+          ],
+          "source": 0,
+          "start": 0,
+          "work": "Prepare"
+        },
+        {
+          "deadline": 6,
+          "id": 1,
+          "participants": [
+            1
+          ],
+          "source": 0,
+          "start": 0,
+          "work": "Prepare"
+        },
+        {
+          "deadline": 6,
+          "id": 2,
+          "participants": [
+            2
+          ],
+          "source": 0,
+          "start": 0,
+          "work": "Prepare"
+        },
+        {
+          "deadline": 6,
+          "id": 3,
+          "participants": [
+            3
+          ],
+          "source": 0,
+          "start": 0,
+          "work": "Prepare"
+        }
+      ],
+      "actors": [
+        {
+          "caution": 100,
+          "expectation": 3,
+          "food": 0,
+          "generosity": 0,
+          "hunger": 80,
+          "id": 0,
+          "memories": [],
+          "trust": {}
+        },
+        {
+          "caution": 100,
+          "expectation": 62,
+          "food": 0,
+          "generosity": 0,
+          "hunger": 80,
+          "id": 1,
+          "memories": [],
+          "trust": {}
+        },
+        {
+          "caution": 100,
+          "expectation": 67,
+          "food": 0,
+          "generosity": 0,
+          "hunger": 80,
+          "id": 2,
+          "memories": [],
+          "trust": {}
+        },
+        {
+          "caution": 100,
+          "expectation": 69,
+          "food": 0,
+          "generosity": 0,
+          "hunger": 80,
+          "id": 3,
+          "memories": [],
+          "trust": {}
+        }
+      ],
+      "completed_boundaries": 3,
+      "config": {
+        "mode": "ProjectedNeed",
+        "source025": 1,
+        "world": {
+          "family": "known",
+          "pair": 0,
+          "preparation": {
+            "access_enabled": true,
+            "extraction_ticks": 2,
+            "feature_enabled": true,
+            "observation": {
+              "period": 8,
+              "raw_offsets": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "ready_offsets": [
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "preparation_ticks": 4,
+            "raw_initial": 8,
+            "source_id": 0
+          },
+          "valuation": "Baseline",
+          "world": {
+            "cadence": 8,
+            "capacity": 2,
+            "case": "scarcity",
+            "duration": 4,
+            "horizon": 96,
+            "mode": "Continuous",
+            "order": "Ascending",
+            "period": 11,
+            "phase": "Epoch",
+            "role": "controlled",
+            "seed": 42
+          }
+        }
+      },
+      "end": 129,
+      "journal_bytes": 28889,
+      "latest_committed_generation": 2,
+      "material_work": [
+        {
+          "escrow": 2,
+          "phase": "Preparing",
+          "process": {
+            "commitment": 0,
+            "extract_at": 2,
+            "finish_at": 6,
+            "owner": 0,
+            "source": 0,
+            "start": 0
+          }
+        },
+        {
+          "escrow": 2,
+          "phase": "Preparing",
+          "process": {
+            "commitment": 1,
+            "extract_at": 2,
+            "finish_at": 6,
+            "owner": 1,
+            "source": 0,
+            "start": 0
+          }
+        },
+        {
+          "escrow": 2,
+          "phase": "Preparing",
+          "process": {
+            "commitment": 2,
+            "extract_at": 2,
+            "finish_at": 6,
+            "owner": 2,
+            "source": 0,
+            "start": 0
+          }
+        },
+        {
+          "escrow": 2,
+          "phase": "Preparing",
+          "process": {
+            "commitment": 3,
+            "extract_at": 2,
+            "finish_at": 6,
+            "owner": 3,
+            "source": 0,
+            "start": 0
+          }
+        }
+      ],
+      "path": "C:\\Users\\Aaron\\Eldoria\\target\\persistent-C1-process-1793063934049789100\\world-recovery",
+      "pending_social_work": [],
+      "policy_identity": "7039076f147e173359e4c3099e35de9ccd4e9a590fd54ad2960c2b64f76f21c5:ProjectedNeed",
+      "raw_escrow": 8,
+      "raw_stock": 0,
+      "ready_cache": 1,
+      "runtime": "6c03911fec8142326d391fda7f088b69b782000a191bf78679ba4a4aa9bc1b64",
+      "schema": "woi-delayed-work-world-status/v1",
+      "start": 0,
+      "terminal": false,
+      "tick": 3,
+      "unsaved": false,
+      "waste": 0
+    },
+    "recovery": {
+      "schema": "woi-world-recovery/v2",
+      "branch": "C:\\Users\\Aaron\\Eldoria\\target\\persistent-C1-process-1793063934049789100\\recovery-branch\\world-recovery",
+      "parent": "C:\\Users\\Aaron\\Eldoria\\target\\persistent-C1-process-1793063934049789100\\world-recovery",
+      "world": "world-recovery",
+      "generation": 2,
+      "tick": 3,
+      "parent_checkpoint_sha256": "819c583e1ad8ad54506eb27ed3e4c1c565ccd0d6e220055ee80c43b2f5719acc",
+      "state_sha256": "af20ee8780f8f863293405d1b1ccda0fbdd552be004a15394d929a7ea7a3a1f9",
+      "prefix_bytes": 28889,
+      "prefix_sha256": "bbd1ea88081a07dea3626c1163d734caaad2c5363d8c4ef723844ae36e680e38",
+      "verified_through_generation": 3,
+      "verified_through_checkpoint_sha256": "2d98ff1bcfa545f528be5cddfc7fae90df21b8a849387c1d606e4b189991d947",
+      "verified_through_bytes": 50355,
+      "verified_through_sha256": "4c0e0d8fe58f8560db756eb7677cb82c8fe8c430b856cfaee18db2d2376e2834",
+      "later_committed_bytes": 21466,
+      "later_committed_sha256": "fd0133da1d9f95fee0ae2857a3b38eadbb67c5d8263c9ec4505cd5fdbc1381d1",
+      "tail_bytes": 22048,
+      "tail_sha256": "04a4d81cca1ed50f42424612c3e7d38633ea778380613dd1c0f9de4c6115becc",
+      "tail_status": "not covered by any currently verified checkpoint; corrupt committed files can make original commit status uncertain",
+      "source_generations": [
+        {
+          "file": "checkpoint-00000001.cbor",
+          "generation": 1,
+          "bytes": 4423,
+          "valid": true,
+          "tick": 0,
+          "committed_journal_bytes": 4289,
+          "runtime": "6c03911fec8142326d391fda7f088b69b782000a191bf78679ba4a4aa9bc1b64",
+          "error": null
+        },
+        {
+          "file": "checkpoint-00000002.cbor",
+          "generation": 2,
+          "bytes": 22664,
+          "valid": true,
+          "tick": 3,
+          "committed_journal_bytes": 28889,
+          "runtime": "6c03911fec8142326d391fda7f088b69b782000a191bf78679ba4a4aa9bc1b64",
+          "error": null
+        },
+        {
+          "file": "checkpoint-00000003.cbor",
+          "generation": 3,
+          "bytes": 3732,
+          "valid": true,
+          "tick": 7,
+          "committed_journal_bytes": 50355,
+          "runtime": "6c03911fec8142326d391fda7f088b69b782000a191bf78679ba4a4aa9bc1b64",
+          "error": null
+        }
+      ],
+      "parent_lineage_sha256": null,
+      "original_journal_sha256": "d68f59a70ea2cc232a4b0dc4aa92d3c222f3caff46b49e5a22656f788738c415",
+      "divergence": "new branch starts at the selected committed tick; later verified history and the unverified suffix are evidence only, never live-state reconstruction"
+    },
+    "parent_files_byte_identical": true,
+    "selected_full_state_exact": true,
+    "original_terminal_exact": true
+  },
+  "originals_unchanged": true,
+  "raw_log_sha256": {
+    "receipt.json": "aef6ca229c2e71dffe65b88e16d35de08b1c08ab86ede5449e6f1cfaed853ffd",
+    "independent-resumed-reader.log": "ed3546f329561b1e1a7f2866d8a93256f75a66312b07f95cce581c17139b81c1",
+    "independent-resumed-validation.json": "84beddf6a0ac570b143276364cebcbbd2cfbb5788286251f3d3ab1de17c26231",
+    "recovery-validation.json": "a6835550971731d6bf60484a8b84ead6ad8a8ea7a519dff3949929b076607248",
+    "storage-faults.json": "6e05abf368bac55a13c23648e3fe780a4728df71408b72fb13682c9caaf8103c",
+    "process-timings.json": "d71dceede3313a50e0727960a42302ba4dac9b9b2f7804dd3eb5a66cb41e05d0"
+  },
+  "engineering_data_location": "C:\\Users\\Aaron\\Eldoria\\target\\persistent-C1-process-1793063934049789100",
+  "scope": "Fresh native processes;complete typed state/history equivalence within registered100. Original research archives never regenerated; engineering projections remain disposable."
+}
