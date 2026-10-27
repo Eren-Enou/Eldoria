@@ -37,10 +37,16 @@ Current authorized program76e83237: Experiment027, prospectively gated actor-loc
 material experience learning. This supersedes historical no027 boundaries only
 within this new headless research scope. Protected001–026 stays unchanged; no
 adoption,028, GUI/computer control, canon, renewal or population extension. See
-experiments/027/design-gate.md and specification.md. Registration must be published
-before treatment. Historical boundaries below remain delivery-era evidence.
+experiments/027/design-gate.md and specification.md. Registration was published
+before treatment.027 is complete as a score-only null:100worlds/50pairs,58changed
+scores/zero changed choices or execution;129receipts,7evictions,122expirations.
+No failure-bearing eligible site or meal attribution. Native100 exact replay,
+independent reconstruction and17faults pass via python -B examples/support/validate027.py;
+full026 foundation passes unchanged. See experiments/027/results.md and
+docs/development/experiment-027-final-report.md. Do not retune/adopt/protect027 or
+begin028. Historical boundaries below remain delivery-era evidence.
 
-Current authorized program attachment6381b346: independently consolidate026 C1,
+Completed prior program attachment6381b346: independently consolidate026 C1,
 conditionally extend protection, then implement an isolated opt-in persistent026
 successor. This supersedes prior prohibitions on persistent026 integration only
 within the new gated program. No027, default adoption, GUI/computer control, canon,

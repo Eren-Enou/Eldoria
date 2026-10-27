@@ -1,0 +1,106 @@
+{
+  "status": "PASS; scientifically accepted narrow score-only null, no adoption/protection",
+  "source": "39cb0afcbd4c3dadbbac3c655687f82f77426b43060e5eea852b3301cf5c9c66",
+  "root": [
+    {
+      "seconds": 1.9158136,
+      "exit": 0,
+      "check": "fmt"
+    },
+    {
+      "seconds": 3.3085179,
+      "exit": 0,
+      "check": "clippy"
+    },
+    {
+      "seconds": 131.9811138,
+      "exit": 0,
+      "check": "test"
+    },
+    {
+      "seconds": 2290.0108506,
+      "exit": 0,
+      "check": "foundation"
+    }
+  ],
+  "root_tests": 217,
+  "host_tests": 14,
+  "host_checks": [
+    "cargo fmt --check --manifest-path prototypes/material-experience/Cargo.toml",
+    "rustfmt --check --edition 2024 prototypes/material-experience/src/experience.rs",
+    "cargo clippy --locked --all-targets -j 1 --manifest-path prototypes/material-experience/Cargo.toml --target-dir target/material-experience -- -D warnings",
+    "cargo test --locked -j 1 --manifest-path prototypes/material-experience/Cargo.toml --target-dir target/material-experience"
+  ],
+  "full_foundation_command": "cargo run --release --locked -j 1 --example validate026_foundation",
+  "native_parity": {
+    "inherited_c1": 100,
+    "new_fixed": 50,
+    "source_id_matches_independent_generation": true
+  },
+  "independent": {
+    "full_worlds": 100,
+    "scratch_rejections": 17,
+    "paired_bodies_equal_except_registered_scores": 50,
+    "publication_manifest_membership": "exact",
+    "post_outcome_complementary_reader": "examples/support/review027_findings.py"
+  },
+  "fresh_replay": {
+    "command": "python -B examples/support/validate027.py",
+    "worlds": 100,
+    "bytes_exact": true,
+    "seconds": 673.4736906,
+    "exit": 0
+  },
+  "original_guard": {
+    "portable": 495,
+    "raw_originals": 512,
+    "bindings": 93,
+    "layout_faults": [
+      "missing_original",
+      "inherited_drift",
+      "new_digest_drift"
+    ]
+  },
+  "original027_gzip_sha256": "c9a0402f39594018091bfeaea065a4ca3829811e0ba03d61722e01e9551c88dc",
+  "all_preexisting_scientific_files_unchanged": true,
+  "allowed_changed_navigation_files": [
+    "AGENTS.md",
+    "docs/architecture-map.md",
+    "docs/development/continuation-checkpoint.md",
+    "docs/simulation/EXPERIMENT_HISTORY.md"
+  ],
+  "retention": {
+    "receipts": 129,
+    "capacity_evictions": 7,
+    "access_expirations": 114,
+    "terminal_expirations": 8,
+    "terminal_cells": 0
+  },
+  "source_binding_sha256": "bbfdafd19323572f74beae22e42f4ebaca6cfd6917f186a4c203c9199bce42ae",
+  "logs_raw_sha256": {
+    "target/027-root-fmt.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "target/027-root-clippy.log": "a8c3ddd94d78e75836e5ee17d8bbb4a8b46d3ce99a711e298018de9a066dc328",
+    "target/027-root-test.log": "f09873cc2e8a0e39752fd7309a1ea5044cb19b206d5362c2d685c80b337888cb",
+    "target/027-root-foundation.log": "ae9cae3cfbd521de36c11cb7942aae1f5d6a9baf4944cbf63dc85d2a63e3410e",
+    "target/027-clippy.log": "5596fa70dc605e2050bc73e6d2acda0cd3b61a6c1219d66ce91a040b05801cff",
+    "target/027-tests.log": "437c0aa226fbea577c38f48ac515266590ebcad0db81872fab9c4702ebd10cd0",
+    "target/027-release-parity.log": "2d7f0569517762f48197b669c23d409e017dce8da19f5e822aa1b367c23ce7f0",
+    "target/027-review.log": "4fe48b6f6a051ec99a4620b269f60d43c422fcd84909ef5960a17d3dd9e36b80",
+    "target/027-corrupt.log": "f62e1b266ea76b4b51582fdc93be894ac15fc5b71899a8a143371c97a9e9606f",
+    "target/027-analysis.log": "dd36626ca04321a90c80d16cbe75e41424133c2918c933dec0dcf428845340be",
+    "target/027-final-replay-gate.log": "aca8e5436d119b9bb2df1bf62588e421461468278858d7692893cddd1353f2f7",
+    "target/027-null-mechanism.log": "ce69e4bb8618cc3048c99395008071aa6996179df6a9ada9d177c1a62a896d3f"
+  },
+  "scope": {
+    "protected_endpoint": "001-026",
+    "default_adoption": false,
+    "persistent027_adapter": false,
+    "gui_computer_use": false,
+    "next_experiment_started": false
+  },
+  "development_failures": [
+    "pre-treatment Clippy drop_non_drop warning corrected; original target/027-development-clippy-drop.log retained",
+    "documentation-only Windows encoding write failure corrected before runtime publication; no simulation/data change"
+  ],
+  "next_question": "Which lawful finite opportunities make received material feedback available at a later genuinely choice-sensitive decision?"
+}

@@ -4,14 +4,18 @@ Navigation summary, protected through026 with qualification. Source and mode-spe
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
-## Experiment027 prospective research
+## Experiment027 — completed score-only null, unadopted
 
 `prototypes/material-experience/` is the isolated headless successor for actor-local
 extraction-outcome learning, registered atf7eead060e7dd692ab02683335c96174345bcb02.
 [Design](../experiments/027/specification.md),[local evidence gate](../experiments/027/design-gate.md).
 New cells cap2/lifetime24; only eligible Prepare valuation may change. Protected
-endpoint remains026, no default adoption. Status is implementation/parity pending;
-see the [checkpoint](development/continuation-checkpoint.md). No treatment result yet.
+endpoint remains026, no default adoption. All100 worlds complete;58 changed eligible scores,zero changed choices/execution.
+Independent100/17faults/native100 exact replay pass; full026 gate passes unchanged.
+[Results](../experiments/027/results.md),[A–L report](development/experiment-027-final-report.md),
+[acceptance audit](development/experiment-027-completion-audit.md),
+[checkpoint](development/continuation-checkpoint.md). Failure-based eligible feedback
+and personal-use attribution remain untested. No027 persistence/default/protection.
 
 ## Human Rust workbench and portable delivery
 
@@ -71,7 +75,7 @@ interface; the original failed host and evidence remain intact. This engineering
 cognitive capacity, canon or026. See the acceptance document for current checks
 and prior desktop/browser limitations; the portable report records current delivery.
 
-## Current gated program
+## Completed026 consolidation and continuation
 
 New headless continuation program6381b346: [independent026 review](experiment-026-review.md)
 accepts with qualification after fresh100-world scalar/material/need and isolated
