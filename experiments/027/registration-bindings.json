@@ -1,0 +1,7 @@
+{
+  "experiments/027/specification.md": "21d04a5c1da7cda5a1bed9a1b23834a218993d695f98f03ced16a73be5a5b6a0",
+  "experiments/027/design-gate.md": "7d3f1b93c2c662262fd3179f028f73bf09edee55889a3fb4cafb42c4c5935dd0",
+  "experiments/027/registered-matrix.json": "df508f46466a767f35e10a8d90d31c3081537c546c2e8dad256200033ac25a5e",
+  "experiments/027/feasibility.json": "406d68a046f94eefeebb2d2c2271b5d8bb27cc299c3a55aab59fd2a80add668f",
+  "examples/support/feasibility027.py": "ae225743fdb60efd9eae501dc57e531dd41309f21a74bc5bbe9d5fcc7f91b38d"
+}

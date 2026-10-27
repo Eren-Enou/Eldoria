@@ -1,0 +1,4502 @@
+[
+  {
+    "source025": 0,
+    "mode": "Fixed",
+    "world": {
+      "family": "known",
+      "pair": 0,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 0,
+    "mode": "Experience",
+    "world": {
+      "family": "known",
+      "pair": 0,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 1,
+    "mode": "Fixed",
+    "world": {
+      "family": "known",
+      "pair": 0,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 1,
+    "mode": "Experience",
+    "world": {
+      "family": "known",
+      "pair": 0,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 2,
+    "mode": "Fixed",
+    "world": {
+      "family": "unknown",
+      "pair": 1,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "ready_offsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 2,
+    "mode": "Experience",
+    "world": {
+      "family": "unknown",
+      "pair": 1,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "ready_offsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 3,
+    "mode": "Fixed",
+    "world": {
+      "family": "unknown",
+      "pair": 1,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "ready_offsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 3,
+    "mode": "Experience",
+    "world": {
+      "family": "unknown",
+      "pair": 1,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "ready_offsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 4,
+    "mode": "Fixed",
+    "world": {
+      "family": "final_batch",
+      "pair": 2,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 4,
+    "mode": "Experience",
+    "world": {
+      "family": "final_batch",
+      "pair": 2,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 5,
+    "mode": "Fixed",
+    "world": {
+      "family": "final_batch",
+      "pair": 2,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 5,
+    "mode": "Experience",
+    "world": {
+      "family": "final_batch",
+      "pair": 2,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 6,
+    "mode": "Fixed",
+    "world": {
+      "family": "final_batch_descending",
+      "pair": 3,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Descending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 6,
+    "mode": "Experience",
+    "world": {
+      "family": "final_batch_descending",
+      "pair": 3,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Descending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 7,
+    "mode": "Fixed",
+    "world": {
+      "family": "final_batch_descending",
+      "pair": 3,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Descending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 7,
+    "mode": "Experience",
+    "world": {
+      "family": "final_batch_descending",
+      "pair": 3,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Descending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 8,
+    "mode": "Fixed",
+    "world": {
+      "family": "final_batch_rotating",
+      "pair": 4,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Rotating",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 8,
+    "mode": "Experience",
+    "world": {
+      "family": "final_batch_rotating",
+      "pair": 4,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Rotating",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 9,
+    "mode": "Fixed",
+    "world": {
+      "family": "final_batch_rotating",
+      "pair": 4,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Rotating",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 9,
+    "mode": "Experience",
+    "world": {
+      "family": "final_batch_rotating",
+      "pair": 4,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Rotating",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 10,
+    "mode": "Fixed",
+    "world": {
+      "family": "odd_remainder",
+      "pair": 5,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 3,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 10,
+    "mode": "Experience",
+    "world": {
+      "family": "odd_remainder",
+      "pair": 5,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 3,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 11,
+    "mode": "Fixed",
+    "world": {
+      "family": "odd_remainder",
+      "pair": 5,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 3,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 11,
+    "mode": "Experience",
+    "world": {
+      "family": "odd_remainder",
+      "pair": 5,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 3,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 12,
+    "mode": "Fixed",
+    "world": {
+      "family": "observed_empty",
+      "pair": 6,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 0,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 12,
+    "mode": "Experience",
+    "world": {
+      "family": "observed_empty",
+      "pair": 6,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 0,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 13,
+    "mode": "Fixed",
+    "world": {
+      "family": "observed_empty",
+      "pair": 6,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 0,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 13,
+    "mode": "Experience",
+    "world": {
+      "family": "observed_empty",
+      "pair": 6,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 0,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 14,
+    "mode": "Fixed",
+    "world": {
+      "family": "social_competition",
+      "pair": 7,
+      "world": {
+        "case": "paired",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 14,
+    "mode": "Experience",
+    "world": {
+      "family": "social_competition",
+      "pair": 7,
+      "world": {
+        "case": "paired",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 15,
+    "mode": "Fixed",
+    "world": {
+      "family": "social_competition",
+      "pair": 7,
+      "world": {
+        "case": "paired",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 15,
+    "mode": "Experience",
+    "world": {
+      "family": "social_competition",
+      "pair": 7,
+      "world": {
+        "case": "paired",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 16,
+    "mode": "Fixed",
+    "world": {
+      "family": "persistent_use_or_neglect",
+      "pair": 8,
+      "world": {
+        "case": "exhaustion",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 384,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 16,
+    "mode": "Experience",
+    "world": {
+      "family": "persistent_use_or_neglect",
+      "pair": 8,
+      "world": {
+        "case": "exhaustion",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 384,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 17,
+    "mode": "Fixed",
+    "world": {
+      "family": "persistent_use_or_neglect",
+      "pair": 8,
+      "world": {
+        "case": "exhaustion",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 384,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 17,
+    "mode": "Experience",
+    "world": {
+      "family": "persistent_use_or_neglect",
+      "pair": 8,
+      "world": {
+        "case": "exhaustion",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 384,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 18,
+    "mode": "Fixed",
+    "world": {
+      "family": "meal_and_work",
+      "pair": 9,
+      "world": {
+        "case": "consumption",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 18,
+    "mode": "Experience",
+    "world": {
+      "family": "meal_and_work",
+      "pair": 9,
+      "world": {
+        "case": "consumption",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 19,
+    "mode": "Fixed",
+    "world": {
+      "family": "meal_and_work",
+      "pair": 9,
+      "world": {
+        "case": "consumption",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 19,
+    "mode": "Experience",
+    "world": {
+      "family": "meal_and_work",
+      "pair": 9,
+      "world": {
+        "case": "consumption",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 20,
+    "mode": "Fixed",
+    "world": {
+      "family": "atomic_inquiry",
+      "pair": 10,
+      "world": {
+        "case": "inquiry_conflict",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 4,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 20,
+    "mode": "Experience",
+    "world": {
+      "family": "atomic_inquiry",
+      "pair": 10,
+      "world": {
+        "case": "inquiry_conflict",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 4,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 21,
+    "mode": "Fixed",
+    "world": {
+      "family": "atomic_inquiry",
+      "pair": 10,
+      "world": {
+        "case": "inquiry_conflict",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 4,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 21,
+    "mode": "Experience",
+    "world": {
+      "family": "atomic_inquiry",
+      "pair": 10,
+      "world": {
+        "case": "inquiry_conflict",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 4,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 22,
+    "mode": "Fixed",
+    "world": {
+      "family": "high_effort",
+      "pair": 11,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 8,
+        "preparation_ticks": 24,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 22,
+    "mode": "Experience",
+    "world": {
+      "family": "high_effort",
+      "pair": 11,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 8,
+        "preparation_ticks": 24,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 23,
+    "mode": "Fixed",
+    "world": {
+      "family": "high_effort",
+      "pair": 11,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 8,
+        "preparation_ticks": 24,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 23,
+    "mode": "Experience",
+    "world": {
+      "family": "high_effort",
+      "pair": 11,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 8,
+        "preparation_ticks": 24,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 24,
+    "mode": "Fixed",
+    "world": {
+      "family": "medium_effort",
+      "pair": 12,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 4,
+        "preparation_ticks": 8,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 24,
+    "mode": "Experience",
+    "world": {
+      "family": "medium_effort",
+      "pair": 12,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 4,
+        "preparation_ticks": 8,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 25,
+    "mode": "Fixed",
+    "world": {
+      "family": "medium_effort",
+      "pair": 12,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 4,
+        "preparation_ticks": 8,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 25,
+    "mode": "Experience",
+    "world": {
+      "family": "medium_effort",
+      "pair": 12,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 4,
+        "preparation_ticks": 8,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 26,
+    "mode": "Fixed",
+    "world": {
+      "family": "nominal_escrow",
+      "pair": 13,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 3,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 26,
+    "mode": "Experience",
+    "world": {
+      "family": "nominal_escrow",
+      "pair": 13,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 3,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 27,
+    "mode": "Fixed",
+    "world": {
+      "family": "nominal_escrow",
+      "pair": 13,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 3,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 27,
+    "mode": "Experience",
+    "world": {
+      "family": "nominal_escrow",
+      "pair": 13,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 3,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 2,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 28,
+    "mode": "Fixed",
+    "world": {
+      "family": "nominal_extraction",
+      "pair": 14,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 1,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 28,
+    "mode": "Experience",
+    "world": {
+      "family": "nominal_extraction",
+      "pair": 14,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 1,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 29,
+    "mode": "Fixed",
+    "world": {
+      "family": "nominal_extraction",
+      "pair": 14,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 1,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 29,
+    "mode": "Experience",
+    "world": {
+      "family": "nominal_extraction",
+      "pair": 14,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 1,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 30,
+    "mode": "Fixed",
+    "world": {
+      "family": "checkpoint_crossing",
+      "pair": 15,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 2,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 30,
+    "mode": "Experience",
+    "world": {
+      "family": "checkpoint_crossing",
+      "pair": 15,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 2,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 31,
+    "mode": "Fixed",
+    "world": {
+      "family": "checkpoint_crossing",
+      "pair": 15,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 2,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 31,
+    "mode": "Experience",
+    "world": {
+      "family": "checkpoint_crossing",
+      "pair": 15,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 2,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 32,
+    "mode": "Fixed",
+    "world": {
+      "family": "absolute_phase",
+      "pair": 16,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Absolute",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 32,
+    "mode": "Experience",
+    "world": {
+      "family": "absolute_phase",
+      "pair": 16,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Absolute",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 33,
+    "mode": "Fixed",
+    "world": {
+      "family": "absolute_phase",
+      "pair": 16,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Absolute",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 33,
+    "mode": "Experience",
+    "world": {
+      "family": "absolute_phase",
+      "pair": 16,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Absolute",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 34,
+    "mode": "Fixed",
+    "world": {
+      "family": "seed7",
+      "pair": 17,
+      "world": {
+        "case": "scarcity",
+        "seed": 7,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 34,
+    "mode": "Experience",
+    "world": {
+      "family": "seed7",
+      "pair": 17,
+      "world": {
+        "case": "scarcity",
+        "seed": 7,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 35,
+    "mode": "Fixed",
+    "world": {
+      "family": "seed7",
+      "pair": 17,
+      "world": {
+        "case": "scarcity",
+        "seed": 7,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 35,
+    "mode": "Experience",
+    "world": {
+      "family": "seed7",
+      "pair": 17,
+      "world": {
+        "case": "scarcity",
+        "seed": 7,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 36,
+    "mode": "Fixed",
+    "world": {
+      "family": "seed17",
+      "pair": 18,
+      "world": {
+        "case": "scarcity",
+        "seed": 17,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 36,
+    "mode": "Experience",
+    "world": {
+      "family": "seed17",
+      "pair": 18,
+      "world": {
+        "case": "scarcity",
+        "seed": 17,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 37,
+    "mode": "Fixed",
+    "world": {
+      "family": "seed17",
+      "pair": 18,
+      "world": {
+        "case": "scarcity",
+        "seed": 17,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 37,
+    "mode": "Experience",
+    "world": {
+      "family": "seed17",
+      "pair": 18,
+      "world": {
+        "case": "scarcity",
+        "seed": 17,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 38,
+    "mode": "Fixed",
+    "world": {
+      "family": "long_social",
+      "pair": 19,
+      "world": {
+        "case": "paired",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 192,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 16,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 38,
+    "mode": "Experience",
+    "world": {
+      "family": "long_social",
+      "pair": 19,
+      "world": {
+        "case": "paired",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 192,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 16,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 39,
+    "mode": "Fixed",
+    "world": {
+      "family": "long_social",
+      "pair": 19,
+      "world": {
+        "case": "paired",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 192,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 16,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 39,
+    "mode": "Experience",
+    "world": {
+      "family": "long_social",
+      "pair": 19,
+      "world": {
+        "case": "paired",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 192,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 16,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 40,
+    "mode": "Fixed",
+    "world": {
+      "family": "long_effort",
+      "pair": 20,
+      "world": {
+        "case": "exhaustion",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 384,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 16,
+        "extraction_ticks": 4,
+        "preparation_ticks": 8,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 40,
+    "mode": "Experience",
+    "world": {
+      "family": "long_effort",
+      "pair": 20,
+      "world": {
+        "case": "exhaustion",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 384,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 16,
+        "extraction_ticks": 4,
+        "preparation_ticks": 8,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 41,
+    "mode": "Fixed",
+    "world": {
+      "family": "long_effort",
+      "pair": 20,
+      "world": {
+        "case": "exhaustion",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 384,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 16,
+        "extraction_ticks": 4,
+        "preparation_ticks": 8,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 41,
+    "mode": "Experience",
+    "world": {
+      "family": "long_effort",
+      "pair": 20,
+      "world": {
+        "case": "exhaustion",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 384,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 16,
+        "extraction_ticks": 4,
+        "preparation_ticks": 8,
+        "observation": {
+          "period": 16,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 42,
+    "mode": "Fixed",
+    "world": {
+      "family": "long_finite",
+      "pair": 21,
+      "world": {
+        "case": "exhaustion",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 768,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 16,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 42,
+    "mode": "Experience",
+    "world": {
+      "family": "long_finite",
+      "pair": 21,
+      "world": {
+        "case": "exhaustion",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 768,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 16,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 43,
+    "mode": "Fixed",
+    "world": {
+      "family": "long_finite",
+      "pair": 21,
+      "world": {
+        "case": "exhaustion",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 768,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 16,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 43,
+    "mode": "Experience",
+    "world": {
+      "family": "long_finite",
+      "pair": 21,
+      "world": {
+        "case": "exhaustion",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 768,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 16,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 44,
+    "mode": "Fixed",
+    "world": {
+      "family": "null_unknown",
+      "pair": 22,
+      "world": {
+        "case": "null",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "ready_offsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 44,
+    "mode": "Experience",
+    "world": {
+      "family": "null_unknown",
+      "pair": 22,
+      "world": {
+        "case": "null",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "ready_offsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 45,
+    "mode": "Fixed",
+    "world": {
+      "family": "null_unknown",
+      "pair": 22,
+      "world": {
+        "case": "null",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "ready_offsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 45,
+    "mode": "Experience",
+    "world": {
+      "family": "null_unknown",
+      "pair": 22,
+      "world": {
+        "case": "null",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "ready_offsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 46,
+    "mode": "Fixed",
+    "world": {
+      "family": "social_order",
+      "pair": 23,
+      "world": {
+        "case": "paired",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Descending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 46,
+    "mode": "Experience",
+    "world": {
+      "family": "social_order",
+      "pair": 23,
+      "world": {
+        "case": "paired",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Descending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 47,
+    "mode": "Fixed",
+    "world": {
+      "family": "social_order",
+      "pair": 23,
+      "world": {
+        "case": "paired",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Descending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 47,
+    "mode": "Experience",
+    "world": {
+      "family": "social_order",
+      "pair": 23,
+      "world": {
+        "case": "paired",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Descending",
+        "capacity": 2,
+        "period": 11,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "held_out_parameter_sensitivity"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 48,
+    "mode": "Fixed",
+    "world": {
+      "family": "reporting_placebo",
+      "pair": null,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 17,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 48,
+    "mode": "Experience",
+    "world": {
+      "family": "reporting_placebo",
+      "pair": null,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 17,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": false,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 49,
+    "mode": "Fixed",
+    "world": {
+      "family": "reporting_placebo",
+      "pair": null,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 17,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  },
+  {
+    "source025": 49,
+    "mode": "Experience",
+    "world": {
+      "family": "reporting_placebo",
+      "pair": null,
+      "world": {
+        "case": "scarcity",
+        "seed": 42,
+        "duration": 4,
+        "cadence": 8,
+        "horizon": 96,
+        "order": "Ascending",
+        "capacity": 2,
+        "period": 17,
+        "phase": "Epoch",
+        "mode": "Continuous",
+        "role": "controlled"
+      },
+      "valuation": "Baseline",
+      "preparation": {
+        "feature_enabled": true,
+        "access_enabled": true,
+        "source_id": 0,
+        "raw_initial": 8,
+        "extraction_ticks": 2,
+        "preparation_ticks": 4,
+        "observation": {
+          "period": 8,
+          "raw_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ready_offsets": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    }
+  }
+]
