@@ -1,0 +1,212 @@
+{
+  "pairs_body_equal_except_registered_scores": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "counts": {
+    "expired_before_terminal": 114,
+    "terminal_expirations": 8,
+    "updates_changing_expectation": 109,
+    "eligible_retained_sites": 58,
+    "already_preferred_Prepare": 56,
+    "retained_feedback_without_raw_knowledge": 64,
+    "capacity_evictions": 7,
+    "other_candidate_remains_preferred": 2
+  },
+  "receipt_kinds": {
+    "Taken": 83,
+    "Insufficient": 46
+  },
+  "fixed_prepare_minus_best_other_histogram": {
+    "-39": 2,
+    "3": 1,
+    "4": 6,
+    "5": 1,
+    "6": 3,
+    "8": 2,
+    "9": 2,
+    "11": 6,
+    "13": 1,
+    "14": 2,
+    "15": 1,
+    "16": 2,
+    "18": 1,
+    "24": 24,
+    "33": 4
+  },
+  "witnesses": {
+    "score_only_success": {
+      "source025": 1,
+      "boundary": 7,
+      "choice": 0,
+      "owner": 0,
+      "tick": 7,
+      "retained": [
+        {
+          "owner": 0,
+          "received": 2,
+          "success": true
+        }
+      ],
+      "receipts": [
+        {
+          "memory": 4,
+          "signal": {
+            "owner": 0,
+            "received": 2,
+            "success": true
+          },
+          "physical": {
+            "id": 0,
+            "tick": 2,
+            "commitment": 0,
+            "owner": 0,
+            "source": 0,
+            "outcome": "Extracted",
+            "raw_before": 8,
+            "raw_after": 6,
+            "escrow_before": 0,
+            "escrow_after": 2,
+            "food_before": 0,
+            "food_after": 0,
+            "waste_before": 0,
+            "waste_after": 0
+          }
+        }
+      ],
+      "hunger": 45,
+      "duration": 6,
+      "fixed_prepare": 44,
+      "learned_prepare": 54,
+      "other_best": {
+        "action": "Invite",
+        "eligible": true,
+        "base_score": 20,
+        "meal_relief": 0,
+        "work_effort": 0,
+        "final_score": 20
+      },
+      "selected": "Prepare"
+    },
+    "decision_expiry": {
+      "source025": 1,
+      "boundary": 26,
+      "choice": 0,
+      "tick": 26,
+      "before": [
+        {
+          "owner": 2,
+          "received": 2,
+          "success": true
+        },
+        {
+          "owner": 2,
+          "received": 9,
+          "success": false
+        }
+      ],
+      "retained": [
+        {
+          "owner": 2,
+          "received": 9,
+          "success": false
+        }
+      ]
+    },
+    "raw_absent_learning_survives": {
+      "source025": 15,
+      "boundary": 24,
+      "choice": 0,
+      "tick": 30,
+      "owner": 0,
+      "retained": [
+        {
+          "owner": 0,
+          "received": 24,
+          "success": true
+        }
+      ],
+      "prepare": {
+        "action": "Prepare",
+        "eligible": false,
+        "base_score": -1,
+        "meal_relief": 0,
+        "work_effort": 0,
+        "final_score": -1
+      }
+    },
+    "capacity_eviction": {
+      "source025": 15,
+      "memory": 21,
+      "tick": 50,
+      "owner": 2,
+      "before": [
+        {
+          "owner": 2,
+          "received": 30,
+          "success": true
+        },
+        {
+          "owner": 2,
+          "received": 40,
+          "success": true
+        }
+      ],
+      "evicted": {
+        "owner": 2,
+        "received": 30,
+        "success": true
+      }
+    }
+  },
+  "publication_manifest_membership": "exact",
+  "review_scope": "post-outcome complementary audit; no new outcomes or policy change"
+}

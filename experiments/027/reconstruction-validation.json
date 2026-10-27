@@ -1,0 +1,30 @@
+{
+  "archive_revision": "0fd11fa4bd74d6e0942590cc57e08ab2878c0f61",
+  "source": "39cb0afcbd4c3dadbbac3c655687f82f77426b43060e5eea852b3301cf5c9c66",
+  "root_checks": [
+    {
+      "seconds": 1.9158136,
+      "exit": 0,
+      "check": "fmt"
+    },
+    {
+      "seconds": 3.3085179,
+      "exit": 0,
+      "check": "clippy"
+    },
+    {
+      "seconds": 131.9811138,
+      "exit": 0,
+      "check": "test"
+    }
+  ],
+  "host_tests": 14,
+  "independent_worlds": 100,
+  "independent_seconds": 153.167,
+  "scratch_corruptions": 17,
+  "matched_pairs": 50,
+  "executed_changed": 0,
+  "complementary_exact_bodies_except_scores": 50,
+  "native_replay": "running; final acceptance pending",
+  "foundation": "full026 running; identity/raw guard passes"
+}
