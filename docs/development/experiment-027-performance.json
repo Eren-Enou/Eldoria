@@ -1,0 +1,16 @@
+{
+  "seconds": 522.7207041999791,
+  "peak_working_set_bytes": 23732224,
+  "exit": 0,
+  "pid": 125100,
+  "storage": {
+    "rows": 100,
+    "decisions": 15638,
+    "receipts": 129,
+    "max_retained_cells_per_actor": 2,
+    "learning_json_bytes": 1384484,
+    "total_json_bytes": 324607392,
+    "gzip_bytes": 8581315
+  },
+  "scope": "One native100-world run, concurrent foundation validation; wall-clock/peak process memory separate from deterministic evidence. No matched old-host cost isolation."
+}

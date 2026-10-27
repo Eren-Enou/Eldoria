@@ -1,0 +1,73 @@
+{
+  "source": "39cb0afcbd4c3dadbbac3c655687f82f77426b43060e5eea852b3301cf5c9c66",
+  "cases": [
+    {
+      "name": "private experience imported",
+      "rejected": true
+    },
+    {
+      "name": "future receipt early",
+      "rejected": true
+    },
+    {
+      "name": "observer stock in cognition",
+      "rejected": true
+    },
+    {
+      "name": "forgotten state restored",
+      "rejected": true
+    },
+    {
+      "name": "missing live receipt",
+      "rejected": true
+    },
+    {
+      "name": "wrong outcome/update",
+      "rejected": true
+    },
+    {
+      "name": "capacity overflow",
+      "rejected": true
+    },
+    {
+      "name": "unregistered Prepare bonus",
+      "rejected": true
+    },
+    {
+      "name": "changed eligibility",
+      "rejected": true
+    },
+    {
+      "name": "fictitious meal",
+      "rejected": true
+    },
+    {
+      "name": "false later recipient-use attribution",
+      "rejected": true
+    },
+    {
+      "name": "duplicate output",
+      "rejected": true
+    },
+    {
+      "name": "missing waste",
+      "rejected": true
+    },
+    {
+      "name": "hidden free replenishment",
+      "rejected": true
+    },
+    {
+      "name": "modified registered parameters",
+      "rejected": true
+    },
+    {
+      "name": "wrong source identity",
+      "rejected": true
+    },
+    {
+      "name": "invented Taken delivery",
+      "rejected": true
+    }
+  ]
+}

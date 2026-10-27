@@ -1,0 +1,19 @@
+{
+  "schema": "experiment-027-original-archive/v1",
+  "source": "39cb0afcbd4c3dadbbac3c655687f82f77426b43060e5eea852b3301cf5c9c66",
+  "registration_revision": "f7eead060e7dd692ab02683335c96174345bcb02",
+  "runtime_revision": "44baa38491b1e522b01f0490e3becc33fee3e3cf",
+  "activation_revision": "c2f98f427308201f740904ccdabfde902bdc09ab",
+  "rows": 100,
+  "gzip_sha256": "c9a0402f39594018091bfeaea065a4ca3829811e0ba03d61722e01e9551c88dc",
+  "raw_sha256": "6286cc6733278509f5ec72726fddd79cbdd5fcbe3d117553219b20f494d64e74",
+  "storage": {
+    "rows": 100,
+    "decisions": 15638,
+    "receipts": 129,
+    "max_retained_cells_per_actor": 2,
+    "learning_json_bytes": 1384484,
+    "total_json_bytes": 324607392,
+    "gzip_bytes": 8581315
+  }
+}

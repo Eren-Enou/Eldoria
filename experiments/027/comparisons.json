@@ -1,0 +1,5652 @@
+[
+  {
+    "source025": 0,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 100,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 1,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 104,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 8,
+      "success": 4,
+      "failed": 4,
+      "work_ticks": 48,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "transfers": 0,
+      "proposals": 88,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -74,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -92,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 8,
+      "success": 4,
+      "failed": 4,
+      "work_ticks": 48,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "transfers": 0,
+      "proposals": 88,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -74,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -92,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 4,
+      "counterfactual_changes": 0,
+      "expired": 8,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 2,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 104,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        11540,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        8240,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 95,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        -32,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        11540,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        8240,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 95,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        -32,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 3,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 104,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        11540,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        8240,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 95,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        -32,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        11540,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        8240,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 95,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        -32,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 4,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 100,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 2,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 2,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 5,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 103,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 2,
+      "success": 1,
+      "failed": 1,
+      "work_ticks": 12,
+      "meals": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        11620,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 95,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        -32,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 1,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 2,
+      "success": 1,
+      "failed": 1,
+      "work_ticks": 12,
+      "meals": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        11620,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 95,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        -32,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 1,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 2,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 6,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 100,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100
+      ],
+      "raw": 2,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100
+      ],
+      "raw": 2,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 7,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 102,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 2,
+      "success": 1,
+      "failed": 1,
+      "work_ticks": 12,
+      "meals": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        11620,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        8320,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 95,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        -33
+      ],
+      "raw": 0,
+      "waste": 1,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 2,
+      "success": 1,
+      "failed": 1,
+      "work_ticks": 12,
+      "meals": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        11620,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        8320,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 95,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        -33
+      ],
+      "raw": 0,
+      "waste": 1,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 2,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 8,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 100,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 2,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 2,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 9,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 103,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 2,
+      "success": 1,
+      "failed": 1,
+      "work_ticks": 12,
+      "meals": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        11620,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 95,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        -32,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 1,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 2,
+      "success": 1,
+      "failed": 1,
+      "work_ticks": 12,
+      "meals": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        11620,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 95,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        -32,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 1,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 2,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 10,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 100,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 3,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 3,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 11,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 103,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 2,
+      "success": 1,
+      "failed": 1,
+      "work_ticks": 12,
+      "meals": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        11620,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 95,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        -32,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 1,
+      "waste": 1,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 2,
+      "success": 1,
+      "failed": 1,
+      "work_ticks": 12,
+      "meals": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        11620,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 95,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        -32,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 1,
+      "waste": 1,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 2,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 12,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 100,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 13,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 100,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 14,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 120,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        2,
+        0,
+        8
+      ],
+      "hunger_area": [
+        10180,
+        6340,
+        10180,
+        4315
+      ],
+      "ordinary_hunger_area": [
+        6880,
+        3160,
+        6880,
+        1735
+      ],
+      "transfers": 27,
+      "proposals": 91,
+      "food": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        35,
+        100,
+        0,
+        68,
+        0,
+        29,
+        98,
+        0,
+        41,
+        0,
+        100,
+        68
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        2,
+        0,
+        8
+      ],
+      "hunger_area": [
+        10180,
+        6340,
+        10180,
+        4315
+      ],
+      "ordinary_hunger_area": [
+        6880,
+        3160,
+        6880,
+        1735
+      ],
+      "transfers": 27,
+      "proposals": 91,
+      "food": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        35,
+        100,
+        0,
+        68,
+        0,
+        29,
+        98,
+        0,
+        41,
+        0,
+        100,
+        68
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 15,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 119,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 6,
+      "success": 4,
+      "failed": 2,
+      "work_ticks": 36,
+      "meals": [
+        2,
+        3,
+        1,
+        4
+      ],
+      "hunger_area": [
+        5760,
+        5890,
+        7620,
+        4760
+      ],
+      "ordinary_hunger_area": [
+        2880,
+        2790,
+        4320,
+        2020
+      ],
+      "transfers": 32,
+      "proposals": 85,
+      "food": [
+        0,
+        1,
+        1,
+        4
+      ],
+      "trust": [
+        100,
+        4,
+        0,
+        100,
+        0,
+        53,
+        30,
+        0,
+        98,
+        0,
+        98,
+        100
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 6,
+      "success": 4,
+      "failed": 2,
+      "work_ticks": 36,
+      "meals": [
+        2,
+        3,
+        1,
+        4
+      ],
+      "hunger_area": [
+        5760,
+        5890,
+        7620,
+        4760
+      ],
+      "ordinary_hunger_area": [
+        2880,
+        2790,
+        4320,
+        2020
+      ],
+      "transfers": 32,
+      "proposals": 85,
+      "food": [
+        0,
+        1,
+        1,
+        4
+      ],
+      "trust": [
+        100,
+        4,
+        0,
+        100,
+        0,
+        53,
+        30,
+        0,
+        98,
+        0,
+        98,
+        100
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 3,
+      "counterfactual_changes": 0,
+      "expired": 5,
+      "capacity_evicted": 1
+    }
+  },
+  {
+    "source025": 16,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 426,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "hunger_area": [
+        38980,
+        38980,
+        36940,
+        37230
+      ],
+      "ordinary_hunger_area": [
+        35680,
+        35680,
+        33640,
+        33930
+      ],
+      "transfers": 86,
+      "proposals": 381,
+      "food": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "trust": [
+        98,
+        0,
+        0,
+        100,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -24
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "hunger_area": [
+        38980,
+        38980,
+        36940,
+        37230
+      ],
+      "ordinary_hunger_area": [
+        35680,
+        35680,
+        33640,
+        33930
+      ],
+      "transfers": 86,
+      "proposals": 381,
+      "food": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "trust": [
+        98,
+        0,
+        0,
+        100,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -24
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 17,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 360,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 4,
+      "success": 4,
+      "failed": 0,
+      "work_ticks": 24,
+      "meals": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "hunger_area": [
+        36600,
+        37230,
+        38980,
+        36090
+      ],
+      "ordinary_hunger_area": [
+        33300,
+        33930,
+        35680,
+        32790
+      ],
+      "transfers": 163,
+      "proposals": 342,
+      "food": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "trust": [
+        98,
+        0,
+        0,
+        100,
+        0,
+        38,
+        0,
+        0,
+        100,
+        0,
+        38,
+        98
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 4,
+      "success": 4,
+      "failed": 0,
+      "work_ticks": 24,
+      "meals": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "hunger_area": [
+        36600,
+        37230,
+        38980,
+        36090
+      ],
+      "ordinary_hunger_area": [
+        33300,
+        33930,
+        35680,
+        32790
+      ],
+      "transfers": 163,
+      "proposals": 342,
+      "food": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "trust": [
+        98,
+        0,
+        0,
+        100,
+        0,
+        38,
+        0,
+        0,
+        100,
+        0,
+        38,
+        98
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 1,
+      "counterfactual_changes": 0,
+      "expired": 4,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 18,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 132,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        1,
+        4,
+        3
+      ],
+      "hunger_area": [
+        10180,
+        8140,
+        6495,
+        7600
+      ],
+      "ordinary_hunger_area": [
+        6880,
+        4840,
+        3755,
+        4300
+      ],
+      "transfers": 21,
+      "proposals": 95,
+      "food": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "trust": [
+        100,
+        0,
+        0,
+        98,
+        0,
+        0,
+        0,
+        0,
+        -60,
+        0,
+        0,
+        -50
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        1,
+        4,
+        3
+      ],
+      "hunger_area": [
+        10180,
+        8140,
+        6495,
+        7600
+      ],
+      "ordinary_hunger_area": [
+        6880,
+        4840,
+        3755,
+        4300
+      ],
+      "transfers": 21,
+      "proposals": 95,
+      "food": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "trust": [
+        100,
+        0,
+        0,
+        98,
+        0,
+        0,
+        0,
+        0,
+        -60,
+        0,
+        0,
+        -50
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 19,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 159,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 7,
+      "success": 4,
+      "failed": 3,
+      "work_ticks": 42,
+      "meals": [
+        1,
+        6,
+        5,
+        4
+      ],
+      "hunger_area": [
+        8420,
+        5400,
+        4980,
+        6465
+      ],
+      "ordinary_hunger_area": [
+        5120,
+        2400,
+        2240,
+        3225
+      ],
+      "transfers": 5,
+      "proposals": 90,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        42,
+        0,
+        24,
+        100,
+        -23,
+        0,
+        0,
+        0,
+        -29,
+        7,
+        0,
+        -17
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 7,
+      "success": 4,
+      "failed": 3,
+      "work_ticks": 42,
+      "meals": [
+        1,
+        6,
+        5,
+        4
+      ],
+      "hunger_area": [
+        8420,
+        5400,
+        4980,
+        6465
+      ],
+      "ordinary_hunger_area": [
+        5120,
+        2400,
+        2240,
+        3225
+      ],
+      "transfers": 5,
+      "proposals": 90,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        42,
+        0,
+        24,
+        100,
+        -23,
+        0,
+        0,
+        0,
+        -29,
+        7,
+        0,
+        -17
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 3,
+      "counterfactual_changes": 0,
+      "expired": 6,
+      "capacity_evicted": 1
+    }
+  },
+  {
+    "source025": 20,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 129,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "hunger_area": [
+        8700,
+        8350,
+        8700,
+        8350
+      ],
+      "ordinary_hunger_area": [
+        5400,
+        5050,
+        5400,
+        5050
+      ],
+      "transfers": 0,
+      "proposals": 104,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -17,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -30,
+        0,
+        0,
+        0
+      ],
+      "raw": 4,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "hunger_area": [
+        8700,
+        8350,
+        8700,
+        8350
+      ],
+      "ordinary_hunger_area": [
+        5400,
+        5050,
+        5400,
+        5050
+      ],
+      "transfers": 0,
+      "proposals": 104,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -17,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -30,
+        0,
+        0,
+        0
+      ],
+      "raw": 4,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 21,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 181,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 4,
+      "success": 2,
+      "failed": 2,
+      "work_ticks": 24,
+      "meals": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "hunger_area": [
+        7220,
+        8350,
+        7950,
+        8350
+      ],
+      "ordinary_hunger_area": [
+        3920,
+        5050,
+        4650,
+        5050
+      ],
+      "transfers": 0,
+      "proposals": 116,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -17,
+        -83,
+        -16,
+        -29,
+        -59,
+        -100,
+        -31,
+        -32,
+        -61,
+        -33,
+        -34,
+        0
+      ],
+      "raw": 0,
+      "waste": 2,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 4,
+      "success": 2,
+      "failed": 2,
+      "work_ticks": 24,
+      "meals": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "hunger_area": [
+        7220,
+        8350,
+        7950,
+        8350
+      ],
+      "ordinary_hunger_area": [
+        3920,
+        5050,
+        4650,
+        5050
+      ],
+      "transfers": 0,
+      "proposals": 116,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -17,
+        -83,
+        -16,
+        -29,
+        -59,
+        -100,
+        -31,
+        -32,
+        -61,
+        -33,
+        -34,
+        0
+      ],
+      "raw": 0,
+      "waste": 2,
+      "score_changes": 4,
+      "counterfactual_changes": 0,
+      "expired": 4,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 22,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 100,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 23,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 76,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 4,
+      "success": 4,
+      "failed": 0,
+      "work_ticks": 128,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        12020,
+        12020,
+        12020,
+        12020
+      ],
+      "ordinary_hunger_area": [
+        8720,
+        8720,
+        8720,
+        8720
+      ],
+      "transfers": 0,
+      "proposals": 66,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 4,
+      "success": 4,
+      "failed": 0,
+      "work_ticks": 128,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        12020,
+        12020,
+        12020,
+        12020
+      ],
+      "ordinary_hunger_area": [
+        8720,
+        8720,
+        8720,
+        8720
+      ],
+      "transfers": 0,
+      "proposals": 66,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 4,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 24,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 100,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 25,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 88,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 8,
+      "success": 4,
+      "failed": 4,
+      "work_ticks": 96,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        11860,
+        11860,
+        11860,
+        11860
+      ],
+      "ordinary_hunger_area": [
+        8560,
+        8560,
+        8560,
+        8560
+      ],
+      "transfers": 0,
+      "proposals": 74,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 8,
+      "success": 4,
+      "failed": 4,
+      "work_ticks": 96,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        11860,
+        11860,
+        11860,
+        11860
+      ],
+      "ordinary_hunger_area": [
+        8560,
+        8560,
+        8560,
+        8560
+      ],
+      "transfers": 0,
+      "proposals": 74,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 4,
+      "counterfactual_changes": 0,
+      "expired": 8,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 26,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 8,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        3400,
+        3400,
+        3400,
+        3400
+      ],
+      "ordinary_hunger_area": [
+        240,
+        240,
+        240,
+        240
+      ],
+      "transfers": 0,
+      "proposals": 6,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -32,
+        0,
+        0,
+        0
+      ],
+      "raw": 2,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        3400,
+        3400,
+        3400,
+        3400
+      ],
+      "ordinary_hunger_area": [
+        240,
+        240,
+        240,
+        240
+      ],
+      "transfers": 0,
+      "proposals": 6,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -32,
+        0,
+        0,
+        0
+      ],
+      "raw": 2,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 27,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 4,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 4,
+      "success": 1,
+      "failed": 3,
+      "work_ticks": 24,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        3400,
+        3400,
+        3400,
+        3400
+      ],
+      "ordinary_hunger_area": [
+        240,
+        240,
+        240,
+        240
+      ],
+      "transfers": 0,
+      "proposals": 0,
+      "food": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 1,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 4,
+      "success": 1,
+      "failed": 3,
+      "work_ticks": 24,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        3400,
+        3400,
+        3400,
+        3400
+      ],
+      "ordinary_hunger_area": [
+        240,
+        240,
+        240,
+        240
+      ],
+      "transfers": 0,
+      "proposals": 0,
+      "food": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 1,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 4,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 28,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 4,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        3200,
+        3200,
+        3200,
+        3200
+      ],
+      "ordinary_hunger_area": [
+        80,
+        80,
+        80,
+        80
+      ],
+      "transfers": 0,
+      "proposals": 4,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        3200,
+        3200,
+        3200,
+        3200
+      ],
+      "ordinary_hunger_area": [
+        80,
+        80,
+        80,
+        80
+      ],
+      "transfers": 0,
+      "proposals": 4,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 29,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 4,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 4,
+      "success": 4,
+      "failed": 0,
+      "work_ticks": 24,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        3200,
+        3200,
+        3200,
+        3200
+      ],
+      "ordinary_hunger_area": [
+        80,
+        80,
+        80,
+        80
+      ],
+      "transfers": 0,
+      "proposals": 0,
+      "food": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "trust": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 4,
+      "success": 4,
+      "failed": 0,
+      "work_ticks": 24,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        3200,
+        3200,
+        3200,
+        3200
+      ],
+      "ordinary_hunger_area": [
+        80,
+        80,
+        80,
+        80
+      ],
+      "transfers": 0,
+      "proposals": 0,
+      "food": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "trust": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 4,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 30,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 100,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 31,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 104,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 8,
+      "success": 4,
+      "failed": 4,
+      "work_ticks": 48,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "transfers": 0,
+      "proposals": 88,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -74,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -92,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 8,
+      "success": 4,
+      "failed": 4,
+      "work_ticks": 48,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "transfers": 0,
+      "proposals": 88,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -74,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -92,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 4,
+      "counterfactual_changes": 0,
+      "expired": 8,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 32,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 100,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 33,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 104,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 8,
+      "success": 4,
+      "failed": 4,
+      "work_ticks": 48,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "transfers": 0,
+      "proposals": 88,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -74,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -92,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 8,
+      "success": 4,
+      "failed": 4,
+      "work_ticks": 48,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "transfers": 0,
+      "proposals": 88,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -74,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -92,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 4,
+      "counterfactual_changes": 0,
+      "expired": 8,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 34,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 100,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 35,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 102,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 8,
+      "success": 4,
+      "failed": 4,
+      "work_ticks": 48,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "transfers": 0,
+      "proposals": 88,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 8,
+      "success": 4,
+      "failed": 4,
+      "work_ticks": 48,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "transfers": 0,
+      "proposals": 88,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 4,
+      "counterfactual_changes": 0,
+      "expired": 8,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 36,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 100,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 37,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 104,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 8,
+      "success": 4,
+      "failed": 4,
+      "work_ticks": 48,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "transfers": 0,
+      "proposals": 88,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -58,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -69,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 8,
+      "success": 4,
+      "failed": 4,
+      "work_ticks": 48,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "transfers": 0,
+      "proposals": 88,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -58,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -69,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 4,
+      "counterfactual_changes": 0,
+      "expired": 8,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 38,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 220,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        2,
+        0,
+        8
+      ],
+      "hunger_area": [
+        19780,
+        15940,
+        19780,
+        13915
+      ],
+      "ordinary_hunger_area": [
+        16480,
+        12640,
+        16480,
+        10615
+      ],
+      "transfers": 48,
+      "proposals": 183,
+      "food": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "trust": [
+        35,
+        98,
+        0,
+        68,
+        0,
+        -100,
+        100,
+        0,
+        41,
+        0,
+        35,
+        68
+      ],
+      "raw": 16,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        2,
+        0,
+        8
+      ],
+      "hunger_area": [
+        19780,
+        15940,
+        19780,
+        13915
+      ],
+      "ordinary_hunger_area": [
+        16480,
+        12640,
+        16480,
+        10615
+      ],
+      "transfers": 48,
+      "proposals": 183,
+      "food": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "trust": [
+        35,
+        98,
+        0,
+        68,
+        0,
+        -100,
+        100,
+        0,
+        41,
+        0,
+        35,
+        68
+      ],
+      "raw": 16,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 39,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 253,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 10,
+      "success": 8,
+      "failed": 2,
+      "work_ticks": 60,
+      "meals": [
+        3,
+        5,
+        3,
+        9
+      ],
+      "hunger_area": [
+        14265,
+        13660,
+        13020,
+        10935
+      ],
+      "ordinary_hunger_area": [
+        10965,
+        10360,
+        9720,
+        7635
+      ],
+      "transfers": 15,
+      "proposals": 179,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        41,
+        4,
+        0,
+        98,
+        0,
+        53,
+        30,
+        0,
+        94,
+        0,
+        98,
+        100
+      ],
+      "raw": 0,
+      "waste": 8,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 10,
+      "success": 8,
+      "failed": 2,
+      "work_ticks": 60,
+      "meals": [
+        3,
+        5,
+        3,
+        9
+      ],
+      "hunger_area": [
+        14265,
+        13660,
+        13020,
+        10935
+      ],
+      "ordinary_hunger_area": [
+        10965,
+        10360,
+        9720,
+        7635
+      ],
+      "transfers": 15,
+      "proposals": 179,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        41,
+        4,
+        0,
+        98,
+        0,
+        53,
+        30,
+        0,
+        94,
+        0,
+        98,
+        100
+      ],
+      "raw": 0,
+      "waste": 8,
+      "score_changes": 7,
+      "counterfactual_changes": 0,
+      "expired": 7,
+      "capacity_evicted": 3
+    }
+  },
+  {
+    "source025": 40,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 421,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "hunger_area": [
+        38980,
+        38980,
+        36940,
+        36470
+      ],
+      "ordinary_hunger_area": [
+        35680,
+        35680,
+        33640,
+        33170
+      ],
+      "transfers": 86,
+      "proposals": 378,
+      "food": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "trust": [
+        98,
+        0,
+        0,
+        100,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -24
+      ],
+      "raw": 16,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "hunger_area": [
+        38980,
+        38980,
+        36940,
+        36470
+      ],
+      "ordinary_hunger_area": [
+        35680,
+        35680,
+        33640,
+        33170
+      ],
+      "transfers": 86,
+      "proposals": 378,
+      "food": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "trust": [
+        98,
+        0,
+        0,
+        100,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -24
+      ],
+      "raw": 16,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 41,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 404,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 9,
+      "success": 8,
+      "failed": 1,
+      "work_ticks": 108,
+      "meals": [
+        2,
+        3,
+        2,
+        5
+      ],
+      "hunger_area": [
+        34980,
+        33940,
+        34420,
+        34520
+      ],
+      "ordinary_hunger_area": [
+        31680,
+        30640,
+        31120,
+        31220
+      ],
+      "transfers": 17,
+      "proposals": 353,
+      "food": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        100,
+        0,
+        0,
+        100,
+        0,
+        14,
+        0,
+        0,
+        40,
+        0,
+        60,
+        68
+      ],
+      "raw": 0,
+      "waste": 8,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 9,
+      "success": 8,
+      "failed": 1,
+      "work_ticks": 108,
+      "meals": [
+        2,
+        3,
+        2,
+        5
+      ],
+      "hunger_area": [
+        34980,
+        33940,
+        34420,
+        34520
+      ],
+      "ordinary_hunger_area": [
+        31680,
+        30640,
+        31120,
+        31220
+      ],
+      "transfers": 17,
+      "proposals": 353,
+      "food": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        100,
+        0,
+        0,
+        100,
+        0,
+        14,
+        0,
+        0,
+        40,
+        0,
+        60,
+        68
+      ],
+      "raw": 0,
+      "waste": 8,
+      "score_changes": 5,
+      "counterfactual_changes": 0,
+      "expired": 9,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 42,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 852,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "hunger_area": [
+        77380,
+        77380,
+        75340,
+        75630
+      ],
+      "ordinary_hunger_area": [
+        74080,
+        74080,
+        72040,
+        72330
+      ],
+      "transfers": 172,
+      "proposals": 765,
+      "food": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "trust": [
+        98,
+        0,
+        0,
+        100,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -24
+      ],
+      "raw": 16,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "hunger_area": [
+        77380,
+        77380,
+        75340,
+        75630
+      ],
+      "ordinary_hunger_area": [
+        74080,
+        74080,
+        72040,
+        72330
+      ],
+      "transfers": 172,
+      "proposals": 765,
+      "food": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "trust": [
+        98,
+        0,
+        0,
+        100,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -24
+      ],
+      "raw": 16,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 43,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 753,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 9,
+      "success": 8,
+      "failed": 1,
+      "work_ticks": 54,
+      "meals": [
+        1,
+        3,
+        1,
+        4
+      ],
+      "hunger_area": [
+        75000,
+        73050,
+        75380,
+        72620
+      ],
+      "ordinary_hunger_area": [
+        71700,
+        69750,
+        72080,
+        69320
+      ],
+      "transfers": 172,
+      "proposals": 720,
+      "food": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "trust": [
+        98,
+        0,
+        0,
+        100,
+        0,
+        68,
+        0,
+        0,
+        44,
+        0,
+        46,
+        98
+      ],
+      "raw": 0,
+      "waste": 8,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 9,
+      "success": 8,
+      "failed": 1,
+      "work_ticks": 54,
+      "meals": [
+        1,
+        3,
+        1,
+        4
+      ],
+      "hunger_area": [
+        75000,
+        73050,
+        75380,
+        72620
+      ],
+      "ordinary_hunger_area": [
+        71700,
+        69750,
+        72080,
+        69320
+      ],
+      "transfers": 172,
+      "proposals": 720,
+      "food": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "trust": [
+        98,
+        0,
+        0,
+        100,
+        0,
+        68,
+        0,
+        0,
+        44,
+        0,
+        46,
+        98
+      ],
+      "raw": 0,
+      "waste": 8,
+      "score_changes": 5,
+      "counterfactual_changes": 0,
+      "expired": 7,
+      "capacity_evicted": 2
+    }
+  },
+  {
+    "source025": 44,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 142,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        8700,
+        8700,
+        8700,
+        8700
+      ],
+      "ordinary_hunger_area": [
+        5400,
+        5400,
+        5400,
+        5400
+      ],
+      "transfers": 0,
+      "proposals": 106,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -74,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -92,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        8700,
+        8700,
+        8700,
+        8700
+      ],
+      "ordinary_hunger_area": [
+        5400,
+        5400,
+        5400,
+        5400
+      ],
+      "transfers": 0,
+      "proposals": 106,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -74,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -92,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 45,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 142,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        8700,
+        8700,
+        8700,
+        8700
+      ],
+      "ordinary_hunger_area": [
+        5400,
+        5400,
+        5400,
+        5400
+      ],
+      "transfers": 0,
+      "proposals": 106,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -74,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -92,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        8700,
+        8700,
+        8700,
+        8700
+      ],
+      "ordinary_hunger_area": [
+        5400,
+        5400,
+        5400,
+        5400
+      ],
+      "transfers": 0,
+      "proposals": 106,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -74,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -92,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 46,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 89,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "hunger_area": [
+        10180,
+        10180,
+        8140,
+        10180
+      ],
+      "ordinary_hunger_area": [
+        6880,
+        6880,
+        4840,
+        6880
+      ],
+      "transfers": 42,
+      "proposals": 88,
+      "food": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "trust": [
+        98,
+        0,
+        0,
+        100,
+        0,
+        0,
+        0,
+        0,
+        98,
+        0,
+        0,
+        100
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "hunger_area": [
+        10180,
+        10180,
+        8140,
+        10180
+      ],
+      "ordinary_hunger_area": [
+        6880,
+        6880,
+        4840,
+        6880
+      ],
+      "transfers": 42,
+      "proposals": 88,
+      "food": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "trust": [
+        98,
+        0,
+        0,
+        100,
+        0,
+        0,
+        0,
+        0,
+        98,
+        0,
+        0,
+        100
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 47,
+    "role": "held_out_parameter_sensitivity",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 92,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 4,
+      "success": 4,
+      "failed": 0,
+      "work_ticks": 24,
+      "meals": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "hunger_area": [
+        7000,
+        10180,
+        7000,
+        10180
+      ],
+      "ordinary_hunger_area": [
+        3720,
+        6880,
+        3720,
+        6880
+      ],
+      "transfers": 40,
+      "proposals": 84,
+      "food": [
+        5,
+        1,
+        1,
+        1
+      ],
+      "trust": [
+        100,
+        48,
+        0,
+        98,
+        0,
+        0,
+        16,
+        0,
+        100,
+        0,
+        0,
+        98
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 4,
+      "success": 4,
+      "failed": 0,
+      "work_ticks": 24,
+      "meals": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "hunger_area": [
+        7000,
+        10180,
+        7000,
+        10180
+      ],
+      "ordinary_hunger_area": [
+        3720,
+        6880,
+        3720,
+        6880
+      ],
+      "transfers": 40,
+      "proposals": 84,
+      "food": [
+        5,
+        1,
+        1,
+        1
+      ],
+      "trust": [
+        100,
+        48,
+        0,
+        98,
+        0,
+        0,
+        16,
+        0,
+        100,
+        0,
+        0,
+        98
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 2,
+      "counterfactual_changes": 0,
+      "expired": 4,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 48,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 100,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 0,
+      "success": 0,
+      "failed": 0,
+      "work_ticks": 0,
+      "meals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hunger_area": [
+        12700,
+        12700,
+        12700,
+        12700
+      ],
+      "ordinary_hunger_area": [
+        9400,
+        9400,
+        9400,
+        9400
+      ],
+      "transfers": 0,
+      "proposals": 98,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        0
+      ],
+      "raw": 8,
+      "waste": 0,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    }
+  },
+  {
+    "source025": 49,
+    "role": "controlled",
+    "executed_changed": false,
+    "physical_endpoint_equal": true,
+    "complete_endpoint_equal": true,
+    "matched_choices_before_divergence": 104,
+    "first_divergence": null,
+    "fixed": {
+      "attempts": 8,
+      "success": 4,
+      "failed": 4,
+      "work_ticks": 48,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "transfers": 0,
+      "proposals": 88,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -74,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -92,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 0,
+      "counterfactual_changes": 0,
+      "expired": 0,
+      "capacity_evicted": 0
+    },
+    "experience": {
+      "attempts": 8,
+      "success": 4,
+      "failed": 4,
+      "work_ticks": 48,
+      "meals": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "hunger_area": [
+        11620,
+        11620,
+        11620,
+        11620
+      ],
+      "ordinary_hunger_area": [
+        8320,
+        8320,
+        8320,
+        8320
+      ],
+      "transfers": 0,
+      "proposals": 88,
+      "food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "trust": [
+        -74,
+        -100,
+        0,
+        0,
+        0,
+        -100,
+        0,
+        0,
+        -92,
+        0,
+        0,
+        0
+      ],
+      "raw": 0,
+      "waste": 4,
+      "score_changes": 4,
+      "counterfactual_changes": 0,
+      "expired": 8,
+      "capacity_evicted": 0
+    }
+  }
+]
