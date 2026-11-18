@@ -1,0 +1,148 @@
+{
+  "runtime": "80a54fc216ef8417d9564da77bc8dc2d82a7b199ac3ee784db5b3070c023237a",
+  "samples": [
+    {
+      "advance_us": 3106,
+      "checkpoint_bytes": 634185,
+      "encode_validate_us": 4575,
+      "history_records": 846,
+      "load_restore_us": 5681,
+      "outcomes": {
+        "arrived": 3,
+        "ate": 19,
+        "gathered": 24,
+        "gathered_together": 4,
+        "invitation_delivered": 10,
+        "refused:declined": 1,
+        "refused:unavailable_or_other_priority": 5,
+        "rejected:invitation needs a distinct available co-present recipient and time": 4,
+        "replied": 1
+      },
+      "population": 8,
+      "publish_us": 11773,
+      "restore_validate_us": 5493,
+      "ticks": 64
+    },
+    {
+      "advance_us": 8565,
+      "checkpoint_bytes": 3178728,
+      "encode_validate_us": 19564,
+      "history_records": 3124,
+      "load_restore_us": 26921,
+      "outcomes": {
+        "arrived": 3,
+        "ate": 58,
+        "gathered": 53,
+        "gathered_together": 9,
+        "invitation_delivered": 15,
+        "refused:declined": 1,
+        "refused:unavailable_or_other_priority": 5,
+        "rejected:invitation needs a distinct available co-present recipient and time": 4,
+        "replied": 1
+      },
+      "population": 8,
+      "publish_us": 16246,
+      "restore_validate_us": 24618,
+      "ticks": 256
+    },
+    {
+      "advance_us": 19410,
+      "checkpoint_bytes": 7484714,
+      "encode_validate_us": 49535,
+      "history_records": 6889,
+      "load_restore_us": 66956,
+      "outcomes": {
+        "arrived": 13,
+        "ate": 97,
+        "gathered": 64,
+        "gathered_together": 12,
+        "invitation_delivered": 127,
+        "refused:declined": 78,
+        "refused:unavailable_or_other_priority": 11,
+        "rejected:actor unavailable or endpoint reached": 2,
+        "rejected:invitation needs a distinct available co-present recipient and time": 79,
+        "replied": 78,
+        "shared_food": 26
+      },
+      "population": 8,
+      "publish_us": 21546,
+      "restore_validate_us": 59144,
+      "ticks": 512
+    },
+    {
+      "advance_us": 2937,
+      "checkpoint_bytes": 1041741,
+      "encode_validate_us": 6173,
+      "history_records": 1283,
+      "load_restore_us": 9337,
+      "outcomes": {
+        "arrived": 4,
+        "ate": 28,
+        "gathered": 39,
+        "gathered_together": 4,
+        "invitation_delivered": 16,
+        "refused:declined": 5,
+        "refused:unavailable_or_other_priority": 7,
+        "rejected:invitation needs a distinct available co-present recipient and time": 5,
+        "replied": 5
+      },
+      "population": 12,
+      "publish_us": 12901,
+      "restore_validate_us": 7943,
+      "ticks": 64
+    },
+    {
+      "advance_us": 13341,
+      "checkpoint_bytes": 5140469,
+      "encode_validate_us": 31359,
+      "history_records": 4697,
+      "load_restore_us": 43458,
+      "outcomes": {
+        "arrived": 4,
+        "ate": 87,
+        "gathered": 88,
+        "gathered_together": 9,
+        "invitation_delivered": 21,
+        "refused:declined": 5,
+        "refused:unavailable_or_other_priority": 7,
+        "rejected:invitation needs a distinct available co-present recipient and time": 5,
+        "replied": 5
+      },
+      "population": 12,
+      "publish_us": 18005,
+      "restore_validate_us": 39009,
+      "ticks": 256
+    },
+    {
+      "advance_us": 30111,
+      "checkpoint_bytes": 12105543,
+      "encode_validate_us": 81908,
+      "history_records": 10872,
+      "load_restore_us": 101564,
+      "outcomes": {
+        "arrived": 20,
+        "ate": 145,
+        "depleted": 3,
+        "gathered": 110,
+        "gathered_together": 11,
+        "invitation_delivered": 271,
+        "refused:declined": 170,
+        "refused:unavailable_or_other_priority": 49,
+        "rejected:actor unavailable or endpoint reached": 4,
+        "rejected:invitation needs a distinct available co-present recipient and time": 149,
+        "rejected:proposer no longer available here": 2,
+        "replied": 170,
+        "shared_food": 41
+      },
+      "population": 12,
+      "publish_us": 27262,
+      "restore_validate_us": 93115,
+      "ticks": 512
+    }
+  ],
+  "scope": "one release-mode process, seed42, includes first scheduler initialization; no repeated samples",
+  "date": "2026-11-18",
+  "source_baseline": "63ebead5aee6c86da44260d16c8d286cc9203277",
+  "toolchain": "rustc 1.99.0 (b940084d7 2026-09-28), Windows x86_64",
+  "qualification": "One sample per point; inherited research validation ran concurrently; not an isolated or statistical benchmark. Timing is outside deterministic world histories."
+}

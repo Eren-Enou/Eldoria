@@ -1,0 +1,196 @@
+{
+  "schema": "eldoria-settlement-engineering-acceptance/v1",
+  "source_baseline": "63ebead5aee6c86da44260d16c8d286cc9203277",
+  "date": "2026-11-18",
+  "scope": "actual release CLI; independent process per command; whole checkpoint bytes compared; read-only actor/history inspection",
+  "runs": [
+    {
+      "population": 8,
+      "horizon": 512,
+      "pause_tick": 64,
+      "exact_resume_sha256": "80a77f25fb5711e33ba3caf7a0a68f3f6bd90a3e373dd5935a8ee9d0e0ee474f",
+      "checkpoint_bytes": 7484714,
+      "history_records": 6889,
+      "food_balance": {
+        "initial": 97,
+        "sources": 0,
+        "owned": 0,
+        "consumed": 97
+      },
+      "outcomes": {
+        "arrived": 13,
+        "ate": 97,
+        "gathered": 64,
+        "gathered_together": 12,
+        "invitation_delivered": 127,
+        "refused:declined": 78,
+        "refused:unavailable_or_other_priority": 11,
+        "rejected:actor unavailable or endpoint reached": 2,
+        "rejected:invitation needs a distinct available co-present recipient and time": 79,
+        "replied": 78,
+        "shared_food": 26
+      },
+      "individuals": [
+        {
+          "id": 1001,
+          "food": 0,
+          "hunger": 24,
+          "place": 2
+        },
+        {
+          "id": 1018,
+          "food": 0,
+          "hunger": 51,
+          "place": 0
+        },
+        {
+          "id": 1035,
+          "food": 0,
+          "hunger": 69,
+          "place": 0
+        },
+        {
+          "id": 1052,
+          "food": 0,
+          "hunger": 48,
+          "place": 2
+        },
+        {
+          "id": 1069,
+          "food": 0,
+          "hunger": 81,
+          "place": 0
+        },
+        {
+          "id": 1086,
+          "food": 0,
+          "hunger": 78,
+          "place": 0
+        },
+        {
+          "id": 1103,
+          "food": 0,
+          "hunger": 19,
+          "place": 2
+        },
+        {
+          "id": 1120,
+          "food": 0,
+          "hunger": 81,
+          "place": 0
+        }
+      ],
+      "runtime": "80a54fc216ef8417d9564da77bc8dc2d82a7b199ac3ee784db5b3070c023237a",
+      "peak_concurrent_commitments": 8,
+      "peak_reserved_characters": 8,
+      "peak_work_locations": 3
+    },
+    {
+      "population": 12,
+      "horizon": 512,
+      "pause_tick": 64,
+      "exact_resume_sha256": "ac5d43b0a292a0e3110b57aeee4b3c20b82c98b2465a1ca6b269e7b5d53a1df3",
+      "checkpoint_bytes": 12105543,
+      "history_records": 10872,
+      "food_balance": {
+        "initial": 145,
+        "sources": 0,
+        "owned": 0,
+        "consumed": 145
+      },
+      "outcomes": {
+        "arrived": 20,
+        "ate": 145,
+        "depleted": 3,
+        "gathered": 110,
+        "gathered_together": 11,
+        "invitation_delivered": 271,
+        "refused:declined": 170,
+        "refused:unavailable_or_other_priority": 49,
+        "rejected:actor unavailable or endpoint reached": 4,
+        "rejected:invitation needs a distinct available co-present recipient and time": 149,
+        "rejected:proposer no longer available here": 2,
+        "replied": 170,
+        "shared_food": 41
+      },
+      "individuals": [
+        {
+          "id": 1001,
+          "food": 0,
+          "hunger": 54,
+          "place": 2
+        },
+        {
+          "id": 1018,
+          "food": 0,
+          "hunger": 54,
+          "place": 0
+        },
+        {
+          "id": 1035,
+          "food": 0,
+          "hunger": 69,
+          "place": 0
+        },
+        {
+          "id": 1052,
+          "food": 0,
+          "hunger": 78,
+          "place": 2
+        },
+        {
+          "id": 1069,
+          "food": 0,
+          "hunger": 51,
+          "place": 0
+        },
+        {
+          "id": 1086,
+          "food": 0,
+          "hunger": 78,
+          "place": 0
+        },
+        {
+          "id": 1103,
+          "food": 0,
+          "hunger": 54,
+          "place": 2
+        },
+        {
+          "id": 1120,
+          "food": 0,
+          "hunger": 81,
+          "place": 0
+        },
+        {
+          "id": 1137,
+          "food": 0,
+          "hunger": 51,
+          "place": 0
+        },
+        {
+          "id": 1154,
+          "food": 0,
+          "hunger": 18,
+          "place": 2
+        },
+        {
+          "id": 1171,
+          "food": 0,
+          "hunger": 51,
+          "place": 0
+        },
+        {
+          "id": 1188,
+          "food": 0,
+          "hunger": 51,
+          "place": 0
+        }
+      ],
+      "runtime": "80a54fc216ef8417d9564da77bc8dc2d82a7b199ac3ee784db5b3070c023237a",
+      "peak_concurrent_commitments": 12,
+      "peak_reserved_characters": 12,
+      "peak_work_locations": 3
+    }
+  ]
+}

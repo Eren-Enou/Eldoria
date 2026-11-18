@@ -4,6 +4,20 @@ Navigation summary, protected through026 with qualification. Source and mode-spe
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
+## Eldoria product settlement — isolated headless foundation
+
+`products/settlement/` is a separate Rust/Bevy ECS workspace, not a research mode or
+policy adoption. [Run/architecture guide](../products/settlement/README.md),
+[prospective product rules](../products/settlement/design.md),
+[acceptance and costs](development/settlement-runtime-acceptance.md).
+It owns population-independent stable IDs, finite three-location resource activity,
+local utility decisions, voluntary food sharing/joint work, a shared clock and
+complete-state checkpoints. Policy inputs and observer snapshots are separate.
+Source owners: `src/model.rs`, `policy.rs`, `runtime.rs`, `storage.rs`, `observer.rs`
+and `main.rs` under that package. Root research sources, Cargo entrypoints and
+protected001–026 remain unchanged. No LLM, politics, renewal or graphical interface.
+See the acceptance report for validated population/configuration scope and limits.
+
 ## Experiment027 — completed score-only null, unadopted
 
 `prototypes/material-experience/` is the isolated headless successor for actor-local

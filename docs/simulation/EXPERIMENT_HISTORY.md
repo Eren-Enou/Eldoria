@@ -1,5 +1,11 @@
 # World of Individuals experiment index
 
+Separate product engineering: [Eldoria settlement](../../products/settlement/README.md)
+implements a finite headless autonomous world in its own workspace, with 8/12-person
+acceptance, local utility control and complete-state continuation. See the
+[acceptance record](../development/settlement-runtime-acceptance.md). This changes
+no experiment status, protected evidence, historical defaults or adoption decision.
+
 Headless engineering, not026: [persistent recovery/storage](../development/persistent-world-recovery.md).
 Explicit branches preserve committed state and excluded observer evidence without
 changing actor laws; GUI acceptance remains deferred. This is no protection extension.
