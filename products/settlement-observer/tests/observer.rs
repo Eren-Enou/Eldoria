@@ -37,6 +37,7 @@ fn stepping_perspectives_and_history_selection_never_change_rules() {
             host.apply(Command::Step).unwrap();
             let id = host.world.characters().keys().next().copied().unwrap();
             host.apply(Command::View {
+                filter: eldoria_observer::projection::EventFilter::All,
                 perspective: Perspective::Character(id),
                 page: 0,
                 selected: Some(0),
@@ -44,6 +45,7 @@ fn stepping_perspectives_and_history_selection_never_change_rules() {
             .unwrap();
             host.frame().unwrap();
             host.apply(Command::View {
+                filter: eldoria_observer::projection::EventFilter::All,
                 perspective: Perspective::Observer,
                 page: 1,
                 selected: None,
@@ -76,6 +78,7 @@ fn actor_projection_and_causal_traversal_cannot_expose_foreign_private_inputs() 
         .unwrap()
         .id;
     host.apply(Command::View {
+        filter: eldoria_observer::projection::EventFilter::All,
         perspective: Perspective::Character(id),
         page: 0,
         selected: Some(foreign),
@@ -107,6 +110,7 @@ fn actor_projection_and_causal_traversal_cannot_expose_foreign_private_inputs() 
     }
     for row in &frame.rows {
         host.apply(Command::View {
+            filter: eldoria_observer::projection::EventFilter::All,
             perspective: Perspective::Character(id),
             page: 0,
             selected: Some(row.id),
@@ -118,6 +122,7 @@ fn actor_projection_and_causal_traversal_cannot_expose_foreign_private_inputs() 
         }
         for link in detail.links {
             host.apply(Command::View {
+                filter: eldoria_observer::projection::EventFilter::All,
                 perspective: Perspective::Character(id),
                 page: 0,
                 selected: Some(link.id),
@@ -130,6 +135,7 @@ fn actor_projection_and_causal_traversal_cannot_expose_foreign_private_inputs() 
         }
     }
     host.apply(Command::View {
+        filter: eldoria_observer::projection::EventFilter::All,
         perspective: Perspective::Observer,
         page: 0,
         selected: Some(foreign),
@@ -184,6 +190,7 @@ fn causal_links_connect_actual_decisions_work_and_consequences() {
         .unwrap()
         .id;
     host.apply(Command::View {
+        filter: eldoria_observer::projection::EventFilter::All,
         perspective: Perspective::Observer,
         page: 0,
         selected: Some(finished),

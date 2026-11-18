@@ -14,6 +14,10 @@ and causal-link boundaries; `ui.rs` owns the map, people, inspector and save/ope
 workflow. Native create/run/pause/trace/save/restart/pending-work continuation and
 headless CLI byte parity pass. This does not wire the old workbench or Explorer to
 new schemas, change any research producer, or change settlement rules/save identity.
+The [notebook/navigation milestone](development/settlement-observer-notebook-acceptance.md)
+adds incremental category/actor/outcome/prefix indices in `projection.rs`, external
+immutable bookmark revisions in `notebook.rs`, and pinned drafts/revision review in
+`notebook_ui.rs`. Notes are absent from character projections and world saves.
 
 ## Eldoria product settlement — isolated headless foundation
 

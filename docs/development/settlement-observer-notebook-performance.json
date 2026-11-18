@@ -1,0 +1,118 @@
+{
+  "engine_runtime": "80a54fc216ef8417d9564da77bc8dc2d82a7b199ac3ee784db5b3070c023237a",
+  "samples": [
+    {
+      "build_us": 45,
+      "encode_us": 24,
+      "frame_bytes": 10582,
+      "history_records": 846,
+      "host_advance_us": 4644,
+      "index_rebuild_us": 1810,
+      "page_records": 30,
+      "perspective": "Observer",
+      "population": 8,
+      "segment_from_tick": 0,
+      "tick": 64
+    },
+    {
+      "build_us": 58,
+      "encode_us": 9,
+      "frame_bytes": 3771,
+      "history_records": 846,
+      "host_advance_us": 4644,
+      "index_rebuild_us": 1810,
+      "page_records": 30,
+      "perspective": {
+        "Character": 1001
+      },
+      "population": 8,
+      "segment_from_tick": 0,
+      "tick": 64
+    },
+    {
+      "build_us": 35,
+      "encode_us": 35,
+      "frame_bytes": 16907,
+      "history_records": 6889,
+      "host_advance_us": 40272,
+      "index_rebuild_us": 21195,
+      "page_records": 30,
+      "perspective": "Observer",
+      "population": 8,
+      "segment_from_tick": 64,
+      "tick": 512
+    },
+    {
+      "build_us": 226,
+      "encode_us": 10,
+      "frame_bytes": 4502,
+      "history_records": 6889,
+      "host_advance_us": 40272,
+      "index_rebuild_us": 21195,
+      "page_records": 30,
+      "perspective": {
+        "Character": 1001
+      },
+      "population": 8,
+      "segment_from_tick": 64,
+      "tick": 512
+    },
+    {
+      "build_us": 29,
+      "encode_us": 32,
+      "frame_bytes": 14926,
+      "history_records": 1283,
+      "host_advance_us": 6603,
+      "index_rebuild_us": 2878,
+      "page_records": 30,
+      "perspective": "Observer",
+      "population": 12,
+      "segment_from_tick": 0,
+      "tick": 64
+    },
+    {
+      "build_us": 48,
+      "encode_us": 8,
+      "frame_bytes": 4049,
+      "history_records": 1283,
+      "host_advance_us": 6603,
+      "index_rebuild_us": 2878,
+      "page_records": 30,
+      "perspective": {
+        "Character": 1001
+      },
+      "population": 12,
+      "segment_from_tick": 0,
+      "tick": 64
+    },
+    {
+      "build_us": 40,
+      "encode_us": 64,
+      "frame_bytes": 25520,
+      "history_records": 10872,
+      "host_advance_us": 62958,
+      "index_rebuild_us": 33570,
+      "page_records": 30,
+      "perspective": "Observer",
+      "population": 12,
+      "segment_from_tick": 64,
+      "tick": 512
+    },
+    {
+      "build_us": 247,
+      "encode_us": 11,
+      "frame_bytes": 4912,
+      "history_records": 10872,
+      "host_advance_us": 62958,
+      "index_rebuild_us": 33570,
+      "page_records": 30,
+      "perspective": {
+        "Character": 1001
+      },
+      "population": 12,
+      "segment_from_tick": 64,
+      "tick": 512
+    }
+  ],
+  "scope": "One release-mode sample per point; host advancement includes simulation and incremental indexing; rebuild excludes world loading; frame construction/serialization excludes GPU/render timing and notebook I/O; segment and rebuild timings repeat for both perspectives; background research gate active"
+}

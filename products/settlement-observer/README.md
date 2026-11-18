@@ -48,6 +48,14 @@ wall-clock playback speed only. There is no editing of characters or forced acti
   world or restore forgotten knowledge. Character mode can inspect recorded local
   inputs but cannot traverse into foreign private decision inputs. Shared outcomes
   are available through retained receipts; full causal context requires Observer.
+- Choose **Consequences**, **Social activity** or **Failures & refusals** to reduce
+  the event list. **Earlier/Later/Latest event** selects matching records. With
+  **All records** selected, these buttons navigate consequences. The categories
+  describe recorded outcomes, not wellbeing or political importance.
+- In Observer perspective, select a record and choose **Bookmark this record**.
+  Write a title/note, then **Save bookmark & note**. The **Observer notebook** below
+  history reopens saved events without changing current simulation time. Scroll
+  the center pane to reach it. A draft stays pinned to its event while you browse.
 
 The global follow selector is external observer navigation, not knowledge granted
 to a character. Perspective filtering happens in the worker projection as well as
@@ -69,6 +77,20 @@ for successful publication before closing. Closing does not advance logical time
 An abrupt process termination can lose uncommitted in-memory progress; committed
 files keep the engine's existing integrity guarantees and limitations.
 
+Notes live under `WORKSPACE/notebooks/`, separately from world checkpoints. Copy
+that folder as well as checkpoints to transfer notes. New/Open/Close protects an
+unsaved note first, then world progress separately; saving a checkpoint alone does
+not save a draft. Character perspective hides the notebook. A bookmark beyond a
+loaded checkpoint's history is disabled until you independently load/run the same
+history; it never advances time automatically. Identical seeded worlds/configurations
+share matching-prefix notes. Notes cannot change decisions or restore character memory.
+
+Edits append immutable revisions. Limits per world are128 bookmarks/512 revisions,
+120 title bytes and4000 note bytes (UTF-8). There is no automatic pruning. Corruption
+is reported without replacing existing files. For a stale edit, **Reload notebook**,
+show the draft event, review the latest text and explicitly choose **Use latest
+revision as base; keep draft** before saving. Prefer one writer per workspace.
+
 Headless CLI saves and observer saves are interchangeable at the same engine
 identity. The actual native workflow reopened four pending meals after an application
 restart, completed them on the next tick and produced byte-identical original CLI
@@ -80,13 +102,17 @@ or migrate older incompatible development saves.
 | Module | Owns |
 |---|---|
 | [host.rs](src/host.rs) | One ECS owner thread, bounded command queue, safe time/session controls, non-dropping acknowledgments and a replaceable latest-frame slot |
-| [projection.rs](src/projection.rs) | Explicit observer/character payloads, authorization of record details/causal links, bounded history pages and incremental causal-reference index |
+| [projection.rs](src/projection.rs) | Explicit observer/character payloads, authorized detail/causal links, event filters, bounded pages, incremental history indices and prefix hashes |
+| [notebook.rs](src/notebook.rs) | External bookmark identity, bounded metadata loading, immutable checksummed revisions and stale-write checks |
+| [notebook_ui.rs](src/notebook_ui.rs) | Pinned drafts, saved-note navigation and revision review; no character-state access |
 | [ui.rs](src/ui.rs) | Map, people, inspector, pacing, file dialogs, unsaved-work handling; no world mutation or policy access |
 | [main.rs](src/main.rs) | Native window startup and optional launch arguments |
 
 [Boundary contract](design.md), [acceptance report](../../docs/development/settlement-observer-acceptance.md),
 [native receipt](../../docs/development/settlement-observer-validation.json),
 [projection measurements](../../docs/development/settlement-observer-performance.json).
+The [notebook milestone](../../docs/development/settlement-observer-notebook-acceptance.md)
+records subsequent navigation, persistence and indexing acceptance separately.
 
 ```powershell
 cargo fmt --check --manifest-path products/settlement-observer/Cargo.toml
@@ -98,21 +124,25 @@ cargo run --release --locked --manifest-path products/settlement-observer/Cargo.
 Tests cover 8/12-person continuity under view changes, causal links, character-frame
 privacy including link traversal, save/open failures and worker run/pause/step with
 discarded presentation frames. Native interaction is accepted separately from tests.
+Notebook tests additionally cover restart, stale revisions, corruption, prefix
+identity, no-time navigation, full-state equality and cached/full snapshot parity.
 
 ## Current limits and next work
 
 This is a finite scenario, not a sustainable community. Food eventually runs out;
 null decisions, costly requests, refusals and failed work remain visible. The app
 uses text paths rather than an OS file picker, has no recent-save catalog, and
-does not persist UI selection or human notes in world saves. It is a source-built
+does not persist UI selection in world saves. Notes require the separate notebook
+folder. It is a source-built
 desktop, not an installer or a hosted service. Historical detail is observational,
 not state scrubbing or arbitrary restoration.
 
 Frames contain bounded pages/one selected detail, not the full checkpoint history.
-Projection construction still scans history for filtering/outcome counts; complete
-checkpoints still grow with the world. See measured costs before extending the
+Observer outcome counts and category pages are indexed incrementally. Character
+filtering still scales with authorized history; indices and complete checkpoints
+still grow with the world. See measured costs before extending the
 horizon/population. GPU frame time, prolonged UI soaks and larger cohorts remain
-unmeasured. Next useful work is observation-driven usability: significant-event
-navigation, bookmarks/notes kept outside cognition, and better history indexing.
+unmeasured. Next useful work is a recent-checkpoint catalog and a longer interactive
+usability session before changing simulation laws.
 New character goals, renewable resources or institutions require separate product
 rules and validation; none are silently added by this viewer.

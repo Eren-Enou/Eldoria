@@ -10,6 +10,9 @@ The separate [native settlement observer](../../products/settlement-observer/REA
 adds map/character/history inspection and time/save controls over that unchanged
 product runtime. [Native acceptance](../development/settlement-observer-acceptance.md)
 includes actual pending-work restart and original CLI byte parity; no research adoption.
+Its subsequent [notebook/navigation milestone](../development/settlement-observer-notebook-acceptance.md)
+adds outcome navigation and external human notes with exact-prefix anchors, plus
+incremental observer indexing. It changes neither simulation rules nor experiment status.
 
 Headless engineering, not026: [persistent recovery/storage](../development/persistent-world-recovery.md).
 Explicit branches preserve committed state and excluded observer evidence without

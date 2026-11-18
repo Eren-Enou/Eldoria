@@ -1,4 +1,5 @@
-use crate::projection::{self, Frame, Index, Perspective};
+use crate::notebook::{self, Anchor, Availability, Bookmark, NotebookView, Store, Summary};
+use crate::projection::{self, Direction, EventFilter, Frame, Index, Perspective};
 use eldoria_settlement::{Config, Settlement, storage};
 use std::{
     path::PathBuf,
@@ -19,9 +20,19 @@ pub enum Command {
     Rate(u32),
     View {
         perspective: Perspective,
+        filter: EventFilter,
         page: usize,
         selected: Option<u64>,
     },
+    Navigate(Direction),
+    SaveBookmark {
+        anchor: Anchor,
+        expected_revision: u32,
+        title: String,
+        body: String,
+    },
+    JumpBookmark(String),
+    ReloadNotebook,
     Shutdown,
 }
 pub struct Reply {
@@ -40,7 +51,12 @@ pub struct Client {
 }
 impl Client {
     pub fn spawn(config: Config) -> Result<Self, String> {
-        let host = Host::new(config)?;
+        Self::spawn_host(Host::new(config)?)
+    }
+    pub fn spawn_with_notebook(config: Config, root: PathBuf) -> Result<Self, String> {
+        Self::spawn_host(Host::with_notebook(config, root)?)
+    }
+    fn spawn_host(host: Host) -> Result<Self, String> {
         let (sender, requests) = mpsc::sync_channel::<Request>(16);
         let (reply_sender, replies) = mpsc::channel();
         let latest = Arc::new(Mutex::new(None));
@@ -65,7 +81,14 @@ impl Client {
                             if matches!(request.command, Command::Shutdown) {
                                 break;
                             }
-                            let reset_deadline = !matches!(request.command, Command::View { .. });
+                            let reset_deadline = !matches!(
+                                request.command,
+                                Command::View { .. }
+                                    | Command::Navigate(_)
+                                    | Command::SaveBookmark { .. }
+                                    | Command::JumpBookmark(_)
+                                    | Command::ReloadNotebook
+                            );
                             let result = host.apply(request.command);
                             publish(&host, &sink);
                             last_frame = Instant::now();
@@ -150,26 +173,78 @@ pub struct Host {
     pub world: Settlement,
     index: Index,
     perspective: Perspective,
+    filter: EventFilter,
     page: usize,
     selected: Option<u64>,
     pub running: bool,
     pub dirty: bool,
     rate: u32,
     last_save: Option<String>,
+    notebook: Option<Store>,
+    bookmarks: Vec<Bookmark>,
+    notebook_error: Option<String>,
+    world_key: String,
 }
 impl Host {
     pub fn new(config: Config) -> Result<Self, String> {
+        let world = Settlement::new(config)?;
+        let world_key = notebook::world_key(&world);
         Ok(Self {
-            world: Settlement::new(config)?,
+            world,
             index: Index::default(),
             perspective: Perspective::Observer,
+            filter: EventFilter::All,
             page: 0,
             selected: None,
             running: false,
             dirty: true,
             rate: 8,
             last_save: None,
+            notebook: None,
+            bookmarks: vec![],
+            notebook_error: None,
+            world_key,
         })
+    }
+    pub fn with_notebook(config: Config, root: PathBuf) -> Result<Self, String> {
+        let mut host = Self::new(config)?;
+        host.notebook = Some(Store::new(root));
+        let _ = host.reload_notebook();
+        Ok(host)
+    }
+    fn reload_notebook(&mut self) -> Result<(), String> {
+        let result = self
+            .notebook
+            .as_ref()
+            .ok_or("Notebook workspace is not configured")?
+            .load(&self.world_key);
+        match result {
+            Ok(entries) => {
+                self.bookmarks = entries;
+                self.notebook_error = None;
+                Ok(())
+            }
+            Err(error) => {
+                self.bookmarks.clear();
+                self.notebook_error = Some(error.clone());
+                Err(error)
+            }
+        }
+    }
+    fn availability(&self, anchor: &Anchor) -> Availability {
+        if anchor.world != self.world_key {
+            return Availability::DifferentHistory;
+        }
+        match self.index.prefix(anchor.record) {
+            None => Availability::BeyondPrefix,
+            Some(prefix)
+                if prefix == anchor.prefix
+                    && self.world.state().history[anchor.record as usize].tick == anchor.tick =>
+            {
+                Availability::Available
+            }
+            _ => Availability::DifferentHistory,
+        }
     }
     pub fn interval(&self) -> Duration {
         Duration::from_secs_f64(1.0 / f64::from(self.rate))
@@ -185,18 +260,49 @@ impl Host {
         Ok(())
     }
     pub fn frame(&self) -> Result<Frame, String> {
-        projection::frame(
+        let mut frame = projection::frame(
             &self.world,
             &self.index,
             projection::Selection {
                 perspective: self.perspective,
+                filter: self.filter,
                 page: self.page,
                 selected: self.selected,
             },
             self.running,
             self.dirty,
             self.last_save.clone(),
-        )
+        )?;
+        if self.perspective == Perspective::Observer && self.notebook.is_some() {
+            let mut entries: Vec<_> = self
+                .bookmarks
+                .iter()
+                .map(|note| Summary {
+                    key: note.anchor.key(),
+                    record: note.anchor.record,
+                    tick: note.anchor.tick,
+                    revision: note.revision,
+                    title: note.title.clone(),
+                    availability: self.availability(&note.anchor),
+                })
+                .collect();
+            entries.sort_by_key(|b| b.record);
+            let selected = self
+                .bookmarks
+                .iter()
+                .find(|note| {
+                    Some(note.anchor.record) == self.selected
+                        && self.availability(&note.anchor) == Availability::Available
+                })
+                .cloned();
+            frame.notebook = Some(NotebookView {
+                world: self.world_key.clone(),
+                entries,
+                selected,
+                error: self.notebook_error.clone(),
+            });
+        }
+        Ok(frame)
     }
     pub fn apply(&mut self, command: Command) -> Result<String, String> {
         match command {
@@ -246,6 +352,7 @@ impl Host {
             }
             Command::View {
                 perspective,
+                filter,
                 page,
                 selected,
             } => {
@@ -253,9 +360,82 @@ impl Host {
                     self.world.owned_view(id)?;
                 }
                 self.perspective = perspective;
+                self.filter = filter;
                 self.page = page;
                 self.selected = selected;
                 Ok("View updated".into())
+            }
+            Command::Navigate(direction) => {
+                if let Some(id) = self.index.navigate(
+                    &self.world,
+                    self.perspective,
+                    self.filter,
+                    self.selected,
+                    direction,
+                )? {
+                    self.selected = Some(id);
+                    self.page =
+                        self.index
+                            .page_for(&self.world, self.perspective, self.filter, id)?;
+                }
+                Ok("View updated".into())
+            }
+            Command::SaveBookmark {
+                anchor,
+                expected_revision,
+                title,
+                body,
+            } => {
+                if self.perspective != Perspective::Observer {
+                    return Err("Notebook editing is an external Observer operation".into());
+                }
+                if self.availability(&anchor) != Availability::Available {
+                    return Err(
+                        "Bookmark anchor does not match this executed history prefix".into(),
+                    );
+                }
+                let store = self
+                    .notebook
+                    .as_ref()
+                    .ok_or("Notebook workspace is not configured")?;
+                let note = store.save(anchor, expected_revision, title, body)?;
+                self.reload_notebook()?;
+                Ok(format!(
+                    "Observer bookmark saved · revision {}",
+                    note.revision
+                ))
+            }
+            Command::JumpBookmark(key) => {
+                if self.perspective != Perspective::Observer {
+                    return Err("Notebook navigation requires Observer perspective".into());
+                }
+                let note = self
+                    .bookmarks
+                    .iter()
+                    .find(|b| b.anchor.key() == key)
+                    .ok_or("Bookmark not found in this notebook")?;
+                if self.availability(&note.anchor) != Availability::Available {
+                    return Err(
+                        "This bookmark is not in the loaded history prefix; no time was advanced"
+                            .into(),
+                    );
+                }
+                self.selected = Some(note.anchor.record);
+                self.filter = EventFilter::All;
+                self.page = self.index.page_for(
+                    &self.world,
+                    self.perspective,
+                    self.filter,
+                    note.anchor.record,
+                )?;
+                Ok("Bookmarked record selected; current simulation time is unchanged".into())
+            }
+            Command::ReloadNotebook => {
+                if self.perspective != Perspective::Observer {
+                    return Err("Notebook access requires Observer perspective".into());
+                }
+                self.reload_notebook()?;
+                Ok("Observer notebook reloaded".into())
             }
             Command::Shutdown => {
                 self.running = false;
@@ -265,6 +445,7 @@ impl Host {
     }
     fn replace(&mut self, world: Settlement, last_save: Option<String>, dirty: bool) {
         self.world = world;
+        self.world_key = notebook::world_key(&self.world);
         self.index = Index::default();
         self.index.update(&self.world);
         self.running = false;
@@ -273,5 +454,10 @@ impl Host {
         self.perspective = Perspective::Observer;
         self.page = 0;
         self.selected = None;
+        self.bookmarks.clear();
+        self.notebook_error = None;
+        if self.notebook.is_some() {
+            let _ = self.reload_notebook();
+        }
     }
 }

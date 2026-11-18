@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-18",
+  "source_baseline": "009e9a292f024d259e0c50f80c0c1387ce6c9936",
+  "engine_runtime": "80a54fc216ef8417d9564da77bc8dc2d82a7b199ac3ee784db5b3070c023237a",
+  "final_release_exe_sha256": "5e5e7c2420af3448814c143968188e42351b461df2655d37df1bbb5d6d4f8c2e",
+  "native_workflow": [
+    "Loaded prior native12-person tick40 checkpoint, paused",
+    "Latest consequence selected Cedar tick24 gather record537 while current time stayed40",
+    "Created and saved external note revision1",
+    "Consequences filter reduced843 records to71; Earlier/Later selected tick23 record523 and tick24 record537",
+    "Character perspective omitted notebook and note text; returned Observer and jumped bookmark with unchanged tick40",
+    "Native Close with dirty note:Save first published revision2 then closed;fresh application reopened matching note text",
+    "Edited note then Step41;Close:Save first published revision3, then separate world-save prompt and fresh checkpoint publication before normal close",
+    "Final release after adding conflict-review UI:opened saved41,jumped original bookmark and recovered revision3",
+    "Entered local draft;exclusive scratch fixture published valid concurrent revision4;native Save rejected stale edit without losing draft",
+    "Reload displayed newer revision;expanded Review latest saved text,explicitly rebased keeping local text,then native Save published revision5 at unchanged41",
+    "Final release normal close observed with no observer windows remaining",
+    "Final filter-selection fix:opened saved41,selected Consequences(75 records),clicked Bryn meal record849;filter remained Consequences and current time41;normal close"
+  ],
+  "native_build_scope": "Main workflow before additive conflict-review widget;conflict-review build separately exercises restart,stale-write rejection,review,rebase,publication and normal close. Final release additionally verifies filtered row selection retains category. No engine changes between builds.",
+  "checkpoint": {
+    "population": 12,
+    "tick": 41,
+    "pending": 2,
+    "bytes": 635864,
+    "sha256": "cfc161ccad7a5d79e16408f7913753509cedf8c33459923140d9ec8c61adb339",
+    "exact_prechange_cli": true
+  },
+  "anchor": {
+    "world": "2658ee80f405eb7b5d399d4efac44a722ae7dbff2996c0b48449c4b1daa3eae6",
+    "record": 537,
+    "tick": 24,
+    "prefix": "0f71995309aa20f2905836ea8f720cf4809a259d18e30668737dbdf587969de0"
+  },
+  "note_revisions": [
+    {
+      "file": "5a128c12ccb0c01b3fed7558cbf5f06b1be19a91f1b3eb4e9094226b645826cb-r0001.json",
+      "revision": 1,
+      "sha256": "927500faeba0a10dd188edf435e1de07745d882d8f835cb428826ddaeefdf2b2",
+      "source": "native app publication"
+    },
+    {
+      "file": "5a128c12ccb0c01b3fed7558cbf5f06b1be19a91f1b3eb4e9094226b645826cb-r0002.json",
+      "revision": 2,
+      "sha256": "28ffb6b110313733a7e2cc591ee706fb995528d83dfeace216b47e55b6047fb7",
+      "source": "native app publication"
+    },
+    {
+      "file": "5a128c12ccb0c01b3fed7558cbf5f06b1be19a91f1b3eb4e9094226b645826cb-r0003.json",
+      "revision": 3,
+      "sha256": "2f307778e223e95d4ed91349a5de74182ea0e11e8d19ed335976563f59f30e9a",
+      "source": "native app publication"
+    },
+    {
+      "file": "5a128c12ccb0c01b3fed7558cbf5f06b1be19a91f1b3eb4e9094226b645826cb-r0004.json",
+      "revision": 4,
+      "sha256": "4cae70e3bc7b44d6d116e064d1e820bfb6f5d7c59746edbee0ee6d524788cc25",
+      "source": "exclusive scratch concurrent-writer fixture"
+    },
+    {
+      "file": "5a128c12ccb0c01b3fed7558cbf5f06b1be19a91f1b3eb4e9094226b645826cb-r0005.json",
+      "revision": 5,
+      "sha256": "bea0d8dceddfd6dc8a0467c6495fe7f44123f76620c57f4a392b91c9dc797558",
+      "source": "native app publication"
+    }
+  ],
+  "automated": {
+    "root_tests_passed": 217,
+    "observer_tests_passed": 10,
+    "core_tests_passed": 14,
+    "root_fmt": "pass",
+    "root_all_target_clippy": "pass",
+    "observer_fmt": "pass",
+    "observer_all_target_clippy": "pass",
+    "full026_foundation": {
+      "command": "cargo run --release --locked -j 1 --example validate026_foundation",
+      "exit_code": 0,
+      "scope": "includes unchanged validate_contract001-024,025 evidence and C1 isolated exact replay/independent readers plus qualified001-026 integrity",
+      "portable_artifacts": 495,
+      "raw_originals": 512,
+      "additional_bindings": 93,
+      "log_sha256": "c3d81307266a6c451a6834e1345c86d4bbdaa17a0a254fa4e7a23682a9b06572"
+    },
+    "engine_and_research_source_diff": "empty",
+    "relevant_benchmark": "8 release samples in companion performance JSON;root research throughput unchanged,not rerun",
+    "unchanged027": "Not rerun for observer-only milestone;source and evidence unchanged from baseline;no research adoption or retuning."
+  },
+  "limits": "No clean-machine packaging,GPU/render timing,extended native soak,notebook-at-cap or multiwriter stress claim. Scratch concurrent fixture tests stale edit handling,not distributed publication durability.",
+  "conflict_review_build_exe_sha256": "8cf26051994a30232a6b9564f8cd1bd2662eebc78546a74db810ed70ab9a84b5",
+  "development_findings": [
+    "Initial Clippy test-module placement failure corrected;final checks pass.",
+    "Filtered row selection initially reset All;fixed and verified in final native release."
+  ]
+}

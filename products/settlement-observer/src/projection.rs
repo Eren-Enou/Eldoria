@@ -1,8 +1,57 @@
 use eldoria_settlement::{Settlement, model::*, observer};
 use serde::Serialize;
+use sha2::{Digest, Sha256};
+use std::borrow::Cow;
 use std::collections::{BTreeMap, BTreeSet};
 
 pub const PAGE_SIZE: usize = 30;
+#[derive(Clone, Copy, Debug, Default, PartialEq, Eq, PartialOrd, Ord, Serialize)]
+pub enum EventFilter {
+    #[default]
+    All,
+    Consequences,
+    Social,
+    Failures,
+}
+impl EventFilter {
+    pub fn label(self) -> &'static str {
+        match self {
+            Self::All => "All records",
+            Self::Consequences => "Consequences",
+            Self::Social => "Social activity",
+            Self::Failures => "Failures & refusals",
+        }
+    }
+    pub fn matches(self, record: &Record) -> bool {
+        match self {
+            Self::All => true,
+            Self::Consequences => {
+                matches!(&record.kind, RecordKind::Finished { outcome, .. } if !["replied", "invitation_delivered"].contains(&outcome.as_str()))
+                    || matches!(
+                        record.kind,
+                        RecordKind::Refused { .. } | RecordKind::Rejected { .. }
+                    )
+            }
+            Self::Social => {
+                matches!(record.kind, RecordKind::Refused { .. })
+                    || matches!(&record.kind, RecordKind::Started { commitment } if matches!(commitment.work, Work::Send { .. } | Work::Transfer { .. } | Work::JointGather))
+                    || matches!(&record.kind, RecordKind::Finished { outcome, .. } if ["shared_food", "gathered_together", "transfer_failed"].contains(&outcome.as_str()))
+            }
+            Self::Failures => {
+                matches!(
+                    record.kind,
+                    RecordKind::Refused { .. } | RecordKind::Rejected { .. }
+                ) || matches!(&record.kind, RecordKind::Finished { outcome, .. } if ["depleted", "transfer_failed", "no_food"].contains(&outcome.as_str()))
+            }
+        }
+    }
+}
+#[derive(Clone, Copy)]
+pub enum Direction {
+    Earlier,
+    Later,
+    Latest,
+}
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Serialize)]
 pub enum Perspective {
     Observer,
@@ -39,6 +88,10 @@ pub struct Detail {
 #[derive(Serialize)]
 pub struct Frame {
     pub perspective: Perspective,
+    pub filter: EventFilter,
+    pub selected_id: Option<u64>,
+    pub selected_anchor: Option<crate::notebook::Anchor>,
+    pub notebook: Option<crate::notebook::NotebookView>,
     pub tick: u64,
     pub horizon: u64,
     pub running: bool,
@@ -61,10 +114,51 @@ pub struct Index {
     scanned: usize,
     children: BTreeMap<u64, Vec<u64>>,
     starts: BTreeMap<u64, u64>,
+    categories: BTreeMap<EventFilter, Vec<u64>>,
+    by_actor: BTreeMap<CharacterId, Vec<u64>>,
+    prefixes: Vec<String>,
+    outcomes: BTreeMap<String, usize>,
 }
 impl Index {
     pub fn update(&mut self, world: &Settlement) {
         for record in world.state().history.iter().skip(self.scanned) {
+            for filter in [
+                EventFilter::All,
+                EventFilter::Consequences,
+                EventFilter::Social,
+                EventFilter::Failures,
+            ] {
+                if filter.matches(record) {
+                    self.categories.entry(filter).or_default().push(record.id);
+                }
+            }
+            let subjects = match &record.kind {
+                RecordKind::Started { commitment } => commitment.participants.clone(),
+                _ => record.actor.into_iter().collect(),
+            };
+            for id in subjects {
+                self.by_actor.entry(id).or_default().push(record.id);
+            }
+            let bytes = serde_json::to_vec(record).expect("serializable history record");
+            let mut hash = Sha256::new();
+            hash.update(
+                self.prefixes
+                    .last()
+                    .map_or("eldoria-observer-prefix/v1", String::as_str)
+                    .as_bytes(),
+            );
+            hash.update((bytes.len() as u64).to_le_bytes());
+            hash.update(bytes);
+            self.prefixes.push(format!("{:x}", hash.finalize()));
+            let outcome = match &record.kind {
+                RecordKind::Finished { outcome, .. } => Some(outcome.clone()),
+                RecordKind::Refused { reason, .. } => Some(format!("refused:{reason}")),
+                RecordKind::Rejected { reason, .. } => Some(format!("rejected:{reason}")),
+                _ => None,
+            };
+            if let Some(outcome) = outcome {
+                *self.outcomes.entry(outcome).or_default() += 1;
+            }
             if let Some(cause) = record.cause {
                 self.children.entry(cause).or_default().push(record.id);
             }
@@ -73,6 +167,81 @@ impl Index {
             }
         }
         self.scanned = world.state().history.len();
+    }
+    pub fn prefix(&self, record: u64) -> Option<&str> {
+        self.prefixes
+            .get(usize::try_from(record).ok()?)
+            .map(String::as_str)
+    }
+    pub fn visible<'a>(
+        &'a self,
+        world: &Settlement,
+        perspective: Perspective,
+        filter: EventFilter,
+    ) -> Result<Cow<'a, [u64]>, String> {
+        if let Perspective::Character(id) = perspective {
+            let receipts = retained(&world.owned_view(id)?);
+            let candidates: BTreeSet<_> = self
+                .by_actor
+                .get(&id)
+                .into_iter()
+                .flatten()
+                .copied()
+                .chain(receipts.iter().copied())
+                .collect();
+            Ok(Cow::Owned(
+                candidates
+                    .into_iter()
+                    .filter(|id| {
+                        let r = &world.state().history[*id as usize];
+                        filter.matches(r) && allowed(r, perspective, &receipts)
+                    })
+                    .collect(),
+            ))
+        } else {
+            Ok(Cow::Borrowed(
+                self.categories.get(&filter).map_or(&[], Vec::as_slice),
+            ))
+        }
+    }
+    pub fn page_for(
+        &self,
+        world: &Settlement,
+        perspective: Perspective,
+        filter: EventFilter,
+        id: u64,
+    ) -> Result<usize, String> {
+        let ids = self.visible(world, perspective, filter)?;
+        Ok(ids
+            .binary_search(&id)
+            .map_or(0, |at| (ids.len() - 1 - at) / PAGE_SIZE))
+    }
+    pub fn navigate(
+        &self,
+        world: &Settlement,
+        perspective: Perspective,
+        filter: EventFilter,
+        selected: Option<u64>,
+        direction: Direction,
+    ) -> Result<Option<u64>, String> {
+        let filter = if filter == EventFilter::All {
+            EventFilter::Consequences
+        } else {
+            filter
+        };
+        let ids = self.visible(world, perspective, filter)?;
+        Ok(match direction {
+            Direction::Latest => ids.last().copied(),
+            Direction::Earlier => ids
+                .iter()
+                .rev()
+                .find(|id| selected.is_none_or(|s| **id < s))
+                .copied(),
+            Direction::Later => ids
+                .iter()
+                .find(|id| selected.is_none_or(|s| **id > s))
+                .copied(),
+        })
     }
 }
 fn retained(view: &OwnedView) -> BTreeSet<u64> {
@@ -159,6 +328,7 @@ pub fn row(record: &Record) -> Row {
 }
 pub struct Selection {
     pub perspective: Perspective,
+    pub filter: EventFilter,
     pub page: usize,
     pub selected: Option<u64>,
 }
@@ -172,6 +342,7 @@ pub fn frame(
 ) -> Result<Frame, String> {
     let Selection {
         perspective,
+        filter,
         page,
         selected,
     } = selection;
@@ -181,17 +352,14 @@ pub fn frame(
     };
     let receipts = own.as_ref().map(retained).unwrap_or_default();
     let history = &world.state().history;
-    let visible: Vec<_> = history
-        .iter()
-        .filter(|r| allowed(r, perspective, &receipts))
-        .collect();
+    let visible = index.visible(world, perspective, filter)?;
     let page = page.min(visible.len().saturating_sub(1) / PAGE_SIZE);
     let rows = visible
         .iter()
         .rev()
         .skip(page * PAGE_SIZE)
         .take(PAGE_SIZE)
-        .map(|r| row(r))
+        .map(|id| row(&history[*id as usize]))
         .collect();
     let mut detail_error = None;
     let detail = selected.and_then(|id| {
@@ -245,10 +413,48 @@ pub fn frame(
         .collect();
     let view = match own {
         Some(view) => View::Character(Box::new(view)),
-        None => View::Observer(Box::new(observer::snapshot(world))),
+        None => {
+            let characters: Vec<_> = world.characters().into_values().collect();
+            let state = world.state();
+            let food_balance = observer::FoodBalance {
+                initial: state.initial_food,
+                consumed: state.consumed,
+                sources: state.places.values().map(|p| u64::from(p.food)).sum(),
+                owned: characters.iter().map(|a| u64::from(a.food)).sum(),
+            };
+            View::Observer(Box::new(observer::Snapshot {
+                schema: "eldoria-settlement-observer/v1",
+                rules: RULES,
+                runtime: RUNTIME,
+                tick: world.tick(),
+                horizon: state.config.horizon,
+                complete: world.complete(),
+                characters,
+                places: state.places.values().cloned().collect(),
+                commitments: state.commitments.values().cloned().collect(),
+                food_balance,
+                history_records: history.len(),
+                outcomes: index.outcomes.clone(),
+            }))
+        }
     };
     Ok(Frame {
         perspective,
+        filter,
+        selected_id: selected,
+        selected_anchor: if perspective == Perspective::Observer {
+            selected.and_then(|id| {
+                Some(crate::notebook::Anchor {
+                    world: crate::notebook::world_key(world),
+                    record: id,
+                    tick: history.get(id as usize)?.tick,
+                    prefix: index.prefix(id)?.to_string(),
+                })
+            })
+        } else {
+            None
+        },
+        notebook: None,
         tick: world.tick(),
         horizon: world.state().config.horizon,
         running,

@@ -1,6 +1,6 @@
 use crate::{
     host::{Client, Command},
-    projection::{self, Frame, Perspective, View},
+    projection::{self, Direction, EventFilter, Frame, Perspective, View},
 };
 use eframe::egui::{self, Color32, RichText, Stroke};
 use eldoria_settlement::{Config, model::*};
@@ -13,6 +13,8 @@ use std::{
 const GREEN: Color32 = Color32::from_rgb(124, 200, 164);
 const GOLD: Color32 = Color32::from_rgb(222, 189, 124);
 const MUTED: Color32 = Color32::from_rgb(151, 166, 177);
+#[path = "notebook_ui.rs"]
+mod notebook_ui;
 
 #[derive(Clone)]
 enum Intent {
@@ -30,6 +32,7 @@ pub struct ObserverApp {
     client: Client,
     frame: Option<Frame>,
     perspective: Perspective,
+    filter: EventFilter,
     follow: CharacterId,
     page: usize,
     selected: Option<u64>,
@@ -43,6 +46,9 @@ pub struct ObserverApp {
     file: String,
     workspace: PathBuf,
     after_save: BTreeMap<u64, Option<Intent>>,
+    after_note: BTreeMap<u64, (notebook_ui::Draft, Option<Intent>)>,
+    notebook: notebook_ui::Editor,
+    resume_intent: Option<Intent>,
     replacements: BTreeSet<u64>,
     view_revision: u64,
     closing: bool,
@@ -63,7 +69,7 @@ impl ObserverApp {
             style.visuals.window_fill = Color32::from_rgb(29, 39, 48);
             style.visuals.selection.bg_fill = Color32::from_rgb(39, 87, 73);
         });
-        let mut client = Client::spawn(config.clone())?;
+        let mut client = Client::spawn_with_notebook(config.clone(), workspace.join("notebooks"))?;
         let mut pending = 0;
         if let Some(path) = open {
             client.send(Command::Open(path))?;
@@ -73,6 +79,7 @@ impl ObserverApp {
             client,
             frame: None,
             perspective: Perspective::Observer,
+            filter: EventFilter::All,
             follow: CharacterId(1001),
             page: 0,
             selected: None,
@@ -86,6 +93,9 @@ impl ObserverApp {
             file: String::new(),
             workspace,
             after_save: BTreeMap::new(),
+            after_note: BTreeMap::new(),
+            notebook: notebook_ui::Editor::default(),
+            resume_intent: None,
             replacements: BTreeSet::new(),
             view_revision: 0,
             closing: false,
@@ -110,11 +120,13 @@ impl ObserverApp {
         self.frame = None;
         self.send(Command::View {
             perspective: self.perspective,
+            filter: self.filter,
             page: self.page,
             selected: self.selected,
         });
     }
     fn select(&mut self, id: u64) {
+        self.filter = EventFilter::All;
         self.selected = Some(id);
         self.refresh_view();
     }
@@ -142,7 +154,8 @@ impl ObserverApp {
         self.dialog = Some(Dialog::Save(after));
     }
     fn request(&mut self, intent: Intent, ctx: &egui::Context) {
-        if self.pending > 0
+        if self.notebook.dirty()
+            || self.pending > 0
             || self
                 .frame
                 .as_ref()
@@ -155,6 +168,7 @@ impl ObserverApp {
         }
     }
     fn perform(&mut self, intent: Intent, ctx: &egui::Context) {
+        self.notebook.clear();
         match intent {
             Intent::Close => {
                 self.closing = true;
@@ -180,6 +194,7 @@ impl ObserverApp {
                 Ok(Some(reply)) => {
                     self.pending = self.pending.saturating_sub(1);
                     let after = self.after_save.remove(&reply.id);
+                    let note_after = self.after_note.remove(&reply.id);
                     let replacement = self.replacements.remove(&reply.id);
                     match reply.result {
                         Ok(message) => {
@@ -193,7 +208,13 @@ impl ObserverApp {
                                 self.error = false;
                             }
                             if let Some(Some(intent)) = after {
-                                self.perform(intent, ctx);
+                                self.resume_intent = Some(intent);
+                            }
+                            if let Some((submitted, intent)) = note_after {
+                                self.notebook.saved(&submitted);
+                                if let Some(intent) = intent {
+                                    self.resume_intent = Some(intent);
+                                }
                             }
                         }
                         Err(error) => {
@@ -213,9 +234,11 @@ impl ObserverApp {
                 }
             }
         }
-        if self.replacements.is_empty()
+        if self.pending == 0
+            && self.replacements.is_empty()
             && let Some(frame) = self.client.take_frame()
             && frame.perspective == self.perspective
+            && frame.filter == self.filter
         {
             if !frame.roster.iter().any(|p| p.id == self.follow)
                 && let Some(first) = frame.roster.first()
@@ -223,7 +246,15 @@ impl ObserverApp {
                 self.follow = first.id;
             }
             self.page = frame.page;
+            self.selected = frame.selected_id;
+            self.notebook.sync(&frame);
             self.frame = Some(frame);
+        }
+        if self.pending == 0
+            && self.frame.is_some()
+            && let Some(intent) = self.resume_intent.take()
+        {
+            self.request(intent, ctx);
         }
     }
     fn header(&mut self, ui: &mut egui::Ui) {
@@ -267,6 +298,9 @@ impl ObserverApp {
                 if frame.dirty {
                     ui.label(RichText::new("Unsaved progress").small().color(GOLD));
                 }
+            }
+            if self.notebook.dirty() {
+                ui.label(RichText::new("Unsaved observer note").small().color(GOLD));
             }
             ui.separator();
             ui.label("Pace");
@@ -569,6 +603,37 @@ impl ObserverApp {
                 self.refresh_view();
             }
         });
+        ui.horizontal_wrapped(|ui| {
+            let old_filter = self.filter;
+            egui::ComboBox::from_id_salt("event-filter")
+                .selected_text(self.filter.label())
+                .show_ui(ui, |ui| {
+                    for filter in [
+                        EventFilter::All,
+                        EventFilter::Consequences,
+                        EventFilter::Social,
+                        EventFilter::Failures,
+                    ] {
+                        ui.selectable_value(&mut self.filter, filter, filter.label());
+                    }
+                });
+            if self.filter != old_filter {
+                self.page = 0;
+                self.selected = None;
+                self.refresh_view();
+            }
+            for (label, direction) in [
+                ("Earlier event", Direction::Earlier),
+                ("Later event", Direction::Later),
+                ("Latest event", Direction::Latest),
+            ] {
+                if ui.button(label).clicked() {
+                    self.frame = None;
+                    self.send(Command::Navigate(direction));
+                }
+            }
+        });
+        ui.label(RichText::new("Event navigation highlights recorded consequences and failures; it is not a wellbeing ranking.").small().color(MUTED));
         ui.label(RichText::new("Select a record to inspect its causes. History selection never rewinds the live world.").small().color(MUTED));
         egui::ScrollArea::vertical()
             .id_salt("history-list")
@@ -581,13 +646,15 @@ impl ObserverApp {
                         .selectable_label(self.selected == Some(row.id), label)
                         .clicked()
                     {
-                        self.select(row.id);
+                        self.selected = Some(row.id);
+                        self.refresh_view();
                     }
                 }
                 if frame.rows.is_empty() {
                     ui.label("Step or run to begin this settlement's history.");
                 }
             });
+        self.notebook_list(ui, frame);
     }
     fn inspector(&mut self, ui: &mut egui::Ui, frame: &Frame) {
         if frame.perspective != self.perspective {
@@ -680,6 +747,7 @@ impl ObserverApp {
             record.tick, record.id
         ));
         ui.label(RichText::new(projection::row(record).title).strong());
+        self.note_editor(ui, frame);
         match &record.kind {
             RecordKind::Decision { view, choice, .. } => {
                 ui.label(
@@ -805,9 +873,13 @@ impl ObserverApp {
                 }
                 Dialog::Unsaved(intent) => {
                     ui.heading("Keep this settlement's progress?");
-                    ui.label("Time is paused. Save a checkpoint before leaving, or explicitly discard unsaved progress.");
+                    ui.label(if self.notebook.dirty() { "An external observer note draft is unsaved. Save it first; world progress is handled separately." } else { "Time is paused. Save a checkpoint before leaving, or explicitly discard unsaved progress." });
                     ui.horizontal(|ui| {
-                        if ui.button("Save first").clicked() { keep = false; self.request_save(Some(intent.clone())); }
+                        if ui.add_enabled(self.after_note.is_empty(), egui::Button::new("Save first")).clicked() {
+                            keep = false;
+                            if self.notebook.dirty() { self.set_perspective(Perspective::Observer); self.save_note(Some(intent.clone())); }
+                            else { self.request_save(Some(intent.clone())); }
+                        }
                         if ui.button("Discard unsaved progress").clicked() { keep = false; self.perform(intent.clone(), ctx); }
                     });
                 }
