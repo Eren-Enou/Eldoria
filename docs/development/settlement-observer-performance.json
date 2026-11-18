@@ -1,0 +1,96 @@
+{
+  "engine_runtime": "80a54fc216ef8417d9564da77bc8dc2d82a7b199ac3ee784db5b3070c023237a",
+  "samples": [
+    {
+      "build_us": 65,
+      "encode_us": 55,
+      "frame_bytes": 10509,
+      "history_records": 846,
+      "page_records": 30,
+      "perspective": "Observer",
+      "population": 8,
+      "tick": 64
+    },
+    {
+      "build_us": 30,
+      "encode_us": 7,
+      "frame_bytes": 3698,
+      "history_records": 846,
+      "page_records": 30,
+      "perspective": {
+        "Character": 1001
+      },
+      "population": 8,
+      "tick": 64
+    },
+    {
+      "build_us": 196,
+      "encode_us": 33,
+      "frame_bytes": 16834,
+      "history_records": 6889,
+      "page_records": 30,
+      "perspective": "Observer",
+      "population": 8,
+      "tick": 512
+    },
+    {
+      "build_us": 110,
+      "encode_us": 9,
+      "frame_bytes": 4429,
+      "history_records": 6889,
+      "page_records": 30,
+      "perspective": {
+        "Character": 1001
+      },
+      "population": 8,
+      "tick": 512
+    },
+    {
+      "build_us": 48,
+      "encode_us": 31,
+      "frame_bytes": 14853,
+      "history_records": 1283,
+      "page_records": 30,
+      "perspective": "Observer",
+      "population": 12,
+      "tick": 64
+    },
+    {
+      "build_us": 35,
+      "encode_us": 8,
+      "frame_bytes": 3976,
+      "history_records": 1283,
+      "page_records": 30,
+      "perspective": {
+        "Character": 1001
+      },
+      "population": 12,
+      "tick": 64
+    },
+    {
+      "build_us": 362,
+      "encode_us": 48,
+      "frame_bytes": 25447,
+      "history_records": 10872,
+      "page_records": 30,
+      "perspective": "Observer",
+      "population": 12,
+      "tick": 512
+    },
+    {
+      "build_us": 184,
+      "encode_us": 10,
+      "frame_bytes": 4839,
+      "history_records": 10872,
+      "page_records": 30,
+      "perspective": {
+        "Character": 1001
+      },
+      "population": 12,
+      "tick": 512
+    }
+  ],
+  "scope": "One release-mode sample per point; projection build and serialization only, no GPU/render timing; background research gate active",
+  "date": "2026-11-18",
+  "source_baseline": "0fc6594550ac9934e98736cb49403a23de5369af"
+}

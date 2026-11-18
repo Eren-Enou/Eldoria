@@ -4,6 +4,17 @@ Navigation summary, protected through026 with qualification. Source and mode-spe
 contracts remain authoritative; this map does not replace them. Update affected
 rows when ownership, entry points or mode boundaries change.
 
+## Eldoria native settlement observer
+
+`products/settlement-observer/` is a separate eframe desktop over the unchanged
+headless settlement engine: [launch/guide](../products/settlement-observer/README.md),
+[native acceptance](development/settlement-observer-acceptance.md). `host.rs` owns
+the one-worker session controls; `projection.rs` enforces observer/character frame
+and causal-link boundaries; `ui.rs` owns the map, people, inspector and save/open
+workflow. Native create/run/pause/trace/save/restart/pending-work continuation and
+headless CLI byte parity pass. This does not wire the old workbench or Explorer to
+new schemas, change any research producer, or change settlement rules/save identity.
+
 ## Eldoria product settlement — isolated headless foundation
 
 `products/settlement/` is a separate Rust/Bevy ECS workspace, not a research mode or

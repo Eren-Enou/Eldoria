@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-18",
+  "source_baseline": "0fc6594550ac9934e98736cb49403a23de5369af",
+  "engine_runtime": "80a54fc216ef8417d9564da77bc8dc2d82a7b199ac3ee784db5b3070c023237a",
+  "release_exe_sha256": "caabd83003b1ebe329932d63eb838723d11273bd5d72f1b985713fa24eff9bd9",
+  "native_workflow": [
+    "Created12 through New settlement dialog",
+    "Step1;11 concurrent commitments",
+    "Traced Dara invitation;inspected named utility terms",
+    "Switched actor perspective;global ledger and foreign private details absent",
+    "Run then Pause at tick36",
+    "Saved via native Save dialog;normal close",
+    "Release opened saved tick36;stepped36\u219240",
+    "Saved4 pending meals at40;closed and restarted",
+    "Opened saved40;four meals still pending;traced Galen decision with explicit recorded-person label",
+    "Step41 completed prior meals;new jobs visible;historical detail remains tick40",
+    "Saved41 to application workspace;switched to character perspective",
+    "Final build:Step1 in eight-person world;native Close displays unsaved-progress dialog;Save first\u2192Save now preserves complete pending state and closes normally"
+  ],
+  "checks": [
+    {
+      "population": 12,
+      "tick": 36,
+      "pending": 0,
+      "checkpoint_sha256": "9cef2df3c9b1765af60e3542cbe987efc19641504c4cfecbb597311ec071b166",
+      "exact_original_cli": true
+    },
+    {
+      "population": 12,
+      "tick": 40,
+      "pending": 4,
+      "checkpoint_sha256": "c4c4dd26133cfb276b82bddb6241a652ba38764d6aae67f2dbab51f8c3bacad4",
+      "exact_original_cli": true
+    },
+    {
+      "population": 12,
+      "tick": 41,
+      "pending": 2,
+      "checkpoint_sha256": "cfc161ccad7a5d79e16408f7913753509cedf8c33459923140d9ec8c61adb339",
+      "exact_original_cli": true
+    },
+    {
+      "population": 8,
+      "tick": 1,
+      "pending": 6,
+      "checkpoint_sha256": "78390e958a5981d3d779d62ab5f9a8370c397190de29529fc32db49f75d878b8",
+      "exact_original_cli": true,
+      "scope": "final executable save-before-close workflow"
+    }
+  ],
+  "scope": "Actual native input via computer-use skill, not widget tests or screenshots alone. Legacy engine CLI independently regenerated the same checkpoints. Preflight debug and final release used; release saved and restarted with pending work. No clean-machine/package or render-frame-time claim.",
+  "pre_close_guard_release_exe_sha256": "6fb5030c0a85aeb1105dbbdfa499636a6ab2baa5510b8151b7fcd38d354987f6"
+}

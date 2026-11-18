@@ -5,6 +5,10 @@ workspace. Eight characters are the default; twelve is the tested stress case.
 There are no scripted events after initialization, LLM calls, graphics, factions,
 renewable resources or changes to the research simulator.
 
+The separate [native settlement observer](../settlement-observer/README.md) now
+provides a desktop map, character perspectives, causal inspection and time/save
+controls over this unchanged headless runtime.
+
 ## Run from the repository root
 
 Requires Rust 1.95 or later and Cargo. Dependencies are locked independently of the
@@ -133,13 +137,14 @@ autonomy, locality twins, consent/refusal, depletion, sparse identities, every s
 boundary in representative histories, every work type and actual multi-process CLI
 resume. The acceptance report records the exact completed checks and scope.
 
-## Next observer milestone
+## Native observer and next steps
 
-Build a separate read-only desktop dashboard over `observer::snapshot`,
-`Settlement::owned_view` and paged records. Start with a three-node map, people and
-activities, run/pause/step, actor/observer perspective switching, food balances and
-decision→consent→work→consequence links. Keep the ECS world on one worker and publish
-bounded snapshots to the UI; presentation speed must not alter logical decisions.
-Do not load full history into each frame or treat a selected timeline position as
-restored cognition. Prove actual save/reopen and pending-work inspection in the UI.
-No renderer, viewer integration or live network service is claimed by this milestone.
+The [separate native desktop](../settlement-observer/README.md) implements the
+three-node map, people/activities, run/pause/step, actor/observer switching, food
+balances and causal inspection. Its single worker publishes bounded read-only
+frames. Actual save/reopen with pending work and exact original CLI parity pass;
+see its [acceptance report](../../docs/development/settlement-observer-acceptance.md).
+Historical selection never restores cognition. The core package remains headless;
+no old Explorer/workbench adapter or live network service is introduced. Next useful
+observer work is significant-event navigation, external bookmarks/notes and improved
+history indexing, guided by observation rather than new character rules.

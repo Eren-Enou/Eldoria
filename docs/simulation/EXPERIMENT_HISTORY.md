@@ -6,6 +6,11 @@ acceptance, local utility control and complete-state continuation. See the
 [acceptance record](../development/settlement-runtime-acceptance.md). This changes
 no experiment status, protected evidence, historical defaults or adoption decision.
 
+The separate [native settlement observer](../../products/settlement-observer/README.md)
+adds map/character/history inspection and time/save controls over that unchanged
+product runtime. [Native acceptance](../development/settlement-observer-acceptance.md)
+includes actual pending-work restart and original CLI byte parity; no research adoption.
+
 Headless engineering, not026: [persistent recovery/storage](../development/persistent-world-recovery.md).
 Explicit branches preserve committed state and excluded observer evidence without
 changing actor laws; GUI acceptance remains deferred. This is no protection extension.
